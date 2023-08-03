@@ -137,3 +137,26 @@ declare_loadout({
 		},
 	},	
 })
+
+
+
+declare_loadout({
+    category    = CAT_AIR_TO_AIR,
+    CLSID       = "DIS_SD-10_DUAL_T",
+    Picture     = 'jas39_meteor.png',
+    wsTypeOfWeapon   = JAS_MBDA_METEOR.wsTypeOfWeapon,
+    displayName = _('2 x ' ..jas_meteor_name),
+	attribute	=	{4,	4,	32,	WSTYPE_PLACEHOLDER},
+    Count       = 2,
+    Weight      = 2 * jas_meteor_mass + pylon_mass,
+   Elements = { {
+			IsAdapter = true,
+			ShapeName = "TER-9A"
+		}, {
+			ShapeName = "jas39_meteor",
+			connector_name = "Point02"
+		}, {
+			ShapeName = "jas39_meteor",
+			connector_name = "Point03"
+		} },
+})
