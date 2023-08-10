@@ -3,11 +3,6 @@ dofile(LockOn_Options.script_path.."args_def.lua")
 --------------------------------------------------------------------------------
 -- Variables
 --------------------------------------------------------------------------------
---function post_initialize()	-- Sets the AAR lights off
---set_aircraft_draw_argument_value( 21, -1)
---set_aircraft_draw_argument_value( 22, -1)
---end
-
 shape_name = "JF-17-CPT"
 
 is_EDM           = true
@@ -32,8 +27,7 @@ draw_pilot                  = true
 external_model_canopy_arg   = 38
 
 use_external_views          = false
-cockpit_local_point         = {4.62, 0.670, 0.000}
---cockpit_local_point         = {5.450, 1.480, 0.0}
+cockpit_local_point         = {4.50, 0.50, 0.000}-- JF-39 Cockpit Position
 
 day_texture_set_value       = 0.0
 night_texture_set_value     = 0.1

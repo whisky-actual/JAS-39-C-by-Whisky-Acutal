@@ -33,6 +33,7 @@ dev:listen_command(2143) -- -90 to 110
 -- Complexe Functions
 -------------------------------------------------------
 --dev:listen_command(device_commands.HMDTOGGLE)
+
 function post_initialize()
     HORIZONTAL_VIEW_HMD:set(0)
     VERTICAL_VIEW_HMD:set(0)
@@ -121,4 +122,56 @@ function update()
 	end
 	
 end
+
+
+-------------------------------------------------------
+--Animations Changes
+-------------------------------------------------------
+function update()
+
+	--engine
+	set_aircraft_draw_argument_value(22, get_aircraft_draw_argument_value(419))
+	
+	-- Right LEF
+	set_aircraft_draw_argument_value(13, get_aircraft_draw_argument_value(130))
+	
+	-- Left LEF
+	set_aircraft_draw_argument_value(14, get_aircraft_draw_argument_value(132))
+	
+	-- Canards
+	set_aircraft_draw_argument_value(9, get_aircraft_draw_argument_value(15))
+	set_aircraft_draw_argument_value(9, get_aircraft_draw_argument_value(16))
+		
+	ROLL_HUD:set(sensor_data.getRoll())
+
+	PITCH_HUD:set(sensor_data.getPitch())
+	
+ local VelVec_y = -sensor_data.getAngleOfAttack() 
+
+	VELVEC_HUD_Y:set(VelVec_y * (1.08))
+	
+	HEADING_HUD:set((sensor_data.getMagneticHeading() * RAD_TO_DEGREE))
+	
+	ALTITUDE_HUD:set(sensor_data.getBarometricAltitude() * 3.2808399)
+	
+	HUD_IAS = sensor_data.getIndicatedAirSpeed() * 1.94384449		 -- m/s to kts
+	local self_vel_l,self_vel_v,self_vel_h = sensor_data.getSelfAirspeed()		-- Prereq for ground speed in kts
+	HUD_GS = math.sqrt(self_vel_h^2 + self_vel_l^2)*1.94384449
+-- Below 50 kts use ground speed reading instead
+	if HUD_IAS < 50 then
+		CURR_IAS:set(HUD_GS)
+	else
+		CURR_IAS:set(HUD_IAS)
+	end
+	
+	HUD_MACH = sensor_data.getMachNumber()
+	
+	if HUD_MACH < 0.995 then
+		HUD_MACH = HUD_MACH *100
+	end
+	
+	MACH_A:set(sensor_data.getMachNumber())
+
+end
+
 need_to_be_closed = false
