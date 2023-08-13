@@ -198,19 +198,17 @@ JF_17 = {
     -----------------------------------------------------------------------
     ----------------- SUSPENSION CODE BEGINS
     -----------------------------------------------------------------------
-    tand_gear_max                            = 0.57, --2.1445, -- tangent on maximum yaw angle of front wheel, 65 degrees tan(64deg)
+    nose_gear_pos 				                = {4.488,	-2.045,	0},   -- nosegear coord 
+    nose_gear_amortizer_direct_stroke   		=  0.05,      -- down from nose_gear_pos !!!
+    nose_gear_amortizer_reversal_stroke  		=  -0.4,  -- up
+    nose_gear_amortizer_normal_weight_stroke 	=  -0.27,   -- up 
+    nose_gear_wheel_diameter 	                =   1.0, -- in m
 
-    nose_gear_pos                            = {4.35099, -1.49228-0.25+wheel_touch_comp, 0.0},    -- nosegear coord==前轮
-    nose_gear_wheel_diameter                 = 0.5,            -- in m
-    nose_gear_amortizer_direct_stroke        = 1.602075 - 1.49228,              -- down from nose_gear_pos !!!
-    nose_gear_amortizer_reversal_stroke      = 1.382485 - 1.49228,                -- up
-    nose_gear_amortizer_normal_weight_stroke = 0.00003571,                -- down from nose_gear_pos
-
-    main_gear_pos                            = {-0.53039, -1.345957-0.33+wheel_touch_comp, 1.14},    -- main gear coords==后轮
-    main_gear_wheel_diameter                 = 0.66,            -- in m
-    main_gear_amortizer_direct_stroke        = 1.465957 - 1.345957,        -- down from main_gear_pos !!!
-    main_gear_amortizer_reversal_stroke      = 1.225957 - 1.345957,     -- up
-    main_gear_amortizer_normal_weight_stroke = 0.00003571,                -- down from main_gear_pos
+    main_gear_pos 						 	    = {-0.800,	-1.96,	1.25}, -- main gear coords -1.95
+    main_gear_amortizer_direct_stroke	 	    =   0,     --  down from main_gear_pos !!!
+    main_gear_amortizer_reversal_stroke  	    =   -0.228, --  up 
+    main_gear_amortizer_normal_weight_stroke    =   -0.114,-- down from main_gear_pos
+    main_gear_wheel_diameter 				    =   1.0, -- in m
     -----------------------------------------------------------------------
     ----------------- SUSPENSION CODE ENDS
     -----------------------------------------------------------------------
@@ -347,12 +345,12 @@ JF_17 = {
         flare = { default = 32, increment = 4, chargeSz = 1 },
     },
 
-    chaff_flare_dispenser = {
-        [1] = { dir = {0, -1.0, 0.1}, pos = {-3.703, -0.302, 0.639}, }, -- Flares L
-        [2] = { dir = {0, -1.0, -0.1}, pos = {-3.703, -0.302, -0.639}, }, -- Flares R
-        [3] = { dir = {0, 1.0, 0}, pos = {-3.13, -0.1, 1.108}, }, -- Chaffs L
-        [4] = { dir = {0, 1.0, 0}, pos = {-3.13, -0.1, -1.108}, }, -- Chaffs R
-    },
+    chaff_flare_dispenser =	{
+		[1] = { dir = {0, 1.0, 0}, pos = {-3.25, 0.35, 0.8}, },
+        [2] = { dir = {0, -1.0, 0}, pos = {-3.25, 0.35, 0.8}, },
+        [3] = { dir = {0, -1.0, 0}, pos = {-3.25, 0.35, 0.8}, },
+        [4] = { dir = {0, 1.0, 0}, pos = {-3.25, 0.35, 0.8}, }, 
+		}, -- end of chaff_flare_dispenser  
 
     --sensors
     Sensors = {
@@ -780,28 +778,10 @@ JF_17 = {
         aircraft_task(PinpointStrike), -- 33
         aircraft_task(RunwayAttack), -- 34
     },
-   
-
-    Tasks = {
-        aircraft_task(Intercept), -- 10
-        aircraft_task(CAP), -- 11
-        --aircraft_task(Nothing), -- 15
-        aircraft_task(AFAC), -- 16
-        aircraft_task(Reconnaissance), -- 17
-        aircraft_task(Escort), -- 18
-        aircraft_task(FighterSweep), -- 19
-        aircraft_task(SEAD), -- 29
-        aircraft_task(AntishipStrike), -- 30
-        aircraft_task(CAS), -- 31
-        aircraft_task(GroundAttack), -- 32
-        aircraft_task(PinpointStrike), -- 33
-        aircraft_task(RunwayAttack), -- 34
-    },
 
     DefaultTask = aircraft_task(CAP),
 
-   
-SFM_Data = {
+    SFM_Data = {
         aerodynamics = { -- Cx = Cx_0 + Cy^2*B2 +Cy^4*B4
             Cy0        = 0,      -- zero AoA lift coefficient
             Mzalfa     = 5.5,  -- coefficients for pitch agility
@@ -876,30 +856,30 @@ SFM_Data = {
             dpdh_f     = 2500,      --  altitude coefficient for AB thrust
             table_data = {
             --            M     Pmax    	 Pfor
-                 [1]  =  { 0.00, 266718*1.45,  551380 },
-                 [2]  =  { 0.20, 259572*1.40,  551380 },
-                 [3]  =  { 0.30, 269376*1.33,  551380 },
-                 [4]  =  { 0.40, 273210*1.33,  587380 },
-                 [5]  =  { 0.50, 286818*1.33,  511380 },
-                 [6]  =  { 0.60, 299874*1.33,  511380 },
-                 [7]  =  { 0.70, 306798*1.33,  587376 },
-                 [8]  =  { 0.80, 312558*1.33,  588882 },
-                 [9]  =  { 0.97, 294702*1.0,   598362 },
-                 [10] =  { 1.00, 297906*0.8,   602706 },
-                 [11] =  { 1.05, 291414*0.9,   666906 },
-                 [12] =  { 1.10, 260916*0.9,   666726 },
-                 [13] =  { 1.15, 244188*0.9,   690456 },
-                 [14] =  { 1.20, 221460*0.9,   702606 },
-                 [15] =  { 1.30, 203598*0.9,   710694 },
-                 [16] =  { 1.40, 192900*0.9,   683490 },
-                 [17] =  { 1.50, 182172*0.9,   664398 },
-                 [18] =  { 1.60, 171474*0.9,   662616 },
-                 [19] =  { 1.70, 160746*0.9,   688416 },
-                 [20] =  { 1.85, 150018*0.9,   686616 },
-                 [21] =  { 1.90, 145320*0.9,   665502 },
-                 [22] =  { 2.00, 139320*0.9,   654702 },
-                 [23] =  { 2.20, 117894*0.9,   588474 },
-                 [24] =  { 3.90,  99894*0.9,   367674 },
+                [1]  =  { 0.00, 44453*1.45,  75230 },
+                [2]  =  { 0.20, 43262*1.40,  75230 },
+                [3]  =  { 0.30, 44896*1.33,  75230 },
+                [4]  =  { 0.40, 45535*1.33,  81230 },
+                [5]  =  { 0.50, 47803*1.33,  85230 },
+                [6]  =  { 0.60, 49979*1.33,  85230 },
+                [7]  =  { 0.70, 51133*1.33,  97896 },
+                [8]  =  { 0.80, 52093*1.33,  98147 },
+                [9]  =  { 0.97, 49117*1.0,  99727 },
+                [10] =  { 1.00, 49651*0.8,  100451 },
+                [11] =  { 1.05, 48569*0.9,  111151 },
+                [12] =  { 1.10, 43486*0.9,  111121 },
+                [13] =  { 1.15, 40698*0.9,  115076 },
+                [14] =  { 1.20, 36910*0.9,  117101 },
+                [15] =  { 1.30, 33933*0.9,  118449 },
+                [16] =  { 1.40, 32150*0.9,  113915 },
+                [17] =  { 1.50, 30362*0.9,  110733 },
+                [18] =  { 1.60, 28579*0.9,  110436 },
+                [19] =  { 1.70, 26791*0.9,  114836 },
+                [20] =  { 1.85, 25003*0.9,  114436 },
+                [21] =  { 1.90, 24220*0.9,  110917 },
+				[22] =  { 2.00, 23220*0.9,  109117 },
+                [23] =  { 2.20, 19649*0.9,  98079 },
+				[24] =  { 3.90, 16649*0.9,  61279 },
             }, -- end of table_data
             -- M    - Mach number
             -- Pmax    - Engine thrust at military power

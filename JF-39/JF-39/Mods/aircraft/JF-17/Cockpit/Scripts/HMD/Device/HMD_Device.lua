@@ -20,15 +20,26 @@ local HUD_BRIGHTNESS = get_param_handle("HUD_BRIGHTNESS")
 MainPower:set(1.0)
 local button_depress = false
 local first_run = true
+
+local PNT_765 = get_param_handle("PNT_765") -- "Left MFCD Brt +"
+local PNT_798 = get_param_handle("PNT_798") --"Center MFCD Brt +"
+local PNT_831 = get_param_handle("PNT_831") --"Right MFCD Brt +"
 -------------------------------------------------------
 -- Initialization Functions	
 -------------------------------------------------------
-
+function post_initialize()	--Set Brigthness of MFCD to max
+	PNT_765:set(-1) -- "Left MFCD Brt +" 140 to 145
+	PNT_798:set(-1) --"Center MFCD Brt +"
+	PNT_831:set(-1) --"Right MFCD Brt +"
+end
 -------------------------------------------------------
 -- Params
 -------------------------------------------------------
 dev:listen_command(2142) -- -162 to 162 degrees
 dev:listen_command(2143) -- -90 to 110
+dev:listen_command(765) -- "Left MFCD Brt +"
+dev:listen_command(768) -- "Center MFCD Brt +"
+dev:listen_command(831) -- "Right MFCD Brt +"
 -------------------------------------------------------
 -- Complexe Functions
 -------------------------------------------------------
@@ -123,24 +134,23 @@ function update()
 	
 end
 
-
 -------------------------------------------------------
 --Animations Changes
 -------------------------------------------------------
 function update()
 
-	--engine
+	--Refuel Probe
 	set_aircraft_draw_argument_value(22, get_aircraft_draw_argument_value(419))
 	
-	-- Right LEF
+	--Right LEF
 	set_aircraft_draw_argument_value(13, get_aircraft_draw_argument_value(130))
 	
-	-- Left LEF
+	--Left LEF
 	set_aircraft_draw_argument_value(14, get_aircraft_draw_argument_value(132))
 	
-	-- Canards
-	set_aircraft_draw_argument_value(9, get_aircraft_draw_argument_value(15))
-	set_aircraft_draw_argument_value(9, get_aircraft_draw_argument_value(16))
+	--Canards
+	--set_aircraft_draw_argument_value(9, get_aircraft_draw_argument_value(10000))
+	--set_aircraft_draw_argument_value(10, get_aircraft_draw_argument_value(10000))
 		
 	ROLL_HUD:set(sensor_data.getRoll())
 

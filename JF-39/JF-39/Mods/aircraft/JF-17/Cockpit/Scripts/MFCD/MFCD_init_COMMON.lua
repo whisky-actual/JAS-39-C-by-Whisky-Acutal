@@ -8,7 +8,7 @@ purposes       = {render_purpose.GENERAL, render_purpose.HUD_ONLY_VIEW}
 local mfcd_page_path = LockOn_Options.script_path .. "MFCD/Indicator/"
 dofile(mfcd_page_path .. "../MFCD_pageID_defs.lua")
 
--- 子页面源定义
+-- Subpage source definition
 page_subsets = {
     [SUB_PAGE_ID.ELEMENTSET_BASE        ] = mfcd_page_path .. "FULL_BASE.lua",
     [SUB_PAGE_ID.ELEMENTSET_OFF         ] = mfcd_page_path .. "UP_OFF.lua",
@@ -91,7 +91,7 @@ page_subsets = {
 
 }
 
--- 页面定义
+-- Page defitions
 pages = {
     [PAGE_ID.PAGE_ID_OFF            ] = {SUB_PAGE_ID.ELEMENTSET_BASE, },
     [PAGE_ID.PAGE_ID_NOAUX          ] = {SUB_PAGE_ID.ELEMENTSET_BASE, SUB_PAGE_ID.ELEMENTSET_NOAUX,},
@@ -245,8 +245,8 @@ color_sensitive_materials      = {
 
 is_colored         = true
 
-color_green_day    = {0, 0, 0}
-color_green_night  = {1, 1, 1}
+color_green_day    = {0, 0, 0}--Black
+color_green_night  = {1, 1, 1}--White
 
 color_blue_day     = {0, 1.0, 0}
 color_blue_night   = {0, 1.0, 0}
