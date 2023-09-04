@@ -11,9 +11,9 @@ declare_plugin(self_ID, {
     displayName   = _(ac_name),
     shortName     = ac_name,
     fileMenuName  = _(ac_name),
-    version       = '0.0.3',
+    version       = '0.0.4',
     state         = 'installed',
-    developerName = _('JF-39 Community Mod: https://github.com/whisky-actual/Community-J-10-A'),
+    developerName = _('JF-39 Community Mod: https://github.com/whisky-actual/Community-JF-39'),
     info          = _('JF-39 Community Mod: THIS MATERIAL IS NOT MADE OR SUPPORTED BY EAGLE DYNAMICS SA'),
     binaries      = { bin_name, },
     update_id     = 'DEKA_JF-17',
@@ -45,6 +45,7 @@ declare_plugin(self_ID, {
 -------------------------------------------------------------------------------------
 mount_vfs_model_path	(current_mod_path .. '/jf39/Shapes')
 mount_vfs_model_path	(current_mod_path .. '/jf39/Shapes/Weapons/')
+mount_vfs_model_path	(current_mod_path .. '/jf39/Shapes/Aircraft/')
 mount_vfs_texture_path  (current_mod_path .. '/jf39/ImagesGUI')
 mount_vfs_texture_path  (current_mod_path .. '/jf39/Skins/2/ME')
 mount_vfs_texture_path  (current_mod_path .. '/jf39/Textures/ExteriorTextures')
@@ -69,6 +70,7 @@ mount_vfs_texture_path  (current_mod_path .. '/jf39/Textures/JAS39_Pilot')
 mount_vfs_texture_path  (current_mod_path .. '/jf39/Textures/JAS39_Drop_tank')
 mount_vfs_texture_path  (current_mod_path .. '/jf39/Textures/JAS39_Base')
 mount_vfs_texture_path  (current_mod_path .. '/jf39/Textures/JAS39_Accessories')
+mount_vfs_texture_path  (current_mod_path .. '/jf39/Textures/JAS39_Cockpit')
 -------------------------------------------------------------------------------------
 --jf39 FM
 -------------------------------------------------------------------------------------

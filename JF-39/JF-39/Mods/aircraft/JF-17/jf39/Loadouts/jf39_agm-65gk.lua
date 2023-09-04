@@ -17,7 +17,6 @@ AGM65_K =
     class_name      = "wAmmunitionSelfHoming",
     scheme          = "AGM-65",
     
-	mass        	= 360, 
 	Escort			= 0,
     Head_Type		= 5,
 	sigma			= {5, 5, 5},
@@ -155,7 +154,6 @@ AGM65_G =
     Cx_pil          = 4,
     D_max           = 12964.0,
     D_min           = 500.0,
-    Head_Form       = 0,
     Head_Form       = 0,
     Life_Time       = 110,
     Nr_max          = 16,

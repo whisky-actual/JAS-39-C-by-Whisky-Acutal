@@ -12,7 +12,7 @@ local jas_spearew_warhead =
     cumulative_thickness = 0.0, 
 }
 
-local jas_spearew_name  = 'SPEAR-EW Decoy'
+local jas_spearew_name  = 'SPEAR-EW'
 local jas_spearew_mass  = 90
 local jas_spearew_model = 'jf39_spear-ew'
 
@@ -27,7 +27,6 @@ JAS_SPEAREW_MISSILE =
 	class_name		= "wAmmunitionCruise",     
 	wsTypeOfWeapon  = {wsType_Weapon, wsType_Missile, wsType_AS_Missile, WSTYPE_PLACEHOLDER},
 	
-	mass = jas_spearew_mass,
 	Escort = 0,
     Head_Type = 3,
 	sigma = {2, 2, 2},

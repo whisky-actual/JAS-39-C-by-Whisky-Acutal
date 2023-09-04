@@ -32,4 +32,32 @@ declare_loadout(
     },
 }
 )
+declare_loadout(
+    {
+        category = CAT_PODS,
+        CLSID = "{Jeff}",
+        attribute = {wsType_Weapon, wsType_GContainer, 47, WSTYPE_PLACEHOLDER},
+        Picture = "L005.png",
+        displayName = _("Remove Drag"),
+        Weight = 0,
+        Cx_pil = -0.00348,
+        shape_table_data =
+        {
+            {
+                file = "",
+                life = 1,
+                fire = { 0, 1},
+                username = "Blank",
+                index = WSTYPE_PLACEHOLDER,
+            },
+        },
+        Elements =
+        {
+            {
+                Position = {0, 0, 0},
+                ShapeName = "",
+            },
+        },
+    }
+)
 

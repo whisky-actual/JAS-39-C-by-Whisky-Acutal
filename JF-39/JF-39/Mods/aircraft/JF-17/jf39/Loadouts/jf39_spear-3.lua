@@ -12,7 +12,7 @@ local jas_spear3_warhead =
     cumulative_thickness = 2.0, 
 }
 
-local jas_spear3_name  = 'SPEAR-3 Anti-Radiation Missile'
+local jas_spear3_name  = 'SPEAR-3'
 local jas_spear3_mass  = 90
 local jas_spear3_model = 'jf39_spear-3'
 
@@ -27,7 +27,6 @@ JAS_SPEAR3_MISSILE =
 	class_name		= "wAmmunitionCruise",     
 	wsTypeOfWeapon  = {wsType_Weapon, wsType_Missile, wsType_AS_Missile, WSTYPE_PLACEHOLDER},
 	
-	mass = jas_spear3_mass,
 	Escort = 0,
     Head_Type = 3,
 	sigma = {2, 2, 2},

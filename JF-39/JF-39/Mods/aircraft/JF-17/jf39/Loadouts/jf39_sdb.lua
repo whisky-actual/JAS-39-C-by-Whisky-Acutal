@@ -1,179 +1,474 @@
-local function KAB(main, fm, autopilot, tgdata)
-	local t = main
-	
-	t.category  = CAT_BOMBS
-	t.wsTypeOfWeapon = {wsType_Weapon, wsType_Bomb, wsType_Bomb_Guided, WSTYPE_PLACEHOLDER}
-    t.hMin    = 1000.0
-    t.VyHold  = -80.0
-    t.Ag      = -1.0
-	
-	t.fm				= fm
-	
-	t.fm.mass			= t.mass
-	t.fm.wind_time		= 1000.000000
-	t.fm.wind_sigma		= 0
-	t.fm.A				= 0.6
-	t.fm.maxAoa			= math.rad(7)
-	t.fm.finsTau		= 0.1
-	t.fm.dCydA			= {0.066, 0.036}
-	
-	t.bang_bang_autopilot = autopilot
-	t.targeting_data = tgdata
+local ls6_500_name  = 'LS-6-500'
+local ls6_500_mass  = 525.0
+local ls6_500_model = "agm-154"
+local pylon_mass    = 45.0
 
-	t.shape_table_data ={
-		{
-			name     = t.name,
-			file     = t.model,
-			life     = 1,
-			fire     = {0, 1},
-			username = t.user_name,
-			index    = WSTYPE_PLACEHOLDER,
-		},
-	}
-	
-	declare_weapon(t)
-	return t
-end
-
-
- 
-
-local jas_sdb_bomb =
+local LS6_500_warhead = 
 {
-	category		= CAT_BOMBS,
-	wsTypeOfWeapon	= {wsType_Weapon, wsType_Bomb, wsType_Bomb_Guided, WSTYPE_PLACEHOLDER},
-	type			= 4,
-    mass   			= 129.0,
-    hMin   			= 300.0,
-    hMax   			= 15000.0,
-    Cx     			= 0.00074,
-    VyHold 			= -100.0,
-    Ag     			= -1.23,
-	
-	name			= "jas_sdb",
-	model			= "jf39_gbu-39",
-	user_name		= _("GBU-39 SDB 285lb TV Guided Glide-Bomb"),
-	scheme			= "bomb_jdam",
-	class_name		= "wAmmunitionChangeableTrajectory",
-	
-	warhead = simple_warhead(130),
-	warhead_air = simple_warhead(130),
+    mass                 = 200, 
+    caliber              = 377,
+    expl_mass            = 200,
+    piercing_mass        = 0.0,
+    other_factors        = { 1.0, 1.0, 1.0 },
+    concrete_factors     = { 3.0, 1.0, 1.0 },
+    concrete_obj_factor  = 2.0,
+    obj_factors          = { 3.0, 1.0 },
+    cumulative_factor    = 3.0,
+    cumulative_thickness = 0.0,
+}
 
-	fm = {
-		mass			= 129.1,
-		caliber			= 0.274,
-		cx_coeff		= {1, 0.45, 0.8, 0.15, 1.55},
-		L				= 0.274/5,
-		I				= 65.1,
-		I_x				= 2.85,
-		wind_time		= 0.0,
-		wind_sigma		= 0.0,
-		dCydA			= {0.04, 0.022},
-		A				= 0.6,
-		maxAoa			= math.rad(25),
-		finsTau			= 0.1,
-		fins_gain		= 100,
-		ideal_fins 		= 1,
-		Sw				= 0.059*5,
-		Ma				= 6.3,
-		Mw				= 3.0,
-		Ma_x			= 9.5,
-		Mw_x			= 3.5,
+LS_6_500 =
+{
+    category        = CAT_MISSILES,
+    name            = ls6_500_name,
+    user_name       = _(ls6_500_name),
+    scheme          = "AGM-154C",
+    class_name      = "wAmmunitionCruise",
+    model           = ls6_500_model,
+    mass            = ls6_500_mass,
+    
+    wsTypeOfWeapon  = {wsType_Weapon,wsType_Missile,wsType_AS_Missile,WSTYPE_PLACEHOLDER},
+
+    Escort          = 0,
+    Head_Type       = 5,
+    sigma           = {20, 20, 20},
+    M               = ls6_500_mass,
+    H_max           = 28000.0,
+    H_min           = 100,
+    Diam            = 330.0,
+    Cx_pil          = 8,
+    D_max           = 130000.0,
+    D_min           = 5000.0,
+    Head_Form       = 1,
+    Life_Time       = 9999,
+    Nr_max          = 10,
+    v_min           = 10.0,
+    v_mid           = 200.0,
+    Mach_max        = 1.7,
+    t_b             = 0.0,
+    t_acc           = 0.0,
+    t_marsh         = 0.0,
+    Range_max       = 140000.0,
+    H_min_t         = 0.0,
+    Fi_start        = 3.14152,
+    Fi_rak          = 3.14152,
+    Fi_excort       = 3.14152,
+    Fi_search       = 99.9,
+    OmViz_max       = 99.9,
+    X_back          = 0.0,
+    Y_back          = 0.0,
+    Z_back          = 0.0,
+    Reflection      = 0.07,
+    KillDistance    = 0.0,
+    
+    LaunchDistData =
+    {
+        17,        10,
+        
+                 100,    150,    200,    250,    300,    350,    400,    450,    500,    550,
+        100,     0,        0,        0,        0,        10000,    19000,    25000,    30000,    33000,    37000,
+        200,     0,        0,        0,        10000,    16000,    24000,    30000,    34000,    38000,    41000,
+        500,     0,        0,        0,        12000,    24000,    32000,    38000,    42000,    45000,    48000,
+        800,     0,        0,        0,        15000,    27000,    35000,    40000,    44000,    48000,    51000,
+        1000,    0,        0,        0,        17000,    29000,    36000,    42000,    46000,    49000,    53000,
+        2000,    0,        0,        14000,    24000,    37000,    43000,    50000,    54000,    57000,    60000,
+        3000,    0,        0,        21000,    32000,    42000,    51000,    57000,    61000,    65000,    69000,
+        4000,    11000,    11000,    27000,    40000,    51000,    58000,    64000,    69000,    73000,    76000,
+        5000,    21000,    22000,    28000,    48000,    58000,    64000,    70000,    76000,    79000,    84000,
+        6000,    25000,    25000,    28000,    50000,    60000,    67000,    76000,    81000,    86000,    91000,
+        7000,    34000,    34000,    35000,    51000,    62000,    68000,    83000,    88000,    93000,    97000,
+        8000,    36000,    37000,    38000,    52000,    63000,    69000,    88000,    94000,    99000,    104000,
+        9000,    43000,    44000,    45000,    53000,    64000,    71000,    94000,    99000,    104000,   110000,
+        10000,   61000,    68000,    76000,    84000,    91000,    95000,    98000,    104000,   108000,   114000,
+        11000,   67000,    74000,    81000,    89000,    95000,    99000,    101000,   106000,   112000,   114000,
+        13000,   76000,    83000,    91000,    98000,    105000,   109000,   110000,   112000,   116000,   121000,
+        15000,   83000,    91000,    98000,    106000,   113000,   115000,   117000,   119000,   122000,   125000,
+    },
+        
+    shape_table_data =
+    {
+        {
+            name     = ls6_500_name,
+            file     = ls6_500_model,
+            life     = 1,
+            fire     = { 0, 1},
+            username = ls6_500_name,
+            index    = WSTYPE_PLACEHOLDER,
+        },
+    },
+    
+    fm = {
+        mass                = ls6_500_mass,  
+        caliber             = 0.377,  
+        cx_coeff            = {1, 0.8, 0.8, 0.15, 1.5},
+        L                   = 3.09,
+        I                   = 1 / 12 * ls6_500_mass * 3.09 * 3.09,
+        Ma                  = 2,
+        Mw                  = 7,
+        wind_sigma          = 0.0,
+        wind_time           = 0.0,
+        Sw                  = 1.1,
+        dCydA               = {0.07, 0.036},
+        A                   = 0.1,
+        maxAoa              = 0.4,
+        finsTau             = 1.2,
+        Ma_x                = 2,
+        Ma_z                = 2,
+        Mw_x                = 1.4,
+        
+        addDeplSw           = 0.6,
+        no_wings_A_mlt      = 2,
+        wingsDeplProcTime   = 5,
+        wingsDeplDelay      = 9999,
+        no_wings_cx_coeff   = {1, 0.4, 0.8, 0.10, 1.5},
+    },
+    
+    simple_seeker = {
+        sensitivity  = 0,
+        delay        = 2.5,
+        FOV          = 0.6,
+        maxW         = 500,
+        opTime       = 9999,
+    },
+    
+    control_block = {
+        seeker_activation_dist       = 7000,
+        default_cruise_height        = -1,
+        obj_sensor                   = 1,
+        can_update_target_pos        = 0,
+        turn_before_point_reach      = 1,
+        turn_hor_N                   = 2.2,
+        turn_max_calc_angle_deg      = 90,
+        turn_point_trigger_dist      = 100,
+    },
+    
+    autopilot = {
+        delay                        = 2.5,
+        K                            = 500,
+        Ki                           = 0.00005,
+        Kg                           = 8,
+        nw_K                         = 30,
+        nw_Ki                        = 0.0,
+        nw_Kg                        = 25,
+        finsLimit                    = 0.8,
+        useJumpByDefault             = 0,
+        J_Power_K                    = 6,
+        J_Diff_K                     = 3,
+        J_Int_K                      = 0.0,
+        J_Angle_W                    = 0.1,
+        hKp_err                      = 460,
+        hKp_err_croll                = 0.012,
+        hKd                          = -0.008,
+        max_roll                     = 1.3,
+        egm_Angle_K                  = 0.2,
+        egm_FinAngle_K               = 0.3,
+        egm_add_power_K              = 0.2,
+        wings_depl_fins_limit_K      = 0.3,
+        err_new_wlos_k               = 0.8,
+        err_aoaz_k                   = 28,
+        err_aoaz_sign_k              = 0.18,
+    },
+        
+    warhead     = LS6_500_warhead,
+    warhead_air = LS6_500_warhead,
+}
+
+declare_weapon(LS_6_500)
+
+declare_loadout({
+    category         = CAT_BOMBS,
+    CLSID            = 'DIS_LS_6_500',
+    attribute        = LS_6_500.wsTypeOfWeapon,
+    Count            = 1,
+    Cx_pil           = 0.0018,
+    Picture          = "ls-6.png",
+    displayName      = _(ls6_500_name),
+    Weight           = LS_6_500.mass + pylon_mass,
+    Elements         = {
+        [1] = {
+            ShapeName = ls6_500_model,
+            DrawArgs  = {
+                [1] = {2, 1.0},
+            }
+        }
+    },
+    ejectImpulse     = eject_speed * LS_6_500.mass,
+    ejectDirection   = {0, -1, 0},
+})
+
+---------------------------------------------------
+
+local ls6_250_name  = 'LS-6-250'
+local ls6_250_mass  = 275.0
+local pylon_mass = 45.0
+--[[
+local ls6_250_model = "jf39_spear-3"
+
+shape_table_data =
+{
+    {
+        name     = ls6_250_name,
+        file     = ls6_250_model,
+        life     = 1,
+        fire     = { 0, 1},
+        username = ls6_250_name,
+        index    = WSTYPE_PLACEHOLDER,
+    },
+},
+--]]
+local LS6_250_warhead = 
+{
+    mass                 = 100, 
+    caliber              = 299,
+    expl_mass            = 100,
+    piercing_mass        = 0.0,
+    other_factors        = { 1.0, 1.0, 1.0 },
+    concrete_factors     = { 3.0, 1.0, 1.0 },
+    concrete_obj_factor  = 2.0,
+    obj_factors          = { 3.0, 1.0 },
+    cumulative_factor    = 3.0,
+    cumulative_thickness = 0.0,
+}
+
+LS_6_250 =
+{
+    category        = CAT_MISSILES,
+    name            = ls6_250_name,
+    user_name       = _(ls6_250_name),
+    scheme          = "AGM-154C",
+    class_name      = "wAmmunitionCruise",
+    model           = 'jf39_gbu-39',
+    mass            = ls6_250_mass,
+    
+    wsTypeOfWeapon  = {wsType_Weapon,wsType_Missile,wsType_AS_Missile,WSTYPE_PLACEHOLDER},
+
+    Escort          = 0,
+    Head_Type       = 5,
+    sigma           = {20, 20, 20},
+    M               = ls6_250_mass,
+    H_max           = 28000.0,
+    H_min           = 100,
+    Diam            = 299.0,
+    Cx_pil          = 8,
+    D_max           = 130000.0,
+    D_min           = 5000.0,
+    Head_Form       = 1,
+    Life_Time       = 9999,
+    Nr_max          = 10,
+    v_min           = 10.0,
+    v_mid           = 200.0,
+    Mach_max        = 1.7,
+    t_b             = 0.0,
+    t_acc           = 0.0,
+    t_marsh         = 0.0,
+    Range_max       = 140000.0,
+    H_min_t         = 0.0,
+    Fi_start        = 3.14152,
+    Fi_rak          = 3.14152,
+    Fi_excort       = 3.14152,
+    Fi_search       = 99.9,
+    OmViz_max       = 99.9,
+    X_back          = 0.0,
+    Y_back          = 0.0,
+    Z_back          = 0.0,
+    Reflection      = 0.03,
+    KillDistance    = 0.0,
+    
+    LaunchDistData =
+    {
+        17,        10,
+        
+                 100,    150,    200,    250,    300,    350,    400,    450,    500,    550,
+        100,     0,        0,        0,        0,        10000,    19000,    25000,    30000,    33000,    37000,
+        200,     0,        0,        0,        10000,    16000,    24000,    30000,    34000,    38000,    41000,
+        500,     0,        0,        0,        12000,    24000,    32000,    38000,    42000,    45000,    48000,
+        800,     0,        0,        0,        15000,    27000,    35000,    40000,    44000,    48000,    51000,
+        1000,    0,        0,        0,        17000,    29000,    36000,    42000,    46000,    49000,    53000,
+        2000,    0,        0,        14000,    24000,    37000,    43000,    50000,    54000,    57000,    60000,
+        3000,    0,        0,        21000,    32000,    42000,    51000,    57000,    61000,    65000,    69000,
+        4000,    11000,    11000,    27000,    40000,    51000,    58000,    64000,    69000,    73000,    76000,
+        5000,    21000,    22000,    28000,    48000,    58000,    64000,    70000,    76000,    79000,    84000,
+        6000,    25000,    25000,    28000,    50000,    60000,    67000,    76000,    81000,    86000,    91000,
+        7000,    34000,    34000,    35000,    51000,    62000,    68000,    83000,    88000,    93000,    97000,
+        8000,    36000,    37000,    38000,    52000,    63000,    69000,    88000,    94000,    99000,    104000,
+        9000,    43000,    44000,    45000,    53000,    64000,    71000,    94000,    99000,    104000,   110000,
+        10000,   61000,    68000,    76000,    84000,    91000,    95000,    98000,    104000,   108000,   114000,
+        11000,   67000,    74000,    81000,    89000,    95000,    99000,    101000,   106000,   112000,   114000,
+        13000,   76000,    83000,    91000,    98000,    105000,   109000,   110000,   112000,   116000,   121000,
+        15000,   83000,    91000,    98000,    106000,   113000,   115000,   117000,   119000,   122000,   125000,
+    },
+        
+    
+    fm = {
+        mass                = ls6_250_mass,
+        caliber             = 0.299,
+        cx_coeff            = {1, 0.8, 0.8, 0.15, 1.5},
+        L                   = 2.48,
+        I                   = 1 / 12 * ls6_250_mass * 2.48 * 2.48,
+        Ma                  = 2,
+        Mw                  = 7,
+        wind_sigma          = 0.0,
+        wind_time           = 0.0,
+        Sw                  = 1.1,
+        dCydA               = {0.07, 0.036},
+        A                   = 0.1,
+        maxAoa              = 0.4,
+        finsTau             = 1.2,
+        Ma_x                = 2,
+        Ma_z                = 2,
+        Mw_x                = 1.4,
+        
+        addDeplSw           = 0.6,
+        no_wings_A_mlt      = 2,
+        wingsDeplProcTime   = 5,
+        wingsDeplDelay      = 9999,
+        no_wings_cx_coeff   = {1, 0.4, 0.8, 0.10, 1.5},
 		model_roll 		= math.rad(-45),
     },
-	
-	seeker = {
-		CEP 					= 5.0,
-		coalition				= 2,
-		coalition_rnd_coeff		= 5.0,
-	},
-	
-	autopilot = {
-		delay				= 1.0,
-		op_time				= 9000,
-		Tf					= 0.05,
-		Knav				= 3.0,
-		Kd					= 390.0,
-		Ka					= 6.0,
-		Tc					= 0.1,
-		Kx					= 0.1,
-		Krx					= 4.0,
-		gload_limit			= 2.5,
+    
+    simple_seeker = {
+        sensitivity  = 0,
+        delay        = 2.5,
+        FOV          = 0.6,
+        maxW         = 500,
+        opTime       = 9999,
+    },
+    
+    control_block = {
+        seeker_activation_dist       = 7000,
+        default_cruise_height        = -1,
+        obj_sensor                   = 1,
+        can_update_target_pos        = 0,
+        turn_before_point_reach      = 1,
+        turn_hor_N                   = 2.2,
+        turn_max_calc_angle_deg      = 90,
+        turn_point_trigger_dist      = 100,
+    },
+    
+    autopilot = {
+        delay                        = 2.5,
+        K                            = 500 / 2.0,
+        Ki                           = 0.00005,
+        Kg                           = 8 / 2.0,
+        nw_K                         = 30 / 2.0,
+        nw_Ki                        = 0.0,
+        nw_Kg                        = 25 / 2.0,
+        finsLimit                    = 0.8,
+        useJumpByDefault             = 0,
+        J_Power_K                    = 6 / 2.0,
+        J_Diff_K                     = 3 / 2.0,
+        J_Int_K                      = 0.0,
+        J_Angle_W                    = 0.1,
+        hKp_err                      = 460,
+        hKp_err_croll                = 0.012,
+        hKd                          = -0.008,
+        max_roll                     = 1.3,
+        egm_Angle_K                  = 0.2,
+        egm_FinAngle_K               = 0.3,
+        egm_add_power_K              = 0.2,
+        wings_depl_fins_limit_K      = 0.3,
+        err_new_wlos_k               = 0.8,
+        err_aoaz_k                   = 28,
+        err_aoaz_sign_k              = 0.18,
 		fins_limit			= math.rad(30),
 		fins_limit_x		= math.rad(5),
 		null_roll			= math.rad(-45),
-		KD0					= 0.059 / 253,
-		KDI					= 0.6 * 253 / 0.3,
-		KLM					= 0.7 * 0.059 * 5 / 253,
-	},
-	
-	shape_table_data =
-	{
-		{
-			name     = "jas_sdb",
-			file     = "jf39_gbu-39",
-			life     = 1,
-			fire     = {0, 1},
-			username = _("GBU39SDB"),
-			index    = WSTYPE_PLACEHOLDER,
-		},
-	},
-	
-	targeting_data = 
-	{
-		char_time				= 20.25,
-	}
+    },
+        
+    warhead     = LS6_250_warhead,
+    warhead_air = LS6_250_warhead,
 }
 
-declare_weapon(jas_sdb_bomb)
+declare_weapon(LS_6_250)
+
+local ldout_cnt = 1
+
+
 
 declare_loadout({
-	category 		= CAT_BOMBS,
-	CLSID	 		= 'DIS_LS_6_500',
-	wsTypeOfWeapon  = jas_sdb_bomb.wsTypeOfWeapon,
-    attribute       = {4, 4, 32, WSTYPE_PLACEHOLDER},
-	Count 			= 4,
-	Cx_pil			= jas_sdb_bomb.Cx,
-	Picture			= "jf39_gbu39.png",
-	displayName		= jas_sdb_bomb.user_name,
-	Weight			= jas_sdb_bomb.mass * 4 + 145,
-	ejectImpulse    = 140,
-	Elements = {
-	
-		{
-			ShapeName	=	"jf39_bru_61",
-			IsAdapter = true,
-		},
-		
-		{
+    category         = CAT_BOMBS,
+    CLSID            = "DIS_LS_6_250_DUAL_L",
+	wsTypeOfWeapon   = LS_6_250.wsTypeOfWeapon,
+	attribute        = {4, 4, 32, WSTYPE_PLACEHOLDER},
+	Count            = 4,--ldout_cnt,
+	Cx_pil           = 0.0012 * ldout_cnt + 0.00122,
+    Picture          = "jf39_gbu39.png",
+	displayName      = _(ls6_250_name .. "DIS_LS_6_250_DUAL_L"),
+	Weight           = LS_6_250.mass * ldout_cnt + pylon_mass,
+	ejectImpulse     = eject_speed * LS_6_250.mass,
+    --ejectDirection   = {-100, -100, -100},
+    Elements = {
+        {
+            ShapeName = "jf39_bru_61",
+            IsAdapter = true
+        },
+        {
 			DrawArgs = {[1] = {1,1},[2] = {2,1},},
-			Position	=	{-0.7,	-0.06,	-0.11}, --1
+			Position	=	{-0.7,	-0.28,	-0.11}, --1
 			ShapeName	=	"jf39_gbu-39",
-			Rotation = {180,0,0},
-		},
-		
-		{
+			Rotation = {0,0,0},
+        },
+        {
 			DrawArgs = {[1] = {1,1},[2] = {2,1},},
-			Position	=	{-0.7,	-0.06, 0.11}, --2
+			Position	=	{-0.7,	-0.28, 0.11}, --2
 			ShapeName	=	"jf39_gbu-39",
-			Rotation = {180,0,0},
-		},
-		
-		{
+			Rotation = {0,0,0},
+        },
+        {
 			DrawArgs = {[1] = {1,1},[2] = {2,1},},
-			Position	=	{1.2,	-0.06, -0.11}, --3
+			Position	=	{1.2,	-0.28, -0.11}, --3
 			ShapeName	=	"jf39_gbu-39",
-			Rotation = {180,0,0},
-		},
-		
-		{
+			Rotation = {0,0,0},
+        },
+        {
 			DrawArgs = {[1] = {1,1},[2] = {2,1},},
-			Position	=	{1.2,	-0.06, 0.11}, --4
+			Position	=	{1.2,	-0.28, 0.11}, --4
 			ShapeName	=	"jf39_gbu-39",
-			Rotation = {180,0,0},
-		},		
-		
-	},
-    
-    JettisonSubmunitionOnly = false,
+			Rotation = {0,0,0},
+        },
+    },
+})
+
+declare_loadout({
+    category         = CAT_BOMBS,
+    CLSID            = "DIS_LS_6_250_DUAL_R",
+	wsTypeOfWeapon   = LS_6_250.wsTypeOfWeapon,
+	attribute        = {4, 4, 32, WSTYPE_PLACEHOLDER},
+	Count            = 4,--ldout_cnt,
+	Cx_pil           = 0.0012 * ldout_cnt + 0.00122,
+    Picture          = "jf39_gbu39.png",
+	displayName      = _(ls6_250_name .. "DIS_LS_6_250_DUAL_R"),
+	Weight           = LS_6_250.mass * ldout_cnt + pylon_mass,
+	ejectImpulse     = eject_speed * LS_6_250.mass,
+    --ejectDirection   = {100, 100, 100},
+    Elements = {
+        {
+            ShapeName = "jf39_bru_61",
+            IsAdapter = true
+        },
+        {
+			DrawArgs = {[1] = {1,1},[2] = {2,1},},
+			Position	=	{-0.7, -0.28, -0.11}, --1
+			ShapeName	=	"jf39_gbu-39",
+			Rotation = {-180,0,0},
+        },
+        {
+			DrawArgs = {[1] = {1,1},[2] = {2,1},},
+			Position	=	{-0.7,	-0.28, 0.11}, --2
+			ShapeName	=	"jf39_gbu-39",
+			Rotation = {-180,0,0},
+        },
+        {
+			DrawArgs = {[1] = {1,1},[2] = {2,1},},
+			Position	=	{1.2,	-0.28, -0.11}, --3
+			ShapeName	=	"jf39_gbu-39",
+			Rotation = {-180,0,0},
+        },
+        {
+			DrawArgs = {[1] = {1,1},[2] = {2,1},},
+			Position	=	{1.2,	-0.28, 0.11}, --4
+			ShapeName	=	"jf39_gbu-39",
+			Rotation = {-180,0,0},
+        },
+    },
 })

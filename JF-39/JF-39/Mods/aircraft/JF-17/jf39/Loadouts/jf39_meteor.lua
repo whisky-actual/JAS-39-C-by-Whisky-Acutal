@@ -139,11 +139,10 @@ declare_loadout({
 })
 
 
-
 declare_loadout({
     category    = CAT_AIR_TO_AIR,
-    CLSID       = "DIS_SD-10_DUAL_T",
-    Picture     = 'jas39_meteor.png',
+    CLSID       = "DIS_SD-10_DUAL_L",
+    Picture     = 'jf39_meteor.png',
     wsTypeOfWeapon   = JAS_MBDA_METEOR.wsTypeOfWeapon,
     displayName = _('2 x ' ..jas_meteor_name),
 	attribute	=	{4,	4,	32,	WSTYPE_PLACEHOLDER},
@@ -153,10 +152,34 @@ declare_loadout({
 			IsAdapter = true,
 			ShapeName = "TER-9A"
 		}, {
-			ShapeName = "jas39_meteor",
+			ShapeName = "jf39_meteor",
 			connector_name = "Point02"
 		}, {
-			ShapeName = "jas39_meteor",
+			ShapeName = "jf39_meteor",
 			connector_name = "Point03"
+		} },
+})
+
+declare_loadout({
+    category    = CAT_AIR_TO_AIR,
+    CLSID       = "DIS_SD-10_DUAL_R",
+    Picture     = 'jf39_meteor.png',
+    wsTypeOfWeapon   = JAS_MBDA_METEOR.wsTypeOfWeapon,
+    displayName = _('3 x ' ..jas_meteor_name),
+	attribute	=	{4,	4,	32,	WSTYPE_PLACEHOLDER},
+    Count       = 3,
+    Weight      = 3 * jas_meteor_mass + pylon_mass,
+   Elements = { {
+			IsAdapter = true,
+			ShapeName = "TER-9A"
+		}, {
+			ShapeName = "jf39_meteor",
+			connector_name = "Point03"
+		}, {
+			ShapeName = "jf39_meteor",
+			connector_name = "Point02"
+        }, {
+			ShapeName = "jf39_meteor",
+			connector_name = "Point01"
 		} },
 })

@@ -192,7 +192,7 @@ local MAR_warhead =
 
 declare_weapon(MAR_ARM)
 
-
+--[[
 declare_loadout({
     category    = CAT_MISSILES,
     CLSID       = 'DIS_LD-10',
@@ -210,7 +210,7 @@ declare_loadout({
         },
     }, -- end of Elements
 })
-
+--]]
 declare_loadout({
     category       = CAT_MISSILES,
     CLSID          = 'DIS_LD-10_DUAL_L',

@@ -1,4 +1,3 @@
-
 local bk90_name = "BK90 MJ2"
 local bk90_mass = 605
 local pylon_mass = 1.0
@@ -205,7 +204,6 @@ BK_90 =
                     cx_coeff                = {1, 1, 1, 1, 2},
                     model_name              = "bk_90",
                     set_start_args          = {0,12,13},
-                    spawn_args_change       = {{1,12,0},{1,1,0.6}},
                     spawn_time              = {0.02, 0.17, 0.32}, -- BLU_108(带4个子弹药)的释放延迟, 要拉成一条线，可以适当放大，但不能太大，最好不要超过2.0
                     spawn_weight_loss       = {0, 150, 150},
                     spawn_args_change       = {{1,1,1},{1,12,0},{2,2,1}},

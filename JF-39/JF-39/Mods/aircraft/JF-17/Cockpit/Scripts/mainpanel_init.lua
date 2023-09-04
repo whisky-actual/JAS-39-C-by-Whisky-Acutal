@@ -28,6 +28,7 @@ external_model_canopy_arg   = 38
 
 use_external_views          = false
 cockpit_local_point         = {4.50, 0.50, 0.000}-- JF-39 Cockpit Position
+--cockpit_local_point         = {4.50, 0.50, 0.000}-- JAS39C Cockpit Position
 
 day_texture_set_value       = 0.0
 night_texture_set_value     = 0.1

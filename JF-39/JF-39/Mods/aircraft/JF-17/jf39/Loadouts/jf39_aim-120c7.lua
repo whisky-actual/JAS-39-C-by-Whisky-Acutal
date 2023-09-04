@@ -121,7 +121,7 @@ declare_weapon(JAS_aim120c7_AA)
 
 declare_loadout({
 	category		=	CAT_AIR_TO_AIR,
-	CLSID			= 	"JF39_AIM120C7",
+	CLSID			= 	"DIS_PL-12",
 	Picture			=	"us_AIM-120C.png",
 	wsTypeOfWeapon	=	JAS_aim120c7_AA.wsTypeOfWeapon,
 	displayName		=	_(jas_aim120c7_name),
@@ -136,6 +136,27 @@ declare_loadout({
 			Position	=	{0,	0,	0}
 		},
 	}, 	
-	
-	
+})	
+	declare_loadout({
+		category    = CAT_AIR_TO_AIR,
+		CLSID       = "DIS_SD-10_DUAL_L",
+		Picture     = 'us_AIM-120C.png',
+		wsTypeOfWeapon   = JAS_MBDA_METEOR.wsTypeOfWeapon,
+		displayName = _('3 x ' ..jas_meteor_name),
+		attribute	=	{4,	4,	32,	WSTYPE_PLACEHOLDER},
+		Count       = 3,
+		Weight      = 3 * jas_meteor_mass + pylon_mass,
+	   Elements = { {
+				IsAdapter = true,
+				ShapeName = "TER-9A"
+			}, {
+				ShapeName = "aim-120c",
+				connector_name = "Point03"
+			}, {
+				ShapeName = "aim-120c",
+				connector_name = "Point02"
+			}, {
+				ShapeName = "aim-120c",
+				connector_name = "Point01"
+			} },
 })
