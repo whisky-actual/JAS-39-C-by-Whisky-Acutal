@@ -466,11 +466,11 @@ JF_17 = {
                 { CLSID = "DIS_GB6_HE", arg_value = 0.5, Type = 1 }, -- BK90 MJ2 / dws39 *Make this*	
 
                 { CLSID = "DIS_LS_6_100", arg_value = 0.3, Type = 1 },--GBU-39 SDB
-                { CLSID = "DIS_LS_6_100_DUAL_L", arg_value = 0.3, Type = 1 },--GBU-39 SDB
+                { CLSID = "DIS_LS_6_100_DUAL_L", arg_value = 0.55, Type = 1 },--GBU-39 SDB
 --              { CLSID = "DIS_LS_6_100_DUAL_R", arg_value = 0.3, Type = 1 },--GBU-39 SDB
 
                 { CLSID = "DIS_LS_6_250", arg_value = 0.3, Type = 1 },--SPEAR-3
-				{ CLSID = "DIS_LS_6_250_DUAL_L", arg_value = 0.3, Type = 1 },--SPEAR-3
+				{ CLSID = "DIS_LS_6_250_DUAL_L", arg_value = 0.5, Type = 1 },--SPEAR-3
 --              { CLSID = "DIS_LS_6_250_DUAL_R", arg_value = 0.3, Type = 1 },--SPEAR-3
 
                 { CLSID = "DIS_LS_6_500", arg_increment = 0.5, Type = 1}, -- Storm Shadow		
@@ -706,7 +706,7 @@ JF_17 = {
 
                 { CLSID = "DIS_LS_6_250", arg_value = 0.3, Type = 1 },--SPEAR-3
 --				{ CLSID = "DIS_LS_6_250_DUAL_L", arg_value = 0.3, Type = 1 },--SPEAR-3
-                { CLSID = "DIS_LS_6_250_DUAL_R", arg_value = 0.3, Type = 1 },--SPEAR-3
+                { CLSID = "DIS_LS_6_250_DUAL_R", arg_value = 0.5, Type = 1 },--SPEAR-3
 
                 { CLSID = "DIS_LS_6_500", arg_increment = 0.5, Type = 1}, -- Storm Shadow		
 								
@@ -816,12 +816,12 @@ JF_17 = {
                 { CLSID = "DIS_GB6_HE", arg_value = 0.5, Type = 1 }, -- BK90 MJ2 / dws39 *Make this*	
 
                 { CLSID = "DIS_LS_6_100", arg_value = 0.3, Type = 1 },--GBU-39 SDB
-                { CLSID = "DIS_LS_6_100_DUAL_L", arg_value = 0.3, Type = 1 },--GBU-39 SDB
+                { CLSID = "DIS_LS_6_100_DUAL_L", arg_value = 0.5, Type = 1 },--GBU-39 SDB
 --              { CLSID = "DIS_LS_6_100_DUAL_R", arg_value = 0.3, Type = 1 },--GBU-39 SDB
 
                 { CLSID = "DIS_LS_6_250", arg_value = 0.3, Type = 1 },--SPEAR-3
 --				{ CLSID = "DIS_LS_6_250_DUAL_L", arg_value = 0.3, Type = 1 },--SPEAR-3
-                { CLSID = "DIS_LS_6_250_DUAL_R", arg_value = 0.3, Type = 1 },--SPEAR-3
+                { CLSID = "DIS_LS_6_250_DUAL_R", arg_value = 0.5, Type = 1 },--SPEAR-3
 
                 { CLSID = "DIS_LS_6_500", arg_increment = 0.5, Type = 1}, -- Storm Shadow		
 								

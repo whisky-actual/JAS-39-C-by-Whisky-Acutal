@@ -323,7 +323,6 @@ LS_6_250 =
         wingsDeplProcTime   = 5,
         wingsDeplDelay      = 9999,
         no_wings_cx_coeff   = {1, 0.4, 0.8, 0.10, 1.5},
-		model_roll 		= math.rad(-45),
     },
     
     simple_seeker = {
@@ -381,7 +380,7 @@ LS_6_250 =
 
 declare_weapon(LS_6_250)
 
-local ldout_cnt = 1
+local ldout_cnt = 4
 
 
 
@@ -396,33 +395,29 @@ declare_loadout({
 	displayName      = _(ls6_250_name .. "DIS_LS_6_250_DUAL_L"),
 	Weight           = LS_6_250.mass * ldout_cnt + pylon_mass,
 	ejectImpulse     = eject_speed * LS_6_250.mass,
-    --ejectDirection   = {-100, -100, -100},
+	ejectDirection   = {0, -2, 0},
     Elements = {
         {
             ShapeName = "jf39_bru_61",
             IsAdapter = true
         },
         {
-			DrawArgs = {[1] = {1,1},[2] = {2,1},},
-			Position	=	{-0.7,	-0.28,	-0.11}, --1
+			connector_name =	"AttachPoint001",
 			ShapeName	=	"jf39_gbu-39",
 			Rotation = {0,0,0},
         },
         {
-			DrawArgs = {[1] = {1,1},[2] = {2,1},},
-			Position	=	{-0.7,	-0.28, 0.11}, --2
+			connector_name =	"AttachPoint002",		
 			ShapeName	=	"jf39_gbu-39",
 			Rotation = {0,0,0},
         },
         {
-			DrawArgs = {[1] = {1,1},[2] = {2,1},},
-			Position	=	{1.2,	-0.28, -0.11}, --3
+			connector_name =	"AttachPoint003",		
 			ShapeName	=	"jf39_gbu-39",
 			Rotation = {0,0,0},
         },
         {
-			DrawArgs = {[1] = {1,1},[2] = {2,1},},
-			Position	=	{1.2,	-0.28, 0.11}, --4
+			connector_name =	"AttachPoint004",		
 			ShapeName	=	"jf39_gbu-39",
 			Rotation = {0,0,0},
         },
@@ -440,35 +435,31 @@ declare_loadout({
 	displayName      = _(ls6_250_name .. "DIS_LS_6_250_DUAL_R"),
 	Weight           = LS_6_250.mass * ldout_cnt + pylon_mass,
 	ejectImpulse     = eject_speed * LS_6_250.mass,
-    --ejectDirection   = {100, 100, 100},
+    ejectDirection   = {0, -2, 0},	
     Elements = {
         {
             ShapeName = "jf39_bru_61",
             IsAdapter = true
         },
         {
-			DrawArgs = {[1] = {1,1},[2] = {2,1},},
-			Position	=	{-0.7, -0.28, -0.11}, --1
+			connector_name =	"AttachPoint001",
 			ShapeName	=	"jf39_gbu-39",
-			Rotation = {-180,0,0},
+			Rotation = {0,0,0},
         },
         {
-			DrawArgs = {[1] = {1,1},[2] = {2,1},},
-			Position	=	{-0.7,	-0.28, 0.11}, --2
+			connector_name =	"AttachPoint002",		
 			ShapeName	=	"jf39_gbu-39",
-			Rotation = {-180,0,0},
+			Rotation = {0,0,0},
         },
         {
-			DrawArgs = {[1] = {1,1},[2] = {2,1},},
-			Position	=	{1.2,	-0.28, -0.11}, --3
+			connector_name =	"AttachPoint003",		
 			ShapeName	=	"jf39_gbu-39",
-			Rotation = {-180,0,0},
+			Rotation = {0,0,0},
         },
         {
-			DrawArgs = {[1] = {1,1},[2] = {2,1},},
-			Position	=	{1.2,	-0.28, 0.11}, --4
+			connector_name =	"AttachPoint004",		
 			ShapeName	=	"jf39_gbu-39",
-			Rotation = {-180,0,0},
+			Rotation = {0,0,0},
         },
     },
 })
