@@ -13,7 +13,7 @@ local ARAK70BHE = {
 	user_name			= _("ARAKM70BHE"),
 	wsTypeOfWeapon		= {wsType_Weapon,wsType_NURS,wsType_Rocket,wsType_ARAK70HE},
 	scheme 				= "nurs-standard",
-	model 				= "ARAK70HE",
+	model 				= "jf39_arak70he",
 
         fm = 
         {
@@ -88,8 +88,8 @@ declare_loadout(
 	attribute 		= {wsType_Weapon,wsType_NURS,wsType_Container,wsType_ARAK70HEPOD},
 	--attribute 		= {wsType_Weapon,wsType_NURS,wsType_Container,WSTYPE_PLACEHOLDER},
 	wsTypeOfWeapon	=	ARAK70BHE.wsTypeOfWeapon,	
-	Picture 		= "ARAK70HE.png",
-	displayName		= _("ARAK M70B HE"),
+	Picture 		= "jf39_m70bhe.png",
+	displayName		= _("M70B HE Unguided rocket"),
 	Weight 			= (19.7 + 25)*6 + 104, -- (Head + fuse + body) * 6 + pod weight
 	Count			=	6,
 	Cx_pil			=	0.00059912109375,
@@ -98,49 +98,49 @@ declare_loadout(
 	Elements = {
 	
 		{
-			ShapeName	=	"ARAKM70B", -- pod name
+			ShapeName	=	"jf39_arakm70b", -- pod name
 			IsAdapter = true,
 		},
 
 		{
 			DrawArgs = {[1] = {1,1},[2] = {2,1},},
 			Position	=	{-0.1,	-0.192,	-0.077}, --1
-			ShapeName	=	"ARAK70HE",
+			ShapeName	=	"jf39_arak70he",
 			Rotation = {0,0,0},
 		},
 
 		{
 			DrawArgs = {[1] = {1,1},[2] = {2,1},},
 			Position	=	{-0.1,	-0.45,	-0.073}, --2
-			ShapeName	=	"ARAK70HE",
+			ShapeName	=	"jf39_arak70he",
 			Rotation = {0,0,0},
 		},
 
 		{
 			DrawArgs = {[1] = {1,1},[2] = {2,1},},
 			Position	=	{-0.1,	-0.326, 0.143}, --3
-			ShapeName	=	"ARAK70HE",
+			ShapeName	=	"jf39_arak70he",
 			Rotation = {0,0,0},
 		},
 
 		{
 			DrawArgs = {[1] = {1,1},[2] = {2,1},},
 			Position	=	{-0.1,	-0.326,	-0.143}, --4
-			ShapeName	=	"ARAK70HE",
+			ShapeName	=	"jf39_arak70he",
 			Rotation = {0,0,0},
 		},
 
 		{
 			DrawArgs = {[1] = {1,1},[2] = {2,1},},
 			Position	=	{-0.1,	-0.192,	0.077}, --5
-			ShapeName	=	"ARAK70HE",
+			ShapeName	=	"jf39_arak70he",
 			Rotation = {0,0,0},
 		},
 
 		{
 			DrawArgs = {[1] = {1,1},[2] = {2,1},},
 			Position	=	{-0.1,	-0.45,	0.073}, --6
-			ShapeName	=	"ARAK70HE",
+			ShapeName	=	"jf39_arak70he",
 			Rotation = {0,0,0},
 		},
 	},
@@ -154,7 +154,7 @@ local ARAK70BAP = {
 	user_name			= _("ARAKM70BAP"),
 	wsTypeOfWeapon		= {wsType_Weapon,wsType_NURS,wsType_Rocket,wsType_ARAK70AP},
 	scheme 				= "nurs-standard",
-	model 				= "ARAK70AP",
+	model 				= "jf39_arak70ap",
 
         fm = 
         {
@@ -225,12 +225,12 @@ declare_weapon(ARAK70BAP)
 declare_loadout(
 {
 	category 		= CAT_ROCKETS,
-	CLSID 			= "{BRU33_2*LAU68_MK5}",
+--	CLSID 			= "DIS_LAU68_MK5_DUAL_GDJ_II19_L",
 	attribute 		= {wsType_Weapon,wsType_NURS,wsType_Container,wsType_ARAK70APPOD},
 	--attribute 		= {wsType_Weapon,wsType_NURS,wsType_Container,WSTYPE_PLACEHOLDER},
 	wsTypeOfWeapon	=	ARAK70BAP.wsTypeOfWeapon,	
-	Picture 		= "ARAK70AP.png",
-	displayName		= _("ARAK M70B AP"),
+	Picture 		= "jf39_m70bap.png",
+	displayName		= _("M70B AP Unguided rocket"),
 	Weight 			= (19.7 + 25)*6 + 104, -- (Head + fuse + body) * 6 + pod weight
 	Count			=	6,
 	Cx_pil			=	0.00059912109375,
@@ -239,49 +239,49 @@ declare_loadout(
 	Elements = {
 	
 		{
-			ShapeName	=	"ARAKM70B", -- pod name
+			ShapeName	=	"jf39_arakm70b", -- pod name
 			IsAdapter = true,
 		},
 
 		{
 			DrawArgs = {[1] = {1,1},[2] = {2,1},},
 			Position	=	{-0.1,	-0.192,	-0.077}, --1
-			ShapeName	=	"ARAK70AP",
+			ShapeName	=	"jf39_arak70ap",
 			Rotation = {0,0,0},
 		},
 
 		{
 			DrawArgs = {[1] = {1,1},[2] = {2,1},},
 			Position	=	{-0.1,	-0.45,	-0.073}, --2
-			ShapeName	=	"ARAK70AP",
+			ShapeName	=	"jf39_arak70ap",
 			Rotation = {0,0,0},
 		},
 
 		{
 			DrawArgs = {[1] = {1,1},[2] = {2,1},},
 			Position	=	{-0.1,	-0.326, 0.143}, --3
-			ShapeName	=	"ARAK70AP",
+			ShapeName	=	"jf39_arak70ap",
 			Rotation = {0,0,0},
 		},
 
 		{
 			DrawArgs = {[1] = {1,1},[2] = {2,1},},
 			Position	=	{-0.1,	-0.326,	-0.143}, --4
-			ShapeName	=	"ARAK70AP",
+			ShapeName	=	"jf39_arak70ap",
 			Rotation = {0,0,0},
 		},
 
 		{
 			DrawArgs = {[1] = {1,1},[2] = {2,1},},
 			Position	=	{-0.1,	-0.192,	0.077}, --5
-			ShapeName	=	"ARAK70AP",
+			ShapeName	=	"jf39_arak70ap",
 			Rotation = {0,0,0},
 		},
 
 		{
 			DrawArgs = {[1] = {1,1},[2] = {2,1},},
 			Position	=	{-0.1,	-0.45,	0.073}, --6
-			ShapeName	=	"ARAK70AP",
+			ShapeName	=	"jf39_arak70ap",
 			Rotation = {0,0,0},
 		},
 	},

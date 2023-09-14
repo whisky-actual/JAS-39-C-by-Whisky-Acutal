@@ -430,9 +430,9 @@ JF17_MK_82_DUAL_L = {
     JettisonSubmunitionOnly = true,
     Elements =
     {
-        {ShapeName = "JF-17_GDJ-II19L", IsAdapter      = true},
-        {ShapeName = "MK-82", connector_name = "Pylon_GDJ-II19L_R"},
-        {ShapeName = "MK-82", connector_name = "Pylon_GDJ-II19L_L"}
+        {ShapeName = "BRU_33A", IsAdapter      = true},
+        {ShapeName = "MK-82", connector_name = "Point02"},
+        {ShapeName = "MK-82", connector_name = "Point01"}
     },
 
     wsTypeOfWeapon = {4, 5, 9, 31},
@@ -444,9 +444,9 @@ declare_loadout(JF17_MK_82_DUAL_L)
 JF17_MK_82_DUAL_R = {}
 copyTable(JF17_MK_82_DUAL_R, JF17_MK_82_DUAL_L)
 JF17_MK_82_DUAL_R.CLSID = "DIS_MK_82_DUAL_GDJ_II19_R"
-JF17_MK_82_DUAL_R.Elements[1].ShapeName = "JF-17_GDJ-II19R"
-JF17_MK_82_DUAL_R.Elements[2].connector_name = "Pylon_GDJ-II19R_L"
-JF17_MK_82_DUAL_R.Elements[3].connector_name = "Pylon_GDJ-II19R_R"
+JF17_MK_82_DUAL_R.Elements[1].ShapeName = "BRU_33A"
+JF17_MK_82_DUAL_R.Elements[2].connector_name = "Point02"
+JF17_MK_82_DUAL_R.Elements[3].connector_name = "Point01"
 JF17_MK_82_DUAL_R.attribute = JF17_MK_82_DUAL_L.attribute
 declare_loadout(JF17_MK_82_DUAL_R)
 
@@ -464,9 +464,9 @@ JF17_MK_82S_DUAL_L = {
     JettisonSubmunitionOnly = true,
     Elements =
     {
-        {ShapeName = "JF-17_GDJ-II19L", IsAdapter      = true},
-        {ShapeName = "MK-82_Snakeye", connector_name = "Pylon_GDJ-II19L_R"},
-        {ShapeName = "MK-82_Snakeye", connector_name = "Pylon_GDJ-II19L_L"}
+        {ShapeName = "BRU_33A", IsAdapter      = true},
+        {ShapeName = "MK-82_Snakeye", connector_name = "Point02"},
+        {ShapeName = "MK-82_Snakeye", connector_name = "Point01"}
     },
 
     wsTypeOfWeapon = {4, 5, 9, 79},
@@ -478,9 +478,9 @@ declare_loadout(JF17_MK_82S_DUAL_L)
 JF17_MK_82S_DUAL_R = {}
 copyTable(JF17_MK_82S_DUAL_R, JF17_MK_82S_DUAL_L)
 JF17_MK_82S_DUAL_R.CLSID = "DIS_MK_82S_DUAL_GDJ_II19_R"
-JF17_MK_82S_DUAL_R.Elements[1].ShapeName = "JF-17_GDJ-II19R"
-JF17_MK_82S_DUAL_R.Elements[2].connector_name = "Pylon_GDJ-II19R_L"
-JF17_MK_82S_DUAL_R.Elements[3].connector_name = "Pylon_GDJ-II19R_R"
+JF17_MK_82S_DUAL_R.Elements[1].ShapeName = "BRU_33A"
+JF17_MK_82S_DUAL_R.Elements[2].connector_name = "Point02"
+JF17_MK_82S_DUAL_R.Elements[3].connector_name = "Point01"
 JF17_MK_82S_DUAL_R.attribute = JF17_MK_82S_DUAL_L.attribute
 declare_loadout(JF17_MK_82S_DUAL_R)
 
@@ -498,9 +498,9 @@ JF17_MK_20_DUAL_L = {
     JettisonSubmunitionOnly = true,
     Elements =
     {
-        {ShapeName = "JF-17_GDJ-II19L", IsAdapter      = true},
-        {ShapeName = "ROCKEYE", connector_name = "Pylon_GDJ-II19L_R"},
-        {ShapeName = "ROCKEYE", connector_name = "Pylon_GDJ-II19L_L"}
+        {ShapeName = "BRU_33A", IsAdapter      = true},
+        {ShapeName = "ROCKEYE", connector_name = "Point02"},
+        {ShapeName = "ROCKEYE", connector_name = "Point01"}
     },
 
     wsTypeOfWeapon = {4, 5, 38, 45},
@@ -512,9 +512,9 @@ declare_loadout(JF17_MK_20_DUAL_L)
 JF17_MK_20_DUAL_R = {}
 copyTable(JF17_MK_20_DUAL_R, JF17_MK_20_DUAL_L)
 JF17_MK_20_DUAL_R.CLSID = "DIS_MK_20_DUAL_GDJ_II19_R"
-JF17_MK_20_DUAL_R.Elements[1].ShapeName = "JF-17_GDJ-II19R"
-JF17_MK_20_DUAL_R.Elements[2].connector_name = "Pylon_GDJ-II19R_L"
-JF17_MK_20_DUAL_R.Elements[3].connector_name = "Pylon_GDJ-II19R_R"
+JF17_MK_20_DUAL_R.Elements[1].ShapeName = "BRU_33A"
+JF17_MK_20_DUAL_R.Elements[2].connector_name = "Point02"
+JF17_MK_20_DUAL_R.Elements[3].connector_name = "Point01"
 JF17_MK_20_DUAL_R.attribute = JF17_MK_20_DUAL_L.attribute
 declare_loadout(JF17_MK_20_DUAL_R)
 
@@ -533,9 +533,9 @@ JF17_GBU_12_DUAL_L = {
     JettisonSubmunitionOnly = true,
     Elements =
     {
-        {ShapeName = "JF-17_GDJ-II19L", IsAdapter      = true},
-        {ShapeName = "GBU-12", connector_name = "Pylon_GDJ-II19L_R"},
-        {ShapeName = "GBU-12", connector_name = "Pylon_GDJ-II19L_L"}
+        {ShapeName = "BRU_33A", IsAdapter      = true},
+        {ShapeName = "GBU-12", connector_name = "Point02"},
+        {ShapeName = "GBU-12", connector_name = "Point01"}
     },
 
     wsTypeOfWeapon = {4, 5, 36, 38},
@@ -548,9 +548,9 @@ declare_loadout(JF17_GBU_12_DUAL_L)
 JF17_GBU_12_DUAL_R = {}
 copyTable(JF17_GBU_12_DUAL_R, JF17_GBU_12_DUAL_L)
 JF17_GBU_12_DUAL_R.CLSID = "DIS_GBU_12_DUAL_GDJ_II19_R"
-JF17_GBU_12_DUAL_R.Elements[1].ShapeName = "JF-17_GDJ-II19R"
-JF17_GBU_12_DUAL_R.Elements[2].connector_name = "Pylon_GDJ-II19R_L"
-JF17_GBU_12_DUAL_R.Elements[3].connector_name = "Pylon_GDJ-II19R_R"
+JF17_GBU_12_DUAL_R.Elements[1].ShapeName = "BRU_33A"
+JF17_GBU_12_DUAL_R.Elements[2].connector_name = "Point02"
+JF17_GBU_12_DUAL_R.Elements[3].connector_name = "Point01"
 JF17_GBU_12_DUAL_R.attribute = JF17_GBU_12_DUAL_L.attribute
 declare_loadout(JF17_GBU_12_DUAL_R)
 

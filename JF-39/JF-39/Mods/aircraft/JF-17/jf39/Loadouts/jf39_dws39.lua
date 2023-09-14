@@ -1,4 +1,4 @@
-local bk90_name = "BK90 MJ2"
+local bk90_name = "DWS 39 MJ2 Cluster Glide Bomb"
 local bk90_mass = 605
 local pylon_mass = 1.0
 
@@ -371,7 +371,7 @@ declare_weapon(BK_90)
 
 declare_loadout({
     category        = CAT_MISSILES,
-    CLSID           = 'DIS_GB6_HE',
+    CLSID           = 'DIS_LS_6_500',
     attribute       = BK_90.wsTypeOfWeapon,
     Count           = 1,
     Cx_pil          = 0.0024,

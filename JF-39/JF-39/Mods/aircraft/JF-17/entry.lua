@@ -11,10 +11,10 @@ declare_plugin(self_ID, {
     displayName   = _(ac_name),
     shortName     = ac_name,
     fileMenuName  = _(ac_name),
-    version       = '0.0.4',
+    version       = '0.0.6',
     state         = 'installed',
     developerName = _('JF-39 Community Mod: https://github.com/whisky-actual/Community-JF-39'),
-    info          = _('JF-39 Community Mod: THIS MATERIAL IS NOT MADE OR SUPPORTED BY EAGLE DYNAMICS SA'),
+    info          = _('THIS MATERIAL IS NOT MADE OR SUPPORTED BY EAGLE DYNAMICS SA OR DEKA IRONWORKS SIMULATION'),
     binaries      = { bin_name, },
     update_id     = 'DEKA_JF-17',
     InputProfiles = {
@@ -56,6 +56,7 @@ mount_vfs_liveries_path (current_mod_path .. '/jf39/Liveries/JF-17')
 mount_vfs_liveries_path (current_mod_path .. '/jf39/Liveries/JF-17-CPT')
 mount_vfs_model_path    (current_mod_path .. '/Cockpit/Shapes')
 mount_vfs_texture_path  (current_mod_path .. '/Cockpit/Shapes/Textures')
+mount_vfs_texture_path  (current_mod_path .. '/Cockpit/Shapes/JF39')
 mount_vfs_texture_path  (current_mod_path .. '/Cockpit/Textures/IndicationTextures')
 mount_vfs_texture_path  (current_mod_path .. '/jf39//Textures/JAS39_Common')
 mount_vfs_texture_path  (current_mod_path .. '/jf39/Textures/JAS39_CAF')

@@ -21,7 +21,7 @@ local MAR_warhead =
   MAR_ARM = {
         category        = CAT_MISSILES,
         name            = name,
-        model           = 'mar-1',
+        model           = 'jf39_mar-1',
         user_name       = _(name),
         wsTypeOfWeapon  = {4,4,8,WSTYPE_PLACEHOLDER},
         mass            = mass,
@@ -192,7 +192,7 @@ local MAR_warhead =
 
 declare_weapon(MAR_ARM)
 
---[[
+
 declare_loadout({
     category    = CAT_MISSILES,
     CLSID       = 'DIS_LD-10',
@@ -205,12 +205,12 @@ declare_loadout({
     Elements    = {
         [1] =
         {
-            Position  = {0, 0, 0},
-            ShapeName = 'mar-1',
+            Position  = {0, -0.25, 0},
+            ShapeName = 'jf39_mar-1',
         },
     }, -- end of Elements
 })
---]]
+
 declare_loadout({
     category       = CAT_MISSILES,
     CLSID          = 'DIS_LD-10_DUAL_L',
@@ -223,8 +223,8 @@ declare_loadout({
     Weight         = 2 * mass + pylon_dual_mass,
     Elements       = {
         { ShapeName = 'LAU-115C+2_LAU127', IsAdapter = true, },
-        { ShapeName = 'mar-1',            connector_name = 'Point02'},
-        { ShapeName = 'mar-1',            connector_name = 'Point03'},
+        { ShapeName = 'jf39_mar-1',            connector_name = 'Point02'},
+        { ShapeName = 'jf39_mar-1',            connector_name = 'Point03'},
        
     },
     --ejectImpulse     = 140,
@@ -243,11 +243,10 @@ declare_loadout({
     Weight         = 2 * mass + pylon_dual_mass,
     Elements       = {
         { ShapeName = 'LAU-115C+2_LAU127', IsAdapter = true, },
-        { ShapeName = 'mar-1',            connector_name = 'Point02'},
-        { ShapeName = 'mar-1',            connector_name = 'Point03'},
+        { ShapeName = 'jf39_mar-1',            connector_name = 'Point02'},
+        { ShapeName = 'jf39_mar-1',            connector_name = 'Point03'},
        
     },
     --ejectImpulse     = 140,
     JettisonSubmunitionOnly = true,
 })
-

@@ -1,5 +1,5 @@
 
-local agm65k_name = 'AGM-65K'
+local agm65k_name = 'AGM-65K IR Guided Missile'
 local agm65_mass = 297
 local pylon_mass = 1.0
 
@@ -115,7 +115,7 @@ declare_weapon(AGM65_K)
 
 declare_loadout({
     category         = CAT_MISSILES,
-    CLSID            = 'DIS_C-701T',
+    CLSID            = 'DIS_C-701IR',
     attribute        = AGM65_K.wsTypeOfWeapon,
     Count            = 1,
     Cx_pil           = 0.0009765625,
@@ -127,7 +127,7 @@ declare_loadout({
 
 --------------------------------------------------------------
 
-local agm65g_name = 'AGM-65G'
+local agm65g_name = 'AGM-65G TV Guided Missile'
 
 AGM65_G =
 {
@@ -242,7 +242,7 @@ declare_weapon(AGM65_G)
 
 declare_loadout({
     category         = CAT_MISSILES,
-    CLSID            = 'DIS_C-701IR',
+    CLSID            = 'DIS_C-701T',
     attribute        = AGM65_G.wsTypeOfWeapon,
     Count            = 1,
     Cx_pil           = 0.0006265625,

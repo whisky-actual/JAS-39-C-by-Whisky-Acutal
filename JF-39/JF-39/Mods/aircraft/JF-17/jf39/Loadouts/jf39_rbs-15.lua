@@ -1,5 +1,4 @@
-
-local rb15f_name = 'Rb15F Mk4'
+local rb15f_name = 'Rb15F Mk4 Anti-Ship Missile'
 local rb15f_mass = 650
 local pylon_mass  = 1.0
 
@@ -21,7 +20,7 @@ RB15F_MK4 = {
     category       = CAT_MISSILES,
     name           = rb15f_name,
     user_name      = _(rb15f_name),
-    model          = 'rb15f',
+    model          = 'jf39_rbs-15',
     mass           = rb15f_mass,
     wsTypeOfWeapon = {wsType_Weapon,wsType_Missile,wsType_AS_Missile,WSTYPE_PLACEHOLDER},
 
@@ -77,7 +76,7 @@ RB15F_MK4 = {
     shape_table_data = {
         {
             name     = rb15f_name,
-            file     = 'rb15f',
+            file     = 'jf39_rbs-15',
             life     = 0.6,
             fire     = {0, 1},
             username = rb15f_name,
@@ -235,7 +234,7 @@ declare_weapon(RB15F_MK4)
 declare_loadout({
     category     = CAT_MISSILES,
     CLSID        = 'DIS_C-802AK',
-    Picture      = 'Rb15.png',
+    Picture      = 'jf39_RBS-15.png',
     attribute    = RB15F_MK4.wsTypeOfWeapon,
     displayName  = _(rb15f_name),
     Cx_pil       = 0.002,
@@ -245,7 +244,7 @@ declare_loadout({
         [1] =
         {
             Position  = {0, 0, 0},
-            ShapeName = 'rb15f',
+            ShapeName = 'jf39_rbs-15',
             DrawArgs  = {
                 [1] = {1, 1.0},
             }

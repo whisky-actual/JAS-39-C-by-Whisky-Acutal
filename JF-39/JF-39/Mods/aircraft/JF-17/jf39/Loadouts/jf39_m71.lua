@@ -3,8 +3,8 @@ local wsType_HEBOMB = 11033
 local HEBOMB = {
 	category  = CAT_BOMBS,
 	name   = "HEBOMB",
-	model    = "SB71LD",  --/N/ you HAVE to use existing 3D model, either Vig custom or some that exist in DCS
-	user_name   = _("M/71 HE-Bomb"),
+	model    = "jf39_m71ld",  --/N/ you HAVE to use existing 3D model, either Vig custom or some that exist in DCS
+	user_name   = _("M/71 120 kg GP Bomb High-drag"),
 	wsTypeOfWeapon = {wsType_Weapon,wsType_Bomb,wsType_Bomb_A,wsType_HEBOMB},--
 	
 	scheme = "bomb-common",--"bomb-parashute",--"bomb-sab",
@@ -35,11 +35,11 @@ warhead = simple_warhead(125,450),
 	shape_table_data =
 	{
 		{
-			name  = "SB71LD",
-			file  = "SB71LD", --/N/ you HAVE to use existing 3D model, either Vig custom or some that exist in DCS
+			name  = "jf39_m71ld",
+			file  = "jf39_m71ld", --/N/ you HAVE to use existing 3D model, either Vig custom or some that exist in DCS
 			life  = 1,
 			fire  = { 0, 1},
-			username = "SB71LD",
+			username = "jf39_m71ld",
 			index = WSTYPE_PLACEHOLDER,
 		},
 	},
@@ -56,21 +56,21 @@ declare_weapon(HEBOMB)
 declare_loadout(
 {
 	category			= CAT_BOMBS,
-	CLSID				= "{M71BOMB}",
+	CLSID				= "DIS_TYPE200",
 	attribute			= {4,	5,	32,	32},	--attribute			= {4,	5,	9,	wsType_HEBOMB},--{wsType_Weapon,wsType_Bomb,wsType_Bomb_Lighter,wsType_HEBOMB},--WSTYPE_PLACEHOLDER},
 	wsTypeOfWeapon		= HEBOMB.wsTypeOfWeapon,
 	Count				= 4,
 	Cx_pil	=	(HEBOMB.Cx*4)+0.0003,--0.001, -- This needs to be more than the sum of the Cx_pil for the 4 bombs.
 
 
-	Picture				= "SB71LD.png",
-	displayName			= _("4 M/71 HE-Bomb"),--HEBOMB.user_name,
+	Picture				= "jf39_m71ld.png",
+	displayName			= _("M/71 120 kg GP Bomb High-drag"),--HEBOMB.user_name,
 	Weight				=  (HEBOMB.mass * 4) + 125,
 Elements	=	{
 					[1]	=	
 					{
 						Position	=	{0,	0,	0},
-						ShapeName	=	"PylonM71",
+						ShapeName	=	"jf39_pylonm71",
 						IsAdapter 	= true,
 					}, 
 					[2]	=	
@@ -81,7 +81,7 @@ Elements	=	{
 							[2]	=	{2,	1},
 						}, -- end of DrawArgs
 						Position	=	{-0.674,	-0.343,	-0.217},
-						ShapeName	=	"SB71LD",
+						ShapeName	=	"jf39_m71ld",
 						Rotation    = 	{0,0,0},
 					}, 
 					[3]	=	
@@ -92,7 +92,7 @@ Elements	=	{
 							[2]	=	{2,	1},
 						}, -- end of DrawArgs
 						Position	=	{-0.674,	-0.343, 0.217},
-						ShapeName	=	"SB71LD",
+						ShapeName	=	"jf39_m71ld",
 						Rotation    = 	{0,0,0},
 					}, 
 					[4]	=	
@@ -103,7 +103,7 @@ Elements	=	{
 							[2]	=	{2,	1},
 						}, -- end of DrawArgs
 						Position	=	{1.275,	-0.343, -0.217},
-						ShapeName	=	"SB71LD",
+						ShapeName	=	"jf39_m71ld",
 						Rotation    = 	{0,0,0},
 					}, 
 					[5]	=	
@@ -114,7 +114,7 @@ Elements	=	{
 							[2]	=	{2,	1},
 						}, -- end of DrawArgs
 						Position	=	{1.275,	-0.343, 0.217},
-						ShapeName	=	"SB71LD",
+						ShapeName	=	"jf39_m71ld",
 						Rotation    = 	{0,0,0},
 					}, 
 				}, -- end of Elements
