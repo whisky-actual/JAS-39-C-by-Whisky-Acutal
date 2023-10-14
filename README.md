@@ -44,3 +44,23 @@ Breadmaker91, Currenthill, FatSpacePanda, FrM|Shaft, Gripen Viking,  Roughmaster
   - Drop tank 1700 litres
   - Internal tank
   - Internal tank + 1700 litres
+ 
+## Known Bugs
+Find the full list of bugs and enhancements at https://github.com/whisky-actual/Community-JF-39/issues
+
+## Installation
+-Download the latest release at https://github.com/whisky-actual/JAS-39-C-by-Whisky-Acutal/releases select assets 
+- The JF-39_AI.zip contains the plane and weapons, if you don't own the JF-17 you can still use this as an AI replacement for the JF-17
+- The JF-39_Liveries.zip contains extra liveries (this file is not mandatory)
+- JF-39_Player.zip contains the cockpit, systems, and files needed to fly the JAS-39-C. This will replace the JF-17 cockpit.
+
+## Installation Troubleshooting
+If your game fails to launch maybe the mod is conflicting with another one. We suggest removing all of the mods found in C:\Users\username\Saved Games\DCS\Mods\. You can add your mods back one at a time and see which one conflicts.
+
+## Frequently Asked Questions
+- Q: Do you need JF-17 to use the module?
+  - Yes.
+- Q: Do we plan to make it a standalone?
+  - No.
+- Q: Will the JF-39 mod pass IC?
+  - No.
