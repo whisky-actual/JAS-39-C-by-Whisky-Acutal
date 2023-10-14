@@ -1,4 +1,4 @@
-# JAS-39 by Whisky Actual
+# JAS-39C by Whisky Actual using JF-17 avionics
 Welcome to the initial release of the JAS-39-C Mod using the JF-17 avionics! This is a personal project of mine based on the amazing work of the Community JAS-39-C Mod. Until we are able to achieve the standalone, this mod will satisfy all your 4th Gen fighter needs, with an advanced radar, TGP, EWS suit, and one of the best SA pages in the game. I've re-mapped our cockpit to match the JF-17's avionics. Fun fact, about 95% of the functions of the Jeff maps directly to the Gripen functions. Thus, if you already know one of these airframes you will feel at home. I will be making some videos to learn this "new" plane, so stay tuned!
 
 ## Developer
@@ -10,7 +10,14 @@ Whisky Actual
 ## Special Thanks
 Breadmaker91, Currenthill, FatSpacePanda, FrM|Shaft, Gripen Viking,  Roughmaster, Ulvar40, VSN Team (Cdpkobra and Razor+)
 
-## Complete list of weapons 
+## Features
+- Custom clickable cockpit
+- Liveries
+- Exterior model
+- Tweaked avionics
+- Tweaked flight model
+- Custom cockpit sounds
+- Custom Weapons:
 - Air-to-Air WVR
   - IRIS-T
 - Air-to-Air BVR 
@@ -49,7 +56,7 @@ Breadmaker91, Currenthill, FatSpacePanda, FrM|Shaft, Gripen Viking,  Roughmaster
 Find the full list of bugs and enhancements at https://github.com/whisky-actual/Community-JF-39/issues
 
 ## Installation
--Download the latest release at https://github.com/whisky-actual/JAS-39-C-by-Whisky-Acutal/releases select assets 
+Download the latest release at https://github.com/whisky-actual/JAS-39-C-by-Whisky-Acutal/releases --> Select the ZIPED assets: 
 - The JF-39_AI.zip contains the plane and weapons, if you don't own the JF-17 you can still use this as an AI replacement for the JF-17
 - The JF-39_Liveries.zip contains extra liveries (this file is not mandatory)
 - JF-39_Player.zip contains the cockpit, systems, and files needed to fly the JAS-39-C. This will replace the JF-17 cockpit.
