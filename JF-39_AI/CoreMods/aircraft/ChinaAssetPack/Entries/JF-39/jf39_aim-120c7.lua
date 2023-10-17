@@ -164,7 +164,7 @@ declare_loadout({
 
 declare_loadout({
     category       = CAT_AIR_TO_AIR,
-    CLSID          = 'DIS_LD-10_DUAL_R',
+    CLSID          = 'DIS_SD-10_DUAL_R',
     Picture        = 'us_AIM-120C.png',
     wsTypeOfWeapon = JAS_aim120c7_AA.wsTypeOfWeapon,
     attribute      = {4,4,32,WSTYPE_PLACEHOLDER},
