@@ -72,5 +72,9 @@ livery = {
 	{"JAS39_mfd_black", ROUGHNESS_METALLIC 		, "jas39_mfd_black_roughmet", true};
 	{"JAS39_mk10l", DIFFUSE 					, "jas39_mk10l_diff", true};	
 	{"JAS39_mk10l", NORMAL_MAP   				, "jas39_mk10l_nm", true};		
-	{"JAS39_mk10l", ROUGHNESS_METALLIC   		, "jas39_mk10l_diff_roughmet", true};		
+	{"JAS39_mk10l", ROUGHNESS_METALLIC   		, "jas39_mk10l_diff_roughmet", true};	
+-- Borts
+	{"JAS39_Bort3",	DIFFUSE						, "jas39_tactnumbers_empty", true};
+	{"JAS39_Bort2",	DIFFUSE						, "jas39_tactnumbers_empty", true};
+	{"JAS39_Bort1",	DIFFUSE						, "jas39_tactnumbers_empty", true};	
 }

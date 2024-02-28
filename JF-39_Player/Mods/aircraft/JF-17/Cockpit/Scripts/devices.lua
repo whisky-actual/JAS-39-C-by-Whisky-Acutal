@@ -77,6 +77,3 @@ devices["CLOCK"] = counter()
 
 -- test
 devices["EFFECT"] = counter()
-
---JF-39
-devices["JF39"]  = counter()
