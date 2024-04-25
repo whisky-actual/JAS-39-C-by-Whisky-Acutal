@@ -17,7 +17,7 @@ local missile_type =
 		['GB6_1']  = {picture = _('AGM154.png')	  , wstype = 'weapons.missiles.AGM_154A'	  , display_name = _('AGM-154A - JSOW CEB (CBU-type)'), cx_pil = 0.0018, mass = 485},
 		['GB6_2']  = {picture = _('bk90.png')	  , wstype = 'weapons.missiles.BK_90'	  , display_name = _('bk90'), shape = _('MUS_JAS_1'), cx_pil = 0.0018, mass = 485},
 		['GB6_HE_1']  = {picture = _('AGM154.png') , wstype = 'weapons.missiles.AGM_154B'	  , display_name = _('AGM-154B - JSOW Anti-Armour'), cx_pil = 0.0018, mass = 485},
-		--['GB6_TSP_1']  = {picture = _('AGM154.png'), wstype = 'weapons.missiles.AGM_154C'	  , display_name = _('AGM-154C - JSOW Unitary BROACHZZZ'), shape = _('RB15'), cx_pil = 0.0018, mass = 485},
+		--['GB6_TSP_1']  = {picture = _('AGM154.png'), wstype = 'weapons.missiles.AGM_154C'	  , display_name = _('AGM-154C - JSOW Unitary BROACH'), shape = _('RB15'), cx_pil = 0.0018, mass = 485},
 	
 		['C701_IR_1']  = {picture = _('agm65.png')	  , wstype = 'weapons.missiles.AGM_65F'	  , display_name = _('AGM-65G IR Guided Missile'), cx_pil = 0.0009765625, mass = 301},
 		['C701_T_1']  = {picture = _('agm65.png')	  , wstype = 'weapons.missiles.AGM_65L'	  , display_name = _('AGM-65K TV Guided Missile'), cx_pil = 0.0009765625, mass = 292},
@@ -300,6 +300,11 @@ local function JF39_SD_10(variant)
 	end
 
 JF39_SD_10(missile['BVRAAM'])
+
+
+--F-15E_AAQ-33_XR_ATP-SE
+--AN_ASQ_228
+--aaq-28 litening
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.0.1                       --
+--                    File by whisky.actual@gmail.com - v.1.1.1                       --
 ----------------------------------------------------------------------------------------

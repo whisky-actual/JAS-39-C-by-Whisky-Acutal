@@ -501,7 +501,7 @@ JF_17 = {
 --				=== OTHERS ===   
                 { CLSID = "DIS_WMD7", arg_value = 0.5 },
                 { CLSID = "DIS_SPJ_POD", arg_value = 0.55 },
-                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.7, forbidden = {{station = 2, loadout = {"DIS_AKG_DLPOD"}},{station = 4, loadout = {"DIS_AKG_DLPOD"}}} },
+                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.55},
 
                 { CLSID = 'DIS_SMOKE_GENERATOR_R', arg_value = 0.3},
                 { CLSID = 'DIS_SMOKE_GENERATOR_G', arg_value = 0.3},
@@ -594,7 +594,7 @@ JF_17 = {
 --				=== OTHERS ===   
                 { CLSID = "DIS_WMD7", arg_value = 0.5 },
                 { CLSID = "DIS_SPJ_POD", arg_value = 0.55 },
-                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.7, forbidden = {{station = 2, loadout = {"DIS_AKG_DLPOD"}},{station = 4, loadout = {"DIS_AKG_DLPOD"}}} },
+                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.55},
 
                 { CLSID = 'DIS_SMOKE_GENERATOR_R', arg_value = 0.3},
                 { CLSID = 'DIS_SMOKE_GENERATOR_G', arg_value = 0.3},
@@ -602,6 +602,10 @@ JF_17 = {
                 { CLSID = 'DIS_SMOKE_GENERATOR_W', arg_value = 0.3},
                 { CLSID = 'DIS_SMOKE_GENERATOR_Y', arg_value = 0.3},
                 { CLSID = 'DIS_SMOKE_GENERATOR_O', arg_value = 0.3},
+                
+--              === FUEL TANKS ===
+                { CLSID = "DIS_TANK800_EMPTY", arg_value = 0.1 }, 
+                { CLSID = "DIS_TANK1100", arg_value = 0.1,},
 
 --				=== Remove pylon ===		
 				{ CLSID = "<CLEAN>", arg_value = 1},
@@ -662,7 +666,8 @@ JF_17 = {
 				
 				{ CLSID = "DIS_TYPE200", arg_value = 0.5 }, -- M71
 				{ CLSID = "DIS_TYPE200_DUAL_L", arg_value = 0.3 },  -- M71
---              === Drop tanks ===
+
+--              === FUEL TANKS ===
                 { CLSID = "DIS_TANK800", arg_value = 0.1 }, -- External drop tank 1100 litre
                 { CLSID = "DIS_TANK1100", arg_value = 0.1, --[[required = {{station = 3,loadout = {"DIS_TANK1100"}}}]] },
                 { CLSID = "DIS_TANK800_EMPTY", arg_value = 0.1, },
@@ -674,7 +679,7 @@ JF_17 = {
 --              ==== PODS ===
                 { CLSID = "DIS_WMD7", arg_value = 0.5 },
                 { CLSID = "DIS_SPJ_POD", arg_value = 0.55 },
-                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.7, forbidden = {{station = 2, loadout = {"DIS_AKG_DLPOD"}},{station = 4, loadout = {"DIS_AKG_DLPOD"}}} },
+                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.55},
 
 --				=== Remove pylon ===		
 				{ CLSID = "<CLEAN>", arg_value = 1},
@@ -762,7 +767,7 @@ JF_17 = {
 --				=== OTHERS ===   
                 { CLSID = "DIS_WMD7", arg_value = 0.5 },
                 { CLSID = "DIS_SPJ_POD", arg_value = 0.55 },
-                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.7, forbidden = {{station = 2, loadout = {"DIS_AKG_DLPOD"}},{station = 4, loadout = {"DIS_AKG_DLPOD"}}} },
+                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.55},
 
                 { CLSID = 'DIS_SMOKE_GENERATOR_R', arg_value = 0.3},
                 { CLSID = 'DIS_SMOKE_GENERATOR_G', arg_value = 0.3},
@@ -770,6 +775,10 @@ JF_17 = {
                 { CLSID = 'DIS_SMOKE_GENERATOR_W', arg_value = 0.3},
                 { CLSID = 'DIS_SMOKE_GENERATOR_Y', arg_value = 0.3},
                 { CLSID = 'DIS_SMOKE_GENERATOR_O', arg_value = 0.3},
+
+--              === FUEL TANKS ===
+                { CLSID = "DIS_TANK800_EMPTY", arg_value = 0.1 }, 
+                { CLSID = "DIS_TANK1100", arg_value = 0.1,},
 
 --				=== Remove pylon ===		
 				{ CLSID = "<CLEAN>", arg_value = 1},
@@ -856,7 +865,7 @@ JF_17 = {
 --				=== OTHERS ===   
                 { CLSID = "DIS_WMD7", arg_value = 0.5 },
                 { CLSID = "DIS_SPJ_POD", arg_value = 0.55 },
-                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.7, forbidden = {{station = 2, loadout = {"DIS_AKG_DLPOD"}},{station = 4, loadout = {"DIS_AKG_DLPOD"}}} },
+                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.55},
 
                 { CLSID = 'DIS_SMOKE_GENERATOR_R', arg_value = 0.3},
                 { CLSID = 'DIS_SMOKE_GENERATOR_G', arg_value = 0.3},
@@ -2222,5 +2231,5 @@ JF_17 = {
 }
 add_aircraft(JF_17)
 ----------------------------------------------------------------------------------------
---                            File by whisky.actual@gmail.com                         --
+--                    File by whisky.actual@gmail.com - v.1.1.1                       --
 ----------------------------------------------------------------------------------------

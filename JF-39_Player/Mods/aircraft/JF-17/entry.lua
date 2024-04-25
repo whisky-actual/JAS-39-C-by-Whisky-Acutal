@@ -21,7 +21,7 @@ declare_plugin(self_ID, {
         [ac_name] = current_mod_path .. '/Input/JF-17',
     },
     Skins = {
-        { name = ac_name, dir = '/Skins/1' },
+        { name = ac_name, dir = '/Skins/2' },
     },
     Missions = {
         { name = _(ac_name), dir = 'Missions', CLSID = '{JF-17 missions}', },
@@ -229,3 +229,6 @@ make_flyable(ac_name, current_mod_path .. '/Cockpit/Scripts/', jf39_FM, current_
 --dofile(current_mod_path..'/jf39/Config.lua')
 -------------------------------------------------------------------------------------
 plugin_done()
+----------------------------------------------------------------------------------------
+--                    File by whisky.actual@gmail.com - v.1.1.1                       --
+----------------------------------------------------------------------------------------
