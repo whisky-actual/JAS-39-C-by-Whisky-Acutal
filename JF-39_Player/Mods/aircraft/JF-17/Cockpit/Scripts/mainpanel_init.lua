@@ -104,4 +104,6 @@ livery = find_custom_livery("JF-17","default")
 
 shape_name = get_livery_setting_from_plugin("JF-17", "CPTModel", "JF-17-CPT")
 
+----------------------------------------------------------------------------------------
 need_to_be_closed = true -- close lua state after initialization
+

@@ -60,16 +60,20 @@ materials["HUD_IND_BASE2"]       = {255, 255,   0,   4}
 
 -- MFCDs
 materials["MFCD_IND_DEF"]        = {  0, 255,   0, 240}
+--materials["MFCD_IND_DEF"]        = {  255,    0, 255 }--TEST
 materials["MFCD_IND_RED"]        = {255,   0,   0, 240}
 materials["MFCD_IND_GREEN"]      = {  0, 255,   0, 150}
 materials["MFCD_IND_DGREEN"]     = {  3,  67,  40, 240}
 materials["MFCD_IND_BLUE"]       = {  0,   0, 255, 240}
 materials["MFCD_IND_BLUE_L"]     = { 70, 130, 180, 255}
 materials["MFCD_IND_BLACK"]      = {  0,   0,   0, 240}
-materials["MFCD_IND_BLACK1"]     = {  0,   0,   0, 190}
-materials["MFCD_IND_BLACK2"]     = {  0,   0,   0, 235}
-materials["MFCD_IND_DARK"]       = {  0,   0,   0, 128}
-materials["MFCD_IND_WHITE"]      = {255, 255, 255, 255}
+materials["MFCD_IND_BLACK1"]     = {  0,   0,   0, 200}--DMAP_FILTER1
+materials["MFCD_IND_BLACK2"]     = {  0,   0,   0, 235}--DMAP_FILTER2
+--materials["MFCD_IND_DARK"]     = {  0,   0,   0, 128}--Base color for MFCDs
+materials["MFCD_IND_DARK"]       = {210, 200, 120, 200}--Base color for MFCDs (TAN) --> See MFCD_init_COMMOND																		  
+materials["MFCD_IND_WHITE"]      = {255, 255, 255, 255}-- Not used
+																  
+																	
 materials["MFCD_IND_WHITE_Y"]    = {255, 255, 240, 240}
 materials["MFCD_IND_PINK"]       = {160,  32, 240, 240}
 materials["MFCD_IND_YELLOW"]     = {255, 255,   0, 240}
@@ -77,6 +81,8 @@ materials["MFCD_IND_SKY"]        = { 47, 135, 255, 255}
 materials["MFCD_IND_GRND"]       = { 49,   5,   1, 255}
 materials["MFCD_IND_BOXBASE"]    = {255, 255, 255,   0}
 materials["MFCD_IND_W_BASE"]     = {255, 255, 255, 255}
+materials["MFCD_IND_PURPLE"]     = {160,  32, 240, 255}
+materials["MFCD_IND_CYAN"]       = {  0, 255, 255, 255}
 
 -- UFCP
 materials["UFCP_IND_DEF"]        = {0, 255,   0, 150}--Green UFCP
@@ -174,14 +180,14 @@ textures["mfcd_line_dashed_w"]   = {IND_TEX_PATH .. "Indication_Line_Dashed.dds"
 textures["mfcd_line_dashed_y"]   = {IND_TEX_PATH .. "Indication_Line_Dashed.dds", materials["MFCD_IND_YELLOW"]}
 
 
-textures["mfcd_mesh_def"]        = {nil, materials["MFCD_IND_DEF"]}
+textures["mfcd_mesh_def"]        = {nil, materials["MFCD_IND_DEF"]}--Base HUD
 textures["mfcd_mesh_r"]          = {nil, materials["MFCD_IND_RED"]}
 textures["mfcd_mesh_g"]          = {nil, materials["MFCD_IND_GREEN"]}
 textures["mfcd_mesh_b"]          = {nil, materials["MFCD_IND_BLUE"]}
 textures["mfcd_mesh_bk"]         = {nil, materials["MFCD_IND_BLACK"]}
 textures["mfcd_mesh_bk1"]        = {nil, materials["MFCD_IND_BLACK1"]}
 textures["mfcd_mesh_bk2"]        = {nil, materials["MFCD_IND_BLACK2"]}
-textures["mfcd_mesh_d"]          = {nil, materials["MFCD_IND_DARK"]}
+textures["mfcd_mesh_d"]          = {nil, materials["MFCD_IND_DARK"]}--Base color for MFCDs
 textures["mfcd_mesh_w"]          = {nil, materials["MFCD_IND_WHITE"]}
 textures["mfcd_mesh_wy"]         = {nil, materials["MFCD_IND_WHITE_Y"]} -- 略带淡黄色
 textures["mfcd_mesh_p"]          = {nil, materials["MFCD_IND_PINK"]}
@@ -190,7 +196,8 @@ textures["mfcd_mesh_sky"]        = {nil, materials["MFCD_IND_SKY"]}
 textures["mfcd_mesh_gnd"]        = {nil, materials["MFCD_IND_GRND"]}
 textures["mfcd_mesh_boxbase"]    = {nil, materials["MFCD_IND_BOXBASE"]}
 textures["mfcd_mesh_whitebase"]  = {nil, materials["MFCD_IND_W_BASE"]}
-
+textures["mfcd_mesh_purple"]     = {nil, materials["MFCD_IND_PURPLE"]}
+textures["mfcd_mesh_cyan"]       = {nil, materials["MFCD_IND_CYAN"]}
 
 
 ------- FONTS ----------
@@ -253,3 +260,6 @@ fonts["radio_font_cursor"]  = {fontdescription["font_RADIO"], 10, materials["RAD
 
 -- Clock
 fonts["clock_font_def"]     = {fontdescription["font_CLOCK"], 10, materials["CLOCK_IND_DEF"]}
+----------------------------------------------------------------------------------------
+--                    File by whisky.actual@gmail.com - v.1.1.2                       --
+----------------------------------------------------------------------------------------

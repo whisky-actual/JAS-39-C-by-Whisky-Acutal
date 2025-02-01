@@ -71,7 +71,6 @@ devices["HUD"]  = counter()
 devices["UFCP"] = counter()
 devices["MFCD"] = counter()
 devices["HMD"]  = counter()
-devices["HMDNew"]  = counter()
 
 devices["CLOCK"] = counter()
 
@@ -80,10 +79,7 @@ devices["EFFECT"] = counter()
 ----------------------------------------------------------------------------------------
 -- JF-39
 ----------------------------------------------------------------------------------------
---devices["HUD2"] = counter()
-devices["HMD"]	= counter()
---devices["ACP"]  = counter()
---devices["LCP"]  = counter()
+devices["JF39"]   = counter()
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.1.1                       --
+--                    File by whisky.actual@gmail.com - v.1.1.2                       --
 ----------------------------------------------------------------------------------------

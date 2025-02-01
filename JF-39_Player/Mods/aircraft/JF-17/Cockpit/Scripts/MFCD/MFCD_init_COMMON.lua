@@ -154,11 +154,11 @@ mat_tbl = {
     "mfcd_tex_ind5_y",
     "mfcd_tex_ind5_r",
 
-    "mfcd_mesh_def",
+    "mfcd_mesh_def",--Base color for MFCDs?
     "mfcd_mesh_r",
     "mfcd_mesh_g",
     "mfcd_mesh_b",
-    "mfcd_mesh_d",
+    "mfcd_mesh_d",--Base color for MFCDs?
     "mfcd_mesh_w",
     "mfcd_mesh_wy",
     "mfcd_mesh_p",
@@ -188,60 +188,128 @@ opacity_sensitive_materials    = mat_tbl
 color_sensitive_materials      = {
     "mfcd_tex_ind1",
     "mfcd_tex_ind1_g",
+    "mfcd_tex_ind1_w",
+    "mfcd_tex_ind1_wy",
+    "mfcd_tex_ind1_y",
+    "mfcd_tex_ind1_r",
 
     "mfcd_tex_ind2",
     "mfcd_tex_ind2_g",
+    "mfcd_tex_ind2_w",
+    "mfcd_tex_ind2_wy",
+    "mfcd_tex_ind2_y",
+    "mfcd_tex_ind2_r",
 
     "mfcd_tex_ind3",
     "mfcd_tex_ind3_g",
+    "mfcd_tex_ind3_w",
+    "mfcd_tex_ind3_wy",
+    "mfcd_tex_ind3_y",
+    "mfcd_tex_ind3_r",
+    "mfcd_tex_ind3_bl",
 
     "mfcd_tex_ind4",
     "mfcd_tex_ind4_g",
+    "mfcd_tex_ind4_w",
+    "mfcd_tex_ind4_wy",
+    "mfcd_tex_ind4_y",
+    "mfcd_tex_ind4_r",
 
     "mfcd_tex_ind5",
     "mfcd_tex_ind5_g",
+    "mfcd_tex_ind5_w",
+    "mfcd_tex_ind5_wy",
+    "mfcd_tex_ind5_y",
+    "mfcd_tex_ind5_r",
 
-    "mfcd_mesh_def",
+    "mfcd_mesh_def",--Base color for MFCDs?
+    "mfcd_mesh_r",
     "mfcd_mesh_g",
+    "mfcd_mesh_b",
+    --"mfcd_mesh_d",--Base color for MFCDs?
+    "mfcd_mesh_w",
+    "mfcd_mesh_wy",
+    "mfcd_mesh_p",
+    "mfcd_mesh_y",
+    "mfcd_mesh_sky",
+    "mfcd_mesh_gnd",
+    "mfcd_mesh_boxbase",
+    "mfcd_mesh_whitebase",
 
     "mfcd_font_def",
     "mfcd_font_g",
-    "mfcd_font_y",
     "mfcd_font_dg",
+    "mfcd_font_b",
+    "mfcd_font_w",
+    "mfcd_font_wy",
+    "mfcd_font_d",
+    "mfcd_font_r",
+    "mfcd_font_y",
 
     "mfcd_wpn_font_def",
     "mfcd_wpn_font_g",
-    --"mfcd_wpn_svg_font_def",
 }
 
 is_colored         = true
+--[[
+--Day White | Night Black
+color_green_day     = {0.5, 0.5, 0.5}--Black {0, 0, 0}
+color_green_night   = {0.0, 0.0, 0.0}--White {1, 1, 1}
 
-color_green_day    = {1, 1, 1}--Black {0, 0, 0}
-color_green_night  = {0.5, 0.5, 0.5}--White {1, 1, 1}
+color_blue_day      = {0, 1.0, 0}
+color_blue_night    = {0, 1.0, 0}
 
-color_blue_day     = {0, 1.0, 0}
-color_blue_night   = {0, 1.0, 0}
+color_yellow_day    = {1.0, 1.0, 0}
+color_yellow_night  = {0.5, 0.5, 0}
 
-color_yellow_day   = {1.0, 1.0, 0}
-color_yellow_night = {0.5, 0.5, 0}
+color_orange_day    = {0.49, 0.19, 0}
+color_orange_night  = {0.98, 0.38, 0}
 
-color_orange_day   = {0.98, 0.38, 0}
-color_orange_night = {0.49, 0.19, 0}
+color_red_day       = {0.5, 0, 0}
+color_red_night     = {1.0, 0, 0}
 
-color_red_day      = {1.0, 0, 0}
-color_red_night    = {0.5, 0, 0}
+color_red2_day      = {0.5, 0, 0}
+color_red2_night    = {1.0, 0, 0}
 
-color_red2_day     = {1.0, 0, 0}
-color_red2_night   = {0.5, 0, 0}
+color_white_day     = {0.25, 0.25, 0.25}--White {1, 1, 1}
+color_white_night   = {0, 0, 0}--Black {0, 0, 0}
 
-color_white_day    = {1.0, 1.0, 1.0}
-color_white_night  = {0.5, 0.5, 0.5}
+color_sky_day       = {23.5/255, 67.5/255, 0.5}
+color_sky_night     = {47/255, 135/255, 1.0}
 
-color_sky_day      = {47/255, 135/255, 1.0}
-color_sky_night    = {23.5/255, 67.5/255, 0.5}
+color_gnd_day       = {24.5/155, 2.5/155, 0.5/155}
+color_gnd_night     = {49/155, 5/155, 1/155}
 
-color_gnd_day      = {49/255, 5/255, 1/255}
-color_gnd_night    = {24.5/255, 2.5/255, 0.5/255}
+]]
+--Day Black | Night White
+
+color_green_night   = {1.0, 1.0, 1.0}--White {1, 1, 1}
+color_green_day     = {0.0, 0.0, 0.0}--Black {0, 0, 0}
+
+color_blue_night    = {0.0, 0.5, 0.0}
+color_blue_day      = {0.0, 1.0, 0.0}
+
+color_yellow_night  = {0.5, 0.5, 0.0}
+color_yellow_day    = {1.0, 1.0, 0.0}
+
+color_orange_night  = {0.49, 0.19, 0.0}
+color_orange_day    = {0.98, 0.38, 0.0}
+
+color_red_night     = {0.5, 0.0, 0.0}
+color_red_day       = {1.0, 0.0, 0.0}
+
+color_red2_night    = {0.5, 0.0, 0.0}
+color_red2_day      = {1.0, 0.0, 0.0}
+
+color_white_night   = {0.25, 0.25, 0.25}--White {1, 1, 1}
+color_white_day     = {0.00, 0.00, 0.00}--Black {0, 0, 0}
+
+color_sky_night     = {045/255, 091/255, 116/255}--Gripen dark blue
+color_sky_day       = {057/255, 131/255, 160/255}--Gripen light blue
+
+color_gnd_night     = {000/255, 000/255, 000/255}--Gripen dark brown
+color_gnd_day       = {147/255, 119/255, 095/255}--Gripen light brown
+
 
 -- HUD only view diplacement
 function MFCD_set_screenspace_displacement(aspect, left_center_right, zoom_value)
@@ -285,3 +353,6 @@ function MFCD_set_screenspace_displacement(aspect, left_center_right, zoom_value
     dedicated_viewport        = {default_x, default_y, default_width, default_height}
     dedicated_viewport_arcade = {default_x,         0, default_width, default_height}
 end
+----------------------------------------------------------------------------------------
+--                    File by whisky.actual@gmail.com - v.1.1.2                       --
+----------------------------------------------------------------------------------------

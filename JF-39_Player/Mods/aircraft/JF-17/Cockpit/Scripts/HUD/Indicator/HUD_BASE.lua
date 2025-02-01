@@ -86,3 +86,6 @@ fake_double_eye_view.isvisible       = true
 fake_double_eye_view.additive_alpha  = true
 fake_double_eye_view.use_mipfilter   = true
 Add(fake_double_eye_view)
+----------------------------------------------------------------------------------------
+--                    File by whisky.actual@gmail.com - v.1.1.2                       --
+----------------------------------------------------------------------------------------

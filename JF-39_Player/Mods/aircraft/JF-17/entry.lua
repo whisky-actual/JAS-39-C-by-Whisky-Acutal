@@ -11,7 +11,7 @@ declare_plugin(self_ID, {
     displayName   = _(ac_name),
     shortName     = ac_name,
     fileMenuName  = _(ac_name),
-    version       = '1.0.0',
+    version       = '1.1.2',
     state         = 'installed',
     developerName = _('Whisky Actual: https://github.com/whisky-actual/Community-JF-39'),
     info          = _('THIS MATERIAL IS NOT MADE OR SUPPORTED BY EAGLE DYNAMICS SA OR DEKA IRONWORKS SIMULATION'),
@@ -49,7 +49,7 @@ mount_vfs_texture_path (current_mod_path .. '/Cockpit/Shapes/JF-39_Textures')
 mount_vfs_texture_path (current_mod_path .. '/Cockpit/Textures/IndicationTextures')
 mount_vfs_texture_path (current_mod_path .. '/Cockpit/Textures/JF-39_IndicationTextures')
 mount_vfs_liveries_path(current_mod_path .. '/Liveries')
-mount_vfs_texture_path (current_mod_path .. '/Skins/1/ME')
+mount_vfs_texture_path (current_mod_path .. '/Skins/2/ME')
 -------------------------------------------------------------------------------------
 --JF-39 FM
 -------------------------------------------------------------------------------------
@@ -83,7 +83,7 @@ local mainGear = {
     wheel_brake_moment_max			= 35000.0,
     wheel_kz_factor					= 0.52,
     noise_k							= 0.0,
-    wheel_damage_speedX				= 270, --115,
+    wheel_damage_speedX				= 500, --115,
     wheel_damage_delta_speedX		= 22.5, --11.5,
 }
 
@@ -130,7 +130,7 @@ jf39_FM =
         wheel_damage_force_factor					= 450.0, --450.0,
         wheel_kz_factor								= 0.3,
         noise_k										= 0,
-        wheel_damage_speedX							= 270.0, --115,
+        wheel_damage_speedX							= 500, --115,
         wheel_damage_delta_speedX					= 22.5, --11.5,
 
         arg_post			= 0,
@@ -227,8 +227,6 @@ make_flyable(ac_name, current_mod_path .. '/Cockpit/Scripts/', jf39_FM, current_
 --dofile(current_mod_path..'/jf39/Payload.lua')
 --is_entry = true
 --dofile(current_mod_path..'/jf39/Config.lua')
--------------------------------------------------------------------------------------
-plugin_done()
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.1.1                       --
+--                    File by whisky.actual@gmail.com - v.1.1.2                       --
 ----------------------------------------------------------------------------------------

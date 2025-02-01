@@ -6,12 +6,11 @@ local function add_aircraft_prop()
         { id = "LaserCode100", control = 'spinbox',  label = _('Laser code for ordnance, 1x11'), defValue = 6, min = 5, max = 7, dimension = ' ', playerOnly = true},
         { id = "LaserCode10",  control = 'spinbox',  label = _('Laser code for ordnance, 11x1'), defValue = 8, min = 1, max = 8, dimension = ' ', playerOnly = true},
         { id = "LaserCode1",   control = 'spinbox',  label = _('Laser code for ordnance, 111x'), defValue = 8, min = 1, max = 8, dimension = ' ', playerOnly = true},
-        { id = "AARProbe",     control = 'checkbox', label = _('Remove AAR Probe'),              defValue = false, weight = 20, arg = 901, playerOnly = true},
+        { id = "AARProbe",     control = 'checkbox', label = _('Remove AAR Probe'),              defValue = false, weight = 0, arg = 901, playerOnly = true},
     }
 
     return acprop
 end
-
 
 local mech_anime = make_default_mech_animation()
 mech_anime["ServiceHatches"] = {
@@ -175,8 +174,8 @@ JF_17 = {
     mechanimations = mech_anime,
 
     -------------------------
-    M_empty						=	6800,	-- kg  with pilot and nose load, JAS 39C
-	M_nominal					=	9430,	-- kg (Empty Plus Full Internal F)
+    M_empty						=	5700,	-- kg  with pilot and nose load, JAS 39C = 6800 (6586.0-886.35))
+	M_nominal					=	8049,	-- kg (Empty Plus Full Internal F) 9430 (8936.0-886.35)
     M_max						=	14000,	-- kg (Maximum Take Off Weight)
 	M_fuel_max					=	2325,	-- kg (Internal Fuel Only) --> Can't go over 2325kg /5125lbs using new "internal tank"
 	H_max						=	15240,	-- m  (Maximum Operational Ceiling)
@@ -342,9 +341,9 @@ JF_17 = {
     
 	passivCounterm 		= {
 	CMDS_Edit 			= true,
-	SingleChargeTotal 	= 756,
-	chaff 				= {default = 320, increment = 40, chargeSz = 1},
-	flare 				= {default = 320, increment = 15, chargeSz = 1}
+	SingleChargeTotal 	= 220,
+	chaff 				= {default = 160, increment = 20, chargeSz = 1},
+	flare 				= {default = 080, increment = 10, chargeSz = 1}
 	},
 
     chaff_flare_dispenser = 
@@ -443,7 +442,7 @@ JF_17 = {
 				{ CLSID = "DIS_C-701IR", attach_point_position = {0.37, -0.3, 0.0}, arg_value = 0.1}, -- AGM-65G IR
                 { CLSID = "DIS_C-802AK", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1}, -- Rb15F Mk4 Antiship missiles
                 { CLSID = 'DIS_CM-802AKG', attach_point_position ={ -0.0, 0.01, 0.0}, arg_value = 0.9, Type = 1},	--KEPD 350 
---              { CLSID = "DIS_LD-10", attach_point_position ={ 0.0, 0.0, 0.0}, arg_value = 0.9, Type = 1}, -- SPEAR EW Anti radiation missiles
+                { CLSID = "DIS_LD-10", attach_point_position ={ 0.0, 0.0, 0.0}, arg_value = 0.9, Type = 1}, -- SPEAR EW Anti radiation missiles
                 { CLSID = "DIS_LD-10_DUAL_R", attach_point_position ={-0.30, -0.125, 0.0}, arg_value = 0.9, Type = 1}, -- MAR-1 Anti radiation missiles x1
                 { CLSID = "DIS_LD-10_DUAL_L", attach_point_position ={0.0, -0.12, 0.0}, arg_value = 0.2}, -- MAR-1 Anti radiation missiles x2	
         
@@ -501,7 +500,7 @@ JF_17 = {
 --				=== OTHERS ===   
                 { CLSID = "DIS_WMD7", arg_value = 0.5 },
                 { CLSID = "DIS_SPJ_POD", arg_value = 0.55 },
-                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.55},
+                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.7, forbidden = {{station = 2, loadout = {"DIS_AKG_DLPOD"}},{station = 4, loadout = {"DIS_AKG_DLPOD"}}} },
 
                 { CLSID = 'DIS_SMOKE_GENERATOR_R', arg_value = 0.3},
                 { CLSID = 'DIS_SMOKE_GENERATOR_G', arg_value = 0.3},
@@ -537,7 +536,7 @@ JF_17 = {
 				{ CLSID = "DIS_C-701IR", attach_point_position = {0.37, -0.3, 0.0}, arg_value = 0.1}, -- AGM-65G IR
                 { CLSID = "DIS_C-802AK", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1}, -- Rb15F Mk4 Antiship missiles
                 { CLSID = 'DIS_CM-802AKG', attach_point_position ={ -0.0, 0.01, 0.0}, arg_value = 0.9, Type = 1},	--KEPD 350 
---              { CLSID = "DIS_LD-10", attach_point_position ={ 0.0, 0.0, 0.0}, arg_value = 0.9, Type = 1}, -- SPEAR EW Anti radiation missiles
+                { CLSID = "DIS_LD-10", attach_point_position ={ 0.0, 0.0, 0.0}, arg_value = 0.9, Type = 1}, -- SPEAR EW Anti radiation missiles
                 { CLSID = "DIS_LD-10_DUAL_R", attach_point_position ={-0.30, -0.125, 0.0}, arg_value = 0.9, Type = 1}, -- MAR-1 Anti radiation missiles x1
                 { CLSID = "DIS_LD-10_DUAL_L", attach_point_position ={0.0, -0.12, 0.0}, arg_value = 0.2}, -- MAR-1 Anti radiation missiles x2	
 					
@@ -594,7 +593,7 @@ JF_17 = {
 --				=== OTHERS ===   
                 { CLSID = "DIS_WMD7", arg_value = 0.5 },
                 { CLSID = "DIS_SPJ_POD", arg_value = 0.55 },
-                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.55},
+                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.7, forbidden = {{station = 2, loadout = {"DIS_AKG_DLPOD"}},{station = 4, loadout = {"DIS_AKG_DLPOD"}}} },
 
                 { CLSID = 'DIS_SMOKE_GENERATOR_R', arg_value = 0.3},
                 { CLSID = 'DIS_SMOKE_GENERATOR_G', arg_value = 0.3},
@@ -602,10 +601,6 @@ JF_17 = {
                 { CLSID = 'DIS_SMOKE_GENERATOR_W', arg_value = 0.3},
                 { CLSID = 'DIS_SMOKE_GENERATOR_Y', arg_value = 0.3},
                 { CLSID = 'DIS_SMOKE_GENERATOR_O', arg_value = 0.3},
-                
---              === FUEL TANKS ===
-                { CLSID = "DIS_TANK800_EMPTY", arg_value = 0.1 }, 
-                { CLSID = "DIS_TANK1100", arg_value = 0.1,},
 
 --				=== Remove pylon ===		
 				{ CLSID = "<CLEAN>", arg_value = 1},
@@ -666,8 +661,7 @@ JF_17 = {
 				
 				{ CLSID = "DIS_TYPE200", arg_value = 0.5 }, -- M71
 				{ CLSID = "DIS_TYPE200_DUAL_L", arg_value = 0.3 },  -- M71
-
---              === FUEL TANKS ===
+--              === Drop tanks ===
                 { CLSID = "DIS_TANK800", arg_value = 0.1 }, -- External drop tank 1100 litre
                 { CLSID = "DIS_TANK1100", arg_value = 0.1, --[[required = {{station = 3,loadout = {"DIS_TANK1100"}}}]] },
                 { CLSID = "DIS_TANK800_EMPTY", arg_value = 0.1, },
@@ -679,7 +673,7 @@ JF_17 = {
 --              ==== PODS ===
                 { CLSID = "DIS_WMD7", arg_value = 0.5 },
                 { CLSID = "DIS_SPJ_POD", arg_value = 0.55 },
-                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.55},
+                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.7, forbidden = {{station = 2, loadout = {"DIS_AKG_DLPOD"}},{station = 4, loadout = {"DIS_AKG_DLPOD"}}} },
 
 --				=== Remove pylon ===		
 				{ CLSID = "<CLEAN>", arg_value = 1},
@@ -710,7 +704,7 @@ JF_17 = {
 				{ CLSID = "DIS_C-701IR", attach_point_position = {0.37, -0.3, 0.0}, arg_value = 0.1}, -- AGM-65G IR
                 { CLSID = "DIS_C-802AK", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1}, -- Rb15F Mk4 Antiship missiles
                 { CLSID = 'DIS_CM-802AKG', attach_point_position ={ -0.0, 0.01, 0.0}, arg_value = 0.9, Type = 1},	--KEPD 350 
---              { CLSID = "DIS_LD-10", attach_point_position ={ 0.0, 0.0, 0.0}, arg_value = 0.9, Type = 1}, -- SPEAR EW Anti radiation missiles
+                { CLSID = "DIS_LD-10", attach_point_position ={ 0.0, 0.0, 0.0}, arg_value = 0.9, Type = 1}, -- SPEAR EW Anti radiation missiles
                 { CLSID = "DIS_LD-10_DUAL_R", attach_point_position ={-0.30, -0.125, 0.0}, arg_value = 0.9, Type = 1}, -- MAR-1 Anti radiation missiles x1
                 { CLSID = "DIS_LD-10_DUAL_L", attach_point_position ={0.0, -0.12, 0.0}, arg_value = 0.2}, -- MAR-1 Anti radiation missiles x2	
 					
@@ -767,7 +761,7 @@ JF_17 = {
 --				=== OTHERS ===   
                 { CLSID = "DIS_WMD7", arg_value = 0.5 },
                 { CLSID = "DIS_SPJ_POD", arg_value = 0.55 },
-                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.55},
+                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.7, forbidden = {{station = 2, loadout = {"DIS_AKG_DLPOD"}},{station = 4, loadout = {"DIS_AKG_DLPOD"}}} },
 
                 { CLSID = 'DIS_SMOKE_GENERATOR_R', arg_value = 0.3},
                 { CLSID = 'DIS_SMOKE_GENERATOR_G', arg_value = 0.3},
@@ -775,10 +769,6 @@ JF_17 = {
                 { CLSID = 'DIS_SMOKE_GENERATOR_W', arg_value = 0.3},
                 { CLSID = 'DIS_SMOKE_GENERATOR_Y', arg_value = 0.3},
                 { CLSID = 'DIS_SMOKE_GENERATOR_O', arg_value = 0.3},
-
---              === FUEL TANKS ===
-                { CLSID = "DIS_TANK800_EMPTY", arg_value = 0.1 }, 
-                { CLSID = "DIS_TANK1100", arg_value = 0.1,},
 
 --				=== Remove pylon ===		
 				{ CLSID = "<CLEAN>", arg_value = 1},
@@ -808,7 +798,7 @@ JF_17 = {
 				{ CLSID = "DIS_C-701IR", attach_point_position = {0.37, -0.3, 0.0}, arg_value = 0.1}, -- AGM-65G IR
                 { CLSID = "DIS_C-802AK", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1}, -- Rb15F Mk4 Antiship missiles
                 { CLSID = 'DIS_CM-802AKG', attach_point_position ={ -0.0, 0.01, 0.0}, arg_value = 0.9, Type = 1},	--KEPD 350 
---              { CLSID = "DIS_LD-10", attach_point_position ={ 0.0, 0.0, 0.0}, arg_value = 0.9, Type = 1}, -- SPEAR EW Anti radiation missiles
+                { CLSID = "DIS_LD-10", attach_point_position ={ 0.0, 0.0, 0.0}, arg_value = 0.9, Type = 1}, -- SPEAR EW Anti radiation missiles
                 { CLSID = "DIS_LD-10_DUAL_R", attach_point_position ={-0.30, -0.125, 0.0}, arg_value = 0.9, Type = 1}, -- MAR-1 Anti radiation missiles x1
                 { CLSID = "DIS_LD-10_DUAL_L", attach_point_position ={0.0, -0.12, 0.0}, arg_value = 0.2}, -- MAR-1 Anti radiation missiles x2	
 					
@@ -865,7 +855,7 @@ JF_17 = {
 --				=== OTHERS ===   
                 { CLSID = "DIS_WMD7", arg_value = 0.5 },
                 { CLSID = "DIS_SPJ_POD", arg_value = 0.55 },
-                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.55},
+                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.7, forbidden = {{station = 2, loadout = {"DIS_AKG_DLPOD"}},{station = 4, loadout = {"DIS_AKG_DLPOD"}}} },
 
                 { CLSID = 'DIS_SMOKE_GENERATOR_R', arg_value = 0.3},
                 { CLSID = 'DIS_SMOKE_GENERATOR_G', arg_value = 0.3},
@@ -2231,5 +2221,5 @@ JF_17 = {
 }
 add_aircraft(JF_17)
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.1.1                       --
+--                    File by whisky.actual@gmail.com - v.1.1.2                       --
 ----------------------------------------------------------------------------------------

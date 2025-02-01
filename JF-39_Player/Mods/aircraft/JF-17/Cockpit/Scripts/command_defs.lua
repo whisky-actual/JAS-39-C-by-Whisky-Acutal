@@ -364,15 +364,7 @@ key_cmds = {
     Light_AAR_Knob_Inc     = dcounter(),
     Light_AAR_Knob_Dec     = dcounter(),
 
-    RAlt_Set_Alt_Min       = dcounter(),
-----------------------------------------------------------------------------------------
--- JF-39
-----------------------------------------------------------------------------------------
-  
-    LCP_Brightness = dcounter(),
-    HMD_TOGGLE = dcounter(),
-    HUD_Brightness = dcounter(),     
-   
+    RAlt_Set_Alt_Min       = dcounter(),     
 }
 
 -- 开车/关车部分集成指令
@@ -830,7 +822,7 @@ cmd_names = {
     PNT_904 = "Battery Switch",
     PNT_905 = "Main AC Gen Switch",
     PNT_906 = "DC Gen Switch",
-    PNT_907 = "HUD/MFCD Day/Night Switch",
+    PNT_907 = "HUD/MFCD Day/Night Switch",--whisky.actual@gmail.com
     PNT_908 = "INS Mode Knob Selector",
 
     -- AAP
@@ -840,7 +832,7 @@ cmd_names = {
     PNT_912 = "AAP N/A",
     PNT_913 = "AAP N/A",
     PNT_914 = "AAP N/A",
-    PNT_915 = "AAP HMD",
+    PNT_915 = "AAP HMD",--whisky.actual@gmail.com
     PNT_916 = "AAP SPJ",
     PNT_917 = "AAP CLDP",
     PNT_918 = "AAP IRST",
@@ -936,14 +928,18 @@ cmd_names = {
 ----------------------------------------------------------------------------------------
 -- JF-39
 ----------------------------------------------------------------------------------------
+start_command   = 4200
+local __count = start_command-1
+local function __counter()
+	__count = __count + 1
+	return __count
+end
 
 device_commands =
 {
-    LCP_Brightness = dcounter(),
-    HMD_TOGGLE = dcounter(),
-    HUD_Brightness = dcounter(),           
+	--JF39_HMD	= __counter(),
+    JF39_MFCD   = __counter(),
 }
-
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.1.1                       --
+--                    File by whisky.actual@gmail.com - v.1.1.2                       --
 ----------------------------------------------------------------------------------------

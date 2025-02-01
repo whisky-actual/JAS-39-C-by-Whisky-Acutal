@@ -23,18 +23,16 @@ MainPanel = {"DEKA_Device::JF_17::ccMainPanel", script_path .. "mainpanel_init.l
 --                          <{{"NAME_OF_INDICATOR_CLASS", "INDICATOR_SCRIPT_FILE"}, ...}>
 --                         }
 
-----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
 -- Devices
-----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
 creators = {}
 ----------------------------------------------------------------------------------------
---JF-39 
+--JF-39
 ----------------------------------------------------------------------------------------
---creators[devices.ACP]     		  = {"avLuaDevice"			 ,LockOn_Options.script_path.."ACP/Device/ACP_Device.lua"}
---creators[devices.LCP]     		  = {"avLuaDevice"			 ,LockOn_Options.script_path.."LCP/Device/LCP_Device.lua"}
---creators[devices.HUD2]        	  = {"avLuaDevice"			 ,LockOn_Options.script_path.."HUD/Device/HUD Device.lua"}
-creators[devices.HMD]  		   	  = {"avLuaDevice"			 ,LockOn_Options.script_path.."HMD/Device/HMD_Device.lua"}
-
+creators[devices.JF39]			  = {"avLuaDevice"         			, script_path.."JF39/JF39.lua", {}}
+creators[devices.HMD]  		   	   		= {"avLuaDevice"           ,LockOn_Options.script_path.."HMD/Device/HMD_Device.lua"}
+--creators[devices.HMD]  		   	  = {"avLuaDevice"				, script_path.."JF39/HMD/Device/HMD_Device.lua", {}}
 ----------------------------------------------------------------------------------------
 creators[devices.ELECTRIC_SYSTEM] = {"DEKA_Device::JF_17::avPowerSystem", script_path .. "PowerSystem/avPowerSystem.lua", {}}
 creators[devices.AAP]             = {"DEKA_Device::JF_17::avAAP",         script_path .. "PowerSystem/avAAP.lua", {}}
@@ -141,32 +139,20 @@ indicators[#indicators + 1] = {"DEKA_Device::JF_17::ccMFCD", script_path .. "MFC
 indicators[#indicators + 1] = {"DEKA_Device::JF_17::ccClock", script_path .. "Clock/Clock_init_1.lua", devices.CLOCK, {{"CPT-CLK-U-CENTER","CPT-CLK-U-DOWN","CPT-CLK-U-RIGHT"}}}
 indicators[#indicators + 1] = {"DEKA_Device::JF_17::ccClock", script_path .. "Clock/Clock_init_2.lua", devices.CLOCK, {{"CPT-CLK-D-CENTER","CPT-CLK-D-DOWN","CPT-CLK-D-RIGHT"}}}
 
-kneeboard_implementation = "DEKA_Device::JF_17::ccKneeBrdExt"
-dofile(LockOn_Options.common_script_path .. "KNEEBOARD/declare_kneeboard_device.lua")
 ----------------------------------------------------------------------------------------
---JF-39 Files
+--JF-39
 ----------------------------------------------------------------------------------------
-indicators[#indicators + 1] = {"ccIndicator", LockOn_Options.script_path.."HUD/Indicator/HUD_init.lua",	--init script
- nil, 
-    {
-		{"JAS39-HUD-CENTER", "JAS39-HUD-DOWN", "JAS39-HUD-RIGHT"},	-- initial geometry anchor , triple of connector names. 
-		{sx_l =  0,  -- center position correction in meters (+forward , -backward)
-		 sy_l =  0,  -- center position correction in meters (+up , -down)
-		 sz_l =  0,  -- center position correction in meters (-left , +right)
-		 sh   =  0,  -- half height correction 
-		 sw   =  0,  -- half width correction 
-		 rz_l =  0,  -- rotation corrections  
-		 rx_l =  0,
-		 ry_l =  0}
-	}	
-}
+-- HMD
+--indicators[#indicators + 1] = {"DEKA_Device::JF_17::ccHMD", script_path .. "HMD/Indicator/HMD_page_init.lua"}
 
-indicators[#indicators + 1] = {"ccIndicator", LockOn_Options.script_path.."HMD/Indicator/HMD_Init.lua",	--init script
+indicators[#indicators + 1] = {"ccIndicator", script_path .. "HMD/Indicator/HMD_init.lua"}
+--[[
+indicators[#indicators + 1] = {"ccIndicator", LockOn_Options.script_path.."JF39/HMD/Indicator/HMD_init.lua",	--init script
  nil, 
     {
-		{"JAS39-HUD-CENTER", "JAS39-HUD-DOWN", "JAS39-HUD-RIGHT"},	-- initial geometry anchor , triple of connector names. 
-		{sx_l =  0,  -- center position correction in meters (+forward , -backward) --HELP
-		 sy_l =  -0.011338,  -- center position correction in meters (+up , -down)
+		{"CPT-HUD-CENTER", "CPT-HUD-DOWN", "CPT-HUD-RIGHT"},	-- initial geometry anchor , triple of connector names. 
+		{sx_l =  0,  -- center position correction in meters (+forward , -backward)
+		 sy_l =  0.026,  -- center position correction in meters (+up , -down)
 		 sz_l =  -0.009876,  -- center position correction in meters (-left , +right)
 		 sh   =  0,  -- half height correction 
 		 sw   =  0,  -- half width correction 
@@ -175,90 +161,21 @@ indicators[#indicators + 1] = {"ccIndicator", LockOn_Options.script_path.."HMD/I
 		 ry_l =  0}
 	}	
 }
----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.1.1                       --
-----------------------------------------------------------------------------------------
 
---[[
-indicators[#indicators + 1] = {"ccIndicator", LockOn_Options.script_path.."LCP/Indicator/LCP_init.lua",	--init script
+indicators[#indicators + 1] = {"ccIndicator", LockOn_Options.script_path.."HUD/Indicator/HUD_init.lua",	--init script
  nil, 
     {
-		{"LCP_SCREEN_CENTER", "LCP_SCREEN_DOWN", "LCP_SCREEN_RIGHT"},	-- initial geometry anchor , triple of connector names. 
+		{"CPT-HUD-CENTER", "CPT-HUD-DOWN", "CPT-HUD-RIGHT"},	-- initial geometry anchor , triple of connector names. 
 		{sx_l =  0,  -- center position correction in meters (+forward , -backward)
 		 sy_l =  0,  -- center position correction in meters (+up , -down)
-		 sz_l =  0,  -- center position correction in meters (-left , +right)
-		 sh   =  0,  -- half height correction 
-		 sw   =  0,  -- half width correction 
-		 rz_l =  0,  -- rotation corrections  
-		 rx_l =  0,
-		 ry_l =  0}
-	}	
-}
-
-indicators[#indicators + 1] = {"ccIndicator", LockOn_Options.script_path.."ACP/Indicator/ACP_Init.lua",	--init script
- nil, 
-    {
-		{"ACP_SCREEN_CENTER", "ACP_SCREEN_DOWN", "ACP_SCREEN_RIGHT"},	-- initial geometry anchor , triple of connector names. 
-		{sx_l =  0,  -- center position correction in meters (+forward , -backward)
-		 sy_l =  0,  -- center position correction in meters (+up , -down)
-		 sz_l =  0,  -- center position correction in meters (-left , +right)
-		 sh   =  0,  -- half height correction 
-		 sw   =  0,  -- half width correction 
-		 rz_l =  0.0,  -- rotation corrections  
-		 rx_l =  0,
-		 ry_l =  0}
-	}	
-}
-
-
-indicators[#indicators + 1] = {"ccIndicator", LockOn_Options.script_path.."MFD/Indicator/LD_init.lua",	--init script
- nil, 
-    {
-		{"JAS39-LMFD-CENTER", "JAS39-LMFD-DOWN", "JAS39-LMFD-RIGHT"},	-- initial geometry anchor , triple of connector names.
-		{sx_l =  0.0000,  -- center position correction in meters (+forward , -backward)
-		 sy_l =  0,  -- center position correction in meters (+up , -down)
-		 sz_l =  0.0001,  -- center position correction in meters (-left , +right)
-		 sh   =  0,  -- half height correction 
-		 sw   =  0,  -- half width correction 
-		 rz_l =  0,  -- rotation corrections  z
-		 rx_l =  0,	 -- rotation corrections  x
-		 ry_l =  0},	 -- rotation corrections  y
-
-		 1, -- render target
-	},
-
-}
-
-indicators[#indicators + 1] = {"ccIndicator", LockOn_Options.script_path.."MFD/Indicator/RD_init.lua",	--init script
- nil, 
-    {
-		{"JAS39-RMFD-CENTER", "JAS39-RMFD-DOWN", "JAS39-RMFD-RIGHT"},	-- initial geometry anchor , triple of connector names. 
-		{sx_l =  0,  -- center position correction in meters (+forward , -backward)
-		 sy_l =  0,  -- center position correction in meters (+up , -down)
-		 sz_l =  0,  -- center position correction in meters (-left , +right)
+		 sz_l =  -0.009876,  -- center position correction in meters (-left , +right)
 		 sh   =  0,  -- half height correction 
 		 sw   =  0,  -- half width correction 
 		 rz_l =  0,  -- rotation corrections  
 		 rx_l =  0,
 		 ry_l =  0},
-
-		 1, -- render target
 	}	
 }
-
-
-indicators[#indicators + 1] = {"ccIndicator", LockOn_Options.script_path.."MFD/Indicator/CD_init.lua",	--init script
- nil, 
-    {
-		{"JAS39-CMFD-CENTER", "JAS39-CMFD-DOWN", "JAS39-CMFD-RIGHT"},	-- initial geometry anchor , triple of connector names. 
-		{sx_l =  0,  -- center position correction in meters (+forward , -backward)
-		 sy_l =  0,  -- center position correction in meters (+up , -down)
-		 sz_l =  0,  -- center position correction in meters (-left , +right)
-		 sh   =  0,  -- half height correction 
-		 sw   =  0,  -- half width correction 
-		 rz_l =  0,  -- rotation corrections  
-		 rx_l =  0,
-		 ry_l =  0}
-	}	
-}
-]]--
+]]
+kneeboard_implementation = "DEKA_Device::JF_17::ccKneeBrdExt"
+dofile(LockOn_Options.common_script_path .. "KNEEBOARD/declare_kneeboard_device.lua")

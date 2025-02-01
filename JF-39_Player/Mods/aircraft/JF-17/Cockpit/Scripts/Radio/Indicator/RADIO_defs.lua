@@ -47,3 +47,6 @@ function AddStringObject(object)
     object.stringdefs = RADIO_STRINGDEFS_DEF
     AddElementObject(object)
 end
+----------------------------------------------------------------------------------------
+--                    File by whisky.actual@gmail.com - v.1.1.2                       --
+----------------------------------------------------------------------------------------
