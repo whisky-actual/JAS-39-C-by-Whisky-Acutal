@@ -43,11 +43,12 @@ declare_plugin(self_ID, {
     infoWaitScreen = _('Whisky Actual : JAS-39-C MOD'),
 })
 -------------------------------------------------------------------------------------
-mount_vfs_model_path   (current_mod_path .. '/Cockpit/Shapes')
-mount_vfs_texture_path (current_mod_path .. '/Cockpit/Shapes/Textures')
-mount_vfs_texture_path (current_mod_path .. '/Cockpit/Shapes/JF-39_Textures')
-mount_vfs_texture_path (current_mod_path .. '/Cockpit/Textures/IndicationTextures')
-mount_vfs_texture_path (current_mod_path .. '/Cockpit/Textures/JF-39_IndicationTextures')
+mount_vfs_model_path   (current_mod_path .. '/Cockpit/Scripts/JF-39/Shapes')
+mount_vfs_texture_path (current_mod_path .. '/Cockpit/Scripts/JF-39/Shapes/Textures')
+mount_vfs_texture_path (current_mod_path .. '/Cockpit/Scripts/JF-39/Shapes/JF-39_Textures')
+mount_vfs_texture_path (current_mod_path .. '/Cockpit/Scripts/JF-39/Textures/IndicationTextures')
+mount_vfs_texture_path (current_mod_path .. '/Cockpit/Scripts/JF-39/Textures/Hud')
+mount_vfs_texture_path (current_mod_path .. '/Cockpit/Scripts/JF-39/Textures/Fonts')
 mount_vfs_liveries_path(current_mod_path .. '/Liveries')
 mount_vfs_texture_path (current_mod_path .. '/Skins/2/ME')
 -------------------------------------------------------------------------------------
@@ -228,5 +229,5 @@ make_flyable(ac_name, current_mod_path .. '/Cockpit/Scripts/', jf39_FM, current_
 --is_entry = true
 --dofile(current_mod_path..'/jf39/Config.lua')
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.1.2                       --
+--                    File by whisky.actual@gmail.com - v.1.1.3                       --
 ----------------------------------------------------------------------------------------

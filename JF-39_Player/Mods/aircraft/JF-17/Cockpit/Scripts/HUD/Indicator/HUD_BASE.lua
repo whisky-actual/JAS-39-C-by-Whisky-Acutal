@@ -17,7 +17,7 @@ local verts = {}
 local inds = {}
 
 
--- verts上半部分
+-- Upper part of verts
 j = 0
 for i = 0, num_points do
     verts[j+1] = { Rl * math.cos(i * step), Rs * math.sin(i * step)}
@@ -55,7 +55,7 @@ total_field_of_view.collimated      = false
 total_field_of_view.isvisible       = false
 Add(total_field_of_view)
 
--- 裁剪区域
+-- Cropping Area
 local clipPoly               = CreateElement "ceMeshPoly"
 clipPoly.name                = "clipPoly-1"
 clipPoly.primitivetype       = "triangles"
@@ -70,7 +70,7 @@ clipPoly.collimated          = false
 clipPoly.isvisible           = false
 Add(clipPoly)
 
--- 伪双眼效果
+-- Pseudo-Stereoscopic Effect
 local fake_double_eye_view           = CreateElement "ceTexPoly"
 fake_double_eye_view.material        = HUD_TEX_CLIP
 fake_double_eye_view.name            = "fake_double_eye_view"
@@ -87,5 +87,5 @@ fake_double_eye_view.additive_alpha  = true
 fake_double_eye_view.use_mipfilter   = true
 Add(fake_double_eye_view)
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.1.2                       --
+--                    File by whisky.actual@gmail.com - v.1.1.3                       --
 ----------------------------------------------------------------------------------------

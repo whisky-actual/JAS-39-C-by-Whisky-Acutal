@@ -148,6 +148,15 @@ BRM_1_90 =
         fins_limit          = math.rad(20),
         fins_limit_x        = math.rad(10),
     },
+    properties =
+	{
+		targeting_data =
+		{
+			fm_type = 2,
+		},
+	},
+	
+	settings = Get_LGU_GUISettings_Preset("WGU59")
 }
 
 declare_weapon(BRM_1_90)
@@ -161,6 +170,7 @@ declare_loadout({
     Cx_pil          =  0.002,
     Picture         = "jf39_brimstone.png",
     displayName     = _(brm1_name),
+    settings        = Get_LGU_GUISettings_Preset("WGU59"),
     Weight          = 48.5*3+50,
 	Elements = {
 	
@@ -265,7 +275,7 @@ RKT_90_UG =
 
 declare_weapon(RKT_90_UG)
 
---[[
+
 declare_loadout({
     category        = CAT_ROCKETS,
     CLSID           = 'DIS_RKT_90_UG',
@@ -279,7 +289,7 @@ declare_loadout({
     Elements        = RocketPod("brm1_pod", rkt90_model, 16),
     JettisonSubmunitionOnly = false,
 })
---]]
+
 
 local brm1ug_name  = 'BRM1_90MM_UG'
 
@@ -346,5 +356,5 @@ BRM_1_UG =
 }
 declare_weapon(BRM_1_UG)
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.1.1                       --
+--                    File by whisky.actual@gmail.com - v.1.1.3                       --
 ----------------------------------------------------------------------------------------

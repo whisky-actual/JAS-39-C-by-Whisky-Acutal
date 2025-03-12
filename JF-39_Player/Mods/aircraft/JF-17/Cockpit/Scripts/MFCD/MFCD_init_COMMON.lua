@@ -110,12 +110,7 @@ pages = {
     [PAGE_ID.PAGE_ID_DATA           ] = {SUB_PAGE_ID.ELEMENTSET_BASE, SUB_PAGE_ID.ELEMENTSET_DATA},
 
 }
-
--- init_pageID = PAGE_ID.PAGE_ID_OFF
-
---used_render_mask = LockOn_Options.script_path .. "../Textures/IndicationTextures/mask_MFCD_day.dds" --"interleave" --default mask for TV
 used_render_mask = "interleave" --default mask for TV
-
 
 mat_tbl = {
     "mfcd_tex_ind1",
@@ -283,32 +278,32 @@ color_gnd_night     = {49/155, 5/155, 1/155}
 ]]
 --Day Black | Night White
 
-color_green_night   = {1.0, 1.0, 1.0}--White {1, 1, 1}
-color_green_day     = {0.0, 0.0, 0.0}--Black {0, 0, 0}
+color_green_night   = {1.0, 1.0, 1.0} --SAAB White {1, 1, 1}
+color_green_day     = {0.0, 0.0, 0.0} --SAAB Black {0, 0, 0}
 
 color_blue_night    = {0.0, 0.5, 0.0}
 color_blue_day      = {0.0, 1.0, 0.0}
 
-color_yellow_night  = {0.5, 0.5, 0.0}
-color_yellow_day    = {1.0, 1.0, 0.0}
+color_yellow_night  = {255/127, 145/127, 054/127} --SAAB Dark Orange  {220/127, 162/127, 054/127}
+color_yellow_day    = {255/255, 145/255, 000/255} --SAAB Light Orange {220/255, 162/255, 054/255}
 
 color_orange_night  = {0.49, 0.19, 0.0}
 color_orange_day    = {0.98, 0.38, 0.0}
 
-color_red_night     = {0.5, 0.0, 0.0}
-color_red_day       = {1.0, 0.0, 0.0}
+color_red_night     = {255/127, 006/127, 004/127} --SAAB Dark Brown
+color_red_day       = {255/255, 006/255, 004/255} --SAAB Light Brown
 
 color_red2_night    = {0.5, 0.0, 0.0}
 color_red2_day      = {1.0, 0.0, 0.0}
 
-color_white_night   = {0.25, 0.25, 0.25}--White {1, 1, 1}
-color_white_day     = {0.00, 0.00, 0.00}--Black {0, 0, 0}
+color_white_night   = {0.25, 0.25, 0.25} --SAAB Grey 
+color_white_day     = {0.00, 0.00, 0.00} --SAAB Black
 
-color_sky_night     = {045/255, 091/255, 116/255}--Gripen dark blue
-color_sky_day       = {057/255, 131/255, 160/255}--Gripen light blue
+color_sky_night     = {045/255, 091/255, 116/255} --SAAB Dark Blue
+color_sky_day       = {057/255, 131/255, 160/255} --SAAB Light Blue
 
-color_gnd_night     = {000/255, 000/255, 000/255}--Gripen dark brown
-color_gnd_day       = {147/255, 119/255, 095/255}--Gripen light brown
+color_gnd_night     = {000/255, 000/255, 000/255} --SAAB Dark Brown
+color_gnd_day       = {147/255, 119/255, 095/255} --SAAB Light Brown
 
 
 -- HUD only view diplacement
@@ -354,5 +349,5 @@ function MFCD_set_screenspace_displacement(aspect, left_center_right, zoom_value
     dedicated_viewport_arcade = {default_x,         0, default_width, default_height}
 end
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.1.2                       --
+--                    File by whisky.actual@gmail.com - v.1.1.3                       --
 ----------------------------------------------------------------------------------------

@@ -30,9 +30,10 @@ creators = {}
 ----------------------------------------------------------------------------------------
 --JF-39
 ----------------------------------------------------------------------------------------
-creators[devices.JF39]			  = {"avLuaDevice"         			, script_path.."JF39/JF39.lua", {}}
-creators[devices.HMD]  		   	   		= {"avLuaDevice"           ,LockOn_Options.script_path.."HMD/Device/HMD_Device.lua"}
---creators[devices.HMD]  		   	  = {"avLuaDevice"				, script_path.."JF39/HMD/Device/HMD_Device.lua", {}}
+creators[devices.JF39]			  = {"avLuaDevice"         	 , script_path.."JF-39/JF39.lua", {}}
+--creators[devices.HMD]  		   	  = {"avLuaDevice"           ,LockOn_Options.script_path.."JF-39/HMD/Device/HMD_Device.lua"}
+creators[devices.JF39_LCP]		  = {"avLuaDevice"           ,LockOn_Options.script_path.."JF-39/LCP/Device/LCP_Device.lua"}
+creators[devices.JF39_HUD]		  = {"avLuaDevice"           ,LockOn_Options.script_path.."JF-39/HUD/Device/HUD Device.lua"}
 ----------------------------------------------------------------------------------------
 creators[devices.ELECTRIC_SYSTEM] = {"DEKA_Device::JF_17::avPowerSystem", script_path .. "PowerSystem/avPowerSystem.lua", {}}
 creators[devices.AAP]             = {"DEKA_Device::JF_17::avAAP",         script_path .. "PowerSystem/avAAP.lua", {}}
@@ -116,7 +117,7 @@ indicators[#indicators + 1] = {"DEKA_Device::Common::ccDebugWin", script_path ..
 indicators[#indicators + 1] = {"ccIndicator", script_path .. "ControlsIndicator/Indicator/ctrl_indicator_page_init.lua"}
 
 -- HUD
-indicators[#indicators + 1] = {"DEKA_Device::JF_17::ccHUD", script_path .. "HUD/Indicator/HUD_page_init.lua", devices.HUD, {{"CPT-HUD-CENTER"},{sx_l = 0,sy_l = 0,sz_l = 0,sh = 0,sw = 0}}}
+--indicators[#indicators + 1] = {"DEKA_Device::JF_17::ccHUD", script_path .. "HUD/Indicator/HUD_page_init.lua", devices.HUD, {{"CPT-HUD-CENTER"},{sx_l = 0,sy_l = 0,sz_l = 0,sh = 0,sw = 0}}}
 
 -- UFCP LCD window
 indicators[#indicators + 1] = {"DEKA_Device::JF_17::ccUFCP", script_path .. "UFCP/UFCP_init_1.lua", devices.UFCP, {{"CPT-UFCP-1-CENTER","CPT-UFCP-1-DOWN","CPT-UFCP-1-RIGHT"}}}
@@ -142,18 +143,23 @@ indicators[#indicators + 1] = {"DEKA_Device::JF_17::ccClock", script_path .. "Cl
 ----------------------------------------------------------------------------------------
 --JF-39
 ----------------------------------------------------------------------------------------
--- HMD
+-- JF39_HMD
 --indicators[#indicators + 1] = {"DEKA_Device::JF_17::ccHMD", script_path .. "HMD/Indicator/HMD_page_init.lua"}
 
-indicators[#indicators + 1] = {"ccIndicator", script_path .. "HMD/Indicator/HMD_init.lua"}
---[[
-indicators[#indicators + 1] = {"ccIndicator", LockOn_Options.script_path.."JF39/HMD/Indicator/HMD_init.lua",	--init script
+-- JF39_HUD
+indicators[#indicators + 1] = {"DEKA_Device::JF_17::ccHUD", script_path .. "JF-39/HUD/Indicator/JF39_HUD_init.lua", devices.HUD, {{"CPT-HUD-CENTER"},{sx_l = 0,sy_l = 0,sz_l = 0,sh = 0,sw = 0}}}
+
+-- JF17_HUD
+indicators[#indicators + 1] = {"DEKA_Device::JF_17::ccHUD", script_path .. "HUD/Indicator/HUD_page_init.lua", devices.HUD, {{"CPT-HUD-CENTER"},{sx_l = 0,sy_l = 0,sz_l = 0,sh = 0,sw = 0}}}
+
+-- JF39_LCP
+indicators[#indicators + 1] = {"ccIndicator", LockOn_Options.script_path.."JF-39/LCP/Indicator/LCP_init.lua",	--init script
  nil, 
     {
-		{"CPT-HUD-CENTER", "CPT-HUD-DOWN", "CPT-HUD-RIGHT"},	-- initial geometry anchor , triple of connector names. 
+		{"LCP_SCREEN_CENTER", "LCP_SCREEN_DOWN", "LCP_SCREEN_RIGHT"},	-- initial geometry anchor , triple of connector names. 
 		{sx_l =  0,  -- center position correction in meters (+forward , -backward)
-		 sy_l =  0.026,  -- center position correction in meters (+up , -down)
-		 sz_l =  -0.009876,  -- center position correction in meters (-left , +right)
+		 sy_l =  0,  -- center position correction in meters (+up , -down)
+		 sz_l =  0,  -- center position correction in meters (-left , +right)
 		 sh   =  0,  -- half height correction 
 		 sw   =  0,  -- half width correction 
 		 rz_l =  0,  -- rotation corrections  
@@ -161,14 +167,16 @@ indicators[#indicators + 1] = {"ccIndicator", LockOn_Options.script_path.."JF39/
 		 ry_l =  0}
 	}	
 }
+--[[
+indicators[#indicators + 1] = {"ccIndicator", script_path .. "HMD/Indicator/HMD_init.lua"}
 
-indicators[#indicators + 1] = {"ccIndicator", LockOn_Options.script_path.."HUD/Indicator/HUD_init.lua",	--init script
+indicators[#indicators + 1] = {"ccIndicator", LockOn_Options.script_path.."JF-39/HUD/Indicator/JF39_HUD_init.lua",	--init script
  nil, 
     {
 		{"CPT-HUD-CENTER", "CPT-HUD-DOWN", "CPT-HUD-RIGHT"},	-- initial geometry anchor , triple of connector names. 
 		{sx_l =  0,  -- center position correction in meters (+forward , -backward)
 		 sy_l =  0,  -- center position correction in meters (+up , -down)
-		 sz_l =  -0.009876,  -- center position correction in meters (-left , +right)
+		 sz_l =  0,  -- center position correction in meters (-left , +right)-0.009876,
 		 sh   =  0,  -- half height correction 
 		 sw   =  0,  -- half width correction 
 		 rz_l =  0,  -- rotation corrections  
@@ -179,3 +187,6 @@ indicators[#indicators + 1] = {"ccIndicator", LockOn_Options.script_path.."HUD/I
 ]]
 kneeboard_implementation = "DEKA_Device::JF_17::ccKneeBrdExt"
 dofile(LockOn_Options.common_script_path .. "KNEEBOARD/declare_kneeboard_device.lua")
+----------------------------------------------------------------------------------------
+--                    File by whisky.actual@gmail.com - v.1.1.3                       --
+----------------------------------------------------------------------------------------

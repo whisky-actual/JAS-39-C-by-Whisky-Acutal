@@ -297,7 +297,7 @@ declare_loadout({
     category         = CAT_BOMBS,
     CLSID            = 'DIS_LS_6_250',
     Count            = 2,
-    Cx_pil           = 0.0012 * 2,
+    Cx_pil           = 0.00043,
     Picture          = "jf39_gbu39.png",
     displayName      = _(ls6_250_name .. "GBU-39 SDB x2"),
     Weight           = LS_6_250.mass * 2 + dual_pylon_mass,
@@ -325,7 +325,7 @@ declare_loadout({
     category         = CAT_BOMBS,
     CLSID            = "DIS_LS_6_250_DUAL_L",
 	Count            = 4,
-	Cx_pil           = 0.0012 * 4 + 0.00122,
+	Cx_pil           = 0.00043,
     Picture          = "jf39_gbu39.png",
 	displayName      = _(ls6_250_name .. "GBU-39 SDB x4"),
 	Weight           = LS_6_250.mass * 4 + quad_pylon_mass,
@@ -365,7 +365,7 @@ declare_loadout({
     category         = CAT_BOMBS,
     CLSID            = "DIS_LS_6_250_DUAL_R",	
 	Count            = 4,
-	Cx_pil           = 0.0012 * 4 + 0.00122,
+	Cx_pil           = 0.00043,
     Picture          = "jf39_gbu39.png",
 	displayName      = _(ls6_250_name .. "GBU-39 SDB x4"),
 	Weight           = LS_6_250.mass * 4 + quad_pylon_mass,
@@ -401,5 +401,5 @@ declare_loadout({
     ejectDirection   = {0, -1, 0},	
 })
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.0.1                       --
+--                    File by whisky.actual@gmail.com - v.1.1.3                       --
 ----------------------------------------------------------------------------------------

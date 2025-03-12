@@ -72,7 +72,7 @@ SQUARE_NIGHT.vertices        = {{-rdr_frame_length_half,  rdr_frame_length_half}
 --SQUARE_NIGHT.tex_coords      = {{0,0},{1,0},{1,1},{0,1}}
 SQUARE_NIGHT.indices         = DEF_BOX_INDICES
 --SQUARE_NIGHT.material        = MakeMaterial(nil,{0, 255, 255, 50})
-SQUARE_NIGHT.material        = MakeMaterial(nil,{45, 91, 116, 50})--Gripen Blue Day {045/255, 091/255, 116/255}
+SQUARE_NIGHT.material        = MakeMaterial(nil,{45, 91, 116, 25})--Gripen Blue Nigth {045/255, 091/255, 116/255}
 SQUARE_NIGHT.level           = RDR_LEVEL 
 SQUARE_NIGHT.h_clip_relation = h_clip_relations.REWRITE_LEVEL
 SQUARE_NIGHT.use_mipfilter   = false
@@ -282,5 +282,5 @@ for i=1, #(texts) do
     text_strpoly = nil
 end
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.1.2                       --
+--                    File by whisky.actual@gmail.com - v.1.1.3                       --
 ----------------------------------------------------------------------------------------

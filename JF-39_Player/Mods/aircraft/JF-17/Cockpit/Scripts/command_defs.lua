@@ -937,9 +937,10 @@ end
 
 device_commands =
 {
-	--JF39_HMD	= __counter(),
     JF39_MFCD   = __counter(),
+    JF39_HUD    = __counter(),
+    JF39_HMD    = __counter(),
 }
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.1.2                       --
+--                    File by whisky.actual@gmail.com - v.1.1.3                       --
 ----------------------------------------------------------------------------------------

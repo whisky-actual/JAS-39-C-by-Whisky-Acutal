@@ -82,29 +82,6 @@ for i=1, #(osb_txt) do
     AddElementObject(text_strpoly)
     text_strpoly = nil
 end
-
-
 ----------------------------------------------------------------------------------------
--- JF-39
-----------------------------------------------------------------------------------------
---[[
-local DMAP_FILTER1              = CreateElement "ceMeshPoly"
-DMAP_FILTER1.name               = "DMAP_FILTER1"
-DMAP_FILTER1.material           = MFCD_MATERIAL_BLACK1--Sets filter MFCD_IND_BLACK1
-DMAP_FILTER1.primitivetype      = "triangles"
-DMAP_FILTER1.init_pos           = {0, FWD_COMP_BIAS, 0}
-DMAP_FILTER1.vertices           = {{-1,  1.2}, { 1,  1.2}, { 1, -1.5}, {-1, -1.5}}
-DMAP_FILTER1.indices            = DEF_BOX_INDICES --{0,1,2,0,2,3 }
---DMAP_FILTER1.h_clip_relation  = h_clip_relations.REWRITE_LEVEL
-DMAP_FILTER1.level              = HSD_NAV_LEVEL + 1
-DMAP_FILTER1.isdraw             = true
-DMAP_FILTER1.isvisible          = true
-DMAP_FILTER1.use_mipfilter      = false
-DMAP_FILTER1.controllers        = {{"check_map_filter", 0},}
-DMAP_FILTER1.collimated         = false
-DMAP_FILTER1.additive_alpha     = true
-AddToUpper(DMAP_FILTER1)
-]]
-----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.1.2                       --
+--                    File by whisky.actual@gmail.com - v.1.1.3                       --
 ----------------------------------------------------------------------------------------

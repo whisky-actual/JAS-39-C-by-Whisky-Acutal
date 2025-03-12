@@ -3,7 +3,7 @@ dofile(LockOn_Options.common_script_path.."Fonts/fonts_cmn.lua")
 
 
 -- Global Macro
-IND_TEX_PATH = LockOn_Options.script_path .. "../Textures/IndicationTextures/"
+IND_TEX_PATH = LockOn_Options.script_path .. "../Scripts/JF-39/Textures/IndicationTextures/"
 
 dofile(LockOn_Options.script_path.."fonts.lua")
 
@@ -261,5 +261,5 @@ fonts["radio_font_cursor"]  = {fontdescription["font_RADIO"], 10, materials["RAD
 -- Clock
 fonts["clock_font_def"]     = {fontdescription["font_CLOCK"], 10, materials["CLOCK_IND_DEF"]}
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.1.2                       --
+--                    File by whisky.actual@gmail.com - v.1.1.3                       --
 ----------------------------------------------------------------------------------------
