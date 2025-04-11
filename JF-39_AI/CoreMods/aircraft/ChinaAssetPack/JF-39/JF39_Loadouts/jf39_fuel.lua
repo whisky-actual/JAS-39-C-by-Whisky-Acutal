@@ -1,16 +1,10 @@
 local pylon_mass = 0.0
---[[
-local ft800_name = 'Drop tank 1100 litres'
-local ft800_empty_name = 'Internal Tank'
-local ft1100_name = 'Drop tank 1700 litres'
-local ft1100_empty_name = 'Drop tank 1700 litres + Internal'
-]]--
-local ft800_name  = '800L Tank'
+local ft800_name  = 'Drop tank 1100 litres'
 local ft800_model = 'tank800'
-local ft800_empty_name = '800L Tank Empty'
-local ft1100_name  = '1100L Tank'
+local ft800_empty_name = 'Internal Tank'
+local ft1100_name  = 'Drop tank 1700 litres'
 local ft1100_model = 'tank1100'
-local ft1100_empty_name = '1100L Tank Empty'
+local ft1100_empty_name = 'Drop tank 1700 litres + Internal'
 
 declare_loadout(
     {
@@ -147,3 +141,6 @@ declare_loadout(
         },
     }
 )
+----------------------------------------------------------------------------------------
+--                    File by whisky.actual@gmail.com - v.1.2.1                       --
+----------------------------------------------------------------------------------------

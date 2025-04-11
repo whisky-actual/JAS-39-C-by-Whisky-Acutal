@@ -1,3 +1,4 @@
+
 local ld10_name  = 'MAR-1 High Speed Anti-Radiation Missile'
 local ld10_model = 'jf39_mar-1'
 local ld10_mass  = 199.0
@@ -355,26 +356,27 @@ else
 end
 
 declare_weapon(LD_10_ARM)
+--LD_10_ARM.shape_table_data.index = LD_10_ARM.wsTypeOfWeapon[4]
 
---[[
 declare_loadout({
     category    = CAT_MISSILES,
     CLSID       = 'DIS_LD-10',
     Picture     = 'jf39_mar-1.png',
     attribute   = LD_10_ARM.wsTypeOfWeapon,
-    displayName = _(name),
-    Cx_pil      = 0.000859765625,
+    displayName = _(ld10_name.. ' x 1'),
+    Cx_pil      = 0.00064453124,
     Count       = 1,
-    Weight      = mass + pylon_mass,
+    Weight      = ld10_mass + pylon_mass,
     Elements    = {
         [1] =
         {
             Position  = {0, 0, 0},
-            ShapeName = 'jf39_mar-1',
+            ShapeName = ld10_model,
         },
     }, -- end of Elements
 })
---]]
+
+
 declare_loadout({
     category       = CAT_MISSILES,
     CLSID          = 'DIS_LD-10_DUAL_L',
@@ -382,35 +384,104 @@ declare_loadout({
     wsTypeOfWeapon = LD_10_ARM.wsTypeOfWeapon,
     attribute      = {4,4,32,WSTYPE_PLACEHOLDER},
     displayName    = _(ld10_name .. ' x 2'),
-    Cx_pil         = 0.000859765625 * 1.31,
+    Cx_pil         = 0.00150390623,
     Count          = 2,
     Weight         = 2 * ld10_mass + pylon_dual_mass,
-    Elements       = {
-        { ShapeName = 'LAU-115C+2_LAU127', IsAdapter = true, },
-        { ShapeName = 'ld10_model',            connector_name = 'Point02'},
-        { ShapeName = 'ld10_model',            connector_name = 'Point03'},
-       
-    },
-    --ejectImpulse     = 140,
+    Elements	=	{
+        [1]	=	
+        {
+            Position	=	{0,	0, 0},
+            ShapeName	=	"TER-9A",
+            IsAdapter 	= true,
+        }, 
+        [2]	=	
+        { -- Left
+            DrawArgs	=	
+            {
+                [1]	=	{1,	1},
+                [2]	=	{2,	1},
+            }, -- end of DrawArgs
+            Position	=	{-0.35,-0.05,-0.20},--z,y,x
+            ShapeName	=	ld10_model,
+            Rotation    = 	{45,0,0},
+        }, 
+        [3]	=	
+        { -- Bottom
+            DrawArgs	=	
+            {
+                [1]	=	{1,	1},
+                [2]	=	{2,	1},
+            }, -- end of DrawArgs
+            Position	=	{-0.25,-0.29,0},
+            ShapeName	=	ld10_model,
+            Rotation    = 	{0,0,0},
+        }, 
+        [4]	=	
+        { -- Rigth
+            DrawArgs	=	
+            {
+                [1]	=	{1,	1},
+                [2]	=	{2,	1},
+            }, -- end of DrawArgs
+            Position	=	{0,0,0},
+            ShapeName	=	ld10_model,
+            Rotation    = 	{0,0,0},
+        } },
     JettisonSubmunitionOnly = true,
 })
 
 declare_loadout({
     category       = CAT_MISSILES,
     CLSID          = 'DIS_LD-10_DUAL_R',
-    Picture     = 'jf39_mar-1.png',
-    attribute   = LD_10_ARM.wsTypeOfWeapon,
-    displayName = _(ld10_name),
-    Cx_pil      = 0.000859765625,
-    Count       = 1,
-    Weight      = ld10_mass + pylon_mass,
-    Elements    = {
-        [1] =
+    Picture        = 'jf39_mar-1.png',
+    wsTypeOfWeapon = LD_10_ARM.wsTypeOfWeapon,
+    attribute      = {4,4,32,WSTYPE_PLACEHOLDER},
+    displayName    = _(ld10_name .. ' x 2'),
+    Cx_pil         = 0.00150390623,
+    Count          = 2,
+    Weight         = 2 * ld10_mass + pylon_dual_mass,
+    Elements	=	{
+        [1]	=	
         {
-            Position  = {0, 0, 0},
-            ShapeName = 'ld10_model',
-        },
-    }, -- end of Elements  
-    --ejectImpulse     = 140,
+            Position	=	{0,	0, 0},
+            ShapeName	=	"TER-9A",
+            IsAdapter 	= true,
+        }, 
+        [2]	=	
+        { -- Rigth
+            DrawArgs	=	
+            {
+                [1]	=	{1,	1},
+                [2]	=	{2,	1},
+            }, -- end of DrawArgs
+            Position	=	{-0.35,-0.05,0.20},
+            ShapeName	=	ld10_model,
+            Rotation    = 	{-45,0,0},
+        }, 
+        [3]	=	
+        { -- Bottom
+            DrawArgs	=	
+            {
+                [1]	=	{1,	1},
+                [2]	=	{2,	1},
+            }, -- end of DrawArgs
+            Position	=	{-0.25,-0.29,0},
+            ShapeName	=	ld10_model,
+            Rotation    = 	{0,0,0},
+        }, 
+        [4]	=	
+        { -- Left
+            DrawArgs	=	
+            {
+                [1]	=	{1,	1},
+                [2]	=	{2,	1},
+            }, -- end of DrawArgs
+            Position	=	{0,0,0},
+            ShapeName	=	ld10_model,
+            Rotation    = 	{0,0,0},
+        } },
     JettisonSubmunitionOnly = true,
 })
+----------------------------------------------------------------------------------------
+--                    File by whisky.actual@gmail.com - v.1.2.1                       --
+----------------------------------------------------------------------------------------

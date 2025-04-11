@@ -47,5 +47,5 @@ Add(hud_base_clip_FOV)
  
 dofile(LockOn_Options.script_path.."JF-39/HUD/Indicator/HUD_indication_page.lua")
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.1.3                       --
+--                    File by whisky.actual@gmail.com - v.1.2.0                       --
 ----------------------------------------------------------------------------------------

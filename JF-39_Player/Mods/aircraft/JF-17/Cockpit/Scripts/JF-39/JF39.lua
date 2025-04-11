@@ -11,8 +11,30 @@ if SHOW_PARAMS_LIST then
     show_param_handles_list()
 end
 -- =======================================================
-]]--
 
+-- Local variables
+local JF39_907 = get_param_handle("JF39_907") -- Handle for PNT_907
+
+-- Listen to the commands
+dev:listen_command(click_cmds.PNT_907)
+
+-- Command handling function
+function SetCommand(command, value)
+    if command == click_cmds.PNT_907 then
+        toggle_PNT_907() -- Call the correct function
+    end
+end
+
+-- Function to toggle MFCD state
+function toggle_PNT_907()
+    if JF39_907:get() == -1 then
+        JF39_907:set(1) -- Turn off the MFCD
+    else
+        JF39_907:set(-1) -- Turn on the MFCD
+    end
+end
+
+]]--
 -- Local variables ==================
 local JF39_HMD = get_param_handle("JF39_HMD") -- Handle for HMD
 local JF39_MFCD = get_param_handle("JF39_MFCD") -- Handle for MFCD

@@ -262,7 +262,7 @@ declare_loadout({
 	Count 			= 1,
 	Cx_pil			= jf39_gbu_31_v_4b.Cx,
 	Picture			= "GBU-31V3B.png",
-	displayName		= _("GBU-31(V)4/B - JDAM, 2000lb GPS Guided Penetrator Bomb"),
+	displayName		= _("GBU-31(V)4/B - JDAM, 2000lb GPS Guided Penetrator Bomb x1"),
 	Weight			= jf39_gbu_31_v_4b.mass,
 	Elements  		= {{ShapeName = "GBU31_V_3B_BLU109"}},
 })

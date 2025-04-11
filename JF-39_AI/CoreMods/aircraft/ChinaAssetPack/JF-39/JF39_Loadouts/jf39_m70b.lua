@@ -1,172 +1,89 @@
 ----------------------------------------------------------------------------------------
--- ARAK70BAP
+-- ARAK70AP
 ----------------------------------------------------------------------------------------
-local arakm70l_warhead =
+RKT_90_UG =
 {
-    mass                 = 19.7, 
-    caliber              = 135,
-    expl_mass            = 19.7,
-    piercing_mass        = 40.0,
-    other_factors        = { 2.0, 2.5, 2.5 },
-    concrete_factors     = { 1.5, 0.8, 0.8 },
-    concrete_obj_factor  = 0.8,
-    obj_factors          = { 1.5, 1.5 },
-    cumulative_factor    = 2.0,
-    cumulative_thickness = 0.6, 
-}
+	category			= CAT_ROCKETS,
+	name				= "ARAKM70BAP",
+	user_name			= _("ARAKM70BAP"),
+	wsTypeOfWeapon		= {wsType_Weapon,wsType_NURS,wsType_Rocket,wsType_ARAK70AP},
+	scheme 				= "nurs-standard",
+	model 				= "ARAK70AP",
 
-local pylon_mass = 1.0
-local arakm70l_name  = 'ARAK M70L AP'
-local arakm70l_mass  = 44.7
-local arakm70l_model = 'ARAK70AP'
-
-ARAKM70_L = 
-{
-    category        = CAT_MISSILES,
-    name            = arakm70l_name,
-    user_name       = _(arakm70l_name),
-    model           = arakm70l_model,
-    mass            = arakm70l_mass,
-    
-    wsTypeOfWeapon  = {wsType_Weapon,wsType_Missile,wsType_AS_Missile,WSTYPE_PLACEHOLDER},
-
-    Escort          = 1,
-    Head_Type       = 4,
-    M               = arakm70l_mass,
-    sigma           = {1, 1, 1},
-    H_max           = 8000.0,
-    H_min           = 1.0,
-    Diam            = 70.0,
-    Cx_pil          = 0.00244140625,
-    D_max           = 8000.0,
-    D_min           = 500.0,
-    Head_Form       = 1,
-    Life_Time       = 90.0,
-    Nr_max          = 25,
-    v_min           = 140.0,
-    v_mid           = 500.0,
-    Mach_max        = 3.0,
-    t_b             = 0.0,
-    t_acc           = 0.0,
-    t_marsh         = 1.1,
-    Range_max       = 8000.0,
-    H_min_t         = 15.0,
-    Fi_start        = 0.4,
-    Fi_rak          = 3.14152,
-    Fi_excort       = 1.05,
-    Fi_search       = 0.7,
-    OmViz_max       = 0.35,
-    exhaust         = {0.78, 0.78, 0.78, 0.3};
-    X_back          = -2.0,
-    Y_back          = -0.0,
-    Z_back          = 0.0, -- -0.1,
-    Reflection      = 0.05,
-    KillDistance    = 0.0,
-    
-    LaunchDistData  = 
-    {        
-        5,        3,
-        
-                   100,      200,      300,    
-        1000,     9000,     9500,    10000,
-        2000,     9500,    10000,    10500,
-        3000,    10000,    10500,    11000,
-        4000,    10500,    11000,    11500,
-        5000,    11000,    11500,    12000,
-    },
-    
-    shape_table_data =
-    {
+        fm = 
         {
-            name     = arakm70l_name,
-            file     = arakm70l_model,
-            life     = 1,
-            fire     = {0, 1},
-            username = arakm70l_name,
-            index    = WSTYPE_PLACEHOLDER,
+            mass        = 48.785,   -- start weight, kg
+            caliber     = 0.135, -- Caliber, meters 
+            cx_coeff    = {1,0.889005,0.67,0.3173064,2.08},  -- Cx
+            L           = 2.105, --Length, meters
+            I           = 39.00209, -- moment of inertia
+            Ix          = 6, -- not used???
+            Ma          = 0.50851, -- dependence moment coefficient of  by  AoA
+            Mw          = 3.28844, --  dependence moment coefficient by angular speed
+            shapeName   = "",
+            
+            wind_time   = 1.5, -- dispersion coefficient
+            wind_sigma  = 4, -- dispersion coefficient
         },
-    },
-    
-    warhead     = arakm70l_warhead,
-    warhead_air = arakm70l_warhead,
-    
-    scheme     = 'APKWS',
-    class_name = 'wAmmunitionLaserHoming',
 
-    march = {
-		fuel_mass               = 12.5,
-        impulse                 = 180,
-        boost_time              = 0,
-        work_time               = 2.2,
-        boost_factor            = 1,
-        nozzle_position         = {{-0.758, 0, 0}},
-        nozzle_orientationXYZ   = {{0, 0, 0}},
-        tail_width              = 0.150,
-        boost_tail              = 1.5,
-        work_tail               = 1.5,
-        smoke_color             = {0.1, 0.1, 0.1},
-        smoke_transparency      = 0.6,
-        custom_smoke_dissipation_factor = 0.2,   
-    },
+        engine =
+        {
+            fuel_mass   = 12.5, -- Fuel mass, kg
+            impulse     = 180, -- Specific impulse, sec
+            boost_time  = 0, -- Time of booster action
+            work_time   = 2.2, -- Time of mid-flight engine action
+            boost_factor= 1, -- Booster to cruise trust ratio
+            nozzle_position =  {{-0.758, 0, 0}}, -- meters
+            tail_width  = 0.150, -- contrail thickness 
+            boost_tail  = 1.5,
+            work_tail   = 1.5,
 
-    fm = {
-		mass        = arakm70l_mass,  
-        caliber     = 0.135, 
-        cx_coeff    = {1,0.9,0.6,0.32,2.1},
-        L           = 2,
-        I           = 1 / 12 * arakm70l_mass * 2 * 2,
-        Ma          = 0.84,
-        Mw          = 3.5,
-        shapeName   = arakm70l_model,
-        wind_sigma  = 5.0,
-        wind_time   = 1.1,
-        dCydA       = {0.11, 0.11},
-        A           = 0.36,
-        Sw          = 0.04,
-        maxAoa      = math.rad(8),        
-        finsTau     = 0.1,
-        Mx0         = 0.2,
-        Ma_x        = 1.8,
-        Mw_x        = 1.12,
-        I_x         = 1.01,
-    },
-    
-    seeker = {
-        delay               = 1.1,
-        FOV                 = math.rad(40),
-        max_seeker_range    = 13000,
-    },
+            smoke_color = {0.1, 0.1, 0.1},
+			smoke_transparency = 0.6,--0.8,
+        },
 
-    autopilot = {
-        delay               = 0.9,
-        op_time             = 45,
-        dV_dt               = 20,
-        Knav                = 12,
-        Tf                  = 0.2,
-        Kd                  = 150,
-        Kdx                 = 0.2,
-        Kix                 = 0.8,
-        gload_limit         = 10,
-        fins_limit          = math.rad(20),
-        fins_limit_x        = math.rad(10),
-    },
+	warhead	=
+	{
+		mass	= 19.7,-- HE 21.6, HEAT 19.7
+		expl_mass = 19.7,--0.285, HE warhead 21.6, HEAT 5.0
+		other_factors = { 2.0, 2.5, 2.5},--{ 1.0, 0.5, 0.5},
+		concrete_factors = { 1.5, 0.8, 0.8},--{ 1.0, 0.5, 0.1},
+		concrete_obj_factor = 0.8,
+		obj_factors = { 1.5, 1.5},--{ 1.0, 1.0},
+		cumulative_factor= 2.0,
+		cumulative_thickness = 0.6,
+		piercing_mass			= 40.0,
+	},
+
+	shape_table_data =
+	{
+		{
+			file		 = "ARAK70AP",
+			life		 = 1,
+			fire		 = {0, 1},
+			username = "ARAKM70AP",
+			index = WSTYPE_PLACEHOLDER,
+		},
+	},
+
+	properties =
+	{
+		dist_min = 500,
+		dist_max = 7000,
+	}
 }
-
-declare_weapon(ARAKM70_L)
-
+declare_weapon(RKT_90_UG)
 
 declare_loadout({
     category        = CAT_ROCKETS,
     CLSID           = 'DIS_RKT_90_UG',
-    wsTypeOfWeapon  = ARAKM70_L.wsTypeOfWeapon,
-    attribute       = {4, 4, 32, WSTYPE_PLACEHOLDER},
+    wsTypeOfWeapon  = RKT_90_UG.wsTypeOfWeapon,
+    attribute       = {4, 7, 32, WSTYPE_PLACEHOLDER},
     Count           = 6,
     Cx_pil          = 0.00059912109375,
     Picture         = "ARAK70AP.png",
     displayName     = _("ARAK M/70B AP 6x 135mm UnGd Rkts, Pshu70 HEAT"),
-    Weight          = (19.7 + 25)*6 + 104, -- 97.5 + 16 * ARAKM70_L.mass + pylon_mass,
-    -- Elements        = RocketPod("ARAKM70B", arakm70l_model, 6),
-    
+    Weight          = (19.7 + 25)*6 + 104,
 	Elements = {
 	
 		{
@@ -216,12 +133,10 @@ declare_loadout({
 			Rotation = {0,0,0},
 		},
 	},
-	
-	Required        = {"DIS_WMD7"},
     JettisonSubmunitionOnly = false,
 })
 ----------------------------------------------------------------------------------------
--- ARAK70BHE
+-- ARAK70HE
 ----------------------------------------------------------------------------------------
 JF17_LAU68_MK5_DUAL_L = {
     category    = CAT_ROCKETS,
@@ -352,5 +267,246 @@ JF17_LAU68_MK5_DUAL_R = {
 }
 declare_loadout(JF17_LAU68_MK5_DUAL_R)
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.1.1                       --
+--                    File by whisky.actual@gmail.com - v.1.2.0                       --
 ----------------------------------------------------------------------------------------
+dofile('Scripts/Database/Weapons/warheads.lua')
+
+--[[
+function copyTable(target, src)
+    for i, v in pairs(src) do
+        if type(v) == 'table' then
+            if not target[i] then
+                target[i] = { }
+            end
+            copyTable(target[i], v)
+        else
+            target[i] = v
+        end
+    end
+end
+]]
+
+--[[ Rockets ]]
+-- S-13
+B13_5_S13OF_DUAL_L = {
+    category    = CAT_ROCKETS,
+    CLSID       = "{B13_5_S13OF_DUAL_L}",
+    Picture     = "b13_dual.png",
+    displayName = _("2 x B-13L - 5 S-13 OF"),
+    Cx_pil      = 0.0004,
+    Cx_item     = 0.,
+    Count       = 10,
+    Weight      = 32 + 2*(160+5*69),
+    JettisonSubmunitionOnly = true,
+
+    Elements = --RocketContainer("UB-13"),
+    {
+        {
+            ShapeName = "J-11A_twinpylon_l",
+            IsAdapter = true
+        },
+        {
+            payload_CLSID = "{FC56DF80-9B09-44C5-8976-DCFAFF219062}",
+            DrawArgs = {{3,0.5}},
+            connector_name = "Pylon_out"
+        },
+        {
+            payload_CLSID = "{FC56DF80-9B09-44C5-8976-DCFAFF219062}",
+            DrawArgs = {{3,0.5}},
+            connector_name = "Pylon_in"
+        },
+    },
+    wsTypeOfWeapon = {4, 7, 33, 33},
+    attribute      = {4, 7, 32, WSTYPE_PLACEHOLDER}, -- 4 for 2nd in rockets.lua
+}
+declare_loadout(B13_5_S13OF_DUAL_L)
+
+
+B13_5_S13OF_DUAL_R = {}
+copyTable(B13_5_S13OF_DUAL_R, B13_5_S13OF_DUAL_L)
+B13_5_S13OF_DUAL_R.CLSID = "{B13_5_S13OF_DUAL_R}"
+B13_5_S13OF_DUAL_R.Elements[1].ShapeName = "J-11A_twinpylon_r"
+B13_5_S13OF_DUAL_R.Elements[2].connector_name = "Pylon_out"
+B13_5_S13OF_DUAL_R.Elements[3].connector_name = "Pylon_in"
+B13_5_S13OF_DUAL_R.attribute = B13_5_S13OF_DUAL_L.attribute
+declare_loadout(B13_5_S13OF_DUAL_R)
+
+
+-- S-25
+S25_DUAL_L = {
+    category    = CAT_ROCKETS,
+    CLSID       = "{S25_DUAL_L}",
+    Picture     = "s25_dual.png",
+    displayName = _("2 x S-25"),
+    Cx_pil      = 0.0004,
+    Cx_item     = 0.,
+    Weight      = 32+2*(370+65),
+    Count       = 2,
+    JettisonSubmunitionOnly = true,
+
+    Elements =
+    {
+        {
+            ShapeName = "J-11A_twinpylon_l",
+            IsAdapter = true
+        },
+        {
+            payload_CLSID = "{A0648264-4BC0-4EE8-A543-D119F6BA4257}",
+            DrawArgs = {{3,0.5}},
+            connector_name = "Pylon_out"
+        },
+        {
+            payload_CLSID = "{A0648264-4BC0-4EE8-A543-D119F6BA4257}",
+            DrawArgs = {{3,0.5}},
+            connector_name = "Pylon_in"
+        },
+    },
+    wsTypeOfWeapon = {4, 7, 33, 35},
+    attribute      = {4, 7, 32, WSTYPE_PLACEHOLDER},
+}
+declare_loadout(S25_DUAL_L)
+
+
+S25_DUAL_R = {}
+copyTable(S25_DUAL_R, S25_DUAL_L)
+S25_DUAL_R.CLSID = "{S25_DUAL_R}"
+S25_DUAL_R.Elements[1].ShapeName = "J-11A_twinpylon_r"
+S25_DUAL_R.Elements[2].connector_name = "Pylon_out"
+S25_DUAL_R.Elements[3].connector_name = "Pylon_in"
+S25_DUAL_R.attribute = S25_DUAL_L.attribute
+declare_loadout(S25_DUAL_R)
+
+
+-- S-8KOM
+B8M1_20_S8KOM_DUAL_L = {
+    category    = CAT_ROCKETS,
+    CLSID       = "{B8M1_20_S8KOM_DUAL_L}",
+    Picture     = "b8v20a_dual.png",
+    displayName = _("2 x B-8M1 - 20 S-8KOM"),
+    Cx_pil      = 0.0004,
+    Cx_item     = 0.,
+    Count       = 40,
+    Weight      = 32+2*(137.5 + 20 * 16.7),
+    JettisonSubmunitionOnly = true,
+
+    Elements = --RocketContainer("UB-13"),
+    {
+        {
+            ShapeName = "J-11A_twinpylon_l",
+            IsAdapter = true,
+        },
+        {
+            payload_CLSID = "{F72F47E5-C83A-4B85-96ED-D3E46671EE9A}",
+            DrawArgs = {{3,0.5}},
+            connector_name = "Pylon_out",
+        },
+        {
+            payload_CLSID = "{F72F47E5-C83A-4B85-96ED-D3E46671EE9A}",
+            DrawArgs = {{3,0.5}},
+            connector_name = "Pylon_in",
+        },
+    },
+    wsTypeOfWeapon = {4, 7, 33, 32},
+    attribute      = {4, 7, 32, WSTYPE_PLACEHOLDER}, -- 4 for 2nd in rockets.lua
+}
+declare_loadout(B8M1_20_S8KOM_DUAL_L)
+
+
+B8M1_20_S8KOM_DUAL_R = {}
+copyTable(B8M1_20_S8KOM_DUAL_R, B8M1_20_S8KOM_DUAL_L)
+B8M1_20_S8KOM_DUAL_R.CLSID = "{B8M1_20_S8KOM_DUAL_R}"
+B8M1_20_S8KOM_DUAL_R.Elements[1].ShapeName = "J-11A_twinpylon_r"
+B8M1_20_S8KOM_DUAL_R.Elements[2].connector_name = "Pylon_out"
+B8M1_20_S8KOM_DUAL_R.Elements[3].connector_name = "Pylon_in"
+B8M1_20_S8KOM_DUAL_R.attribute = B8M1_20_S8KOM_DUAL_L.attribute
+declare_loadout(B8M1_20_S8KOM_DUAL_R)
+
+
+-- S-8TsM
+B8M1_20_S8TsM_DUAL_L = {
+    category    = CAT_ROCKETS,
+    CLSID       = "{B8M1_20_S8TsM_DUAL_L}",
+    Picture     = "b8v20a_dual.png",
+    displayName = _("2 x B-8M1 - 20 S-8TsM"),
+    Cx_pil      = 0.0004,
+    Cx_item     = 0.,
+    Count       = 40,
+    Weight      = 32+2*(137.5 + 20 * 11.1),
+    JettisonSubmunitionOnly = true,
+
+    Elements = --RocketContainer("UB-13"),
+    {
+        {
+            ShapeName = "J-11A_twinpylon_l",
+            IsAdapter = true,
+        },
+        {
+            payload_CLSID = "{3DFB7320-AB0E-11d7-9897-000476191836}",
+            DrawArgs = {{3,0.5}},
+            connector_name = "Pylon_out",
+        },
+        {
+            payload_CLSID = "{3DFB7320-AB0E-11d7-9897-000476191836}",
+            DrawArgs = {{3,0.5}},
+            connector_name = "Pylon_in",
+        },
+    },
+    wsTypeOfWeapon = {4, 7, 33, 30},
+    attribute      = {4, 7, 32, WSTYPE_PLACEHOLDER}, -- 4 for 2nd in rockets.lua
+}
+declare_loadout(B8M1_20_S8TsM_DUAL_L)
+
+
+B8M1_20_S8TsM_DUAL_R = {}
+copyTable(B8M1_20_S8TsM_DUAL_R, B8M1_20_S8TsM_DUAL_L)
+B8M1_20_S8TsM_DUAL_R.CLSID = "{B8M1_20_S8TsM_DUAL_R}"
+B8M1_20_S8TsM_DUAL_R.Elements[1].ShapeName = "J-11A_twinpylon_r"
+B8M1_20_S8TsM_DUAL_R.Elements[2].connector_name = "Pylon_out"
+B8M1_20_S8TsM_DUAL_R.Elements[3].connector_name = "Pylon_in"
+B8M1_20_S8TsM_DUAL_R.attribute = B8M1_20_S8TsM_DUAL_L.attribute
+declare_loadout(B8M1_20_S8TsM_DUAL_R)
+
+
+-- S-8OFP2
+B8M1_20_S8OFP2_DUAL_L = {
+    category    = CAT_ROCKETS,
+    CLSID       = "{B8M1_20_S8OFP2_DUAL_L}",
+    Picture     = "b8v20a_dual.png",
+    displayName = _("2 x B-8M1 - 20 S-8OFP2"),
+    Cx_pil      = 0.0004,
+    Cx_item     = 0.,
+    Count       = 40,
+    Weight      = 32+2*(137.5 + 20 * 16.7),
+    JettisonSubmunitionOnly = true,
+
+    Elements = --RocketContainer("UB-13"),
+    {
+        {
+            ShapeName = "J-11A_twinpylon_l",
+            IsAdapter = true,
+        },
+        {
+            payload_CLSID = "B-8M1 - 20 S-8OFP2",
+            DrawArgs = {{3,0.5}},
+            connector_name = "Pylon_out",
+        },
+        {
+            payload_CLSID = "B-8M1 - 20 S-8OFP2",
+            DrawArgs = {{3,0.5}},
+            connector_name = "Pylon_in",
+        },
+    },
+    wsTypeOfWeapon = {4, 7, 33, 155},
+    attribute      = {4, 7, 32, WSTYPE_PLACEHOLDER}, -- 4 for 2nd in rockets.lua
+}
+declare_loadout(B8M1_20_S8OFP2_DUAL_L)
+
+
+B8M1_20_S8OFP2_DUAL_R = {}
+copyTable(B8M1_20_S8OFP2_DUAL_R, B8M1_20_S8OFP2_DUAL_L)
+B8M1_20_S8OFP2_DUAL_R.CLSID = "{B8M1_20_S8OFP2_DUAL_R}"
+B8M1_20_S8OFP2_DUAL_R.Elements[1].ShapeName = "J-11A_twinpylon_r"
+B8M1_20_S8OFP2_DUAL_R.Elements[2].connector_name = "Pylon_out"
+B8M1_20_S8OFP2_DUAL_R.Elements[3].connector_name = "Pylon_in"
+B8M1_20_S8OFP2_DUAL_R.attribute = B8M1_20_S8OFP2_DUAL_L.attribute
+declare_loadout(B8M1_20_S8OFP2_DUAL_R)

@@ -1,8 +1,8 @@
 
 local c802ak_name  = 'C-802AK'
-local c802ak_disp  = '1x RB-15F Programmable Anti-ship Missile'
+local c802ak_disp  = 'RB-15F Programmable Anti-ship Missile x1'
 local c802ak_model = 'Rb15'
-local c802ak_mass  = 715
+local c802ak_mass  = 610
 local pylon_mass   = 50.0
 
 local C802AK_warhead =
@@ -326,10 +326,6 @@ declare_loadout({
     ejectVelocity  = eject_speed_msl,
     ejectDirection = {0, -1, 0},
 })
-
-
-
-
 
 -- YJ-83K
 local yj83k_name  = 'YJ-83K'

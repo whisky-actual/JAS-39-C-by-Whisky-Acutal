@@ -1,3 +1,9 @@
+local pylon_mass = 48.5
+local brm1_name  = 'Brimstone Laser Guided Missile x3'
+local brm1_mass  = 20.0
+local brm1_model = 'jf39_brimstone'
+local brm1_wtime = 45
+
 local brm1_90_warhead =
 {
     mass                 = 6.3, 
@@ -11,12 +17,6 @@ local brm1_90_warhead =
     cumulative_factor    = 4.0,
     cumulative_thickness = 1.75, 
 }
-local pylon_mass = 48.5
-
-local brm1_name  = 'x3 Brimstone Laser Guided Missile'
-local brm1_mass  = 20.0
-local brm1_model = 'jf39_brimstone'
-local brm1_wtime = 45
 
 BRM_1_90 = 
 {
@@ -158,7 +158,6 @@ BRM_1_90 =
 	
 	settings = Get_LGU_GUISettings_Preset("WGU59")
 }
-
 declare_weapon(BRM_1_90)
 
 declare_loadout({
@@ -204,157 +203,6 @@ declare_loadout({
     Required        = {"DIS_WMD7"},
     JettisonSubmunitionOnly = false,
 })
-
-
-
-local rkt90_name  = 'UG_90MM'
-local rkt90_mass  = 20.0
-local rkt90_model = '90-1'
-local rkt90_wtime = 2.45
-
-RKT_90_UG =
-{
-    category        = CAT_ROCKETS,
-    name            = rkt90_name,
-    user_name       = _(rkt90_name),
-    scheme          = "nurs-standard",
-    class_name      = "wAmmunitionNURS",
-    model           = rkt90_model,
-    mass            = rkt90_mass,
-    
-    wsTypeOfWeapon  = {4, 7, 33, WSTYPE_PLACEHOLDER},
-
-    shape_table_data =
-    {
-        {
-            name     = rkt90_name,
-            file     = rkt90_model,
-            life     = 1,
-            fire     = {0, 1},
-            username = rkt90_name,
-            index    = WSTYPE_PLACEHOLDER,
-        },
-    },
-    
-    warhead     = brm1_90_warhead,
-    warhead_air = brm1_90_warhead,
-    
-    properties = {
-        dist_min =  600, -- min range, meters
-        dist_max = 8000, -- max range, meters
-    },
-    
-    fm = {
-        mass        = rkt90_mass,
-        caliber     = 0.09,
-        cx_coeff    = {1, 0.9, 0.6, 0.32, 2.1},
-        L           = 2,
-        I           = 1 / 12 * rkt90_mass * 2 * 2,
-        Ma          = 0.84,
-        Mw          = 3.5,
-        shapeName   = rkt90_model,
-        wind_time   = rkt90_wtime,
-        wind_sigma  = 5,
-    },
-    
-    engine = {
-        fuel_mass               = 9.0,
-        impulse                 = 190,
-        boost_time              = 0,
-        work_time               = rkt90_wtime,
-        boost_factor            = 1,
-        nozzle_position         = {{-0.65, 0, 0}},
-        nozzle_orientationXYZ   = {{0, 0, 0}},
-        tail_width              = 0.052,
-        boost_tail              = 1,
-        work_tail               = 1,
-        smoke_color             = {0.9, 0.9, 0.9},
-        smoke_transparency      = 0.5,
-    },
-}
-
-declare_weapon(RKT_90_UG)
-
-
-declare_loadout({
-    category        = CAT_ROCKETS,
-    CLSID           = 'DIS_RKT_90_UG',
-    wsTypeOfWeapon  = RKT_90_UG.wsTypeOfWeapon,
-    attribute       = {4, 7, 32, WSTYPE_PLACEHOLDER},
-    Count           = 16,
-    Cx_pil          = 0.002,
-    Picture         = "brm1_pod.png",
-    displayName     = _(rkt90_name),
-    Weight          = 97.5 + 16 * RKT_90_UG.mass + pylon_mass,
-    Elements        = RocketPod("brm1_pod", rkt90_model, 16),
-    JettisonSubmunitionOnly = false,
-})
-
-
-local brm1ug_name  = 'BRM1_90MM_UG'
-
-BRM_1_UG = 
-{
-    category        = CAT_ROCKETS,
-    name            = brm1ug_name,
-    user_name       = _(brm1ug_name),
-    model           = brm1_model,
-    mass            = brm1_mass,
-    
-    wsTypeOfWeapon  = {4, 7, 33, WSTYPE_PLACEHOLDER},
-    
-    shape_table_data =
-    {
-        {
-            name     = brm1_name,
-            file     = brm1_model,
-            life     = 1,
-            fire     = {0, 1},
-            username = brm1_name,
-            index    = WSTYPE_PLACEHOLDER,
-        },
-    },
-    
-    warhead     = brm1_90_warhead,
-    warhead_air = brm1_90_warhead,
-    
-    scheme          = "nurs-standard",
-    class_name      = "wAmmunitionNURS",
-    
-    properties = {
-        dist_min =  600, -- min range, meters
-        dist_max = 8000, -- max range, meters
-    },
-    
-    fm = {
-        mass        = rkt90_mass,
-        caliber     = 0.09,
-        cx_coeff    = {1, 0.9, 0.6, 0.3, 1.5},
-        L           = 2,
-        I           = 1 / 12 * brm1_mass * 2 * 2,
-        Ma          = 0.25,
-        Mw          = 2.2,
-        shapeName   = brm1_model,
-        wind_time   = 2,
-        wind_sigma  = 5,
-    },
-    
-    engine = {
-        fuel_mass               = 10,
-        impulse                 = 190,
-        boost_time              = 0,
-        work_time               = 2,
-        boost_factor            = 1,
-        nozzle_position         = {{-0.95, 0, 0}},
-        nozzle_orientationXYZ   = {{0, 0, 0}},
-        tail_width              = 0.052,
-        boost_tail              = 1,
-        work_tail               = 1,
-        smoke_color             = {0.9, 0.9, 0.9},
-        smoke_transparency      = 0.5,
-    },
-}
-declare_weapon(BRM_1_UG)
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.1.3                       --
+--                    File by whisky.actual@gmail.com - v.1.2.0                       --
 ----------------------------------------------------------------------------------------

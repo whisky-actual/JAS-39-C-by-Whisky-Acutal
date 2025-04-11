@@ -13,5 +13,5 @@ dofile(current_mod_path .. '/Entries/Aircrafts/WingLoong.lua')
 dofile(current_mod_path .. '/Entries/Aircrafts/H-6J.lua')
 dofile(current_mod_path .. '/Entries/Aircrafts/Gyrocopter.lua')
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.1.3                       --
+--                    File by whisky.actual@gmail.com - v.1.2.0                       --
 ----------------------------------------------------------------------------------------

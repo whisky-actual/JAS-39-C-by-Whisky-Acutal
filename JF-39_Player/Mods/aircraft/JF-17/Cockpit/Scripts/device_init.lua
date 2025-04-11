@@ -188,5 +188,5 @@ indicators[#indicators + 1] = {"ccIndicator", LockOn_Options.script_path.."JF-39
 kneeboard_implementation = "DEKA_Device::JF_17::ccKneeBrdExt"
 dofile(LockOn_Options.common_script_path .. "KNEEBOARD/declare_kneeboard_device.lua")
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.1.3                       --
+--                    File by whisky.actual@gmail.com - v.1.2.0                       --
 ----------------------------------------------------------------------------------------
