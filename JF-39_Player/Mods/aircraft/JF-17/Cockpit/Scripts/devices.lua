@@ -79,9 +79,10 @@ devices["EFFECT"] = counter()
 ----------------------------------------------------------------------------------------
 -- JF-39
 ----------------------------------------------------------------------------------------
-devices["JF39"]     = counter()
-devices["JF39_LCP"] = counter()
-devices["JF39_HUD"] = counter()
+devices["JF39_Devices"]     = counter()
+devices["JF39_HUD"]         = counter()
+devices["JF39_HMD"]         = counter()
+devices["JF39_LCP"]         = counter()
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.2.0                       --
+--                    File by whisky.actual@gmail.com - v.1.2.2                       --
 ----------------------------------------------------------------------------------------

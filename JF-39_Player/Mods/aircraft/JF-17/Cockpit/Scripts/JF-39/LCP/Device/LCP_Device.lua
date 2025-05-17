@@ -1,12 +1,11 @@
 dofile(LockOn_Options.script_path.."command_defs.lua")
 dofile(LockOn_Options.script_path .. "devices.lua")
-local update_time_step = 1/24 --update will be called 100 times per second
-make_default_activity(update_time_step)
+make_default_activity(0.006)
 dev = GetSelf()
 -------------------------------------------------------
 -- Local Variables
 -------------------------------------------------------
-local sensor_data = get_base_data()
+--local sensor_data = get_base_data()
 --[[
 local LCP_Brightness = get_param_handle("LCP_BRIGHTNESS")
 dev:listen_command(Keys.LCP_X)	      

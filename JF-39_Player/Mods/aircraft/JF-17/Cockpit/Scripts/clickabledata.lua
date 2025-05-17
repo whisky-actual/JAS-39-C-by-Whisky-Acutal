@@ -309,8 +309,6 @@ elements["PNT_905"] = default_2_position_tumb(_(cmd_names.PNT_905), devices.ELEC
 elements["PNT_906"] = default_2_position_tumb(_(cmd_names.PNT_906), devices.ELECTRIC_SYSTEM, click_cmds.PNT_906, 906, {{SND_SW_GENERAL_C},{SND_SW_GENERAL_C}}) --直流发电机开关
 
 elements["PNT_907"] = default_2_position_tumb(_(cmd_names.PNT_907), devices.AAP, click_cmds.PNT_907, 907) --whisky.actual@gmail.com
---elements["PNT_999"] = default_2_position_tumb(_("TAN MFCD"),	devices.JF39, device_commands.JF39_MFCD, 999,{1,0},{{SND_BTN_AAP_PUSH},{SND_BTN_AAP_RELEASE}})
---elements["PNT_907"] = default_push_button(_(cmd_names.PNT_907), devices.AAP, click_cmds.PNT_907, 907, nil, nil, {{SND_BTN_AAP_PUSH},{SND_BTN_AAP_RELEASE}})--whisky.actual@gmail.com
 
 elements["PNT_908"] = multiposition_switch_limited(_(cmd_names.PNT_908), devices.INS, click_cmds.PNT_908, 908, 4, 1.0/3, false, 0.0, {{SND_KNOB_INT_MODE},{SND_KNOB_INT_MODE}}) --INS 3档旋钮惯导工作模式选择开关
 
@@ -321,7 +319,7 @@ elements["PNT_911"] =     default_push_button(_(cmd_names.PNT_911), devices.AAP,
 elements["PNT_912"] =     default_push_button(_(cmd_names.PNT_912), devices.AAP, click_cmds.PNT_912, 912, nil, nil, {{SND_BTN_AAP_PUSH},{SND_BTN_AAP_RELEASE}})
 elements["PNT_913"] =     default_push_button(_(cmd_names.PNT_913), devices.AAP, click_cmds.PNT_913, 913, nil, nil, {{SND_BTN_AAP_PUSH},{SND_BTN_AAP_RELEASE}})
 elements["PNT_914"] =     default_push_button(_(cmd_names.PNT_914), devices.AAP, click_cmds.PNT_914, 914, nil, nil, {{SND_BTN_AAP_PUSH},{SND_BTN_AAP_RELEASE}})
-elements["PNT_915"] =     default_push_button(_(cmd_names.PNT_915), devices.AAP, click_cmds.PNT_915, 915, nil, nil, {{SND_BTN_AAP_PUSH},{SND_BTN_AAP_RELEASE}})--whisky.actual@gmail.com
+--elements["PNT_915"] =     default_push_button(_(cmd_names.PNT_915), devices.AAP, click_cmds.PNT_915, 915, nil, nil, {{SND_BTN_AAP_PUSH},{SND_BTN_AAP_RELEASE}})--whisky.actual@gmail.com
 elements["PNT_916"] =     default_push_button(_(cmd_names.PNT_916), devices.AAP, click_cmds.PNT_916, 916, nil, nil, {{SND_BTN_AAP_PUSH},{SND_BTN_AAP_RELEASE}})
 elements["PNT_917"] =     default_push_button(_(cmd_names.PNT_917), devices.AAP, click_cmds.PNT_917, 917, nil, nil, {{SND_BTN_AAP_PUSH},{SND_BTN_AAP_RELEASE}})
 elements["PNT_918"] =     default_push_button(_(cmd_names.PNT_918), devices.AAP, click_cmds.PNT_918, 918, nil, nil, {{SND_BTN_AAP_PUSH},{SND_BTN_AAP_RELEASE}})
@@ -435,9 +433,7 @@ end
 ----------------------------------------------------------------------------------------
 -- JF-39
 ----------------------------------------------------------------------------------------
---JF39
---elements["PNT_915"] = default_2_position_tumb(_("HMD ON/OFF"),	devices.JF39, device_commands.JF39_HMD, 915,{0,1},{{SND_BTN_AAP_PUSH},{SND_BTN_AAP_RELEASE}})
-elements["PNT_999"] = default_2_position_tumb(_("TAN MFCD"),	devices.JF39, device_commands.JF39_MFCD, 999,{1,0},{{SND_BTN_AAP_PUSH},{SND_BTN_AAP_RELEASE}})
+elements["PNT_915"] = default_2_position_tumb(_(cmd_names.PNT_915), devices.AAP, click_cmds.PNT_915, 915) --whisky.actual@gmail.com
 
 -- Center MFCD
 elements["PNT_800"] = default_push_button(_(cmd_names.PNT_767), devices.MFCD, click_cmds.PNT_767, 767, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
@@ -519,7 +515,7 @@ elements["PNT_798"]  = default_axis_limited(_(cmd_names.PNT_831), devices.MFCD, 
 elements["PNT_799"]  = default_axis_limited(_(cmd_names.PNT_832), devices.MFCD, click_cmds.PNT_832, 832,0,  nil, true, nil, {{0,1.0},{0,1.0}}, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
 -- end of Right MFCD
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.2.0                       --
+--                    File by whisky.actual@gmail.com - v.1.2.2                       --
 ----------------------------------------------------------------------------------------
 
 

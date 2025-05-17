@@ -120,8 +120,8 @@ local function use_weapon_version(version)
 
     elseif version == 'SAAB' then
         -- SAAB internal testing or custom config
-        weapon['IRAAM']     = 'IR1'--jf39_iris-t, jf39_a-darter, jf39_python-5, us_AIM-9X, us_aim-9l, jf39_aim-132
-        weapon['BVRAAM']    = 'BVR1' --Meteor, AIM-120C, I-Derby ER, AIM-120B
+        weapon['IRAAM']     = 'IR4'--jf39_iris-t, jf39_a-darter, jf39_python-5, us_AIM-9X, us_aim-9l, jf39_aim-132
+        weapon['BVRAAM']    = 'BVR2' --Meteor, AIM-120C, I-Derby ER, AIM-120B
         --weapon['BRM1']      = 'BRM1_1' --Brimstone
         weapon['C701_IR']   = 'C701_IR_1' --AGM-65G
         weapon['C701_T']    = 'C701_T_1' --AGM-65K
@@ -145,7 +145,7 @@ end
 ----------------------------------------------------------------------------------------
 -- Initialize Weapons (Choose Configuration Below)
 ----------------------------------------------------------------------------------------
-use_weapon_version('SE')  -- Replace with 'SE', 'HU', etc. as needed
+use_weapon_version('SAAB')  -- Replace with 'SE', 'HU', etc. as needed
 
 ----------------------------------------------------------------------------------------
 -- Legacy Weapon Code (Workaround for ED's weapons system)
@@ -1388,20 +1388,20 @@ end
 ----------------------------------------------------------------------------------------
 -- Declare loadouts using the selected configuration
 ----------------------------------------------------------------------------------------
-JF39_PL_5EII(weapon['IRAAM'])
-JF39_SD_10(weapon['BVRAAM'])
-JF39_TYPE200(weapon['TYPE200'])
-JF39_LS_6_100(weapon['LS_6_100'])
-JF39_LS_6_250(weapon['LS_6_250'])
---JF39_LS_6_500(weapon['LS_6_500']) --GBU_39
-JF39_GB6(weapon['GB6'])
-JF39_GB6_HE(weapon['GB6_HE'])
-JF39_GB6_TSP(weapon['GB6_TSP'])
-JF39_C802AK(weapon['C802AK'])
-JF39_C701_IR(weapon['C701_IR'])
-JF39_C701_T(weapon['C701_T'])
-JF39_WMD7(weapon['WMD7'])
-JF39_CM802AKG(weapon['CM802AKG'])
+JF39_PL_5EII(weapon['IRAAM']) -- IRIS-T, A-Darter, Python-5, AIM-9X Sidewinder, AIM-9L Sidewinder, AIM-9M Sidewinder, AIM-132 ASRAAM
+JF39_SD_10(weapon['BVRAAM']) -- Meteor, AIM-120C, I-Derby ER, AIM-120B
+JF39_TYPE200(weapon['TYPE200']) -- SB71HD, SB71LD
+JF39_LS_6_100(weapon['LS_6_100']) -- GBU-54(V)1/B - LJDAM, 500lb Laser & GPS Guided Bomb LD
+--JF39_LS_6_250(weapon['LS_6_250']) -- GBU-38 / Spear3
+--JF39_LS_6_500(weapon['LS_6_500']) -- GBU_39
+JF39_GB6(weapon['GB6'])	-- AGM-154A JSOW
+JF39_GB6_HE(weapon['GB6_HE'])	-- AGM-154B JSOW
+JF39_GB6_TSP(weapon['GB6_TSP'])	-- BK-90 MJ1+2, GBU-24B/B Paveway III
+JF39_C802AK(weapon['C802AK']) --RB15F
+JF39_C701_IR(weapon['C701_IR']) -- AGM-65G
+JF39_C701_T(weapon['C701_T']) -- AGM-65K
+JF39_WMD7(weapon['WMD7']) ---- AAQ-28 (LITENING), AAQ-28 (Sniper XR), ASQ-228 (ATFLIR)
+JF39_CM802AKG(weapon['CM802AKG']) --Storm Shadow, KEPD 350
 ----------------------------------------------------------------------------------------
 --                    File by whisky.actual@gmail.com - v.1.2.1                       --
 ----------------------------------------------------------------------------------------

@@ -38,19 +38,19 @@ GlowEffect.level			= LCP_DEFAULT_LEVEL
 --GlowEffect.change_opacity	= false
 --GlowEffect.collimated 		= false
 GlowEffect.isvisible		= true
-GlowEffect.element_params    = {"JF39_MFCD" }
-GlowEffect.controllers       = {{"opacity_using_parameter", "check_power",0}}
+GlowEffect.element_params    = {"JF39_LCP" }
+GlowEffect.controllers       = {{"opacity_using_parameter",0}}
 Add(GlowEffect)
 
 local AlignLeft = -0.75
 
-add_text_with_opacity("  COMMUNICATION", AlignLeft, 0.6,"JF39_MFCD", LCP_BASE, "Gripen_Font_LCP", lcp_strdefs_digit, "LeftLeft")
-add_text_with_opacity("-----------------", AlignLeft, 0.5,"JF39_MFCD", LCP_BASE, "Gripen_Font_LCP", lcp_strdefs_digit, "LeftLeft")
-add_text_with_opacity("COM1: 169.000AV  T", AlignLeft, 0.2,"JF39_MFCD", LCP_BASE, "Gripen_Font_LCP", lcp_strdefs_digit, "LeftLeft")
-add_text_with_opacity("   ---------", AlignLeft, 0.05,"JF39_MFCD", LCP_BASE, "Gripen_Font_LCP", lcp_strdefs_digit, "LeftLeft")
-add_text_with_opacity("COM2: 199.000AV  DT", AlignLeft, -0.1,"JF39_MFCD", LCP_BASE, "Gripen_Font_LCP", lcp_strdefs_digit, "LeftLeft")
---textParamWithOpacity(AlignLeft, -0.2, "JF39_MFCD", "LCP_LAT", "%0.23s", LCP_BASE, lcp_strdefs_digit, "Gripen_Font_LCP", "LeftLeft")
---textParamWithOpacity(AlignLeft, -0.305, "JF39_MFCD", "LCP_LON", "%0.23s", LCP_BASE, lcp_strdefs_digit, "Gripen_Font_LCP", "LeftLeft")
+add_text_with_opacity("  COMMUNICATION", AlignLeft, 0.6,"JF39_LCP", LCP_BASE, "Gripen_Font_LCP", lcp_strdefs_digit, "LeftLeft")
+add_text_with_opacity("-----------------", AlignLeft, 0.5,"JF39_LCP", LCP_BASE, "Gripen_Font_LCP", lcp_strdefs_digit, "LeftLeft")
+add_text_with_opacity("COM1: 169.000AV  T", AlignLeft, 0.2,"JF39_LCP", LCP_BASE, "Gripen_Font_LCP", lcp_strdefs_digit, "LeftLeft")
+add_text_with_opacity("   ---------", AlignLeft, 0.05,"JF39_LCP", LCP_BASE, "Gripen_Font_LCP", lcp_strdefs_digit, "LeftLeft")
+add_text_with_opacity("COM2: 199.000AV  DT", AlignLeft, -0.1,"JF39_LCP", LCP_BASE, "Gripen_Font_LCP", lcp_strdefs_digit, "LeftLeft")
+--textParamWithOpacity(AlignLeft, -0.2, "JF39_LCP", "LCP_LAT", "%0.23s", LCP_BASE, lcp_strdefs_digit, "Gripen_Font_LCP", "LeftLeft")
+--textParamWithOpacity(AlignLeft, -0.305, "JF39_LCP", "LCP_LON", "%0.23s", LCP_BASE, lcp_strdefs_digit, "Gripen_Font_LCP", "LeftLeft")
 
 -- ============= PrintButBetter ================
 --PrintButBetter("Stored value: " .. JF17_COM1_FREQ)	

@@ -11,7 +11,7 @@ declare_plugin(self_ID, {
     displayName   = _(ac_name),
     shortName     = ac_name,
     fileMenuName  = _(ac_name),
-    version       = '1.2.0',
+    version       = '1.2.2',
     state         = 'installed',
     developerName = _('Whisky Actual: https://github.com/whisky-actual/Community-JF-39'),
     info          = _('THIS MATERIAL IS NOT MADE OR SUPPORTED BY EAGLE DYNAMICS SA OR DEKA IRONWORKS SIMULATION'),

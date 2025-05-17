@@ -1,39 +1,39 @@
-local ls6_500_name  = 'GBU-39 SDB 285lb Guided Glide-Bomb'
-local ls6_500_mass  = 275.0
+local jf39_gbu39_name  = 'GBU-39 SDB 285lb Guided Glide-Bomb'
+local jf39_gbu39_mass  = 130.0
 local quad_pylon_mass = 145.0
 local dual_pylon_mass = 90.0
-local ls6_500_model = "jf39_gbu-39"
+local jf39_gbu39_model = "jf39_gbu-39"
 
-local ls6_500_warhead = 
+local jf39_gbu39_warhead = 
 {
-    mass                 = 93, 
-    caliber              = 160,
-    expl_mass            = 40,
-    piercing_mass        = 0.0,
+    mass                 = 6.3, 
+    caliber              = 180,
+    expl_mass            = 6.3,
+    piercing_mass        = 6.3*1.2,
     other_factors        = { 1.0, 1.0, 1.0 },
-    concrete_factors     = { 3.0, 1.0, 1.0 },
-    concrete_obj_factor  = 2.0,
-    obj_factors          = { 3.0, 1.0 },
-    cumulative_factor    = 3.0,
-    cumulative_thickness = 0.0,
+    concrete_factors     = { 1.0, 1.0, 1.0 },
+    concrete_obj_factor  = 0.0,
+    obj_factors          = { 1.0, 1.0 },
+    cumulative_factor    = 5.0,
+    cumulative_thickness = 2.0, 
 }
 
-LS_6_500 =
+jf39_gbu39 =
 {
     category        = CAT_MISSILES,
-    name            = ls6_500_name,
-    user_name       = _(ls6_500_name),
+    name            = jf39_gbu39_name,
+    user_name       = _(jf39_gbu39_name),
     scheme          = "JSOW_C",
     class_name      = "wAmmunitionCruise",
-    model           = ls6_500_model,
-    mass            = ls6_500_mass,
+    model           = jf39_gbu39_model,
+    mass            = jf39_gbu39_mass,
     
     wsTypeOfWeapon  = {wsType_Weapon,wsType_Missile,wsType_AS_Missile,WSTYPE_PLACEHOLDER},
 
 	Escort          = 0,
     Head_Type       = 5,
     sigma           = {20, 20, 20},
-    M               = 275.0,
+    M               = jf39_gbu39_mass,
     H_max           = 28000.0,
     H_min           = 100,
     Diam            = 299.0,
@@ -61,7 +61,7 @@ LS_6_500 =
     Z_back          = 0.0,
     Reflection      = 0.03,
     KillDistance    = 0.0,
-    
+	
 	LaunchDistData =
 	{
 		18,		10,
@@ -137,7 +137,6 @@ LS_6_500 =
 		15000,	422,	433.5,	435.5,	440,	430.6,	428.8,	421.5,	421.2,	428,	424.3,	
 	},
 
-
 	MinTOF =
 	{
 		18,		10,
@@ -187,19 +186,19 @@ LS_6_500 =
 		14000,	208.6,	207.1,	205,	203.6,	203.8,	200.9,	196.4,	193.9,	187.7,	174.1,		
 		15000,	214.7,	218.1,	214.9,	212.2,	209,	207.5,	202.8,	199.4,	196.3,	188.6,	
 	},
-    
+	
     shape_table_data =
     {
         {
-            name     = ls6_500_name,
-            file     = ls6_500_model,
+            name     = jf39_gbu39_name,
+            file     = jf39_gbu39_model,
             life     = 1,
             fire     = { 0, 1},
-            username = ls6_500_name,
+            username = jf39_gbu39_name,
             index    = WSTYPE_PLACEHOLDER,
         },
     },
-        
+
 	fm =	{
 		mass				= 275.0,
 		caliber				= 0.299,
@@ -228,13 +227,13 @@ LS_6_500 =
 		release_rnd		= 0.3,
 		release_rnd_x	= 0.0,
 	},
-    
+	
 	seeker = {
 		coalition						= 1,
 		coalition_rnd_coeff				= 5.0,
 		can_update_target_pos			= 1,
 	},
-    
+
 	control_block =	{
 		seeker_activation_dist		= 7000,
 		default_cruise_height		= -1,
@@ -247,7 +246,7 @@ LS_6_500 =
 		wo_wings_no_fin_stage		= 1,
 		no_fin_stage_dive			= 0.5,
 	},
-    
+
 	autopilot =	{
 		delay						= 0.3,
 		K							= 115,
@@ -292,22 +291,22 @@ LS_6_500 =
 		K_pitch_diff_mlt	= 5.0,
 		w_limit				= 0.5,
 		Kpj					= 0.5,	
-	},
-        
-    warhead     = ls6_500_warhead,
-    warhead_air = ls6_500_warhead,
+	},	
+	
+    warhead     = jf39_gbu39_warhead,
+    warhead_air = jf39_gbu39_warhead,	
 }
-
-declare_weapon(LS_6_500)
+declare_weapon(jf39_gbu39)
 
 declare_loadout({
     category         = CAT_BOMBS,
     CLSID            = "DIS_LS_6_500",	
 	Count            = 4,
-	Cx_pil           = 0.00043,
+    Cx_pil           = 0.0012 * 4 + 0.00122,
+    Cx_item          = 0.0012,
     Picture          = "jf39_gbu39.png",
-	displayName      = _(ls6_500_name .. " x4"),
-	Weight           = LS_6_500.mass * 4 + quad_pylon_mass,
+	displayName      = _(jf39_gbu39_name .. " x4"),
+	Weight           = 664,
     Elements = {
         {
             ShapeName = "jf39_bru_61",
@@ -315,30 +314,30 @@ declare_loadout({
         },
         {
 			connector_name =	"AttachPoint001",
-			ShapeName	=	"ls6_500_model",
+			ShapeName	=	"jf39_gbu39_model",
 			Rotation = {0,0,0},
         },
         {
 			connector_name =	"AttachPoint002",		
-			ShapeName	=	"ls6_500_model",
+			ShapeName	=	"jf39_gbu39_model",
 			Rotation = {0,0,0},
         },
         {
 			connector_name =	"AttachPoint003",		
-			ShapeName	=	"ls6_500_model",
+			ShapeName	=	"jf39_gbu39_model",
 			Rotation = {0,0,0},
         },
         {
 			connector_name =	"AttachPoint004",		
-			ShapeName	=	"ls6_500_model",
+			ShapeName	=	"jf39_gbu39_model",
 			Rotation = {0,0,0},
         },
     },
-	wsTypeOfWeapon   = LS_6_500.wsTypeOfWeapon,
-	attribute        = {4, 4, 32, WSTYPE_PLACEHOLDER},
-	ejectImpulse     = eject_speed_msl,
+	wsTypeOfWeapon   = jf39_gbu39.wsTypeOfWeapon,
+    attribute        = {4, 4, 32, WSTYPE_PLACEHOLDER},
+    ejectVelocity    = eject_speed_msl1,
 	ejectDirection   = {0, -1, 0},
 })
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.2.0                       --
+--                    File by whisky.actual@gmail.com - v.1.2.2                       --
 ----------------------------------------------------------------------------------------

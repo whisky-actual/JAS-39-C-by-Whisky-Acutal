@@ -223,7 +223,7 @@ fonts["mfcd_font_dg"]   = {fontdescription["font_MFCD"], 10, materials["MFCD_IND
 fonts["mfcd_font_b"]    = {fontdescription["font_MFCD"], 10, materials["MFCD_IND_BLUE"]}
 fonts["mfcd_font_w"]    = {fontdescription["font_MFCD"], 10, materials["MFCD_IND_WHITE"]}
 fonts["mfcd_font_wy"]   = {fontdescription["font_MFCD"], 10, materials["MFCD_IND_WHITE_Y"]}
-fonts["mfcd_font_d"]    = {fontdescription["font_MFCD"], 10, materials["MFCD_IND_DARK"]}
+fonts["mfcd_font_d"]    = {fontdescription["font_MFCD"], 10, materials["MFCD_IND_BLACK"]}--For Kneebaoards MFCD_IND_DARK --> MFCD_IND_BLACK
 fonts["mfcd_font_y"]    = {fontdescription["font_MFCD"], 10, materials["MFCD_IND_YELLOW"]}
 fonts["mfcd_font_r"]    = {fontdescription["font_MFCD"], 10, materials["MFCD_IND_RED"]}
 
@@ -261,5 +261,5 @@ fonts["radio_font_cursor"]  = {fontdescription["font_RADIO"], 10, materials["RAD
 -- Clock
 fonts["clock_font_def"]     = {fontdescription["font_CLOCK"], 10, materials["CLOCK_IND_DEF"]}
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.2.0                       --
+--                    File by whisky.actual@gmail.com - v.1.2.2                       --
 ----------------------------------------------------------------------------------------
