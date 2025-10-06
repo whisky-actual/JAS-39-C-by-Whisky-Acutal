@@ -1,0 +1,9 @@
+wave = {
+    "Effects/Weapons/TorpedoLaunch1.wav",
+}
+detached = true
+inner_radius = 150
+outer_radius = 1500
+gain_random = 0.1
+pitch_random = 0.08
+gain = 1.5

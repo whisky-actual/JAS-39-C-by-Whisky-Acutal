@@ -1,0 +1,4 @@
+wave = "Effects/Aircrafts/Engines/RD-93/RD93_JFS_Begin"
+inner_radius = 10
+outer_radius = 200
+gain = 0.5

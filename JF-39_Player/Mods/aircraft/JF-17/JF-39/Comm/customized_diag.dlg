@@ -1,0 +1,1227 @@
+dialog = {
+    ["children"] = {
+        ["containerMain"] = {
+            ["children"] = {
+                ["gridHeaderCell"] = {
+                    ["params"] = {
+                        ["bounds"] = {
+                            ["h"] = 20,
+                            ["w"] = 100,
+                            ["x"] = 110,
+                            ["y"] = 144,
+                        },
+                        ["draggable"] = true,
+                        ["enabled"] = true,
+                        ["layout"] = {
+                        },
+                        ["text"] = "gridHeaderCell",
+                        ["tooltip"] = "",
+                        ["visible"] = false,
+                        ["zindex"] = 1000000,
+                    },
+                    ["skin"] = {
+                        ["params"] = {
+                            ["name"] = "gridHeaderCellSkinNew",
+                        },
+                    },
+                    ["type"] = "GridHeaderCell",
+                },
+                ["panelBottom"] = {
+                    ["children"] = {
+                        ["btnCancel"] = {
+                            ["params"] = {
+                                ["bounds"] = {
+                                    ["h"] = 50,
+                                    ["w"] = 140,
+                                    ["x"] = 0,
+                                    ["y"] = 0,
+                                },
+                                ["enabled"] = true,
+                                ["tabOrder"] = 0,
+                                ["text"] = "$cancel",
+                                ["tooltip"] = "",
+                                ["visible"] = true,
+                                ["zindex"] = 10,
+                            },
+                            ["skin"] = {
+                                ["params"] = {
+                                    ["name"] = "buttonSkinRedNew",
+                                },
+                            },
+                            ["type"] = "Button",
+                        },
+                        ["btnOk"] = {
+                            ["params"] = {
+                                ["bounds"] = {
+                                    ["h"] = 50,
+                                    ["w"] = 140,
+                                    ["x"] = 660,
+                                    ["y"] = 0,
+                                },
+                                ["enabled"] = true,
+                                ["tabOrder"] = 0,
+                                ["text"] = "$ok",
+                                ["tooltip"] = "",
+                                ["visible"] = true,
+                                ["zindex"] = 10,
+                            },
+                            ["skin"] = {
+                                ["params"] = {
+                                    ["name"] = "buttonSkinGreenNew",
+                                },
+                            },
+                            ["type"] = "Button",
+                        },
+                    },
+                    ["params"] = {
+                        ["bounds"] = {
+                            ["h"] = 50,
+                            ["w"] = 960,
+                            ["x"] = 0,
+                            ["y"] = 309,
+                        },
+                        ["enabled"] = true,
+                        ["layout"] = {
+                        },
+                        ["text"] = "panel0",
+                        ["tooltip"] = "",
+                        ["visible"] = true,
+                        ["zindex"] = 1,
+                    },
+                    ["skin"] = {
+                        ["params"] = {
+                            ["name"] = "panelSkin",
+                        },
+                        ["states"] = {
+                            ["released"] = {
+                                [1] = {
+                                    ["bkg"] = {
+                                        ["center_center"] = "0x2d3e50ff",
+                                        ["center_top"] = "0x232a31ff",
+                                        ["insets"] = {
+                                            ["top"] = 1,
+                                        },
+                                    },
+                                },
+                            },
+                        },
+                    },
+                    ["type"] = "Panel",
+                },
+                ["panelLaser"] = {
+                    ["children"] = {
+                        ["labelLaserTitle"] = {
+                            ["params"] = {
+                                ["angle"] = 0,
+                                ["bounds"] = {
+                                    ["h"] = 22,
+                                    ["w"] = 173,
+                                    ["x"] = 150,
+                                    ["y"] = -2,
+                                },
+                                ["enabled"] = true,
+                                ["pivotPoint"] = {
+                                    ["x"] = 0,
+                                    ["y"] = 0,
+                                },
+                                ["text"] = "$LaserCodeEditor",
+                                ["tooltip"] = "",
+                                ["visible"] = true,
+                                ["zindex"] = 0,
+                            },
+                            ["skin"] = {
+                                ["params"] = {
+                                    ["name"] = "staticOptionsCaptionSkin",
+                                },
+                                ["states"] = {
+                                    ["released"] = {
+                                        [1] = {
+                                            ["bkg"] = {
+                                                ["insets"] = {
+                                                    ["bottom"] = 1,
+                                                    ["left"] = 1,
+                                                    ["right"] = 1,
+                                                    ["top"] = 1,
+                                                },
+                                            },
+                                            ["text"] = {
+                                                ["fontSize"] = 17,
+                                                ["horzAlign"] = {
+                                                    ["offset"] = "$nil$",
+                                                    ["type"] = "max",
+                                                },
+                                                ["vertAlign"] = {
+                                                    ["offset"] = 1,
+                                                },
+                                            },
+                                        },
+                                    },
+                                },
+                            },
+                            ["type"] = "Static",
+                        },
+                        ["stcImage"] = {
+                            ["params"] = {
+                                ["angle"] = 0,
+                                ["bounds"] = {
+                                    ["h"] = 180,
+                                    ["w"] = 520,
+                                    ["x"] = 0,
+                                    ["y"] = 0+30,
+                                },
+                                ["enabled"] = true,
+                                ["pivotPoint"] = {
+                                    ["x"] = 0,
+                                    ["y"] = 0,
+                                },
+                                ["text"] = "",
+                                ["tooltip"] = "",
+                                ["visible"] = true,
+                                ["zindex"] = 0,
+                            },
+                            ["skin"] = {
+                                ["params"] = {
+                                    ["name"] = "staticSkin",
+                                },
+                                ["states"] = {
+                                    ["released"] = {
+                                        [1] = {
+                                            ["bkg"] = {
+                                                ["center_bottom"] = "0x000000ff",
+                                                ["center_center"] = "0xffffffff",
+                                                ["center_top"] = "0x000000ff",
+                                                ["insets"] = {
+                                                    ["bottom"] = 1,
+                                                    ["left"] = 1,
+                                                    ["right"] = 1,
+                                                    ["top"] = 1,
+                                                },
+                                                ["left_bottom"] = "0x000000ff",
+                                                ["left_center"] = "0x000000ff",
+                                                ["left_top"] = "0x000000ff",
+                                                ["right_bottom"] = "0x000000ff",
+                                                ["right_center"] = "0x000000ff",
+                                                ["right_top"] = "0x000000ff",
+                                            },
+                                            ["picture"] = {
+                                                ["color"] = "0xffffffff",
+                                                ["file"] = "CoreMods/aircraft/ChinaAssetPack/ImagesGUI/JF-17.png",
+                                                ["horzAlign"] = {
+                                                    ["type"] = "stretch",
+                                                },
+                                                ["rect"] = {
+                                                    ["x1"] = "0",
+                                                    ["x2"] = "1024",
+                                                    ["y1"] = "683",
+                                                    ["y2"] = "1024",
+                                                },
+                                                ["vertAlign"] = {
+                                                    ["type"] = "stretch",
+                                                },
+                                            },
+                                        },
+                                    },
+                                },
+                            },
+                            ["type"] = "Static",
+                        },
+                        ["editBoxLaserCodeStation2"] = {
+                            ["params"] = {
+                                ["acceptDecimalPoint"] = false,
+                                ["bounds"] = {
+                                    ["h"] = 20,
+                                    ["w"] = 45,
+                                    ["x"] = 237+125,
+                                    ["y"] = 200+30,
+                                },
+                                ["enabled"] = true,
+                                ["multiline"] = false,
+                                ["numeric"] = true,
+                                ["password"] = false,
+                                ["readOnly"] = false,
+                                ["tabOrder"] = 0,
+                                ["text"] = "1688",
+                                ["textWrapping"] = true,
+                                ["tooltip"] = "",
+                                ["visible"] = true,
+                                ["zindex"] = 0,
+                            },
+                            ["skin"] = {
+                                ["params"] = {
+                                    ["name"] = "editBoxSkin_ServerDesc",
+                                    ["textOffset"] = {
+                                        ["left"] = 5,
+                                        ["top"] = 1,
+                                        ["top "] = 0,
+                                    },
+                                },
+                                ["states"] = {
+                                    ["released"] = {
+                                        [1] = {
+                                            ["bkg"] = {
+                                                ["center_bottom"] = "0xa2a2a199",
+                                                ["center_center"] = "0x00000033",
+                                                ["center_top"] = "0xa2a2a199",
+                                                ["insets"] = {
+                                                    ["bottom"] = 1,
+                                                    ["left"] = 1,
+                                                    ["right"] = 1,
+                                                    ["top"] = 1,
+                                                },
+                                                ["left_bottom"] = "0xa2a2a199",
+                                                ["left_center"] = "0xa2a2a199",
+                                                ["left_top"] = "0xa2a2a199",
+                                                ["right_bottom"] = "0xa2a2a199",
+                                                ["right_center"] = "0xa2a2a199",
+                                                ["right_top"] = "0xa2a2a199",
+                                            },
+                                            ["text"] = {
+                                                ["blur"] = "$nil$",
+                                                ["blurColor"] = "0xffffffff",
+                                                ["color"] = "0xff9000df",
+                                                ["font"] = "DejaVuLGCSansCondensed.ttf",
+                                                ["fontSize"] = 14,
+                                                ["lineHeight"] = 0,
+                                                ["lineThroughColor"] = "0xffffffff",
+                                                ["shadowColor"] = "0x2d2100ff",
+                                                ["shadowOffset"] = {
+                                                    ["horz"] = 2,
+                                                    ["vert"] = 2,
+                                                },
+                                            },
+                                        },
+                                    },
+                                },
+                            },
+                            ["type"] = "EditBox",
+                        },
+                        ["editBoxLaserCodeStation3"] = {
+                            ["params"] = {
+                                ["acceptDecimalPoint"] = false,
+                                ["bounds"] = {
+                                    ["h"] = 20,
+                                    ["w"] = 45,
+                                    ["x"] = 237+75,
+                                    ["y"] = 200+30,
+                                },
+                                ["enabled"] = true,
+                                ["multiline"] = false,
+                                ["numeric"] = true,
+                                ["password"] = false,
+                                ["readOnly"] = false,
+                                ["tabOrder"] = 0,
+                                ["text"] = "1688",
+                                ["textWrapping"] = true,
+                                ["tooltip"] = "",
+                                ["visible"] = true,
+                                ["zindex"] = 0,
+                            },
+                            ["skin"] = {
+                                ["params"] = {
+                                    ["name"] = "editBoxSkin_ServerDesc",
+                                    ["textOffset"] = {
+                                        ["left"] = 5,
+                                        ["top"] = 1,
+                                        ["top "] = 0,
+                                    },
+                                },
+                                ["states"] = {
+                                    ["released"] = {
+                                        [1] = {
+                                            ["bkg"] = {
+                                                ["center_bottom"] = "0xa2a2a199",
+                                                ["center_center"] = "0x00000033",
+                                                ["center_top"] = "0xa2a2a199",
+                                                ["insets"] = {
+                                                    ["bottom"] = 1,
+                                                    ["left"] = 1,
+                                                    ["right"] = 1,
+                                                    ["top"] = 1,
+                                                },
+                                                ["left_bottom"] = "0xa2a2a199",
+                                                ["left_center"] = "0xa2a2a199",
+                                                ["left_top"] = "0xa2a2a199",
+                                                ["right_bottom"] = "0xa2a2a199",
+                                                ["right_center"] = "0xa2a2a199",
+                                                ["right_top"] = "0xa2a2a199",
+                                            },
+                                            ["text"] = {
+                                                ["blur"] = "$nil$",
+                                                ["blurColor"] = "0xffffffff",
+                                                ["color"] = "0xff9000df",
+                                                ["font"] = "DejaVuLGCSansCondensed.ttf",
+                                                ["fontSize"] = 14,
+                                                ["lineHeight"] = 0,
+                                                ["lineThroughColor"] = "0xffffffff",
+                                                ["shadowColor"] = "0x2d2100ff",
+                                                ["shadowOffset"] = {
+                                                    ["horz"] = 2,
+                                                    ["vert"] = 2,
+                                                },
+                                            },
+                                        },
+                                    },
+                                },
+                            },
+                            ["type"] = "EditBox",
+                        },
+                        ["editBoxLaserCodeStation4"] = {
+                            ["params"] = {
+                                ["acceptDecimalPoint"] = false,
+                                ["bounds"] = {
+                                    ["h"] = 20,
+                                    ["w"] = 45,
+                                    ["x"] = 237,
+                                    ["y"] = 200+30,
+                                },
+                                ["enabled"] = true,
+                                ["multiline"] = false,
+                                ["numeric"] = true,
+                                ["password"] = false,
+                                ["readOnly"] = false,
+                                ["tabOrder"] = 0,
+                                ["text"] = "1688",
+                                ["textWrapping"] = true,
+                                ["tooltip"] = "",
+                                ["visible"] = true,
+                                ["zindex"] = 0,
+                            },
+                            ["skin"] = {
+                                ["params"] = {
+                                    ["name"] = "editBoxSkin_ServerDesc",
+                                    ["textOffset"] = {
+                                        ["left"] = 5,
+                                        ["top"] = 1,
+                                        ["top "] = 0,
+                                    },
+                                },
+                                ["states"] = {
+                                    ["released"] = {
+                                        [1] = {
+                                            ["bkg"] = {
+                                                ["center_bottom"] = "0xa2a2a199",
+                                                ["center_center"] = "0x00000033",
+                                                ["center_top"] = "0xa2a2a199",
+                                                ["insets"] = {
+                                                    ["bottom"] = 1,
+                                                    ["left"] = 1,
+                                                    ["right"] = 1,
+                                                    ["top"] = 1,
+                                                },
+                                                ["left_bottom"] = "0xa2a2a199",
+                                                ["left_center"] = "0xa2a2a199",
+                                                ["left_top"] = "0xa2a2a199",
+                                                ["right_bottom"] = "0xa2a2a199",
+                                                ["right_center"] = "0xa2a2a199",
+                                                ["right_top"] = "0xa2a2a199",
+                                            },
+                                            ["text"] = {
+                                                ["blur"] = "$nil$",
+                                                ["blurColor"] = "0xffffffff",
+                                                ["color"] = "0xff9000df",
+                                                ["font"] = "DejaVuLGCSansCondensed.ttf",
+                                                ["fontSize"] = 14,
+                                                ["lineHeight"] = 0,
+                                                ["lineThroughColor"] = "0xffffffff",
+                                                ["shadowColor"] = "0x2d2100ff",
+                                                ["shadowOffset"] = {
+                                                    ["horz"] = 2,
+                                                    ["vert"] = 2,
+                                                },
+                                            },
+                                        },
+                                    },
+                                },
+                            },
+                            ["type"] = "EditBox",
+                        },
+                        ["editBoxLaserCodeStation5"] = {
+                            ["params"] = {
+                                ["acceptDecimalPoint"] = false,
+                                ["bounds"] = {
+                                    ["h"] = 20,
+                                    ["w"] = 45,
+                                    ["x"] = 237-75,
+                                    ["y"] = 200+30,
+                                },
+                                ["enabled"] = true,
+                                ["multiline"] = false,
+                                ["numeric"] = true,
+                                ["password"] = false,
+                                ["readOnly"] = false,
+                                ["tabOrder"] = 0,
+                                ["text"] = "1688",
+                                ["textWrapping"] = true,
+                                ["tooltip"] = "",
+                                ["visible"] = true,
+                                ["zindex"] = 0,
+                            },
+                            ["skin"] = {
+                                ["params"] = {
+                                    ["name"] = "editBoxSkin_ServerDesc",
+                                    ["textOffset"] = {
+                                        ["left"] = 5,
+                                        ["top"] = 1,
+                                        ["top "] = 0,
+                                    },
+                                },
+                                ["states"] = {
+                                    ["released"] = {
+                                        [1] = {
+                                            ["bkg"] = {
+                                                ["center_bottom"] = "0xa2a2a199",
+                                                ["center_center"] = "0x00000033",
+                                                ["center_top"] = "0xa2a2a199",
+                                                ["insets"] = {
+                                                    ["bottom"] = 1,
+                                                    ["left"] = 1,
+                                                    ["right"] = 1,
+                                                    ["top"] = 1,
+                                                },
+                                                ["left_bottom"] = "0xa2a2a199",
+                                                ["left_center"] = "0xa2a2a199",
+                                                ["left_top"] = "0xa2a2a199",
+                                                ["right_bottom"] = "0xa2a2a199",
+                                                ["right_center"] = "0xa2a2a199",
+                                                ["right_top"] = "0xa2a2a199",
+                                            },
+                                            ["text"] = {
+                                                ["blur"] = "$nil$",
+                                                ["blurColor"] = "0xffffffff",
+                                                ["color"] = "0xff9000df",
+                                                ["font"] = "DejaVuLGCSansCondensed.ttf",
+                                                ["fontSize"] = 14,
+                                                ["lineHeight"] = 0,
+                                                ["lineThroughColor"] = "0xffffffff",
+                                                ["shadowColor"] = "0x2d2100ff",
+                                                ["shadowOffset"] = {
+                                                    ["horz"] = 2,
+                                                    ["vert"] = 2,
+                                                },
+                                            },
+                                        },
+                                    },
+                                },
+                            },
+                            ["type"] = "EditBox",
+                        },
+                        ["editBoxLaserCodeStation6"] = {
+                            ["params"] = {
+                                ["acceptDecimalPoint"] = false,
+                                ["bounds"] = {
+                                    ["h"] = 20,
+                                    ["w"] = 45,
+                                    ["x"] = 237-125,
+                                    ["y"] = 200+30,
+                                },
+                                ["enabled"] = true,
+                                ["multiline"] = false,
+                                ["numeric"] = true,
+                                ["password"] = false,
+                                ["readOnly"] = false,
+                                ["tabOrder"] = 0,
+                                ["text"] = "1688",
+                                ["textWrapping"] = true,
+                                ["tooltip"] = "",
+                                ["visible"] = true,
+                                ["zindex"] = 0,
+                            },
+                            ["skin"] = {
+                                ["params"] = {
+                                    ["name"] = "editBoxSkin_ServerDesc",
+                                    ["textOffset"] = {
+                                        ["left"] = 5,
+                                        ["top"] = 1,
+                                        ["top "] = 0,
+                                    },
+                                },
+                                ["states"] = {
+                                    ["released"] = {
+                                        [1] = {
+                                            ["bkg"] = {
+                                                ["center_bottom"] = "0xa2a2a199",
+                                                ["center_center"] = "0x00000033",
+                                                ["center_top"] = "0xa2a2a199",
+                                                ["insets"] = {
+                                                    ["bottom"] = 1,
+                                                    ["left"] = 1,
+                                                    ["right"] = 1,
+                                                    ["top"] = 1,
+                                                },
+                                                ["left_bottom"] = "0xa2a2a199",
+                                                ["left_center"] = "0xa2a2a199",
+                                                ["left_top"] = "0xa2a2a199",
+                                                ["right_bottom"] = "0xa2a2a199",
+                                                ["right_center"] = "0xa2a2a199",
+                                                ["right_top"] = "0xa2a2a199",
+                                            },
+                                            ["text"] = {
+                                                ["blur"] = "$nil$",
+                                                ["blurColor"] = "0xffffffff",
+                                                ["color"] = "0xff9000df",
+                                                ["font"] = "DejaVuLGCSansCondensed.ttf",
+                                                ["fontSize"] = 14,
+                                                ["lineHeight"] = 0,
+                                                ["lineThroughColor"] = "0xffffffff",
+                                                ["shadowColor"] = "0x2d2100ff",
+                                                ["shadowOffset"] = {
+                                                    ["horz"] = 2,
+                                                    ["vert"] = 2,
+                                                },
+                                            },
+                                        },
+                                    },
+                                },
+                            },
+                            ["type"] = "EditBox",
+                        },
+                    },
+                    ["params"] = {
+                        ["bounds"] = {
+                            --["h"] = 300,
+                            --["w"] = 960,
+                            --["x"] = 0,
+                            --["y"] = 0,
+                            ["h"] = 270,
+                            ["w"] = 530,
+                            ["x"] = 10,
+                            ["y"] = 10,
+                        },
+                        ["enabled"] = true,
+                        ["layout"] = {
+                        },
+                        ["text"] = "panel0",
+                        ["tooltip"] = "",
+                        ["visible"] = true,
+                        ["zindex"] = 10,
+                    },
+                    ["skin"] = {
+                        ["params"] = {
+                            ["name"] = "panelSkin",
+                        },
+                    },
+                    ["type"] = "Panel",
+                },
+                ["panelDTC"] = {
+                    ["children"] = {
+                        ["labelDTCTitle"] = {
+                            ["params"] = {
+                                ["angle"] = 0,
+                                ["bounds"] = {
+                                    ["h"] = 22,
+                                    ["w"] = 173,
+                                    ["x"] = 0,
+                                    ["y"] = -2,
+                                },
+                                ["enabled"] = true,
+                                ["pivotPoint"] = {
+                                    ["x"] = 0,
+                                    ["y"] = 0,
+                                },
+                                ["text"] = "$DTCEditor",
+                                ["tooltip"] = "",
+                                ["visible"] = true,
+                                ["zindex"] = 0,
+                            },
+                            ["skin"] = {
+                                ["params"] = {
+                                    ["name"] = "staticOptionsCaptionSkin",
+                                },
+                                ["states"] = {
+                                    ["released"] = {
+                                        [1] = {
+                                            ["bkg"] = {
+                                                ["insets"] = {
+                                                    ["bottom"] = 1,
+                                                    ["left"] = 1,
+                                                    ["right"] = 1,
+                                                    ["top"] = 1,
+                                                },
+                                            },
+                                            ["text"] = {
+                                                ["fontSize"] = 17,
+                                                ["horzAlign"] = {
+                                                    ["offset"] = "$nil$",
+                                                    ["type"] = "max",
+                                                },
+                                                ["vertAlign"] = {
+                                                    ["offset"] = 1,
+                                                },
+                                            },
+                                        },
+                                    },
+                                },
+                            },
+                            ["type"] = "Static",
+                        },
+                        ["txtDMAP"] = {
+                            ["params"] = {
+                                ["angle"] = 0,
+                                ["bounds"] = {
+                                    ["h"] = 24,
+                                    ["w"] = 100,
+                                    ["x"] = 10,
+                                    ["y"] = 30,
+                                },
+                                ["enabled"] = true,
+                                ["pivotPoint"] = {
+                                    ["x"] = 0,
+                                    ["y"] = 0,
+                                },
+                                ["text"] = "$DMAP_TYPE",
+                                ["tooltip"] = "",
+                                ["visible"] = true,
+                                ["zindex"] = 0,
+                            },
+                            ["skin"] = {
+                                ["params"] = {
+                                    ["name"] = "staticOptionsCaptionSkin",
+                                },
+                                ["states"] = {
+                                    ["released"] = {
+                                        [1] = {
+                                            ["text"] = {
+                                                ["horzAlign"] = {
+                                                    ["offset"] = "$nil$",
+                                                },
+                                                ["vertAlign"] = {
+                                                    ["offset"] = 1,
+                                                    ["type"] = "min",
+                                                },
+                                            },
+                                        },
+                                    },
+                                },
+                            },
+                            ["type"] = "Static",
+                        },
+                        ["listBoxDMAP"] = {
+                            ["params"] = {
+                                ["bounds"] = {
+                                    ["h"] = 20,
+                                    ["w"] = 140,
+                                    ["x"] = 100,
+                                    ["y"] = 30,
+                                },
+                                ["enabled"] = true,
+                                ["tabOrder"] = 0,
+                                ["text"] = "Item1",
+                                ["tooltip"] = "",
+                                ["visible"] = true,
+                                ["zindex"] = 10,
+                            },
+                            ["skin"] = {
+                                ["params"] = {
+                                    ["name"] = "comboListSkin_options",
+                                },
+                                ["states"] = {
+                                    ["released"] = {
+                                        [1] = {
+                                            ["bkg"] = {
+                                                ["center_bottom"] = "0xa2a2a199",
+                                                ["center_center"] = "0x00000033",
+                                                ["center_top"] = "0xa2a2a199",
+                                                ["file"] = "$nil$",
+                                                ["left_bottom"] = "0xa2a2a199",
+                                                ["left_center"] = "0xa2a2a199",
+                                                ["left_top"] = "0xa2a2a199",
+                                                ["right_bottom"] = "0xa2a2a199",
+                                                ["right_center"] = "0xa2a2a199",
+                                                ["right_top"] = "0xa2a2a199",
+                                            },
+                                        },
+                                    },
+                                },
+                            },
+                            ["type"] = "ComboList",
+                        },
+                        ["txtAIRSPACE"] = {
+                            ["params"] = {
+                                ["angle"] = 0,
+                                ["bounds"] = {
+                                    ["h"] = 24,
+                                    ["w"] = 100,
+                                    ["x"] = 10,
+                                    ["y"] = 60,
+                                },
+                                ["enabled"] = true,
+                                ["pivotPoint"] = {
+                                    ["x"] = 0,
+                                    ["y"] = 0,
+                                },
+                                ["text"] = "$AIRSPACE_SRC",
+                                ["tooltip"] = "",
+                                ["visible"] = true,
+                                ["zindex"] = 0,
+                            },
+                            ["skin"] = {
+                                ["params"] = {
+                                    ["name"] = "staticOptionsCaptionSkin",
+                                },
+                                ["states"] = {
+                                    ["released"] = {
+                                        [1] = {
+                                            ["text"] = {
+                                                ["horzAlign"] = {
+                                                    ["offset"] = "$nil$",
+                                                },
+                                                ["vertAlign"] = {
+                                                    ["offset"] = 1,
+                                                    ["type"] = "min",
+                                                },
+                                            },
+                                        },
+                                    },
+                                },
+                            },
+                            ["type"] = "Static",
+                        },
+                        ["listBoxAIRSPACE"] = {
+                            ["params"] = {
+                                ["bounds"] = {
+                                    ["h"] = 20,
+                                    ["w"] = 140,
+                                    ["x"] = 100,
+                                    ["y"] = 60,
+                                },
+                                ["enabled"] = true,
+                                ["tabOrder"] = 0,
+                                ["text"] = "Item1",
+                                ["tooltip"] = "",
+                                ["visible"] = true,
+                                ["zindex"] = 10,
+                            },
+                            ["skin"] = {
+                                ["params"] = {
+                                    ["name"] = "comboListSkin_options",
+                                },
+                                ["states"] = {
+                                    ["released"] = {
+                                        [1] = {
+                                            ["bkg"] = {
+                                                ["center_bottom"] = "0xa2a2a199",
+                                                ["center_center"] = "0x00000033",
+                                                ["center_top"] = "0xa2a2a199",
+                                                ["file"] = "$nil$",
+                                                ["left_bottom"] = "0xa2a2a199",
+                                                ["left_center"] = "0xa2a2a199",
+                                                ["left_top"] = "0xa2a2a199",
+                                                ["right_bottom"] = "0xa2a2a199",
+                                                ["right_center"] = "0xa2a2a199",
+                                                ["right_top"] = "0xa2a2a199",
+                                            },
+                                        },
+                                    },
+                                },
+                            },
+                            ["type"] = "ComboList",
+                        },
+                        ["checkUpdateINS"] = {
+                            ["params"] = {
+                                ["bounds"] = {
+                                    ["h"] = 20,
+                                    ["w"] = 214,
+                                    ["x"] = 10,
+                                    ["y"] = 90,
+                                },
+                                ["enabled"] = true,
+                                ["state"] = false,
+                                ["tabOrder"] = 0,
+                                ["text"] = "$UpdateINS",
+                                ["tooltip"] = "",
+                                ["visible"] = true,
+                                ["zindex"] = 0,
+                            },
+                            ["skin"] = {
+                                ["params"] = {
+                                    ["name"] = "checkBoxSkin_options",
+                                },
+                            },
+                            ["type"] = "CheckBox",
+                        },
+                        ["checkAARProbe"] = {
+                            ["params"] = {
+                                ["bounds"] = {
+                                    ["h"] = 20,
+                                    ["w"] = 214,
+                                    ["x"] = 10,
+                                    ["y"] = 90+120,
+                                },
+                                ["enabled"] = true,
+                                ["state"] = false,
+                                ["tabOrder"] = 0,
+                                ["text"] = "$AAR_Probe",
+                                ["tooltip"] = "",
+                                ["visible"] = true,
+                                ["zindex"] = 0,
+                            },
+                            ["skin"] = {
+                                ["params"] = {
+                                    ["name"] = "checkBoxSkin_options",
+                                },
+                            },
+                            ["type"] = "CheckBox",
+                        },
+                        ["checkRefillUtil"] = {
+                            ["params"] = {
+                                ["bounds"] = {
+                                    ["h"] = 20,
+                                    ["w"] = 214,
+                                    ["x"] = 10,
+                                    ["y"] = 120+120,
+                                },
+                                ["enabled"] = true,
+                                ["state"] = false,
+                                ["tabOrder"] = 0,
+                                ["text"] = "$RefillUtil",
+                                ["tooltip"] = "",
+                                ["visible"] = true,
+                                ["zindex"] = 0,
+                            },
+                            ["skin"] = {
+                                ["params"] = {
+                                    ["name"] = "checkBoxSkin_options",
+                                },
+                            },
+                            ["type"] = "CheckBox",
+                        },
+                        ["checkLadderInletCover"] = {
+                            ["params"] = {
+                                ["bounds"] = {
+                                    ["h"] = 20,
+                                    ["w"] = 214,
+                                    ["x"] = 10,
+                                    ["y"] = 150+120,
+                                },
+                                ["enabled"] = true,
+                                ["state"] = false,
+                                ["tabOrder"] = 0,
+                                ["text"] = "$LadderInletCover",
+                                ["tooltip"] = "",
+                                ["visible"] = true,
+                                ["zindex"] = 0,
+                            },
+                            ["skin"] = {
+                                ["params"] = {
+                                    ["name"] = "checkBoxSkin_options",
+                                },
+                            },
+                            ["type"] = "CheckBox",
+                        },
+                    },
+                    ["params"] = {
+                        ["bounds"] = {
+                            --["h"] = 300,
+                            --["w"] = 960,
+                            --["x"] = 0,
+                            --["y"] = 0,
+                            ["h"] = 320,
+                            ["w"] = 400,
+                            ["x"] = 540,
+                            ["y"] = 10,
+                        },
+                        ["enabled"] = true,
+                        ["layout"] = {
+                        },
+                        ["text"] = "panel0",
+                        ["tooltip"] = "",
+                        ["visible"] = true,
+                        ["zindex"] = 10,
+                    },
+                    ["skin"] = {
+                        ["params"] = {
+                            ["name"] = "panelSkin",
+                        },
+                    },
+                    ["type"] = "Panel",
+                },
+            },
+            ["params"] = {
+                ["bounds"] = {
+                    ["h"] = 470,
+                    ["w"] = 960,
+                    ["x"] = 0,
+                    ["y"] = 0,
+                },
+                ["enabled"] = true,
+                ["layout"] = {
+                },
+                ["text"] = "panel0",
+                ["tooltip"] = "",
+                ["visible"] = true,
+                ["zindex"] = 0,
+                ["text"] = "$LaserCodeEditor",
+            },
+            ["skin"] = {
+                ["params"] = {
+                    ["insets"] = {
+                        ["bottom"] = 0,
+                        ["left"] = 0,
+                        ["right"] = 0,
+                        ["top"] = 0,
+                    },
+                    ["name"] = "panelSkin",
+                },
+                ["states"] = {
+                    ["released"] = {
+                        [1] = {
+                            ["bkg"] = {
+                                ["center_bottom"] = "0x00000080",
+                                ["center_center"] = "0x2d3e50cc",
+                                ["center_top"] = "0x00000080",
+                                ["left_bottom"] = "0x00000080",
+                                ["left_center"] = "0x00000080",
+                                ["left_top"] = "0x00000080",
+                                ["right_bottom"] = "0x00000080",
+                                ["right_center"] = "0x00000080",
+                                ["right_top"] = "0x00000080",
+                            },
+                        },
+                    },
+                },
+            },
+            ["type"] = "Panel",
+        },
+    },
+    ["params"] = {
+        ["bounds"] = {
+            ["h"] = 409,
+            ["w"] = 800,
+            ["x"] = 0,
+            ["y"] = 0,
+        },
+        ["buddy"] = false,
+        ["clipResizeCursor"] = false,
+        ["draggable"] = true,
+        ["enabled"] = true,
+        ["hasCursor"] = true,
+        ["layout"] = {
+        },
+        ["lockFlow"] = false,
+        ["modal"] = false,
+        ["offscreen"] = false,
+        ["overlay"] = false,
+        ["resizable"] = false,
+        ["text"] = "$ConfigPanel",
+        ["zOrder"] = 0,
+    },
+    ["skin"] = {
+        ["params"] = {
+            ["headerHeight"] = 50,
+            ["insets"] = {
+                ["bottom"] = 0,
+                ["left"] = 0,
+                ["right"] = 0,
+                ["top"] = 0,
+            },
+            ["name"] = "windowSkin",
+        },
+        ["skins"] = {
+            ["header"] = {
+                ["skinData"] = {
+                    ["params"] = {
+                        ["closeButtonHorzAlign"] = {
+                            ["offset"] = -15,
+                        },
+                        ["insets"] = {
+                            ["bottom"] = 0,
+                            ["left"] = 0,
+                            ["right"] = 0,
+                            ["top"] = 0,
+                        },
+                    },
+                    ["skins"] = {
+                        ["closeButton"] = {
+                            ["skinData"] = {
+                                ["states"] = {
+                                    ["disabled"] = {
+                                        [1] = {
+                                            ["bkg"] = {
+                                                ["center_bottom"] = "0xb3b3b34d",
+                                                ["center_center"] = "0xffffffff",
+                                                ["center_top"] = "0xb3b3b34d",
+                                                ["file"] = "dxgui\\skins\\skinme\\images\\window\\other\\close\\x_disabled.png",
+                                                ["left_bottom"] = "0xb3b3b34d",
+                                                ["left_center"] = "0xb3b3b34d",
+                                                ["left_top"] = "0xb3b3b34d",
+                                                ["right_bottom"] = "0xb3b3b34d",
+                                                ["right_center"] = "0xb3b3b34d",
+                                                ["right_top"] = "0xb3b3b34d",
+                                            },
+                                            ["picture"] = {
+                                                ["color"] = "$nil$",
+                                                ["file"] = "$nil$",
+                                                ["rect"] = {
+                                                    ["x1"] = "$nil$",
+                                                    ["x2"] = "$nil$",
+                                                    ["y1"] = "$nil$",
+                                                    ["y2"] = "$nil$",
+                                                },
+                                                ["size"] = {
+                                                    ["horz"] = "$nil$",
+                                                    ["vert"] = "$nil$",
+                                                },
+                                                ["userTexSampler"] = "$nil$",
+                                            },
+                                            ["text"] = {
+                                                ["blur"] = 0,
+                                                ["color"] = "0x808080ff",
+                                                ["font"] = "DejaVuLGCSansCondensed-Bold.ttf",
+                                                ["fontSize"] = 12,
+                                                ["horzAlign"] = {
+                                                    ["type"] = "middle",
+                                                },
+                                                ["shadowOffset"] = {
+                                                    ["horz"] = 0,
+                                                    ["vert"] = 0,
+                                                },
+                                                ["vertAlign"] = {
+                                                    ["type"] = "middle",
+                                                },
+                                            },
+                                        },
+                                    },
+                                    ["focused"] = {
+                                    },
+                                    ["hover"] = {
+                                        [1] = {
+                                            ["picture"] = {
+                                                ["file"] = "dxgui\\skins\\skinme\\images\\buttons\\buttons(new)\\button close\\btnclosehover.png",
+                                                ["horzAlign"] = {
+                                                    ["type"] = "middle",
+                                                },
+                                                ["rect"] = {
+                                                    ["x1"] = "$nil$",
+                                                    ["x2"] = "$nil$",
+                                                    ["y1"] = "$nil$",
+                                                    ["y2"] = "$nil$",
+                                                },
+                                                ["size"] = {
+                                                    ["horz"] = "$nil$",
+                                                    ["vert"] = "$nil$",
+                                                },
+                                                ["userTexSampler"] = "$nil$",
+                                                ["vertAlign"] = {
+                                                    ["type"] = "middle",
+                                                },
+                                            },
+                                        },
+                                    },
+                                    ["pressed"] = {
+                                        [1] = {
+                                            ["picture"] = {
+                                                ["file"] = "dxgui\\skins\\skinme\\images\\buttons\\buttons(new)\\button close\\btnclosepressed.png",
+                                                ["horzAlign"] = {
+                                                    ["type"] = "middle",
+                                                },
+                                                ["rect"] = {
+                                                    ["x1"] = "$nil$",
+                                                    ["x2"] = "$nil$",
+                                                    ["y1"] = "$nil$",
+                                                    ["y2"] = "$nil$",
+                                                },
+                                                ["size"] = {
+                                                    ["horz"] = "$nil$",
+                                                    ["vert"] = "$nil$",
+                                                },
+                                                ["userTexSampler"] = "$nil$",
+                                                ["vertAlign"] = {
+                                                    ["type"] = "middle",
+                                                },
+                                            },
+                                        },
+                                    },
+                                    ["released"] = {
+                                        [1] = {
+                                            ["picture"] = {
+                                                ["file"] = "dxgui\\skins\\skinme\\images\\buttons\\buttons(new)\\button close\\btncloserl.png",
+                                                ["horzAlign"] = {
+                                                    ["type"] = "middle",
+                                                },
+                                                ["rect"] = {
+                                                    ["x1"] = "$nil$",
+                                                    ["x2"] = "$nil$",
+                                                    ["y1"] = "$nil$",
+                                                    ["y2"] = "$nil$",
+                                                },
+                                                ["size"] = {
+                                                    ["horz"] = "$nil$",
+                                                    ["vert"] = "$nil$",
+                                                },
+                                                ["userTexSampler"] = "$nil$",
+                                                ["vertAlign"] = {
+                                                    ["type"] = "middle",
+                                                },
+                                            },
+                                        },
+                                    },
+                                },
+                                ["type"] = "button",
+                            },
+                        },
+                    },
+                    ["states"] = {
+                        ["released"] = {
+                            [1] = {
+                                ["bkg"] = {
+                                    ["center_bottom"] = "0x232a31ff",
+                                    ["center_center"] = "0x2d3e50ff",
+                                    ["insets"] = {
+                                        ["bottom"] = 1,
+                                    },
+                                },
+                                ["text"] = {
+                                    ["color"] = "0xbccecdff",
+                                    ["fontSize"] = 16,
+                                    ["horzAlign"] = {
+                                        ["offset"] = 10,
+                                    },
+                                    ["lineHeight"] = 0,
+                                    ["vertAlign"] = {
+                                        ["offset"] = 0,
+                                    },
+                                },
+                            },
+                            [2] = {
+                                ["bkg"] = {
+                                    ["center_bottom"] = "0x232a31ff",
+                                    ["center_center"] = "0x2d3e50ff",
+                                    ["insets"] = {
+                                        ["bottom"] = 1,
+                                    },
+                                },
+                                ["text"] = {
+                                    ["color"] = "0xbccecdff",
+                                    ["fontSize"] = 16,
+                                    ["horzAlign"] = {
+                                        ["offset"] = 10,
+                                    },
+                                    ["lineHeight"] = 0,
+                                    ["vertAlign"] = {
+                                        ["offset"] = 0,
+                                    },
+                                },
+                            },
+                        },
+                    },
+                },
+            },
+        },
+        ["states"] = {
+            ["released"] = {
+                [1] = {
+                    ["bkg"] = {
+                        ["center_center"] = "$nil$",
+                        ["insets"] = {
+                            ["bottom"] = "0",
+                            ["left"] = "0",
+                            ["right"] = "0",
+                            ["top"] = "0",
+                        },
+                    },
+                },
+            },
+        },
+    },
+    ["type"] = "Window",
+}

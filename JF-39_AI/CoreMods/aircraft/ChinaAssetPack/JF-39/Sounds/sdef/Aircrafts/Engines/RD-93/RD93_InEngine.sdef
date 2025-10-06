@@ -1,0 +1,4 @@
+wave = "Effects/Aircrafts/Engines/RD-93/RD93_InEngine"
+inner_radius = 100
+position = {0.7, 0.1, 0.0}
+gain = 0.55

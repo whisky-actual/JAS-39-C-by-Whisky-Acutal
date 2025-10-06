@@ -145,7 +145,7 @@ end
 ----------------------------------------------------------------------------------------
 -- Initialize Weapons (Choose Configuration Below)
 ----------------------------------------------------------------------------------------
-use_weapon_version('SAAB')  -- Replace with 'SE', 'HU', etc. as needed
+use_weapon_version('SE')  -- Replace with 'SE', 'HU', etc. as needed
 
 ----------------------------------------------------------------------------------------
 -- Legacy Weapon Code (Workaround for ED's weapons system)

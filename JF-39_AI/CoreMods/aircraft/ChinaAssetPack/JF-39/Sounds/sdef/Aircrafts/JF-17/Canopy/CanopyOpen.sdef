@@ -1,0 +1,5 @@
+wave = "Effects/Aircrafts/JF-17/Canopy/CanopyOpen"
+inner_radius = 5
+outer_radius = 25
+release = 0.3
+gain = 0.6

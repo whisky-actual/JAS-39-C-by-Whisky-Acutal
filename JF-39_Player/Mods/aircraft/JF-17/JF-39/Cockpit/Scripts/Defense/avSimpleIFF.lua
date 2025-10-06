@@ -1,0 +1,10 @@
+dofile(LockOn_Options.script_path.."command_defs.lua")
+
+local gettext = require("i_18n")
+_ = gettext.translate
+
+-- debugGUI = true
+
+dtime = 0.1
+
+need_to_be_closed = true

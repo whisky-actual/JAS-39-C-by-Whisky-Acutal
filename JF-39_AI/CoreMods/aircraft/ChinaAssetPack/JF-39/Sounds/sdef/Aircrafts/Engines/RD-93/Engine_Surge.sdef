@@ -1,0 +1,7 @@
+wave = "Effects/Aircrafts/Engines/RD-93/Engine_Surge"
+inner_radius = 10
+outer_radius = 100
+position = {0.0, 0.0, 0.0}
+gain = 0.8
+pitch_random = 0.05
+gain_random = 0.15
