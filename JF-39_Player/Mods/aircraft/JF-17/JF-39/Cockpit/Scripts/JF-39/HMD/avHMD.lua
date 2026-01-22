@@ -15,7 +15,6 @@ local JF39_HMD_HORIZONTAL_VIEW = get_param_handle("JF39_HMD_HORIZONTAL_VIEW")
 local JF39_HMD_VERTICAL_VIEW = get_param_handle("JF39_HMD_VERTICAL_VIEW")
 local JF39_HMD_HDG = get_param_handle("JF39_HMD_HDG")
 local RAD_TO_DEGREE  = 57.29577951308233
-
 -------------------------------------------------------
 -- Params
 -------------------------------------------------------
@@ -41,8 +40,7 @@ function SetCommand(command, value)
         end
 
         -- Get base heading in degrees
-        local base_heading_rad = sensor_data:getHeading()
-        local base_heading_deg = (base_heading_rad * RAD_TO_DEGREE)
+        local base_heading_deg = (360 - (sensor_data.getHeading() * RAD_TO_DEGREE))
 
         -- Combine base heading with horizontal view value
         local combined_heading = base_heading_deg - value
@@ -79,5 +77,5 @@ dtime = 1.0 / 32
 need_to_be_closed = false
 
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.2.2                       --
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------

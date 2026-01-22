@@ -175,5 +175,5 @@ dofile(LockOn_Options.script_path .. "JF-39/HUD/Indicator/HUD_NORMAL_WPN.lua")
 dofile(LockOn_Options.script_path .. "JF-39/HUD/Indicator/HUD_NORMAL_NAV.lua")
 
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.2.2                       --
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------

@@ -131,22 +131,27 @@ SnapViews = {
         rollAngle = 0.000000,
     },
     [13] = {--default view
-        viewAngle = 90,--FOV
-        hAngle    = 0.000000,
-        vAngle    = -12.609416,
-        x_trans   = 0.000000,
-        y_trans   = 0.017641,
-        z_trans   = 0.000000,
-        rollAngle = 0.000000,
+		viewAngle		= 86.249587,--FOV
+		hAngle			= 0.000000,
+		vAngle			= -12.609416,
+		x_trans			= -0.199936,
+		y_trans			= 0.067355,
+		z_trans			= 0.000000,
+		rollAngle		= 0.000000,
+		cockpit_version	= 0,
     },
     [14] = {--default view - VR
-        viewAngle = 90,--FOV
-        hAngle    = 0.000000,
-        vAngle    = -9.363433,
-        x_trans   = 0.0,
-        y_trans   = 0.015877,
-        z_trans   = -0.003428,
-        rollAngle = 0.000000,
+		viewAngle		= 90.000000,--FOV
+		hAngle			= 0.000000,
+		vAngle			= -9.363433,
+		x_trans			= 0.000000,
+		y_trans			= 0.015877,
+		z_trans			= -0.003428,
+		rollAngle		= 0.000000,
+		cockpit_version	= 0,
     },
 },
 }
+----------------------------------------------------------------------------------------
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
+----------------------------------------------------------------------------------------

@@ -298,5 +298,5 @@ declare_loadout({
 })
 --settings		= Get_Combined_GUISettings_Preset("Paveway_III_USN")
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.2.1                       --
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------

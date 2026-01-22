@@ -317,5 +317,5 @@ function MFCD_set_screenspace_displacement(aspect, left_center_right, zoom_value
     dedicated_viewport_arcade = {default_x,         0, default_width, default_height}
 end
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.2.2                       --
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------

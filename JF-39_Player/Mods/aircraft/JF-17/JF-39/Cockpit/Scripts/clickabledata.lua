@@ -515,7 +515,7 @@ elements["PNT_798"]  = default_axis_limited(_(cmd_names.PNT_831), devices.MFCD, 
 elements["PNT_799"]  = default_axis_limited(_(cmd_names.PNT_832), devices.MFCD, click_cmds.PNT_832, 832,0,  nil, true, nil, {{0,1.0},{0,1.0}}, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
 -- end of Right MFCD
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.2.2                       --
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------
 
 

@@ -104,5 +104,5 @@ AddHUDElement(hud_hdg_txt)
 dofile(LockOn_Options.script_path .. "JF-39/HMD/Indicator/HMD_NORMAL_NAV.lua")
 
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.2.2                       --
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------

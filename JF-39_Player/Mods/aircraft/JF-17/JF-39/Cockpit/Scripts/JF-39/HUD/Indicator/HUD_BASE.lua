@@ -88,5 +88,5 @@ fake_double_eye_view.use_mipfilter   = true
 Add(fake_double_eye_view)
 
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.2.2                       --
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------

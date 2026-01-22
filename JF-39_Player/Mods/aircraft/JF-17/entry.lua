@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------
--- Toggle: Set to true for JF-39, false for vanilla JF-17
+-- Toggle: Set to true for JF-39, false for JF-17
 ----------------------------------------------------------------------------------------
 JF39 = true   -- <<<< CHANGE HERE
 ----------------------------------------------------------------------------------------
@@ -17,7 +17,7 @@ if JF39 == true then
     displayName   = _(ac_name),
     shortName     = ac_name,
     fileMenuName  = _(ac_name),
-    version       = '1.2.3',
+    version       = '1.3.0',
     state         = 'installed',
     developerName = _('Whisky Actual: https://github.com/whisky-actual/Community-JF-39'),
     info          = _('THIS MATERIAL IS NOT MADE OR SUPPORTED BY EAGLE DYNAMICS SA OR DEKA IRONWORKS SIMULATION'),
@@ -64,7 +64,7 @@ if JF39 == true then
     ----------------------------------------------------------------------------------------
     -- FM, Views, Flyable
     ----------------------------------------------------------------------------------------
-	local cfg_path = current_mod_path .. '/JF-39/FM/config_JF39.lua'
+	local cfg_path = current_mod_path .. '/JF-39/FM/config.lua'
     dofile(cfg_path)
     
     JF39_FM[1]           = self_ID
@@ -149,5 +149,5 @@ else
     plugin_done()
 end
 ----------------------------------------------------------------------------------------
--- File by whisky.actual@gmail.com - v.1.2.3  
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------

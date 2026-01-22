@@ -120,8 +120,8 @@ local function use_weapon_version(version)
 
     elseif version == 'SAAB' then
         -- SAAB internal testing or custom config
-        weapon['IRAAM']     = 'IR4'--jf39_iris-t, jf39_a-darter, jf39_python-5, us_AIM-9X, us_aim-9l, jf39_aim-132
-        weapon['BVRAAM']    = 'BVR2' --Meteor, AIM-120C, I-Derby ER, AIM-120B
+        weapon['IRAAM']     = 'IR1'--jf39_iris-t, jf39_a-darter, jf39_python-5, us_AIM-9X, us_aim-9l, jf39_aim-132
+        weapon['BVRAAM']    = 'BVR1' --Meteor, AIM-120C, I-Derby ER, AIM-120B
         --weapon['BRM1']      = 'BRM1_1' --Brimstone
         weapon['C701_IR']   = 'C701_IR_1' --AGM-65G
         weapon['C701_T']    = 'C701_T_1' --AGM-65K
@@ -145,7 +145,7 @@ end
 ----------------------------------------------------------------------------------------
 -- Initialize Weapons (Choose Configuration Below)
 ----------------------------------------------------------------------------------------
-use_weapon_version('SE')  -- Replace with 'SE', 'HU', etc. as needed
+use_weapon_version('SAAB')  -- Replace with 'SE', 'HU', etc. as needed
 
 ----------------------------------------------------------------------------------------
 -- Legacy Weapon Code (Workaround for ED's weapons system)
@@ -352,7 +352,7 @@ local weapon_type =
 		['C701_T_1']  = {picture = _('agm65.png'), wstype = 'weapons.missiles.AGM_65L', display_name = _('AGM-65K TV Guided Missile'), cx_pil = 0.0009765625, mass = 292},
 		--To add: weapons.missiles.AGM_65A, weapons.missiles.AGM_65B, weapons.missiles.AGM_65D, weapons.missiles.AGM_65E, weapons.missiles.AGM_65G, weapons.missiles.AGM_65H, weapons.missiles.AGM_65L
 
-		['WMD7_1'] = {picture = _('AAQ-28.png'),  wstype = {4, 15, 44, 101}, 				display_name = _('AN/AAQ-28 LITENING - Targeting Pod'),  shape = "AAQ-28_LITENING", cx_pil = 0.0001952, mass = 208},
+		['WMD7_1'] = {picture = _('AAQ-28.png'),  wstype = {4, 15, 44, WSTYPE_PLACEHOLDER}, display_name = _('AN/AAQ-28 LITENING - Targeting Pod'),  shape = "aaq-28LEFT litening", cx_pil = 0.0001952, mass = 208},
 		['WMD7_2'] = {picture = _('AAQ-28.png'),  wstype = {4, 15, 44, WSTYPE_PLACEHOLDER}, display_name = _('AN/AAQ-33 Sniper XR - Targeting Pod'), shape = "AAQ-33", 			cx_pil = 0.0006908, mass = 205},
 		['WMD7_3'] = {picture = _('ASQ-228.png'), wstype = {4, 15, 44, WSTYPE_PLACEHOLDER}, display_name = _('AN/ASQ-228 ATFLIR - Targeting Pod'),   shape = "AN_ASQ_228", 		cx_pil = 0.0005946, mass = 195},
 	}
@@ -1403,5 +1403,5 @@ JF39_C701_T(weapon['C701_T']) -- AGM-65K
 JF39_WMD7(weapon['WMD7']) ---- AAQ-28 (LITENING), AAQ-28 (Sniper XR), ASQ-228 (ATFLIR)
 JF39_CM802AKG(weapon['CM802AKG']) --Storm Shadow, KEPD 350
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.2.1                       --
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------

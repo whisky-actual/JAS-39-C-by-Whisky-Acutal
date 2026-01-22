@@ -64,5 +64,5 @@ dofile(current_mod_path .. '/JF-39/JF39_Loadouts/jf39_sdb.lua')
 
 --dofile(current_mod_path .. '/JF-39/JF39_Loadouts/jf39_gbu-49.lua')
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.2.1                       --
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------

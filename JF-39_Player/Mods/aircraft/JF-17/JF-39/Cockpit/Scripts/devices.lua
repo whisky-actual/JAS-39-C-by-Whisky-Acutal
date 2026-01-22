@@ -84,5 +84,5 @@ devices["JF39_HUD"]         = counter()
 devices["JF39_HMD"]         = counter()
 devices["JF39_LCP"]         = counter()
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.2.2                       --
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------

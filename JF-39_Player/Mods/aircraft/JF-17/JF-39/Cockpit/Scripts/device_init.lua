@@ -173,5 +173,5 @@ kneeboard_implementation = "DEKA_Device::JF_17::ccKneeBrdExt"
 dofile(LockOn_Options.common_script_path .. "KNEEBOARD/declare_kneeboard_device.lua")
 
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.2.2                       --
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------

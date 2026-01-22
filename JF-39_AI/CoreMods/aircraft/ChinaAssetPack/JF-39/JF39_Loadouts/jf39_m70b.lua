@@ -267,7 +267,7 @@ JF17_LAU68_MK5_DUAL_R = {
 }
 declare_loadout(JF17_LAU68_MK5_DUAL_R)
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.2.0                       --
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------
 dofile('Scripts/Database/Weapons/warheads.lua')
 

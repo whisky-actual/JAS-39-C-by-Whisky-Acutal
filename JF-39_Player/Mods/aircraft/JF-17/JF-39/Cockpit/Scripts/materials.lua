@@ -261,5 +261,5 @@ fonts["radio_font_cursor"]  = {fontdescription["font_RADIO"], 10, materials["RAD
 -- Clock
 fonts["clock_font_def"]     = {fontdescription["font_CLOCK"], 10, materials["CLOCK_IND_DEF"]}
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.2.2                       --
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------

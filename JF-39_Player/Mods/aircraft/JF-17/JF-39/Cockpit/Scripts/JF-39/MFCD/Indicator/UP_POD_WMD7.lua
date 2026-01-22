@@ -127,7 +127,7 @@ for i=1, #(osb_txt) do
     if osb_txt[i].ctrls == nil then
         osb_txt[i].ctrls = {}
     end
-    osb_txt[i].ctrls[#osb_txt[i].ctrls + 1] = {"string_background_color", 0.15,0.15,0.15}
+    osb_txt[i].ctrls[#osb_txt[i].ctrls + 1] = {"string_background_color", 0.75,0.75,0.75}
     osb_txt[i].ctrls[#osb_txt[i].ctrls + 1] = {"mfcd_isedit_show", 0}
     text_strpoly.controllers = osb_txt[i].ctrls
     
@@ -167,7 +167,7 @@ for i=1, #(info_txt) do
     
     if info_txt[i].bkgrounded then
         text_strpoly.BackgroundMaterial = MFCD_MATERIAL_DARK
-        info_txt[i].ctrls[#info_txt[i].ctrls + 1] = {"string_background_color", 0.15,0.15,0.15}
+        info_txt[i].ctrls[#info_txt[i].ctrls + 1] = {"string_background_color", 0.75,0.75,0.75}
     end
     
     if info_txt[i].ctrls then
@@ -376,5 +376,5 @@ tex_poly.additive_alpha = false
 AddToUpper(tex_poly)
 tex_poly = nil
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.2.2                       --
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------

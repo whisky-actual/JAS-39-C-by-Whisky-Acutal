@@ -140,7 +140,7 @@ for i=1, #(osb_txt) do
     if osb_txt[i].ctrls == nil then
         osb_txt[i].ctrls = {}
     end
-    osb_txt[i].ctrls[#osb_txt[i].ctrls + 1] = {'string_background_color', 0, 0, 0}
+    osb_txt[i].ctrls[#osb_txt[i].ctrls + 1] = {'string_background_color', 0.75, 0.75, 0.75}
     text_strpoly.controllers = osb_txt[i].ctrls
     
     if osb_txt[i].value ~= nil then
@@ -305,5 +305,5 @@ for c =0, (MAX_CONTACTS-1) do
     end
 end
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.2.2                       --
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------

@@ -240,5 +240,5 @@ function create_HMD_Circle(HUD_material, UL_X, UL_Y, DR_X, DR_Y, scale, CENTER_X
 end
 
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.2.2                       --
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------

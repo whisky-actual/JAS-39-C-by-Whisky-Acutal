@@ -444,5 +444,5 @@ gun_AA_pipper_appr.controllers    = {{"hud_AA_gun_pipper_appr", 600}}
 gun_AA_pipper_appr.parent_element = gun_AA_pipper.name
 AddToGunCross(gun_AA_pipper_appr)
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.2.2                       --
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------

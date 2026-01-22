@@ -124,4 +124,7 @@ function AddStrTblElements(text_elem, parent)
     
 end
 
-add_picture(LockOn_Options.script_path.."../Textures/IndicationTextures/kneebrd_page.dds")
+add_picture(LockOn_Options.script_path.."../Scripts/JF-39/Textures/IndicationTextures/kneebrd_page.dds")
+----------------------------------------------------------------------------------------
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
+----------------------------------------------------------------------------------------
