@@ -166,7 +166,7 @@ HUD_HeadingScale = MakeMaterial(HUD_IND_TEX_PATH.."HUD_HeadingScale", GREEN)
 HUD_AimingCircle = MakeMaterial(HUD_IND_TEX_PATH.."WVR_AimingCircle", GREEN)
 HUD_AimingCircleThin = MakeMaterial(HUD_IND_TEX_PATH.."WVR_AimingCircleThin", GREEN)
 HUD_GroundCollisionWarning = MakeMaterial(HUD_IND_TEX_PATH.."GroundCollisionWarning", GREEN)
-HMD_Circle = MakeMaterial(HUD_IND_TEX_PATH.."HMD_CIRCLE", GREEN)--whisky.actual@gmail.com
+HMD_Circle = MakeMaterial(HUD_IND_TEX_PATH.."HMD_CIRCLE", GREEN) --whisky.actual@gmail.com
 
 
 default_HUD_x = 512

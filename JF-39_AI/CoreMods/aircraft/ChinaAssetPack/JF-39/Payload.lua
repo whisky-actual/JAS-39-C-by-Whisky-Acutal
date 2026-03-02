@@ -13,17 +13,18 @@ dofile(current_mod_path .. '/Entries/Loadouts/mils_yj12.lua')
 dofile(current_mod_path .. '/Entries/Loadouts/mils_kd63.lua')
 dofile(current_mod_path .. '/Entries/Loadouts/mils_kd20.lua')
 dofile(current_mod_path .. '/Entries/Loadouts/mils_hj12.lua')
---dofile(current_mod_path .. '/Entries/Loadouts/jsow_ls6.lua')
+-- Rockets
+--dofile(current_mod_path .. '/Entries/Loadouts/rkt_90mm.lua')
+--dofile(current_mod_path .. '/Entries/Loadouts/rkt_misc.lua')
+
+
 --[[
 -- Bombs
 dofile(current_mod_path .. '/Entries/Loadouts/bomb_misc.lua')
 dofile(current_mod_path .. '/Entries/Loadouts/bomb_type200.lua')
 -- Jsow
-
+dofile(current_mod_path .. '/Entries/Loadouts/jsow_ls6.lua')
 dofile(current_mod_path .. '/Entries/Loadouts/jsow_gb6.lua')
--- Rockets
-dofile(current_mod_path .. '/Entries/Loadouts/rkt_brm1.lua')
-dofile(current_mod_path .. '/Entries/Loadouts/rkt_misc.lua')
 -- Milssiles
 dofile(current_mod_path .. '/Entries/Loadouts/mils_c701.lua')
 dofile(current_mod_path .. '/Entries/Loadouts/mils_cm400akg.lua')
@@ -60,8 +61,6 @@ dofile(current_mod_path .. '/JF-39/JF39_Loadouts/jf39_sdb.lua')
 --dofile(current_mod_path .. '/JF-39/JF39_Loadouts/jf39_c802ak.lua')
 --dofile(current_mod_path .. '/JF-39/JF39_Loadouts/jf39_c802akg.lua')
 --dofile(current_mod_path .. '/JF-39/JF39_Loadouts/jf39_m71.lua')
-
-
 --dofile(current_mod_path .. '/JF-39/JF39_Loadouts/jf39_gbu-49.lua')
 ----------------------------------------------------------------------------------------
 --                    File by whisky.actual@gmail.com - v.1.3.0                       --

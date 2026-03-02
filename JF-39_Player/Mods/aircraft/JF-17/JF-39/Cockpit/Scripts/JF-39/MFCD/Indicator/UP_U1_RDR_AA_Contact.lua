@@ -3,7 +3,7 @@
 
 local MAX_CONTACTS = SA_CONTACT_NUM_SHARED
 local MAX_HISTORY  = 4
-local hh           = 246.667/2000
+local hh           = 246.667/1500
 
 for c = 0, (MAX_CONTACTS-1) do
     for h = (MAX_HISTORY-1), 0, -1 do
@@ -90,7 +90,7 @@ for c = 0, (MAX_CONTACTS-1) do
     -- net ID
     local dl_contact_id              = CreateElement 'ceStringPoly'
     dl_contact_id.material           = MFCD_FONT_DEF
-    dl_contact_id.stringdefs         = MFCD_STRINGDEFS_DEF_X05
+    dl_contact_id.stringdefs         = MFCD_STRINGDEFS_DEF_X08
     dl_contact_id.init_pos           = {0, 0, 0}
     dl_contact_id.alignment          = 'CenterCenter'
     dl_contact_id.value              = "00"
@@ -103,8 +103,8 @@ for c = 0, (MAX_CONTACTS-1) do
     -- alt str
     local dl_contact_alt_str           = CreateElement "ceStringPoly"
     dl_contact_alt_str.material        = MFCD_FONT_DEF
-    dl_contact_alt_str.stringdefs      = MFCD_STRINGDEFS_DEF_X05
-    dl_contact_alt_str.init_pos        = {0.6*hh, -0.6*hh, 0}
+    dl_contact_alt_str.stringdefs      = MFCD_STRINGDEFS_DEF_X08
+    dl_contact_alt_str.init_pos        = {0.4*hh, -0.4*hh, 0}
     dl_contact_alt_str.alignment       = "LeftCenter"
     dl_contact_alt_str.value           = "00"
     dl_contact_alt_str.level           = RDR_LEVEL
@@ -147,3 +147,21 @@ current_wpt_id.additive_alpha  = false
 current_wpt_id.h_clip_relation = h_clip_relations.COMPARE
 current_wpt_id.level           = RDR_LEVEL
 AddToUpper(current_wpt_id)
+
+
+
+---- exp ---
+aa_exp_ref_box                 = CreateElement "ceSimpleLineObject"
+aa_exp_ref_box.name            = "aa_exp_ref_box"
+aa_exp_ref_box.material        = MFCD_MATERIAL_WHITE
+aa_exp_ref_box.width           = 0.005
+aa_exp_ref_box.init_pos        = {0, -740/1000, 0}
+aa_exp_ref_box.level           = RDR_LEVEL
+aa_exp_ref_box.h_clip_relation = h_clip_relations.COMPARE
+aa_exp_ref_box.controllers     = {{"rdr_aa_exp_area", 1}}
+aa_exp_ref_box.isdraw          = false
+--aa_exp_ref_box.use_mipfilter   = true
+--aa_exp_ref_box.additive_alpha  = true
+AddToUpper(aa_exp_ref_box)
+
+

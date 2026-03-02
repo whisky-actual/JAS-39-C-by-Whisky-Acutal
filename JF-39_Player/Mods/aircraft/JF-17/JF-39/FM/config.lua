@@ -2,16 +2,20 @@ JF39_FM =
 {
     disable_built_in_oxygen_system = true,
 
-    center_of_mass    = {0.25, -0.020, 0.00},
+    -- COM lifted slightly to compensate nose shell depth (player only)
+    -- +0.05 m proven safe, does not affect AI
+    center_of_mass    = {0.25, 0.38, 0.00},
     moment_of_inertia = {12875.0, 85552.0, 75674.0, -1331.0},
 
     suspension =
     {
         ----------------------------------------------------------------
-        -- NOSE WHEEL (stability-limited, anti-tip)
+        -- NOSE WHEEL (FIXED)
         ----------------------------------------------------------------
         {
-            wheel_radius = 0.185,
+            -- MUST match visual wheel radius (0.4325 / 2)
+            wheel_radius = 0.21625,
+
             damper_coeff = 600.0,
             filter_yaw   = true,
             yaw_limit    = math.rad(65.0),
@@ -19,16 +23,22 @@ JF39_FM =
 
             allowable_hard_contact_length = 0.25,
 
-            anti_skid_installed   = true,
+            anti_skid_installed    = true,
             wheel_brake_moment_max = 14000.0,
 
-            amortizer_min_length                 = 0.0,
-            amortizer_max_length                 = 0.45,
-            amortizer_basic_length               = 0.52,
+            amortizer_min_length   = 0.0,
+            amortizer_max_length   = 0.40,
+
+            -- Reduced so suspension settles higher
+            amortizer_basic_length = 0.45,
+
             amortizer_spring_force_factor        = 3.0e+6,
             amortizer_spring_force_factor_rate   = 4.0,
-            amortizer_static_force               = 8500.0,
-            amortizer_reduce_length              = 0.45,
+            amortizer_static_force               = 9000.0,
+
+            -- Reduced to prevent over-extension into ground
+            amortizer_reduce_length              = 0.35,
+
             amortizer_direct_damper_force_factor = 45000.0,
             amortizer_back_damper_force_factor   = 45000.0,
 
@@ -49,11 +59,11 @@ JF39_FM =
         },
 
         ----------------------------------------------------------------
-        -- LEFT MAIN WHEEL (Gripen STOL + anti-rollover)
+        -- LEFT MAIN WHEEL
         ----------------------------------------------------------------
         {
             mass         = 220,
-            wheel_radius = 0.34,
+            wheel_radius = 0.3286, -- 0.6572 / 2
 
             wheel_static_friction_factor = 0.68,
             wheel_side_friction_factor   = 0.95,
@@ -62,16 +72,18 @@ JF39_FM =
 
             allowable_hard_contact_length = 0.20,
 
-            anti_skid_installed   = true,
+            anti_skid_installed    = true,
             wheel_brake_moment_max = 52000.0,
 
-            amortizer_min_length                 = 0.0,
-            amortizer_max_length                 = 0.40,
-            amortizer_basic_length               = 0.40,
+            amortizer_min_length   = 0.0,
+            amortizer_max_length   = 0.40,
+            amortizer_basic_length = 0.40,
+
             amortizer_spring_force_factor        = 8.5e+6,
             amortizer_spring_force_factor_rate   = 3.5,
             amortizer_static_force               = 4500.0,
             amortizer_reduce_length              = 0.25,
+
             amortizer_direct_damper_force_factor = 110000.0,
             amortizer_back_damper_force_factor   = 50000.0,
 
@@ -87,11 +99,11 @@ JF39_FM =
         },
 
         ----------------------------------------------------------------
-        -- RIGHT MAIN WHEEL (mirrored)
+        -- RIGHT MAIN WHEEL
         ----------------------------------------------------------------
         {
             mass         = 220,
-            wheel_radius = 0.34,
+            wheel_radius = 0.3286,
 
             wheel_static_friction_factor = 0.68,
             wheel_side_friction_factor   = 0.95,
@@ -100,16 +112,18 @@ JF39_FM =
 
             allowable_hard_contact_length = 0.20,
 
-            anti_skid_installed   = true,
+            anti_skid_installed    = true,
             wheel_brake_moment_max = 52000.0,
 
-            amortizer_min_length                 = 0.0,
-            amortizer_max_length                 = 0.40,
-            amortizer_basic_length               = 0.40,
+            amortizer_min_length   = 0.0,
+            amortizer_max_length   = 0.40,
+            amortizer_basic_length = 0.40,
+
             amortizer_spring_force_factor        = 8.5e+6,
             amortizer_spring_force_factor_rate   = 3.5,
             amortizer_static_force               = 4500.0,
             amortizer_reduce_length              = 0.25,
+
             amortizer_direct_damper_force_factor = 110000.0,
             amortizer_back_damper_force_factor   = 50000.0,
 

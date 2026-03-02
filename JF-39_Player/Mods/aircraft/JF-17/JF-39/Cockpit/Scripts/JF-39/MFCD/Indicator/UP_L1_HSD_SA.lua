@@ -43,8 +43,6 @@ AddToUpper(rdr_env_line)
 
 msl_env_line                 = CreateElement "ceSimpleLineObject"
 msl_env_line.name            = "msl_env_line"
-msl_env_line                 = CreateElement "ceSimpleLineObject"
-msl_env_line.name            = "msl_env_line"
 --msl_env_line.material        = MFCD_MATERIAL_RED
 msl_env_line.material        = MFCD_LINE_RED
 msl_env_line.tex_params      = {{0, 0.5}, {1, 0.5}, {0.4, 1}}
@@ -60,6 +58,7 @@ AddToUpper(msl_env_line)
 
 
 
+
 rwr_bound_l = fwd_square_clip.vertices[3][1]
 rwr_bound_r = fwd_square_clip.vertices[1][1]
 rwr_bound_u = fwd_square_clip.vertices[1][2] - FWD_COMP_BIAS
@@ -67,7 +66,7 @@ rwr_bound_d = fwd_square_clip.vertices[3][2] - FWD_COMP_BIAS
 
 
 ----[[ DL ]]
-local hh = 246.667/2000
+local hh = 246.667/1500
 
 -- contact
 local MAX_DL_CONTACTS = SA_CONTACT_NUM_SHARED
@@ -119,7 +118,7 @@ for cat = 0, 2 do
         -- net ID
         local dl_contact_id              = CreateElement 'ceStringPoly'
         dl_contact_id.material           = MFCD_FONT_DEF
-        dl_contact_id.stringdefs         = MFCD_STRINGDEFS_DEF_X05
+        dl_contact_id.stringdefs         = MFCD_STRINGDEFS_DEF_X075
         dl_contact_id.init_pos           = {0, 0, 0}
         dl_contact_id.alignment          = 'CenterCenter'
         dl_contact_id.value              = "00"
@@ -133,8 +132,8 @@ for cat = 0, 2 do
         -- alt str
         local dl_contact_alt_str           = CreateElement "ceStringPoly"
         dl_contact_alt_str.material        = MFCD_FONT_DEF
-        dl_contact_alt_str.stringdefs      = MFCD_STRINGDEFS_DEF_X06
-        dl_contact_alt_str.init_pos        = {0.72*hh, -0.3*hh, 0}
+        dl_contact_alt_str.stringdefs      = MFCD_STRINGDEFS_DEF_X075
+        dl_contact_alt_str.init_pos        = {0.4*hh, -0.4*hh, 0}
         dl_contact_alt_str.alignment       = "CenterCenter"
         dl_contact_alt_str.value           = "00"
         dl_contact_alt_str.level           = HSD_NAV_LEVEL + 2 + HSD_NAV_LEVEL_SHIFT
@@ -248,7 +247,7 @@ for c = (MAX_RWR_CONTACTS-1), 0, -1 do
     -- Target identification
     local rwr_text_poly           = CreateElement "ceStringPoly"
     rwr_text_poly.material        = MFCD_FONT_DEF
-    rwr_text_poly.stringdefs      = MFCD_STRINGDEFS_DEF_X1
+    rwr_text_poly.stringdefs      = MFCD_STRINGDEFS_DEF_X075
     rwr_text_poly.init_pos        = {0, 0, 0}
     rwr_text_poly.alignment       = "CenterCenter"
     rwr_text_poly.value           = "FA"
@@ -279,6 +278,53 @@ for c = (MAX_RWR_CONTACTS-1), 0, -1 do
     rwr_jam_poly.additive_alpha  = false
     AddToUpper(rwr_jam_poly)
 end
+
+-------------------------------------------------------------
+-- HSD BACKGROUND
+-------------------------------------------------------------
+--[[
+hsd_frame_length_half = 0.80
+
+hsd_frame_box_clip           = CreateElement "ceMeshPoly"
+hsd_frame_box_clip.name            = "hsd_frame_box_clip"
+hsd_frame_box_clip.material        = MFCD_MATERIAL_W_BASE
+hsd_frame_box_clip.primitivetype   = "triangles"
+hsd_frame_box_clip.init_pos        = {0, -1.25, 0}
+hsd_frame_box_clip.vertices        = {{-hsd_frame_length_half,  hsd_frame_length_half/2}, 
+                                      { hsd_frame_length_half,  hsd_frame_length_half/2},
+                                      { hsd_frame_length_half, -hsd_frame_length_half/2}, 
+                                      {-hsd_frame_length_half, -hsd_frame_length_half/2}}
+hsd_frame_box_clip.indices         = DEF_BOX_INDICES --{0,1,2,0,2,3 }
+hsd_frame_box_clip.h_clip_relation = h_clip_relations.REWRITE_LEVEL
+hsd_frame_box_clip.level           = HSD_NAV_LEVEL
+hsd_frame_box_clip.isdraw          = true
+hsd_frame_box_clip.isvisible       = false
+hsd_frame_box_clip.use_mipfilter   = true
+--hsd_frame_box_clip.additive_alpha  = true
+hsd_frame_box_clip.collimated      = false
+hsd_frame_box_clip.additive_alpha  = true
+AddToUpper(hsd_frame_box_clip)
+
+SQUARE                 = CreateElement "ceMeshPoly"
+SQUARE.name            = "SQUARE"
+SQUARE.init_pos        = {0, -1.30, 0}
+SQUARE.vertices        = {{-hsd_frame_length_half,  hsd_frame_length_half/2},
+                             { hsd_frame_length_half,  hsd_frame_length_half/2},
+                             { hsd_frame_length_half, -hsd_frame_length_half/2},
+                             {-hsd_frame_length_half, -hsd_frame_length_half/2}}
+--SQUARE.tex_coords      = {{0,0},{1,0},{1,1},{0,1}}
+SQUARE.indices         = DEF_BOX_INDICES
+SQUARE.material        = MakeMaterial(nil,{60, 60, 60, 150})
+--SQUARE.material        = MakeMaterial(nil,{57/2.50, 131/2.50, 160/2.50, 254})--Gripen Blue Day 057/255, 131/255, 160/255
+SQUARE.level           = HSD_NAV_LEVEL
+SQUARE.h_clip_relation = h_clip_relations.REWRITE_LEVEL
+SQUARE.use_mipfilter   = false
+SQUARE.additive_alpha  = false
+SQUARE.element_params 	= {"JF39_MFCD"}
+SQUARE.controllers    	= {{"opacity_using_parameter",0}}
+--SQUARE.controllers     = {{'rdr_video_check', 0},}--{"check_map_filter", 0},
+AddToUpper(SQUARE)
+]]
 ----------------------------------------------------------------------------------------
 --                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------

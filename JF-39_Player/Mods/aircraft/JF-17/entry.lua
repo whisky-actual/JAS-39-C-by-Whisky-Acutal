@@ -24,7 +24,8 @@ if JF39 == true then
     binaries      = { bin_name, },
     update_id     = 'DEKA_JF-17',
     InputProfiles = {
-        [ac_name] = current_mod_path .. '/Input/JF-17',
+        --[ac_name] = current_mod_path .. '/JF-39/Input/JF-17',
+		[ac_name] = current_mod_path .. '/Input/JF-17',
     },
     Skins = {
         { name = ac_name, dir = '/JF-39/Skins/1' },
@@ -40,7 +41,7 @@ if JF39 == true then
         {
             name   = _(ac_name),
             nameId = ac_name,
-            dir    = 'Options',
+            dir    = '/JF-39/Options',
             CLSID  = '{JF-17 options}',
             --AircraftSettingsFile = 'AircraftSettings.lua'
         },
@@ -52,13 +53,12 @@ if JF39 == true then
     ----------------------------------------------------------------------------------------
     -- VFS Paths
     ----------------------------------------------------------------------------------------
-    mount_vfs_model_path   (current_mod_path .. '/JF-39/Cockpit/Scripts/JF-39/Shapes')
-	mount_vfs_texture_path (current_mod_path .. '/JF-39/Cockpit/Scripts/JF-39/Shapes/Textures')
-	mount_vfs_texture_path (current_mod_path .. '/JF-39/Cockpit/Scripts/JF-39/Shapes/JF-39_Textures')
-	mount_vfs_texture_path (current_mod_path .. '/JF-39/Cockpit/Scripts/JF-39/Textures/IndicationTextures')
-	mount_vfs_texture_path (current_mod_path .. '/JF-39/Cockpit/Scripts/JF-39/Textures/Hud')
+    mount_vfs_model_path   (current_mod_path .. '/JF-39/Shapes')
+	mount_vfs_texture_path (current_mod_path .. '/JF-39/Shapes/Textures')
 	mount_vfs_texture_path (current_mod_path .. '/JF-39/Cockpit/Scripts/JF-39/Textures/Fonts')
-	mount_vfs_liveries_path(current_mod_path .. '/Liveries')
+	mount_vfs_texture_path (current_mod_path .. '/JF-39/Cockpit/Scripts/JF-39/Textures/Hud')
+	mount_vfs_texture_path (current_mod_path .. '/JF-39/Cockpit/Scripts/JF-39/Textures/IndicationTextures')
+	mount_vfs_liveries_path(current_mod_path .. '/JF-39/Liveries')
 	mount_vfs_texture_path (current_mod_path .. '/JF-39/Skins/1/ME')
 		
     ----------------------------------------------------------------------------------------

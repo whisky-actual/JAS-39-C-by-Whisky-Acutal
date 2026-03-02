@@ -66,7 +66,7 @@ local wheel_touch_comp = 0.02
 local WOLALIGHT_CUSTOM_NAV    = WOLALIGHT_IR_FORMATION + 1
 local WOLALIGHT_CUSTOM_ANTI   = WOLALIGHT_CUSTOM_NAV + 1
 
-JF_17 = {
+JF_39 = {
     Name             = 'JF-17',
     DisplayName      = _('JAS-39-C'),
     Picture          = 'jf39.png',
@@ -98,7 +98,7 @@ JF_17 = {
     Categories  = { CLSID = "{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}", Name = "Interceptor",},
     -- Countries   = {'China', 'Pakistan'},
     country_of_origin = 'SWE',
-    date_of_introduction = 2002.9, --
+    date_of_introduction = 1996.9, --
     -------------------------
     -- add model draw args for network transmitting to this draw_args table (32 limit)
     net_animation =
@@ -198,28 +198,26 @@ JF_17 = {
 ----------------------------------------------------------------------------------------
 -- SUSPENSION CODE BEGINS
 ----------------------------------------------------------------------------------------
-    nose_gear_pos 				                = {4.488,	-2.045,	0},   -- nosegear coord 
+    nose_gear_pos 				                = {4.488,	-2.15,	0},   -- nosegear coord 
     nose_gear_amortizer_direct_stroke   		=  0.05,      -- down from nose_gear_pos !!!
     nose_gear_amortizer_reversal_stroke  		=  -0.4,  -- up
     nose_gear_amortizer_normal_weight_stroke 	=  -0.27,   -- up 
-    nose_gear_wheel_diameter 	                =   1.0, -- in m
+    nose_gear_wheel_diameter 	                =   0.4325, -- in m
 
-    main_gear_pos 						 	    = {-0.800,	-1.96,	1.25}, -- main gear coords -1.95
+    main_gear_pos 						 	    = {-0.800,	-1.95,	1.25}, -- main gear coords -1.95
     main_gear_amortizer_direct_stroke	 	    =   0,     --  down from main_gear_pos !!!
     main_gear_amortizer_reversal_stroke  	    =   -0.228, --  up 
     main_gear_amortizer_normal_weight_stroke    =   -0.114,-- down from main_gear_pos
-    main_gear_wheel_diameter 				    =   1.0, -- in m
+    main_gear_wheel_diameter 				    =   0.6572, -- in m
 ----------------------------------------------------------------------------------------
 -- SUSPENSION CODE ENDS
 ----------------------------------------------------------------------------------------
 
     --brakeshute_name           = 4,        -- Landing - brake chute visual shape after separation
     brakeshute_name           = "JF-17_dragchute",
-
     tanker_type               = 4,        -- Tanker type if the plane is airrefuel capable (same type as F-14, aka drogue basket)
     is_tanker                 = false,    -- Tanker yes/no
-    air_refuel_receptacle_pos = {4.3086,	0.7994,	-0.9210}, -- refuel coords
-
+    air_refuel_receptacle_pos = {4.22,	0.85, -1}, -- refuel coords
     wing_tip_pos              = {-2.9, -0.08, 4.48}, -- wingtip coords for visual effects
     wing_area                 = 30,        -- JF-17 wing area in m2
     wing_span                 = 8.40,        -- JF-17 wing spain in m,
@@ -242,12 +240,12 @@ JF_17 = {
 		{
 			[1] = 
 			{
-				pos = 	{-6.231,	0.268,	0},-- Tribwerke   -5.231,	-0.468,	0
+				pos = 	{-5.0,	0.115,	0},-- Tribwerke   -5.231,	-0.468,	0
 				elevation	=	0,-- AFB cone elevation  winkel nach oben unten
-				diameter    =   1.05,-- AFB cone diameter   Kreis Ø --1.0
+				diameter    =   0.90,-- AFB cone diameter   Kreis Ø --1.05
                 exhaust_length_ab   =   10,--lenght in m  Kreis Ø kegel efekt
                 exhaust_length_ab_K =   0.707,--animation geschwindigkeit
-                smokiness_level     =   0.01, --0.05
+                smokiness_level     =   0.005, --0.05
 				afterburner_circles_count = 11,
 				afterburner_circles_pos = {0.2, 0.8},
 				afterburner_circles_scale = 0.95,
@@ -386,11 +384,11 @@ JF_17 = {
             count = 120
         },
         {
-            muzzle_pos_connector   = "Gun_point",
-            supply_position        = {0, 0, 0},
+            muzzle_pos_connector   = "GUN_POINT",
+            supply_position        = {2.6, -0.4, 0.0},
             drop_cartridge         = 203,
-            ejector_pos_connector  = "Gun_point",
-            ejector_dir            = {0, -1, 0},
+            ejector_pos_connector  = "GUN_EJECTOR",
+            ejector_dir            = {2,-2,0},
             elevation_initial      = -0.0,
         }),
     },
@@ -609,10 +607,13 @@ JF_17 = {
             }
         ),
         -- CENTER PYLON --> STATION 4
-		pylon(4, 0, -0.300, -0.336, 2.85,
+        pylon(4, 0, 0, 0, 0,
             {
+                arg = 311,
+                arg_value = 0,
                 DisplayName = "4",
-				use_full_connector_position = true, connector = "Pylon6", arg = 313, arg_value = 0
+                use_full_connector_position = true,
+                connector = "Pylon4",
             },
 
             {	
@@ -684,11 +685,11 @@ JF_17 = {
         -- RIGHT INNER PYLON --> STATION 5
 		pylon(5, 0, 0, 0, 0,
             {
-                arg = 316,
+                arg = 312,
                 arg_value = 0,
                 DisplayName = "5",
                 use_full_connector_position = true,
-                connector = "Pylon9",
+                connector = "Pylon5",
             },
             {
 --				=== INFRARED AIR TO AIR MISSILES ===
@@ -780,11 +781,11 @@ JF_17 = {
         -- RIGHT OUTER PYLON --> STATION 6
 		pylon(6, 0, 0, 0, 0,
             {
-                arg = 317,
+                arg = 313,
                 arg_value = 0,
                 DisplayName = "6",
                 use_full_connector_position = true,
-                connector = "Pylon10",
+                connector = "Pylon6",
             },
             {
 --				=== INFRARED AIR TO AIR MISSILES ===
@@ -877,7 +878,7 @@ JF_17 = {
             {
                 DisplayName = "7",
                 use_full_connector_position = true,
-                connector = "Pylon11",
+                connector = "Pylon7",
             },
             {
 --				=== INFRARED AIR TO AIR MISSILES ===
@@ -893,11 +894,13 @@ JF_17 = {
             }
         ),
 		-- RECON PYLON --> LDP
-		pylon(8, 0, 0, 0, 0,
+        pylon(8, 0, 0, 0, 0,
             {
+                arg = 314,
+                arg_value = 0,
                 DisplayName = "LDP",
                 use_full_connector_position = true,
-                connector = "Pylon7",
+                connector = "LDP",
             },
             {
 --				=== Pods ===
@@ -2223,7 +2226,7 @@ JF_17 = {
         }, -- end of lights_data.lights
     }, -- end lights_data
 }
-add_aircraft(JF_17)
+add_aircraft(JF_39)
 ----------------------------------------------------------------------------------------
 --                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------

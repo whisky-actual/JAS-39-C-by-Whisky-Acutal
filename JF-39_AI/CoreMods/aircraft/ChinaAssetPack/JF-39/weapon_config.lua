@@ -117,11 +117,30 @@ local function use_weapon_version(version)
         weapon['LS_6_250']  = 'LS_6_250_1' --GBU-38(V)1/B - JDAM, 500lb GPS Guided Bomb
         --weapon['LS_6_500']  = 'LS_6_500_1' --GBU_39
         weapon['WMD7']      = 'WMD7_3' -- AAQ-28 (LITENING), AAQ-28 (Sniper XR), ASQ-228 (ATFLIR)
-
-    elseif version == 'SAAB' then
-        -- SAAB internal testing or custom config
+		
+	elseif version == 'SAAB' then
+        -- SAAB
         weapon['IRAAM']     = 'IR1'--jf39_iris-t, jf39_a-darter, jf39_python-5, us_AIM-9X, us_aim-9l, jf39_aim-132
         weapon['BVRAAM']    = 'BVR1' --Meteor, AIM-120C, I-Derby ER, AIM-120B
+        --weapon['BRM1']      = 'BRM1_1' --Brimstone
+        weapon['C701_IR']   = 'C701_IR_1' --AGM-65G
+        weapon['C701_T']    = 'C701_T_1' --AGM-65K
+        weapon['C802AK']    = 'C802AK_1' --RB15F
+        weapon['CM802AKG']  = 'CM802AKG_2' --Storm Shadow, KEPD 350
+        --weapon['LD10']      = 'LD10_1' --MAR-1
+        weapon['TYPE200']   = 'TYPE200_2'--SB71HD, SB71LD
+        weapon['GB6']       = 'GB6_1' -- AGM154A
+        weapon['GB6_HE']    = 'GB6_HE_1' -- AGM154B
+        weapon['GB6_TSP']   = 'GB6_TSP_1' --BK-90 MJ1+2, GBU-24B/B Paveway III
+        weapon['LS_6_100']  = 'LS_6_100_1' --GBU-54(V)1/B - LJDAM, 500lb Laser & GPS Guided Bomb LD
+        weapon['LS_6_250']  = 'LS_6_250_1' --GBU-38(V)1/B - JDAM, 500lb GPS Guided Bomb
+        --weapon['LS_6_500']  = 'LS_6_500_1' --GBU_39
+        weapon['WMD7']      = 'WMD7_1' -- AAQ-28 (LITENING), AAQ-28 (Sniper XR), ASQ-228 (ATFLIR)
+
+    elseif version == '510th' then
+        -- 510th internal testing or custom config
+        weapon['IRAAM']     = 'IR4'--jf39_iris-t, jf39_a-darter, jf39_python-5, us_AIM-9X, us_aim-9l, jf39_aim-132
+        weapon['BVRAAM']    = 'BVR2' --Meteor, AIM-120C, I-Derby ER, AIM-120B
         --weapon['BRM1']      = 'BRM1_1' --Brimstone
         weapon['C701_IR']   = 'C701_IR_1' --AGM-65G
         weapon['C701_T']    = 'C701_T_1' --AGM-65K
@@ -131,11 +150,11 @@ local function use_weapon_version(version)
         weapon['TYPE200']   = 'TYPE200_1'--SB71HD, SB71LD
         weapon['GB6']       = 'GB6_1' -- AGM154A
         weapon['GB6_HE']    = 'GB6_HE_1' -- AGM154B
-        weapon['GB6_TSP']   = 'GB6_TSP_1' --BK-90 MJ1+2, GBU-24B/B Paveway III
+        weapon['GB6_TSP']   = 'GB6_TSP_2' --BK-90 MJ1+2, GBU-24B/B Paveway III
         weapon['LS_6_100']  = 'LS_6_100_1' --GBU-54(V)1/B - LJDAM, 500lb Laser & GPS Guided Bomb LD
         weapon['LS_6_250']  = 'LS_6_250_1' --GBU-38(V)1/B - JDAM, 500lb GPS Guided Bomb
         --weapon['LS_6_500']  = 'LS_6_500_1' --GBU_39
-        weapon['WMD7']      = 'WMD7_1' -- AAQ-28 (LITENING), AAQ-28 (Sniper XR), ASQ-228 (ATFLIR)
+        weapon['WMD7']      = 'WMD7_2' -- AAQ-28 (LITENING), AAQ-28 (Sniper XR), ASQ-228 (ATFLIR)
 
     else
         error('Invalid weapon version: ' .. tostring(version))
@@ -360,9 +379,12 @@ local weapon_type =
 ----------------------------------------------------------------------------------------
 -- Loadout Declaration Functions
 ----------------------------------------------------------------------------------------
-local pylon_mass = 100
-local pylon_dual_mass = 191
-local pylon_triple_mass = 147.6
+--local pylon_mass = 100
+--local pylon_dual_mass = 191
+--local pylon_triple_mass = 147.6
+local pylon_mass = 0
+local pylon_dual_mass = 0
+local pylon_triple_mass = 0
 ----------------------------------------------------------------------------------------
 -- IRAAM
 ----------------------------------------------------------------------------------------

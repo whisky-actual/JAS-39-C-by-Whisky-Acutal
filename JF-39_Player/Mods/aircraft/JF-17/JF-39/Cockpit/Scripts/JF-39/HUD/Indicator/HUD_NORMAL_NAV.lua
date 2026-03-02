@@ -5,12 +5,25 @@
 hud_E_indicator             = CreateElement "ceTexPoly"
 hud_E_indicator.material    = HUD_TEX_IND1
 hud_E_indicator.name        = "hud_E_indicator"
-hud_E_indicator.vertices    = {{0, 37.669/2},{0, -37.669/2},{-15.068, -37.669/2},{-15.068, 37.669/2}}
-hud_E_indicator.tex_coords  = HUD_tex_coord(128, 192, 96, 240, HUD_TEX_IND1_W, HUD_TEX_IND1_H)
+hud_E_indicator.vertices    = {{ 89.778, 5.6505}, { 89.778,-5.6505}, {-89.778,-5.6505}, {-89.778, 5.6505},}
+hud_E_indicator.tex_coords  = HUD_tex_coord(-40,  120, 1144,  72, HUD_TEX_IND1_W, HUD_TEX_IND1_H)
 hud_E_indicator.init_pos    = {0, 0, 0}
 hud_E_indicator.indices     = DEF_BOX_INDICES
 hud_E_indicator.controllers = {{"hud_check_power"},{"hud_aoa_bracket", 0.36, 0.6},{"hud_check_declutter"},} --1st: vert coef, 2nd: hori coeff
  AddElementObject(hud_E_indicator)
+
+--[[
+---- AoA bracket symbol
+hud_E_indicator_E             = CreateElement "ceTexPoly"
+hud_E_indicator_E.material    = HUD_TEX_IND1
+hud_E_indicator_E.name        = "hud_E_indicator_E"
+hud_E_indicator_E.vertices    = {{0, 37.669/2},{0, -37.669/2},{-15.068, -37.669/2},{-15.068, 37.669/2}}
+hud_E_indicator_E.tex_coords  = HUD_tex_coord(128, 192, 96, 240, HUD_TEX_IND1_W, HUD_TEX_IND1_H)
+hud_E_indicator_E.init_pos    = {0, 0, 0}
+hud_E_indicator_E.indices     = DEF_BOX_INDICES
+hud_E_indicator_E.controllers = {{"hud_check_power"},{"hud_aoa_bracket", 0.36, 0.6},{"hud_check_declutter"},} --1st: vert coef, 2nd: hori coeff
+ AddElementObject(hud_E_indicator_E)
+]]--
 
 -- Planned airspeed and altitude
 local texts ={

@@ -12,7 +12,7 @@ MAP_RENDER.indices         = DEF_BOX_INDICES
 if use_ed_render_target then
     MAP_RENDER.material        = "render_target_"..tostring(GetRenderTarget() + 1)
 else
-    MAP_RENDER.material        = "AGRadar_Material_" .. tostring(GetRenderTarget()) 
+    MAP_RENDER.material        = "AGRadar_Material_" .. tostring(GetRenderTarget())
 end
 MAP_RENDER.level           = RDR_LEVEL
 MAP_RENDER.h_clip_relation = h_clip_relations.COMPARE
@@ -59,71 +59,6 @@ WA_RENDER.additive_alpha  = true
 WA_RENDER.controllers     = {{'rdr_video_check', 2},}
 
 AddToUpper(WA_RENDER)
---[[
-SQUARE                 = CreateElement "ceTexPoly"
-SQUARE.name            = "SQUARE"
-SQUARE.init_pos        = {0, 0, 0}
-SQUARE.vertices        = {{-rdr_frame_length_half,  rdr_frame_length_half},
-                             { rdr_frame_length_half,  rdr_frame_length_half},
-                             { rdr_frame_length_half, -rdr_frame_length_half},
-                             {-rdr_frame_length_half, -rdr_frame_length_half}}
-SQUARE.tex_coords      = {{0,0},{1,0},{1,1},{0,1}}
-SQUARE.indices         = DEF_BOX_INDICES
---SQUARE.material        = MakeMaterial(nil,{0, 255, 255, 50})
-SQUARE.material        = MakeMaterial(nil,{57, 131, 160, 100})--Gripen Blue
-SQUARE.level           = RDR_LEVEL - 1
-SQUARE.h_clip_relation = h_clip_relations.REWRITE_LEVEL
-SQUARE.use_mipfilter   = false
-SQUARE.additive_alpha  = false
-SQUARE.controllers     = {{'rdr_video_check', 0},}--{"check_map_filter", 0},
-
-AddToUpper(SQUARE)
-]]
---[[
-SQUARE                 = CreateElement "ceMeshPoly"
-SQUARE.name            = "SQUARE"
-SQUARE.primitivetype   = "triangles"
-SQUARE.init_pos        = {0, 0, 0}
-SQUARE.vertices        = {{-rdr_frame_length_half,  rdr_frame_length_half},
-                             { rdr_frame_length_half,  rdr_frame_length_half},
-                             { rdr_frame_length_half, -rdr_frame_length_half},
-                             {-rdr_frame_length_half, -rdr_frame_length_half}}
-SQUARE.tex_coords      = {{0,0},{1,0},{1,1},{0,1}}
-SQUARE.indices         = DEF_BOX_INDICES
-SQUARE.material        = MakeMaterial(nil,{0, 255, 255, 200})
---SQUARE.material        = MakeMaterial(nil,{0, 225, 225, 100})
-SQUARE.level           = RDR_LEVEL
-SQUARE.h_clip_relation = h_clip_relations.REWRITE_LEVEL
-SQUARE.use_mipfilter   = false
-SQUARE.additive_alpha  = false
-rdr_frame_box_clip.isdraw          = true
-rdr_frame_box_clip.isvisible       = false
-SQUARE.controllers     = {{'rdr_video_check', 0},}
-
-AddToUpper(SQUARE)
-
-SQUARE2                 = CreateElement "ceMeshPoly"
-SQUARE2.name            = "SQUARE2"
-SQUARE2.primitivetype   = "triangles"
-SQUARE2.init_pos        = {0, 0, 0}
-SQUARE2.vertices        = {{-rdr_frame_length_half,  rdr_frame_length_half},
-                             { rdr_frame_length_half,  rdr_frame_length_half},
-                             { rdr_frame_length_half, -rdr_frame_length_half},
-                             {-rdr_frame_length_half, -rdr_frame_length_half}}
-SQUARE2.tex_coords      = {{0,0},{1,0},{1,1},{0,1}}
-SQUARE2.indices         = DEF_BOX_INDICES
-SQUARE2.material        = MakeMaterial(nil,{0, 0, 0, 150})
---SQUARE2.material        = MakeMaterial(nil,{0, 225, 225, 100})
-SQUARE2.level           = RDR_LEVEL
-SQUARE2.h_clip_relation = h_clip_relations.REWRITE_LEVEL
-SQUARE2.use_mipfilter   = false
-SQUARE2.additive_alpha  = false
-rdr_frame_box_clip.isdraw          = true
-rdr_frame_box_clip.isvisible       = false
-SQUARE2.controllers     = {{'rdr_video_check', 0},}
-
-AddToUpper(SQUARE2)
-]]
 ----------------------------------------------------------------------------------------
 --                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------

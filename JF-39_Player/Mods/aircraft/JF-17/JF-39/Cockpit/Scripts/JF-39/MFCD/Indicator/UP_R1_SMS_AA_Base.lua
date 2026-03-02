@@ -1,4 +1,4 @@
-dofile(LockOn_Options.script_path .. "JF-39/MFCD/MFCDs_defs.lua")
+dofile(LockOn_Options.script_path .. "MFCD/MFCDs_defs.lua")
 
 local page_root = create_page_root()
 
@@ -6,7 +6,7 @@ local page_root = create_page_root()
 __SHOW_ARM_STATE__ = true
 
 
-dofile(LockOn_Options.script_path .. "JF-39/MFCD/Indicator/UP_R1_SMS_Base.lua")
+dofile(LockOn_Options.script_path .. "MFCD/Indicator/UP_R1_SMS_Base.lua")
 
 MFCD_TEX_IND1 = "mfcd_tex_ind1"
 
@@ -90,7 +90,7 @@ local texts = {
     {-- GUN
         name = "sms_aa_gun_osb",
         cx = MFCD_FONT_L_HORI_X, cy = MFCD_FONT_LR2_Y, value = "GUN", alignment = "LeftCenter",
-        ctrls = {{"sms_gun_blink"}},
+        ctrls = {{"sms_gun_blink"}, {"mfcd_isedit_show", 0}},
     },
     
     {-- AG WPN LA STATE
@@ -110,7 +110,7 @@ local texts = {
     
     {-- LIMITER
         cx = tbl_right_col_align, cy = MFCD_FONT_LR4_Y + tbl_bias_up, value = "LIMITER", alignment = "LeftCenter",
-        ctrls = {{"sms_state_draw"}},
+        ctrls = {{"sms_prog_aa_limiter", 1}, {"sms_state_draw"}},
     },
     {
         cx = tbl_right_col_align, cy = MFCD_FONT_LR4_Y + tbl_bias_dn, value = "OFF", alignment = "LeftCenter",
@@ -119,7 +119,7 @@ local texts = {
     
     {-- GUN SIGHT
         cx = tbl_right_col_align, cy = MFCD_FONT_LR5_Y + tbl_bias_up, value = "GUN SIGHT", alignment = "LeftCenter",
-        ctrls = {{"sms_state_draw"}},
+        ctrls = {{"sms_prog_aa_gun_sight", 1}, {"sms_state_draw"}},
     },
     {
         cx = tbl_right_col_align, cy = MFCD_FONT_LR5_Y + tbl_bias_dn, value = "LCOS", alignment = "LeftCenter",
@@ -147,7 +147,7 @@ local texts = {
     
     {-- MSL BIT
         cx = tbl_left_col_align, cy = MFCD_FONT_LR5_Y + tbl_bias_up, value = "MSL BIT", alignment = "LeftCenter",
-        ctrls = {{"sms_aa_ir_msl", 0}},
+        ctrls = {{"sms_prog_aa_msl_bit", 1}, {"sms_aa_ir_msl", 0}},
     },
     {
         cx = tbl_left_col_align, cy = MFCD_FONT_LR5_Y + tbl_bias_dn, value = "---", alignment = "LeftCenter",

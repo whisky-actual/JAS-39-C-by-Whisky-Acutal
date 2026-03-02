@@ -26,15 +26,11 @@ local texs_local = {
         ctrls = {{"rdr_osb_state_sil"}},
     },
     
-    --[[{-- exp
-        cx = MFCD_FONT_UD2_X, cy = MFCD_FONT_U_Y, hw = 116/160 * 266.667/2000, hh = 133.333/2000, ulx = 1816, uly = 1808, w = 116, h = 80,
-        mat = MFCD_TEX_IND2, state_tex = true,
-        multi_tex = {
-            MFCD_tex_coord(1816, 1808, 116,  80, TEX_SIZE_X, TEX_SIZE_Y), -- slash
-            --MFCD_tex_coord(  72, 1770, 116,  80, TEX_SIZE_X, TEX_SIZE_Y), -- frame
-        },
-        ctrls = {{"rdr_osb_state_exp"}},
-    },]]
+    {
+        cx = MFCD_BOX3_L_VERT_X, cy = MFCD_FONT_LR2_Y, hw = 120/2000, hh = 293.333/2000, ulx =  210, uly = 1770, w = 72, h = 176,
+        mat = MFCD_TEX_IND2,
+        ctrls = {{"rdr_aa_exp_state",1}},
+    },
     
     {-- 上三角
         cx = MFCD_BOX3_R_VERT_X, cy = MFCD_FONT_LR1_Y, hw = 113.333/2000, hh = 113.333/2000, ulx = 1196, uly = 1596, w = 68, h = 68,
@@ -104,6 +100,10 @@ local texts_local = {
         cx = MFCD_FONT_L_HORI_X, cy = MFCD_FONT_LR1_Y, value = "DGFT", align = "LeftCenter", strdefs = MFCD_STRINGDEFS_DEF_X08,
         ctrls = {{"rdr_state_draw"}},
     },]]
+    {-- 雷达tws是否exp
+        cx = MFCD_FONT_L_HORI_X, cy = MFCD_FONT_LR2_Y, value = "E\nX\nP", align = "LeftCenter", strdefs = MFCD_STRINGDEFS_DEF_X08,
+        ctrls = {{"rdr_aa_exp_state",0}},
+    },
     {-- 雷达当前az范围
         cx = MFCD_FONT_L_HORI_X, cy = MFCD_FONT_LR3_Y, value = "60", align = "LeftCenter", strdefs = MFCD_STRINGDEFS_DEF_X08,
         ctrls = {{"rdr_coverage_setting"}},

@@ -6,13 +6,11 @@ dofile(LockOn_Options.script_path.."args_def.lua")
 local gettext = require("i_18n")
 _ = gettext.translate
 
-
 elements = {}
 -- 0-499 no clickable
 -- 500-699 left console
 -- 700-899 center front
 -- 900-1999 right console
-
 
 ----
 
@@ -200,87 +198,6 @@ elements["PNT_759"] = default_axis_limited(_(cmd_names.PNT_759), devices.MFCD, c
 elements["PNT_765"] = default_axis_limited(_(cmd_names.PNT_765), devices.MFCD, click_cmds.PNT_765, 765, 0,  nil, true, nil, {{0,1.0},{0,1.0}}, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
 elements["PNT_766"] = default_axis_limited(_(cmd_names.PNT_766), devices.MFCD, click_cmds.PNT_766, 766,0,  nil, true, nil, {{0,1.0},{0,1.0}}, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
 -- end of Left MFCD
---[[
--- Center MFCD
-elements["PNT_767"] = default_push_button(_(cmd_names.PNT_767), devices.MFCD, click_cmds.PNT_767, 767, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_768"] = default_push_button(_(cmd_names.PNT_768), devices.MFCD, click_cmds.PNT_768, 768, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_769"] = default_push_button(_(cmd_names.PNT_769), devices.MFCD, click_cmds.PNT_769, 769, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_770"] = default_push_button(_(cmd_names.PNT_770), devices.MFCD, click_cmds.PNT_770, 770, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_771"] = default_push_button(_(cmd_names.PNT_771), devices.MFCD, click_cmds.PNT_771, 771, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_772"] = default_push_button(_(cmd_names.PNT_772), devices.MFCD, click_cmds.PNT_772, 772, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_773"] = default_push_button(_(cmd_names.PNT_773), devices.MFCD, click_cmds.PNT_773, 773, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_774"] = default_2_position_tumb(_(cmd_names.PNT_774), devices.MFCD, click_cmds.PNT_774, 774)
-elements["PNT_775"] = default_push_button(_(cmd_names.PNT_775), devices.MFCD, click_cmds.PNT_775, 775, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_776"] = default_push_button(_(cmd_names.PNT_776), devices.MFCD, click_cmds.PNT_776, 776, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_777"] = default_push_button(_(cmd_names.PNT_777), devices.MFCD, click_cmds.PNT_777, 777, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_778"] = default_push_button(_(cmd_names.PNT_778), devices.MFCD, click_cmds.PNT_778, 778, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_779"] = default_push_button(_(cmd_names.PNT_779), devices.MFCD, click_cmds.PNT_779, 779, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_780"] = default_push_button(_(cmd_names.PNT_780), devices.MFCD, click_cmds.PNT_780, 780, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_781"] = default_push_button(_(cmd_names.PNT_781), devices.MFCD, click_cmds.PNT_781, 781, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_782"] = default_push_button(_(cmd_names.PNT_782), devices.MFCD, click_cmds.PNT_782, 782, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_783"] = default_push_button(_(cmd_names.PNT_783), devices.MFCD, click_cmds.PNT_783, 783, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_784"] = default_push_button(_(cmd_names.PNT_784), devices.MFCD, click_cmds.PNT_784, 784, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_785"] = default_push_button(_(cmd_names.PNT_785), devices.MFCD, click_cmds.PNT_785, 785, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_786"] = default_push_button(_(cmd_names.PNT_786), devices.MFCD, click_cmds.PNT_786, 786, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_787"] = default_push_button(_(cmd_names.PNT_787), devices.MFCD, click_cmds.PNT_787, 787, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_788"] = default_push_button(_(cmd_names.PNT_788), devices.MFCD, click_cmds.PNT_788, 788, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_789"] = default_push_button(_(cmd_names.PNT_789), devices.MFCD, click_cmds.PNT_789, 789, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_790"] = default_push_button(_(cmd_names.PNT_790), devices.MFCD, click_cmds.PNT_790, 790, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_791"] = default_push_button(_(cmd_names.PNT_791), devices.MFCD, click_cmds.PNT_791, 791, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_792"] = default_push_button(_(cmd_names.PNT_792), devices.MFCD, click_cmds.PNT_792, 792, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_793"] = default_push_button(_(cmd_names.PNT_793), devices.MFCD, click_cmds.PNT_793, 793, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_794"] = default_push_button(_(cmd_names.PNT_794), devices.MFCD, click_cmds.PNT_794, 794, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_795"] = default_push_button(_(cmd_names.PNT_795), devices.MFCD, click_cmds.PNT_795, 795, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
---elements["PNT_796"] = default_push_button(_(cmd_names.PNT_796), devices.MFCD, click_cmds.PNT_796, 796, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
---elements["PNT_797"] = default_push_button(_(cmd_names.PNT_797), devices.MFCD, click_cmds.PNT_797, 797, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
---elements["PNT_798"] = default_push_button(_(cmd_names.PNT_798), devices.MFCD, click_cmds.PNT_798, 798, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
---elements["PNT_799"] = default_push_button(_(cmd_names.PNT_799), devices.MFCD, click_cmds.PNT_799, 799, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_796"] = default_axis_limited(_(cmd_names.PNT_796), devices.MFCD, click_cmds.PNT_796, 796, 0,  nil, true, nil, {{0,1.0},{0,1.0}}, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_797"] = default_axis_limited(_(cmd_names.PNT_797), devices.MFCD, click_cmds.PNT_797, 797,0,  nil, true, nil, {{0,1.0},{0,1.0}}, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_798"] = default_axis_limited(_(cmd_names.PNT_798), devices.MFCD, click_cmds.PNT_798, 798, 0,  nil, true, nil, {{0,1.0},{0,1.0}}, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_799"] = default_axis_limited(_(cmd_names.PNT_799), devices.MFCD, click_cmds.PNT_799, 799,0,  nil, true, nil, {{0,1.0},{0,1.0}}, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
--- end of Center MFCD
-
--- Right MFCD
-elements["PNT_800"] = default_push_button(_(cmd_names.PNT_800), devices.MFCD, click_cmds.PNT_800, 800, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_801"] = default_push_button(_(cmd_names.PNT_801), devices.MFCD, click_cmds.PNT_801, 801, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_802"] = default_push_button(_(cmd_names.PNT_802), devices.MFCD, click_cmds.PNT_802, 802, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_803"] = default_push_button(_(cmd_names.PNT_803), devices.MFCD, click_cmds.PNT_803, 803, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_804"] = default_push_button(_(cmd_names.PNT_804), devices.MFCD, click_cmds.PNT_804, 804, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_805"] = default_push_button(_(cmd_names.PNT_805), devices.MFCD, click_cmds.PNT_805, 805, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_806"] = default_push_button(_(cmd_names.PNT_806), devices.MFCD, click_cmds.PNT_806, 806, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_807"] = default_2_position_tumb(_(cmd_names.PNT_807), devices.MFCD, click_cmds.PNT_807, 807)
-elements["PNT_808"] = default_push_button(_(cmd_names.PNT_808), devices.MFCD, click_cmds.PNT_808, 808, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_809"] = default_push_button(_(cmd_names.PNT_809), devices.MFCD, click_cmds.PNT_809, 809, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_810"] = default_push_button(_(cmd_names.PNT_810), devices.MFCD, click_cmds.PNT_810, 810, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_811"] = default_push_button(_(cmd_names.PNT_811), devices.MFCD, click_cmds.PNT_811, 811, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_812"] = default_push_button(_(cmd_names.PNT_812), devices.MFCD, click_cmds.PNT_812, 812, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_813"] = default_push_button(_(cmd_names.PNT_813), devices.MFCD, click_cmds.PNT_813, 813, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_814"] = default_push_button(_(cmd_names.PNT_814), devices.MFCD, click_cmds.PNT_814, 814, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_815"] = default_push_button(_(cmd_names.PNT_815), devices.MFCD, click_cmds.PNT_815, 815, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_816"] = default_push_button(_(cmd_names.PNT_816), devices.MFCD, click_cmds.PNT_816, 816, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_817"] = default_push_button(_(cmd_names.PNT_817), devices.MFCD, click_cmds.PNT_817, 817, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_818"] = default_push_button(_(cmd_names.PNT_818), devices.MFCD, click_cmds.PNT_818, 818, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_819"] = default_push_button(_(cmd_names.PNT_819), devices.MFCD, click_cmds.PNT_819, 819, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_820"] = default_push_button(_(cmd_names.PNT_820), devices.MFCD, click_cmds.PNT_820, 820, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_821"] = default_push_button(_(cmd_names.PNT_821), devices.MFCD, click_cmds.PNT_821, 821, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_822"] = default_push_button(_(cmd_names.PNT_822), devices.MFCD, click_cmds.PNT_822, 822, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_823"] = default_push_button(_(cmd_names.PNT_823), devices.MFCD, click_cmds.PNT_823, 823, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_824"] = default_push_button(_(cmd_names.PNT_824), devices.MFCD, click_cmds.PNT_824, 824, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_825"] = default_push_button(_(cmd_names.PNT_825), devices.MFCD, click_cmds.PNT_825, 825, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_826"] = default_push_button(_(cmd_names.PNT_826), devices.MFCD, click_cmds.PNT_826, 826, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_827"] = default_push_button(_(cmd_names.PNT_827), devices.MFCD, click_cmds.PNT_827, 827, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_828"] = default_push_button(_(cmd_names.PNT_828), devices.MFCD, click_cmds.PNT_828, 828, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
---elements["PNT_829"] = default_push_button(_(cmd_names.PNT_829), devices.MFCD, click_cmds.PNT_829, 829, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
---elements["PNT_830"] = default_push_button(_(cmd_names.PNT_830), devices.MFCD, click_cmds.PNT_830, 830, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
---elements["PNT_831"] = default_push_button(_(cmd_names.PNT_831), devices.MFCD, click_cmds.PNT_831, 831, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
---elements["PNT_832"] = default_push_button(_(cmd_names.PNT_832), devices.MFCD, click_cmds.PNT_832, 832, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_829"] = default_axis_limited(_(cmd_names.PNT_829), devices.MFCD, click_cmds.PNT_829, 829, 0,  nil, true, nil, {{0,1.0},{0,1.0}}, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_830"] = default_axis_limited(_(cmd_names.PNT_830), devices.MFCD, click_cmds.PNT_830, 830,0,  nil, true, nil, {{0,1.0},{0,1.0}}, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_831"] = default_axis_limited(_(cmd_names.PNT_831), devices.MFCD, click_cmds.PNT_831, 831, 0,  nil, true, nil, {{0,1.0},{0,1.0}}, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
-elements["PNT_832"] = default_axis_limited(_(cmd_names.PNT_832), devices.MFCD, click_cmds.PNT_832, 832,0,  nil, true, nil, {{0,1.0},{0,1.0}}, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
--- end of Right MFCD
-]]--
 
 --elements["PNT_840"] = default_axis_limited(_(cmd_names.PNT_840), devices.ADC, click_cmds.PNT_840, 840, 0.5, 0.002, true, nil, {{0,1.0},{0,1.0}})
 elements["PNT_840"] = default_axis_cycle  (_(cmd_names.PNT_840), devices.ADC,  click_cmds.PNT_840, 840, 0.5, 0.05, true, true)
@@ -307,8 +224,6 @@ elements["PNT_903"] =    default_axis_limited(_(cmd_names.PNT_903), devices.WARN
 elements["PNT_904"] = default_2_position_tumb(_(cmd_names.PNT_904), devices.ELECTRIC_SYSTEM, click_cmds.PNT_904, 904, {{SND_SW_GENERAL_C},{SND_SW_GENERAL_C}}) --蓄电池开关
 elements["PNT_905"] = default_2_position_tumb(_(cmd_names.PNT_905), devices.ELECTRIC_SYSTEM, click_cmds.PNT_905, 905, {{SND_SW_GENERAL_C},{SND_SW_GENERAL_C}}) --主交流发电机开关
 elements["PNT_906"] = default_2_position_tumb(_(cmd_names.PNT_906), devices.ELECTRIC_SYSTEM, click_cmds.PNT_906, 906, {{SND_SW_GENERAL_C},{SND_SW_GENERAL_C}}) --直流发电机开关
-
-elements["PNT_907"] = default_2_position_tumb(_(cmd_names.PNT_907), devices.AAP, click_cmds.PNT_907, 907) --whisky.actual@gmail.com
 
 elements["PNT_908"] = multiposition_switch_limited(_(cmd_names.PNT_908), devices.INS, click_cmds.PNT_908, 908, 4, 1.0/3, false, 0.0, {{SND_KNOB_INT_MODE},{SND_KNOB_INT_MODE}}) --INS 3档旋钮惯导工作模式选择开关
 
@@ -398,7 +313,7 @@ elements["PNT_968"] = default_axis_limited(_(cmd_names.PNT_968), devices.LIGHTS,
 elements["PNT_969"] = default_2_position_tumb(_(cmd_names.PNT_969), 0, key_cmds.FlashLight, 969)
 
 -- Stick
-elements["PNT_970"] = default_2_position_tumb(_(cmd_names.PNT_970), devices.MISC, click_cmds.PNT_970, cpt_args.STICK_SHOW_HIDE) -- 驾驶杆显示/隐藏
+--elements["PNT_970"] = default_2_position_tumb(_(cmd_names.PNT_970), devices.MISC, click_cmds.PNT_970, cpt_args.STICK_SHOW_HIDE) -- 驾驶杆显示/隐藏
 
 elements["PNT_971"] = default_button(_(cmd_names.PNT_971), devices.EMMC, key_cmds.HOTAS_Stick_S7, cpt_args.STICK_AP_DISENGAGE) -- 断开自动驾驶
 
@@ -433,7 +348,10 @@ end
 ----------------------------------------------------------------------------------------
 -- JF-39
 ----------------------------------------------------------------------------------------
+elements["PNT_907"] = default_2_position_tumb(_(cmd_names.PNT_907), devices.AAP, click_cmds.PNT_907, 907) --whisky.actual@gmail.com
 elements["PNT_915"] = default_2_position_tumb(_(cmd_names.PNT_915), devices.AAP, click_cmds.PNT_915, 915) --whisky.actual@gmail.com
+elements["PNT_970"] = default_2_position_tumb(_(cmd_names.PNT_970), devices.MISC, click_cmds.PNT_970, cpt_args.STICK_SHOW_HIDE) --whisky.actual@gmail.com
+elements["PNT_982"] = default_2_position_tumb(_("Show/Hide Stick"), devices.animations, key_cmds.Gun_OnOff, 982) --whisky.actual@gmail.com
 
 -- Center MFCD
 elements["PNT_800"] = default_push_button(_(cmd_names.PNT_767), devices.MFCD, click_cmds.PNT_767, 767, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
@@ -517,8 +435,6 @@ elements["PNT_799"]  = default_axis_limited(_(cmd_names.PNT_832), devices.MFCD, 
 ----------------------------------------------------------------------------------------
 --                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------
-
-
 
 
 

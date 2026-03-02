@@ -60,7 +60,7 @@ texs = {
         ctrls = {{"rdr_aa_locked_hpt_spt", 1}},
     },
     
-
+	-- dlz hpt
     {-- dlz.dMIN
         cx = 0, cy = -740/1000, hw = 146.667/2000, hh = 126.667/2000, ulx = 1136, uly = 366, w = 88, h = 76,
         mat = MFCD_TEX_IND4_G, ctrls = {{"rdr_aa_dlz", 0.0, 0}}, parent_element = "rdr_aa_beam_az_hpt_bar",
@@ -73,7 +73,44 @@ texs = {
         cx = 0, cy = -740/1000, hw = 146.667/2000, hh = 126.667/2000, ulx = 1224, uly = 290, w = 88, h = 76,
         mat = MFCD_TEX_IND4_G, ctrls = {{"rdr_aa_dlz", 3.0, 0}}, parent_element = "rdr_aa_beam_az_hpt_bar",
     },
-    
+	{-- dlz.dOpt
+        cx = 0, cy = -740/1000, hw = 146.667/2000, hh = 126.667/2000, ulx = 1224, uly = 290, w = 88, h = 76,
+        mat = MFCD_TEX_IND4_G, ctrls = {{"rdr_aa_dlz", 1.0, 0}}, parent_element = "rdr_aa_beam_az_hpt_bar",
+    },
+	{-- dlz.Rmnvr
+        cx = 0, cy = -740/1000, hw = 146.667/2000, hh = 126.667/2000, ulx = 1224, uly = 290, w = 88, h = 76,
+        mat = MFCD_TEX_IND4_Y, ctrls = {{"rdr_aa_dlz", 4.0, 0}}, parent_element = "rdr_aa_beam_az_hpt_bar",
+    },
+	{-- dlz.Rpi
+        cx = 0, cy = -740/1000, hw = 146.667/2000, hh = 126.667/2000, ulx = 1224, uly = 290, w = 88, h = 76,
+        mat = MFCD_TEX_IND4_Y, ctrls = {{"rdr_aa_dlz", 5.0, 0}}, parent_element = "rdr_aa_beam_az_hpt_bar",
+    },
+	
+	-- dlz spt
+    {-- dlz.dMIN
+        cx = 0, cy = -740/1000, hw = 146.667/2000, hh = 126.667/2000, ulx = 1136, uly = 366, w = 88, h = 76,
+        mat = MFCD_TEX_IND4_G, ctrls = {{"rdr_aa_dlz", 0.0, 1}}, parent_element = "rdr_aa_beam_az_spt_bar",
+    },
+    {-- dlz.dMAX
+        cx = 0, cy = -740/1000, hw = 146.667/2000, hh = 126.667/2000, ulx = 1136, uly = 290, w = 88, h = 76,
+        mat = MFCD_TEX_IND4_G, ctrls = {{"rdr_aa_dlz", 2.0, 1}}, parent_element = "rdr_aa_beam_az_spt_bar",
+    },
+    {-- dlz.dNEZ
+        cx = 0, cy = -740/1000, hw = 146.667/2000, hh = 126.667/2000, ulx = 1224, uly = 290, w = 88, h = 76,
+        mat = MFCD_TEX_IND4_G, ctrls = {{"rdr_aa_dlz", 3.0, 1}}, parent_element = "rdr_aa_beam_az_spt_bar",
+    },
+	{-- dlz.dOpt
+        cx = 0, cy = -740/1000, hw = 146.667/2000, hh = 126.667/2000, ulx = 1224, uly = 290, w = 88, h = 76,
+        mat = MFCD_TEX_IND4_G, ctrls = {{"rdr_aa_dlz", 1.0, 1}}, parent_element = "rdr_aa_beam_az_spt_bar",
+    },
+	{-- dlz.Rmnvr
+        cx = 0, cy = -740/1000, hw = 146.667/2000, hh = 126.667/2000, ulx = 1224, uly = 290, w = 88, h = 76,
+        mat = MFCD_TEX_IND4_Y, ctrls = {{"rdr_aa_dlz", 4.0, 1}}, parent_element = "rdr_aa_beam_az_spt_bar",
+    },
+	{-- dlz.Rpi
+        cx = 0, cy = -740/1000, hw = 146.667/2000, hh = 126.667/2000, ulx = 1224, uly = 290, w = 88, h = 76,
+        mat = MFCD_TEX_IND4_Y, ctrls = {{"rdr_aa_dlz", 5.0, 1}}, parent_element = "rdr_aa_beam_az_spt_bar",
+    },
     
     {-- pip dot
         cx = 0, cy = 0, hw = 246.667/2000, hh = 246.667/2000, ulx = 888, uly = 0, w = 148, h = 148,
@@ -148,6 +185,26 @@ texts = {
         cx = 725/1000, cy = (MFCD_FONT_LR4_Y + MFCD_FONT_LR5_Y) / 2, mat = MFCD_FONT_W, value = "XX.XNM\nX:XX\n+XXXX KTS\nXR", align = "RightTop", strdefs = MFCD_STRINGDEFS_DEF_X08, isdraw = false,
         ctrls = {{"rdr_aa_hpt_bug_info"}},
     },
+    {-- HPT信息1
+        cx = -500/1000, cy = MFCD_FONT_LR1_Y, mat = MFCD_FONT_W, value = "XXX  XXX   XXXX   XXL    + XX", align = "LeftCenter", strdefs = MFCD_STRINGDEFS_DEF_X07, isdraw = false,
+        ctrls = {{"rdr_aa_hpt_basic_info",1}},
+    },
+    {-- HPT信息2
+        cx = -250/1000, cy = MFCD_FONT_LR1_Y, mat = MFCD_FONT_W, value = "XXX  XXX   XXXX   XXL    + XX", align = "LeftCenter", strdefs = MFCD_STRINGDEFS_DEF_X07, isdraw = false,
+        ctrls = {{"rdr_aa_hpt_basic_info",2}},
+    },
+    {-- HPT信息3
+        cx = -0/1000, cy = MFCD_FONT_LR1_Y, mat = MFCD_FONT_W, value = "XXX  XXX   XXXX   XXL    + XX", align = "LeftCenter", strdefs = MFCD_STRINGDEFS_DEF_X07, isdraw = false,
+        ctrls = {{"rdr_aa_hpt_basic_info",3}},
+    },
+    {-- HPT信息4
+        cx = 250/1000, cy = MFCD_FONT_LR1_Y, mat = MFCD_FONT_W, value = "XXX  XXX   XXXX   XXL    + XX", align = "LeftCenter", strdefs = MFCD_STRINGDEFS_DEF_X07, isdraw = false,
+        ctrls = {{"rdr_aa_hpt_basic_info",4}},
+    },
+    {-- HPT信息5
+        cx = 500/1000, cy = MFCD_FONT_LR1_Y, mat = MFCD_FONT_W, value = "XXX  XXX   XXXX   XXL    + XX", align = "LeftCenter", strdefs = MFCD_STRINGDEFS_DEF_X07, isdraw = false,
+        ctrls = {{"rdr_aa_hpt_basic_info",5}},
+    },
     
 }
 
@@ -205,7 +262,7 @@ AddToUpper(rdr_ase_circle)
 
 --============================================================--
 
-dofile(LockOn_Options.script_path .. "JF-39/MFCD/Indicator/UP_U1_RDR_AA_Contact.lua")
+dofile(LockOn_Options.script_path .. "MFCD/Indicator/UP_U1_RDR_AA_Contact.lua")
 
 --[[
 MAX_CONTACTS = SA_CONTACT_NUM_SHARED

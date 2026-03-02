@@ -33,6 +33,7 @@ creators = {}
 creators[devices.JF39_Devices]	  = {"avLuaDevice"         	 ,script_path..	"JF-39/JF39_Devices.lua", {}}
 creators[devices.JF39_HUD]		  = {"avLuaDevice"           ,script_path..	"JF-39/HUD_Temp/Device/HUD Device.lua", {}}
 creators[devices.JF39_LCP]		  = {"avLuaDevice"           ,script_path..	"JF-39/LCP/Device/LCP_Device.lua", {}}
+creators[devices.animations] 	  = {"avLuaDevice"			 ,script_path.. "JF-39/animations.lua", {}}
 ----------------------------------------------------------------------------------------
 creators[devices.ELECTRIC_SYSTEM] = {"DEKA_Device::JF_17::avPowerSystem", script_path .. "PowerSystem/avPowerSystem.lua", {}}
 creators[devices.AAP]             = {"DEKA_Device::JF_17::avAAP",         script_path .. "PowerSystem/avAAP.lua", {}}
@@ -56,9 +57,9 @@ creators[devices.WCS]             = {"DEKA_Device::JF_17::avWCS", script_path ..
 creators[devices.SMS]             = {"DEKA_Device::JF_17::avSMS", script_path .. "WCS/avSMS.lua", {}}
 
 creators[devices.HUD]             = {"DEKA_Device::JF_17::avHUD",  script_path .. "HUD/avHUD.lua", {}}
-creators[devices.HMD]             = {"DEKA_Device::JF_17::avHMD",  script_path .. "JF-39/HMD/avHMD.lua", {}}--Whisky.Actual
+creators[devices.HMD]             = {"DEKA_Device::JF_17::avHMD",  script_path .. "JF-39/HMD/avHMD.lua", {}} --whisky.actual@gmail.com
 creators[devices.UFCP]            = {"DEKA_Device::JF_17::avUFCP", script_path .. "UFCP/avUFCP_init.lua", {}}
-creators[devices.MFCD]            = {"DEKA_Device::JF_17::avMFCD", script_path .. "JF-39/MFCD/avMFCD.lua", {}}--Whisky.Actual
+creators[devices.MFCD]            = {"DEKA_Device::JF_17::avMFCD", script_path .. "JF-39/MFCD/avMFCD.lua", {}} --whisky.actual@gmail.com
 
 creators[devices.SHARS]           = {"DEKA_Device::JF_17::avSHARS",      script_path .. "Nav/avSHARS.lua", {}}
 creators[devices.INS]             = {"DEKA_Device::JF_17::avINS",        script_path .. "Nav/avINS.lua", {}}
@@ -94,7 +95,7 @@ creators[devices.MISC]            = {"DEKA_Device::JF_17::avMISC", script_path .
 creators[devices.CLOCK]           = {"DEKA_Device::JF_17::avClock", script_path .. "Clock/avClock.lua", {}}
 
 -- CONTROL_INDICATOR
-creators[devices.CTRL_IND]        = {"avLuaDevice", script_path .. "JF-39/ControlsIndicator/ctrl_indicator_data.lua", {}}--Whisky.Actual
+creators[devices.CTRL_IND]        = {"avLuaDevice", script_path .. "JF-39/ControlsIndicator/ctrl_indicator_data.lua", {}} --whisky.actual@gmail.com
 creators[devices.MACRO]           = {"DEKA_Device::JF_17::avMacro", LockOn_Options.common_script_path .. "Macro_handler.lua", {}}
 
 --creators[devices.NVG]             = {"avNightVisionGoggles", script_path .. "HELMET/NVG.lua", {}}
@@ -133,9 +134,9 @@ tv_map_render_id ={1, 2, 3, 4};
 --indicators[#indicators + 1] = {"ccXXX", script_path , Linked avDevice, { {"CENTER","DOWN","RIGHT"},{}, tv_map_render_id[x]} }
 
 -- MFCD
-indicators[#indicators + 1] = {"DEKA_Device::JF_17::ccMFCD", script_path .. "JF-39/MFCD/MFCD_init_LEFT.lua", devices.MFCD,   { {"CPT-MFCD-L-CENTER","CPT-MFCD-L-DOWN","CPT-MFCD-L-RIGHT"}, {sx=0, sy=0, sz=0}, tv_map_render_id[2] } }--Whisky.Actual
-indicators[#indicators + 1] = {"DEKA_Device::JF_17::ccMFCD", script_path .. "JF-39/MFCD/MFCD_init_CENTER.lua", devices.MFCD, { {"CPT-MFCD-M-CENTER","CPT-MFCD-M-DOWN","CPT-MFCD-M-RIGHT"}, {sx=0, sy=0, sz=0}, tv_map_render_id[1] } }--Whisky.Actual
-indicators[#indicators + 1] = {"DEKA_Device::JF_17::ccMFCD", script_path .. "JF-39/MFCD/MFCD_init_RIGHT.lua", devices.MFCD,  { {"CPT-MFCD-R-CENTER","CPT-MFCD-R-DOWN","CPT-MFCD-R-RIGHT"}, {sx=0, sy=0, sz=0}, tv_map_render_id[3] } }--Whisky.Actual
+indicators[#indicators + 1] = {"DEKA_Device::JF_17::ccMFCD", script_path .. "JF-39/MFCD/MFCD_init_LEFT.lua", devices.MFCD,   { {"CPT-MFCD-L-CENTER","CPT-MFCD-L-DOWN","CPT-MFCD-L-RIGHT"}, {sx=0, sy=0, sz=0}, tv_map_render_id[2] } } --whisky.actual@gmail.com
+indicators[#indicators + 1] = {"DEKA_Device::JF_17::ccMFCD", script_path .. "JF-39/MFCD/MFCD_init_CENTER.lua", devices.MFCD, { {"CPT-MFCD-M-CENTER","CPT-MFCD-M-DOWN","CPT-MFCD-M-RIGHT"}, {sx=0, sy=0, sz=0}, tv_map_render_id[1] } } --whisky.actual@gmail.com
+indicators[#indicators + 1] = {"DEKA_Device::JF_17::ccMFCD", script_path .. "JF-39/MFCD/MFCD_init_RIGHT.lua", devices.MFCD,  { {"CPT-MFCD-R-CENTER","CPT-MFCD-R-DOWN","CPT-MFCD-R-RIGHT"}, {sx=0, sy=0, sz=0}, tv_map_render_id[3] } } --whisky.actual@gmail.com
 
 -- Clock
 indicators[#indicators + 1] = {"DEKA_Device::JF_17::ccClock", script_path .. "Clock/Clock_init_1.lua", devices.CLOCK, {{"CPT-CLK-U-CENTER","CPT-CLK-U-DOWN","CPT-CLK-U-RIGHT"}}}

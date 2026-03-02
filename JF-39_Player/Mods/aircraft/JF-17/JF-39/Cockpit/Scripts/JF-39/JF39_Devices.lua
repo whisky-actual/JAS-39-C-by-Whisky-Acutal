@@ -58,15 +58,14 @@ function update()
     end
 
     -- HMD Toggle Logic
-    local hud_switch_val = get_cockpit_draw_argument_value(915)
+    local hmd_switch_val = get_cockpit_draw_argument_value(915)
     local hud_battery_val = get_cockpit_draw_argument_value(904)
 
-    if hud_switch_val > 0.5 and hud_battery_val > 0.5 then
+    if hmd_switch_val > 0.5 and hud_battery_val > 0.5 
+    then
         JF39_HMD:set(1)
-        --set_cockpit_draw_argument_value(264, 1)
     else
         JF39_HMD:set(0)
-        --set_cockpit_draw_argument_value(264, 0)
     end
 
     -- LCP Toggle Logic
@@ -89,7 +88,6 @@ function update()
         button_depress_ap = false
     end
 end
-
 ----------------------------------------------------------------------------------------
 --                    File by whisky.actual@gmail.com - v.1.3.0                       --
 ----------------------------------------------------------------------------------------

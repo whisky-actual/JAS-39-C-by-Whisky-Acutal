@@ -58,6 +58,7 @@ Alt_nogo_noti.controllers     = {{"hud_nogo_noti"}}
 Alt_nogo_noti.parent_element  = fpm_name
 Alt_nogo_noti.isdraw          = false
 AddHUDElement(Alt_nogo_noti)
+
 ---------------------------------------------------------------------------------------------------
 hud_hdg_txt_pos_y = 29.382
 

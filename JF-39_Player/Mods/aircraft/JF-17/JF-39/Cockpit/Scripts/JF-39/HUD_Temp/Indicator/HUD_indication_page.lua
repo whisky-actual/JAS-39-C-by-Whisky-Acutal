@@ -43,6 +43,7 @@ local M_text		= add_text_hud("M ", -0.05, 0, Left_Side_Indication_base , "Gripen
 local MachComma		= add_text_hud(".", -0.015, 0, Mach_indicator , "Gripen_Font_green", HUD_strdefs_text)
 local GS_Text       = add_text_hud("GS ", -0.05, -0.105, Left_Side_Indication_base, "Gripen_Font_green")
 local GS_Indicator  = add_text_hud_param(0.075, -0.105, "CURR_GS", "JF39_HUD", "%.0f", Left_Side_Indication_base, HUD_strdefs_digit, "Gripen_Font_green")--2nd CURR_GS is the transparency parameter
+
 -----------------------------------------
 -- JF_39 HUD SPECIAL INDICATION
 -----------------------------------------
@@ -51,7 +52,76 @@ local GS_Indicator  = add_text_hud_param(0.075, -0.105, "CURR_GS", "JF39_HUD", "
 local landing_mode_ind 			 	= add_text_hud("L", -0.6, 0.4, HUD_BASE , "Gripen_Font_green", HUD_strdefs_text, "CenterCenter")
 landing_mode_ind.element_params  	= {"JF39_HUD"}
 landing_mode_ind.controllers     	= {{"hud_aoa_bracket", 0.36, 0.6,"parameter_in_range" ,0,0.9,1.1} }
+
+local TerrainAltitudeBox                = Hud_Horizon_Line(HUD_HORIZON, 1861, 969, 2296, 1116, 0.8) 
+TerrainAltitudeBox.name                 = create_guid_string()
+TerrainAltitudeBox.init_pos             = {0.68, -0.68, 0}
+TerrainAltitudeBox.init_rot             = {0, 0, 0}
+TerrainAltitudeBox.parent_element       = HUD_BASE.name                
+TerrainAltitudeBox.element_params       = {"JF39_HUD"}
+TerrainAltitudeBox.controllers          = {{"opacity_using_parameter" ,0}}  
+AddHudElement(TerrainAltitudeBox)
+
+local VelocityVectorHUD                 = Hud_Horizon_Line(HUD_HORIZON, 1506, 1065, 1794, 1145, 1)
+VelocityVectorHUD.name                  = create_guid_string()
+VelocityVectorHUD.init_pos              = {0, -0.0212, 0}
+VelocityVectorHUD.element_params        = {"JF39_AP", "JF39_HUD"}
+VelocityVectorHUD.controllers           = {{"parameter_in_range" ,0, 0.9,1.1, "opacity_using_parameter" , 0}}   
+VelocityVectorHUD.parent_element        = HUD_BASE.name
+AddHudElement(VelocityVectorHUD)
+
+local VelocityVectorLimited              = Hud_Horizon_Line(HUD_HORIZON, 454, 1097, 742, 1107, 1.5)
+VelocityVectorLimited.name               = create_guid_string()
+VelocityVectorLimited.init_pos           = {0, -1.29, 0}
+VelocityVectorLimited.element_params     = {"JF39_AP", "JF39_HUD"}
+VelocityVectorLimited.controllers        = {{"parameter_in_range" ,0, 0.9,1.1, "opacity_using_parameter" , 0}}   
+VelocityVectorLimited.parent_element     = HUD_BASE.name
+AddHudElement(VelocityVectorLimited)     
+
+
+local GroundCollisionWarning             = create_HUD_GCW(HUD_GroundCollisionWarning, 184, 458, 2682, 1348, 0.333) 
+GroundCollisionWarning.name              = create_guid_string()
+GroundCollisionWarning.init_pos          = {0, -0.3, 0}
+GroundCollisionWarning.init_rot          = {0, 0, 0}
+GroundCollisionWarning.parent_element    = HUD_BASE.name                
+GroundCollisionWarning.element_params    = {"JF39_HUD","PULLUPQUE", "ROLL_HUD", "VELVEC_HUD_Y",
+--"CURRENT_PHASE_STATIONARY","CURRENT_PHASE_PARKED","CURRENT_PHASE_TAXI", "CURRENT_PHASE_TGR","CURRENT_PHASE_ROT","CURRENT_PHASE_TD","CURRENT_PHASE_LR","CURRENT_PHASE_PAL",
+ "PULLMORE","VELVEC_HUD_X"}
+GroundCollisionWarning.controllers              = { {"opacity_using_parameter" ,0},
+                                                    {"parameter_in_range",1, -10000,0},
+                                                    {"rotate_using_parameter" ,2, 1.00},
+                                                    --{"move_up_down_using_parameter",3, 0.322},
+                                                    --{"parameter_compare_with_number",4, 0},
+                                                    --{"parameter_compare_with_number",5, 0},
+                                                    --{"parameter_compare_with_number",6, 0},
+                                                    --{"parameter_compare_with_number",7, 0},
+                                                    --{"parameter_compare_with_number",8, 0},
+                                                    --{"parameter_compare_with_number",9, 0},
+                                                    --{"parameter_compare_with_number",10, 0},
+                                                    --{"parameter_compare_with_number",11, 0},
+                                                    {"parameter_in_range",12, -0.99,0.5},
+                                                    {"move_left_right_using_parameter",13, 0.322} }                                                                        
+AddHudElement(GroundCollisionWarning)
+
+local GCW_Arrow_L                       = create_HUD_GCW(HUD_GroundCollisionWarning, 23, 23, 508, 443, 0.333) 
+GCW_Arrow_L.name                        = create_guid_string()
+GCW_Arrow_L.init_pos                    = {-0.2655, 0.09, 0}
+GCW_Arrow_L.init_rot                    = {0, 0, 0}
+GCW_Arrow_L.parent_element              = GroundCollisionWarning.name        
+GCW_Arrow_L.element_params              = {"JF39_HUD","PULLUPQUE", "PULLMORE"}
+GCW_Arrow_L.controllers                 = { {"opacity_using_parameter" ,0},{"move_up_down_using_parameter",1, -0.000006}, {"parameter_in_range",2, -0.99,0.5}  }                                                                        
+AddHudElement(GCW_Arrow_L)
+
+local GCW_Arrow_R                       = create_HUD_GCW(HUD_GroundCollisionWarning, 23, 23, 508, 443, 0.333) 
+GCW_Arrow_R.name                        = create_guid_string()
+GCW_Arrow_R.init_pos                    = {0.2655, 0.09, 0}
+GCW_Arrow_R.init_rot                    = {0, 0, 0}
+GCW_Arrow_R.parent_element              = GroundCollisionWarning.name        
+GCW_Arrow_R.element_params              = {"JF39_HUD","PULLUPQUE", "PULLMORE"}
+GCW_Arrow_R.controllers                 = { {"opacity_using_parameter" ,0},{"move_up_down_using_parameter",1, -0.000006}, {"parameter_in_range",2, -0.99,0.5}  }                                                                        
+AddHudElement(GCW_Arrow_R)
 ]]
+
 -----------------------------------------
 -- JF_39 HUD PITCH INDICATION
 -----------------------------------------
@@ -103,14 +173,6 @@ HorizonLineLeftLeft.element_params 		= {"JF39_HUD"}
 HorizonLineLeftLeft.controllers			= {{"opacity_using_parameter" ,0}}
 AddHudElement(HorizonLineLeftLeft)
 
-local AltitudeKeepingBoxes 				= Hud_Horizon_Line(HUD_HORIZON, 1086, 1786, 2218, 2022, 1)
-AltitudeKeepingBoxes.name				= create_guid_string()
-AltitudeKeepingBoxes.init_pos			= {0, -0.067, 0}
-AltitudeKeepingBoxes.parent_element		= HUD_PITCH.name
-AltitudeKeepingBoxes.element_params		= {"JF39_HUD", "ALT_HOLD"}
-AltitudeKeepingBoxes.controllers		= {{"opacity_using_parameter" ,0} ,{"parameter_in_range" ,1,0.9,1.1} }	
-AddHudElement(AltitudeKeepingBoxes)
-
 local PositivePitchLinesHUD 			= Hud_Pitch_Lines2(HUD_POSITIVE_PITCH, 0, 0, 9984, 9984, 6.9)
 PositivePitchLinesHUD.name				= create_guid_string()
 PositivePitchLinesHUD.init_pos			= {0, 7.7, 0}
@@ -132,6 +194,18 @@ local HorizonLineHeadingDots			= add_text_hud("!,,,,!,,,,!,,,,!,,,,!,,,,!,,,,!,,
 HorizonLineHeadingDots.init_pos			= {1.25, 0.0110,0.065}
 HorizonLineHeadingDots.element_params	= {"HEADING_HUD"}
 HorizonLineHeadingDots.controllers		= { {"move_left_right_using_parameter",0, -0.0110555}  }
+
+local AltitudeKeepingBoxes              = Hud_Horizon_Line(HUD_HORIZON, 1086, 1786, 2218, 2022, 1)
+AltitudeKeepingBoxes.name               = create_guid_string()
+AltitudeKeepingBoxes.init_pos           = {0, -0.067, 0}
+AltitudeKeepingBoxes.parent_element     = HUD_PITCH.name
+AltitudeKeepingBoxes.element_params     = {"JF39_AP", "JF39_HUD"}
+AltitudeKeepingBoxes.controllers        = {{"parameter_in_range" ,0, 0.9,1.1, "opacity_using_parameter" , 0}}       
+AddHudElement(AltitudeKeepingBoxes)
+
+        
+
+
 
 --------------------------------------------
 -- JF_39 HUD PITCH INDICATION ANGLE

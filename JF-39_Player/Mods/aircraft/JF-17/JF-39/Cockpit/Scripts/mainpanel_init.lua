@@ -89,9 +89,15 @@ create_mirror(cpt_args.MIRROR_RIGHT)
 create_mirror(cpt_args.MIRROR_CENTER)
 create_mirror(cpt_args.MIRROR_LEFT)
 
+--------------------------------------------------------------------------------
+-- Stick_Show_Hide_Toggle
+--------------------------------------------------------------------------------
 
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
+Stick_Show_Hide_Toggle                = CreateGauge("parameter")
+Stick_Show_Hide_Toggle.arg_number     = 982
+Stick_Show_Hide_Toggle.input          = {0, 1}
+Stick_Show_Hide_Toggle.output         = {0, 1}
+Stick_Show_Hide_Toggle.parameter_name = "Stick_Show_Hide_Toggle"
 
 Z_test =
 {
@@ -106,4 +112,6 @@ shape_name = get_livery_setting_from_plugin("JF-17", "CPTModel", "JF-17-CPT")
 
 ----------------------------------------------------------------------------------------
 need_to_be_closed = true -- close lua state after initialization
-
+----------------------------------------------------------------------------------------
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
+----------------------------------------------------------------------------------------

@@ -520,7 +520,7 @@ cmd_names = {
     RADIO_Mode_CW   = "Radio Mode Selector - CW",
     RADIO_Mode_CCW  = "Radio Mode Selector - CCW",
 
-    Stick_Show_Hide_Toggle = "Show/Hide Stick",
+    Stick_Show_Hide_Toggle = "Show/Hide Pilot", --whisky.actual@gmail.com
 
     SMS_Jett_Emerge_Shortcut = "Emergency Jettison Shortcut",
     OESP_Flare_Emerge_Shortcut = "Emergency Flare Shortcut",
@@ -928,7 +928,7 @@ cmd_names = {
     PNT_969 = "Flash Light",
 
     -- Stick
-    PNT_970 = "Stick Show/Hide",
+    PNT_970 = "Pilot Show/Hide", --whisky.actual@gmail.com
     PNT_971 = "A/P Disengage",
 
     -- Eject Seat
@@ -943,5 +943,4 @@ cmd_names = {
     PNT_977 = "Oxygen 100% O2",
     PNT_978 = "Eject Seat Emergency O2",
     PNT_979 = "G-Suit Connector",
-
 }

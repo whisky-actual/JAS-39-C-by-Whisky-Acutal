@@ -21,7 +21,7 @@ local osb_txt = {
 for i=1, #(osb_txt) do
     text_strpoly                = CreateElement "ceStringPoly"
     text_strpoly.material       = MFCD_FONT_DEF
-    text_strpoly.stringdefs     = MFCD_STRINGDEFS_DEF_X09
+    text_strpoly.stringdefs     = MFCD_STRINGDEFS_DEF_X08
     text_strpoly.init_pos       = osb_txt[i].init_pos
     text_strpoly.alignment      = osb_txt[i].align
     text_strpoly.formats        = osb_txt[i].formats
@@ -46,31 +46,31 @@ end
 -- 内容部分
 local textsDown = {
     {
-        init_pos = {-0.65, 0.25}, alignment = "LeftCenter", stringdefs = MFCD_STRINGDEFS_DEF_X09,
+        init_pos = {-0.65, 0.25}, alignment = "LeftCenter", stringdefs = MFCD_STRINGDEFS_DEF_X08,
         value = "NO.   DIS   BRG     ALT   ILS   TCN",
     },
     {
-        init_pos = {-0.65, 0.17}, alignment = "LeftCenter", stringdefs = MFCD_STRINGDEFS_DEF_X09,
+        init_pos = {-0.65, 0.17}, alignment = "LeftCenter", stringdefs = MFCD_STRINGDEFS_DEF_X08,
         value = "00      0     0    1693            ", ctrls = {{"nav_afinfo_list", 0}},
     },
     {
-        init_pos = {-0.65, 0.10}, alignment = "LeftCenter", stringdefs = MFCD_STRINGDEFS_DEF_X09,
+        init_pos = {-0.65, 0.10}, alignment = "LeftCenter", stringdefs = MFCD_STRINGDEFS_DEF_X08,
         value = "00      0     0    1693            ", ctrls = {{"nav_afinfo_list", 1}},
     },
     {
-        init_pos = {-0.65, 0.03}, alignment = "LeftCenter", stringdefs = MFCD_STRINGDEFS_DEF_X09,
+        init_pos = {-0.65, 0.03}, alignment = "LeftCenter", stringdefs = MFCD_STRINGDEFS_DEF_X08,
         value = "00      0     0    1693            ", ctrls = {{"nav_afinfo_list", 2}},
     },
     {
-        init_pos = {-0.65, -0.04}, alignment = "LeftCenter", stringdefs = MFCD_STRINGDEFS_DEF_X09,
+        init_pos = {-0.65, -0.04}, alignment = "LeftCenter", stringdefs = MFCD_STRINGDEFS_DEF_X08,
         value = "00      0     0    1693            ", ctrls = {{"nav_afinfo_list", 3}},
     },
     {
-        init_pos = {-0.65, -0.11}, alignment = "LeftCenter", stringdefs = MFCD_STRINGDEFS_DEF_X09,
+        init_pos = {-0.65, -0.11}, alignment = "LeftCenter", stringdefs = MFCD_STRINGDEFS_DEF_X08,
         value = "00      0     0    1693            ", ctrls = {{"nav_afinfo_list", 4}},
     },
     {
-        init_pos = {-0.65, -0.18}, alignment = "LeftCenter", stringdefs = MFCD_STRINGDEFS_DEF_X09,
+        init_pos = {-0.65, -0.18}, alignment = "LeftCenter", stringdefs = MFCD_STRINGDEFS_DEF_X08,
         value = "00      0     0    1693            ", ctrls = {{"nav_afinfo_list", 5}},
     },
 }
@@ -104,6 +104,3 @@ for i=1, #(textsDown) do
     AddToLOWER(text_strpoly)
     text_strpoly = nil
 end
-----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.3.0                       --
-----------------------------------------------------------------------------------------

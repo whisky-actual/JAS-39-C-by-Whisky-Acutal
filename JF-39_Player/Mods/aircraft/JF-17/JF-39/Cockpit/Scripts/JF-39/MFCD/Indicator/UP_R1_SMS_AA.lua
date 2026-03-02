@@ -17,33 +17,33 @@ local texs = {
     {-- <----
         cx = -0.85, cy = MFCD_FONT_LR3_Y, hw = 233.333/2000, hh = 100/2000, ulx = 1480, uly = 1008, w = 140, h = 60,
         mat = MFCD_TEX_IND1, tex_sx = TEX_SIZE_X, tex_sy = TEX_SIZE_Y,
-        ctrls = {{"sms_aa_ir_msl", 0}},
+        ctrls = {{"mfcd_isedit_show", 0}, {"sms_aa_ir_msl", 0}},
     },
     {-- <----
         cx = -0.85, cy = MFCD_FONT_LR5_Y, hw = 233.333/2000, hh = 100/2000, ulx = 1480, uly = 1008, w = 140, h = 60,
         mat = MFCD_TEX_IND1, tex_sx = TEX_SIZE_X, tex_sy = TEX_SIZE_Y,
-        ctrls = {{"sms_aa_ir_msl", 0}},
+        ctrls = {{"mfcd_isedit_show", 0}, {"sms_aa_ir_msl", 0}},
     },
     {-- ---->
         cx = 0.85, cy = MFCD_FONT_LR3_Y, hw = 233.333/2000, hh = 100/2000, ulx = 1480, uly = 948, w = 140, h = 60,
         mat = MFCD_TEX_IND1, tex_sx = TEX_SIZE_X, tex_sy = TEX_SIZE_Y,
-        ctrls = {{"sms_aa_ir_msl", 0}},
+        ctrls = {{"mfcd_isedit_show", 0}, {"sms_aa_ir_msl", 0}},
     },
     
     {-- <----
         cx = -0.85, cy = MFCD_FONT_LR4_Y, hw = 233.333/2000, hh = 100/2000, ulx = 1480, uly = 1008, w = 140, h = 60,
         mat = MFCD_TEX_IND1, tex_sx = TEX_SIZE_X, tex_sy = TEX_SIZE_Y,
-        ctrls = {{"sms_state_draw"}},
+        ctrls = {{"mfcd_isedit_show", 0}, {"sms_state_draw"}},
     },
     {-- ---->
         cx = 0.85, cy = MFCD_FONT_LR4_Y, hw = 233.333/2000, hh = 100/2000, ulx = 1480, uly = 948, w = 140, h = 60,
         mat = MFCD_TEX_IND1, tex_sx = TEX_SIZE_X, tex_sy = TEX_SIZE_Y,
-        ctrls = {{"sms_state_draw"}},
+        ctrls = {{"mfcd_isedit_show", 0}, {"sms_state_draw"}},
     },
     {-- ----> 2
         cx = 0.85, cy = MFCD_FONT_LR5_Y, hw = 233.333/2000, hh = 100/2000, ulx = 1480, uly = 948, w = 140, h = 60,
         mat = MFCD_TEX_IND1, tex_sx = TEX_SIZE_X, tex_sy = TEX_SIZE_Y,
-        ctrls = {{"sms_state_draw"}},
+        ctrls = {{"mfcd_isedit_show", 0}, {"sms_state_draw"}},
     },
     
     --[[{-- L3 disable X
@@ -124,7 +124,7 @@ local texts = {
     
     {-- Missle Arm State
         cx = MFCD_FONT_R_HORI_X, cy = MFCD_FONT_LR2_Y, value = "MSL STATE", align = "RightCenter",
-        ctrls = {{"sms_prog_aa_msl_arm"}},
+        ctrls = {{"sms_prog_aa_msl_arm"}, {"mfcd_isedit_show", 0}},
     },
 }
 

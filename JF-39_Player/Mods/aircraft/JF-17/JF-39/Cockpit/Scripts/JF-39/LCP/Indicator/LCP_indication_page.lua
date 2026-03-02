@@ -1,4 +1,4 @@
-dofile(LockOn_Options.script_path.."/JF-39/MFD/Indicator/Displays_def.lua")
+dofile(LockOn_Options.script_path.."/JF-39/LCP/Indicator/Displays_def.lua")
 --dofile(LockOn_Options.script_path.."/JF-39/HUD/Device/Device.lua")
 
 --JF17_COM1_FREQ = get_param_handle("JF17_COM1_FREQ")
