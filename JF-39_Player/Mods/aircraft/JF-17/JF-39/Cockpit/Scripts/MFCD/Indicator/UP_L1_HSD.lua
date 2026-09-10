@@ -33,8 +33,8 @@ HSD_NAV_LEVEL_SHIFT = 1
 
 ----[[ 前向 ]]
 
-FWD_COMP_BIAS  = -306.667/1000 -- -0.36
-FWD_COMP_BIAS  = -0.3125
+--FWD_COMP_BIAS  = -306.667/1000 -- -0.36
+FWD_COMP_BIAS  = hsd_fwd_comp_bias
 
 ------[[ 移动地图 ]]
 
@@ -259,10 +259,10 @@ fwd_square_clip.name            = create_guid_string()
 fwd_square_clip.material        = MFCD_MATERIAL_W_BASE
 fwd_square_clip.primitivetype   = "triangles"
 fwd_square_clip.init_pos        = {0, 0, 0}
-fwd_square_clip.vertices        = {{ 1573.333/2000,  0.8875},
-                                   { 1573.333/2000, -1526.667/2000},
-                                   {-1573.333/2000, -1526.667/2000},
-                                   {-1573.333/2000,  0.8875}}
+fwd_square_clip.vertices        = {{hsd_fwd_clip_r, hsd_fwd_clip_u},
+                                   {hsd_fwd_clip_r, hsd_fwd_clip_d},
+                                   {hsd_fwd_clip_l, hsd_fwd_clip_d},
+                                   {hsd_fwd_clip_l, hsd_fwd_clip_u}}
 fwd_square_clip.indices         = DEF_BOX_INDICES --{0,1,2,0,2,3 }
 fwd_square_clip.h_clip_relation = h_clip_relations.REWRITE_LEVEL
 fwd_square_clip.level           = HSD_NAV_LEVEL + 1
@@ -579,4 +579,23 @@ hdg_box_value.value           = "0"
 hdg_box_value.controllers     = {{"hsd_hdg_value"},}
 AddToUpper(hdg_box_value)
 -----------------------------------------------------------
+
+local hsd_tdc           = CreateElement "ceTexPoly"
+hsd_tdc.material        = MFCD_TEX_IND3_W
+hsd_tdc.tex_coords      = MFCD_tex_coord(148, 740, 148, 148, TEX_SIZE_X, TEX_SIZE_Y)
+hsd_tdc.vertices        = {{ 246.667/2000,  246.667/2000},
+                           { 246.667/2000, -246.667/2000},
+                           {-246.667/2000, -246.667/2000},
+                           {-246.667/2000,  246.667/2000}}
+hsd_tdc.indices         = DEF_BOX_INDICES
+hsd_tdc.init_pos        = {0, FWD_COMP_BIAS, 0} -- 815/1000
+hsd_tdc.level           = HSD_NAV_LEVEL + 2 + HSD_NAV_LEVEL_SHIFT
+hsd_tdc.h_clip_relation = h_clip_relations.COMPARE
+hsd_tdc.controllers     = {{"hsd_tdc"}}
+hsd_tdc.isdraw          = false
+hsd_tdc.isvisible       = true
+hsd_tdc.use_mipfilter   = true
+hsd_tdc.additive_alpha  = false
+AddToUpper(hsd_tdc)
+
 ----------------------------------------------------------

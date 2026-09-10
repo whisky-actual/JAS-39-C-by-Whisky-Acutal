@@ -20,16 +20,18 @@ end
 -- Conversions
 local RAD_TO_DEGREE  = 57.29577951308233
 
---hud indicator params
+-- Hud indicator params
 local CURR_IAS  = get_param_handle("CURR_IAS")	--Airspeed.
 local MACH_A  	= get_param_handle("MACH_A")
 local MACH_B  	= get_param_handle("MACH_B")	
-local HUD_MACH = 0
-local HUD_IAS = 0
-local HUD_GS = 0
+local PITCH_HUD  = get_param_handle("PITCH_HUD")
+local ROLL_HUD  = get_param_handle("ROLL_HUD")
 
 function update()
--- Speeds =================================================================================================================================
+-- ============= Datum ================
+	PITCH_HUD:set(sensor_data.getPitch())
+	ROLL_HUD:set(sensor_data.getRoll())
+-- ============= Speeds ================
 HUD_IAS = sensor_data.getIndicatedAirSpeed() * 1.94384449         -- m/s to kts
     local self_vel_l,self_vel_v,self_vel_h = sensor_data.getSelfAirspeed()        -- Prereq for ground speed in kts
     HUD_GS = math.sqrt(self_vel_h^2 + self_vel_l^2)*1.94384449
@@ -39,11 +41,13 @@ HUD_IAS = sensor_data.getIndicatedAirSpeed() * 1.94384449         -- m/s to kts
     else
         CURR_IAS:set(HUD_IAS)
     end
+
 get_param_handle("CURR_GS"):set(HUD_GS)
 
 -- ============= PrintButBetter ================
 --PrintButBetter(HUD_GS)	
 -- =============================================
+
 	HUD_MACH = sensor_data.getMachNumber()
 	
 	if HUD_MACH < 0.995 then

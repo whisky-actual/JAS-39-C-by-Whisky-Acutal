@@ -37,11 +37,15 @@ HUD_TEX_IND1      = "hud_tex_ind1"
 HUD_TEX_IND1_R    = "hud_tex_ind1_r"
 HUD_TEX_IND1_Y    = "hud_tex_ind1_y"
 
-HUD_TEX_CLIP      = "hud_tex_clip"
-
 HUD_TEX_IND2      = "hud_tex_ind2"
 HUD_TEX_IND2_R    = "hud_tex_ind2_r"
 HUD_TEX_IND2_Y    = "hud_tex_ind2_y"
+
+HUD_TEX_IND3      = "hud_tex_ind3"
+HUD_TEX_IND3_R    = "hud_tex_ind3_r"
+HUD_TEX_IND3_Y    = "hud_tex_ind3_y"
+
+HUD_TEX_CLIP      = "hud_tex_clip"
 
 HUD_LINE_DEF      = "hud_line_dashed_def"
 
@@ -70,6 +74,7 @@ HUD_FONT_H = fontscale * HUD_FONT_W
 
 HUD_STRINGDEFS_DEF     = {HUD_FONT_W, HUD_FONT_H, HUD_FONT_W * 0.032625, 0}
 HUD_STRINGDEFS_DEF_X08 = {0.8 * HUD_FONT_W, 0.8 * HUD_FONT_H, 0, 0}
+HUD_STRINGDEFS_DEF_X12 = {1.2 * HUD_FONT_W, 1.2 * HUD_FONT_H, 0, 0}
 HUD_STRINGDEFS_DEF_X15 = {1.5 * HUD_FONT_W, 1.5 * HUD_FONT_H, 0, 0}
 HUD_STRINGDEFS_DEF_X20 = {2.0 * HUD_FONT_W, 2.0 * HUD_FONT_H, 0, 0}
 
@@ -82,6 +87,8 @@ HUD_TEX_IND1_W  = 1200
 HUD_TEX_IND1_H  = 1200
 HUD_TEX_IND2_W  = 1200
 HUD_TEX_IND2_H  = 1200
+HUD_TEX_IND3_W  = 1200
+HUD_TEX_IND3_H  = 1200
 
 MIL2MMIL = 1000
 MMIL2MIL = 0.001
@@ -178,3 +185,7 @@ function AddToGunCross(elem)
     AddHUDElement(elem)
     return elem
 end
+
+----------------------------------------------------------------------------------------
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
+----------------------------------------------------------------------------------------

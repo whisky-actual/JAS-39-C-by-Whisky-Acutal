@@ -13,8 +13,8 @@ RADIO_MATERIAL_R   = "radio_mesh_r"
 RADIO_MATERIAL_Y   = "radio_mesh_y"
 
 
-RADIO_FONT_SIZE  = 0.0076
-RADIO_FONT_SCALE = 1
+RADIO_FONT_SIZE  = 0.0070
+RADIO_FONT_SCALE = 0.95
 
 RADIO_FONT_W = RADIO_FONT_SIZE / 1.1
 RADIO_FONT_H = RADIO_FONT_SIZE * RADIO_FONT_SCALE
@@ -47,3 +47,6 @@ function AddStringObject(object)
     object.stringdefs = RADIO_STRINGDEFS_DEF
     AddElementObject(object)
 end
+----------------------------------------------------------------------------------------
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
+----------------------------------------------------------------------------------------

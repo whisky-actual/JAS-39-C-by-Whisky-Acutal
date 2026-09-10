@@ -276,7 +276,7 @@ elements["PNT_945"] = default_axis_limited(_(cmd_names.PNT_945), devices.LIGHTS,
 elements["PNT_946"] = default_axis_limited(_(cmd_names.PNT_946), devices.LIGHTS, click_cmds.PNT_946, 946, 0,  nil, true, nil, {{0,1.0},{0,1.0}}) -- FLOOD泛光灯旋钮
 
 -- EXT
-elements["PNT_947"] =      default_3_position_tumb(_(cmd_names.PNT_947), devices.LIGHTS, click_cmds.PNT_947, 947, false, true, {{SND_SW_GENERAL_C},{SND_SW_GENERAL_C}}) -- 3档开关 master 机外主照明开关
+elements["PNT_947"] =      default_2_position_tumb(_(cmd_names.PNT_947), devices.LIGHTS, click_cmds.PNT_947, 947, false, true, {{SND_SW_GENERAL_C},{SND_SW_GENERAL_C}}) -- 3档开关 master 机外主照明开关
 elements["PNT_948"] = multiposition_switch_limited(_(cmd_names.PNT_948), devices.LIGHTS, click_cmds.PNT_948, 948, 5, 0.25, false, 0.0) -- 5档旋钮 编队灯旋转开关
 elements["PNT_949"] = multiposition_switch_limited(_(cmd_names.PNT_949), devices.LIGHTS, click_cmds.PNT_949, 949, 5, 0.25, false, 0.0) -- 5档旋钮 防撞灯旋转开关
 elements["PNT_950"] =      default_3_position_tumb(_(cmd_names.PNT_950), devices.LIGHTS, click_cmds.PNT_950, 950, false, true) -- 3档开关 航行灯亮/暗开关
@@ -301,7 +301,8 @@ elements["PNT_955"] = multiposition_switch_limited(_(cmd_names.PNT_955), devices
 -- Canopy
 elements["PNT_957"] =      default_2_position_tumb(_(cmd_names.PNT_957), devices.FCS, click_cmds.PNT_957, 957)
 elements["PNT_958"] = multiposition_switch_limited(_(cmd_names.PNT_958), devices.FCS, click_cmds.PNT_958, 958, 4, 1.0/3, true, 0.0)
-elements["PNT_959"] =         default_axis_limited(_(cmd_names.PNT_959),   devices.FCS, click_cmds.PNT_959, 959, 0, 0.01, true, nil, {{0,1.0},{0,1.0}})
+elements["PNT_959"] =         default_axis_limited(_(cmd_names.PNT_959), devices.FCS, click_cmds.PNT_959, 959, 0, 0.01, true, nil, {{0,1.0},{0,1.0}})
+
 
 -- Flood light direction
 elements["PNT_965"] = default_axis_limited(_(cmd_names.PNT_965), devices.LIGHTS, click_cmds.PNT_965, 965, 0, nil, true, nil, {{0,1.0},{0,1.0}})

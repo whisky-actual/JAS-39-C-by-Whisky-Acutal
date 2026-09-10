@@ -1,9 +1,9 @@
 dofile(LockOn_Options.script_path.."Radio/Indicator/Radio_defs.lua")
 
-local pos_x  = (502-254)/256
-local pos_y1 = (256-177)/256
-local pos_y2 = -(290-256)/256
-local edit_bias = -(492-226)/256
+local pos_x  = 1-- (502-254)/256 
+local pos_y1 = 0.035 -- (256-177)/256  
+local pos_y2 = -1.2 -- -(290-256)/2562*2
+local edit_bias = -(492-226)/256-- -(492-226)/256
 
 text_strpoly              = CreateElement "ceStringPoly"
 text_strpoly.name         = "radio_disp_l1"
@@ -68,7 +68,7 @@ take_poly.name           = "radio_take"
 take_poly.primitivetype  = "triangles"
 take_poly.vertices       = state_indicator_vert
 take_poly.indices        = DEF_BOX_INDICES
-take_poly.init_pos       = {0, -(370-256)/256, 0}
+take_poly.init_pos       = {0, -2.5, 0} --{0, -(370-256)/256, 0}
 take_poly.controllers    = {{"radio_state_take"},}
 AddStringObject(take_poly)
 take_poly = nil
@@ -81,7 +81,7 @@ sql_poly.name           = "radio_sql"
 sql_poly.primitivetype  = "triangles"
 sql_poly.vertices       = state_indicator_vert
 sql_poly.indices        = DEF_BOX_INDICES
-sql_poly.init_pos       = {(46-256)/256, -(370-256)/256, 0}
+sql_poly.init_pos       = {(46-256)/256, -2.5, 0} --{(46-256)/256, -(370-256)/256, 0}
 sql_poly.controllers    = {{"radio_state_sql"},}
 AddStringObject(sql_poly)
 sql_poly = nil
@@ -94,7 +94,7 @@ or_poly.name           = "radio_or"
 or_poly.primitivetype  = "triangles"
 or_poly.vertices       = state_indicator_vert
 or_poly.indices        = DEF_BOX_INDICES
-or_poly.init_pos       = {(152-256)/256, -(370-256)/256, 0}
+or_poly.init_pos       = {(152-256)/256, -2.5, 0} --{(152-256)/256, -(370-256)/256, 0}
 or_poly.controllers    = {{"radio_state_or"},}
 AddStringObject(or_poly)
 or_poly = nil
@@ -107,7 +107,7 @@ go_poly.name           = "radio_go"
 go_poly.primitivetype  = "triangles"
 go_poly.vertices       = state_indicator_vert
 go_poly.indices        = DEF_BOX_INDICES
-go_poly.init_pos       = {(362-256)/256, -(370-256)/256, 0}
+go_poly.init_pos       = {(362-256)/256, -2.5, 0} --{(362-256)/256, -(370-256)/256, 0}
 go_poly.controllers    = {{"radio_state_go"},}
 AddStringObject(go_poly)
 go_poly = nil
@@ -124,4 +124,6 @@ tx_poly.init_pos       = {(466-256)/256, -(370-256)/256, 0}
 tx_poly.controllers    = {{"radio_state_tx"},}
 AddStringObject(tx_poly)
 tx_poly = nil
-
+----------------------------------------------------------------------------------------
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
+----------------------------------------------------------------------------------------

@@ -85,6 +85,7 @@ MFCD_MATERIAL_BOXBASE = "mfcd_mesh_boxbase"
 MFCD_MATERIAL_W_BASE  = "mfcd_mesh_whitebase"
 MFCD_MATERIAL_PURPLE  = "mfcd_mesh_purple"
 MFCD_MATERIAL_CYAN    = "mfcd_mesh_cyan"
+MFCD_MATERIAL_BACKGND = "mfcd_mesh_backgnd"
 
 
 MFCD_FONT_DEF    = "mfcd_font_def"
@@ -483,3 +484,6 @@ function create_page_root()
     Add(page_root)
     return page_root
 end
+----------------------------------------------------------------------------------------
+--                    File by whisky.actual@gmail.com - v.1.4.0                       --
+----------------------------------------------------------------------------------------

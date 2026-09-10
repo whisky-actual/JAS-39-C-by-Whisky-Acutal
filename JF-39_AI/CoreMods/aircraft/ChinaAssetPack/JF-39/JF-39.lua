@@ -1,16 +1,38 @@
-----------------------------------------------------------------------------------------
--- Deka WIP Functions
-----------------------------------------------------------------------------------------
+
+dofile(current_mod_path..'/DTC/DTC_EW_Target.lua')
+
 local function add_aircraft_prop()
     acprop = {
         { id = "LaserCode100", control = 'spinbox',  label = _('Laser code for ordnance, 1x11'), defValue = 6, min = 5, max = 7, dimension = ' ', playerOnly = true},
         { id = "LaserCode10",  control = 'spinbox',  label = _('Laser code for ordnance, 11x1'), defValue = 8, min = 1, max = 8, dimension = ' ', playerOnly = true},
         { id = "LaserCode1",   control = 'spinbox',  label = _('Laser code for ordnance, 111x'), defValue = 8, min = 1, max = 8, dimension = ' ', playerOnly = true},
-        { id = "AARProbe",     control = 'checkbox', label = _('Remove AAR Probe'),              defValue = false, weight = 0, arg = 901, playerOnly = true},
+        { id = "AARProbe",     control = 'checkbox', label = _('Remove AAR Probe'),              defValue = false, weight = -20, arg = 901, playerOnly = true},
+		
+		{ id = "EW_Database_Target1", control = 'comboList', label = _('EW Target I (PP1)'),
+			values = EW_Target,
+			defValue = 1,
+			wCtrl	 = 150
+		},
+		{ id = "EW_Database_Target2", control = 'comboList', label = _('EW Target II (PP2)'),
+			values = EW_Target,
+			defValue = 1,
+			wCtrl	 = 150
+		},
+		{ id = "EW_Database_Target3", control = 'comboList', label = _('EW Target III (PP3)'),
+			values = EW_Target,
+			defValue = 1,
+			wCtrl	 = 150
+		},
+		{ id = "EW_Database_Target4", control = 'comboList', label = _('EW Target IV (PP4)'),
+			values = EW_Target,
+			defValue = 1,
+			wCtrl	 = 150
+		},
     }
 
     return acprop
 end
+
 
 local mech_anime = make_default_mech_animation()
 mech_anime["ServiceHatches"] = {
@@ -20,12 +42,12 @@ mech_anime["ServiceHatches"] = {
 mech_anime["CrewLadder"] = {
     {Transition = {"Dismantle", "Erect"}, Sequence = {
         {C = {{"PosType", 6}, {"Sleep", "for", 10.0}}},
-        {C = {{"Arg", 499, "set", 1.0}}},
+        {C = {{"Arg", 91, "set", 1.0}}},
         {C = {{"PosType", 6}, {"Sleep", "for", 10.0}}},
     }},
     {Transition = {"Erect", "Dismantle"}, Sequence = {
         {C = {{"PosType", 6}, {"Sleep", "for", 10.0}}},
-        {C = {{"Arg", 499, "set", 0.0}}},
+        {C = {{"Arg", 91, "set", 0.0}}},
         {C = {{"PosType", 6}, {"Sleep", "for", 10.0}}},
     }},
 }
@@ -37,14 +59,186 @@ mech_anime["Door0"] = {
     --{Transition = {"Taxi", "Open"},   Sequence = {{C = {{"Sleep", "for", 0.0},},},},},
     {Transition = {"Open", "Bailout"}, Sequence = {{C = {{"TearCanopy", 0}, {"Arg", 993, "set", 1.0},},},},},
     {Transition = {"Taxi", "Bailout"}, Sequence = {{C = {{"TearCanopy", 0}, {"Arg", 993, "set", 1.0},},},},},
-    {Transition = {"Any", "Bailout"},  Sequence = {{C = {{"Origin", "x", 3.458, "y", 0.703, "z", 0.0}, {"Impulse", 1, "tertiary", 1.0}, {"Impulse", 2, "tertiary", 10.5}, {"Sleep", "for", 0.005},},}, {C = {{"Arg", 993, "set", 1.0},},},},},
+    {Transition = {"Any", "Bailout"}, Sequence = {{C = {{"Arg", 38, "set", 1.0},},},},},
 }
 
 ----------------------------------------------------------------------------------------
 -- JF-39
 ----------------------------------------------------------------------------------------
---mount_vfs_model_path (current_mod_path .. '/Shapes/JF-17')
---mount_vfs_texture_path (current_mod_path .. '/Textures/JF-17')
+
+----------------------------------------------------------------------------------------
+-- BK-27 SHELLS	
+----------------------------------------------------------------------------------------
+declare_weapon({category = CAT_SHELLS, name = "BK_27_HE", user_name = _("27 mm HE"),	
+	model_name    = "tracer_bullet_yellow",
+	v0    = 1025.0,
+	Dv0   = 0.0040,
+	Da0     = 0.00005,
+	Da1     = 0.0,
+	mass      = 0.26,
+	round_mass = 0.516,
+	explosive     = 0.119,
+	life_time     = 5,
+	caliber     = 27.0,
+	s         = 0.0,
+	j         = 0.0,
+	l         = 0.0,
+	charTime    = 0,
+	cx        = {1,0.605,0.8,0.22,1.9},
+	k1        = 6.3e-09,
+	tracer_off    = -1,
+	scale_tracer  = 1,
+	scale_smoke	= 1.5,
+	cartridge = 0,
+});
+
+	declare_weapon({category = CAT_SHELLS, name = "BK_27_AP", user_name = _("27 mm AP"),
+	model_name    = "tracer_bullet_yellow",
+	v0    = 1025.0,
+	Dv0   = 0.0040,
+	Da0     = 0.00005,
+	Da1     = 0.0,
+	mass      = 0.26,
+	round_mass = 0.516,
+	explosive     = 0.0,
+	life_time     = 5,
+	caliber     = 27.0,
+	AP_cap_caliber = 15.0,
+	s         = 0.0,
+	j         = 0.0,
+	l         = 0.0,
+	charTime    = 0,
+	cx        = {1,0.605,0.8,0.22,1.9},
+	k1        = 6.3e-09,
+	tracer_off    = -1,
+	scale_tracer  = 1,
+	scale_smoke	= 1.5,	  
+	cartridge = 0,
+});
+
+	declare_weapon({category = CAT_SHELLS, name = "BK_27_APHE", user_name = _("27 mm APHE"),
+	model_name    = "tracer_bullet_yellow",
+	v0    = 1025.0,
+	Dv0   = 0.0040,
+	Da0     = 0.00005,
+	Da1     = 0.0,
+	mass      = 0.26,
+	round_mass = 0.516,
+	explosive     = 0.033,
+	life_time     = 5,
+	caliber     = 27.0,
+	AP_cap_caliber = 10.0,
+	s         = 0.0,
+	j         = 0.0,
+	l         = 0.0,
+	charTime    = 0,
+	cx        = {1,0.605,0.8,0.22,1.9},
+	k1        = 6.3e-09,
+	tracer_off    = -1,
+	scale_tracer  = 1,
+	scale_smoke	= 1.5,
+	cartridge = 0,
+});
+
+	declare_weapon({category = CAT_SHELLS, name = "BK_27_PELE", user_name = _("27 mm PELE"),
+	model_name    = "tracer_bullet_yellow",
+	v0    = 1025.0,
+	Dv0   = 0.0040,
+	Da0     = 0.00005,
+	Da1     = 0.0,
+	mass      = 0.26,
+	round_mass = 0.516,
+	explosive     = 0.0,
+	life_time     = 5,
+	caliber     = 27.0,
+	subcalibre = true,	
+	AP_cap_caliber = 15.0,
+	piercing_mass = 0.150,
+	s         = 0.0,
+	j         = 0.0,
+	l         = 0.0,
+	charTime    = 0,
+	cx        = {1,0.605,0.8,0.22,1.9},
+	k1        = 6.3e-09,
+	tracer_off    = -1,
+	scale_tracer  = 1,
+	scale_smoke	= 1.5,
+	cartridge = 0,
+});
+
+	declare_weapon({category = CAT_SHELLS, name = "BK_27_PELET", user_name = _("27 mm PELE-T"),
+	model_name    = "tracer_bullet_yellow",
+	v0    = 1025.0,
+	Dv0   = 0.0040,
+	Da0     = 0.00005,
+	Da1     = 0.0,
+	mass      = 0.26,
+	round_mass = 0.516,
+	explosive     = 0.0,
+	life_time     = 5,
+	caliber     = 27.0,
+	subcalibre = true,
+	AP_cap_caliber = 15.0,
+	piercing_mass = 0.150,
+	s         = 0.0,
+	j         = 0.0,
+	l         = 0.0,
+	charTime    = 0,
+	cx        = {1,0.605,0.8,0.22,1.9},
+	k1        = 6.3e-09,
+	tracer_off    = 2,
+	scale_tracer  = 1,
+	scale_smoke	= 1.5,
+	cartridge = 0,
+});
+----------------------------------------------------------------------------------------
+-- BK-27 CANNON	
+----------------------------------------------------------------------------------------
+local function bk27_cannon(tbl)
+
+    tbl.category = CAT_GUN_MOUNT
+    tbl.name =  "bk_27"
+    tbl.display_name =  _("BK-27 Cannon")
+    tbl.supply      =
+    {
+        shells = {"BK_27_HE", "BK_27_AP", "BK_27_APHE", "BK_27_PELE", "BK_27_PELET"},
+        mixes  = { {1,2,3},{4,4,4,4,5} },
+        count  = 120, -- corrected amount
+    }
+    if tbl.mixes then
+       tbl.supply.mixes = tbl.mixes
+       tbl.mixes        = nil
+    end
+    tbl.gun =
+    {
+        max_burst_length    = 10,
+        rates               = {1700},
+        recoil_coeff        = 0.7*1.3,
+        barrels_count       = 1,
+    }
+    if tbl.rates then
+       tbl.gun.rates        =  tbl.rates
+       tbl.rates            = nil
+    end
+
+    tbl.ejector_pos             = {0, 0, 0}
+    tbl.ejector_pos_connector   = "Gun_ejector"	
+    tbl.ejector_dir             = {0, -1, 0}	
+    tbl.supply_position         = {0,  0, 0}
+    tbl.aft_gun_mount           = false
+    tbl.effective_fire_distance = 2500
+    tbl.drop_cartridge          = 203
+    tbl.muzzle_pos              = {0,0,0}     -- all position from connector
+    tbl.muzzle_pos_connector    = "Gun_point" -- all position from connector
+    tbl.azimuth_initial         = 0
+    tbl.elevation_initial       = 0
+    tbl.smoke_dir               = {0, 0, 0}
+    if  tbl.effects == nil then
+        tbl.effects = {{ name = "FireEffect", arg = tbl.effect_arg_number or 350 },{name = "SmokeEffect", smoke_exhaust = "Gun_point" , add_speed = {10,0,0}}} 
+    end
+    return declare_weapon(tbl)
+	
+end
 
 local wheel_touch_comp = 0.02
 
@@ -77,7 +271,7 @@ JF_39 = {
             file        = 'jas39gripen',
             life        = 18, -- lifebar
             vis         = 3, -- visibility gain.
-            desrt       = 'JAS39Gripen-oblomok', -- Name of destroyed object file name
+            desrt       = 'JF-17-oblomok', -- Name of destroyed object file name
             fire        = {300, 2}, -- Fire on the ground after destoyed: 300sec 2m
             username    = 'JF-17',
             index       = WSTYPE_PLACEHOLDER,
@@ -85,8 +279,8 @@ JF_39 = {
             positioning = "BYNORMAL",
         },
         {
-            name = "JAS39Gripen-oblomok",
-            file = "JAS39Gripen-oblomok",
+            name = "JF-17-oblomok",
+            file = "JF-17-oblomok",
             fire = {240, 2},
         },
     },
@@ -172,7 +366,7 @@ JF_39 = {
         -- --},
     -- },
     mechanimations = mech_anime,
-
+	
     -------------------------
     M_empty						=	5700,	-- kg  with pilot and nose load, JAS 39C = 6800 (6586.0-886.35))
 	M_nominal					=	8049,	-- kg (Empty Plus Full Internal F) 9430 (8936.0-886.35)
@@ -198,7 +392,8 @@ JF_39 = {
 ----------------------------------------------------------------------------------------
 -- SUSPENSION CODE BEGINS
 ----------------------------------------------------------------------------------------
-    nose_gear_pos 				                = {4.488,	-2.15,	0},   -- nosegear coord 
+--[[ 
+	nose_gear_pos 				                = {4.488,	-2.15,	0},   -- nosegear coord 
     nose_gear_amortizer_direct_stroke   		=  0.05,      -- down from nose_gear_pos !!!
     nose_gear_amortizer_reversal_stroke  		=  -0.4,  -- up
     nose_gear_amortizer_normal_weight_stroke 	=  -0.27,   -- up 
@@ -209,6 +404,31 @@ JF_39 = {
     main_gear_amortizer_reversal_stroke  	    =   -0.228, --  up 
     main_gear_amortizer_normal_weight_stroke    =   -0.114,-- down from main_gear_pos
     main_gear_wheel_diameter 				    =   0.6572, -- in m
+
+    nose_gear_pos 				                = {4.488,	-2.045,	0},   -- nosegear coord 
+    nose_gear_amortizer_direct_stroke   		=  0.05,      -- down from nose_gear_pos !!!
+    nose_gear_amortizer_reversal_stroke  		=  -0.4,  -- up
+    nose_gear_amortizer_normal_weight_stroke 	=  -0.27,   -- up 
+    nose_gear_wheel_diameter 	                =   1.0, -- in m
+
+    main_gear_pos 						 	    = {-0.800,	-1.96,	1.25}, -- main gear coords -1.95
+    main_gear_amortizer_direct_stroke	 	    =   0,     --  down from main_gear_pos !!!
+    main_gear_amortizer_reversal_stroke  	    =   -0.228, --  up 
+    main_gear_amortizer_normal_weight_stroke    =   -0.114,-- down from main_gear_pos
+    main_gear_wheel_diameter 				    =   1.0, -- in m
+	]]
+	nose_gear_pos 				                = {4.488,	-2.10,	0},   -- nosegear coord 
+    nose_gear_amortizer_direct_stroke   		=  0.05,      -- down from nose_gear_pos !!!
+    nose_gear_amortizer_reversal_stroke  		=  -0.4,  -- up
+    nose_gear_amortizer_normal_weight_stroke 	=  -0.27,   -- up 
+    nose_gear_wheel_diameter 	                =   0.4325, -- in m
+
+    main_gear_pos 						 	    = {-0.800,	-1.95,	1.25}, -- main gear coords -1.95
+    main_gear_amortizer_direct_stroke	 	    =   0,     --  down from main_gear_pos !!!
+    main_gear_amortizer_reversal_stroke  	    =   -0.228, --  up 
+    main_gear_amortizer_normal_weight_stroke    =   -0.114,-- down from main_gear_pos
+    main_gear_wheel_diameter 				    =   0.6572, -- in m
+
 ----------------------------------------------------------------------------------------
 -- SUSPENSION CODE ENDS
 ----------------------------------------------------------------------------------------
@@ -262,7 +482,7 @@ JF_39 = {
             ejection_seat_name  = "pilot_f15_00_seat", -- temp
             pilot_name          = "pilot_f15_00", -- temp
             drop_parachute_name = "JF-17_parachute",
-            drop_canopy_name    = "jas39gripen-fonar",
+            drop_canopy_name    = "JF-17_fonar",
             pos                 = {4.45, 0.180, 0.00},
             canopy_pos          = {4.282, 0.620, 0.00},
             g_suit              = 5,
@@ -339,7 +559,7 @@ JF_39 = {
     
 	passivCounterm 		= {
 	CMDS_Edit 			= true,
-	SingleChargeTotal 	= 220,
+	SingleChargeTotal 	= 240,
 	chaff 				= {default = 160, increment = 20, chargeSz = 1},
 	flare 				= {default = 080, increment = 10, chargeSz = 1}
 	},
@@ -377,21 +597,24 @@ JF_39 = {
         azimuth   = {-160.0, 160.0}, --
         elevation = {-50.0, 90.0} --
     },
-
-    Guns = {
-        gun_mount("GSh_23_2",
-        {
-            count = 120
-        },
-        {
-            muzzle_pos_connector   = "GUN_POINT",
+	
+Guns = {
+        bk27_cannon({muzzle_pos_connector   = "GUN_POINT",
             supply_position        = {2.6, -0.4, 0.0},
-            drop_cartridge         = 203,
-            ejector_pos_connector  = "GUN_EJECTOR",
+            drop_cartridge         = 204,
+            ejector_pos_connector  = "GUN_EJECTOR_01",
             ejector_dir            = {2,-2,0},
-            elevation_initial      = -0.0,
+			--elevation_initial = 0.0,
+            elevation_initial = -1.50,
         }),
-    },
+		
+		},
+    				
+		ammo_type_default = 2,
+		ammo_type ={
+			_("HE/AP/APHE"),
+			_("PELE/PELE-T"),				
+		},
 ----------------------------------------------------------------------------------------
 -- Pylons	
 ----------------------------------------------------------------------------------------
@@ -416,464 +639,524 @@ JF_39 = {
 				{ CLSID = "{A4BCC903-06C8-47bb-9937-A30FEDB4E746}" ,arg_value = -0.1},
             }
         ),
+
         -- LEFT OUTER PYLON --> STATION 2
 		pylon(2, 0, 0, 0, 0,
             {
                 arg = 309,
-                arg_value = 0,
+                arg_value = 0.5,
                 DisplayName = "2",
                 use_full_connector_position = true,
                 connector = "Pylon2",
             },
             {
 --				=== INFRARED AIR TO AIR MISSILES ===
-                { CLSID = "DIS_PL-5EII", attach_point_position = {0.30, -0.14, 0.0}, arg_increment = 0.0 },
+                { CLSID = "DIS_PL-5EII", attach_point_position = {0.20, -0.16, 0.0}, arg_value = 0.1 },
 
 --				=== BVR AIR TO AIR MISSILES ===
---				{ CLSID = "DIS_PL-12", attach_point_position = {0.30, -0.13, 0.0}, arg_increment = 0.0},   -- Meteor x1
-                { CLSID = "DIS_SD-10", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.0}, -- AIM-120C-7 x1
-                { CLSID = "DIS_SD-10_DUAL_L", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.75}, -- AIM-120C-7 x2
-                { CLSID = "DIS_SD-10_DUAL_R", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.75}, -- AIM-120C-7 x3
+--				{ CLSID = "DIS_PL-12", attach_point_position = {0.30, -0.13, 0.0}, arg_increment = 0.1},   -- Meteor x1
+                
+				{ CLSID = "DIS_SD-10", attach_point_position = {0.0, -0.30, -0.00}, arg_value = 0.2}, -- AIM-120C-7 x1
+                { CLSID = "DIS_SD-10_DUAL_L", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.5}, -- AIM-120C-7 x2
+                { CLSID = "DIS_SD-10_DUAL_R", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.5}, -- AIM-120C-7 x3
 				
 --				=== AIR TO GROUND MISSILES ===
-                { CLSID = "DIS_C-701T", attach_point_position = {0.37, -0.3, 0.0}, arg_value = 0.1}, -- AGM-65K TV
-				{ CLSID = "DIS_C-701IR", attach_point_position = {0.37, -0.3, 0.0}, arg_value = 0.1}, -- AGM-65G IR
-                { CLSID = "DIS_CM-400AKG", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1}, -- TESTING!
-                { CLSID = "DIS_C-802AK", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1}, -- Rb15F Mk4 Antiship missiles
-                { CLSID = 'DIS_CM-802AKG', attach_point_position = {0.0, 0.25, 0.0}, arg_value = 0.9, Type = 1},	--KEPD 350 
-                { CLSID = "DIS_LD-10", attach_point_position ={ -0.25, -0.25, 0.0}, arg_value = 0.0, Type = 1}, -- MAR-1 Anti radiation missiles x1
-                --{ CLSID = "DIS_LD-10_DUAL_R", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.75}, -- MAR-1 Anti radiation missiles x1
-                { CLSID = "DIS_LD-10_DUAL_L",  attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.75}, -- MAR-1 Anti radiation missiles x2	
+                { CLSID = "DIS_C-701T", attach_point_position = {0.34, -0.34, 0.0}, arg_value = 0.1}, -- AGM-65K TV
+				{ CLSID = "DIS_C-701IR", attach_point_position = {0.34, -0.34, 0.0}, arg_value = 0.1}, -- AGM-65G IR
+                
+				{ CLSID = "DIS_CM-400AKG", attach_point_position ={ 0.5, -0.24, 0.0}, arg_value = 0.3, Type = 1}, -- GBU-24B/B
+                { CLSID = "DIS_C-802AK", attach_point_position ={ 0.10, -0.27, 0.0}, arg_value = 0.3, Type = 1}, -- RB15F Mk4 Antiship missiles
+                { CLSID = 'DIS_CM-802AKG', attach_point_position = {0.05, 0.0, 0.0}, arg_value = 0.3, Type = 1}, -- KEPD 350 
+                
+				{ CLSID = "DIS_LD-10", attach_point_position ={ -0.25, -0.30, 0.0}, arg_value = 0.2, Type = 1}, -- MAR-1 Anti radiation missiles x1
+                --{ CLSID = "DIS_LD-10_DUAL_R", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.5}, -- MAR-1 Anti radiation missiles x1
+                { CLSID = "DIS_LD-10_DUAL_L",  attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.5}, -- MAR-1 Anti radiation missiles x2	
         
 					
 --			    === GUIDED BOMBS ===
-                { CLSID = "DIS_GBU_10", arg_value = 0.69 }, -- GBU-10
+                { CLSID = "DIS_GBU_10", attach_point_position ={ 0.55, -0.26, 0.0} , arg_value = 0.3 }, -- GBU-10
+				
+				{ CLSID = "DIS_GBU_16", attach_point_position ={ 0.45, -0.22, 0.0} , arg_value = 0.3 }, -- GBU-16
 
-				{ CLSID = "DIS_GBU_12", arg_value = 0.69 }, -- GBU-12
-				{ CLSID = "DIS_GBU_12_DUAL", arg_value = 0.69, Type = 1 }, -- GBU-12 x 2
-                { CLSID = "DIS_GBU_12_DUAL_GDJ_II19_L", arg_value = 0.69, Type = 1 }, -- GBU-12 x2
---              { CLSID = "DIS_GBU_12_DUAL_GDJ_II19_R", arg_value = 0.69, Type = 1 }, -- GBU-12 x3
-                
-                { CLSID = "DIS_GBU_16", arg_value = 0.69 }, -- GBU-16
+				{ CLSID = "DIS_GBU_12", attach_point_position ={ 0.42, -0.15, 0.0} , arg_value = 0.3 }, -- GBU-12
+				{ CLSID = "DIS_GBU_12_DUAL", arg_value = 0.5, Type = 1 }, -- GBU-12 x 2
+                { CLSID = "DIS_GBU_12_DUAL_GDJ_II19_L", arg_value = 0.5, Type = 1 }, -- GBU-12 x2
+--              { CLSID = "DIS_GBU_12_DUAL_GDJ_II19_R", arg_value = 0.5, Type = 1 }, -- GBU-12 x3
 				               
-                { CLSID = "DIS_GB6", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1},-- AGM154-A
-                { CLSID = "DIS_GB6_HE", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1}, -- AGM154-B
-                { CLSID = "DIS_GB6_TSP", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1},-- AGM154-C		
+                { CLSID = "DIS_GB6", attach_point_position ={ 0.15, -0.27, 0.0}, arg_value = 0.3, Type = 1},-- AGM154-A
+                { CLSID = "DIS_GB6_HE", attach_point_position ={ 0.15, -0.27, 0.0}, arg_value = 0.3, Type = 1}, -- AGM154-B
+                { CLSID = "DIS_GB6_TSP", attach_point_position ={ 0.0, -0.26, 0.0}, arg_value = 0.3, Type = 1},-- DWS39/BK90		
 
-                { CLSID = "DIS_LS_6_100", arg_value = 0.5 },-- GBU-31 BLU-109
-                { CLSID = "DIS_LS_6_100_DUAL_L", arg_value = 0.5, Type = 1 },-- WIP
---              { CLSID = "DIS_LS_6_100_DUAL_R", arg_value = 0.5, Type = 1 },-- WIP
+                { CLSID = "DIS_LS_6_100", attach_point_position ={ 0.13, -0.15, 0.0} , arg_value = 0.3 }, -- GBU-54 x1
+                { CLSID = "DIS_LS_6_100_DUAL_L", attach_point_position ={ 0, 0, 0} , arg_value = 0.5 }, -- GBU-54 x2
+--              { CLSID = "DIS_LS_6_100_DUAL_R", arg_value = 0.5, Type = 1 }, -- GBU-54 x2
 
-                { CLSID = "DIS_LS_6_250", arg_value = 0.5, Type = 1 },-- GBU-39 SDBx2
- 				{ CLSID = "DIS_LS_6_250_DUAL_L", arg_value = 0.5, Type = 1 },-- GBU-39 SDBx4
---              { CLSID = "DIS_LS_6_250_DUAL_R", arg_value = 0.5, Type = 1 },-- WIP
+                { CLSID = "DIS_LS_6_250", attach_point_position ={ 0.03, 0.0, 0.0} , arg_value = 0.5 }, -- SPEAR-3 x1
+ 				{ CLSID = "DIS_LS_6_250_DUAL_L", arg_value = 0.5, Type = 1 }, -- SPEAR-3 x2
+--              { CLSID = "DIS_LS_6_250_DUAL_R", arg_value = 0.5, Type = 1 }, -- SPEAR-3 x2
 
-                { CLSID = "DIS_LS_6_500", arg_increment = 0.5, Type = 1}, -- DWS39/BK90	
+                { CLSID = "DIS_LS_6_500", attach_point_position ={0.0, 0.0, 0.0}, arg_value = 0.5, Type = 1}, -- GBU-39 SDB
 								
 --				=== UNGUIDED BOMBS ===
-				{ CLSID = "DIS_MK_20", arg_increment = 0.5, Type = 1}, -- Mk-20 Rockeye (can we make this the M71 LD)
-                { CLSID = "DIS_MK_20_DUAL_GDJ_II19_L", arg_increment = 0.5, Type = 1}, -- Mk-20 Rockeye x2 gjd-ii19
---              { CLSID = "DIS_MK_20_DUAL_GDJ_II19_R", arg_increment = 0.5, Type = 1}, -- Mk-20 Rockeye x2 gjd-ii19
+				{ CLSID = "DIS_MK_20", attach_point_position ={ 0.20, -0.20, 0.0} , arg_value = 0.3, Type = 1}, -- Mk-20 Rockeye (can we make this the M71 LD)
+                { CLSID = "DIS_MK_20_DUAL_GDJ_II19_L", arg_value = 0.5, Type = 1}, -- Mk-20 Rockeye x2 gjd-ii19
+--              { CLSID = "DIS_MK_20_DUAL_GDJ_II19_R", arg_value = 0.5, Type = 1}, -- Mk-20 Rockeye x2 gjd-ii19
 
-                { CLSID = "{Mk82SNAKEYE}", arg_increment = 0.5, Type = 1 }, -- Mk-82S
-                { CLSID = "DIS_MK_82S_DUAL_GDJ_II19_L", arg_increment = 0.5, Type = 1}, -- Mk-82 Snakeye x2 gjd-ii19
---              { CLSID = "DIS_MK_82S_DUAL_GDJ_II19_R", arg_increment = 0.5, Type = 1}, -- Mk-82 Snakeye x2 gjd-ii19
+                { CLSID = "{Mk82SNAKEYE}", attach_point_position ={ 0.20, -0.15, 0.0} , arg_value = 0.3, Type = 1 }, -- Mk-82S
+                { CLSID = "DIS_MK_82S_DUAL_GDJ_II19_L", arg_value = 0.5, Type = 1}, -- Mk-82 Snakeye x2 gjd-ii19
+--              { CLSID = "DIS_MK_82S_DUAL_GDJ_II19_R", arg_value = 0.5, Type = 1}, -- Mk-82 Snakeye x2 gjd-ii19
 
-                { CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}", arg_increment = 0.5, Type = 1}, -- Mk-82
-                --{ CLSID = "{BRU33_2X_MK-82}", arg_increment = 0.5, Type = 1}, -- Mk-82 x 2
-                { CLSID = "DIS_MK_82_DUAL_GDJ_II19_L", arg_increment = 0.5, Type = 1}, -- Mk-82 x2 gjd-ii19
---              { CLSID = "DIS_MK_82_DUAL_GDJ_II19_R", arg_increment = 0.5, Type = 1}, -- Mk-82 x2 gjd-ii19
+                { CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}", attach_point_position ={ 0.20, -0.15, 0.0} , arg_value = 0.3, Type = 1}, -- Mk-82
+                --{ CLSID = "{BRU33_2X_MK-82}", arg_value = 0.5, Type = 1}, -- Mk-82 x 2
+                { CLSID = "DIS_MK_82_DUAL_GDJ_II19_L", arg_value = 0.5, Type = 1}, -- Mk-82 x2 gjd-ii19
+--              { CLSID = "DIS_MK_82_DUAL_GDJ_II19_R", arg_value = 0.5, Type = 1}, -- Mk-82 x2 gjd-ii19
 
-                { CLSID = "{7A44FF09-527C-4B7E-B42B-3F111CFE50FB}", arg_increment = 0.5, Type = 1}, -- Mk-83
+                { CLSID = "{7A44FF09-527C-4B7E-B42B-3F111CFE50FB}", attach_point_position ={ 0.14, -0.17, 0.0} , arg_value = 0.3, Type = 1}, -- Mk-83
 				
-				{ CLSID = "DIS_TYPE200", arg_increment = 0.5, attach_point_position ={ -1.0, -0.02, 0.0}, Type = 1}, -- SB M71
-				{ CLSID = "DIS_TYPE200_DUAL_L", arg_increment = 0.5, Type = 1}, -- SB M71
---				{ CLSID = "DIS_TYPE200_DUAL_R", arg_increment = 0.5, Type = 1}, -- SB M71
+				{ CLSID = "DIS_TYPE200", attach_point_position ={ 0.0, -0.02, 0.0},  arg_value = 0.5, Type = 1}, -- SB M71
+				{ CLSID = "DIS_TYPE200_DUAL_L", arg_value = 0.5, Type = 1}, -- SB M71
+--				{ CLSID = "DIS_TYPE200_DUAL_R", arg_value = 0.5, Type = 1}, -- SB M71
 
 --              === ROCKETS ===
                 { CLSID = "DIS_BRM1_90", attach_point_position = {-0.15, 0.02, 0.0}, arg_value = 0.5 }, -- Brimstone x3
                 { CLSID = "DIS_RKT_90_UG", arg_value = 0.5 }, -- M70B AP
                 { CLSID = "DIS_LAU68_MK5_DUAL_GDJ_II19_L", arg_value = 0.5 },
 --              { CLSID = "DIS_LAU68_MK5_DUAL_GDJ_II19_R", arg_value = 0.5 },
+
+--              === DROP TANKS ===
+                { CLSID = "DIS_TANK800", arg_value = 0.5 }, -- External drop tank 1100 litre
+                { CLSID = "DIS_TANK1100", arg_value = 0.5, --[[required = {{station = 3,loadout = {"DIS_TANK1100"}}}]] },
+                { CLSID = "DIS_TANK800_EMPTY", arg_value = 0.5, },
+                { CLSID = "DIS_TANK1100_EMPTY", arg_value = 0.5, },
 				
 --				=== OTHERS ===   
-                { CLSID = "DIS_WMD7", arg_value = 0.5 },
-                { CLSID = "DIS_SPJ_POD", arg_value = 0.55 },
-                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.7, },
+                { CLSID = "DIS_WMD7", attach_point_position ={ 0.07, -0.20, 0.0}, arg_value = 0.5 },
+                { CLSID = "DIS_SPJ_POD", attach_point_position ={ 0.20, 0.0, 0.0},  arg_value = 0.5 },
+                { CLSID = "DIS_AKG_DLPOD", attach_point_position ={ 0.20, -0.23, 0.0}, arg_value = 0.5, },
 
-                { CLSID = 'DIS_SMOKE_GENERATOR_R', arg_value = 0.3},
-                { CLSID = 'DIS_SMOKE_GENERATOR_G', arg_value = 0.3},
-                { CLSID = 'DIS_SMOKE_GENERATOR_B', arg_value = 0.3},
-                { CLSID = 'DIS_SMOKE_GENERATOR_W', arg_value = 0.3},
-                { CLSID = 'DIS_SMOKE_GENERATOR_Y', arg_value = 0.3},
-                { CLSID = 'DIS_SMOKE_GENERATOR_O', arg_value = 0.3},
+                { CLSID = 'DIS_SMOKE_GENERATOR_R', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_G', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_B', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_W', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_Y', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_O', arg_value = 0.1},
 
 --				=== Remove pylon ===		
-				{ CLSID = "<CLEAN>", arg_value = 1},
+				{ CLSID = "<CLEAN>", arg_value = 0},
             }
         ),
-        pylon(3, 0, 0, 0, 0,
+
+		pylon(3, 0, 0, 0, 0,
             {
                 arg = 310,
-                arg_value = 0,
+                arg_value = 0.5,
                 DisplayName = "3",
                 use_full_connector_position = true,
                 connector = "Pylon3",
             },
             {
 --				=== INFRARED AIR TO AIR MISSILES ===
-                { CLSID = "DIS_PL-5EII", attach_point_position = {0.30, -0.14, 0.0}, arg_increment = 0.0 },
+                { CLSID = "DIS_PL-5EII", attach_point_position = {0.20, -0.16, 0.0}, arg_value = 0.1 },
 
 --				=== BVR AIR TO AIR MISSILES ===
---				{ CLSID = "DIS_PL-12", attach_point_position = {0.30, -0.13, 0.0}, arg_increment = 0.0},   -- Meteor x1
-                { CLSID = "DIS_SD-10", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.0}, -- AIM-120C-7 x1
-                { CLSID = "DIS_SD-10_DUAL_L", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.75}, -- AIM-120C-7 x2
-                { CLSID = "DIS_SD-10_DUAL_R", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.75}, -- AIM-120C-7 x3
+--				{ CLSID = "DIS_PL-12", attach_point_position = {0.30, -0.13, 0.0}, arg_value = 0.1},   -- Meteor x1
+                { CLSID = "DIS_SD-10", attach_point_position = {0.0, -0.30, 0.0}, arg_value = 0.2}, -- AIM-120C-7 x1
+                { CLSID = "DIS_SD-10_DUAL_L", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.5}, -- AIM-120C-7 x2
+                { CLSID = "DIS_SD-10_DUAL_R", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.5}, -- AIM-120C-7 x3
 				
 --				=== AIR TO GROUND MISSILES ===
-                { CLSID = "DIS_C-701T", attach_point_position = {0.37, -0.3, 0.0}, arg_value = 0.1}, -- AGM-65K TV
-				{ CLSID = "DIS_C-701IR", attach_point_position = {0.37, -0.3, 0.0}, arg_value = 0.1}, -- AGM-65G IR
-                { CLSID = "DIS_CM-400AKG", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1}, -- TESTING!
-                { CLSID = "DIS_C-802AK", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1}, -- Rb15F Mk4 Antiship missiles
-                { CLSID = 'DIS_CM-802AKG', attach_point_position = {0.0, 0.25, 0.0}, arg_value = 0.9, Type = 1},	--KEPD 350 
-                { CLSID = "DIS_LD-10", attach_point_position ={ -0.25, -0.25, 0.0}, arg_value = 0.0, Type = 1}, -- MAR-1 Anti radiation missiles x1
-                --{ CLSID = "DIS_LD-10_DUAL_R", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.75}, -- MAR-1 Anti radiation missiles x1
-                { CLSID = "DIS_LD-10_DUAL_L", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.75}, -- MAR-1 Anti radiation missiles x2	
+                { CLSID = "DIS_C-701T", attach_point_position = {0.34, -0.34, 0.0}, arg_value = 0.1}, -- AGM-65K TV
+				{ CLSID = "DIS_C-701IR", attach_point_position = {0.34, -0.34, 0.0}, arg_value = 0.1}, -- AGM-65G IR
+                { CLSID = "DIS_CM-400AKG", attach_point_position ={ 0.25, -0.23, 0.0}, arg_value = 0.3, Type = 1}, -- GBU-24B/B
+                { CLSID = "DIS_C-802AK", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.3, Type = 1}, -- RB15F Mk4 Antiship missiles
+                { CLSID = 'DIS_CM-802AKG', attach_point_position = {0.01, 0.0, 0.0}, arg_value = 0.3, Type = 1}, -- KEPD 350 
+                { CLSID = "DIS_LD-10", attach_point_position ={ -0.25, -0.30, 0.0}, arg_value = 0.2, Type = 1}, -- MAR-1 Anti radiation missiles x1
+                --{ CLSID = "DIS_LD-10_DUAL_R", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.5}, -- MAR-1 Anti radiation missiles x1
+                { CLSID = "DIS_LD-10_DUAL_L",  attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.5}, -- MAR-1 Anti radiation missiles x2	
+        
 					
 --			    === GUIDED BOMBS ===
-                { CLSID = "DIS_GBU_10", arg_value = 0.69 }, -- GBU-10
+                { CLSID = "DIS_GBU_10", arg_value = 0.3 }, -- GBU-10
+				
+				{ CLSID = "DIS_GBU_16", arg_value = 0.3 }, -- GBU-16
 
-				{ CLSID = "DIS_GBU_12", arg_value = 0.69 }, -- GBU-12
-				{ CLSID = "DIS_GBU_12_DUAL", arg_value = 0.69, Type = 1 }, -- GBU-12 x 2
-                { CLSID = "DIS_GBU_12_DUAL_GDJ_II19_L", arg_value = 0.69, Type = 1 }, -- GBU-12 x2
---              { CLSID = "DIS_GBU_12_DUAL_GDJ_II19_R", arg_value = 0.69, Type = 1 }, -- GBU-12 x3
-                
-                { CLSID = "DIS_GBU_16", arg_value = 0.69 }, -- GBU-16
+				{ CLSID = "DIS_GBU_12", arg_value = 0.3 }, -- GBU-12
+				{ CLSID = "DIS_GBU_12_DUAL", arg_value = 0.5, Type = 1 }, -- GBU-12 x 2
+                { CLSID = "DIS_GBU_12_DUAL_GDJ_II19_L", arg_value = 0.5, Type = 1 }, -- GBU-12 x2
+--              { CLSID = "DIS_GBU_12_DUAL_GDJ_II19_R", arg_value = 0.5, Type = 1 }, -- GBU-12 x3
 				               
-                { CLSID = "DIS_GB6", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1},-- AGM154-A
-                { CLSID = "DIS_GB6_HE", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1}, -- AGM154-B
-                { CLSID = "DIS_GB6_TSP", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1},-- AGM154-C		
+                { CLSID = "DIS_GB6", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.3, Type = 1},-- AGM154-A
+                { CLSID = "DIS_GB6_HE", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.3, Type = 1}, -- AGM154-B
+                { CLSID = "DIS_GB6_TSP", attach_point_position ={ 0.0, -0.26, 0.0}, arg_value = 0.3, Type = 1},-- DWS39/BK90		
 
-                { CLSID = "DIS_LS_6_100", arg_value = 0.5 },-- GBU-31 BLU-109
-                { CLSID = "DIS_LS_6_100_DUAL_L", arg_value = 0.5, Type = 1 },-- WIP
---              { CLSID = "DIS_LS_6_100_DUAL_R", arg_value = 0.5, Type = 1 },-- WIP
+                { CLSID = "DIS_LS_6_100", attach_point_position ={ 0.0, 0.0, 0.0} , arg_value = 0.3 }, -- GBU-54 x1
+                { CLSID = "DIS_LS_6_100_DUAL_L", arg_value = 0.5, Type = 1 }, -- GBU-54 x2
+--              { CLSID = "DIS_LS_6_100_DUAL_R", arg_value = 0.5, Type = 1 }, -- GBU-54 x2
 
-                { CLSID = "DIS_LS_6_250", arg_value = 0.5, Type = 1 },-- GBU-39 SDBx2
+                { CLSID = "DIS_LS_6_250", attach_point_position ={ 0.0, 0.0, 0.0} , arg_value = 0.5 }, -- SPEAR-3 x1
  				{ CLSID = "DIS_LS_6_250_DUAL_L", arg_value = 0.5, Type = 1 },-- GBU-39 SDBx4
 --              { CLSID = "DIS_LS_6_250_DUAL_R", arg_value = 0.5, Type = 1 },-- WIP
 
-                { CLSID = "DIS_LS_6_500", arg_increment = 0.5, Type = 1}, -- DWS39/BK90	
+                { CLSID = "DIS_LS_6_500", attach_point_position ={0.0, 0.0, 0.0}, arg_value = 0.5, Type = 1}, -- GBU-39 SDB	
 								
 --				=== UNGUIDED BOMBS ===
-				{ CLSID = "DIS_MK_20", arg_increment = 0.5, Type = 1}, -- Mk-20 Rockeye (can we make this the M71 LD)
-                { CLSID = "DIS_MK_20_DUAL_GDJ_II19_L", arg_increment = 0.5, Type = 1}, -- Mk-20 Rockeye x2 gjd-ii19
---              { CLSID = "DIS_MK_20_DUAL_GDJ_II19_R", arg_increment = 0.5, Type = 1}, -- Mk-20 Rockeye x2 gjd-ii19
+				{ CLSID = "DIS_MK_20", arg_value = 0.3, Type = 1}, -- Mk-20 Rockeye (can we make this the M71 LD)
+                { CLSID = "DIS_MK_20_DUAL_GDJ_II19_L", arg_value = 0.5, Type = 1}, -- Mk-20 Rockeye x2 gjd-ii19
+--              { CLSID = "DIS_MK_20_DUAL_GDJ_II19_R", arg_value = 0.5, Type = 1}, -- Mk-20 Rockeye x2 gjd-ii19
 
-                { CLSID = "{Mk82SNAKEYE}", arg_increment = 0.5, Type = 1 }, -- Mk-82S
-                { CLSID = "DIS_MK_82S_DUAL_GDJ_II19_L", arg_increment = 0.5, Type = 1}, -- Mk-82 Snakeye x2 gjd-ii19
---              { CLSID = "DIS_MK_82S_DUAL_GDJ_II19_R", arg_increment = 0.5, Type = 1}, -- Mk-82 Snakeye x2 gjd-ii19
+                { CLSID = "{Mk82SNAKEYE}", arg_value = 0.3, Type = 1 }, -- Mk-82S
+                { CLSID = "DIS_MK_82S_DUAL_GDJ_II19_L", arg_value = 0.5, Type = 1}, -- Mk-82 Snakeye x2 gjd-ii19
+--              { CLSID = "DIS_MK_82S_DUAL_GDJ_II19_R", arg_value = 0.5, Type = 1}, -- Mk-82 Snakeye x2 gjd-ii19
 
-                { CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}", arg_increment = 0.5, Type = 1}, -- Mk-82
-                --{ CLSID = "{BRU33_2X_MK-82}", arg_increment = 0.5, Type = 1}, -- Mk-82 x 2
-                { CLSID = "DIS_MK_82_DUAL_GDJ_II19_L", arg_increment = 0.5, Type = 1}, -- Mk-82 x2 gjd-ii19
---              { CLSID = "DIS_MK_82_DUAL_GDJ_II19_R", arg_increment = 0.5, Type = 1}, -- Mk-82 x2 gjd-ii19
+                { CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}", arg_value = 0.3, Type = 1}, -- Mk-82
+                --{ CLSID = "{BRU33_2X_MK-82}", arg_value = 0.5, Type = 1}, -- Mk-82 x 2
+                { CLSID = "DIS_MK_82_DUAL_GDJ_II19_L", arg_value = 0.5, Type = 1}, -- Mk-82 x2 gjd-ii19
+--              { CLSID = "DIS_MK_82_DUAL_GDJ_II19_R", arg_value = 0.5, Type = 1}, -- Mk-82 x2 gjd-ii19
 
-                { CLSID = "{7A44FF09-527C-4B7E-B42B-3F111CFE50FB}", arg_increment = 0.5, Type = 1}, -- Mk-83
+                { CLSID = "{7A44FF09-527C-4B7E-B42B-3F111CFE50FB}", arg_value = 0.3, Type = 1}, -- Mk-83
 				
-				{ CLSID = "DIS_TYPE200", arg_increment = 0.5, attach_point_position ={ -1.0, -0.02, 0.0}, Type = 1}, -- SB M71
-				{ CLSID = "DIS_TYPE200_DUAL_L", arg_increment = 0.5, Type = 1}, -- SB M71
---				{ CLSID = "DIS_TYPE200_DUAL_R", arg_increment = 0.5, Type = 1}, -- SB M71
+				{ CLSID = "DIS_TYPE200", attach_point_position ={ 0.0, -0.02, 0.0},  arg_value = 0.5, Type = 1}, -- SB M71
+				{ CLSID = "DIS_TYPE200_DUAL_L", attach_point_position ={ 0.5, -0.27, 0.0}, arg_value = 0.55, Type = 1}, -- SB M71
+--				{ CLSID = "DIS_TYPE200_DUAL_R", arg_value = 0.55, Type = 1}, -- SB M71
 
 --              === ROCKETS ===
                 { CLSID = "DIS_BRM1_90", attach_point_position = {-0.15, 0.02, 0.0}, arg_value = 0.5 }, -- Brimstone x3
                 { CLSID = "DIS_RKT_90_UG", arg_value = 0.5 }, -- M70B AP
                 { CLSID = "DIS_LAU68_MK5_DUAL_GDJ_II19_L", arg_value = 0.5 },
 --              { CLSID = "DIS_LAU68_MK5_DUAL_GDJ_II19_R", arg_value = 0.5 },
+
+--              === DROP TANKS ===
+                { CLSID = "DIS_TANK800", arg_value = 0.5 }, -- External drop tank 1100 litre
+                { CLSID = "DIS_TANK1100", arg_value = 0.5, --[[required = {{station = 3,loadout = {"DIS_TANK1100"}}}]] },
+                { CLSID = "DIS_TANK800_EMPTY", arg_value = 0.5, },
+                { CLSID = "DIS_TANK1100_EMPTY", arg_value = 0.5, },
 				
 --				=== OTHERS ===   
                 { CLSID = "DIS_WMD7", arg_value = 0.5 },
-                { CLSID = "DIS_SPJ_POD", arg_value = 0.55 },
-                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.7, },
+                { CLSID = "DIS_SPJ_POD", arg_value = 0.5 },
+                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.5, },
 
-                { CLSID = 'DIS_SMOKE_GENERATOR_R', arg_value = 0.3},
-                { CLSID = 'DIS_SMOKE_GENERATOR_G', arg_value = 0.3},
-                { CLSID = 'DIS_SMOKE_GENERATOR_B', arg_value = 0.3},
-                { CLSID = 'DIS_SMOKE_GENERATOR_W', arg_value = 0.3},
-                { CLSID = 'DIS_SMOKE_GENERATOR_Y', arg_value = 0.3},
-                { CLSID = 'DIS_SMOKE_GENERATOR_O', arg_value = 0.3},
+                { CLSID = 'DIS_SMOKE_GENERATOR_R', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_G', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_B', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_W', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_Y', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_O', arg_value = 0.1},
 
 --				=== Remove pylon ===		
-				{ CLSID = "<CLEAN>", arg_value = 1},
+				{ CLSID = "<CLEAN>", arg_value = 0},
             }
         ),
-        -- CENTER PYLON --> STATION 4
-        pylon(4, 0, 0, 0, 0,
+
+		pylon(4, 0, 0, 0, 0,
             {
                 arg = 311,
-                arg_value = 0,
+                arg_value = 0.5,
                 DisplayName = "4",
                 use_full_connector_position = true,
                 connector = "Pylon4",
             },
+            {
+--				=== INFRARED AIR TO AIR MISSILES ===
+                { CLSID = "DIS_PL-5EII", attach_point_position = {0.20, -0.16, 0.0}, arg_value = 0.1 },
 
-            {	
+--				=== BVR AIR TO AIR MISSILES ===
+--				{ CLSID = "DIS_PL-12", attach_point_position = {0.30, -0.13, 0.0}, arg_value = 0.1},   -- Meteor x1
+                { CLSID = "DIS_SD-10", attach_point_position = {0.0, -0.30, 0.0}, arg_value = 0.2}, -- AIM-120C-7 x1
+                { CLSID = "DIS_SD-10_DUAL_L", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.5}, -- AIM-120C-7 x2
+                { CLSID = "DIS_SD-10_DUAL_R", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.5}, -- AIM-120C-7 x3
+				
 --				=== AIR TO GROUND MISSILES ===
- 
-                { CLSID = "DIS_C-802AK", arg_value = 0.9, Type = 1, attach_point_position ={ -0.38, -0.27, 0.0} }, -- Rb15F Mk4 Antiship missiles
-                { CLSID = 'DIS_CM-802AKG', attach_point_position = {0.0, 0.25, 0.0}, arg_value = 0.9, Type = 1 },	--KEPD 350 *Make this*	
+                { CLSID = "DIS_C-701T", attach_point_position = {0.34, -0.18, 0.0}, arg_value = 0.5}, -- AGM-65K TV
+				{ CLSID = "DIS_C-701IR", attach_point_position = {0.34, -0.18, 0.0}, arg_value = 0.5}, -- AGM-65G IR
+                { CLSID = "DIS_CM-400AKG", attach_point_position ={ 0.25, -0.23, 0.0}, arg_value = 0.3, Type = 1}, -- GBU-24B/B
+                { CLSID = "DIS_C-802AK", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.3, Type = 1}, -- RB15F Mk4 Antiship missiles
+                { CLSID = 'DIS_CM-802AKG', attach_point_position = {0.01, 0.0, 0.0}, arg_value = 0.3, Type = 1}, -- KEPD 350 
+                { CLSID = "DIS_LD-10", attach_point_position ={ -0.25, -0.30, 0.0}, arg_value = 0.3, Type = 1}, -- MAR-1 Anti radiation missiles x1
+                { CLSID = "DIS_LD-10_DUAL_R", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.5}, -- MAR-1 Anti radiation missiles x2
+                --{ CLSID = "DIS_LD-10_DUAL_L",  attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.5}, -- MAR-1 Anti radiation missiles x2	
+        
 					
 --			    === GUIDED BOMBS ===
-                { CLSID = "DIS_GBU_10", arg_value = 0.5 }, -- GBU-10
+                { CLSID = "DIS_GBU_10", arg_value = 0.3 }, -- GBU-10
+				
+				{ CLSID = "DIS_GBU_16", arg_value = 0.3 }, -- GBU-16
 
-				{ CLSID = "DIS_GBU_12", arg_value = 0.5 }, -- GBU-12
-				{ CLSID = "DIS_GBU_12_DUAL", arg_value = 0.5 }, -- GBU-12 x 2
-                { CLSID = "DIS_GBU_12_DUAL_GDJ_II19_L", arg_value = 0.3 }, -- GBU-12 x2 gjd-ii19
---              { CLSID = "DIS_GBU_12_DUAL_GDJ_II19_R", arg_value = 0.3 }, -- GBU-12 x2 gjd-ii19
-
-                { CLSID = "DIS_GBU_16", arg_value = 0.5 }, -- GBU-16
+				{ CLSID = "DIS_GBU_12", arg_value = 0.3 }, -- GBU-12
+				{ CLSID = "DIS_GBU_12_DUAL", arg_value = 0.5, Type = 1 }, -- GBU-12 x 2
+                { CLSID = "DIS_GBU_12_DUAL_GDJ_II19_L", arg_value = 0.5, Type = 1 }, -- GBU-12 x2
+--              { CLSID = "DIS_GBU_12_DUAL_GDJ_II19_R", arg_value = 0.5, Type = 1 }, -- GBU-12 x3
 				               
-                { CLSID = "DIS_GB6", arg_value = 0.4, Type = 1 },-- Storm Shadow
-                { CLSID = "DIS_GB6_TSP", arg_value = 0.4, Type = 1 },---- BK90 MJ2 / dws39 *Make this*	
-                { CLSID = "DIS_GB6_HE", arg_value = 0.5, Type = 1 }, -- BK90 MJ2 / dws39 *Make this*	
+                { CLSID = "DIS_GB6", attach_point_position ={ -0.34, -0.27, 0.0}, arg_value = 0.3, Type = 1},-- AGM154-A
+                { CLSID = "DIS_GB6_HE", attach_point_position ={ -0.34, -0.27, 0.0}, arg_value = 0.3, Type = 1}, -- AGM154-B
+                { CLSID = "DIS_GB6_TSP", attach_point_position ={ 0.0, -0.26, 0.0}, arg_value = 0.3, Type = 1},-- DWS39/BK90		
 
-                { CLSID = "DIS_LS_6_100", arg_value = 0.5 }, --GBU-39 SDB
-                { CLSID = "DIS_LS_6_100_DUAL_L", arg_value = 0.5, Type = 1 }, --GBU-39 SDB
---              { CLSID = "DIS_LS_6_100_DUAL_R", arg_value = 0.5, Type = 1 }, --GBU-39 SDB
+                { CLSID = "DIS_LS_6_100", attach_point_position ={ 0.05, -0.15, 0.0} , arg_value = 0.3 }, -- GBU-54 x1
+                { CLSID = "DIS_LS_6_100_DUAL_L", attach_point_position ={ 0, 0, 0} , arg_value = 0.5 }, -- GBU-54 x2
+--              { CLSID = "DIS_LS_6_100_DUAL_R", arg_value = 0.5, Type = 1 }, -- GBU-54 x2
 
-                { CLSID = "DIS_LS_6_250", arg_value = 0.5, Type = 1 },--SPEAR-3
-				{ CLSID = "DIS_LS_6_250_DUAL_L", arg_value = 0.5, Type = 1 },--SPEAR-3
---              { CLSID = "DIS_LS_6_250_DUAL_R", arg_value = 0.3, Type = 1 },--SPEAR-3
+                { CLSID = "DIS_LS_6_250", attach_point_position ={ 0.0, 0.0, 0.0} , arg_value = 0.5 }, -- SPEAR-3 x1
+ 				{ CLSID = "DIS_LS_6_250_DUAL_L", arg_value = 0.5, Type = 1 },-- GBU-39 SDBx4
+--              { CLSID = "DIS_LS_6_250_DUAL_R", arg_value = 0.5, Type = 1 },-- WIP
 
-                { CLSID = "DIS_LS_6_500", arg_increment = 0.5, Type = 1}, -- AGM154 / Storm Shadow		
+                { CLSID = "DIS_LS_6_500", attach_point_position ={0.0, 0.0, 0.0}, arg_value = 0.5, Type = 1}, -- GBU-39 SDB	
 								
 --				=== UNGUIDED BOMBS ===
-				{ CLSID = "DIS_MK_20", arg_value = 0.5 }, -- Mk-20 Rockeye (can we make this the M71 LD)
-                { CLSID = "DIS_MK_20_DUAL_GDJ_II19_L",  arg_value = 0.3 }, -- Mk-20 Rockeye x2 gjd-ii19
---              { CLSID = "DIS_MK_20_DUAL_GDJ_II19_R",  arg_value = 0.3 }, -- Mk-20 Rockeye x2 gjd-ii19
+				{ CLSID = "DIS_MK_20", arg_value = 0.3, Type = 1}, -- Mk-20 Rockeye (can we make this the M71 LD)
+                { CLSID = "DIS_MK_20_DUAL_GDJ_II19_L", arg_value = 0.5, Type = 1}, -- Mk-20 Rockeye x2 gjd-ii19
+--              { CLSID = "DIS_MK_20_DUAL_GDJ_II19_R", arg_value = 0.5, Type = 1}, -- Mk-20 Rockeye x2 gjd-ii19
 
-                { CLSID = "{Mk82SNAKEYE}", arg_value = 0.5 }, -- Mk-82S
-                { CLSID = "DIS_MK_82S_DUAL_GDJ_II19_L", arg_value = 0.3 }, -- Mk-82 Snakeye x2 gjd-ii19
---              { CLSID = "DIS_MK_82S_DUAL_GDJ_II19_R", arg_value = 0.3 }, -- Mk-82 Snakeye x2 gjd-ii19
+                { CLSID = "{Mk82SNAKEYE}", arg_value = 0.3, Type = 1 }, -- Mk-82S
+                { CLSID = "DIS_MK_82S_DUAL_GDJ_II19_L", arg_value = 0.5, Type = 1}, -- Mk-82 Snakeye x2 gjd-ii19
+--              { CLSID = "DIS_MK_82S_DUAL_GDJ_II19_R", arg_value = 0.5, Type = 1}, -- Mk-82 Snakeye x2 gjd-ii19
 
-                { CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}", arg_value = 0.5 }, -- Mk-82
-                { CLSID = "{BRU33_2X_MK-82}", arg_value = 0.5 }, -- Mk-82 x 2
-                { CLSID = "DIS_MK_82_DUAL_GDJ_II19_L",  arg_value = 0.3 }, -- Mk-82 x2 gjd-ii19
---              { CLSID = "DIS_MK_82_DUAL_GDJ_II19_R",  arg_value = 0.3 }, -- Mk-82 x2 gjd-ii19
+                { CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}", arg_value = 0.3, Type = 1}, -- Mk-82
+                --{ CLSID = "{BRU33_2X_MK-82}", arg_value = 0.5, Type = 1}, -- Mk-82 x 2
+                { CLSID = "DIS_MK_82_DUAL_GDJ_II19_L", arg_value = 0.5, Type = 1}, -- Mk-82 x2 gjd-ii19
+--              { CLSID = "DIS_MK_82_DUAL_GDJ_II19_R", arg_value = 0.5, Type = 1}, -- Mk-82 x2 gjd-ii19
 
-                { CLSID = "{7A44FF09-527C-4B7E-B42B-3F111CFE50FB}", arg_value = 0.5 }, -- Mk-83
+                { CLSID = "{7A44FF09-527C-4B7E-B42B-3F111CFE50FB}", arg_value = 0.3, Type = 1}, -- Mk-83
 				
-				{ CLSID = "DIS_TYPE200", arg_value = 0.5 }, -- M71
-				{ CLSID = "DIS_TYPE200_DUAL_L", arg_value = 0.3 },  -- M71
---              === Drop tanks ===
-                { CLSID = "DIS_TANK800", arg_value = 0.1 }, -- External drop tank 1100 litre
-                { CLSID = "DIS_TANK1100", arg_value = 0.1, --[[required = {{station = 3,loadout = {"DIS_TANK1100"}}}]] },
-                { CLSID = "DIS_TANK800_EMPTY", arg_value = 0.1, },
-                { CLSID = "DIS_TANK1100_EMPTY", arg_value = 0.1, },
-					
---				=== Guided rockets ===
-				{ CLSID = "DIS_BRM1_90", attach_point_position = {0.0, 0.02, 0.0}, arg_value = 0.5 }, -- Brimstone
+				{ CLSID = "DIS_TYPE200", attach_point_position ={ 0.0, -0.02, 0.0},  arg_value = 0.5, Type = 1}, -- SB M71
+				{ CLSID = "DIS_TYPE200_DUAL_L", attach_point_position ={ 0.5, -0.27, 0.0}, arg_value = 0.5, Type = 1}, -- SB M71
+--				{ CLSID = "DIS_TYPE200_DUAL_R", arg_value = 0.55, Type = 1}, -- SB M71
+
+--              === ROCKETS ===
+                { CLSID = "DIS_BRM1_90", attach_point_position = {-0.15, 0.02, 0.0}, arg_value = 0.5 }, -- Brimstone x3
+                { CLSID = "DIS_RKT_90_UG", arg_value = 0.5 }, -- M70B AP
+                { CLSID = "DIS_LAU68_MK5_DUAL_GDJ_II19_L", arg_value = 0.5 },
+--              { CLSID = "DIS_LAU68_MK5_DUAL_GDJ_II19_R", arg_value = 0.5 },
+
+--              === DROP TANKS ===
+                { CLSID = "DIS_TANK800", arg_value = 0.5 }, -- External drop tank 1100 litre
+                { CLSID = "DIS_TANK1100", arg_value = 0.5, --[[required = {{station = 3,loadout = {"DIS_TANK1100"}}}]] },
+                { CLSID = "DIS_TANK800_EMPTY", arg_value = 0.5, },
+                { CLSID = "DIS_TANK1100_EMPTY", arg_value = 0.5, },
 				
---              ==== PODS ===
+--				=== OTHERS ===   
                 { CLSID = "DIS_WMD7", arg_value = 0.5 },
-                { CLSID = "DIS_SPJ_POD", arg_value = 0.55 },
-                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.7, },
+                { CLSID = "DIS_SPJ_POD", arg_value = 0.5 },
+                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.5, },
+
+                { CLSID = 'DIS_SMOKE_GENERATOR_R', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_G', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_B', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_W', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_Y', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_O', arg_value = 0.1},
 
 --				=== Remove pylon ===		
-				{ CLSID = "<CLEAN>", arg_value = 1},
+				{ CLSID = "<CLEAN>", arg_value = 0},
             }
         ),
-        -- RIGHT INNER PYLON --> STATION 5
+
 		pylon(5, 0, 0, 0, 0,
             {
                 arg = 312,
-                arg_value = 0,
+                arg_value = 0.5,
                 DisplayName = "5",
                 use_full_connector_position = true,
                 connector = "Pylon5",
             },
             {
 --				=== INFRARED AIR TO AIR MISSILES ===
-                { CLSID = "DIS_PL-5EII", attach_point_position = {0.30, -0.14, 0.0}, arg_increment = 0.0 },
-
+                { CLSID = "DIS_PL-5EII", attach_point_position = {0.20, -0.16, 0.0}, arg_value = 0.1 },
 
 --				=== BVR AIR TO AIR MISSILES ===
---				{ CLSID = "DIS_PL-12", attach_point_position = {0.30, -0.13, 0.0}, arg_increment = 0.0},   -- Meteor x1
-                { CLSID = "DIS_SD-10", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.0}, -- AIM-120C-7 x1
-                { CLSID = "DIS_SD-10_DUAL_L", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.75}, -- AIM-120C-7 x2
-                { CLSID = "DIS_SD-10_DUAL_R", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.75}, -- AIM-120C-7 x3
+--				{ CLSID = "DIS_PL-12", attach_point_position = {0.30, -0.13, 0.0}, arg_value = 0.1},   -- Meteor x1
+                { CLSID = "DIS_SD-10", attach_point_position = {0.0, -0.30, 0.0}, arg_value = 0.2}, -- AIM-120C-7 x1
+                { CLSID = "DIS_SD-10_DUAL_L", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.5}, -- AIM-120C-7 x2
+                { CLSID = "DIS_SD-10_DUAL_R", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.5}, -- AIM-120C-7 x3
 				
 --				=== AIR TO GROUND MISSILES ===
-                { CLSID = "DIS_C-701T", attach_point_position = {0.37, -0.3, 0.0}, arg_value = 0.1}, -- AGM-65K TV
-				{ CLSID = "DIS_C-701IR", attach_point_position = {0.37, -0.3, 0.0}, arg_value = 0.1}, -- AGM-65G IR
-                { CLSID = "DIS_CM-400AKG", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1}, -- TESTING!
-                { CLSID = "DIS_C-802AK", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1}, -- Rb15F Mk4 Antiship missiles
-                { CLSID = 'DIS_CM-802AKG', attach_point_position = {0.0, 0.25, 0.0}, arg_value = 0.9, Type = 1},	--KEPD 350 
-                { CLSID = "DIS_LD-10", attach_point_position ={ -0.25, -0.25, 0.0}, arg_value = 0.0, Type = 1}, -- MAR-1 Anti radiation missiles x1
-                { CLSID = "DIS_LD-10_DUAL_R", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.75}, -- MAR-1 Anti radiation missiles x1
-                --{ CLSID = "DIS_LD-10_DUAL_L", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.75}, -- MAR-1 Anti radiation missiles x2	
+                { CLSID = "DIS_C-701T", attach_point_position = {0.34, -0.34, 0.0}, arg_value = 0.1}, -- AGM-65K TV
+				{ CLSID = "DIS_C-701IR", attach_point_position = {0.34, -0.34, 0.0}, arg_value = 0.1}, -- AGM-65G IR
+                { CLSID = "DIS_CM-400AKG", attach_point_position ={ 0.25, -0.23, 0.0}, arg_value = 0.3, Type = 1}, -- GBU-24B/B
+                { CLSID = "DIS_C-802AK", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.3, Type = 1}, -- RB15F Mk4 Antiship missiles
+                { CLSID = 'DIS_CM-802AKG', attach_point_position = {0.01, 0.0, 0.0}, arg_value = 0.3, Type = 1}, -- KEPD 350 
+                { CLSID = "DIS_LD-10", attach_point_position ={ -0.25, -0.30, 0.0}, arg_value = 0.2, Type = 1}, -- MAR-1 Anti radiation missiles x1
+                --{ CLSID = "DIS_LD-10_DUAL_R", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.5}, -- MAR-1 Anti radiation missiles x1
+                { CLSID = "DIS_LD-10_DUAL_L",  attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.5}, -- MAR-1 Anti radiation missiles x2	
+        
 					
 --			    === GUIDED BOMBS ===
-                { CLSID = "DIS_GBU_10", arg_value = 0.69 }, -- GBU-10
+                { CLSID = "DIS_GBU_10", arg_value = 0.3 }, -- GBU-10
+				
+				{ CLSID = "DIS_GBU_16", arg_value = 0.3 }, -- GBU-16
 
-				{ CLSID = "DIS_GBU_12", arg_value = 0.69 }, -- GBU-12
-				{ CLSID = "DIS_GBU_12_DUAL", arg_value = 0.69, Type = 1 }, -- GBU-12 x 2
-                { CLSID = "DIS_GBU_12_DUAL_GDJ_II19_L", arg_value = 0.69, Type = 1 }, -- GBU-12 x2
---              { CLSID = "DIS_GBU_12_DUAL_GDJ_II19_R", arg_value = 0.69, Type = 1 }, -- GBU-12 x3
-                
-                { CLSID = "DIS_GBU_16", arg_value = 0.69 }, -- GBU-16
+				{ CLSID = "DIS_GBU_12", arg_value = 0.3 }, -- GBU-12
+				{ CLSID = "DIS_GBU_12_DUAL", arg_value = 0.5, Type = 1 }, -- GBU-12 x 2
+                { CLSID = "DIS_GBU_12_DUAL_GDJ_II19_L", arg_value = 0.5, Type = 1 }, -- GBU-12 x2
+--              { CLSID = "DIS_GBU_12_DUAL_GDJ_II19_R", arg_value = 0.5, Type = 1 }, -- GBU-12 x3
 				               
-                { CLSID = "DIS_GB6", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1},-- AGM154-A
-                { CLSID = "DIS_GB6_HE", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1}, -- AGM154-B
-                { CLSID = "DIS_GB6_TSP", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1},-- AGM154-C		
+                { CLSID = "DIS_GB6", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.3, Type = 1},-- AGM154-A
+                { CLSID = "DIS_GB6_HE", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.3, Type = 1}, -- AGM154-B
+                { CLSID = "DIS_GB6_TSP", attach_point_position ={ 0.0, -0.26, 0.0}, arg_value = 0.3, Type = 1},-- DWS39/BK90		
 
-                { CLSID = "DIS_LS_6_100", arg_value = 0.5 },-- GBU-31 BLU-109
-                { CLSID = "DIS_LS_6_100_DUAL_L", arg_value = 0.5, Type = 1 },-- WIP
---              { CLSID = "DIS_LS_6_100_DUAL_R", arg_value = 0.5, Type = 1 },-- WIP
+                { CLSID = "DIS_LS_6_100", attach_point_position ={ 0.0, 0.0, 0.0} , arg_value = 0.3 }, -- GBU-54 x1
+                { CLSID = "DIS_LS_6_100_DUAL_L", arg_value = 0.5, Type = 1 }, -- GBU-54 x2
+--              { CLSID = "DIS_LS_6_100_DUAL_R", arg_value = 0.5, Type = 1 }, -- GBU-54 x2
 
-                { CLSID = "DIS_LS_6_250", arg_value = 0.5, Type = 1 },-- GBU-39 SDBx2
+                { CLSID = "DIS_LS_6_250", attach_point_position ={ 0.0, 0.0, 0.0} , arg_value = 0.5 }, -- SPEAR-3 x1
  				{ CLSID = "DIS_LS_6_250_DUAL_L", arg_value = 0.5, Type = 1 },-- GBU-39 SDBx4
 --              { CLSID = "DIS_LS_6_250_DUAL_R", arg_value = 0.5, Type = 1 },-- WIP
 
-                { CLSID = "DIS_LS_6_500", arg_increment = 0.5, Type = 1}, -- DWS39/BK90	
+                { CLSID = "DIS_LS_6_500", attach_point_position ={0.0, 0.0, 0.0}, arg_value = 0.5, Type = 1}, -- GBU-39 SDB	
 								
 --				=== UNGUIDED BOMBS ===
-				{ CLSID = "DIS_MK_20", arg_increment = 0.5, Type = 1}, -- Mk-20 Rockeye (can we make this the M71 LD)
-                { CLSID = "DIS_MK_20_DUAL_GDJ_II19_L", arg_increment = 0.5, Type = 1}, -- Mk-20 Rockeye x2 gjd-ii19
---              { CLSID = "DIS_MK_20_DUAL_GDJ_II19_R", arg_increment = 0.5, Type = 1}, -- Mk-20 Rockeye x2 gjd-ii19
+				{ CLSID = "DIS_MK_20", arg_value = 0.3, Type = 1}, -- Mk-20 Rockeye (can we make this the M71 LD)
+                { CLSID = "DIS_MK_20_DUAL_GDJ_II19_L", arg_value = 0.5, Type = 1}, -- Mk-20 Rockeye x2 gjd-ii19
+--              { CLSID = "DIS_MK_20_DUAL_GDJ_II19_R", arg_value = 0.5, Type = 1}, -- Mk-20 Rockeye x2 gjd-ii19
 
-                { CLSID = "{Mk82SNAKEYE}", arg_increment = 0.5, Type = 1 }, -- Mk-82S
-                { CLSID = "DIS_MK_82S_DUAL_GDJ_II19_L", arg_increment = 0.5, Type = 1}, -- Mk-82 Snakeye x2 gjd-ii19
---              { CLSID = "DIS_MK_82S_DUAL_GDJ_II19_R", arg_increment = 0.5, Type = 1}, -- Mk-82 Snakeye x2 gjd-ii19
+                { CLSID = "{Mk82SNAKEYE}", arg_value = 0.3, Type = 1 }, -- Mk-82S
+                { CLSID = "DIS_MK_82S_DUAL_GDJ_II19_L", arg_value = 0.5, Type = 1}, -- Mk-82 Snakeye x2 gjd-ii19
+--              { CLSID = "DIS_MK_82S_DUAL_GDJ_II19_R", arg_value = 0.5, Type = 1}, -- Mk-82 Snakeye x2 gjd-ii19
 
-                { CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}", arg_increment = 0.5, Type = 1}, -- Mk-82
-                --{ CLSID = "{BRU33_2X_MK-82}", arg_increment = 0.5, Type = 1}, -- Mk-82 x 2
-                { CLSID = "DIS_MK_82_DUAL_GDJ_II19_L", arg_increment = 0.5, Type = 1}, -- Mk-82 x2 gjd-ii19
---              { CLSID = "DIS_MK_82_DUAL_GDJ_II19_R", arg_increment = 0.5, Type = 1}, -- Mk-82 x2 gjd-ii19
+                { CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}", arg_value = 0.3, Type = 1}, -- Mk-82
+                --{ CLSID = "{BRU33_2X_MK-82}", arg_value = 0.5, Type = 1}, -- Mk-82 x 2
+                { CLSID = "DIS_MK_82_DUAL_GDJ_II19_L", arg_value = 0.5, Type = 1}, -- Mk-82 x2 gjd-ii19
+--              { CLSID = "DIS_MK_82_DUAL_GDJ_II19_R", arg_value = 0.5, Type = 1}, -- Mk-82 x2 gjd-ii19
 
-                { CLSID = "{7A44FF09-527C-4B7E-B42B-3F111CFE50FB}", arg_increment = 0.5, Type = 1}, -- Mk-83
+                { CLSID = "{7A44FF09-527C-4B7E-B42B-3F111CFE50FB}", arg_value = 0.3, Type = 1}, -- Mk-83
 				
-				{ CLSID = "DIS_TYPE200", arg_increment = 0.5, attach_point_position ={ -1.0, -0.02, 0.0}, Type = 1}, -- SB M71
-				{ CLSID = "DIS_TYPE200_DUAL_L", arg_increment = 0.5, Type = 1}, -- SB M71
---				{ CLSID = "DIS_TYPE200_DUAL_R", arg_increment = 0.5, Type = 1}, -- SB M71
+				{ CLSID = "DIS_TYPE200", attach_point_position ={ 0.0, -0.02, 0.0},  arg_value = 0.5, Type = 1}, -- SB M71
+				{ CLSID = "DIS_TYPE200_DUAL_L", attach_point_position ={ 0.5, -0.27, 0.0}, arg_value = 0.5, Type = 1}, -- SB M71
+--				{ CLSID = "DIS_TYPE200_DUAL_R", arg_value = 0.55, Type = 1}, -- SB M71
 
 --              === ROCKETS ===
                 { CLSID = "DIS_BRM1_90", attach_point_position = {-0.15, 0.02, 0.0}, arg_value = 0.5 }, -- Brimstone x3
                 { CLSID = "DIS_RKT_90_UG", arg_value = 0.5 }, -- M70B AP
---              { CLSID = "DIS_LAU68_MK5_DUAL_GDJ_II19_L", arg_value = 0.5 },
-                { CLSID = "DIS_LAU68_MK5_DUAL_GDJ_II19_R", arg_value = 0.5 },
+                { CLSID = "DIS_LAU68_MK5_DUAL_GDJ_II19_L", arg_value = 0.5 },
+--              { CLSID = "DIS_LAU68_MK5_DUAL_GDJ_II19_R", arg_value = 0.5 },
+
+--              === DROP TANKS ===
+                { CLSID = "DIS_TANK800", arg_value = 0.5 }, -- External drop tank 1100 litre
+                { CLSID = "DIS_TANK1100", arg_value = 0.5, --[[required = {{station = 3,loadout = {"DIS_TANK1100"}}}]] },
+                { CLSID = "DIS_TANK800_EMPTY", arg_value = 0.5, },
+                { CLSID = "DIS_TANK1100_EMPTY", arg_value = 0.5, },
 				
 --				=== OTHERS ===   
                 { CLSID = "DIS_WMD7", arg_value = 0.5 },
-                { CLSID = "DIS_SPJ_POD", arg_value = 0.55 },
-                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.7, },
+                { CLSID = "DIS_SPJ_POD", arg_value = 0.5 },
+                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.5, },
 
-                { CLSID = 'DIS_SMOKE_GENERATOR_R', arg_value = 0.3},
-                { CLSID = 'DIS_SMOKE_GENERATOR_G', arg_value = 0.3},
-                { CLSID = 'DIS_SMOKE_GENERATOR_B', arg_value = 0.3},
-                { CLSID = 'DIS_SMOKE_GENERATOR_W', arg_value = 0.3},
-                { CLSID = 'DIS_SMOKE_GENERATOR_Y', arg_value = 0.3},
-                { CLSID = 'DIS_SMOKE_GENERATOR_O', arg_value = 0.3},
+                { CLSID = 'DIS_SMOKE_GENERATOR_R', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_G', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_B', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_W', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_Y', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_O', arg_value = 0.1},
 
 --				=== Remove pylon ===		
-				{ CLSID = "<CLEAN>", arg_value = 1},
+				{ CLSID = "<CLEAN>", arg_value = 0},
             }
         ),
-        -- RIGHT OUTER PYLON --> STATION 6
+
 		pylon(6, 0, 0, 0, 0,
             {
                 arg = 313,
-                arg_value = 0,
+                arg_value = 0.5,
                 DisplayName = "6",
                 use_full_connector_position = true,
                 connector = "Pylon6",
             },
             {
 --				=== INFRARED AIR TO AIR MISSILES ===
-                { CLSID = "DIS_PL-5EII", attach_point_position = {0.30, -0.14, 0.0}, arg_increment = 0.0 },
+                { CLSID = "DIS_PL-5EII", attach_point_position = {0.20, -0.16, 0.0}, arg_value = 0.1 },
 
 --				=== BVR AIR TO AIR MISSILES ===
---				{ CLSID = "DIS_PL-12", attach_point_position = {0.30, -0.13, 0.0}, arg_increment = 0.0},   -- Meteor x1
-                { CLSID = "DIS_SD-10", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.0}, -- AIM-120C-7 x1
-                { CLSID = "DIS_SD-10_DUAL_L", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.75}, -- AIM-120C-7 x2
-                { CLSID = "DIS_SD-10_DUAL_R", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.75}, -- AIM-120C-7 x3
+--				{ CLSID = "DIS_PL-12", attach_point_position = {0.30, -0.13, 0.0}, arg_increment = 0.1},   -- Meteor x1
+                
+				{ CLSID = "DIS_SD-10", attach_point_position = {0.0, -0.30, -0.00}, arg_value = 0.2}, -- AIM-120C-7 x1
+                { CLSID = "DIS_SD-10_DUAL_L", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.5}, -- AIM-120C-7 x2
+                { CLSID = "DIS_SD-10_DUAL_R", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.5}, -- AIM-120C-7 x3
 				
 --				=== AIR TO GROUND MISSILES ===
-                { CLSID = "DIS_C-701T", attach_point_position = {0.37, -0.3, 0.0}, arg_value = 0.1}, -- AGM-65K TV
-				{ CLSID = "DIS_C-701IR", attach_point_position = {0.37, -0.3, 0.0}, arg_value = 0.1}, -- AGM-65G IR
-                { CLSID = "DIS_CM-400AKG", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1}, -- TESTING!
-                { CLSID = "DIS_C-802AK", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1}, -- Rb15F Mk4 Antiship missiles
-                { CLSID = 'DIS_CM-802AKG', attach_point_position = {0.0, 0.25, 0.0}, arg_value = 0.9, Type = 1},	--KEPD 350 
-                { CLSID = "DIS_LD-10", attach_point_position ={ -0.25, -0.25, 0.0}, arg_value = 0.0, Type = 1}, -- MAR-1 Anti radiation missiles x1
-                { CLSID = "DIS_LD-10_DUAL_R", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.75}, -- MAR-1 Anti radiation missiles x1
-                --{ CLSID = "DIS_LD-10_DUAL_L", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.75}, -- MAR-1 Anti radiation missiles x2	
+                { CLSID = "DIS_C-701T", attach_point_position = {0.34, -0.34, 0.0}, arg_value = 0.1}, -- AGM-65K TV
+				{ CLSID = "DIS_C-701IR", attach_point_position = {0.34, -0.34, 0.0}, arg_value = 0.1}, -- AGM-65G IR
+                
+				{ CLSID = "DIS_CM-400AKG", attach_point_position ={  0.5, -0.24, 0.0}, arg_value = 0.3, Type = 1}, -- GBU-24B/B
+                { CLSID = "DIS_C-802AK", attach_point_position ={ 0.10, -0.27, 0.0}, arg_value = 0.3, Type = 1}, -- RB15F Mk4 Antiship missiles
+                { CLSID = 'DIS_CM-802AKG', attach_point_position = {0.05, 0.0, 0.0}, arg_value = 0.3, Type = 1}, -- KEPD 350 
+                
+				{ CLSID = "DIS_LD-10", attach_point_position ={ -0.25, -0.30, 0.0}, arg_value = 0.2, Type = 1}, -- MAR-1 Anti radiation missiles x1
+                --{ CLSID = "DIS_LD-10_DUAL_R", attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.5}, -- MAR-1 Anti radiation missiles x1
+                { CLSID = "DIS_LD-10_DUAL_L",  attach_point_position = {0.0, -0.20, 0.0}, arg_value = 0.5}, -- MAR-1 Anti radiation missiles x2	
+        
 					
 --			    === GUIDED BOMBS ===
-                { CLSID = "DIS_GBU_10", arg_value = 0.69 }, -- GBU-10
+                { CLSID = "DIS_GBU_10", attach_point_position ={ 0.55, -0.26, 0.0} , arg_value = 0.3 }, -- GBU-10
+				
+				{ CLSID = "DIS_GBU_16", attach_point_position ={ 0.45, -0.22, 0.0} , arg_value = 0.3 }, -- GBU-16
 
-				{ CLSID = "DIS_GBU_12", arg_value = 0.69 }, -- GBU-12
-				{ CLSID = "DIS_GBU_12_DUAL", arg_value = 0.69, Type = 1 }, -- GBU-12 x 2
-                { CLSID = "DIS_GBU_12_DUAL_GDJ_II19_L", arg_value = 0.69, Type = 1 }, -- GBU-12 x2
---              { CLSID = "DIS_GBU_12_DUAL_GDJ_II19_R", arg_value = 0.69, Type = 1 }, -- GBU-12 x3
-                
-                { CLSID = "DIS_GBU_16", arg_value = 0.69 }, -- GBU-16
+				{ CLSID = "DIS_GBU_12", attach_point_position ={ 0.42, -0.15, 0.0} , arg_value = 0.3 }, -- GBU-12
+				{ CLSID = "DIS_GBU_12_DUAL", arg_value = 0.5, Type = 1 }, -- GBU-12 x 2
+                { CLSID = "DIS_GBU_12_DUAL_GDJ_II19_L", arg_value = 0.5, Type = 1 }, -- GBU-12 x2
+--              { CLSID = "DIS_GBU_12_DUAL_GDJ_II19_R", arg_value = 0.5, Type = 1 }, -- GBU-12 x3
 				               
-                { CLSID = "DIS_GB6", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1},-- AGM154-A
-                { CLSID = "DIS_GB6_HE", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1}, -- AGM154-B
-                { CLSID = "DIS_GB6_TSP", attach_point_position ={ -0.38, -0.27, 0.0}, arg_value = 0.9, Type = 1},-- AGM154-C		
+                { CLSID = "DIS_GB6", attach_point_position ={ 0.17, -0.27, 0.0}, arg_value = 0.3, Type = 1},-- AGM154-A
+                { CLSID = "DIS_GB6_HE", attach_point_position ={ 0.17, -0.27, 0.0}, arg_value = 0.3, Type = 1}, -- AGM154-B
+                { CLSID = "DIS_GB6_TSP", attach_point_position ={ 0.0, -0.26, 0.0}, arg_value = 0.3, Type = 1},-- DWS39/BK90		
 
-                { CLSID = "DIS_LS_6_100", arg_value = 0.5 },-- GBU-31 BLU-109
-                { CLSID = "DIS_LS_6_100_DUAL_L", arg_value = 0.5, Type = 1 },-- WIP
---              { CLSID = "DIS_LS_6_100_DUAL_R", arg_value = 0.5, Type = 1 },-- WIP
+                { CLSID = "DIS_LS_6_100", attach_point_position ={ 0.13, -0.15, 0.0} , arg_value = 0.3 }, -- GBU-54 x1
+                { CLSID = "DIS_LS_6_100_DUAL_L", attach_point_position ={ 0, 0, 0} , arg_value = 0.5 }, -- GBU-54 x2
+--              { CLSID = "DIS_LS_6_100_DUAL_R", arg_value = 0.5, Type = 1 }, -- GBU-54 x2
 
-                { CLSID = "DIS_LS_6_250", arg_value = 0.5, Type = 1 },-- GBU-39 SDBx2
- 				{ CLSID = "DIS_LS_6_250_DUAL_L", arg_value = 0.5, Type = 1 },-- GBU-39 SDBx4
---              { CLSID = "DIS_LS_6_250_DUAL_R", arg_value = 0.5, Type = 1 },-- WIP
+                { CLSID = "DIS_LS_6_250", attach_point_position ={ 0.03, 0.0, 0.0} , arg_value = 0.5 }, -- SPEAR-3 x1
+ 				{ CLSID = "DIS_LS_6_250_DUAL_L", arg_value = 0.5, Type = 1 }, -- SPEAR-3 x2
+--              { CLSID = "DIS_LS_6_250_DUAL_R", arg_value = 0.5, Type = 1 }, -- SPEAR-3 x2
 
-                { CLSID = "DIS_LS_6_500", arg_increment = 0.5, Type = 1}, -- DWS39/BK90	
+                { CLSID = "DIS_LS_6_500", attach_point_position ={0.0, 0.0, 0.0}, arg_value = 0.5, Type = 1}, -- GBU-39 SDB
 								
 --				=== UNGUIDED BOMBS ===
-				{ CLSID = "DIS_MK_20", arg_increment = 0.5, Type = 1}, -- Mk-20 Rockeye (can we make this the M71 LD)
-                { CLSID = "DIS_MK_20_DUAL_GDJ_II19_L", arg_increment = 0.5, Type = 1}, -- Mk-20 Rockeye x2 gjd-ii19
---              { CLSID = "DIS_MK_20_DUAL_GDJ_II19_R", arg_increment = 0.5, Type = 1}, -- Mk-20 Rockeye x2 gjd-ii19
+				{ CLSID = "DIS_MK_20", attach_point_position ={ 0.20, -0.20, 0.0} , arg_value = 0.3, Type = 1}, -- Mk-20 Rockeye (can we make this the M71 LD)
+                { CLSID = "DIS_MK_20_DUAL_GDJ_II19_L", arg_value = 0.5, Type = 1}, -- Mk-20 Rockeye x2 gjd-ii19
+--              { CLSID = "DIS_MK_20_DUAL_GDJ_II19_R", arg_value = 0.5, Type = 1}, -- Mk-20 Rockeye x2 gjd-ii19
 
-                { CLSID = "{Mk82SNAKEYE}", arg_increment = 0.5, Type = 1 }, -- Mk-82S
-                { CLSID = "DIS_MK_82S_DUAL_GDJ_II19_L", arg_increment = 0.5, Type = 1}, -- Mk-82 Snakeye x2 gjd-ii19
---              { CLSID = "DIS_MK_82S_DUAL_GDJ_II19_R", arg_increment = 0.5, Type = 1}, -- Mk-82 Snakeye x2 gjd-ii19
+                { CLSID = "{Mk82SNAKEYE}", attach_point_position ={ 0.20, -0.15, 0.0} , arg_value = 0.3, Type = 1 }, -- Mk-82S
+                { CLSID = "DIS_MK_82S_DUAL_GDJ_II19_L", arg_value = 0.5, Type = 1}, -- Mk-82 Snakeye x2 gjd-ii19
+--              { CLSID = "DIS_MK_82S_DUAL_GDJ_II19_R", arg_value = 0.5, Type = 1}, -- Mk-82 Snakeye x2 gjd-ii19
 
-                { CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}", arg_increment = 0.5, Type = 1}, -- Mk-82
-                --{ CLSID = "{BRU33_2X_MK-82}", arg_increment = 0.5, Type = 1}, -- Mk-82 x 2
-                { CLSID = "DIS_MK_82_DUAL_GDJ_II19_L", arg_increment = 0.5, Type = 1}, -- Mk-82 x2 gjd-ii19
---              { CLSID = "DIS_MK_82_DUAL_GDJ_II19_R", arg_increment = 0.5, Type = 1}, -- Mk-82 x2 gjd-ii19
+                { CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}", attach_point_position ={ 0.20, 0.0, 0.0} , arg_value = 0.3, Type = 1}, -- Mk-82
+                --{ CLSID = "{BRU33_2X_MK-82}", arg_value = 0.5, Type = 1}, -- Mk-82 x 2
+                { CLSID = "DIS_MK_82_DUAL_GDJ_II19_L", arg_value = 0.5, Type = 1}, -- Mk-82 x2 gjd-ii19
+--              { CLSID = "DIS_MK_82_DUAL_GDJ_II19_R", arg_value = 0.5, Type = 1}, -- Mk-82 x2 gjd-ii19
 
-                { CLSID = "{7A44FF09-527C-4B7E-B42B-3F111CFE50FB}", arg_increment = 0.5, Type = 1}, -- Mk-83
+                { CLSID = "{7A44FF09-527C-4B7E-B42B-3F111CFE50FB}", attach_point_position ={ 0.20, 0.0, 0.0} , arg_value = 0.3, Type = 1}, -- Mk-83
 				
-				{ CLSID = "DIS_TYPE200", arg_increment = 0.5, attach_point_position ={ -1.0, -0.02, 0.0}, Type = 1}, -- SB M71
-				{ CLSID = "DIS_TYPE200_DUAL_L", arg_increment = 0.5, Type = 1}, -- SB M71
---				{ CLSID = "DIS_TYPE200_DUAL_R", arg_increment = 0.5, Type = 1}, -- SB M71
+				{ CLSID = "DIS_TYPE200", attach_point_position ={ 0.0, -0.02, 0.0},  arg_value = 0.5, Type = 1}, -- SB M71
+				{ CLSID = "DIS_TYPE200_DUAL_L", arg_value = 0.5, Type = 1}, -- SB M71
+--				{ CLSID = "DIS_TYPE200_DUAL_R", arg_value = 0.55, Type = 1}, -- SB M71
 
 --              === ROCKETS ===
                 { CLSID = "DIS_BRM1_90", attach_point_position = {-0.15, 0.02, 0.0}, arg_value = 0.5 }, -- Brimstone x3
                 { CLSID = "DIS_RKT_90_UG", arg_value = 0.5 }, -- M70B AP
---              { CLSID = "DIS_LAU68_MK5_DUAL_GDJ_II19_L", arg_value = 0.5 },
-                { CLSID = "DIS_LAU68_MK5_DUAL_GDJ_II19_R", arg_value = 0.5 },
+                { CLSID = "DIS_LAU68_MK5_DUAL_GDJ_II19_L", arg_value = 0.5 },
+--              { CLSID = "DIS_LAU68_MK5_DUAL_GDJ_II19_R", arg_value = 0.5 },
+
+--              === DROP TANKS ===
+                { CLSID = "DIS_TANK800", arg_value = 0.5 }, -- External drop tank 1100 litre
+                { CLSID = "DIS_TANK1100", arg_value = 0.5, --[[required = {{station = 3,loadout = {"DIS_TANK1100"}}}]] },
+                { CLSID = "DIS_TANK800_EMPTY", arg_value = 0.5, },
+                { CLSID = "DIS_TANK1100_EMPTY", arg_value = 0.5, },
 				
 --				=== OTHERS ===   
-                { CLSID = "DIS_WMD7", arg_value = 0.5 },
-                { CLSID = "DIS_SPJ_POD", arg_value = 0.55 },
-                { CLSID = "DIS_AKG_DLPOD", arg_value = 0.7, },
+                { CLSID = "DIS_WMD7", attach_point_position ={ 0.07, -0.23, 0.0}, arg_value = 0.5 },
+                { CLSID = "DIS_SPJ_POD", attach_point_position ={ 0.20, 0.0, 0.0},  arg_value = 0.5 },
+                { CLSID = "DIS_AKG_DLPOD", attach_point_position ={ 0.20, -0.23, 0.0}, arg_value = 0.5, },
 
-                { CLSID = 'DIS_SMOKE_GENERATOR_R', arg_value = 0.3},
-                { CLSID = 'DIS_SMOKE_GENERATOR_G', arg_value = 0.3},
-                { CLSID = 'DIS_SMOKE_GENERATOR_B', arg_value = 0.3},
-                { CLSID = 'DIS_SMOKE_GENERATOR_W', arg_value = 0.3},
-                { CLSID = 'DIS_SMOKE_GENERATOR_Y', arg_value = 0.3},
-                { CLSID = 'DIS_SMOKE_GENERATOR_O', arg_value = 0.3},
+                { CLSID = 'DIS_SMOKE_GENERATOR_R', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_G', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_B', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_W', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_Y', arg_value = 0.1},
+                { CLSID = 'DIS_SMOKE_GENERATOR_O', arg_value = 0.1},
 
 --				=== Remove pylon ===		
-				{ CLSID = "<CLEAN>", arg_value = 1},
+				{ CLSID = "<CLEAN>", arg_value = 0},
             }
         ),
-        -- RIGHT WING TIP --> STATION 7
+
 		pylon(7, 0, 0, 0, 0,
             {
                 DisplayName = "7",
@@ -882,7 +1165,7 @@ JF_39 = {
             },
             {
 --				=== INFRARED AIR TO AIR MISSILES ===
-                { CLSID = "DIS_PL-5EII", attach_point_position = {0.0, 0.0, 0.0}, arg_increment = 0.0 },
+                { CLSID = "DIS_PL-5EII", attach_point_position = {0.0, 0.0, 0.0}, arg_value = 0.0 },
 					
 --				==== SMOKE PODS ===
                 { CLSID = "{A4BCC903-06C8-47bb-9937-A30FEDB4E741}" , arg_value = -0.1},
@@ -893,18 +1176,19 @@ JF_39 = {
 				{ CLSID = "{A4BCC903-06C8-47bb-9937-A30FEDB4E746}" ,arg_value = -0.1},
             }
         ),
+
 		-- RECON PYLON --> LDP
         pylon(8, 0, 0, 0, 0,
             {
                 arg = 314,
-                arg_value = 0,
+                arg_value = 0.5,
                 DisplayName = "LDP",
                 use_full_connector_position = true,
                 connector = "LDP",
             },
             {
 --				=== Pods ===
-                { CLSID = "DIS_WMD7", arg_value = 0.5 },
+                { CLSID = "DIS_WMD7", attach_point_position ={ 0.07, -0.23, 0.0}, arg_value = 0.5 },
 
 --				=== Remove pylon ===		
 				{ CLSID = "<CLEAN>", arg_value = 1},
@@ -961,16 +1245,16 @@ JF_39 = {
 					{ 0.850,	 0.0370,	0.065,	0.0348,		 0.16,	 4.47,	 25.000,	 1.210 },
 					{ 0.900,	 0.0370,	0.055,	0.0370,		 0.16,	 4.45,	 25.000,	 1.220 },
 																							
-					{ 1.000,	 0.0370,	0.053,	0.0400, 	 0.16,	 4.10, 	 25.000,	 9.300 },
-					{ 1.050,	 0.0370,	0.052,	0.0428,		 0.16,	 4.07,	 25.000,	 9.300 },
-					{ 1.100,	 0.0370,	0.050, 	0.0459, 	 0.16,	 4.05,	 25.000,	 9.300 },
-					{ 1.200,	 0.0370,	0.049, 	0.0500, 	 0.15,	 4.00, 	 25.000,	 9.300 },
-					{ 1.300,	 0.0370,	0.049, 	0.0529, 	 0.15,	 3.97,	 25.000,	 9.300 },
-					{ 1.500,	 0.0372,	0.049, 	0.0569, 	 0.14,	 3.84,	 25.000,	 9.300 },
-					{ 1.700,	 0.0375,	0.048, 	0.0600, 	 0.13,	 3.76,	 25.000,	 9.300 },
-					{ 1.850,	 0.0377,	0.048, 	0.0629, 	 0.12,	 3.69,	 25.000,	 9.300 },
-					{ 2.000,	 0.0384,	0.048, 	0.0659, 	 0.12,	 3.56,	 25.000,	 9.300 },
-					{ 2.200,	 0.0390,	0.048, 	0.0689, 	 0.12, 	 3.45,	 25.000,	 9.300 }, 
+					{ 1.000,	 0.0370,	0.053,	0.0400, 	 0.16,	 4.10, 	 25.000,	 1.300 },
+					{ 1.050,	 0.0370,	0.052,	0.0428,		 0.16,	 4.07,	 25.000,	 1.300 },
+					{ 1.100,	 0.0370,	0.050, 	0.0459, 	 0.16,	 4.05,	 25.000,	 1.300 },
+					{ 1.200,	 0.0370,	0.049, 	0.0500, 	 0.15,	 4.00, 	 25.000,	 1.300 },
+					{ 1.300,	 0.0370,	0.049, 	0.0529, 	 0.15,	 3.97,	 25.000,	 1.300 },
+					{ 1.500,	 0.0372,	0.049, 	0.0569, 	 0.14,	 3.84,	 25.000,	 1.300 },
+					{ 1.700,	 0.0375,	0.048, 	0.0600, 	 0.13,	 3.76,	 25.000,	 1.300 },
+					{ 1.850,	 0.0377,	0.048, 	0.0629, 	 0.12,	 3.69,	 25.000,	 1.300 },
+					{ 2.000,	 0.0384,	0.048, 	0.0659, 	 0.12,	 3.56,	 25.000,	 1.300 },
+					{ 2.200,	 0.0390,	0.048, 	0.0689, 	 0.12, 	 3.45,	 25.000,	 91.300 },
 																								
 					{ 2.400,	 0.3300,	0.090, 	1.149, 		 1.69,	 0.70,	 25.000,	 9.300 },
 					{ 2.500,	 0.6900,	0.040, 	1.35,		 1.10,	 0.70,	 25.000,	 9.300 },
@@ -1148,8 +1432,8 @@ JF_39 = {
         [2] = "JF-17-oblomok-wing-R",
         [3] = "JF-17-oblomok-L-part",
         [4] = "JF-17-oblomok-R-part",
-        -- [5] = "JF-17-oblomok-tail",
-        -- [6] = "JF-17-oblomok-Rudder",
+        [5] = "JF-17-oblomok-tail",
+        [6] = "JF-17-oblomok-Rudder",
     },
 ----------------------------------------------------------------------------------------
 -- Failures
@@ -2228,5 +2512,5 @@ JF_39 = {
 }
 add_aircraft(JF_39)
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.3.0                       --
+--                    File by whisky.actual@gmail.com - v.1.4.0                       --
 ----------------------------------------------------------------------------------------

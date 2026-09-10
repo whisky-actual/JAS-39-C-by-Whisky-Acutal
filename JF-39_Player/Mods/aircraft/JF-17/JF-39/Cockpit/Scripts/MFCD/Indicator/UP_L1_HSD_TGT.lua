@@ -20,35 +20,23 @@ for idx = 0, 1 do
     tgt_sym_tex.additive_alpha  = true
     AddToUpper(tgt_sym_tex)
     tgt_sym_tex = nil
+	
 
     -- DLZ max/min
-    tgt_dlz_max                 = CreateElement "ceSimpleLineObject"
-    tgt_dlz_max.name            = "tgt_dlz_max" .. tostring(idx)
-    tgt_dlz_max.material        = MFCD_MATERIAL_WHITE
-    tgt_dlz_max.width           = 2/600
-    tgt_dlz_max.init_pos        = {0, FWD_COMP_BIAS, 0}
-    tgt_dlz_max.level           = HSD_NAV_LEVEL + 2 + HSD_NAV_LEVEL_SHIFT
-    tgt_dlz_max.h_clip_relation = h_clip_relations.COMPARE
-    tgt_dlz_max.controllers     = {{"tgt_update_tgt_dlz_line", 0, idx}}
-    tgt_dlz_max.isdraw          = false
-    tgt_dlz_max.use_mipfilter   = true
-    tgt_dlz_max.additive_alpha  = true
-    AddToUpper(tgt_dlz_max)
-    tgt_dlz_max = nil
+    tgt_cca_max                 = CreateElement "ceSimpleLineObject"
+    tgt_cca_max.name            = "tgt_cca" .. tostring(idx)
+    tgt_cca_max.material        = MFCD_MATERIAL_WHITE
+    tgt_cca_max.width           = 2/600
+    tgt_cca_max.init_pos        = {0, FWD_COMP_BIAS, 0}
+    tgt_cca_max.level           = HSD_NAV_LEVEL + 2 + HSD_NAV_LEVEL_SHIFT
+    tgt_cca_max.h_clip_relation = h_clip_relations.COMPARE
+    tgt_cca_max.controllers     = {{"tgt_update_tgt_dlz_line", 0, idx}}
+    tgt_cca_max.isdraw          = false
+    tgt_cca_max.use_mipfilter   = true
+    tgt_cca_max.additive_alpha  = true
+    AddToUpper(tgt_cca_max)
+    tgt_cca_max = nil
 
-    tgt_dlz_min                 = CreateElement "ceSimpleLineObject"
-    tgt_dlz_min.name            = "tgt_dlz_min" .. tostring(idx)
-    tgt_dlz_min.material        = MFCD_MATERIAL_WHITE
-    tgt_dlz_min.width           = 2/600
-    tgt_dlz_min.init_pos        = {0, FWD_COMP_BIAS, 0}
-    tgt_dlz_min.level           = HSD_NAV_LEVEL + 2 + HSD_NAV_LEVEL_SHIFT
-    tgt_dlz_min.h_clip_relation = h_clip_relations.COMPARE
-    tgt_dlz_min.controllers     = {{"tgt_update_tgt_dlz_line", 1, idx}}
-    tgt_dlz_min.isdraw          = false
-    tgt_dlz_min.use_mipfilter   = true
-    tgt_dlz_min.additive_alpha  = true
-    AddToUpper(tgt_dlz_min)
-    tgt_dlz_min = nil
 
     -- DLZ AZ
     tgt_dlz_imp_az                 = CreateElement "ceSimpleLineObject"
@@ -116,12 +104,29 @@ for idx = 0, 1 do
     AddToUpper(tgt_line)
     tgt_line = nil
 
+    -- 
+    skr_sym_tex                 = CreateElement "ceTexPoly"
+    skr_sym_tex.name            = "skr_sym_node" .. tostring(idx)
+    skr_sym_tex.material        = MFCD_TEX_IND3_BL
+    skr_sym_tex.init_pos        = {0, FWD_COMP_BIAS, 0}
+    skr_sym_tex.tex_coords      = MFCD_tex_coord(888, 0, 148, 148, TEX_SIZE_X, TEX_SIZE_Y)
+    skr_sym_tex.vertices        = {{ hh, hh}, { hh,-hh}, {-hh,-hh}, {-hh, hh},}
+    skr_sym_tex.indices         = DEF_BOX_INDICES
+    skr_sym_tex.level           = HSD_NAV_LEVEL + 2 + HSD_NAV_LEVEL_SHIFT
+    skr_sym_tex.h_clip_relation = h_clip_relations.COMPARE
+    skr_sym_tex.controllers     = {{"tgt_update_tgt_oap", 2, idx}}
+    skr_sym_tex.isdraw          = false
+    skr_sym_tex.use_mipfilter   = true
+    skr_sym_tex.additive_alpha  = true
+    AddToUpper(skr_sym_tex)
+    skr_sym_tex = nil
+	
     ---- OAP
     oap_sym_tex                 = CreateElement "ceTexPoly"
     oap_sym_tex.name            = "oap_sym_node" .. tostring(idx)
     oap_sym_tex.material        = MFCD_TEX_IND3_BL
     oap_sym_tex.init_pos        = {0, FWD_COMP_BIAS, 0}
-    oap_sym_tex.tex_coords      = MFCD_tex_coord(296, 444, 148, 148, TEX_SIZE_X, TEX_SIZE_Y)
+    oap_sym_tex.tex_coords      = MFCD_tex_coord(296, 740, 148, 148, TEX_SIZE_X, TEX_SIZE_Y)
     oap_sym_tex.vertices        = {{ hh, hh}, { hh,-hh}, {-hh,-hh}, {-hh, hh},}
     oap_sym_tex.indices         = DEF_BOX_INDICES
     oap_sym_tex.level           = HSD_NAV_LEVEL + 2 + HSD_NAV_LEVEL_SHIFT

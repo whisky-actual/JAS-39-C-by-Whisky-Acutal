@@ -5,6 +5,7 @@ cdata =
     default   = _('Default_liv'),
     english   = _('English_liv'),
 
+    MFCD_BASE    = _('MFCD Base Transparency'),
     MUSIC_NUM    = _('MUSIC NUMBER'),
     ICEONCAKE    = _('Icing On the Cake'),
     TESTINGCHG   = _('Testing Feature'),
@@ -15,7 +16,7 @@ cdata =
     ANTZOOMINV_TIP = _('Throttle T6: opposite axis direction between radar antenna and camera zoom.'),
 
     CPTEDM       = _('Cockpit Model'),
-    HIDDENSTICK  = _('Hide Pilot Body'),
+    HIDDENSTICK  = _('Hide Pilot Model'),
     KYBD_PITCH   = _('KYBD Pitch Control'),
     VOICE_LOCALE = _('Voice Locale'),
     DMAP_TYPE    = _('DMAP Type'),
@@ -54,3 +55,6 @@ cdata =
     txt_RDR_ELEV       = _('Radar Elev Slew Rate'),
 
 }
+----------------------------------------------------------------------------------------
+--                    File by whisky.actual@gmail.com - v.1.4.0                       --
+----------------------------------------------------------------------------------------

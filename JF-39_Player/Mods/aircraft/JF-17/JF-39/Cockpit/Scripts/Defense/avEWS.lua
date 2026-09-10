@@ -44,13 +44,13 @@ RWR_detection_ceoff = 0.95
 
 
 -- customized rwr symbol
-sfile = LockOn_Options.script_path.."/../../Doc/customerRWR.lua"
+sfile = LockOn_Options.script_path.."/../../Customization/ew/Custom_RWR.lua"
 fattr = lfs.attributes(sfile)
 found_file = false
 if fattr and fattr.mode == 'file' then
     found_file = true
 else
-    sfile = LockOn_Options.script_path.."/Defense/customerRWR.lua"
+    sfile = LockOn_Options.script_path.."/Defense/Custom_RWR.lua"
     fattr = lfs.attributes(sfile)
     if fattr and fattr.mode == 'file' then
         found_file = true

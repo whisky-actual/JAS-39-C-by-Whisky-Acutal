@@ -1,0 +1,3239 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0 trunk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-02 18:36+0400\n"
+"PO-Revision-Date: 2021-01-16 17:34+0400\n"
+"Last-Translator: uboats\n"
+"Language-Team: TODO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: fr\n"
+"X-Generator: Poedit 2.4.2\n"
+
+msgid "Oxygen Tube Connector"
+msgstr "Connecteur du tube D'oxygene"
+
+msgid "Throttle Emergency Button"
+msgstr ""
+
+msgid "Emergency Landing Gear Handle"
+msgstr "Poignée de déploiement de de train d'atterissage d'urgence"
+
+msgid "AAR Switch"
+msgstr "Interrupteur Ravitaillement en vol"
+
+msgid "Anti-Collision Light Knob Selector"
+msgstr "Bouton Feux Anti-Collision"
+
+msgid "Start Mode Selector - START/ENG COLD/STARTER COLD"
+msgstr "Sélecteur de mode de démarrage - DEMARRAGE / MOT A FROID/ DEMARREUR A FROID"
+
+msgid "Active Fuel Cut-off Valve"
+msgstr "Vanne de coupure de carburant"
+
+msgid "G-Suit Connector"
+msgstr "Connecteur de la Combinaison Facteur de Charge (G-suit)"
+
+msgid "Landing Gear Lever"
+msgstr "Levier de train d'atterrissage"
+
+msgid "Radio Mode Selector"
+msgstr "Sélecteur de mode radio"
+
+msgid "Light Switch - Land/Off/Taxi"
+msgstr "Interrupteur d'éclairage - Sol / Arrêt / Taxi"
+
+msgid "Throttle Friction Handle"
+msgstr ""
+
+msgid "Landing Gear Override Button"
+msgstr "Bouton outre-passee commande du train d'atterrissage"
+
+msgid "Flood Light Direction"
+msgstr "Direction des projecteurs de cabines"
+
+msgid "Left MFCD Power"
+msgstr ""
+
+msgid "Master Arm Switch"
+msgstr "Interrupteur Master ARM"
+
+msgid "Oxygen Indicator Brightness Knob"
+msgstr ""
+
+msgid "Brightness Knob"
+msgstr ""
+
+msgid "Landing Gear Override Button Cover"
+msgstr ""
+
+msgid "Air Temp Knob Selector"
+msgstr "Bouton de sélection de la température de la cabine"
+
+msgid "CSS Handle"
+msgstr ""
+
+msgid "Eject Seat Safe/Arm Handle"
+msgstr "Poignée de siege ejectable Desactiver/Arme"
+
+msgid "Direct Mode Switch"
+msgstr ""
+
+msgid "Backup SAIU Knob Selector"
+msgstr ""
+
+msgid "Ejection Seat Zeroizer Function"
+msgstr ""
+
+msgid "Eject Seat Emergency O2"
+msgstr ""
+
+msgid "Squelch OFF/SQL/ACKN"
+msgstr ""
+
+msgid "Air Start Button"
+msgstr "Bouton de démarrage en vol"
+
+msgid "UFCP Button N/A"
+msgstr ""
+
+msgid "Mirror Left"
+msgstr "Miroir Gauche"
+
+msgid "Console Light Knob"
+msgstr ""
+
+msgid "Afterburner Switch"
+msgstr "Interrupteur de post-combustion"
+
+msgid "Right MFCD Power"
+msgstr ""
+
+msgid "Canopy Seal Handle"
+msgstr "Poignée de pressurisation de la canopée"
+
+msgid "Ground Jettison Switch"
+msgstr "Interrupteur de largage au sol"
+
+msgid "Radio Volume Knob"
+msgstr "Volume Radio"
+
+msgid "Brake Test"
+msgstr "Test de Frein"
+
+msgid "COM1 Volume Knob"
+msgstr "COM1 Volume"
+
+msgid "HUD Backup Reticle Knob"
+msgstr ""
+
+msgid "Zeroizer Button Cover"
+msgstr ""
+
+msgid "Eject Seat Firing Handle Safety Pin"
+msgstr ""
+
+msgid "Center MFCD Power"
+msgstr ""
+
+msgid "Warning Panel Test Button"
+msgstr ""
+
+msgid "HUD Symbology Reject Switch"
+msgstr ""
+
+msgid "HUD Contrast Knob"
+msgstr ""
+
+msgid "Warning Panel Day/Night Switch"
+msgstr ""
+
+msgid "BARO Altitude Setting Knob"
+msgstr ""
+
+msgid "Formation Light Knob Selector"
+msgstr ""
+
+msgid "Air Start Button Cover"
+msgstr "Couvercle du Bouton de démarrage en vol"
+
+msgid "AAR Light Brightness Knob"
+msgstr ""
+
+msgid "Engine Control Switch"
+msgstr ""
+
+msgid "HUD/MFCD Day/Night Switch"
+msgstr ""
+
+msgid "Fuel Pump Switch"
+msgstr "Commutateur de pompe à carburant"
+
+msgid "+/,/- Switch"
+msgstr ""
+
+msgid "Eject Seat Position Adjust Switch"
+msgstr ""
+
+msgid "Warning Panel Brightness Knob"
+msgstr ""
+
+msgid "INS Mode Knob Selector"
+msgstr "Bouton de selection de mode INS"
+
+msgid "BIT Button"
+msgstr ""
+
+msgid "A/P Disengage"
+msgstr "Désactiver Autopilot"
+
+msgid "HUD Brightness Knob"
+msgstr "Contrôle du Gain VTH (Vision Tête haute)"
+
+msgid "Active Fuel Cut-off Valve Cover"
+msgstr ""
+
+msgid "ECS Mode Knob Selector"
+msgstr ""
+
+msgid "Mirror Center"
+msgstr ""
+
+msgid "Emergency Hydraulic Pump Switch"
+msgstr "Commutateur de pompe hydraulique d'urgence"
+
+msgid "P.H. Test Switch"
+msgstr ""
+
+msgid "Navigation Light Switch - Bright/Off/Dim"
+msgstr ""
+
+msgid "Emergency Brake Handle"
+msgstr ""
+
+msgid "Landing Gear Indicator Light Knob"
+msgstr ""
+
+msgid "Deploy/Jettison Parachute"
+msgstr "Déployer / larguer le parachute"
+
+msgid "Inst. Light Knob"
+msgstr ""
+
+msgid "Flood Light Knob"
+msgstr ""
+
+msgid "Light Switch - Tow/Off/Anti-Collision"
+msgstr ""
+
+msgid "EFCS Switch"
+msgstr ""
+
+msgid "Feed Cut-off Valve"
+msgstr ""
+
+msgid "Stick Show/Hide"
+msgstr "Montrer/Cacher le manche"
+
+msgid "MSL Volume Knob"
+msgstr ""
+
+msgid "Record Switch"
+msgstr ""
+
+msgid "Mirror Right"
+msgstr ""
+
+msgid "AAR Light Switch"
+msgstr "Interrupteur d'éclairage de Ravitaillement en vol"
+
+msgid "Yaw/Roll CAS Switch"
+msgstr ""
+
+msgid "Flash Light"
+msgstr "Lampe de poche"
+
+msgid "Oxygen Supply Valve"
+msgstr "Valve d'alimentation d'oxygene"
+
+msgid "Flare Dispense Button Cover"
+msgstr "Couvercle du bouton de déploiement des Contres-Mesures"
+
+msgid "SHARS Switch"
+msgstr ""
+
+msgid "Flight Test Switch 2"
+msgstr ""
+
+msgid "TCN/ILS Volume Knob"
+msgstr ""
+
+msgid "UFCP Brightness Knob"
+msgstr ""
+
+msgid "Oxygen 100% O2"
+msgstr ""
+
+msgid "DTC Card Ejection"
+msgstr ""
+
+msgid "DTC Card Insertion"
+msgstr ""
+
+msgid "Feed Cut-off Valve Cover"
+msgstr ""
+
+msgid "AAP N/A"
+msgstr ""
+
+msgid "COM2 Volume Knob"
+msgstr ""
+
+msgid "Emergency Landing Gear Cover"
+msgstr ""
+
+msgid "Canopy Open/Close Handle"
+msgstr "Poignée d'ouverture / fermeture de la canopee"
+
+msgid "Canopy Manual Open/Close Crank"
+msgstr "Manivelle d'ouverture / fermeture manuelle de la canopee"
+
+msgid "Exterior Light Master Switch"
+msgstr "Interrupteur principal d'éclairage extérieur"
+
+msgid "Emergency Jettison Button Cover"
+msgstr "Couvercle de bouton de largage d'urgence"
+
+msgid "Yaw Trim Switch"
+msgstr ""
+
+msgid "Flight Test Switch 1"
+msgstr ""
+
+msgid "SEC EEC Switch"
+msgstr ""
+
+msgid "Anti-Surge Switch"
+msgstr ""
+
+msgid "Engine Mode Switch"
+msgstr "Interrupteur de modes Moteur"
+
+msgid "Radio Button 6/M"
+msgstr ""
+
+msgid "T5_Up: TDC Up"
+msgstr ""
+
+msgid "Right MFCD Brt -"
+msgstr ""
+
+msgid "HUD Symbology Reject Switch - NORM"
+msgstr ""
+
+msgid "INS Mode Knob Selector - FAST"
+msgstr ""
+
+msgid "Right MFCD D4"
+msgstr ""
+
+msgid "AAP NAV"
+msgstr ""
+
+msgid "Radio Mode Selector - TR"
+msgstr ""
+
+msgid "Console Light Knob - Inc (Step)"
+msgstr ""
+
+msgid "Squelch OFF/SQL/ACKN - OFF"
+msgstr ""
+
+msgid "QFE Setting Knob - Inc (Step)"
+msgstr ""
+
+msgid "Air Start Button - ON"
+msgstr ""
+
+msgid "Yaw Trim Switch - Left"
+msgstr ""
+
+msgid "Anti-Collision Light Knob Selector - 3"
+msgstr ""
+
+msgid "Fuel"
+msgstr "Carburant"
+
+msgid "AAP ACMI"
+msgstr "ENREGISTEUR de Données de vol"
+
+msgid "Landing Gear Indicator Light Test Button"
+msgstr ""
+
+msgid "Air Temp Knob Selector - COLD"
+msgstr ""
+
+msgid "S6_Right: Trim Roll Right"
+msgstr ""
+
+msgid "S4: Fire Main Gun"
+msgstr ""
+
+msgid "Center MFCD L5"
+msgstr ""
+
+msgid "BIT Button - Pushdown"
+msgstr ""
+
+msgid "UFCP Button R3"
+msgstr ""
+
+msgid "Formation Light Knob Selector - 3"
+msgstr ""
+
+msgid "Navigation Light Switch - Flash/Steady"
+msgstr ""
+
+msgid "T4_Press: IFF Interrogation Start/Stop"
+msgstr ""
+
+msgid "Digital Clock CHR"
+msgstr ""
+
+msgid "Backup SAIU - IR"
+msgstr ""
+
+msgid "Ground Start Button"
+msgstr ""
+
+msgid "Center MFCD U3"
+msgstr ""
+
+msgid "AAP SAIU"
+msgstr ""
+
+msgid "AAP SLNK"
+msgstr ""
+
+msgid "Auto Start"
+msgstr "Auto Démarrage"
+
+msgid "Center MFCD L6"
+msgstr ""
+
+msgid "Goggle Gain - Dec"
+msgstr ""
+
+msgid "Engine Mode Switch - CMBT"
+msgstr ""
+
+msgid "S8: Change Weapons"
+msgstr "S8: Selection de l'armement"
+
+msgid "S6_Left: Trim Roll Left"
+msgstr "S6_Gauche: Trim Roulis Gauche"
+
+msgid "T2_Backward: Countermeasures Dispense"
+msgstr "T2_Arriere: Largage des Contres-mesures"
+
+msgid "Emergency Jettison Button Cover - Open"
+msgstr ""
+
+msgid "Right MFCD U5"
+msgstr ""
+
+msgid "Fuel Pump Switch - ON/OFF"
+msgstr ""
+
+msgid "AAP CMBT"
+msgstr ""
+
+msgid "Air Temp Knob Selector - 43"
+msgstr ""
+
+msgid "Left MFCD R5"
+msgstr ""
+
+msgid "AAR Light Knob - Inc (Press and Hold)"
+msgstr ""
+
+msgid "Formation Light Knob Selector - 2"
+msgstr ""
+
+msgid "Radio Control Box"
+msgstr ""
+
+msgid "UFCP Button P.U"
+msgstr ""
+
+msgid "UFCP Button 0"
+msgstr ""
+
+msgid "Ext Lights"
+msgstr "Feux Extérieures"
+
+msgid "Engine Control Switch - ON"
+msgstr "Interrupteur de commande du moteur - MARCHE"
+
+msgid "Light Switch - Land/Off/Taxi - OFF"
+msgstr "Light Switch - OFF"
+
+msgid "Zeroizer Button"
+msgstr ""
+
+msgid "Center MFCD L1"
+msgstr ""
+
+msgid "AAP COM2"
+msgstr ""
+
+msgid "ACP COM2 Volume Knob Abs"
+msgstr ""
+
+msgid "Navigation Light Switch - Bright/Off/Dim - Dim/Off"
+msgstr "Navigation Light Switch - DIM/OFF"
+
+msgid "Center MFCD L4"
+msgstr ""
+
+msgid "Ground Jettison Switch - ON/OFF"
+msgstr ""
+
+msgid "Center MFCD L8"
+msgstr ""
+
+msgid "Right MFCD Cont +"
+msgstr ""
+
+msgid "UFCP Button TOT/5"
+msgstr ""
+
+msgid "Right MFCD L4"
+msgstr ""
+
+msgid "Laser Designator On/Off"
+msgstr "Laser de designation Allumé/Éteint"
+
+msgid "Emergency Jettison Button Cover - Close"
+msgstr ""
+
+msgid "Center MFCD Cont -"
+msgstr ""
+
+msgid "Left MFCD L6"
+msgstr ""
+
+msgid "Air Temp Knob Selector - HOT"
+msgstr ""
+
+msgid "Cpt Flood Light Knob Abs"
+msgstr ""
+
+msgid "Navigation Light Switch - Flash/Steady - Flash"
+msgstr ""
+
+msgid "ACP TCN/ILS Volume Knob Abs"
+msgstr ""
+
+msgid "AAR Light Switch - On"
+msgstr ""
+
+msgid "Master Arm Switch - SIM/OFF"
+msgstr ""
+
+msgid "AG1/AG2 Switch"
+msgstr "AG1/AG2 Interrupteur (Limiteur du facteur de Charges)"
+
+msgid "Left MFCD R4"
+msgstr ""
+
+msgid "Formation Light Knob Selector - OFF"
+msgstr ""
+
+msgid "Radio Button 0/PRE"
+msgstr ""
+
+msgid "AAP SPJ"
+msgstr ""
+
+msgid "Sensor (WMD7/TV) Up / T6: Radar Ant Elev Up"
+msgstr ""
+
+msgid "Center MFCD R4"
+msgstr ""
+
+msgid "Light Switch - Land/Off/Taxi - TAXI/OFF"
+msgstr "Light Switch - TAXI/OFF"
+
+msgid "Radio Button 3/+"
+msgstr ""
+
+msgid "ADC"
+msgstr ""
+
+msgid "Left MFCD R3"
+msgstr ""
+
+msgid "AAR Light Switch - On/Off"
+msgstr ""
+
+msgid "AAP RWR"
+msgstr ""
+
+msgid "Center MFCD Sym +"
+msgstr ""
+
+msgid "Sensor (WMD7/TV) Down / T6: Radar Ant Elev Down"
+msgstr ""
+
+msgid "T3_Down: Speed Brake"
+msgstr ""
+
+msgid "Center MFCD Cont +"
+msgstr ""
+
+msgid "Radio"
+msgstr ""
+
+msgid "Ground Jettison Switch - OFF"
+msgstr ""
+
+msgid "AA/AG Switch"
+msgstr "Interrupteur AA/AG (Limiteur de facteur de charges)"
+
+msgid "S1_Backward: Cycle MFCD Select - Left-Center-Right"
+msgstr ""
+
+msgid "T1: Forward (INTC) / Center (NAV)"
+msgstr ""
+
+msgid "Right MFCD D1"
+msgstr ""
+
+msgid "Backup SAIU - GUN"
+msgstr ""
+
+msgid "Direct Mode Switch - OFF"
+msgstr ""
+
+msgid "Wheel Brake Left On"
+msgstr ""
+
+msgid "Main AC Gen Switch"
+msgstr ""
+
+msgid "UFCP Button L3"
+msgstr ""
+
+msgid "UFCP"
+msgstr ""
+
+msgid "S6_Down: Trim Nose Up"
+msgstr ""
+
+msgid "Cpt Inst. Light Knob Abs"
+msgstr ""
+
+msgid "DC Gen Switch - Off"
+msgstr ""
+
+msgid "Left MFCD Brt +"
+msgstr ""
+
+msgid "Left MFCD U3"
+msgstr ""
+
+msgid "Right MFCD D5"
+msgstr ""
+
+msgid "Left MFCD U4"
+msgstr ""
+
+msgid "Center MFCD Sym -"
+msgstr ""
+
+msgid "Start Mode Selector - START/ENG COLD/STARTER COLD : START"
+msgstr "Start Mode Selector - START"
+
+msgid "Left MFCD Sym -"
+msgstr ""
+
+msgid "Radio Top/Bottom Antenna Switch - Off"
+msgstr ""
+
+msgid "Center MFCD R7"
+msgstr ""
+
+msgid "Battery Switch - On"
+msgstr ""
+
+msgid "Left MFCD R8"
+msgstr ""
+
+msgid "Radio Button ->/ENT"
+msgstr ""
+
+msgid "Flood Light Knob - Dec (Press and Hold)"
+msgstr ""
+
+msgid "ZCP"
+msgstr ""
+
+msgid "Backup SAIU Knob Selector - OFF"
+msgstr ""
+
+msgid "Ext AAR Light Brightness Knob Abs"
+msgstr ""
+
+msgid "AAP IRST"
+msgstr ""
+
+msgid "Flap Switch - Up/Down - UP"
+msgstr "Flap Switch - UP"
+
+msgid "S1_Press: DGFT Returns to Prev Master Mode/MFCDs Restore to Default Pages"
+msgstr ""
+
+msgid "Lights"
+msgstr ""
+
+msgid "Emergency Hydraulic Pump Switch - OFF"
+msgstr ""
+
+msgid "Right MFCD L7"
+msgstr ""
+
+msgid "DC Gen Switch - On"
+msgstr ""
+
+msgid "SEC EEC Switch - ON"
+msgstr ""
+
+msgid "Right MFCD D2"
+msgstr ""
+
+msgid "Right MFCD Sym +"
+msgstr ""
+
+msgid "Engine"
+msgstr "Moteur"
+
+msgid "Brake Park/Norm"
+msgstr "Frein Parking/Normal"
+
+msgid "Engine Mode Switch - TRG"
+msgstr ""
+
+msgid "Light Switch - Tow/Off/Anti-Collision - Off"
+msgstr ""
+
+msgid "Power Systems"
+msgstr ""
+
+msgid "S2_Right: INTC Change Azimth Range/DGFT HA"
+msgstr ""
+
+msgid "AAP OESP"
+msgstr ""
+
+msgid "T2_Forward: SPJ Standby/Jam"
+msgstr ""
+
+msgid "UFCP Button HNS"
+msgstr ""
+
+msgid "SEC EEC Switch - OFF"
+msgstr ""
+
+msgid "T2_Press: AG Manual Mode/DGFT Missile Designator Control"
+msgstr ""
+
+msgid "S1_Left: Cycle MFCD Select - Left Direction"
+msgstr ""
+
+msgid "Radio Button 2/-"
+msgstr ""
+
+msgid "Center MFCD R3"
+msgstr ""
+
+msgid "Radio Mode Selector - SET"
+msgstr ""
+
+msgid "Flap Switch - Up/Down"
+msgstr ""
+
+msgid "Inst. Light Knob - Dec (Press and Hold)"
+msgstr ""
+
+msgid "QFE Setting Knob - Inc (Press and Hold)"
+msgstr ""
+
+msgid "ECS Mode Knob Selector - RAM"
+msgstr ""
+
+msgid "Exterior Light Master Switch - Normal/Off"
+msgstr ""
+
+msgid "Record Switch - ON"
+msgstr ""
+
+msgid "Seat Adjustment - UP"
+msgstr ""
+
+msgid "AAP"
+msgstr ""
+
+msgid "Right MFCD R2"
+msgstr ""
+
+msgid "Ejection Seat Zeroizer Function - ON"
+msgstr ""
+
+msgid "Right MFCD U3"
+msgstr ""
+
+msgid "Center MFCD D4"
+msgstr ""
+
+msgid "Night Vision Goggle - Toggle"
+msgstr ""
+
+msgid "UFCP Button 3"
+msgstr ""
+
+msgid "Seat Adjustment - DOWN"
+msgstr ""
+
+msgid "FCS Warning"
+msgstr ""
+
+msgid "Deploy/Jettison Parachute - Cut/Off"
+msgstr ""
+
+msgid "TDC Slew Vertical"
+msgstr ""
+
+msgid "Landing Gear Lever - Up/Down"
+msgstr ""
+
+msgid "AAP HMD"
+msgstr ""
+
+msgid "Brake Park/Norm - NORM"
+msgstr ""
+
+msgid "Left MFCD L7"
+msgstr ""
+
+msgid "Backup SAIU Knob Selector - IR"
+msgstr ""
+
+msgid "Squelch OFF/SQL/ACKN - SQL"
+msgstr ""
+
+msgid "Auto Stop"
+msgstr ""
+
+msgid "Left MFCD D4"
+msgstr ""
+
+msgid "Sensor (WMD7/TV) Left"
+msgstr ""
+
+msgid "Right MFCD L8"
+msgstr ""
+
+msgid "Right MFCD L1"
+msgstr ""
+
+msgid "QFE Setting Knob - Dec (Step)"
+msgstr ""
+
+msgid "Navigation Light Switch - Bright/Off/Dim - Bright"
+msgstr ""
+
+msgid "Flare Dispense Button"
+msgstr ""
+
+msgid "AG1/AG2 Switch - A/G2"
+msgstr ""
+
+msgid "Yaw Trim Switch - Right"
+msgstr ""
+
+msgid "Cpt Console Light Knob Abs"
+msgstr ""
+
+msgid "Console Light Knob - Dec (Press and Hold)"
+msgstr ""
+
+msgid "S7: AutoPilot Off"
+msgstr ""
+
+msgid "Deploy/Jettison Parachute - Deploy/Off"
+msgstr ""
+
+msgid "Right MFCD U4"
+msgstr ""
+
+msgid "Console Light Knob - Dec (Step)"
+msgstr ""
+
+msgid "Center MFCD R5"
+msgstr ""
+
+msgid "T3_Forward: Speed Brake On"
+msgstr ""
+
+msgid "Left MFCD Cont +"
+msgstr ""
+
+msgid "EFCS Switch - AUTO"
+msgstr ""
+
+msgid "Backup SAIU - BOMB"
+msgstr ""
+
+msgid "Center MFCD Brt -"
+msgstr ""
+
+msgid "FOV Decrease"
+msgstr ""
+
+msgid "AAP COM1"
+msgstr ""
+
+msgid "Air Temp Knob Selector - 35"
+msgstr ""
+
+msgid "AAP WMMC2"
+msgstr ""
+
+msgid "Console Light Knob - Inc (Press and Hold)"
+msgstr ""
+
+msgid "Landing Gear Lever - Up"
+msgstr ""
+
+msgid "Radio Mode Selector - OFF"
+msgstr ""
+
+msgid "Center MFCD L3"
+msgstr ""
+
+msgid "Digital Clock Switch"
+msgstr ""
+
+msgid "Left MFCD Sym +"
+msgstr ""
+
+msgid "Center MFCD U2"
+msgstr ""
+
+msgid "Air Temp Knob Selector - 25"
+msgstr ""
+
+msgid "Intercom Switch - On"
+msgstr ""
+
+msgid "Right MFCD Cont -"
+msgstr ""
+
+msgid "DC Gen Switch"
+msgstr ""
+
+msgid "Exterior Light Master Switch - NVG/Off"
+msgstr ""
+
+msgid "Radio Mode Selector - GD"
+msgstr ""
+
+msgid "Radio Top/Bottom Antenna Switch"
+msgstr ""
+
+msgid "Right MFCD R5"
+msgstr ""
+
+msgid "Formation Light Knob Selector - 4"
+msgstr ""
+
+msgid "T1_Backward: AG - Air-To-Ground Mode"
+msgstr ""
+
+msgid "UFCP Button A/P"
+msgstr ""
+
+msgid "S6_Up: Trim Nose Down"
+msgstr ""
+
+msgid "S3: Weapon Launch"
+msgstr ""
+
+msgid "Canopy Open/Close Handle - Stop"
+msgstr ""
+
+msgid "Right MFCD L6"
+msgstr ""
+
+msgid "S2_Left: INTC RWS/TWS/VS Switch/DGFT SA"
+msgstr ""
+
+msgid "Right MFCD U1"
+msgstr ""
+
+msgid "INS Mode Knob Selector - GC"
+msgstr ""
+
+msgid "Start Mode Selector - START/ENG COLD/STARTER COLD : COLD STARTER"
+msgstr "Start Mode Selector - COLD STARTER"
+
+msgid "Air Temp Knob Selector - 4"
+msgstr ""
+
+msgid "Speaker Control Box Channel Antenna Switch - Off"
+msgstr ""
+
+msgid "Exterior Light Master Switch - Normal"
+msgstr ""
+
+msgid "Radio Button 9/T"
+msgstr ""
+
+msgid "T5_Right: TDC Right"
+msgstr ""
+
+msgid "Air Temp Knob Selector - 20"
+msgstr ""
+
+msgid "Throttle Cage: Idle To Stop"
+msgstr ""
+
+msgid "Ground Jettison Switch - ON"
+msgstr ""
+
+msgid "Left MFCD Brt -"
+msgstr ""
+
+msgid "Right MFCD R8"
+msgstr ""
+
+msgid "Center MFCD D2"
+msgstr ""
+
+msgid "Brake Test - TEST"
+msgstr ""
+
+msgid "Exterior Light Master Switch - NVG"
+msgstr ""
+
+msgid "Ejection Seat Zeroizer Function - OFF"
+msgstr ""
+
+msgid "S1_Forward: DGFT - Dogfight Mode"
+msgstr ""
+
+msgid "S2_Backward: INTC Decrease Range/DGFT VERT Submode"
+msgstr ""
+
+msgid "Seat"
+msgstr ""
+
+msgid "Afterburner Switch - ON/OFF"
+msgstr ""
+
+msgid "Right MFCD L5"
+msgstr ""
+
+msgid "Warning Systems"
+msgstr ""
+
+msgid "Master Arm Toggle (ARM/OFF)"
+msgstr "Basculer le Master ARM (Active / Desactive)"
+
+msgid "UFCP Button PFL/1"
+msgstr ""
+
+msgid "Left MFCD U2"
+msgstr ""
+
+msgid "Center MFCD L7"
+msgstr ""
+
+msgid "AAR Light Knob - Dec (Step)"
+msgstr ""
+
+msgid "Inst. Light Knob - Inc (Step)"
+msgstr ""
+
+msgid "HUD Backup Reticle Knob - OFF"
+msgstr ""
+
+msgid "Left MFCD D5"
+msgstr ""
+
+msgid "QFE Setting Knob - Dec (Press and Hold)"
+msgstr ""
+
+msgid "Digital Clock UTC"
+msgstr ""
+
+msgid "TDC Slew Horizontal"
+msgstr ""
+
+msgid "Left MFCD D2"
+msgstr ""
+
+msgid "T1_Forward: BVR - INTC Mode"
+msgstr ""
+
+msgid "Right MFCD R3"
+msgstr ""
+
+msgid "Right MFCD R4"
+msgstr ""
+
+msgid "SHARS Switch - ON"
+msgstr ""
+
+msgid "Left MFCD R1"
+msgstr ""
+
+msgid "HUD Brightness Knob Abs"
+msgstr ""
+
+msgid "T4_Backward: Radio Comm 2"
+msgstr ""
+
+msgid "AAR Light Switch - Off"
+msgstr ""
+
+msgid "Digital Clock Switch - On"
+msgstr ""
+
+msgid "Sensor (WMD7/TV) Right"
+msgstr ""
+
+msgid "Right MFCD L3"
+msgstr ""
+
+msgid "Center MFCD L2"
+msgstr ""
+
+msgid "Battery Switch - Off"
+msgstr ""
+
+msgid "AA/AG Switch - A/G"
+msgstr ""
+
+msgid "Backup SAIU - OFF"
+msgstr ""
+
+msgid "T5_Left: TDC Left"
+msgstr ""
+
+msgid "Exterior Light Master Switch - Off"
+msgstr ""
+
+msgid "Master Mode Switch - Next Mode"
+msgstr ""
+
+msgid "Air Temp Knob Selector - MAN"
+msgstr ""
+
+msgid "Master Arm Switch - OFF"
+msgstr ""
+
+msgid "Flood Light Knob - Dec (Step)"
+msgstr ""
+
+msgid "Center MFCD D5"
+msgstr ""
+
+msgid "AAP OFF"
+msgstr ""
+
+msgid "Radio Button 1/TONE"
+msgstr ""
+
+msgid "FCS Reset Button"
+msgstr ""
+
+msgid "Left MFCD D3"
+msgstr ""
+
+msgid "Wheel Brake Right On"
+msgstr ""
+
+msgid "Intercom Switch"
+msgstr ""
+
+msgid "T6_Axis: Antenna Elevation (Slide)"
+msgstr ""
+
+msgid "Intercom Switch - Off"
+msgstr ""
+
+msgid "JF-17"
+msgstr ""
+
+msgid "Left MFCD D1"
+msgstr ""
+
+msgid "Right MFCD R7"
+msgstr ""
+
+msgid "Next Waypoint"
+msgstr ""
+
+msgid "Left MFCD L4"
+msgstr ""
+
+msgid "UFCP Button MRK"
+msgstr ""
+
+msgid "AAR Light Knob - Dec (Press and Hold)"
+msgstr ""
+
+msgid "Master Arm Switch - ARM/OFF"
+msgstr ""
+
+msgid "Throttle Uncage: Stop To Idle - Cage/Uncage"
+msgstr "Throttle - Cage/Uncage"
+
+msgid "Center MFCD U1"
+msgstr ""
+
+msgid "Left MFCD L1"
+msgstr ""
+
+msgid "Left MFCD L3"
+msgstr ""
+
+msgid "UFCP Button DST/4"
+msgstr ""
+
+msgid "+/,/- Switch - Up/Neutral"
+msgstr ""
+
+msgid "MFCD Left"
+msgstr ""
+
+msgid "Light Switch - Land/Off/Taxi - TAXI"
+msgstr "Light Switch - TAXI"
+
+msgid "Emergency Jettison Button"
+msgstr ""
+
+msgid "Afterburner Switch - ON"
+msgstr ""
+
+msgid "Goggle Gain - Inc"
+msgstr ""
+
+msgid "Right MFCD Sym -"
+msgstr ""
+
+msgid "Center MFCD D3"
+msgstr ""
+
+msgid "Radio Control Handover"
+msgstr ""
+
+msgid "Left MFCD L2"
+msgstr ""
+
+msgid "Defog Switch"
+msgstr ""
+
+msgid "AAP TRAIN"
+msgstr ""
+
+msgid "AAP WMMC1"
+msgstr ""
+
+msgid "Yaw/Roll CAS Switch - ON"
+msgstr ""
+
+msgid "Digital Clock Brightness -"
+msgstr ""
+
+msgid "UFCP Button L1"
+msgstr ""
+
+msgid "T5_Press: Lock Target"
+msgstr ""
+
+msgid "Yaw/Roll CAS Switch - OFF"
+msgstr ""
+
+msgid "Master Warning"
+msgstr ""
+
+msgid "HUD Backup Reticle Knob - MAX"
+msgstr ""
+
+msgid "Engine Mode Switch - TRG/C+T"
+msgstr ""
+
+msgid "Deploy/Jettison Parachute - Deploy"
+msgstr ""
+
+msgid "Center MFCD R6"
+msgstr ""
+
+msgid "MFCD Right"
+msgstr ""
+
+msgid "AAR Switch - ALL/OFF"
+msgstr ""
+
+msgid "Fire Warning"
+msgstr ""
+
+msgid "Record Switch - OFF"
+msgstr ""
+
+msgid "Radio Mode Selector - TR+G"
+msgstr ""
+
+msgid "ECS Mode Knob Selector - DE-SMK"
+msgstr ""
+
+msgid "AAP INS"
+msgstr ""
+
+msgid "Throttle Uncage: Stop To Idle"
+msgstr ""
+
+msgid "Canopy Open/Close Handle - Close"
+msgstr ""
+
+msgid "UFCP Button VRC/2"
+msgstr ""
+
+msgid "Deploy/Jettison Parachute - Cut"
+msgstr ""
+
+msgid "AutoPilot - Off/On (ATT)"
+msgstr ""
+
+msgid "Afterburner Toggle (ON/OFF)"
+msgstr ""
+
+msgid "Left MFCD L8"
+msgstr ""
+
+msgid "Main AC Gen Switch - Off"
+msgstr ""
+
+msgid "Center MFCD Brt +"
+msgstr ""
+
+msgid "FOV Increase"
+msgstr ""
+
+msgid "Fuel Pump Switch - ON"
+msgstr ""
+
+msgid "Next OESP Program"
+msgstr ""
+
+msgid "Backup SAIU Knob Selector - BOMB"
+msgstr ""
+
+msgid "Right MFCD U2"
+msgstr ""
+
+msgid "Light Switch - Tow/Off/Anti-Collision - Anti-Collision"
+msgstr ""
+
+msgid "Anti-Collision Light Knob Selector - 2"
+msgstr ""
+
+msgid "Inst. Light Knob - Inc (Press and Hold)"
+msgstr ""
+
+msgid "S5: Change/Unselect Weapon Station / NWS"
+msgstr ""
+
+msgid "ACP"
+msgstr ""
+
+msgid "Flood Light Knob - Inc (Press and Hold)"
+msgstr ""
+
+msgid "Speaker Control Box Channel Antenna Switch"
+msgstr ""
+
+msgid "UFCP Button R4"
+msgstr ""
+
+msgid "Clock"
+msgstr ""
+
+msgid "ECS"
+msgstr ""
+
+msgid "Gun Mode On/Off"
+msgstr ""
+
+msgid "T4_Forward: Radio Comm 1"
+msgstr ""
+
+msgid "Left MFCD Cont -"
+msgstr ""
+
+msgid "Right MFCD D3"
+msgstr ""
+
+msgid "Battery Switch"
+msgstr ""
+
+msgid "UFCP Button L4"
+msgstr ""
+
+msgid "Prev Waypoint"
+msgstr ""
+
+msgid "Direct Mode Switch - ON"
+msgstr ""
+
+msgid "Air Start Button - OFF"
+msgstr ""
+
+msgid "Left MFCD U1"
+msgstr ""
+
+msgid "Right MFCD R6"
+msgstr ""
+
+msgid "UFCP Button R2"
+msgstr ""
+
+msgid "Backup SAIU Knob Selector - GUN"
+msgstr ""
+
+msgid "ECS Mode Knob Selector - NORM"
+msgstr ""
+
+msgid "T3_Backward: Speed Brake Off"
+msgstr ""
+
+msgid "Navigation Light Switch - Bright/Off/Dim - Off"
+msgstr ""
+
+msgid "Landing Gear Lever - Down"
+msgstr ""
+
+msgid "Air Temp Knob Selector - 30"
+msgstr ""
+
+msgid "Canopy Open/Close Handle - Lock"
+msgstr ""
+
+msgid "Master Arm Switch - SIM"
+msgstr ""
+
+msgid "UFCP Button RTN"
+msgstr ""
+
+msgid "Inst. Light Knob - Dec (Step)"
+msgstr ""
+
+msgid "Left MFCD L5"
+msgstr ""
+
+msgid "Brake Test - ON"
+msgstr ""
+
+msgid "AAR Light Knob - Inc (Step)"
+msgstr ""
+
+msgid "Navigation Light Switch - Flash/Steady - Steady"
+msgstr ""
+
+msgid "Engine Control Switch - OFF"
+msgstr ""
+
+msgid "Center MFCD D1"
+msgstr ""
+
+msgid "Air Temp Knob Selector - 10"
+msgstr ""
+
+msgid "S1_Right: Cycle MFCD Select - Right Direction"
+msgstr ""
+
+msgid "Air Temp Knob Selector - 15"
+msgstr ""
+
+msgid "Anti-Surge Switch - OFF"
+msgstr ""
+
+msgid "Brake Test - OFF"
+msgstr "Test de freinage - ARRET"
+
+msgid "Anti-Surge Switch - ON"
+msgstr "Interrupteur anti-surtension - MARCHE"
+
+msgid "S2_Press: Unlock Target/DGFT BS Wide Narrow Switch"
+msgstr ""
+
+msgid "T1_Center: NAV - Navigation Mode"
+msgstr ""
+
+msgid "Radio Top/Bottom Antenna Switch - On"
+msgstr ""
+
+msgid "Radio Button 8/C"
+msgstr ""
+
+msgid "SHARS Switch - OFF"
+msgstr ""
+
+msgid "AAP IFF"
+msgstr ""
+
+msgid "Misc Panel"
+msgstr ""
+
+msgid "Flare Dispense Button Cover - Close"
+msgstr ""
+
+msgid "Right MFCD L2"
+msgstr ""
+
+msgid "AAP CLDP"
+msgstr ""
+
+msgid "Fuel Pump Switch - OFF"
+msgstr ""
+
+msgid "Anti-Collision Light Knob Selector - 4"
+msgstr ""
+
+msgid "Flap Switch - Up/Down - DOWN"
+msgstr "Flap Switch - DOWN"
+
+msgid "Center MFCD R8"
+msgstr ""
+
+msgid "Navigation Light Switch - Bright/Off/Dim - Dim"
+msgstr ""
+
+msgid "Engine Mode Switch - C+T"
+msgstr ""
+
+msgid "AAR Switch - INT/OFF"
+msgstr ""
+
+msgid "Special For Devices"
+msgstr ""
+
+msgid "Right MFCD Brt +"
+msgstr ""
+
+msgid "Zeroizer Button Cover - Close"
+msgstr ""
+
+msgid "Canopy Open/Close Handle - Open"
+msgstr ""
+
+msgid "Engine Mode Switch - CMBT/C+T"
+msgstr ""
+
+msgid "UFCP Button R1"
+msgstr ""
+
+msgid "Digital Clock Switch - Off"
+msgstr ""
+
+msgid "Radio Mode Selector - ADF"
+msgstr ""
+
+msgid "ACP COM1 Volume Knob Abs"
+msgstr ""
+
+msgid "ECS Mode Knob Selector - OFF"
+msgstr ""
+
+msgid "Brake Park/Norm - PARK"
+msgstr ""
+
+msgid "AutoPilot"
+msgstr ""
+
+msgid "Left MFCD R2"
+msgstr ""
+
+msgid "UFCP Button OAP"
+msgstr ""
+
+msgid "Main AC Gen Switch - On"
+msgstr ""
+
+msgid "INS Mode Knob Selector - STBY"
+msgstr ""
+
+msgid "T5_Down: TDC Down"
+msgstr ""
+
+msgid "Inertial Nav System (INS)"
+msgstr ""
+
+msgid "INS Mode Knob Selector - NAV"
+msgstr ""
+
+msgid "HUD Symbology Reject Switch - DCLT/NORM"
+msgstr ""
+
+msgid "Center MFCD R2"
+msgstr ""
+
+msgid "HUD Symbology Reject Switch - DCLT"
+msgstr ""
+
+msgid "Flood Light Knob - Inc (Step)"
+msgstr ""
+
+msgid "Canopy"
+msgstr "Canopée"
+
+msgid "Center MFCD U5"
+msgstr ""
+
+msgid "Zeroizer Button Cover - Open"
+msgstr ""
+
+msgid "UFCP Brightness Knob Abs"
+msgstr ""
+
+msgid "Air Temp Knob Selector - 40"
+msgstr ""
+
+msgid "Light Switch - Land/Off/Taxi - LDG"
+msgstr "Light Switch - LDG"
+
+msgid "UFCP Button L2"
+msgstr ""
+
+msgid "AA/AG Switch - A/A"
+msgstr ""
+
+msgid "Anti-Collision Light Knob Selector - OFF"
+msgstr ""
+
+msgid "T1: Backward (AG) / Center (NAV)"
+msgstr ""
+
+msgid "UFCP Button FUL/7"
+msgstr ""
+
+msgid "T3: Speed Brake On / Off"
+msgstr ""
+
+msgid "ACP MSL Volume Knob Abs"
+msgstr ""
+
+msgid "Digital Clock Brightness +"
+msgstr ""
+
+msgid "AAP RDR"
+msgstr ""
+
+msgid "Light Switch - Land/Off/Taxi - LAND/OFF"
+msgstr "Light Switch - LAND/OFF"
+
+msgid "Light Switch - Tow/Off/Anti-Collision - Anti-Collision/Off"
+msgstr "Light Switch - ANTI-COLLISION/OFF"
+
+msgid "UFCP Button TOD/6"
+msgstr ""
+
+msgid "EFCS Switch - EFCS"
+msgstr ""
+
+msgid "Left MFCD U5"
+msgstr ""
+
+msgid "Light Switch - Tow/Off/Anti-Collision - Tow"
+msgstr ""
+
+msgid "Afterburner Switch - OFF"
+msgstr "Interrupteur de post-combustion - ETEINT"
+
+msgid "Deploy/Jettison Parachute - Off"
+msgstr "Déployer / larguer le parachute - Désactivé"
+
+msgid "+/,/- Switch - Down/Neutral"
+msgstr ""
+
+msgid "FCS"
+msgstr ""
+
+msgid "Speaker Control Box Channel Antenna Switch - On"
+msgstr ""
+
+msgid "Center MFCD U4"
+msgstr ""
+
+msgid "Radio Button 4/H"
+msgstr ""
+
+msgid "Navigation Light Switch - Bright/Off/Dim - Bright/Off"
+msgstr "Navigation Light Switch - BRIGHT/OFF"
+
+msgid "Center MFCD R1"
+msgstr ""
+
+msgid "Master Arm Switch - ARM"
+msgstr ""
+
+msgid "Prev OESP Program"
+msgstr ""
+
+msgid "Formation Light Knob Selector - 1"
+msgstr ""
+
+msgid "UFCP Button 9"
+msgstr ""
+
+msgid "Left MFCD R7"
+msgstr ""
+
+msgid "Flare Dispense Button Cover - Open"
+msgstr ""
+
+msgid "MFCD Center"
+msgstr ""
+
+msgid "Master Mode Switch - Prev Mode"
+msgstr ""
+
+msgid "Radio Button 7/P"
+msgstr ""
+
+msgid "AutoPilot - ATT/ALT"
+msgstr ""
+
+msgid "Radio Button <-/MAN"
+msgstr ""
+
+msgid "Emergency Hydraulic Pump Switch - ON"
+msgstr ""
+
+msgid "Start Mode Selector - START/ENG COLD/STARTER COLD : COLD ENG"
+msgstr "Start Mode Selector - COLD ENG"
+
+msgid "S2_Forward: INTC Increase Range/DGFT BS Submode"
+msgstr ""
+
+msgid "UFCP Button IFF/8"
+msgstr ""
+
+msgid "UFCP Button FPM"
+msgstr ""
+
+msgid "Radio Button 5/A"
+msgstr ""
+
+msgid "T6_Axis: Antenna Elevation"
+msgstr ""
+
+msgid "Right MFCD R1"
+msgstr ""
+
+msgid "Left MFCD R6"
+msgstr ""
+
+msgid "Light Switch - Tow/Off/Anti-Collision - Tow/Off"
+msgstr "Light Switch - TOW/OFF"
+
+msgid "Anti-Collision Light Knob Selector - 1"
+msgstr ""
+
+msgid "AG1/AG2 Switch - A/G1"
+msgstr ""
+
+msgid "OESP PROG02"
+msgstr ""
+
+msgid "MUSIC NUMBER"
+msgstr ""
+
+msgid "OESP Type"
+msgstr ""
+
+msgid "Performance"
+msgstr ""
+
+msgid "Chaff SQ"
+msgstr ""
+
+msgid "KYBD Pitch Control"
+msgstr ""
+
+msgid "Cockpit Model"
+msgstr ""
+
+msgid "Flare Bingo"
+msgstr ""
+
+msgid "JF-17 is a single seat, single engine, multirole light fighter that joint developed by AVIC Chengdu and Pakistan Aeronautical Complex (PAC). The design phase of JF-17 'Thunder' finished on May 31st, 2002, and the maiden flight was made on August 25th, 2003. 'Thunder' has a bubble canopy of great view, pretty strake-wing layout and advanced avionics. KLJ-7 radar provides excellent air to ground capability. WMD-7 targeting pod can help 'Thunder' searching for targets in combat. Although 'Thunder' has small size, remember that: she is one of the most advanced fighter jets in the DCS World."
+msgstr ""
+
+msgid "DMAP Type"
+msgstr ""
+
+msgid "Voice Locale"
+msgstr ""
+
+msgid "Gun Limiter"
+msgstr ""
+
+msgid "SS"
+msgstr ""
+
+msgid "OESP PROG01"
+msgstr ""
+
+msgid "CH+FL_oesp"
+msgstr "CH+FL"
+
+msgid "Chaff Bingo"
+msgstr ""
+
+msgid "Default_liv"
+msgstr ""
+
+msgid "1.0"
+msgstr ""
+
+msgid "0.0"
+msgstr ""
+
+msgid "OESP PROG05"
+msgstr ""
+
+msgid "Hidden Stick"
+msgstr ""
+
+msgid "MFCD C701 Slew Rate"
+msgstr ""
+
+msgid "RASTER CHARTS"
+msgstr ""
+
+msgid "0.2"
+msgstr ""
+
+msgid "HUD Radar Slew Rate"
+msgstr ""
+
+msgid "AUTO RE-CENTER"
+msgstr ""
+
+msgid "Flare SI"
+msgstr ""
+
+msgid "LCOS"
+msgstr ""
+
+msgid "0.75"
+msgstr ""
+
+msgid "CH_oesp"
+msgstr "CH"
+
+msgid "Chaff BI"
+msgstr ""
+
+msgid "EN 1"
+msgstr ""
+
+msgid "MFCD DL Pod Slew Rate"
+msgstr ""
+
+msgid "Visual Quality"
+msgstr ""
+
+msgid "English_liv"
+msgstr ""
+
+msgid "Chaff SI"
+msgstr ""
+
+msgid "4.5"
+msgstr ""
+
+msgid "0.5"
+msgstr ""
+
+msgid "DCS: JF-17 by Deka Ironwork Simulations."
+msgstr ""
+
+msgid "Gun Sight"
+msgstr ""
+
+msgid "OESP PROG04"
+msgstr ""
+
+msgid "MAP ALT"
+msgstr ""
+
+msgid "Flare SQ"
+msgstr ""
+
+msgid "MFCD WMD7 Slew Rate"
+msgstr ""
+
+msgid "Flare BI"
+msgstr ""
+
+msgid "Chaff BQ"
+msgstr ""
+
+msgid "MFCD Radar Slew Rate"
+msgstr ""
+
+msgid "CUSTOMIZED"
+msgstr ""
+
+msgid "Flare BQ"
+msgstr ""
+
+msgid "ACCUMULATIVE"
+msgstr ""
+
+msgid "CN 1"
+msgstr ""
+
+msgid "CN 2"
+msgstr ""
+
+msgid "FL_oesp"
+msgstr "FL"
+
+msgid "TDC Deadzone"
+msgstr ""
+
+msgid "SSLC"
+msgstr ""
+
+msgid "BLENDED"
+msgstr ""
+
+msgid "CUSTOMIZED COCKPIT"
+msgstr ""
+
+msgid "EN 2"
+msgstr ""
+
+msgid "Deka Ironwork Simulations"
+msgstr ""
+
+msgid "OESP PROG03"
+msgstr ""
+
+msgid "Cold and Dark"
+msgstr ""
+
+msgid "Taxi and Takeoff"
+msgstr ""
+
+msgid "IFR Landing"
+msgstr ""
+
+msgid "Night Attack"
+msgstr ""
+
+msgid "Welcome to this training lesson on starting up the Thunder. In this lesson, you will learn the JF-17 ramp start procedures."
+msgstr ""
+
+msgid "Air Refuel (Night)"
+msgstr ""
+
+msgid "Takeoff and Navigation"
+msgstr ""
+
+msgid "VFR Straight In Landing and Shut Down"
+msgstr ""
+
+msgid "Anti-ship Missile"
+msgstr ""
+
+msgid "Night Landing - Easy"
+msgstr ""
+
+msgid "Free Flight"
+msgstr ""
+
+msgid "Unguided Bomb CCRP"
+msgstr ""
+
+msgid "Intercept Convoy"
+msgstr ""
+
+msgid "Welcome to this training lesson on IFR landing. In this lesson, you will learn IFR landing."
+msgstr ""
+
+msgid "Welcome to this training lesson on anti-ship missile. In this lesson, you will how to launch C-802AK anti-ship missile with different modes."
+msgstr ""
+
+msgid "Night Takeoff and Navigation"
+msgstr ""
+
+msgid "Thunder Surprise"
+msgstr ""
+
+msgid "Sink Cargo Ship"
+msgstr ""
+
+msgid "Air-To-Air BVR"
+msgstr ""
+
+msgid "Man-in-the-loop"
+msgstr ""
+
+msgid "Night Free Flight"
+msgstr ""
+
+msgid "Decapitation Strike"
+msgstr ""
+
+msgid "Welcome to this training lesson on taxi and takeoff. In this lesson, you will learn operations during taxi and takeoff."
+msgstr ""
+
+msgid "River Run"
+msgstr ""
+
+msgid "Laser-guided Rockets"
+msgstr ""
+
+msgid "Air-To-Air CAC"
+msgstr ""
+
+msgid "Air Refuel (Day)"
+msgstr ""
+
+msgid "Laser-guided Bombs"
+msgstr ""
+
+msgid "Welcome to this training lesson on VFR landing. In this lesson, you will learn VFR landing and then shut down the engine."
+msgstr ""
+
+msgid "Anti-ship"
+msgstr ""
+
+msgid "HOTAS"
+msgstr ""
+
+msgid "Unguided Bomb CCIP"
+msgstr ""
+
+msgid "Unguided Rocket"
+msgstr ""
+
+msgid "Welcome to this training lesson on CCRP bombing. In this lesson, you will how to delivery unguided bombs in CCRP mode."
+msgstr ""
+
+msgid "CAS"
+msgstr ""
+
+msgid "Welcome to this training lesson on CCIP bombing. In this lesson, you will how to delivery unguided bombs in CCIP mode."
+msgstr ""
+
+msgid "Welcome to this training lesson on basic navigation. In this lesson, you will learn Waypoint and TACAN navigations."
+msgstr ""
+
+msgid "General Bombs"
+msgstr ""
+
+msgid "Peace Shield"
+msgstr ""
+
+msgid "SEAD"
+msgstr ""
+
+msgid "Cold Start"
+msgstr ""
+
+msgid "Welcome to this training lesson for HOTAS. In this lesson, you will learn basic HOTAS operations."
+msgstr ""
+
+msgid "Landing - Easy"
+msgstr ""
+
+msgid "Enter Laser Code (Tens)"
+msgstr ""
+
+msgid "3"
+msgstr ""
+
+msgid "2"
+msgstr ""
+
+msgid "5"
+msgstr ""
+
+msgid "6"
+msgstr ""
+
+msgid "8"
+msgstr ""
+
+msgid "Pylon Left Outer"
+msgstr ""
+
+msgid "Get Parking Coord"
+msgstr ""
+
+msgid "Change All Digits"
+msgstr ""
+
+msgid "Pylon Right Outer"
+msgstr ""
+
+msgid "Place_"
+msgstr ""
+
+msgid "Update Laser Code"
+msgstr ""
+
+msgid "Choose All Pylons"
+msgstr ""
+
+msgid "Install Probe"
+msgstr ""
+
+msgid "Enter Laser Code (Hundreds)"
+msgstr ""
+
+msgid "Uninstall Probe"
+msgstr ""
+
+msgid "Pylon Right Inner"
+msgstr ""
+
+msgid "Change Code (Tens)"
+msgstr ""
+
+msgid "AAR Probe"
+msgstr ""
+
+msgid "Change Code (Unit)"
+msgstr ""
+
+msgid "Setting Complete"
+msgstr ""
+
+msgid "Choose Pylon"
+msgstr ""
+
+msgid "Enter Laser Code (Unit)"
+msgstr ""
+
+msgid "Remove_"
+msgstr ""
+
+msgid "Update Data"
+msgstr ""
+
+msgid "Wheel chocks"
+msgstr ""
+
+msgid "1"
+msgstr ""
+
+msgid "Update DTC Data"
+msgstr ""
+
+msgid "Pylon Center"
+msgstr ""
+
+msgid "Change Code (Hundreds)"
+msgstr ""
+
+msgid "Refill Utilities"
+msgstr ""
+
+msgid "7"
+msgstr ""
+
+msgid "Pylon Left Inner"
+msgstr ""
+
+msgid "Update INS Align Data"
+msgstr ""
+
+msgid "4"
+msgstr ""
+
+msgid " - Battery Switch On"
+msgstr ""
+
+msgid "7: Startup Final"
+msgstr ""
+
+msgid "5: ECS and Oxygen"
+msgstr ""
+
+msgid "1: Power On"
+msgstr ""
+
+msgid " - Start Fast Alignment"
+msgstr ""
+
+msgid " - AAP IFF On"
+msgstr ""
+
+msgid " - Enter Current True Heading"
+msgstr ""
+
+msgid " - COM2 Volume Knob - Max"
+msgstr ""
+
+msgid " - Air Temp Knob Selector - 25"
+msgstr ""
+
+msgid "2: Open Canopy"
+msgstr ""
+
+msgid " - AAP WMMC2 On"
+msgstr ""
+
+msgid " - Eject Seat Safe/Arm Handle - Arm"
+msgstr ""
+
+msgid "AUTOSTART SEQUENCE IS RUNNING"
+msgstr ""
+
+msgid " - Master Warning Button - Press"
+msgstr ""
+
+msgid "4: SHARS and INS"
+msgstr ""
+
+msgid " - ECS Mode Knob Selector On"
+msgstr ""
+
+msgid " - Start Loading Selected Data"
+msgstr ""
+
+msgid "2: Cockpit Light"
+msgstr ""
+
+msgid " - Light Switch - Anti-Collision"
+msgstr ""
+
+msgid "5: Eject Seat Safety"
+msgstr ""
+
+msgid " - Anti-Collision Light Knob Selector On"
+msgstr ""
+
+msgid " - Refresh MFCD Pages"
+msgstr ""
+
+msgid " - Navigation Light Switch - Brt"
+msgstr ""
+
+msgid "INS NOT ALIGNED"
+msgstr ""
+
+msgid " - RMFCD Shows EPI2 Page"
+msgstr ""
+
+msgid " - Fuel Pump Switch On"
+msgstr ""
+
+msgid " - Throttle - Stop To Idle"
+msgstr ""
+
+msgid " - HUD Brightness Knob - Max"
+msgstr ""
+
+msgid " - Formation Light Knob Selector On"
+msgstr ""
+
+msgid " - AAP WMMC1 On"
+msgstr ""
+
+msgid " - AC Switch On"
+msgstr ""
+
+msgid " - Eject Seat Firing Handle Safety Pin - Remove"
+msgstr ""
+
+msgid " - Select Nav Master Mode"
+msgstr ""
+
+msgid " - Oxygen Indicator Bright Knob - Max"
+msgstr ""
+
+msgid " - UFCP DST Button - Press"
+msgstr ""
+
+msgid " - AAP SAIU On"
+msgstr ""
+
+msgid " - AAP SLNK On"
+msgstr ""
+
+msgid "3: Turn Off INS and SHARS"
+msgstr ""
+
+msgid " - G-Suit Tube - Connect"
+msgstr ""
+
+msgid "Check and Preparation"
+msgstr ""
+
+msgid "6: DTC Card"
+msgstr ""
+
+msgid " - Console Light Knob - 80%"
+msgstr ""
+
+msgid " - Canopy Open/Close Handle - Lock"
+msgstr ""
+
+msgid "8: Turn Off Power"
+msgstr ""
+
+msgid "AUTOSTOP COMPLETE"
+msgstr ""
+
+msgid " - Inst. Light Knob - 80%"
+msgstr ""
+
+msgid "4: Turn Off ECS and Oxy"
+msgstr ""
+
+msgid " - UFCP Brightness Knob - Max"
+msgstr ""
+
+msgid " - Ground Start Button - Press and Hold"
+msgstr ""
+
+msgid " - Warning Panel Bright Knob - Max"
+msgstr ""
+
+msgid " - Emergency Hydraulic Pump Switch On"
+msgstr ""
+
+msgid " - AAP COM1 On"
+msgstr ""
+
+msgid "9: Unplug DTC Card"
+msgstr ""
+
+msgid " - DC Switch On"
+msgstr ""
+
+msgid " - Warning Panel Day/Night - Day"
+msgstr ""
+
+msgid " - Intercom Switch On"
+msgstr ""
+
+msgid " - Oxygen Supply Valve - Max"
+msgstr ""
+
+msgid " - HUD Contrast Knob - Max"
+msgstr ""
+
+msgid " - Enter Current Coordinate"
+msgstr ""
+
+msgid " - Oxygen Tube - Connect"
+msgstr ""
+
+msgid " - Select All Data Entries"
+msgstr ""
+
+msgid " - Navigation Light Switch - Flash"
+msgstr ""
+
+msgid " - Canopy Open/Close Handle - Close"
+msgstr ""
+
+msgid " - Set FCS Configuration"
+msgstr ""
+
+msgid " - Adjust QFE using BARO Altitude Setting Knob"
+msgstr ""
+
+msgid "1: Engine Shutdown"
+msgstr ""
+
+msgid "7: Turn Off Radio"
+msgstr ""
+
+msgid " - Radio Mode Selector - T/R"
+msgstr ""
+
+msgid " - Engine Control Switch On"
+msgstr ""
+
+msgid " - Radio Volume Knob - Max"
+msgstr ""
+
+msgid " - COM1 Volume Knob - Max"
+msgstr ""
+
+msgid " - SHARS Switch On"
+msgstr ""
+
+msgid "AUTOSTOP SEQUENCE IS RUNNING"
+msgstr ""
+
+msgid "6: Turn Off Cockpit and External Lights"
+msgstr ""
+
+msgid " - MSL Volume Knob - 40%"
+msgstr ""
+
+msgid " - AAP OESP On"
+msgstr ""
+
+msgid " - AAP INS On"
+msgstr ""
+
+msgid " - AAP RWR On"
+msgstr ""
+
+msgid " - AAP NAV On"
+msgstr ""
+
+msgid " - AAP COM2 On"
+msgstr ""
+
+msgid "3: Engine Start"
+msgstr ""
+
+msgid " - TCN/ILS Volume Knob - Max"
+msgstr ""
+
+msgid " - AAP RDR On"
+msgstr ""
+
+msgid "AUTOSTART COMPLETE"
+msgstr ""
+
+msgid " - DTC Card - Install"
+msgstr ""
+
+msgid " - Exterior Light Master Switch On"
+msgstr ""
+
+msgid "MWMMC_FAILURE_CPU"
+msgstr ""
+
+msgid "SWMMC_FAILURE_CPU"
+msgstr ""
+
+msgid "FCS_FAILURE_P_SENSOR_1"
+msgstr ""
+
+msgid "EMMC_FAILURE_AC_GENERATOR_CONTROLLER"
+msgstr ""
+
+msgid "CNI_FAILURE_COM2_SECOS"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_RWR"
+msgstr ""
+
+msgid "FCS_FAILURE_NY_SENSOR_1"
+msgstr ""
+
+msgid "EMMC_FAILURE_BATTERY_FCS1"
+msgstr ""
+
+msgid "FAILURE_SMS_PYLON_7"
+msgstr ""
+
+msgid "CNI_FAILURE_IFF_TX"
+msgstr ""
+
+msgid "EMMC_FAILURE_BATTERY_DC2"
+msgstr ""
+
+msgid "FCS_FAILURE_AOA_SENSOR_2"
+msgstr ""
+
+msgid "SWMMC_FAILURE_CMFCD"
+msgstr ""
+
+msgid "ECS_FAILURE_CANOPY_GLASS_BROKEN"
+msgstr ""
+
+msgid "FCS_FAILURE_R_ELEVATOR_HYD_1"
+msgstr ""
+
+msgid "FCS_FAILURE_WOW_3"
+msgstr ""
+
+msgid "INS_FAILURE_ALT_INVALID"
+msgstr ""
+
+msgid "OXY_FAILURE_R_LEAK"
+msgstr ""
+
+msgid "FCS_FAILURE_YAW_LVDT_2"
+msgstr ""
+
+msgid "INS_FAILURE_ALGNMENT"
+msgstr ""
+
+msgid "FAILURE_EXT_LIGHT_FORMATION_LEFT"
+msgstr ""
+
+msgid " Ground Crew: No ordance, unable to program!"
+msgstr ""
+
+msgid "SNS_FAILURE_COMPUTER"
+msgstr ""
+
+msgid "CNI_FAILURE_COM1_SECOS"
+msgstr ""
+
+msgid "INS_DATA_DEGRADED"
+msgstr ""
+
+msgid "EMMC_FAILURE_DADS"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_RATE_GYRO_1"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_TACAN"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_IFF"
+msgstr ""
+
+msgid "ZCP_FAILURE_MALFUNC"
+msgstr ""
+
+msgid "ENGINE_FAILURE_N2_TURBINE"
+msgstr ""
+
+msgid "FCS_FAILURE_COMP_2"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_LVDT_3"
+msgstr ""
+
+msgid "SWMMC_FAILURE_AVI"
+msgstr ""
+
+msgid "MWMMC_FAILURE_AVI"
+msgstr ""
+
+msgid "FCS_FAILURE_NZ_SENSOR_3"
+msgstr ""
+
+msgid "FCS_FAILURE_ROLL_ELEC_SERVO_1"
+msgstr ""
+
+msgid "ENGINE_FAILURE_AB_IGNITION_UNIT"
+msgstr ""
+
+msgid " Ground Crew: Copy! Updating the DTC now!"
+msgstr ""
+
+msgid "FCS_FAILURE_ROLL_AUGD_1"
+msgstr ""
+
+msgid "RDR_FAILURE_TRANSMITTER"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_2_EXTERNAL_LEAKAGE"
+msgstr ""
+
+msgid "ENGINE_FAILURE_N2_COMPRESSOR"
+msgstr ""
+
+msgid "RDR_FAILURE_RX_FRONT_END_DEGRATION"
+msgstr ""
+
+msgid "EMMC_FAILURE_ELECT_EQUIP_HOT"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_ILS"
+msgstr ""
+
+msgid "SWMMC_DVR_NO_RS422_COMM"
+msgstr ""
+
+msgid "FAILURE_EXT_LIGHT_TAXI"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_SPJ"
+msgstr ""
+
+msgid "CNI_FAILURE_TACAN"
+msgstr ""
+
+msgid "FCS_FAILURE_EFCS_2"
+msgstr ""
+
+msgid "ECS_FAILURE_WS_GLASS_BROKEN"
+msgstr ""
+
+msgid "EMMC_FAILURE_SHARS"
+msgstr ""
+
+msgid "COMM1 VHF Radio"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_EMERGE"
+msgstr ""
+
+msgid "DTC_FAILURE_DATA_DECIPHER"
+msgstr ""
+
+msgid "FCS_FAILURE_WOW_1"
+msgstr ""
+
+msgid "EMMC_FAILURE_DADS_LPTU"
+msgstr ""
+
+msgid "RDR_FAILURE_DEGRATED_PERFORMANCE"
+msgstr ""
+
+msgid "EMMC_FAILURE_TRU"
+msgstr ""
+
+msgid "OESP_FAILURE_CH_DISP_L"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_LMFCD"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_2_PUMP"
+msgstr ""
+
+msgid "SWMMC_FAILURE_RMFCD"
+msgstr ""
+
+msgid "SWMMC_FAILURE_LMFCD"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_RMFCD"
+msgstr ""
+
+msgid "FAILURE_SMS_PYLON_1"
+msgstr ""
+
+msgid "RWR_FAILURE_RECEIVER_XX1"
+msgstr ""
+
+msgid "SWMMC_FAILURE_PS"
+msgstr ""
+
+msgid "MWMMC_FAILURE_PS"
+msgstr ""
+
+msgid "EMMC_FAILURE_FUEL_START_PUMP"
+msgstr ""
+
+msgid "ECS_FAILURE_CANOPY_GLASS_CRACKED"
+msgstr ""
+
+msgid " Ground Crew: DTC update complete!"
+msgstr ""
+
+msgid "EMMC_FAILURE_CANOPY_UNLOCK"
+msgstr ""
+
+msgid "SHARS_FAILURE_SENSOR"
+msgstr ""
+
+msgid "INS_FAILURE_DATA_INVALID"
+msgstr ""
+
+msgid "OXY_FAILURE_AUTO_100_O2"
+msgstr ""
+
+msgid "EMMC_FAILURE_AC_GROUND"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_1_EXTERNAL_LEAKAGE_SEVERE"
+msgstr ""
+
+msgid "EMMC_FAILURE_STATIC_INVERTER"
+msgstr ""
+
+msgid "EMMC_FAILURE_AC_GENERATOR_FEED_LINE"
+msgstr ""
+
+msgid "DTC_FAILURE_READER_BROKEN"
+msgstr ""
+
+msgid "SWMMC_CSU_NO_RS422_COMM"
+msgstr ""
+
+msgid "FCS_FAILURE_ROLL_LVDT_1"
+msgstr ""
+
+msgid " Ground Crew: Incorrect payload! Please re-select!"
+msgstr ""
+
+msgid "FCS_FAILURE_R_ELEVATOR_ELEC_B"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_RATE_GYRO_4"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_CMFCD"
+msgstr ""
+
+msgid "RDR_FAILURE_ANTENNA_DEGRATION"
+msgstr ""
+
+msgid "FCS_FAILURE_L_ELEVATOR_ELEC_C"
+msgstr ""
+
+msgid "FCS_FAILURE_L_ELEVATOR_ELEC_A"
+msgstr ""
+
+msgid "INS_FAILURE_GPS_RECEIVER"
+msgstr ""
+
+msgid "FAILURE_ECS_ELEC"
+msgstr ""
+
+msgid "FCS_FAILURE_Q_SENSOR_3"
+msgstr ""
+
+msgid "INS_FAILURE_ACC"
+msgstr ""
+
+msgid "FCS_FAILURE_ROLL_ELEC_SERVO_2"
+msgstr ""
+
+msgid "RDR_FAILURE_PREESURIZATION"
+msgstr ""
+
+msgid "ENGINE_FAILURE_APD88_STARTER"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_2_EXTERNAL_LEAKAGE_SEVERE"
+msgstr ""
+
+msgid "FCS_FAILURE_Q_SENSOR_2"
+msgstr ""
+
+msgid "FCS_FAILURE_L_ELEVATOR_HYD_1"
+msgstr ""
+
+msgid "SNS_FAILURE_CABLE"
+msgstr ""
+
+msgid "RDR_FAILURE_RECEIVER_DEGRATION"
+msgstr ""
+
+msgid "SWMMC_FAILURE_DVR"
+msgstr ""
+
+msgid "OESP_FAILURE_FL_DISP_L"
+msgstr ""
+
+msgid "SWMMC_FAILURE_IOC"
+msgstr ""
+
+msgid " Ground Crew: Copy! To refill utilities!"
+msgstr ""
+
+msgid "MWMMC_FAILURE_IOC"
+msgstr ""
+
+msgid "INS_WIND_INVALID"
+msgstr ""
+
+msgid "FCS_FAILURE_YAW_ELEC_SERVO_2"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_1_PUMP"
+msgstr ""
+
+msgid "COMM2 UHF Radio"
+msgstr ""
+
+msgid "FCS_FAILURE_ROLL_RATE_GYRO_1"
+msgstr ""
+
+msgid "FCS_FAILURE_NY_SENSOR_2"
+msgstr ""
+
+msgid "EMMC_FAILURE_DC_GENERATOR"
+msgstr ""
+
+msgid "FCS_FAILURE_L_ELEVATOR_ELEC_B"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_FCS"
+msgstr ""
+
+msgid "RDR_FAILURE_RX_FRONT_END"
+msgstr ""
+
+msgid "RDR_FAILURE_PEDESTAL"
+msgstr ""
+
+msgid "RDR_FAILURE_SERVOLOOP"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_RATE_GYRO_2"
+msgstr ""
+
+msgid "FCS_FAILURE_NZ_SENSOR_2"
+msgstr ""
+
+msgid "EMMC_FAILURE_FUEL_LOWER_PUMP"
+msgstr ""
+
+msgid "FCS_FAILURE_YAW_RATE_GYRO_2"
+msgstr ""
+
+msgid "OESP_FAILURE_MAWS_R"
+msgstr ""
+
+msgid "FAILURE_EXT_LIGHT_NAV_RIGHT"
+msgstr ""
+
+msgid "FCS_FAILURE_R_ELEVATOR_ELEC_D"
+msgstr ""
+
+msgid "FCS_FAILURE_COMP_1"
+msgstr ""
+
+msgid "OESP_FAILURE_MAWS_L"
+msgstr ""
+
+msgid " Ground Crew: Roger! Standby!"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_OESP"
+msgstr ""
+
+msgid "FAILURE_EXT_LIGHT_FORMATION_RIGHT"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_1_INTERNAL_LEAKAGE"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_HUD"
+msgstr ""
+
+msgid "FCS_FAILURE_ROLL_RATE_GYRO_2"
+msgstr ""
+
+msgid "EMMC_FAILURE_BATTERY_DC1"
+msgstr ""
+
+msgid "DTC_FAILURE_CARD_BROKEN"
+msgstr ""
+
+msgid "OXY_FAILURE_HIGH_PRESS"
+msgstr ""
+
+msgid "RDR_FAILURE_PROCESSOR"
+msgstr ""
+
+msgid "RDR_FAILURE_PROCESSOR_DEGRATION"
+msgstr ""
+
+msgid "RDR_FAILURE_RECEIVER"
+msgstr ""
+
+msgid "EMMC_FAILURE_COCKPIT_PRESSURE_LOW"
+msgstr ""
+
+msgid "EMMC_FAILURE_BAU"
+msgstr ""
+
+msgid "EMMC_FAILURE_DADS_RPTU"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_2_ACCU"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_LVDT_2"
+msgstr ""
+
+msgid "EMMC_FAILURE_TRU_AC2DC28V"
+msgstr ""
+
+msgid "FCS_FAILURE_LG_4"
+msgstr ""
+
+msgid "MWMMC_FAILURE_DMP"
+msgstr ""
+
+msgid "SWMMC_FAILURE_DMP"
+msgstr ""
+
+msgid "EMMC_FAILURE_EMMC"
+msgstr ""
+
+msgid "FCS_FAILURE_YAW_RATE_GYRO_1"
+msgstr ""
+
+msgid "FCS_FAILURE_YAW_LVDT_1"
+msgstr ""
+
+msgid "RWR_FAILURE_ANTENNA_FRONT_RIGHT"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_EMMC"
+msgstr ""
+
+msgid "FCS_FAILURE_WOW_4"
+msgstr ""
+
+msgid "FCS_FAILURE_NZ_SENSOR_1"
+msgstr ""
+
+msgid "FCS_FAILURE_LG_2"
+msgstr ""
+
+msgid "FAILURE_SMS_PYLON_2"
+msgstr ""
+
+msgid "INS_FAILURE_GYRO"
+msgstr ""
+
+msgid "FCS_FAILURE_P_SENSOR_2"
+msgstr ""
+
+msgid " Ground Crew: Copy! Be patient, it's a bit time consuming!"
+msgstr ""
+
+msgid "FCS_FAILURE_COMP_4"
+msgstr ""
+
+msgid "FCS_FAILURE_YAW_AUGD_1"
+msgstr ""
+
+msgid " Ground Crew: Hey! Shutdown the engine and power first!"
+msgstr ""
+
+msgid "ENGINE_FAILURE_COMBUSTOR"
+msgstr ""
+
+msgid "EMMC_FAILURE_LWC"
+msgstr ""
+
+msgid "FAILURE_SMS_PYLON_6"
+msgstr ""
+
+msgid "FCS_FAILURE_YAW_AUGD_2"
+msgstr ""
+
+msgid "FAILURE_SMS_PYLON_4"
+msgstr ""
+
+msgid "ENGINE_FAILURE_N1_COMPRESSOR"
+msgstr ""
+
+msgid "FCS_FAILURE_P_SENSOR_3"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_LVDT_1"
+msgstr ""
+
+msgid " Ground Crew: Utilities refill complete!"
+msgstr ""
+
+msgid "RDR_FAILURE_ARRAY"
+msgstr ""
+
+msgid "EMMC_FAILURE_AC_GENERATOR"
+msgstr ""
+
+msgid "FAILURE_EXT_LIGHT_LAND"
+msgstr ""
+
+msgid " Ground Crew: Hey! Do Not Move!"
+msgstr ""
+
+msgid " Ground Crew: Coordinates ready!"
+msgstr ""
+
+msgid "SWMMC_FAILURE_HUD"
+msgstr ""
+
+msgid "ENGINE_FAILURE_N1_TURBINE"
+msgstr ""
+
+msgid "RWR_FAILURE_RECEIVER_XX3"
+msgstr ""
+
+msgid "OXY_FAILURE_L_LEAK_SEVERE"
+msgstr ""
+
+msgid "FCS_FAILURE_L_ELEVATOR_ELEC_D"
+msgstr ""
+
+msgid "FCS_FAILURE_R_ELEVATOR_ELEC_C"
+msgstr ""
+
+msgid "SWMMC_FAILURE_CSU"
+msgstr ""
+
+msgid "FCS_FAILURE_R_ELEVATOR_HYD_2"
+msgstr ""
+
+msgid "FCS_FAILURE_Q_SENSOR_1"
+msgstr ""
+
+msgid "MWMMC_FAILURE"
+msgstr ""
+
+msgid "EMMC_FAILURE_BATTERY_FCS2"
+msgstr ""
+
+msgid "EMMC_FAILURE_SCU_AC2AC36V"
+msgstr ""
+
+msgid "SWMMC_FAILURE"
+msgstr ""
+
+msgid "OESP_FAILURE_FL_DISP_R"
+msgstr ""
+
+msgid "FCS_FAILURE_AOA_SENSOR_1"
+msgstr ""
+
+msgid "FAILURE_EXT_LIGHT_NAV_TAIL"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_RDR"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_SAIU"
+msgstr ""
+
+msgid "OESP_FAILURE_CH_DISP_R"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_1_ACCU"
+msgstr ""
+
+msgid "FAILURE_ECS_MECH"
+msgstr ""
+
+msgid "FCS_FAILURE_ROLL_LVDT_2"
+msgstr ""
+
+msgid "OXY_FAILURE_AIR_O2_SWITCH"
+msgstr ""
+
+msgid " Ground Crew: Laser code ready!"
+msgstr ""
+
+msgid "EMMC_FAILURE_AC_GENERATOR_SUBSYSTEM"
+msgstr ""
+
+msgid "FAILURE_EXT_LIGHT_NAV_LEFT"
+msgstr ""
+
+msgid "MWMMC_FAILURE_MBI"
+msgstr ""
+
+msgid "FCS_FAILURE_Q_SENSOR_4"
+msgstr ""
+
+msgid "SWMMC_FAILURE_MBI"
+msgstr ""
+
+msgid " Ground Crew: Open the canopy!"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_1_EXTERNAL_LEAKAGE"
+msgstr ""
+
+msgid "SWMMC_FAILURE_AAP"
+msgstr ""
+
+msgid "EMMC_FAILURE_PROBES_HEATING"
+msgstr ""
+
+msgid "AUTOSTART STOPPED"
+msgstr ""
+
+msgid "OXY_FAILURE_L_LEAK"
+msgstr ""
+
+msgid " Ground Crew: Please unplug the card first!"
+msgstr ""
+
+msgid "FCS_FAILURE_COMP_3"
+msgstr ""
+
+msgid "FCS_FAILURE_AOA_SENSOR_3"
+msgstr ""
+
+msgid "RWR_FAILURE_COMPUTER"
+msgstr ""
+
+msgid "EMMC_FAILURE_SCU_DC2AC36V"
+msgstr ""
+
+msgid "OXY_FAILURE_R_LEAK_SEVERE"
+msgstr ""
+
+msgid "ENGINE_FAILURE_DEEC"
+msgstr ""
+
+msgid "FCS_FAILURE_P_SENSOR_4"
+msgstr ""
+
+msgid "FCS_FAILURE_YAW_ELEC_SERVO_1"
+msgstr ""
+
+msgid "RWR_FAILURE_DB_NOT_LOADED"
+msgstr ""
+
+msgid "RWR_FAILURE_ANTENNA_FRONT_LEFT"
+msgstr ""
+
+msgid "SWMMC_FAILURE_CTVS"
+msgstr ""
+
+msgid "EMMC_FAILURE_DC_GENERATOR_CONTROLLER"
+msgstr ""
+
+msgid "CNI_FAILURE_COM2"
+msgstr ""
+
+msgid "FCS_FAILURE_LG_3"
+msgstr ""
+
+msgid "ECS_FAILURE_WS_GLASS_CRACKED"
+msgstr ""
+
+msgid "EMMC_FAILURE_DC_GENERATOR_VOLTAGE_LOW"
+msgstr ""
+
+msgid "EMMC_FAILURE_FUEL_LOW_LEVEL"
+msgstr ""
+
+msgid "EMMC_FAILURE_LANDING_GEAR"
+msgstr ""
+
+msgid "RWR_FAILURE_ANTENNA_REAR_RIGHT"
+msgstr ""
+
+msgid "RWR_FAILURE_RECEIVER_XX2"
+msgstr ""
+
+msgid "FCS_FAILURE_ROLL_AUGD_2"
+msgstr ""
+
+msgid " Ground Crew: Finally done!"
+msgstr ""
+
+msgid "DTC_FAILURE_DATA_CRC"
+msgstr ""
+
+msgid "INS_PU_REJECTED"
+msgstr ""
+
+msgid "CNI_FAILURE_RALT"
+msgstr ""
+
+msgid "ENGINE_FAILURE_NOZZLE_CONTROLLER"
+msgstr ""
+
+msgid "SWMMC_AAP_NO_RS422_COMM"
+msgstr ""
+
+msgid "EMMC_FAILURE_FUEL_UPPER_PUMP"
+msgstr ""
+
+msgid "CNI_FAILURE_IFF_RX"
+msgstr ""
+
+msgid "FCS_FAILURE_LG_1"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_RATE_GYRO_3"
+msgstr ""
+
+msgid "RDR_FAILURE_TRANSMITTER_DEGRATION"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_RALT"
+msgstr ""
+
+msgid "FCS_FAILURE_R_ELEVATOR_ELEC_A"
+msgstr ""
+
+msgid "FCS_FAILURE_L_ELEVATOR_HYD_2"
+msgstr ""
+
+msgid "EMMC_FAILURE_SCU_DC2AC115V"
+msgstr ""
+
+msgid "FCS_FAILURE_NZ_SENSOR_4"
+msgstr ""
+
+msgid "FCS_FAILURE_WOW_2"
+msgstr ""
+
+msgid "EMMC_FAILURE_DADS_MPTU"
+msgstr ""
+
+msgid "EMMC_FAILURE_ECS_OFF"
+msgstr ""
+
+msgid "CNI_FAILURE_ILS"
+msgstr ""
+
+msgid "Intercom"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_EMERGE_ACCU"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_INS"
+msgstr ""
+
+msgid "FCS_FAILURE_EFCS_1"
+msgstr ""
+
+msgid "EMMC_FAILURE_DC_GENERATOR_VOLTAGE_HIGH"
+msgstr ""
+
+msgid "EMMC_FAILURE_DC_GENERATOR_SUBSYSTEM"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_LVDT_4"
+msgstr ""
+
+msgid "RWR_FAILURE_ANTENNA_REAR_LEFT"
+msgstr ""
+
+msgid "SNS_FAILURE_ANTENNA"
+msgstr ""
+
+msgid "CNI_FAILURE_COM1"
+msgstr ""
+
+msgid "FAILURE_SMS_PYLON_5"
+msgstr ""
+
+msgid "FAILURE_EXT_LIGHT_ANTICOL"
+msgstr ""
+
+msgid "FAILURE_SMS_PYLON_3"
+msgstr ""

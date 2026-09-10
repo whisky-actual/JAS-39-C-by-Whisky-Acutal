@@ -213,4 +213,5 @@ return {
     RemoveProbe  = DbOption.new():setValue(false):checkbox(),
 
     MUSICNUM_SLIDER = DbOption.new():setValue(0):slider(Range(0, 30)),
+    MFCDBASE_SLIDER = DbOption.new():setValue(0.5):slider(Range(0.1, 1.0)),
 }

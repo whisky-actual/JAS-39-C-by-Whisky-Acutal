@@ -7,13 +7,13 @@ tex_poly.material    = HUD_TEX_IND1
 tex_poly.name        = "hud_wpn_rdyx"
 tex_poly.vertices    = {{30.135/2,18.834/2},{30.135/2,-18.834/2},{-30.135/2,-18.834/2},{-30.135/2,18.834/2}}
 tex_poly.tex_coords  = HUD_tex_coord(872, 192, 192, 120, HUD_TEX_IND1_W, HUD_TEX_IND1_H)
-tex_poly.init_pos    = {-87.894, -133.223, 0}
+tex_poly.init_pos    = {-117, -142}
 tex_poly.indices     = DEF_BOX_INDICES
 tex_poly.controllers = {{"hud_wpn_rdyx"}}
 AddElementObject(tex_poly)
 
 
--- 机炮十字
+--[[-- Gun Cross
 tex_poly             = CreateElement "ceTexPoly"
 tex_poly.material    = HUD_TEX_IND1
 tex_poly.name        = "hud_gun_cross"
@@ -21,47 +21,85 @@ tex_poly.vertices    = {{10.045,10.045},{10.045,-10.045},{-10.045,-10.045},{-10.
 tex_poly.tex_coords  = HUD_tex_coord(0, 192, 128, 128, HUD_TEX_IND1_W, HUD_TEX_IND1_H)
 tex_poly.init_pos    = {0, vert_bias, 0}
 tex_poly.indices     = DEF_BOX_INDICES
-AddElementObject(tex_poly)
+AddElementObject(tex_poly)]]
 
 
--- 目标框
-tex_poly             = CreateElement "ceTexPoly"
-tex_poly.material    = HUD_TEX_IND1
-tex_poly.name        = 'target_designator'
-tex_poly.vertices    = {{25.113/2, 25.113/2},{25.113/2, -25.113/2},{-25.113/2, -25.113/2},{-25.113/2, 25.113/2}}
---tex_poly.tex_coords  = HUD_tex_coord(528, 464, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H)
-tex_poly.state_tex_coords = {
+-- HPT目标框
+hpt_tex_poly             = CreateElement "ceTexPoly"
+hpt_tex_poly.material    = HUD_TEX_IND1
+hpt_tex_poly.name        = 'hpt_designator'
+hpt_tex_poly.vertices    = {{25.113/2, 25.113/2},{25.113/2, -25.113/2},{-25.113/2, -25.113/2},{-25.113/2, 25.113/2}}
+--hpt_tex_poly.tex_coords  = HUD_tex_coord(528, 464, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H)
+hpt_tex_poly.state_tex_coords = {
     HUD_tex_coord( 528, 624, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --0 四角方框: 不明目标
     HUD_tex_coord( 528, 464, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --1 封闭方框: 确认敌机
     HUD_tex_coord( 368, 624, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --2 带x四角: 确认友机
     HUD_tex_coord( 368, 464, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --3 菱形: 面目标
     HUD_tex_coord( 120, 712, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --4 下划线: 丢失目标记忆
     HUD_tex_coord( 688, 624, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --5 圆形: OAP参考点
+    HUD_tex_coord( 280, 944, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --6 四角三角: 不明目标
+    HUD_tex_coord( 120, 872, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --7 封闭三角: 确认敌机
+    HUD_tex_coord( 440, 944, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --8 带x三角: 确认友机
 }
-tex_poly.init_pos    = {0, 0, 0}
-tex_poly.indices     = DEF_BOX_INDICES
-tex_poly.controllers = {{"hud_SPI_target", range_l, range_r, range_u, range_d, range_d2}}
-AddElementObject(tex_poly)
+hpt_tex_poly.init_pos    = {0, 0, 0}
+hpt_tex_poly.indices     = DEF_BOX_INDICES
+hpt_tex_poly.controllers = {{"hud_SPI_target", range_l, range_r, range_u, range_d, range_d2}}
+AddElementObject(hpt_tex_poly)
 
-tgt_heading_poly                = CreateElement "ceTexPoly"
-tgt_heading_poly.material       = HUD_TEX_IND1
-tgt_heading_poly.vertices       = {{18.834/2, 68.746/2+31.391},{18.834/2, -68.746/2+31.391},{-18.834/2, -68.746/2+31.391},{-18.834/2, 68.746/2+31.391}}
-tgt_heading_poly.tex_coords     = HUD_tex_coord(0, 712, 120, 438, HUD_TEX_IND1_W, HUD_TEX_IND1_H)
-tgt_heading_poly.init_pos       = {0, 0, 0}
-tgt_heading_poly.indices        = DEF_BOX_INDICES
-tgt_heading_poly.controllers    = {{"hud_SPI_direction", range_l, range_r, range_u, range_d, range_d2}}
-tgt_heading_poly.parent_element = 'target_designator'
-AddElementObject(tgt_heading_poly)
+hpt_heading_poly                = CreateElement "ceTexPoly"
+hpt_heading_poly.material       = HUD_TEX_IND1
+hpt_heading_poly.vertices       = {{18.834/2, 68.746/2+31.391},{18.834/2, -68.746/2+31.391},{-18.834/2, -68.746/2+31.391},{-18.834/2, 68.746/2+31.391}}
+hpt_heading_poly.tex_coords     = HUD_tex_coord(0, 712, 120, 438, HUD_TEX_IND1_W, HUD_TEX_IND1_H)
+hpt_heading_poly.init_pos       = {0, 0, 0}
+hpt_heading_poly.indices        = DEF_BOX_INDICES
+hpt_heading_poly.controllers    = {{"hud_SPI_direction", range_l, range_r, range_u, range_d, range_d2}}
+hpt_heading_poly.parent_element = 'hpt_designator'
+AddElementObject(hpt_heading_poly)
 
-local text_strpoly          = CreateElement "ceStringPoly"
-text_strpoly.parent_element = 'target_designator'
-text_strpoly.material       = HUD_IND_FONT
-text_strpoly.init_pos       = {0, 0, 0}
-text_strpoly.alignment      = "CenterCenter"
-text_strpoly.controllers    = {{"hud_txt_AA_TOF_TOA"},} --TODO
-text_strpoly.value          = "60"
-text_strpoly.stringdefs     = HUD_STRINGDEFS_DEF_X08
-AddElementObject(text_strpoly)
+local hpt_text_strpoly          = CreateElement "ceStringPoly"
+hpt_text_strpoly.material       = HUD_IND_FONT
+hpt_text_strpoly.stringdefs     = HUD_STRINGDEFS_DEF_X08
+hpt_text_strpoly.init_pos       = {0, 0, 0}
+hpt_text_strpoly.alignment      = "CenterCenter"
+hpt_text_strpoly.controllers    = {{"hud_txt_AA_TOF_TOA"},} --TODO
+hpt_text_strpoly.value          = "60"
+hpt_text_strpoly.parent_element = 'hpt_designator'
+AddElementObject(hpt_text_strpoly)
+
+
+
+-- SPT目标框
+spt_tex_poly             = CreateElement "ceTexPoly"
+spt_tex_poly.material    = HUD_TEX_IND1
+spt_tex_poly.name        = 'spt_designator'
+spt_tex_poly.vertices    = {{25.113/2, 25.113/2},{25.113/2, -25.113/2},{-25.113/2, -25.113/2},{-25.113/2, 25.113/2}}
+--spt_tex_poly.tex_coords  = HUD_tex_coord(528, 464, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H)
+spt_tex_poly.state_tex_coords = {
+    HUD_tex_coord( 528, 624, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --0 四角方框: 不明目标
+    HUD_tex_coord( 528, 464, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --1 封闭方框: 确认敌机
+    HUD_tex_coord( 368, 624, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --2 带x四角: 确认友机
+    HUD_tex_coord( 368, 464, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --3 菱形: 面目标
+    HUD_tex_coord( 120, 712, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --4 下划线: 丢失目标记忆
+    HUD_tex_coord( 688, 624, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --5 圆形: OAP参考点
+    HUD_tex_coord( 280, 944, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --6 四角三角: 不明目标
+    HUD_tex_coord( 120, 872, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --7 封闭三角: 确认敌机
+    HUD_tex_coord( 440, 944, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --8 带x三角: 确认友机
+}
+spt_tex_poly.init_pos    = {0, 0, 0}
+spt_tex_poly.indices     = DEF_BOX_INDICES
+spt_tex_poly.controllers = {{"hud_SPI_target", range_l, range_r, range_u, range_d, range_d2, 1}}
+AddElementObject(spt_tex_poly)
+
+spt_heading_poly                = CreateElement "ceTexPoly"
+spt_heading_poly.material       = HUD_TEX_IND1
+spt_heading_poly.vertices       = {{18.834/2, 68.746/2+31.391},{18.834/2, -68.746/2+31.391},{-18.834/2, -68.746/2+31.391},{-18.834/2, 68.746/2+31.391}}
+spt_heading_poly.tex_coords     = HUD_tex_coord(0, 712, 120, 438, HUD_TEX_IND1_W, HUD_TEX_IND1_H)
+spt_heading_poly.init_pos       = {0, 0, 0}
+spt_heading_poly.indices        = DEF_BOX_INDICES
+spt_heading_poly.controllers    = {{"hud_SPI_direction", range_l, range_r, range_u, range_d, range_d2, 1}}
+spt_heading_poly.parent_element = 'spt_designator'
+AddElementObject(spt_heading_poly)
+
 
 
 -- OAP 菱形标记
@@ -90,13 +128,20 @@ tex_poly.state_tex_coords = {
     HUD_tex_coord(1008, 784, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --2 下 ^
     HUD_tex_coord(1008, 624, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --3 右 <
 }
+--[[
+tex_poly.state_tex_coords = {
+    HUD_tex_coord(1008, 944, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --0 Top v
+    HUD_tex_coord( 848, 624, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --1 Left >
+    HUD_tex_coord(1008, 784, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --2 Bottom ^
+    HUD_tex_coord(1008, 624, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --3 Right <
+}]]
 tex_poly.init_pos    = {0, 0, 0}
 tex_poly.indices     = DEF_BOX_INDICES
 tex_poly.controllers = {{"hud_AA_dlz_caret", 25.113/2}}
-tex_poly.parent_element = 'target_designator'
+tex_poly.parent_element = 'hpt_designator'
 AddElementObject(tex_poly)
 
--- AA ASE环
+-- AA ASE Ring
 ase_circle             = CreateElement "ceSimpleLineObject"
 ase_circle.material    = HUD_MAT_DEF
 ase_circle.width       = 1.0/2 -- 1.256/2
@@ -105,7 +150,7 @@ ase_circle.controllers = {{"hud_AA_ase_circle", 72}}
 AddElementObject(ase_circle)
 
 
--- AA PIP点
+-- AA PIP Dot
 tex_poly             = CreateElement "ceTexPoly"
 tex_poly.material    = HUD_TEX_IND2
 tex_poly.name        = "hud_AA_pip_dot"
@@ -116,7 +161,7 @@ tex_poly.controllers = { {"hud_AA_pip_dot"},}
 tex_poly.indices     = DEF_BOX_INDICES
 AddElementObject(tex_poly)
 
--- 红外弹导引头**
+-- IR Seeker
 tex_poly             = CreateElement "ceTexPoly"
 tex_poly.material    = HUD_TEX_IND1
 tex_poly.name        = "hud_irseeker"
@@ -128,7 +173,7 @@ tex_poly.indices     = DEF_BOX_INDICES
 AddElementObject(tex_poly)
 
 
--- CAC模式雷达扫描边界
+-- CAC mode radar scan boundary
 rdr_ant_scan_zone                = CreateElement "ceSimpleLineObject"
 rdr_ant_scan_zone.name           = "rdr_cac_ant_scan_zone"
 --rdr_ant_scan_zone.material       = HUD_MAT_DEF
@@ -149,7 +194,7 @@ function AG_Bomb_CCIP_Solution()
     ccip_base.controllers = {{"hud_AG_CCIP_bomb_pipper_presence"}}
     AddToFPM(ccip_base)
 
-    -- CCIP瞄准环
+    -- CCIP aiming reticle
     local ccip           = CreateElement "ceTexPoly"
     ccip.material        = HUD_TEX_IND2
     ccip.name            = "ccip_pipper"
@@ -181,7 +226,7 @@ end
 AG_Bomb_CCIP_Solution()
 ------------------------------
 
--- AG GUN CCIP瞄准环
+-- AG GUN CCIP aiming reticle
 local gun_AG_pipper          = CreateElement "ceTexPoly"
 gun_AG_pipper.material       = HUD_TEX_IND1
 gun_AG_pipper.name           = "AG_gun_pipper"
@@ -194,7 +239,7 @@ gun_AG_pipper.controllers    = {{"hud_AG_gun_pipper"}}
 AddToGunCross(gun_AG_pipper)
 
 ----------------------------------------------------------------------------------------------------
--- AG ROCKET CCIP瞄准环
+-- AG ROCKET CCIP aiming reticle
 local AG_rocket_pipper           = CreateElement "ceTexPoly"
 AG_rocket_pipper.material        = HUD_TEX_IND1
 AG_rocket_pipper.name            = "AG_rocket_pipper"
@@ -207,7 +252,7 @@ AG_rocket_pipper.controllers     = {{"hud_AG_rocket_pipper"}}
 
 AddHUDElement(AG_rocket_pipper)
 
--- AG BRM1 ROCKET ASE环
+-- AG BRM1 ROCKET ASE
 brm1_ase_circle             = CreateElement "ceSimpleLineObject"
 brm1_ase_circle.material    = HUD_MAT_DEF
 brm1_ase_circle.width       = 1.0/2 -- 1.256/2
@@ -216,7 +261,7 @@ brm1_ase_circle.controllers = {{"hud_AG_brm1_ase_circle", 72}}
 AddElementObject(brm1_ase_circle)
 
 ----------------------------------------------------------------------------------------------------
--- AG TDC 指示
+-- AG TDC indicator
 local AG_tdc           = CreateElement "ceTexPoly"
 AG_tdc.material        = HUD_TEX_IND1
 AG_tdc.name            = "AG_tdc"
@@ -228,7 +273,7 @@ AG_tdc.controllers     = {{"hud_TDC", range_l, range_r, range_u, range_d2}}
 AG_tdc.isdraw          = false
 AddHUDElement(AG_tdc)
 
--- DTOS瞄准环
+-- DTOS aiming reticle
 function AG_Bomb_DTOS_Solution()
     local AG_DTOS           = CreateElement "ceTexPoly"
     AG_DTOS.material        = HUD_TEX_IND2
@@ -260,7 +305,7 @@ end
 AG_Bomb_DTOS_Solution()
 
 
--- DIR瞄准环
+-- DIR aiming reticle
 function AG_Bomb_DIR_Solution()
     local AG_DIR           = CreateElement "ceTexPoly"
     AG_DIR.material        = HUD_TEX_IND2
@@ -355,7 +400,7 @@ CCRP_PipperAndCue_New()
 
 
 ---- AG sensor etc
--- WMD7 指向指示符号
+-- WMD7 pointing indicator symbol
 hud_wmd7             = CreateElement "ceTexPoly"
 hud_wmd7.material    = HUD_TEX_IND1
 hud_wmd7.name        = "hud_wmd7"
@@ -366,7 +411,7 @@ hud_wmd7.controllers = { {"hud_wmd7"},}
 hud_wmd7.indices     = DEF_BOX_INDICES
 AddElementObject(hud_wmd7)
 
--- TVIR传感器(C-701T) 指向指示符号
+-- TVIR sensor (C-701T) pointing indicator symbol
 hud_tvir             = CreateElement "ceTexPoly"
 hud_tvir.material    = HUD_TEX_IND1
 hud_tvir.name        = "hud_tvir"
@@ -390,7 +435,7 @@ feds_line_snake.width        = 1.256/2
 feds_line_snake.controllers  = {{"hud_feds_line"}}
 AddToGunCross(feds_line_snake)
 
--- 600m标识
+-- 600m marker
 local feds_line_snake_mark_600        = CreateElement "ceSimpleLineObject"
 feds_line_snake_mark_600.material     = HUD_MAT_DEF
 feds_line_snake_mark_600.vertices     = {{-12,0},{12,0}}
@@ -398,7 +443,7 @@ feds_line_snake_mark_600.width        = 1.256/2
 feds_line_snake_mark_600.controllers  = {{"hud_feds_line_mark_600"}}
 AddToGunCross(feds_line_snake_mark_600)
 
--- 1000m标识
+-- 1000m marker
 local feds_line_snake_mark_1000        = CreateElement "ceSimpleLineObject"
 feds_line_snake_mark_1000.material     = HUD_MAT_DEF
 feds_line_snake_mark_1000.vertices     = {{-12,0},{12,0}}
@@ -443,3 +488,169 @@ gun_AA_pipper_appr.indices        = DEF_BOX_INDICES
 gun_AA_pipper_appr.controllers    = {{"hud_AA_gun_pipper_appr", 600}}
 gun_AA_pipper_appr.parent_element = gun_AA_pipper.name
 AddToGunCross(gun_AA_pipper_appr)
+
+
+---------------------------------
+-- stand-off weapon envelop
+---------------------------------
+
+-- env base
+local standoff_base          = CreateElement "ceSimple"
+standoff_base.name           = "standoff_base"
+standoff_base.init_pos       = {0, general_vert_bias, 0} -- vert_bias
+standoff_base.controllers    = {{"hud_standoff_wpn_env"}}
+AddElementObject(standoff_base)
+
+----
+standoff_wpn_bar_top                = CreateElement "ceTexPoly"
+standoff_wpn_bar_top.material       = HUD_TEX_IND3
+standoff_wpn_bar_top.name           = 'hud_standoff_wpn_bar_top'
+standoff_wpn_bar_top.vertices       = {{23.543/2, 58/15*23.543/2},{23.543/2, -58/15*23.543/2},{-23.543/2, -58/15*23.543/2},{-23.543/2, 58/15*23.543/2}}
+--standoff_wpn_bar_top.tex_coords     = HUD_tex_coord(   0,   0, 150, 580, HUD_TEX_IND3_W, HUD_TEX_IND3_H)
+standoff_wpn_bar_top.state_tex_coords = {
+    HUD_tex_coord( 450,   0, 150, 580, HUD_TEX_IND3_W, HUD_TEX_IND3_H), -- sold 160
+    HUD_tex_coord( 900,   0, 150, 580, HUD_TEX_IND3_W, HUD_TEX_IND3_H), -- dashed
+}
+standoff_wpn_bar_top.init_pos       = {0, 58/15*23.543/2, 0}
+standoff_wpn_bar_top.init_rot       = {90, 0, 0}
+standoff_wpn_bar_top.indices        = DEF_BOX_INDICES
+standoff_wpn_bar_top.parent_element = standoff_base.name
+standoff_wpn_bar_top.controllers    = {{"hud_standoff_wpn_bar", 0}}
+AddElementObject(standoff_wpn_bar_top)
+
+----
+standoff_wpn_bar_btn                = CreateElement "ceTexPoly"
+standoff_wpn_bar_btn.material       = HUD_TEX_IND3
+standoff_wpn_bar_btn.name           = 'hud_standoff_wpn_bar_btn'
+standoff_wpn_bar_btn.vertices       = {{23.543/2, 58/15*23.543/2},{23.543/2, -58/15*23.543/2},{-23.543/2, -58/15*23.543/2},{-23.543/2, 58/15*23.543/2}}
+--standoff_wpn_bar_btn.tex_coords  = HUD_tex_coord(528, 464, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H)
+standoff_wpn_bar_btn.state_tex_coords = {
+    HUD_tex_coord( 450,   0, 150, 580, HUD_TEX_IND3_W, HUD_TEX_IND3_H), -- sold 160
+    HUD_tex_coord( 900,   0, 150, 580, HUD_TEX_IND3_W, HUD_TEX_IND3_H), -- dashed
+}
+standoff_wpn_bar_btn.init_pos       = {0, -58/15*23.543/2, 0}
+standoff_wpn_bar_btn.init_rot       = {-90, 0, 0}
+standoff_wpn_bar_btn.indices        = DEF_BOX_INDICES
+standoff_wpn_bar_btn.parent_element = standoff_base.name
+standoff_wpn_bar_btn.controllers    = {{"hud_standoff_wpn_bar", 1}}
+AddElementObject(standoff_wpn_bar_btn)
+
+----
+standoff_wpn_bar_left                = CreateElement "ceTexPoly"
+standoff_wpn_bar_left.material       = HUD_TEX_IND3
+standoff_wpn_bar_left.name           = 'hud_standoff_wpn_bar_left'
+standoff_wpn_bar_left.vertices       = {{23.543/2, 58/15*23.543/2},{23.543/2, -58/15*23.543/2},{-23.543/2, -58/15*23.543/2},{-23.543/2, 58/15*23.543/2}}
+--standoff_wpn_bar_left.tex_coords  = HUD_tex_coord(528, 464, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H)
+standoff_wpn_bar_left.state_tex_coords = {
+    HUD_tex_coord( 150,   0, 150, 580, HUD_TEX_IND3_W, HUD_TEX_IND3_H), -- sold 160
+    HUD_tex_coord( 600,   0, 150, 580, HUD_TEX_IND3_W, HUD_TEX_IND3_H), -- dashed
+}
+standoff_wpn_bar_left.init_pos       = {-58/15*23.543/2, 0, 0}
+standoff_wpn_bar_left.indices        = DEF_BOX_INDICES
+standoff_wpn_bar_left.parent_element = standoff_base.name
+standoff_wpn_bar_left.controllers    = {{"hud_standoff_wpn_bar", 2}}
+AddElementObject(standoff_wpn_bar_left)
+
+----
+standoff_wpn_bar_right                = CreateElement "ceTexPoly"
+standoff_wpn_bar_right.material       = HUD_TEX_IND3
+standoff_wpn_bar_right.name           = 'hud_standoff_wpn_bar_right'
+standoff_wpn_bar_right.vertices       = {{23.543/2, 58/15*23.543/2},{23.543/2, -58/15*23.543/2},{-23.543/2, -58/15*23.543/2},{-23.543/2, 58/15*23.543/2}}
+--standoff_wpn_bar_right.tex_coords  = HUD_tex_coord(528, 464, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H)
+standoff_wpn_bar_right.state_tex_coords = {
+    HUD_tex_coord( 300,   0, 150, 580, HUD_TEX_IND3_W, HUD_TEX_IND3_H), -- sold 160
+    HUD_tex_coord( 750,   0, 150, 580, HUD_TEX_IND3_W, HUD_TEX_IND3_H), -- dashed
+}
+standoff_wpn_bar_right.init_pos       = {58/15*23.543/2, 0, 0}
+standoff_wpn_bar_right.indices        = DEF_BOX_INDICES
+standoff_wpn_bar_right.parent_element = standoff_base.name
+standoff_wpn_bar_right.controllers    = {{"hud_standoff_wpn_bar", 3}}
+AddElementObject(standoff_wpn_bar_right)
+
+
+----
+standoff_wpn_tick_top                = CreateElement "ceTexPoly"
+standoff_wpn_tick_top.material       = HUD_TEX_IND3
+standoff_wpn_tick_top.name           = 'hud_standoff_wpn_tick_top'
+standoff_wpn_tick_top.vertices       = {{25.113/2, 25.113/2},{25.113/2, -25.113/2},{-25.113/2, -25.113/2},{-25.113/2, 25.113/2}}
+standoff_wpn_tick_top.tex_coords     = HUD_tex_coord(760, 740, 160, 160, HUD_TEX_IND3_W, HUD_TEX_IND3_H)
+standoff_wpn_tick_top.init_pos       = {0, 58/15*23.543/2, 0}
+standoff_wpn_tick_top.indices        = DEF_BOX_INDICES
+standoff_wpn_tick_top.parent_element = standoff_base.name
+standoff_wpn_tick_top.controllers    = {{"hud_standoff_wpn_tick", 0, 58/15*23.543/2}}
+AddElementObject(standoff_wpn_tick_top)
+
+----
+standoff_wpn_tick_btn                = CreateElement "ceTexPoly"
+standoff_wpn_tick_btn.material       = HUD_TEX_IND3
+standoff_wpn_tick_btn.name           = 'hud_standoff_wpn_tick_btn'
+standoff_wpn_tick_btn.vertices       = {{25.113/2, 25.113/2},{25.113/2, -25.113/2},{-25.113/2, -25.113/2},{-25.113/2, 25.113/2}}
+standoff_wpn_tick_btn.tex_coords     = HUD_tex_coord(760, 580, 160, 160, HUD_TEX_IND3_W, HUD_TEX_IND3_H)
+standoff_wpn_tick_btn.init_pos       = {0, -58/15*23.543/2, 0}
+standoff_wpn_tick_btn.indices        = DEF_BOX_INDICES
+standoff_wpn_tick_btn.parent_element = standoff_base.name
+standoff_wpn_tick_btn.controllers    = {{"hud_standoff_wpn_tick", 1, 58/15*23.543/2}}
+AddElementObject(standoff_wpn_tick_btn)
+
+----
+standoff_wpn_tick_left                = CreateElement "ceTexPoly"
+standoff_wpn_tick_left.material       = HUD_TEX_IND3
+standoff_wpn_tick_left.name           = 'hud_standoff_wpn_tick_right'
+standoff_wpn_tick_left.vertices       = {{25.113/2, 25.113/2},{25.113/2, -25.113/2},{-25.113/2, -25.113/2},{-25.113/2, 25.113/2}}
+standoff_wpn_tick_left.tex_coords     = HUD_tex_coord(600, 580, 160, 160, HUD_TEX_IND3_W, HUD_TEX_IND3_H)
+standoff_wpn_tick_left.init_pos       = {-58/15*23.543/2, -58/15*23.543/4, 0}
+standoff_wpn_tick_left.indices        = DEF_BOX_INDICES
+standoff_wpn_tick_left.parent_element = standoff_base.name
+standoff_wpn_tick_left.controllers    = {{"hud_standoff_wpn_tick", 2, 58/15*23.543/2}}
+AddElementObject(standoff_wpn_tick_left)
+
+----
+standoff_wpn_tick_right_in                = CreateElement "ceTexPoly"
+standoff_wpn_tick_right_in.material       = HUD_TEX_IND3
+standoff_wpn_tick_right_in.name           = 'hud_standoff_wpn_tick_right_in'
+standoff_wpn_tick_right_in.vertices       = {{25.113/2, 25.113/2},{25.113/2, -25.113/2},{-25.113/2, -25.113/2},{-25.113/2, 25.113/2}}
+standoff_wpn_tick_right_in.tex_coords     = HUD_tex_coord(600, 580, 160, 160, HUD_TEX_IND3_W, HUD_TEX_IND3_H)
+standoff_wpn_tick_right_in.init_pos       = {58/15*23.543/2, -58/15*23.543/4, 0}
+standoff_wpn_tick_right_in.indices        = DEF_BOX_INDICES
+standoff_wpn_tick_right_in.parent_element = standoff_base.name
+standoff_wpn_tick_right_in.controllers    = {{"hud_standoff_wpn_tick", 3, 58/15*23.543/2}}
+AddElementObject(standoff_wpn_tick_right_in)
+
+----
+standoff_wpn_tick_right_out                = CreateElement "ceTexPoly"
+standoff_wpn_tick_right_out.material       = HUD_TEX_IND3
+standoff_wpn_tick_right_out.name           = 'hud_standoff_wpn_tick_right_out'
+standoff_wpn_tick_right_out.vertices       = {{25.113/2, 25.113/2},{25.113/2, -25.113/2},{-25.113/2, -25.113/2},{-25.113/2, 25.113/2}}
+standoff_wpn_tick_right_out.tex_coords     = HUD_tex_coord(920, 580, 160, 160, HUD_TEX_IND3_W, HUD_TEX_IND3_H)
+standoff_wpn_tick_right_out.init_pos       = {58/15*23.543/2, -58/15*23.543/4, 0}
+standoff_wpn_tick_right_out.indices        = DEF_BOX_INDICES
+standoff_wpn_tick_right_out.parent_element = standoff_base.name
+standoff_wpn_tick_right_out.controllers    = {{"hud_standoff_wpn_tick", 4, 58/15*23.543/2}}
+AddElementObject(standoff_wpn_tick_right_out)
+
+----
+standoff_wpn_target                = CreateElement "ceTexPoly"
+standoff_wpn_target.material       = HUD_TEX_IND3
+standoff_wpn_target.name           = 'hud_standoff_wpn_target'
+standoff_wpn_target.vertices       = {{25.113/2, 25.113/2},{25.113/2, -25.113/2},{-25.113/2, -25.113/2},{-25.113/2, 25.113/2}}
+standoff_wpn_target.tex_coords     = HUD_tex_coord(600, 740, 160, 160, HUD_TEX_IND3_W, HUD_TEX_IND3_H)
+standoff_wpn_target.init_pos       = {0, -58/15*23.543/2, 0}
+standoff_wpn_target.indices        = DEF_BOX_INDICES
+standoff_wpn_target.parent_element = standoff_base.name
+standoff_wpn_target.controllers    = {{"hud_standoff_wpn_target", 58/15*23.543, 58/15*23.543/2}}
+AddElementObject(standoff_wpn_target)
+
+----
+standoff_wpn_nolaunch                = CreateElement "ceTexPoly"
+standoff_wpn_nolaunch.material       = HUD_TEX_IND3
+standoff_wpn_nolaunch.name           = 'hud_standoff_wpn_nolaunch'
+standoff_wpn_nolaunch.vertices       = {{3.75*25.113/2, 3.75*25.113/2},{3.75*25.113/2, -3.75*25.113/2},{-3.75*25.113/2, -3.75*25.113/2},{-3.75*25.113/2, 3.75*25.113/2}}
+standoff_wpn_nolaunch.tex_coords     = HUD_tex_coord(0, 580, 600, 600, HUD_TEX_IND3_W, HUD_TEX_IND3_H)
+standoff_wpn_nolaunch.init_pos       = {0, 0, 0}
+standoff_wpn_nolaunch.indices        = DEF_BOX_INDICES
+standoff_wpn_nolaunch.parent_element = standoff_base.name
+standoff_wpn_nolaunch.controllers    = {{"standoff_wpn_nolaunch"}}
+AddElementObject(standoff_wpn_nolaunch)
+----------------------------------------------------------------------------------------
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
+----------------------------------------------------------------------------------------

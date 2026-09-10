@@ -38,7 +38,12 @@ texs = {
     
     {-- TDC游标
         cx = 0, cy = -740/1000, hw = 246.667/2000, hh = 246.667/2000, ulx = 0, uly = 592, w = 148, h = 148,
-        mat = MFCD_TEX_IND3_W, name = "rdr_tdc_sym", ctrls = {{"rdr_tdc", 0}},
+        mat = MFCD_TEX_IND3_W, name = "rdr_tdc_sym", state_tex = true,
+        multi_tex = {
+            MFCD_tex_coord(   0,  592, 148, 148, TEX_SIZE_X, TEX_SIZE_Y), -- normal
+            MFCD_tex_coord( 148,  740, 148, 148, TEX_SIZE_X, TEX_SIZE_Y), -- bind
+        },
+		ctrls = {{"rdr_tdc", 0}},
     },
     
     {-- 雷达锁定hpt 指示符 垂直实线
@@ -60,7 +65,7 @@ texs = {
         ctrls = {{"rdr_aa_locked_hpt_spt", 1}},
     },
     
-
+	-- dlz hpt
     {-- dlz.dMIN
         cx = 0, cy = -740/1000, hw = 146.667/2000, hh = 126.667/2000, ulx = 1136, uly = 366, w = 88, h = 76,
         mat = MFCD_TEX_IND4_G, ctrls = {{"rdr_aa_dlz", 0.0, 0}}, parent_element = "rdr_aa_beam_az_hpt_bar",
@@ -73,7 +78,6 @@ texs = {
         cx = 0, cy = -740/1000, hw = 146.667/2000, hh = 126.667/2000, ulx = 1224, uly = 290, w = 88, h = 76,
         mat = MFCD_TEX_IND4_G, ctrls = {{"rdr_aa_dlz", 3.0, 0}}, parent_element = "rdr_aa_beam_az_hpt_bar",
     },
-    
 	{-- dlz.dOpt
         cx = 0, cy = -740/1000, hw = 146.667/2000, hh = 126.667/2000, ulx = 1224, uly = 290, w = 88, h = 76,
         mat = MFCD_TEX_IND4_G, ctrls = {{"rdr_aa_dlz", 1.0, 0}}, parent_element = "rdr_aa_beam_az_hpt_bar",
@@ -85,6 +89,32 @@ texs = {
 	{-- dlz.Rpi
         cx = 0, cy = -740/1000, hw = 146.667/2000, hh = 126.667/2000, ulx = 1224, uly = 290, w = 88, h = 76,
         mat = MFCD_TEX_IND4_Y, ctrls = {{"rdr_aa_dlz", 5.0, 0}}, parent_element = "rdr_aa_beam_az_hpt_bar",
+    },
+	
+	-- dlz spt
+    {-- dlz.dMIN
+        cx = 0, cy = -740/1000, hw = 146.667/2000, hh = 126.667/2000, ulx = 1136, uly = 366, w = 88, h = 76,
+        mat = MFCD_TEX_IND4_G, ctrls = {{"rdr_aa_dlz", 0.0, 1}}, parent_element = "rdr_aa_beam_az_spt_bar",
+    },
+    {-- dlz.dMAX
+        cx = 0, cy = -740/1000, hw = 146.667/2000, hh = 126.667/2000, ulx = 1136, uly = 290, w = 88, h = 76,
+        mat = MFCD_TEX_IND4_G, ctrls = {{"rdr_aa_dlz", 2.0, 1}}, parent_element = "rdr_aa_beam_az_spt_bar",
+    },
+    {-- dlz.dNEZ
+        cx = 0, cy = -740/1000, hw = 146.667/2000, hh = 126.667/2000, ulx = 1224, uly = 290, w = 88, h = 76,
+        mat = MFCD_TEX_IND4_G, ctrls = {{"rdr_aa_dlz", 3.0, 1}}, parent_element = "rdr_aa_beam_az_spt_bar",
+    },
+	{-- dlz.dOpt
+        cx = 0, cy = -740/1000, hw = 146.667/2000, hh = 126.667/2000, ulx = 1224, uly = 290, w = 88, h = 76,
+        mat = MFCD_TEX_IND4_G, ctrls = {{"rdr_aa_dlz", 1.0, 1}}, parent_element = "rdr_aa_beam_az_spt_bar",
+    },
+	{-- dlz.Rmnvr
+        cx = 0, cy = -740/1000, hw = 146.667/2000, hh = 126.667/2000, ulx = 1224, uly = 290, w = 88, h = 76,
+        mat = MFCD_TEX_IND4_Y, ctrls = {{"rdr_aa_dlz", 4.0, 1}}, parent_element = "rdr_aa_beam_az_spt_bar",
+    },
+	{-- dlz.Rpi
+        cx = 0, cy = -740/1000, hw = 146.667/2000, hh = 126.667/2000, ulx = 1224, uly = 290, w = 88, h = 76,
+        mat = MFCD_TEX_IND4_Y, ctrls = {{"rdr_aa_dlz", 5.0, 1}}, parent_element = "rdr_aa_beam_az_spt_bar",
     },
     
     {-- pip dot
@@ -181,6 +211,10 @@ texts = {
         ctrls = {{"rdr_aa_hpt_basic_info",5}},
     },
     
+    {-- TDC bind信息
+        cx = MFCD_FONT_UD2_X, cy = MFCD_FONT_LR4_Y, mat = MFCD_FONT_W, value = "00R\n40.1", align = "LeftCenter", strdefs = MFCD_STRINGDEFS_DEF_X08,
+        ctrls = {{"rdr_aa_tdc_bind_data"}},
+    },
 }
 
 for i=1, #(texts) do

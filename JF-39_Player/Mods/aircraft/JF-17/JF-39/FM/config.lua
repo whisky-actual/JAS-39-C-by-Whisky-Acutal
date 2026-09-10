@@ -1,141 +1,195 @@
-JF39_FM =
-{
-    disable_built_in_oxygen_system = true,
+local mainGear = {
+	amortizer_max_length					= 0.40,
+	amortizer_basic_length					= 0.40,
+	amortizer_spring_force_factor			= 700000.0,
+	amortizer_spring_force_factor_rate		= 6,
+	amortizer_static_force					= 10000.0,
+	amortizer_reduce_length				= 0.38,
+	amortizer_direct_damper_force_factor		= 70000.0,
+	amortizer_back_damper_force_factor		= 140000.0,
+	allowable_hard_contact_length			= 0.14,
 
-    -- COM lifted slightly to compensate nose shell depth (player only)
-    -- +0.05 m proven safe, does not affect AI
-    center_of_mass    = {0.25, 0.38, 0.00},
-    moment_of_inertia = {12875.0, 85552.0, 75674.0, -1331.0},
+	amortizer_spring2_max_length			= 0.15,
+	amortizer_spring2_basic_length			= 0.15,
+	amortizer_spring2_spring_force_factor		= 6000000.0,
+	amortizer_spring2_spring_force_factor_rate	= 1.5,
+	amortizer_direct_damper2_force_factor		= 0.0,
+	amortizer_back_damper2_force_factor		= 0.0,
 
-    suspension =
-    {
-        ----------------------------------------------------------------
-        -- NOSE WHEEL (FIXED)
-        ----------------------------------------------------------------
-        {
-            -- MUST match visual wheel radius (0.4325 / 2)
-            wheel_radius = 0.21625,
+	amortizer_direct_damper_smoothing_factor	= 1.0 / 0.75,
+	amortizer_direct_damper2_smoothing_factor	= 1.0 / 0.75,
 
-            damper_coeff = 600.0,
-            filter_yaw   = true,
-            yaw_limit    = math.rad(65.0),
-            moment_limit = 800.0,
+	anti_skid_installed					= true,
 
-            allowable_hard_contact_length = 0.25,
+	crossover_locked_wheel_protection			= true,
+	crossover_locked_wheel_protection_speed_min	= 12.0,
+	anti_skid_improved					= true,
+	anti_skid_gain						= 300.0,
 
-            anti_skid_installed    = true,
-            wheel_brake_moment_max = 14000.0,
+	wheel_radius						= 0.340,
+	wheel_static_friction_factor			= 0.90,
+	wheel_glide_friction_factor				= 0.72,
+	wheel_side_friction_factor				= 0.78,
+	wheel_roll_friction_factor				= 0.025,
+	wheel_damage_force_factor				= 700.0,
+	wheel_brake_moment_max					= 15500.0,
+	wheel_kz_factor						= 0.32,
+	wheel_side_force_limit					= 45000.0,
+	noise_k							= 0.35,
+	wheel_damage_speedX					= 108,
+	wheel_damage_delta_speedX				= 15,
+}
 
-            amortizer_min_length   = 0.0,
-            amortizer_max_length   = 0.40,
+JF39_FM = {
+	center_of_mass						= {0.0, 0.0, 0.0},
+	moment_of_inertia					= {12793.0, 82531.8, 75190, 1081.0},
+	zeroize_amortizers_before_collision_check	= false,
 
-            -- Reduced so suspension settles higher
-            amortizer_basic_length = 0.45,
+	suspension = {
 
-            amortizer_spring_force_factor        = 3.0e+6,
-            amortizer_spring_force_factor_rate   = 4.0,
-            amortizer_static_force               = 9000.0,
+		{
+			damage_element					= 83,
+			wheel_axle_offset				= 0.08,
+			self_attitude					= false,
+			yaw_limit						= math.rad(75.0),
+			moment_limit					= 900.0,
+			damper_coeff					= 450.0,
+			filter_yaw						= false,
+			influence_of_pos_z_to_V_l_z		= false,
 
-            -- Reduced to prevent over-extension into ground
-            amortizer_reduce_length              = 0.35,
+			amortizer_min_length				= 0.0,
+			amortizer_max_length				= 0.424,
+			amortizer_basic_length				= 0.424,
+			amortizer_spring_force_factor			= 46000000.0,
+			amortizer_spring_force_factor_rate		= 9,
+			amortizer_static_force				= 15000.0,
+			amortizer_reduce_length				= 0.39,
+			amortizer_direct_damper_force_factor		= 40000.0,
+			amortizer_back_damper_force_factor		= 80000.0,
+			allowable_hard_contact_length			= 0.14,
 
-            amortizer_direct_damper_force_factor = 45000.0,
-            amortizer_back_damper_force_factor   = 45000.0,
+			amortizer_direct_damper_smoothing_factor	= 1.0 / 0.75,
 
-            wheel_static_friction_factor = 0.55,
-            wheel_side_friction_factor   = 0.85,
-            wheel_roll_friction_factor   = 0.08,
-            wheel_glide_friction_factor  = 0.75,
+			anti_skid_installed				= false,
 
-            wheel_damage_force_factor = 700.0,
-            wheel_damage_speed        = 650,
-            wheel_damage_speedX       = 650,
+			wheel_radius					= 0.26925,
+			wheel_static_friction_factor			= 0.72,
+			wheel_glide_friction_factor			= 0.58,
+			wheel_side_friction_factor			= 0.60,
+			wheel_roll_friction_factor			= 0.04,
+			wheel_damage_force_factor			= 600.0,
+			wheel_kz_factor					= 0.30,
+			noise_k						= 0.2,
+			wheel_damage_speedX				= 97.5,
+			wheel_damage_delta_speedX			= 11.5,
 
-            arg_post             = 0,
-            arg_amortizer        = 1,
-            arg_wheel_rotation   = 101,
-            arg_wheel_yaw        = 2,
-            collision_shell_name = 'WHEEL_F',
-        },
+			arg_post						= 0,
+			arg_amortizer					= 1,
+			arg_wheel_rotation				= 101,
+			arg_wheel_damage				= 135,
+			collision_shell_name = 'WHEEL_F',
+		},
 
-        ----------------------------------------------------------------
-        -- LEFT MAIN WHEEL
-        ----------------------------------------------------------------
-        {
-            mass         = 220,
-            wheel_radius = 0.3286, -- 0.6572 / 2
+		{
 
-            wheel_static_friction_factor = 0.68,
-            wheel_side_friction_factor   = 0.95,
-            wheel_roll_friction_factor   = 0.085,
-            wheel_glide_friction_factor  = 1.00,
+			amortizer_max_length					= mainGear.amortizer_max_length,
+			amortizer_basic_length				= mainGear.amortizer_basic_length,
+			amortizer_spring_force_factor			= mainGear.amortizer_spring_force_factor,
+			amortizer_spring_force_factor_rate		= mainGear.amortizer_spring_force_factor_rate,
+			amortizer_static_force				= mainGear.amortizer_static_force,
+			amortizer_reduce_length				= mainGear.amortizer_reduce_length,
+			amortizer_direct_damper_force_factor		= mainGear.amortizer_direct_damper_force_factor,
+			amortizer_back_damper_force_factor		= mainGear.amortizer_back_damper_force_factor,
+			allowable_hard_contact_length			= mainGear.allowable_hard_contact_length,
 
-            allowable_hard_contact_length = 0.20,
+			amortizer_spring2_max_length			= mainGear.amortizer_spring2_max_length,
+			amortizer_spring2_basic_length			= mainGear.amortizer_spring2_basic_length,
+			amortizer_spring2_spring_force_factor		= mainGear.amortizer_spring2_spring_force_factor,
+			amortizer_spring2_spring_force_factor_rate	= mainGear.amortizer_spring2_spring_force_factor_rate,
+			amortizer_direct_damper2_force_factor		= mainGear.amortizer_direct_damper2_force_factor,
+			amortizer_back_damper2_force_factor		= mainGear.amortizer_back_damper2_force_factor,
 
-            anti_skid_installed    = true,
-            wheel_brake_moment_max = 52000.0,
+			amortizer_direct_damper_smoothing_factor	= mainGear.amortizer_direct_damper_smoothing_factor,
+			amortizer_direct_damper2_smoothing_factor	= mainGear.amortizer_direct_damper2_smoothing_factor,
 
-            amortizer_min_length   = 0.0,
-            amortizer_max_length   = 0.40,
-            amortizer_basic_length = 0.40,
+			anti_skid_installed				= mainGear.anti_skid_installed,
 
-            amortizer_spring_force_factor        = 8.5e+6,
-            amortizer_spring_force_factor_rate   = 3.5,
-            amortizer_static_force               = 4500.0,
-            amortizer_reduce_length              = 0.25,
+			crossover_locked_wheel_protection			= mainGear.crossover_locked_wheel_protection,
+			crossover_locked_wheel_protection_wheel		= 2,
+			crossover_locked_wheel_protection_speed_min	= mainGear.crossover_locked_wheel_protection_speed_min,
+			anti_skid_improved					= mainGear.anti_skid_improved,
+			anti_skid_gain						= mainGear.anti_skid_gain,
 
-            amortizer_direct_damper_force_factor = 110000.0,
-            amortizer_back_damper_force_factor   = 50000.0,
+			wheel_radius					= mainGear.wheel_radius,
+			wheel_static_friction_factor			= mainGear.wheel_static_friction_factor,
+			wheel_side_friction_factor			= mainGear.wheel_side_friction_factor,
+			wheel_roll_friction_factor			= mainGear.wheel_roll_friction_factor,
+			wheel_glide_friction_factor			= mainGear.wheel_glide_friction_factor,
+			wheel_damage_force_factor			= mainGear.wheel_damage_force_factor,
+			wheel_brake_moment_max				= mainGear.wheel_brake_moment_max,
+			wheel_kz_factor					= mainGear.wheel_kz_factor,
+			wheel_side_force_limit				= mainGear.wheel_side_force_limit,
+			noise_k						= mainGear.noise_k,
+			wheel_damage_speedX				= mainGear.wheel_damage_speedX,
+			wheel_damage_delta_speedX			= mainGear.wheel_damage_delta_speedX,
 
-            wheel_damage_force_factor = 700.0,
-            wheel_damage_speed        = 650,
-            wheel_damage_speedX       = 650,
+			arg_post						= 5,
+			arg_amortizer					= 6,
+			arg_wheel_rotation				= 102,
+			arg_wheel_damage				= 137,
+			collision_shell_name = 'WHEEL_L',
+		},
 
-            arg_post             = 5,
-            arg_amortizer        = 6,
-            arg_wheel_rotation   = 102,
-            arg_wheel_yaw        = -1,
-            collision_shell_name = 'WHEEL_L',
-        },
+		{
 
-        ----------------------------------------------------------------
-        -- RIGHT MAIN WHEEL
-        ----------------------------------------------------------------
-        {
-            mass         = 220,
-            wheel_radius = 0.3286,
+			amortizer_max_length					= mainGear.amortizer_max_length,
+			amortizer_basic_length				= mainGear.amortizer_basic_length,
+			amortizer_spring_force_factor			= mainGear.amortizer_spring_force_factor,
+			amortizer_spring_force_factor_rate		= mainGear.amortizer_spring_force_factor_rate,
+			amortizer_static_force				= mainGear.amortizer_static_force,
+			amortizer_reduce_length				= mainGear.amortizer_reduce_length,
+			amortizer_direct_damper_force_factor		= mainGear.amortizer_direct_damper_force_factor,
+			amortizer_back_damper_force_factor		= mainGear.amortizer_back_damper_force_factor,
+			allowable_hard_contact_length			= mainGear.allowable_hard_contact_length,
 
-            wheel_static_friction_factor = 0.68,
-            wheel_side_friction_factor   = 0.95,
-            wheel_roll_friction_factor   = 0.085,
-            wheel_glide_friction_factor  = 1.00,
+			amortizer_spring2_max_length			= mainGear.amortizer_spring2_max_length,
+			amortizer_spring2_basic_length			= mainGear.amortizer_spring2_basic_length,
+			amortizer_spring2_spring_force_factor		= mainGear.amortizer_spring2_spring_force_factor,
+			amortizer_spring2_spring_force_factor_rate	= mainGear.amortizer_spring2_spring_force_factor_rate,
+			amortizer_direct_damper2_force_factor		= mainGear.amortizer_direct_damper2_force_factor,
+			amortizer_back_damper2_force_factor		= mainGear.amortizer_back_damper2_force_factor,
 
-            allowable_hard_contact_length = 0.20,
+			amortizer_direct_damper_smoothing_factor	= mainGear.amortizer_direct_damper_smoothing_factor,
+			amortizer_direct_damper2_smoothing_factor	= mainGear.amortizer_direct_damper2_smoothing_factor,
 
-            anti_skid_installed    = true,
-            wheel_brake_moment_max = 52000.0,
+			anti_skid_installed				= mainGear.anti_skid_installed,
 
-            amortizer_min_length   = 0.0,
-            amortizer_max_length   = 0.40,
-            amortizer_basic_length = 0.40,
+			crossover_locked_wheel_protection			= mainGear.crossover_locked_wheel_protection,
+			crossover_locked_wheel_protection_wheel		= 1,
+			crossover_locked_wheel_protection_speed_min	= mainGear.crossover_locked_wheel_protection_speed_min,
+			anti_skid_improved					= mainGear.anti_skid_improved,
+			anti_skid_gain						= mainGear.anti_skid_gain,
 
-            amortizer_spring_force_factor        = 8.5e+6,
-            amortizer_spring_force_factor_rate   = 3.5,
-            amortizer_static_force               = 4500.0,
-            amortizer_reduce_length              = 0.25,
+			wheel_radius					= mainGear.wheel_radius,
+			wheel_static_friction_factor			= mainGear.wheel_static_friction_factor,
+			wheel_side_friction_factor			= mainGear.wheel_side_friction_factor,
+			wheel_roll_friction_factor			= mainGear.wheel_roll_friction_factor,
+			wheel_glide_friction_factor			= mainGear.wheel_glide_friction_factor,
+			wheel_damage_force_factor			= mainGear.wheel_damage_force_factor,
+			wheel_brake_moment_max				= mainGear.wheel_brake_moment_max,
+			wheel_kz_factor					= mainGear.wheel_kz_factor,
+			wheel_side_force_limit				= mainGear.wheel_side_force_limit,
+			noise_k						= mainGear.noise_k,
+			wheel_damage_speedX				= mainGear.wheel_damage_speedX,
+			wheel_damage_delta_speedX			= mainGear.wheel_damage_delta_speedX,
 
-            amortizer_direct_damper_force_factor = 110000.0,
-            amortizer_back_damper_force_factor   = 50000.0,
+			arg_post						= 0,
+			arg_amortizer					= 4,
+			arg_wheel_rotation				= 103,
+			arg_wheel_damage				= 136,
+			collision_shell_name = 'WHEEL_R',
+		},
+	},
 
-            wheel_damage_force_factor = 700.0,
-            wheel_damage_speed        = 650,
-            wheel_damage_speedX       = 650,
-
-            arg_post             = 3,
-            arg_amortizer        = 4,
-            arg_wheel_rotation   = 103,
-            arg_wheel_yaw        = -1,
-            collision_shell_name = 'WHEEL_R',
-        },
-    }
+	disable_built_in_oxygen_system = true,
 }

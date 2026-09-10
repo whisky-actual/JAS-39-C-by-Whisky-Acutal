@@ -1,0 +1,3243 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0 trunk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-02 18:36+0400\n"
+"PO-Revision-Date: 2021-01-21 20:57+0300\n"
+"Last-Translator: uboats\n"
+"Language-Team: TODO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ru\n"
+"X-Generator: Poedit 2.4.2\n"
+
+msgid "Oxygen Tube Connector"
+msgstr "Разъем подключения кислородного шланга"
+
+msgid "Throttle Emergency Button"
+msgstr "РУД, аварийный режим, кнопка"
+
+msgid "Emergency Landing Gear Handle"
+msgstr "Шасси, ручка аварийного выпуска"
+
+msgid "AAR Switch"
+msgstr "Дозаправка в воздухе, переключатель топливных баков"
+
+msgid "Anti-Collision Light Knob Selector"
+msgstr "Проблесковые огни, переключатель режимов/яркости"
+
+msgid "Start Mode Selector - START/ENG COLD/STARTER COLD"
+msgstr "Двигатель, переключатель режимов, запуск/холод. прокрутка двиг./холод. прокрутка турбостартера"
+
+msgid "Active Fuel Cut-off Valve"
+msgstr "Топливная система, перекрывной кран, вкл./выкл."
+
+msgid "G-Suit Connector"
+msgstr "Разъем подключения ППК"
+
+msgid "Landing Gear Lever"
+msgstr "Шасси, рычаг выпуска/уборки"
+
+msgid "Radio Mode Selector"
+msgstr "Радиостанции (пульт), переключатель режимов"
+
+msgid "Light Switch - Land/Off/Taxi"
+msgstr "Фары, режим посадка/выкл./руление"
+
+msgid "Throttle Friction Handle"
+msgstr "Ручка затяжки РУД"
+
+msgid "Landing Gear Override Button"
+msgstr "Шасси, принудительное снятие с замков убр. положения, кнопка"
+
+msgid "Flood Light Direction"
+msgstr "Положение лампы заливающего света"
+
+msgid "Left MFCD Power"
+msgstr "МФИ левый, вкл./выкл."
+
+msgid "Master Arm Switch"
+msgstr "СУВ, главный выключатель вооружения"
+
+msgid "Oxygen Indicator Brightness Knob"
+msgstr "Регулятор подсвета указателя остатка кислорода"
+
+msgid "Brightness Knob"
+msgstr "Регулятор яркости"
+
+msgid "Landing Gear Override Button Cover"
+msgstr "Шасси, крышка кнопки снятия с замков убр. положения"
+
+msgid "Air Temp Knob Selector"
+msgstr "Система кондиционирования, переключатель температуры в кабине"
+
+msgid "CSS Handle"
+msgstr "Кабина, разрушение остекления фонаря, ручка"
+
+msgid "Eject Seat Safe/Arm Handle"
+msgstr "Кресло пилота, предохран. ручка системы катап, выкл./взведена"
+
+msgid "Direct Mode Switch"
+msgstr "ЭДСУ, режим \"жесткая связь\", вкл./выкл."
+
+msgid "Backup SAIU Knob Selector"
+msgstr "СУВ, аварийный режим, переключатель режимов"
+
+msgid "Ejection Seat Zeroizer Function"
+msgstr "Кресло пилота, уничтожение радиообор. и СРО при катап., вкл./выкл."
+
+msgid "Eject Seat Emergency O2"
+msgstr "Аварийная подача кислорода (кресло пилота)"
+
+msgid "Squelch OFF/SQL/ACKN"
+msgstr "Подавителя шумов, переключатель режимов, выкл./вкл./ACKN"
+
+msgid "Air Start Button"
+msgstr "Двигатель, кнопка запуска в воздухе"
+
+msgid "UFCP Button N/A"
+msgstr "UFCP, кнопка N/A"
+
+msgid "Mirror Left"
+msgstr "Зеркало левое"
+
+msgid "Console Light Knob"
+msgstr "Регулятор яркости подсвета консолей"
+
+msgid "Afterburner Switch"
+msgstr "Двигатель, выключатель аварийного форсажа, вкл./выкл."
+
+msgid "Right MFCD Power"
+msgstr "МФИ правый, вкл./выкл."
+
+msgid "Canopy Seal Handle"
+msgstr "Кабина, ручка герметизации"
+
+msgid "Ground Jettison Switch"
+msgstr "Выключатель аварийного сброса подвесок на земле"
+
+msgid "Radio Volume Knob"
+msgstr "Регулятор громкости радиостанции"
+
+msgid "Brake Test"
+msgstr "Шасси, переключатель контроля тормозов"
+
+msgid "COM1 Volume Knob"
+msgstr "Радиостанция COM1, регулятор громкости"
+
+msgid "HUD Backup Reticle Knob"
+msgstr "ИЛС, аварийный режим, регулятор яркости"
+
+msgid "Zeroizer Button Cover"
+msgstr "СРО, крышка кнопки уничтожения блока СРО, поднять/опустить"
+
+msgid "Eject Seat Firing Handle Safety Pin"
+msgstr "Кресло пилота, предохран. чека воспламенителя, установить/извлечь"
+
+msgid "Center MFCD Power"
+msgstr "МФИ центральный, вкл./выкл."
+
+msgid "Warning Panel Test Button"
+msgstr "Кнопка контроля светосигнальных табло"
+
+msgid "HUD Symbology Reject Switch"
+msgstr "ИЛС, кнопка очистки индикации"
+
+msgid "HUD Contrast Knob"
+msgstr "Регулятор контраста ИЛС"
+
+msgid "Warning Panel Day/Night Switch"
+msgstr "Панель светосигнальных табло, режим день/ночь"
+
+msgid "BARO Altitude Setting Knob"
+msgstr "Кремальера установки давления аэродрома"
+
+msgid "Formation Light Knob Selector"
+msgstr "Строевые огни, переключатель яркости"
+
+msgid "Air Start Button Cover"
+msgstr "Двигатель, крышка кнопки запуска в воздухе"
+
+msgid "AAR Light Brightness Knob"
+msgstr "Дозаправка в воздухе, регулятор яркости заправочной фары"
+
+msgid "Engine Control Switch"
+msgstr "Двигатель, работа/выкл."
+
+msgid "HUD/MFCD Day/Night Switch"
+msgstr "ИЛС/МФИ, режим день/ночи"
+
+msgid "Fuel Pump Switch"
+msgstr "Топливная система, топливные насосы, вкл./выкл."
+
+msgid "+/,/- Switch"
+msgstr "+/,/- переключатель"
+
+msgid "Eject Seat Position Adjust Switch"
+msgstr "Кресло пилота, регулятор высоты"
+
+msgid "Warning Panel Brightness Knob"
+msgstr "Регулятор яркости светосигнальных табло"
+
+msgid "INS Mode Knob Selector"
+msgstr "ИНС, переключатель режимов"
+
+msgid "BIT Button"
+msgstr "Встроенный самоконтроль, кнопка запуска"
+
+msgid "A/P Disengage"
+msgstr "САУ, выкл. (кнопка)"
+
+msgid "HUD Brightness Knob"
+msgstr "ИЛС, регулятор яркости подсвета"
+
+msgid "Active Fuel Cut-off Valve Cover"
+msgstr "Топливная система, крышка перекр. крана, поднять/опустить"
+
+msgid "ECS Mode Knob Selector"
+msgstr "Система кондиционирования, переключатель режимов"
+
+msgid "Mirror Center"
+msgstr "Зеркало центральное"
+
+msgid "Emergency Hydraulic Pump Switch"
+msgstr "Гидросистема, выключатель аварийного насоса, вкл./выкл."
+
+msgid "P.H. Test Switch"
+msgstr ""
+
+msgid "Navigation Light Switch - Bright/Off/Dim"
+msgstr "БАНО, яркость огней, ярко/выкл./тускло"
+
+msgid "Emergency Brake Handle"
+msgstr "Шасси, ручка аварийного тормоза"
+
+msgid "Landing Gear Indicator Light Knob"
+msgstr "Регулятор яркости индикатора шасси"
+
+msgid "Deploy/Jettison Parachute"
+msgstr "Парашют тормозной, выпустить/сброс"
+
+msgid "Inst. Light Knob"
+msgstr "Регулятор яркости подсвета приборов"
+
+msgid "Flood Light Knob"
+msgstr "Регулятор яркости заливающего света"
+
+msgid "Light Switch - Tow/Off/Anti-Collision"
+msgstr "Внешнее светотех. оборудование, режим буксировка/выкл./проблесковый"
+
+msgid "EFCS Switch"
+msgstr "ЭДСУ аварийная, переключатель"
+
+msgid "Feed Cut-off Valve"
+msgstr "Топливная система, расх. бак, перекрывной кран, вкл./выкл."
+
+msgid "Stick Show/Hide"
+msgstr "РУС, показать/спрятать"
+
+msgid "MSL Volume Knob"
+msgstr "Регулятор громкости сигналов ГСН ракет"
+
+msgid "Record Switch"
+msgstr "Выключатель записи ИЛС"
+
+msgid "Mirror Right"
+msgstr "Зеркало правое"
+
+msgid "AAR Light Switch"
+msgstr "Дозаправка в воздухе, выключатель заправочной фары"
+
+msgid "Yaw/Roll CAS Switch"
+msgstr "CAS, путевой и боковой каналы, вкл./выкл."
+
+msgid "Flash Light"
+msgstr "Фонарик пилота, вкл./выкл."
+
+msgid "Oxygen Supply Valve"
+msgstr "Регулятор подачи кислорода"
+
+msgid "Flare Dispense Button Cover"
+msgstr "ЛТЦ, крышка кнопки отстрела"
+
+msgid "SHARS Switch"
+msgstr "Резервная курсовертикаль, вкл./выкл."
+
+msgid "Flight Test Switch 2"
+msgstr "ЭСДУ, выключатель контроля 2"
+
+msgid "TCN/ILS Volume Knob"
+msgstr "Регулятор громкости сигналов TCN/ILS"
+
+msgid "UFCP Brightness Knob"
+msgstr "UFCP, регулятор яркости подсвета"
+
+msgid "Oxygen 100% O2"
+msgstr "Подача 100% кислорода"
+
+msgid "DTC Card Ejection"
+msgstr "Картридж полетного задания, извлечь"
+
+msgid "DTC Card Insertion"
+msgstr "Картридж полетного задания, вставить"
+
+msgid "Feed Cut-off Valve Cover"
+msgstr "Топливная система, расход. бак, крышка перекр. крана, поднять/опустить"
+
+msgid "AAP N/A"
+msgstr "AAP, кнопка N/A"
+
+msgid "COM2 Volume Knob"
+msgstr "Радиостанция COM2, регулятор громкости"
+
+msgid "Emergency Landing Gear Cover"
+msgstr "Крышка кнопки аварийного выпуска шасси"
+
+msgid "Canopy Open/Close Handle"
+msgstr "Фонарь кабины, ручка открытия/закрытия фонаря"
+
+msgid "Canopy Manual Open/Close Crank"
+msgstr "Кабина, ручка ручного открытия/закрытия фонаря"
+
+msgid "Exterior Light Master Switch"
+msgstr "Внешнее светотехническое оборудование, главный переключатель"
+
+msgid "Emergency Jettison Button Cover"
+msgstr "Подвески, аварийный сброс, крышка кнопки, поднять/опустить"
+
+msgid "Yaw Trim Switch"
+msgstr "Триммер в канале рыскания, переключатель"
+
+msgid "Flight Test Switch 1"
+msgstr "ЭСДУ, выключатель контроля 1"
+
+msgid "SEC EEC Switch"
+msgstr "Двигатель, резервный блок контроля и управления, вкл./выкл."
+
+msgid "Anti-Surge Switch"
+msgstr "Двигатель, противопомпажная защита, вкл./выкл."
+
+msgid "Engine Mode Switch"
+msgstr "Двигатель, переключатель режимов"
+
+msgid "Radio Button 6/M"
+msgstr "Радиостанции (пульт), кнопка 6/M"
+
+msgid "T5_Up: TDC Up"
+msgstr "РУД, T5 вверх - целеуказатель вверх"
+
+msgid "Right MFCD Brt -"
+msgstr "МФИ правый, яркость меньше"
+
+msgid "HUD Symbology Reject Switch - NORM"
+msgstr "ИЛС, очистка индикации, режим NORM"
+
+msgid "INS Mode Knob Selector - FAST"
+msgstr "ИНС, режим FAST"
+
+msgid "Right MFCD D4"
+msgstr "МФИ правый, кнопка D4"
+
+msgid "AAP NAV"
+msgstr "AAP, питание навигационного компьютера, вкл./выкл."
+
+msgid "Radio Mode Selector - TR"
+msgstr "Радиостанции (пульт), переключатель режимов, TR"
+
+msgid "Console Light Knob - Inc (Step)"
+msgstr "Подсвет консолей, яркость больше (пошагово)"
+
+msgid "Squelch OFF/SQL/ACKN - OFF"
+msgstr "Подавителя шумов, переключатель режимов, выкл."
+
+msgid "QFE Setting Knob - Inc (Step)"
+msgstr "Барометрический высотомер, давление аэродрома больше (пошагово)"
+
+msgid "Air Start Button - ON"
+msgstr "Двигатель, выключатель запуска в воздухе, вкл."
+
+msgid "Yaw Trim Switch - Left"
+msgstr "Триммер в канале рыскания, переключатель влево"
+
+msgid "Anti-Collision Light Knob Selector - 3"
+msgstr "Проблесковые огни, режим яркости 3"
+
+msgid "Fuel"
+msgstr "Топливная система"
+
+msgid "AAP ACMI"
+msgstr "AAP, питание контрольно-запис. аппаратуры, вкл./выкл."
+
+msgid "Landing Gear Indicator Light Test Button"
+msgstr "Шасси, кнопка контроля световой сигнализации"
+
+msgid "Air Temp Knob Selector - COLD"
+msgstr "Система кондиционирования, перекл. темп. в кабине, режим холодно"
+
+msgid "S6_Right: Trim Roll Right"
+msgstr "РУС, кнопка S6 вправо - триммирование, крен вправо"
+
+msgid "S4: Fire Main Gun"
+msgstr "РУС, кнопка S4 - стрельба из ВПУ"
+
+msgid "Center MFCD L5"
+msgstr "МФИ центральный, кнопка L5"
+
+msgid "BIT Button - Pushdown"
+msgstr "Встроенный самоконтроль, кнопка запуска"
+
+msgid "UFCP Button R3"
+msgstr "UFCP, кнопка R3"
+
+msgid "Formation Light Knob Selector - 3"
+msgstr "Строевые огни, яркость 3"
+
+msgid "Navigation Light Switch - Flash/Steady"
+msgstr "БАНО, режим проблесковый/непрерывный"
+
+msgid "T4_Press: IFF Interrogation Start/Stop"
+msgstr "РУД, кнопка Т4 нажатие - СГО, запрос принадлежности, вкл./выкл."
+
+msgid "Digital Clock CHR"
+msgstr "Часы цифровые, индикация секундомера"
+
+msgid "Backup SAIU - IR"
+msgstr "СУВ, аварийный режим, режим IR"
+
+msgid "Ground Start Button"
+msgstr "Двигатель, запуск на земле"
+
+msgid "Center MFCD U3"
+msgstr "МФИ центральный, кнопка U3"
+
+msgid "AAP SAIU"
+msgstr "AAP, питание СУВ, вкл./выкл."
+
+msgid "AAP SLNK"
+msgstr "AAP, питание систем. такт. передачи данных, вкл./выкл."
+
+msgid "Auto Start"
+msgstr "АВТОЗАПУСК"
+
+msgid "Center MFCD L6"
+msgstr "МФИ центральный, кнопка L6"
+
+msgid "Goggle Gain - Dec"
+msgstr "Очки НВ, усиление меньше"
+
+msgid "Engine Mode Switch - CMBT"
+msgstr "Двигатель, переключатель режимов, боевой"
+
+msgid "S8: Change Weapons"
+msgstr "РУС, кнопка S8 - перебор подвесок"
+
+msgid "S6_Left: Trim Roll Left"
+msgstr "РУС, кнопка S6 влево - триммирование, крен влево"
+
+msgid "T2_Backward: Countermeasures Dispense"
+msgstr "РУД, кнопка Т2 назад - отстрел ЛТЦ/ДО"
+
+msgid "Emergency Jettison Button Cover - Open"
+msgstr "Подвески, аварийный сброс, крышка кнопки, поднять"
+
+msgid "Right MFCD U5"
+msgstr "МФИ правый, кнопка U5"
+
+msgid "Fuel Pump Switch - ON/OFF"
+msgstr "Топливная система, топливные насосы, вкл./выкл."
+
+msgid "AAP CMBT"
+msgstr "AAP, режим CMBT (питание боевых систем), вкл./выкл."
+
+msgid "Air Temp Knob Selector - 43"
+msgstr "Система кондиционирования, перекл. темп. в кабине, 43 град."
+
+msgid "Left MFCD R5"
+msgstr "МФИ левый, кнопка R5"
+
+msgid "AAR Light Knob - Inc (Press and Hold)"
+msgstr "Дозаправка в воздухе, заправочная фара, яркость больше (нажать и удерживать)"
+
+msgid "Formation Light Knob Selector - 2"
+msgstr "Строевые огни, яркость 2"
+
+msgid "Radio Control Box"
+msgstr "Радиостанции (пульт)"
+
+msgid "UFCP Button P.U"
+msgstr "UFCP, кнопка P.U"
+
+msgid "UFCP Button 0"
+msgstr "UFCP, кнопка 0"
+
+msgid "Ext Lights"
+msgstr "Внешнее светотехническое оборудование"
+
+msgid "Engine Control Switch - ON"
+msgstr "Двигатель, главный выключатель, работа"
+
+msgid "Light Switch - Land/Off/Taxi - OFF"
+msgstr "Фары, выкл."
+
+msgid "Zeroizer Button"
+msgstr "СРО, уничтожение блока СРО, кнопка"
+
+msgid "Center MFCD L1"
+msgstr "МФИ центральный, кнопка L1"
+
+msgid "AAP COM2"
+msgstr "AAP, питание радиостанции COM2, вкл./выкл."
+
+msgid "ACP COM2 Volume Knob Abs"
+msgstr "ACP, регулятор громкости радиостанции COM2"
+
+msgid "Navigation Light Switch - Bright/Off/Dim - Dim/Off"
+msgstr "БАНО, яркость огней, тускло/выкл."
+
+msgid "Center MFCD L4"
+msgstr "МФИ центральный, кнопка L4"
+
+msgid "Ground Jettison Switch - ON/OFF"
+msgstr "Подвески, аварийный сброс на земле, вкл./выкл."
+
+msgid "Center MFCD L8"
+msgstr "МФИ центральный, кнопка L8"
+
+msgid "Right MFCD Cont +"
+msgstr "МФИ правый, контраст больше"
+
+msgid "UFCP Button TOT/5"
+msgstr "UFCP, кнопка TOT/5"
+
+msgid "Right MFCD L4"
+msgstr "МФИ правый, кнопка L4"
+
+msgid "Laser Designator On/Off"
+msgstr "Лазерный целеуказатель, вкл./выкл."
+
+msgid "Emergency Jettison Button Cover - Close"
+msgstr "Подвески, аварийный сброс, крышка кнопки, опустить"
+
+msgid "Center MFCD Cont -"
+msgstr "МФИ центральный, контраст меньше"
+
+msgid "Left MFCD L6"
+msgstr "МФИ левый, кнопка L6"
+
+msgid "Air Temp Knob Selector - HOT"
+msgstr "Система кондиционирования, перекл. темп. в кабине, режим жарко"
+
+msgid "Cpt Flood Light Knob Abs"
+msgstr "Регулятор яркости заливающего света (ось)"
+
+msgid "Navigation Light Switch - Flash/Steady - Flash"
+msgstr "БАНО, режим проблесковый"
+
+msgid "ACP TCN/ILS Volume Knob Abs"
+msgstr "ACP, регулятор громкости сигналов TCN/ILS"
+
+msgid "AAR Light Switch - On"
+msgstr "Дозаправка в воздухе, заправочная фара, вкл."
+
+msgid "Master Arm Switch - SIM/OFF"
+msgstr "СУВ, главный выключатель вооружения, SIM (учебный)/выкл."
+
+msgid "AG1/AG2 Switch"
+msgstr "ЭДСУ, переключатель конфигурации, AG 1/AG 2"
+
+msgid "Left MFCD R4"
+msgstr "МФИ левый, кнопка R4"
+
+msgid "Formation Light Knob Selector - OFF"
+msgstr "Строевые огни, выкл."
+
+msgid "Radio Button 0/PRE"
+msgstr "Радиостанции (пульт), кнопка 0/PRE"
+
+msgid "AAP SPJ"
+msgstr "AAP, питание контейнера РЭБ, вкл./выкл."
+
+msgid "Sensor (WMD7/TV) Up / T6: Radar Ant Elev Up"
+msgstr "Сенсоры (WMD7/ТВ), перемещение вверх / РУД, кнопка Т6 вверх - антенна РЛС вверх"
+
+msgid "Center MFCD R4"
+msgstr "МФИ центральный, кнопка R4"
+
+msgid "Light Switch - Land/Off/Taxi - TAXI/OFF"
+msgstr "Фары, режим руление/выкл."
+
+msgid "Radio Button 3/+"
+msgstr "Радиостанции (пульт), кнопка 3/+"
+
+msgid "ADC"
+msgstr "ADC"
+
+msgid "Left MFCD R3"
+msgstr "МФИ левый, кнопка R3"
+
+msgid "AAR Light Switch - On/Off"
+msgstr "Дозаправка в воздухе, заправочная фара, вкл./выкл."
+
+msgid "AAP RWR"
+msgstr "AAP, питание СПО, вкл./выкл."
+
+msgid "Center MFCD Sym +"
+msgstr "МФИ центральный, яркость символов больше"
+
+msgid "Sensor (WMD7/TV) Down / T6: Radar Ant Elev Down"
+msgstr "Сенсоры (WMD7/ТВ), перемещение вниз / РУД, кнопка Т6 вниз - антенна РЛС вниз"
+
+msgid "T3_Down: Speed Brake"
+msgstr "РУД, кнопка Т3 вниз - тормозные щитки выпустить/убрать"
+
+msgid "Center MFCD Cont +"
+msgstr "МФИ центральный, контраст больше"
+
+msgid "Radio"
+msgstr "Радиооборудование"
+
+msgid "Ground Jettison Switch - OFF"
+msgstr "Подвески, аварийный сброс на земле, выкл."
+
+msgid "AA/AG Switch"
+msgstr "ЭДСУ, переключатель конфигурации, AA/AG"
+
+msgid "S1_Backward: Cycle MFCD Select - Left-Center-Right"
+msgstr "РУС, перебор МФИ, левый-центральный-правый"
+
+msgid "T1: Forward (INTC) / Center (NAV)"
+msgstr "РУД, кнопка Т1 вперед - режим INTC / в центр - режим NAV (навигационный режим)"
+
+msgid "Right MFCD D1"
+msgstr "МФИ правый, кнопка D1"
+
+msgid "Backup SAIU - GUN"
+msgstr "СУВ, аварийный режим, режим GUN"
+
+msgid "Direct Mode Switch - OFF"
+msgstr "ЭДСУ, режим \"жесткая связь\", выкл."
+
+msgid "Wheel Brake Left On"
+msgstr "Шасси, левый тормоз задействовать"
+
+msgid "Main AC Gen Switch"
+msgstr "Генератор переменного тока главный, вкл./выкл."
+
+msgid "UFCP Button L3"
+msgstr "UFCP, кнопка L3"
+
+msgid "UFCP"
+msgstr "UFCP"
+
+msgid "S6_Down: Trim Nose Up"
+msgstr "РУС, кнопка S6 вниз - триммирование, нос вверх"
+
+msgid "Cpt Inst. Light Knob Abs"
+msgstr "Регулятор яркости подсвета приборов (ось)"
+
+msgid "DC Gen Switch - Off"
+msgstr "Генератор постоянного тока, выкл."
+
+msgid "Left MFCD Brt +"
+msgstr "МФИ левый, яркость больше"
+
+msgid "Left MFCD U3"
+msgstr "МФИ левый, кнопка U3"
+
+msgid "Right MFCD D5"
+msgstr "МФИ правый, кнопка D5"
+
+msgid "Left MFCD U4"
+msgstr "МФИ левый, кнопка U4"
+
+msgid "Center MFCD Sym -"
+msgstr "МФИ центральный, яркость символов меньше"
+
+msgid "Start Mode Selector - START/ENG COLD/STARTER COLD : START"
+msgstr "Двигатель, переключатель режимов, запуск"
+
+msgid "Left MFCD Sym -"
+msgstr "МФИ левый, яркость символов меньше"
+
+msgid "Radio Top/Bottom Antenna Switch - Bottom"
+msgstr "Радиостанция, антенна нижняя"
+
+msgid "Center MFCD R7"
+msgstr "МФИ центральный, кнопка R7"
+
+msgid "Battery Switch - On"
+msgstr "Аккумуляторная батарея, вкл."
+
+msgid "Left MFCD R8"
+msgstr "МФИ левый, кнопка R8"
+
+msgid "Radio Button ->/ENT"
+msgstr "Радиостанции (пульт), кнопка ->/ENT"
+
+msgid "Flood Light Knob - Dec (Press and Hold)"
+msgstr "Заливающий свет, яркость меньше (нажать и удерживать)"
+
+msgid "ZCP"
+msgstr "Радиооборудование, обнуление ответных кодов/ключей шифрования, кнопка"
+
+msgid "Backup SAIU Knob Selector - OFF"
+msgstr "СУВ, аварийный режим, выкл."
+
+msgid "Ext AAR Light Brightness Knob Abs"
+msgstr "Дозаправка в воздухе, заправочная фара, регулятор яркости (ось)"
+
+msgid "AAP IRST"
+msgstr "AAP, питание ОЛС, вкл./выкл."
+
+msgid "Flap Switch - Up/Down - UP"
+msgstr "Закрылки, переключатель, уборка"
+
+msgid "S1_Press: DGFT Returns to Prev Master Mode/MFCDs Restore to Default Pages"
+msgstr "РУС, кнопка S1 нажатие - в реж. DGFT: возврат к пред. реж. / установ. страницы МФИ по умолч."
+
+msgid "Lights"
+msgstr "Светотехническое оборудование"
+
+msgid "Emergency Hydraulic Pump Switch - OFF"
+msgstr "Гидросистема, выключатель аварийного насоса, выкл."
+
+msgid "Right MFCD L7"
+msgstr "МФИ правый, кнопка L7"
+
+msgid "DC Gen Switch - On"
+msgstr "Генератор постоянного тока, вкл."
+
+msgid "SEC EEC Switch - ON"
+msgstr "Двигатель, резервный блок контроля и управления, вкл."
+
+msgid "Right MFCD D2"
+msgstr "МФИ правый, кнопка D2"
+
+msgid "Right MFCD Sym +"
+msgstr "МФИ правый, яркость символов больше"
+
+msgid "Engine"
+msgstr "Двигатель"
+
+msgid "Brake Park/Norm"
+msgstr "Шасси, режим тормозов, стояночный/нормальный"
+
+msgid "Engine Mode Switch - TRG"
+msgstr "Двигатель, переключатель режимов, учебный"
+
+msgid "Light Switch - Tow/Off/Anti-Collision - Off"
+msgstr "Внешнее светотех. оборудование, выкл."
+
+msgid "Power Systems"
+msgstr "Электросистема"
+
+msgid "S2_Right: INTC Change Azimth Range/DGFT HA"
+msgstr "РУС, кнопка S2 вправо - в реж. INTC: изменить. зону обзора / в реж. DGFT: подреж. HA"
+
+msgid "AAP OESP"
+msgstr "AAP, питание панели OESP, вкл./выкл."
+
+msgid "T2_Forward: SPJ Standby/Jam"
+msgstr "РУД, кнопка Т2 вперед - контейнер РЭБ, дежурный режим/активные помехи"
+
+msgid "UFCP Button HNS"
+msgstr "UFCP, кнопка HNS"
+
+msgid "SEC EEC Switch - OFF"
+msgstr "Двигатель, резервный блок контроля и управления, выкл."
+
+msgid "T2_Press: AG Manual Mode/DGFT Missile Designator Control"
+msgstr "РУД, кнопка Т2 нажатие - в реж. AG: подреж. Manual / в реж. DGFT : целеуказние ракет"
+
+msgid "S1_Left: Cycle MFCD Select - Left Direction"
+msgstr "РУС, кнопка S1 влево - перебор МФИ влево"
+
+msgid "Radio Button 2/-"
+msgstr "Радиостанции (пульт), кнопка 2/-"
+
+msgid "Center MFCD R3"
+msgstr "МФИ центральный, кнопка R3"
+
+msgid "Radio Mode Selector - SET"
+msgstr "Радиостанции (пульт), переключатель режимов, SET"
+
+msgid "Flap Switch - Up/Down"
+msgstr "Закрылки, выпустить/убрать"
+
+msgid "Inst. Light Knob - Dec (Press and Hold)"
+msgstr "Подсвет приборов, яркость меньше (нажать и удерживать)"
+
+msgid "QFE Setting Knob - Inc (Press and Hold)"
+msgstr "Барометрический высотомер, давление аэродрома больше (нажать и удерживать)"
+
+msgid "ECS Mode Knob Selector - RAM"
+msgstr "Система кондиционирования, режим RAM (вент. набегающим потоком)"
+
+msgid "Exterior Light Master Switch - Normal/Off"
+msgstr "Внешнее светотех. оборудование, главный переключатель, нормальный режим/выкл."
+
+msgid "Record Switch - ON"
+msgstr "Выключатель записи, вкл."
+
+msgid "Seat Adjustment - UP"
+msgstr "Кресло пилота, регулировка высоты, выше."
+
+msgid "AAP"
+msgstr "AAP"
+
+msgid "Right MFCD R2"
+msgstr "МФИ правый, кнопка R2"
+
+msgid "Ejection Seat Zeroizer Function - ON"
+msgstr "Кресло пилота, уничтожение радиообор. и СРО при катап., вкл."
+
+msgid "Right MFCD U3"
+msgstr "МФИ правый, кнопка U3"
+
+msgid "Center MFCD D4"
+msgstr "МФИ центральный, кнопка D4"
+
+msgid "Night Vision Goggle - Toggle"
+msgstr "Очки НВ, надеть/снять"
+
+msgid "UFCP Button 3"
+msgstr "UFCP, кнопка 3"
+
+msgid "Seat Adjustment - DOWN"
+msgstr "Кресло пилота, регулировка высоты, ниже"
+
+msgid "FCS Warning"
+msgstr "ЭСДУ, сброс предупреждающего сигнала, кнопка"
+
+msgid "Deploy/Jettison Parachute - Cut/Off"
+msgstr "Парашют тормозной, сброс/выкл."
+
+msgid "TDC Slew Vertical"
+msgstr "Целеуказатель, перемещение по вертикали"
+
+msgid "Landing Gear Lever - Up/Down"
+msgstr "Шасси, выпустить/убрать"
+
+msgid "AAP HMD"
+msgstr "AAP, питание нашлемного дисплея, вкл./выкл."
+
+msgid "Brake Park/Norm - NORM"
+msgstr "Шасси, режим тормозов, нормальный"
+
+msgid "Left MFCD L7"
+msgstr "МФИ левый, кнопка L7"
+
+msgid "Backup SAIU Knob Selector - IR"
+msgstr "СУВ, аварийный режим, режим IR"
+
+msgid "Squelch OFF/SQL/ACKN - SQL"
+msgstr "Подавителя шумов, переключатель режимов, вкл."
+
+msgid "Auto Stop"
+msgstr "АВТООСТАНОВ"
+
+msgid "Left MFCD D4"
+msgstr "МФИ левый, кнопка D4"
+
+msgid "Sensor (WMD7/TV) Left"
+msgstr "Сенсоры (WMD7/ТВ), перемещение влево"
+
+msgid "Right MFCD L8"
+msgstr "МФИ правый, кнопка L8"
+
+msgid "Right MFCD L1"
+msgstr "МФИ правый, кнопка L1"
+
+msgid "QFE Setting Knob - Dec (Step)"
+msgstr "Барометрический высотомер, давление аэродрома меньше (пошагово)"
+
+msgid "Navigation Light Switch - Bright/Off/Dim - Bright"
+msgstr "БАНО, яркость огней, ярко"
+
+msgid "Flare Dispense Button"
+msgstr "ЛТЦ, кнопка отстрела"
+
+msgid "AG1/AG2 Switch - A/G2"
+msgstr "ЭДСУ, переключатель конфигурации, AG 2"
+
+msgid "Yaw Trim Switch - Right"
+msgstr "Триммер в канале рыскания, переключатель вправо"
+
+msgid "Cpt Console Light Knob Abs"
+msgstr "Регулятор яркости подсвета консолей (ось)"
+
+msgid "Console Light Knob - Dec (Press and Hold)"
+msgstr "Подсвет консолей, яркость меньше (нажать и удерживать)"
+
+msgid "S7: AutoPilot Off"
+msgstr "РУС, кнопка S7 - САУ выкл."
+
+msgid "Deploy/Jettison Parachute - Deploy/Off"
+msgstr "Парашют тормозной, выпустить/выкл."
+
+msgid "Right MFCD U4"
+msgstr "МФИ правый, кнопка U4"
+
+msgid "Console Light Knob - Dec (Step)"
+msgstr "Подсвет консолей, яркость меньше (пошагово)"
+
+msgid "Center MFCD R5"
+msgstr "МФИ центральный, кнопка R5"
+
+msgid "T3_Forward: Speed Brake On"
+msgstr "РУД, кнопка Т3 вперед - тормозные щитки выпустить"
+
+msgid "Left MFCD Cont +"
+msgstr "МФИ левый, контраст больше"
+
+msgid "EFCS Switch - AUTO"
+msgstr "ЭДСУ аварийная, авто"
+
+msgid "Backup SAIU - BOMB"
+msgstr "СУВ, аварийный режим, режим ВOMB"
+
+msgid "Center MFCD Brt -"
+msgstr "МФИ центральный, яркость меньше"
+
+msgid "FOV Decrease"
+msgstr "Прицельный контейнер, уменьшить поле зрения"
+
+msgid "AAP COM1"
+msgstr "AAP, питание радиостанции COM1, вкл./выкл."
+
+msgid "Air Temp Knob Selector - 35"
+msgstr "Система кондиционирования, перекл. темп. в кабине, 35 град."
+
+msgid "AAP WMMC2"
+msgstr "AAP, питание WMMC (боевого компьютера) №2, вкл./выкл."
+
+msgid "Console Light Knob - Inc (Press and Hold)"
+msgstr "Подсвет консолей, яркость больше (нажать и удерживать)"
+
+msgid "Landing Gear Lever - Up"
+msgstr "Шасси, убрать"
+
+msgid "Radio Mode Selector - OFF"
+msgstr "Радиостанции (пульт), переключатель режимов, выкл."
+
+msgid "Center MFCD L3"
+msgstr "МФИ центральный, кнопка L3"
+
+msgid "Digital Clock Switch"
+msgstr "Часы цифровые, вкл./выкл."
+
+msgid "Left MFCD Sym +"
+msgstr "МФИ левый, яркость символов больше"
+
+msgid "Center MFCD U2"
+msgstr "МФИ центральный, кнопка U2"
+
+msgid "Air Temp Knob Selector - 25"
+msgstr "Система кондиционирования, перекл. темп. в кабине, 25 град."
+
+msgid "Intercom Switch - On"
+msgstr "СПУ, переключатель режимов, вкл."
+
+msgid "Right MFCD Cont -"
+msgstr "МФИ правый, контраст меньше"
+
+msgid "DC Gen Switch"
+msgstr "Генератор постоянного тока, вкл./выкл."
+
+msgid "Exterior Light Master Switch - NVG/Off"
+msgstr "Внешнее светотех. оборудование, главный переключатель, режим навигация/выкл."
+
+msgid "Radio Mode Selector - GD"
+msgstr "Радиостанции (пульт), переключатель режимов, GD"
+
+msgid "Radio Top/Bottom Antenna Switch"
+msgstr "Радиостанция, антенна верхняя/нижняя"
+
+msgid "Right MFCD R5"
+msgstr "МФИ правый, кнопка R5"
+
+msgid "Formation Light Knob Selector - 4"
+msgstr "Строевые огни, яркость 4"
+
+msgid "T1_Backward: AG - Air-To-Ground Mode"
+msgstr "РУД, кнопка Т1 назад - режим \"воздух-земля\""
+
+msgid "UFCP Button A/P"
+msgstr "UFCP, кнопка A/P"
+
+msgid "S6_Up: Trim Nose Down"
+msgstr "РУС, кнопка S6 вверх- триммирование, нос вниз"
+
+msgid "S3: Weapon Launch"
+msgstr "РУС, кнопка S3 - кнопка пуска/сброса АСП"
+
+msgid "Canopy Open/Close Handle - Stop"
+msgstr "Фонарь кабины, ручка открытия/закрытия, стоп"
+
+msgid "Right MFCD L6"
+msgstr "МФИ правый, кнопка L6"
+
+msgid "S2_Left: INTC RWS/TWS/VS Switch/DGFT SA"
+msgstr "РУС, кнопка S2 влево - в реж. INTC: RWS/TWS/VS / в реж. DGFT: подреж. SA"
+
+msgid "Right MFCD U1"
+msgstr "МФИ правый, кнопка U1"
+
+msgid "INS Mode Knob Selector - GC"
+msgstr "ИНС, режим GC"
+
+msgid "Start Mode Selector - START/ENG COLD/STARTER COLD : COLD STARTER"
+msgstr "Двигатель, переключатель режимов, холодная прокрутка турбостартера"
+
+msgid "Air Temp Knob Selector - 4"
+msgstr "Система кондиционирования, перекл. темп. в кабине, 4 град."
+
+msgid "Speaker Control Box Audio Channel Switch - Stby"
+msgstr "Аудиоканал, аварийный"
+
+msgid "Exterior Light Master Switch - Normal"
+msgstr "Внешнее светотех. оборудование, главный переключатель, нормальный режим"
+
+msgid "Radio Button 9/T"
+msgstr "Радиостанции (пульт), кнопка 9/T"
+
+msgid "T5_Right: TDC Right"
+msgstr "РУД, кнопка Т5 вправо - целеуказатель вправо"
+
+msgid "Air Temp Knob Selector - 20"
+msgstr "Система кондиционирования, перекл. темп. в кабине, 20 град."
+
+msgid "Throttle Cage: Idle To Stop"
+msgstr "РУД, упор СТОП-МГ, из положения МГ в СТОП"
+
+msgid "Ground Jettison Switch - ON"
+msgstr "Подвески, аварийный сброс на земле, вкл."
+
+msgid "Left MFCD Brt -"
+msgstr "МФИ левый, яркость меньше"
+
+msgid "Right MFCD R8"
+msgstr "МФИ правый, кнопка R8"
+
+msgid "Center MFCD D2"
+msgstr "МФИ центральный, кнопка D2"
+
+msgid "Brake Test - TEST"
+msgstr "Шасси, переключатель контроля тормозов, контроль"
+
+msgid "Exterior Light Master Switch - NVG"
+msgstr "Внешнее светотех. оборудование, главный переключатель, режим навигация"
+
+msgid "Ejection Seat Zeroizer Function - OFF"
+msgstr "Кресло пилота, уничтожение радиообор. и СРО при катап., выкл."
+
+msgid "S1_Forward: DGFT - Dogfight Mode"
+msgstr "РУС, кнопка S1 вперед - режим DGFT"
+
+msgid "S2_Backward: INTC Decrease Range/DGFT VERT Submode"
+msgstr "РУС, кнопка S2 назад - в реж. INTC: уменьш. зону обзора / в реж. DGFT: подреж. VERT"
+
+msgid "Seat"
+msgstr "Кресло пилота"
+
+msgid "Afterburner Switch - ON/OFF"
+msgstr "Двигатель, выключатель аварийного форсажа, вкл./выкл."
+
+msgid "Right MFCD L5"
+msgstr "МФИ правый, кнопка L5"
+
+msgid "Warning Systems"
+msgstr "Системы предупреждения"
+
+msgid "Master Arm Toggle (ARM/OFF)"
+msgstr "СУВ, главный выключатель вооружения, вкл./выкл."
+
+msgid "UFCP Button PFL/1"
+msgstr "UFCP, кнопка PFL/1"
+
+msgid "Left MFCD U2"
+msgstr "МФИ левый, кнопка U2"
+
+msgid "Center MFCD L7"
+msgstr "МФИ центральный, кнопка L7"
+
+msgid "AAR Light Knob - Dec (Step)"
+msgstr "Дозаправка в воздухе, заправочная фара, яркость меньше (пошагово)"
+
+msgid "Inst. Light Knob - Inc (Step)"
+msgstr "Подсвет приборов, яркость больше (пошагово)"
+
+msgid "HUD Backup Reticle Knob - OFF"
+msgstr "ИЛС, аварийный режим, регулятор яркости, выкл."
+
+msgid "Left MFCD D5"
+msgstr "МФИ левый, кнопка D5"
+
+msgid "QFE Setting Knob - Dec (Press and Hold)"
+msgstr "Барометрический высотомер, давление аэродрома меньше (нажать и удерживать)"
+
+msgid "Digital Clock UTC"
+msgstr "Часы цифровые, индикация времени UTC"
+
+msgid "TDC Slew Horizontal"
+msgstr "Целеуказатель, перемещение по горизонтали"
+
+msgid "Left MFCD D2"
+msgstr "МФИ левый, кнопка D2"
+
+msgid "T1_Forward: BVR - INTC Mode"
+msgstr "РУД, кнопка Т1 вперед - режим INTC"
+
+msgid "Right MFCD R3"
+msgstr "МФИ правый, кнопка R3"
+
+msgid "Right MFCD R4"
+msgstr "МФИ правый, кнопка R4"
+
+msgid "SHARS Switch - ON"
+msgstr "Резервная курсовертикаль, вкл."
+
+msgid "Left MFCD R1"
+msgstr "МФИ левый, кнопка R1"
+
+msgid "HUD Brightness Knob Abs"
+msgstr "ИЛС, регулятор яркость подсвета (ось)"
+
+msgid "T4_Backward: Radio Comm 2"
+msgstr "РУД, кнопка Т4 назад - радиостанция COM2"
+
+msgid "AAR Light Switch - Off"
+msgstr "Дозаправка в воздухе, заправочная фара, выкл."
+
+msgid "Digital Clock Switch - On"
+msgstr "Часы цифровые, вкл."
+
+msgid "Sensor (WMD7/TV) Right"
+msgstr "Сенсоры (WMD7/ТВ), перемещение вправо"
+
+msgid "Right MFCD L3"
+msgstr "МФИ правый, кнопка L3"
+
+msgid "Center MFCD L2"
+msgstr "МФИ центральный, кнопка L2"
+
+msgid "Battery Switch - Off"
+msgstr "Аккумуляторная батарея, выкл."
+
+msgid "AA/AG Switch - A/G"
+msgstr "ЭДСУ, переключатель конфигурации, AG"
+
+msgid "Backup SAIU - OFF"
+msgstr "СУВ, аварийный режим, выкл."
+
+msgid "T5_Left: TDC Left"
+msgstr "РУД, кнопка Т5 влево - целеуказатель влево"
+
+msgid "Exterior Light Master Switch - Off"
+msgstr "Внешнее светотех. оборудование, главный переключатель, выкл."
+
+msgid "Master Mode Switch - Next Mode"
+msgstr "Главный переключатель режимов, следующий режим"
+
+msgid "Air Temp Knob Selector - MAN"
+msgstr "Система кондиционирования, перекл. темп. в кабине, ручной режим"
+
+msgid "Master Arm Switch - OFF"
+msgstr "СУВ, главный выключатель вооружения, выкл."
+
+msgid "Flood Light Knob - Dec (Step)"
+msgstr "Заливающий свет, яркость меньше (пошагово)"
+
+msgid "Center MFCD D5"
+msgstr "МФИ центральный, кнопка D5"
+
+msgid "AAP OFF"
+msgstr "AAP, отключение питания всех систем"
+
+msgid "Radio Button 1/TONE"
+msgstr "Радиостанции (пульт), кнопка 1/TONE"
+
+msgid "FCS Reset Button"
+msgstr "ЭСДУ, кнопка сброса"
+
+msgid "Left MFCD D3"
+msgstr "МФИ левый, кнопка D3"
+
+msgid "Wheel Brake Right On"
+msgstr "Шасси, правый тормоз задействовать"
+
+msgid "Intercom Switch"
+msgstr "СПУ, переключатель режимов"
+
+msgid "T6_Axis: Antenna Elevation (Slide)"
+msgstr "РУД, кнопка Т6 (ось) - положение антенны по углу места"
+
+msgid "Intercom Switch - Off"
+msgstr "СПУ, переключатель режимов, выкл."
+
+msgid "JF-17"
+msgstr "JF-17"
+
+msgid "Left MFCD D1"
+msgstr "МФИ левый, кнопка D1"
+
+msgid "Right MFCD R7"
+msgstr "МФИ правый, кнопка R7"
+
+msgid "Next Waypoint"
+msgstr "Следующий ППМ"
+
+msgid "Left MFCD L4"
+msgstr "МФИ левый, кнопка L4"
+
+msgid "UFCP Button MRK"
+msgstr "UFCP, кнопка MRK"
+
+msgid "AAR Light Knob - Dec (Press and Hold)"
+msgstr "Дозаправка в воздухе, заправочная фара, яркость меньше (нажать и удерживать)"
+
+msgid "Master Arm Switch - ARM/OFF"
+msgstr "СУВ, главный выключатель вооружения, вкл./выкл."
+
+msgid "Throttle Uncage: Stop To Idle - Cage/Uncage"
+msgstr "РУД, упор СТОП-МГ, упор убрать/установить"
+
+msgid "Center MFCD U1"
+msgstr "МФИ центральный, кнопка U1"
+
+msgid "Left MFCD L1"
+msgstr "МФИ левый, кнопка L1"
+
+msgid "Left MFCD L3"
+msgstr "МФИ левый, кнопка L3"
+
+msgid "UFCP Button DST/4"
+msgstr "UFCP, кнопка DST/4"
+
+msgid "+/,/- Switch - Up/Neutral"
+msgstr "+/,/- переключатель, вверх/нейтраль"
+
+msgid "MFCD Left"
+msgstr "МФИ левый"
+
+msgid "Light Switch - Land/Off/Taxi - TAXI"
+msgstr "Фары, режим руление"
+
+msgid "Emergency Jettison Button"
+msgstr "Подвески, аварийный сброс, кнопка"
+
+msgid "Afterburner Switch - ON"
+msgstr "Двигатель, выключатель аварийного форсажа, вкл."
+
+msgid "Goggle Gain - Inc"
+msgstr "Очки НВ, усиление больше"
+
+msgid "Right MFCD Sym -"
+msgstr "МФИ правый, яркость символов меньше"
+
+msgid "Center MFCD D3"
+msgstr "МФИ центральный, кнопка D3"
+
+msgid "Radio Control Handover"
+msgstr "Радиостанции (пульт), управление с UFCP/пульта"
+
+msgid "Left MFCD L2"
+msgstr "МФИ левый, кнопка L2"
+
+msgid "Defog Switch"
+msgstr "Фонарь кабины, обогрев, кнопка"
+
+msgid "AAP TRAIN"
+msgstr "AAP, режим TRAIN (учебный), вкл./выкл."
+
+msgid "AAP WMMC1"
+msgstr "AAP, питание WMMC (боевого компьютера) №1, вкл./выкл."
+
+msgid "Yaw/Roll CAS Switch - ON"
+msgstr "CAS, путевой и боковой каналы, вкл."
+
+msgid "Digital Clock Brightness -"
+msgstr "Часы цифровые, яркость подсвета меньше"
+
+msgid "UFCP Button L1"
+msgstr "UFCP, кнопка L1"
+
+msgid "T5_Press: Lock Target"
+msgstr "РУД, кнопка Т4 нажатие - захват цели"
+
+msgid "Yaw/Roll CAS Switch - OFF"
+msgstr "CAS, путевой и боковой каналы, выкл."
+
+msgid "Master Warning"
+msgstr "СОРЦ, кнопка-табло"
+
+msgid "HUD Backup Reticle Knob - MAX"
+msgstr "ИЛС, аварийный режим, регулятор яркости, макс"
+
+msgid "Engine Mode Switch - TRG/C+T"
+msgstr "Двигатель, переключатель режимов, учебный/боевой + учебный"
+
+msgid "Deploy/Jettison Parachute - Deploy"
+msgstr "Парашют тормозной, выпустить"
+
+msgid "Center MFCD R6"
+msgstr "МФИ центральный, кнопка R6"
+
+msgid "MFCD Right"
+msgstr "МФИ правый"
+
+msgid "AAR Switch - ALL/OFF"
+msgstr "Дозаправка в воздухе, переключатель топливных баков, все/выкл."
+
+msgid "Fire Warning"
+msgstr "Пожарная сигнализация, кнопка-лампа отключения"
+
+msgid "Record Switch - OFF"
+msgstr "Выключатель записи, выкл."
+
+msgid "Radio Mode Selector - TR+G"
+msgstr "Радиостанции (пульт), переключатель режимов, TR+G"
+
+msgid "ECS Mode Knob Selector - DE-SMK"
+msgstr "Система кондиционирования, режим DE-SMK (удаление дыма)"
+
+msgid "AAP INS"
+msgstr "AAP, питание ИНС вкл./выкл."
+
+msgid "Throttle Uncage: Stop To Idle"
+msgstr "РУД, упор СТОП-МГ, из положения СТОП в МГ"
+
+msgid "Canopy Open/Close Handle - Close"
+msgstr "Фонарь кабины, ручка открытия/закрытия, закрыть"
+
+msgid "UFCP Button VRC/2"
+msgstr "UFCP, кнопка VRC/2"
+
+msgid "Deploy/Jettison Parachute - Cut"
+msgstr "Парашют тормозной, сброс"
+
+msgid "AutoPilot - Off/On (ATT)"
+msgstr "САУ, вкл./выкл. (режим ATT)"
+
+msgid "Afterburner Toggle (ON/OFF)"
+msgstr "Двигатель, АЗС режима форсажа, вкл./выкл."
+
+msgid "Left MFCD L8"
+msgstr "МФИ левый, кнопка L8"
+
+msgid "Main AC Gen Switch - Off"
+msgstr "Генератор переменного тока главный, выкл."
+
+msgid "Center MFCD Brt +"
+msgstr "МФИ центральный, яркость больше"
+
+msgid "FOV Increase"
+msgstr "Прицельный контейнер, увеличить поле обзора"
+
+msgid "Fuel Pump Switch - ON"
+msgstr "Топливная система, топливные насосы, вкл."
+
+msgid "Next OESP Program"
+msgstr "OESP, следующая программа"
+
+msgid "Backup SAIU Knob Selector - BOMB"
+msgstr "СУВ, аварийный режим, режим BOMB"
+
+msgid "Right MFCD U2"
+msgstr "МФИ правый, кнопка U2"
+
+msgid "Light Switch - Tow/Off/Anti-Collision - Anti-Collision"
+msgstr "Внешнее светотех. оборудование, режим проблесковый"
+
+msgid "Anti-Collision Light Knob Selector - 2"
+msgstr "Проблесковые огни, режим яркости 2"
+
+msgid "Inst. Light Knob - Inc (Press and Hold)"
+msgstr "Подсвет приборов, яркость больше (нажать и удерживать)"
+
+msgid "S5: Change/Unselect Weapon Station / NWS"
+msgstr "РУС, кнопка S5 - изменить/отметь выбор подвески / управление нос. колесом"
+
+msgid "ACP"
+msgstr "ACP"
+
+msgid "Flood Light Knob - Inc (Press and Hold)"
+msgstr "Заливающий свет, яркость больше (нажать и удерживать)"
+
+msgid "Speaker Control Box Audio Channel Switch"
+msgstr "Аудиоканал, основной/аварийный"
+
+msgid "UFCP Button R4"
+msgstr "UFCP, кнопка R4"
+
+msgid "Clock"
+msgstr "Часы"
+
+msgid "ECS"
+msgstr "Система кондиционирования"
+
+msgid "Gun Mode On/Off"
+msgstr "СУВ, ВПУ вкл./выкл."
+
+msgid "T4_Forward: Radio Comm 1"
+msgstr "РУД, кнопка Т4 вперед - радиостанция COM1"
+
+msgid "Left MFCD Cont -"
+msgstr "МФИ левый, контраст меньше"
+
+msgid "Right MFCD D3"
+msgstr "МФИ правый, кнопка D3"
+
+msgid "Battery Switch"
+msgstr "Аккумуляторная батарея, вкл./выкл."
+
+msgid "UFCP Button L4"
+msgstr "UFCP, кнопка L4"
+
+msgid "Prev Waypoint"
+msgstr "Предыдущий ППМ"
+
+msgid "Direct Mode Switch - ON"
+msgstr "ЭДСУ, режим \"жесткая связь\", вкл."
+
+msgid "Air Start Button - OFF"
+msgstr "Двигатель, выключатель запуска в воздухе, выкл."
+
+msgid "Left MFCD U1"
+msgstr "МФИ левый, кнопка U1"
+
+msgid "Right MFCD R6"
+msgstr "МФИ правый, кнопка R6"
+
+msgid "UFCP Button R2"
+msgstr "UFCP, кнопка R2"
+
+msgid "Backup SAIU Knob Selector - GUN"
+msgstr "СУВ, аварийный режим, режим GUN"
+
+msgid "ECS Mode Knob Selector - NORM"
+msgstr "Система кондиционирования, нормальный режим"
+
+msgid "T3_Backward: Speed Brake Off"
+msgstr "РУД, кнопка Т3 назад - тормозные щитки убрать"
+
+msgid "Navigation Light Switch - Bright/Off/Dim - Off"
+msgstr "БАНО, выкл."
+
+msgid "Landing Gear Lever - Down"
+msgstr "Шасси, выпустить"
+
+msgid "Air Temp Knob Selector - 30"
+msgstr "Система кондиционирования, перекл. темп. в кабине, 30 град."
+
+msgid "Canopy Open/Close Handle - Lock"
+msgstr "Фонарь кабины, ручка открытия/закрытия, запереть"
+
+msgid "Master Arm Switch - SIM"
+msgstr "СУВ, главный выключатель вооружения, учебный режим"
+
+msgid "UFCP Button RTN"
+msgstr "UFCP, кнопка RTN"
+
+msgid "Inst. Light Knob - Dec (Step)"
+msgstr "Подсвет приборов, яркость меньше (пошагово)"
+
+msgid "Left MFCD L5"
+msgstr "МФИ левый, кнопка L5"
+
+msgid "Brake Test - ON"
+msgstr "Шасси, переключатель контроля тормозов, вкл."
+
+msgid "AAR Light Knob - Inc (Step)"
+msgstr "Дозаправка в воздухе, заправочная фара, яркость больше (пошагово)"
+
+msgid "Navigation Light Switch - Flash/Steady - Steady"
+msgstr "БАНО, режим непрерывный"
+
+msgid "Engine Control Switch - OFF"
+msgstr "Двигатель, главный выключатель, выкл."
+
+msgid "Center MFCD D1"
+msgstr "МФИ центральный, кнопка D1"
+
+msgid "Air Temp Knob Selector - 10"
+msgstr "Система кондиционирования, перекл. темп. в кабине, 10 град."
+
+msgid "S1_Right: Cycle MFCD Select - Right Direction"
+msgstr "РУС, кнопка S1 вправо - перебор МФИ вправо"
+
+msgid "Air Temp Knob Selector - 15"
+msgstr "Система кондиционирования, перекл. темп. в кабине, 15 град."
+
+msgid "Anti-Surge Switch - OFF"
+msgstr "Двигатель, противопомпажная защита, выкл."
+
+msgid "Brake Test - OFF"
+msgstr "Шасси, переключатель контроля тормозов, выкл."
+
+msgid "Anti-Surge Switch - ON"
+msgstr "Двигатель, противопомпажная защита, вкл."
+
+msgid "S2_Press: Unlock Target/DGFT BS Wide Narrow Switch"
+msgstr "РУС, кнопка S2 нажатие - сброс захв. цели / в реж. DGFT BS: зона обз. узкая/широкая"
+
+msgid "T1_Center: NAV - Navigation Mode"
+msgstr "РУД, кнопка Т1 в центр - режим NAV (навигационный режим)"
+
+msgid "Radio Top/Bottom Antenna Switch - Top"
+msgstr "Радиостанция, антенна верхняя"
+
+msgid "Radio Button 8/C"
+msgstr "Радиостанции (пульт), кнопка 8/C"
+
+msgid "SHARS Switch - OFF"
+msgstr "Резервная курсовертикаль, выкл."
+
+msgid "AAP IFF"
+msgstr "AAP, питание СРО, вкл./выкл."
+
+msgid "Misc Panel"
+msgstr "Прочее"
+
+msgid "Flare Dispense Button Cover - Close"
+msgstr "ЛТЦ, крышка кнопки отстрела, опустить"
+
+msgid "Right MFCD L2"
+msgstr "МФИ правый, кнопка L2"
+
+msgid "AAP CLDP"
+msgstr "AAP, питание контейнера наведения УР CM-802AK, вкл./выкл."
+
+msgid "Fuel Pump Switch - OFF"
+msgstr "Топливная система, топливные насосы, выкл."
+
+msgid "Anti-Collision Light Knob Selector - 4"
+msgstr "Проблесковые огни, режим яркости 4"
+
+msgid "Flap Switch - Up/Down - DOWN"
+msgstr "Закрылки, переключатель, выпуск"
+
+msgid "Center MFCD R8"
+msgstr "МФИ центральный, кнопка R8"
+
+msgid "Navigation Light Switch - Bright/Off/Dim - Dim"
+msgstr "БАНО, яркость огней, тускло"
+
+msgid "Engine Mode Switch - C+T"
+msgstr "Двигатель, переключатель режимов, учебный + боевой"
+
+msgid "AAR Switch - INT/OFF"
+msgstr "Дозаправка в воздухе, переключатель топливных баков, внутренние/выкл."
+
+msgid "Special For Devices"
+msgstr "Специальные настройки"
+
+msgid "Right MFCD Brt +"
+msgstr "МФИ правый, яркость больше"
+
+msgid "Zeroizer Button Cover - Close"
+msgstr "СРО, крышка кнопки уничтожения блока СРО, опустить"
+
+msgid "Canopy Open/Close Handle - Open"
+msgstr "Фонарь кабины, ручка открытия/закрытия фонаря, открыть"
+
+msgid "Engine Mode Switch - CMBT/C+T"
+msgstr "Двигатель, переключатель режимов, боевой/боевой + учебный"
+
+msgid "UFCP Button R1"
+msgstr "UFCP, кнопка R1"
+
+msgid "Digital Clock Switch - Off"
+msgstr "Часы цифровые, выкл."
+
+msgid "Radio Mode Selector - ADF"
+msgstr "Радиостанции (пульт), переключатель режимов, ADF"
+
+msgid "ACP COM1 Volume Knob Abs"
+msgstr "ACP, регулятор громкости радиостанции COM1"
+
+msgid "ECS Mode Knob Selector - OFF"
+msgstr "Система кондиционирования, выкл."
+
+msgid "Brake Park/Norm - PARK"
+msgstr "Шасси, режим тормозов, стояночный"
+
+msgid "AutoPilot"
+msgstr "САУ"
+
+msgid "Left MFCD R2"
+msgstr "МФИ левый, кнопка R2"
+
+msgid "UFCP Button OAP"
+msgstr "UFCP, кнопка OAP"
+
+msgid "Main AC Gen Switch - On"
+msgstr "Генератор переменного тока главный, вкл."
+
+msgid "INS Mode Knob Selector - STBY"
+msgstr "ИНС, режим STBY"
+
+msgid "T5_Down: TDC Down"
+msgstr "РУД, кнопка Т5 вниз - целеуказатель вниз"
+
+msgid "Inertial Nav System (INS)"
+msgstr "Инерциальная навигационная система (ИНС)"
+
+msgid "INS Mode Knob Selector - NAV"
+msgstr "ИНС, режим NAV"
+
+msgid "HUD Symbology Reject Switch - DCLT/NORM"
+msgstr "ИЛС, очистка индикации, режим DCLT/NORM"
+
+msgid "Center MFCD R2"
+msgstr "МФИ центральный, кнопка R2"
+
+msgid "HUD Symbology Reject Switch - DCLT"
+msgstr "ИЛС, очистка индикации, режим DCLT"
+
+msgid "Flood Light Knob - Inc (Step)"
+msgstr "Заливающий свет, яркость больше (пошагово)"
+
+msgid "Canopy"
+msgstr "Кабина"
+
+msgid "Center MFCD U5"
+msgstr "МФИ центральный, кнопка U5"
+
+msgid "Zeroizer Button Cover - Open"
+msgstr "СРО, крышка кнопки уничтожения блока СРО, поднять"
+
+msgid "UFCP Brightness Knob Abs"
+msgstr "UFCP, регулятор яркости индикации"
+
+msgid "Air Temp Knob Selector - 40"
+msgstr "Система кондиционирования, перекл. темп. в кабине, 40 град."
+
+msgid "Light Switch - Land/Off/Taxi - LDG"
+msgstr "Фары, режим посадка"
+
+msgid "UFCP Button L2"
+msgstr "UFCP, кнопка L2"
+
+msgid "AA/AG Switch - A/A"
+msgstr "ЭДСУ, переключатель конфигурации, AA"
+
+msgid "Anti-Collision Light Knob Selector - OFF"
+msgstr "Проблесковые огни, выкл."
+
+msgid "T1: Backward (AG) / Center (NAV)"
+msgstr "РУД, кнопка Т1 назад - режим \"воздух-земля\" / в центр - режим NAV (навигационный режим)"
+
+msgid "UFCP Button FUL/7"
+msgstr "UFCP, кнопка FUL/7"
+
+msgid "T3: Speed Brake On / Off"
+msgstr "РУД, кнопка Т3 - тормозные щитки выпустить/убрать"
+
+msgid "ACP MSL Volume Knob Abs"
+msgstr "ACP, регулятор громкости сигналов ГСН ракет"
+
+msgid "Digital Clock Brightness +"
+msgstr "Часы цифровые, яркость подсвета больше"
+
+msgid "AAP RDR"
+msgstr "AAP, питание РЛС, вкл./выкл."
+
+msgid "Light Switch - Land/Off/Taxi - LAND/OFF"
+msgstr "Фары, режим посадка/выкл."
+
+msgid "Light Switch - Tow/Off/Anti-Collision - Anti-Collision/Off"
+msgstr "Внешнее светотех. оборудование, режим проблесковый/выкл."
+
+msgid "UFCP Button TOD/6"
+msgstr "UFCP кнопка TOD/6"
+
+msgid "EFCS Switch - EFCS"
+msgstr "ЭДСУ аварийная, вкл."
+
+msgid "Left MFCD U5"
+msgstr "МФИ левый, кнопка U5"
+
+msgid "Light Switch - Tow/Off/Anti-Collision - Tow"
+msgstr "Внешнее светотех. оборудование, режим буксировка"
+
+msgid "Afterburner Switch - OFF"
+msgstr "Двигатель, выключатель аварийного форсажа, выкл."
+
+msgid "Deploy/Jettison Parachute - Off"
+msgstr "Парашют тормозной, выкл."
+
+msgid "+/,/- Switch - Down/Neutral"
+msgstr "+/,/- переключатель, ввниз/нейтраль"
+
+msgid "FCS"
+msgstr "ЭДСУ"
+
+msgid "Speaker Control Box Audio Channel Switch - Main"
+msgstr "Аудиоканал, основной"
+
+msgid "Center MFCD U4"
+msgstr "МФИ центральный, кнопка U4"
+
+msgid "Radio Button 4/H"
+msgstr "Радиостанции (пульт), кнопка 4/H"
+
+msgid "Navigation Light Switch - Bright/Off/Dim - Bright/Off"
+msgstr "БАНО, яркость огней, ярко/выкл."
+
+msgid "Center MFCD R1"
+msgstr "МФИ центральный, кнопка R1"
+
+msgid "Master Arm Switch - ARM"
+msgstr "СУВ, главный выключатель вооружения, вкл."
+
+msgid "Prev OESP Program"
+msgstr "OESP, предыдущая программа"
+
+msgid "Formation Light Knob Selector - 1"
+msgstr "Строевые огни, яркость 1"
+
+msgid "UFCP Button 9"
+msgstr "UFCP, кнопка 9"
+
+msgid "Left MFCD R7"
+msgstr "МФИ левый, кнопка R7"
+
+msgid "Flare Dispense Button Cover - Open"
+msgstr "ЛТЦ, крышка кнопки отстрела, поднять"
+
+msgid "MFCD Center"
+msgstr "МФИ центральный"
+
+msgid "Master Mode Switch - Prev Mode"
+msgstr "Главный переключатель режимов, предыдущий режим"
+
+msgid "Radio Button 7/P"
+msgstr "Радиостанции (пульт), кнопка 7/P"
+
+msgid "AutoPilot - ATT/ALT"
+msgstr "САУ, переключатель режимов, ATT/ALT (удержание простр. положений/высоты)"
+
+msgid "Radio Button <-/MAN"
+msgstr "Радиостанции (пульт), кнопка <-/MAN"
+
+msgid "Emergency Hydraulic Pump Switch - ON"
+msgstr "Гидросистема, выключатель аварийного насоса, вкл."
+
+msgid "Start Mode Selector - START/ENG COLD/STARTER COLD : COLD ENG"
+msgstr "Двигатель, переключатель режимов, холодная прокрутка двигателя"
+
+msgid "S2_Forward: INTC Increase Range/DGFT BS Submode"
+msgstr "РУС, кнопка S2 вперед - в реж. INTC: увелич. зону скан. / в реж. DGFT: подреж. BS"
+
+msgid "UFCP Button IFF/8"
+msgstr "UFCP, кнопка IFF/8"
+
+msgid "UFCP Button FPM"
+msgstr "UFCP, кнопка FPM"
+
+msgid "Radio Button 5/A"
+msgstr "Радиостанции (пульт), кнопка 5/A"
+
+msgid "T6_Axis: Antenna Elevation"
+msgstr "РУД, кнопка Т6 (ось) - положение антенны по углу места"
+
+msgid "Right MFCD R1"
+msgstr "МФИ правый, кнопка R1"
+
+msgid "Left MFCD R6"
+msgstr "МФИ левый, кнопка R6"
+
+msgid "Light Switch - Tow/Off/Anti-Collision - Tow/Off"
+msgstr "Внешнее светотех. оборудование, режим буксировка/выкл."
+
+msgid "Anti-Collision Light Knob Selector - 1"
+msgstr "Проблесковые огни, режим яркости 1"
+
+msgid "AG1/AG2 Switch - A/G1"
+msgstr "ЭДСУ, переключатель конфигурации, AG 1"
+
+msgid "OESP PROG02"
+msgstr "ПРОГРАМ. 02"
+
+msgid "MUSIC NUMBER"
+msgstr "КОЛ-ВО АУДИОФАЙЛ."
+
+msgid "OESP Type"
+msgstr "Программа"
+
+msgid "Performance"
+msgstr "Производительность"
+
+msgid "Chaff SQ"
+msgstr "ДО: серия"
+
+msgid "KYBD Pitch Control"
+msgstr "Управ. тангажом с клав-ры"
+
+msgid "Cockpit Model"
+msgstr "Модель кабины"
+
+msgid "Flare Bingo"
+msgstr "ЛТЦ: мин. остаток"
+
+msgid "JF-17 is a single seat, single engine, multirole light fighter that joint developed by AVIC Chengdu and Pakistan Aeronautical Complex (PAC). The design phase of JF-17 'Thunder' finished on May 31st, 2002, and the maiden flight was made on August 25th, 2003. 'Thunder' has a bubble canopy of great view, pretty strake-wing layout and advanced avionics. KLJ-7 radar provides excellent air to ground capability. WMD-7 targeting pod can help 'Thunder' searching for targets in combat. Although 'Thunder' has small size, remember that: she is one of the most advanced fighter jets in the DCS World."
+msgstr ""
+"JF-17 “Thunder” – легкий однодвигательный многофункциональный истребитель, разработанный китайской авиастроительной компанией AVIC Chengdu и пакистанским авиационным комплексом (PAC). Работы по проектированию самолета завершились 31 мая 2002 года. Впервые машина поднялась в воздух 25 августа 2003 года.\n"
+"JF-17 имеет крыло с развитыми наплывами, оснащен самой современной авионикой, а его каплевидный фонарь обеспечивает отличный обзор из кабины. Бортовая РЛС KLJ-7 предоставляет пилоту расширенные возможности при работе по наземным и морским целям. Наличие же прицельного контейнера WMD-7 значительно облегчает поиск и идентификацию целей. Несмотря на относительно небольшие размеры, JF-17 “Thunder” является одним из наиболее передовых истребителей в DCS World."
+
+msgid "DMAP Type"
+msgstr "Тип цифровой карты"
+
+msgid "Voice Locale"
+msgstr "Голос реч. информатора"
+
+msgid "Gun Limiter"
+msgstr "Ограничит. ВПУ"
+
+msgid "SS"
+msgstr "SS"
+
+msgid "OESP PROG01"
+msgstr "ПРОГРАМ. 01"
+
+msgid "CH+FL_oesp"
+msgstr "ДО + ЛТЦ"
+
+msgid "Chaff Bingo"
+msgstr "ДО: мин. остаток"
+
+msgid "Default_liv"
+msgstr "По умолчанию"
+
+msgid "1.0"
+msgstr "1,0"
+
+msgid "0.0"
+msgstr "0,0"
+
+msgid "OESP PROG05"
+msgstr "ПРОГРАМ. 05"
+
+msgid "Hidden Stick"
+msgstr "Скрыть РУС"
+
+msgid "MFCD C701 Slew Rate"
+msgstr "МФИ: чувствит. целеук. C701T"
+
+msgid "RASTER CHARTS"
+msgstr "РАСТРОВАЯ"
+
+msgid "0.2"
+msgstr "0,2"
+
+msgid "HUD Radar Slew Rate"
+msgstr "ИЛС: чувствит. целеук. РЛС"
+
+msgid "AUTO RE-CENTER"
+msgstr "АВТОЦЕНТ. РУС"
+
+msgid "Flare SI"
+msgstr "ЛТЦ: интервал"
+
+msgid "LCOS"
+msgstr "LCOS"
+
+msgid "0.75"
+msgstr "0,75"
+
+msgid "CH_oesp"
+msgstr "ДО"
+
+msgid "Chaff BI"
+msgstr "ДО: инт. залп"
+
+msgid "EN 1"
+msgstr "Английский 1"
+
+msgid "MFCD DL Pod Slew Rate"
+msgstr "МФИ: чувствит. целеук. CM802AK"
+
+msgid "Visual Quality"
+msgstr "Визуальное качество"
+
+msgid "English_liv"
+msgstr "Английская"
+
+msgid "Chaff SI"
+msgstr "ДО: интервал"
+
+msgid "4.5"
+msgstr "4,5"
+
+msgid "0.5"
+msgstr "0,5"
+
+msgid "DCS: JF-17 by Deka Ironwork Simulations."
+msgstr "DCS: JF-17 от Deka Ironwork Simulations."
+
+msgid "Gun Sight"
+msgstr "Прицел ВПУ"
+
+msgid "OESP PROG04"
+msgstr "ПРОГРАМ. 04"
+
+msgid "MAP ALT"
+msgstr "КАРТА ВЫСОТ"
+
+msgid "Flare SQ"
+msgstr "ЛТЦ: серия"
+
+msgid "MFCD WMD7 Slew Rate"
+msgstr "МФИ: чувствит. целеук. WMD7"
+
+msgid "Flare BI"
+msgstr "ЛТЦ: инт. залп"
+
+msgid "Chaff BQ"
+msgstr "ДО: залп"
+
+msgid "MFCD Radar Slew Rate"
+msgstr "МФИ: чувствит. целеук. РЛС"
+
+msgid "CUSTOMIZED"
+msgstr "ПОЛЬЗОВАТ."
+
+msgid "Flare BQ"
+msgstr "ЛТЦ: залп"
+
+msgid "ACCUMULATIVE"
+msgstr "ФИКСИРОВ."
+
+msgid "CN 1"
+msgstr "Китайский 1"
+
+msgid "CN 2"
+msgstr "Китайский 2"
+
+msgid "FL_oesp"
+msgstr "ЛТЦ"
+
+msgid "TDC Deadzone"
+msgstr "Мертв. зона целеуказателя"
+
+msgid "SSLC"
+msgstr "SSLC"
+
+msgid "BLENDED"
+msgstr "СМЕШАННОЕ"
+
+msgid "CUSTOMIZED COCKPIT"
+msgstr "Язык и текстура кабины"
+
+msgid "EN 2"
+msgstr "Английский 2"
+
+msgid "Deka Ironwork Simulations"
+msgstr "Deka Ironwork Simulations"
+
+msgid "OESP PROG03"
+msgstr "ПРОГРАМ. 03"
+
+msgid "Cold and Dark"
+msgstr "Холодный старт"
+
+msgid "Taxi and Takeoff"
+msgstr "Руление и взлет"
+
+msgid "IFR Landing"
+msgstr "Инструментальная посадка"
+
+msgid "Night Attack"
+msgstr "Ночная атака"
+
+msgid "Welcome to this training lesson on starting up the Thunder. In this lesson, you will learn the JF-17 ramp start procedures."
+msgstr ""
+"Добро пожаловать на курс летной и боевой подготовки на многофункциональном истребителе JF-17. Следуйте командам инструктора и совсем скоро вы овладеете всеми навыками, необходимыми для уверенного пилотирования и боевого применения самолета.\n"
+"В первом занятии рассматривается холодный запуск JF-17."
+
+msgid "Air Refuel (Night)"
+msgstr "Дозаправка в воздухе (ночь)"
+
+msgid "Takeoff and Navigation"
+msgstr "Взлет и навигация"
+
+msgid "VFR Straight In Landing and Shut Down"
+msgstr "Визуальный заход, руление на стоянку и останов двигателя"
+
+msgid "Anti-ship Missile"
+msgstr "Применение ПКР"
+
+msgid "Night Landing - Easy"
+msgstr "Посадка ночью - легко"
+
+msgid "Free Flight"
+msgstr "Свободный полет"
+
+msgid "Unguided Bomb CCRP"
+msgstr "Свободнопадающие АБ в режиме CCRP"
+
+msgid "Intercept Convoy"
+msgstr "Перехват конвоя"
+
+msgid "Welcome to this training lesson on IFR landing. In this lesson, you will learn IFR landing."
+msgstr "В данном занятии рассматривается заход на посадку по приборам."
+
+msgid "Welcome to this training lesson on anti-ship missile. In this lesson, you will how to launch C-802AK anti-ship missile with different modes."
+msgstr "В данном занятии рассматривается применение противокорабельных УР C-802AK в различных режимах."
+
+msgid "Night Takeoff and Navigation"
+msgstr "Взлет и навигация ночью"
+
+msgid "Thunder Surprise"
+msgstr "Громовой сюрприз"
+
+msgid "Sink Cargo Ship"
+msgstr "Атака на грузовое судно"
+
+msgid "Air-To-Air BVR"
+msgstr "ДВБ"
+
+msgid "Man-in-the-loop"
+msgstr "УР с контуром обратной связи"
+
+msgid "Night Free Flight"
+msgstr "Свободный полет ночью"
+
+msgid "Decapitation Strike"
+msgstr "Одним ударом"
+
+msgid "Welcome to this training lesson on taxi and takeoff. In this lesson, you will learn operations during taxi and takeoff."
+msgstr "В данном занятии инструктор расскажет о выполнении руления и взлета на самолете JF-17."
+
+msgid "River Run"
+msgstr "Заход над рекой"
+
+msgid "Laser-guided Rockets"
+msgstr "УР с лазерной ГСН"
+
+msgid "Air-To-Air CAC"
+msgstr "БВБ"
+
+msgid "Air Refuel (Day)"
+msgstr "Дозаправка в воздухе (день)"
+
+msgid "Laser-guided Bombs"
+msgstr "УАБ с лазерной ГСН"
+
+msgid "Welcome to this training lesson on VFR landing. In this lesson, you will learn VFR landing and then shut down the engine."
+msgstr "В данном занятии рассматривается визуальный заход на посадку с последующим рулением на стоянку, остановом двигателя и выключением систем самолета."
+
+msgid "Anti-ship"
+msgstr "Противокорабельные УР"
+
+msgid "HOTAS"
+msgstr "HOTAS"
+
+msgid "Unguided Bomb CCIP"
+msgstr "Свободнопадающие АБ в режиме CCIP"
+
+msgid "Unguided Rocket"
+msgstr "НАР"
+
+msgid "Welcome to this training lesson on CCRP bombing. In this lesson, you will how to delivery unguided bombs in CCRP mode."
+msgstr "В данном занятии инструктор расскажет о применении свободнопадающих бомб в режиме CCRP."
+
+msgid "CAS"
+msgstr "НАП"
+
+msgid "Welcome to this training lesson on CCIP bombing. In this lesson, you will how to delivery unguided bombs in CCIP mode."
+msgstr "В данном занятии инструктор расскажет о применении свободнопадающих бомб в режиме CCIP."
+
+msgid "Welcome to this training lesson on basic navigation. In this lesson, you will learn Waypoint and TACAN navigations."
+msgstr "В данном занятии инструктор расскажет об основах навигации на JF-17: выполнении полета по заданному маршруту и работе с маяками TACAN."
+
+msgid "General Bombs"
+msgstr "Фугасные АБ"
+
+msgid "Peace Shield"
+msgstr "Мирный щит"
+
+msgid "SEAD"
+msgstr "Подавление ПВО"
+
+msgid "Cold Start"
+msgstr "Холодный старт"
+
+msgid "Welcome to this training lesson for HOTAS. In this lesson, you will learn basic HOTAS operations."
+msgstr "В данном занятии рассматривается работа с органами управления, построенными на концепции HOTAS (управление системами самолета не отрывая рук) - РУС и РУД."
+
+msgid "Landing - Easy"
+msgstr "Посадка - легко"
+
+msgid "Enter Laser Code (Tens)"
+msgstr "Ввести код лазера (десятки)"
+
+msgid "3"
+msgstr ""
+
+msgid "2"
+msgstr ""
+
+msgid "5"
+msgstr ""
+
+msgid "6"
+msgstr ""
+
+msgid "8"
+msgstr ""
+
+msgid "Pylon Left Outer"
+msgstr "Внешний левый пилон"
+
+msgid "Get Parking Coord"
+msgstr "Получить коорд-ты стоянки"
+
+msgid "Change All Digits"
+msgstr "Сменить все цифры"
+
+msgid "Pylon Right Outer"
+msgstr "Внешний правый пилон"
+
+msgid "Place_"
+msgstr "Place_"
+
+msgid "Update Laser Code"
+msgstr "Обновить код лазера"
+
+msgid "Choose All Pylons"
+msgstr "Выбрать все пилоны"
+
+msgid "Install Probe"
+msgstr "Установить заправочную штангу"
+
+msgid "Enter Laser Code (Hundreds)"
+msgstr "Вести код лазера (сотни)"
+
+msgid "Uninstall Probe"
+msgstr "Демонтировать заправочную штангу"
+
+msgid "Pylon Right Inner"
+msgstr "Внутренний правый пилон"
+
+msgid "Change Code (Tens)"
+msgstr "Сменить код (десятки)"
+
+msgid "AAR Probe"
+msgstr "Дозаправка в воздухе, заправочная штанга"
+
+msgid "Change Code (Unit)"
+msgstr "Сменить код (единицы)"
+
+msgid "Setting Complete"
+msgstr "Настройка завершена"
+
+msgid "Choose Pylon"
+msgstr "Выбор пилона"
+
+msgid "Enter Laser Code (Unit)"
+msgstr "Ввести код лазера (единицы)"
+
+msgid "Remove_"
+msgstr "Remove_"
+
+msgid "Update Data"
+msgstr "Обновить данные"
+
+msgid "Wheel chocks"
+msgstr "Wheel chocks"
+
+msgid "1"
+msgstr ""
+
+msgid "Update DTC Data"
+msgstr "Обновить данные картриджа"
+
+msgid "Pylon Center"
+msgstr "Центральный пилон"
+
+msgid "Change Code (Hundreds)"
+msgstr "Сменить код (сотни)"
+
+msgid "Refill Utilities"
+msgstr ""
+
+msgid "7"
+msgstr ""
+
+msgid "Pylon Left Inner"
+msgstr "Внутренний левый пилон"
+
+msgid "Update INS Align Data"
+msgstr "Обновить данные выставки ИНС"
+
+msgid "4"
+msgstr ""
+
+msgid " - Battery Switch On"
+msgstr "АККУМУЛЯТОРНАЯ БАТАРЕЯ - ВКЛ."
+
+msgid "7: Startup Final"
+msgstr "7. КАРТА ПЕРЕД ВЫРУЛИВАНИЕМ"
+
+msgid "5: ECS and Oxygen"
+msgstr "5. СИСТЕМЫ КОНДИЦИОН. И КИСЛОРОДНОГО ПИТАНИЯ - ВКЛ."
+
+msgid "1: Power On"
+msgstr "1. ЭЛЕКТРОСЕТЬ - ВКЛ."
+
+msgid " - Start Fast Alignment"
+msgstr "БЫСТРАЯ ВЫСТАВКА ИНС - НАЧАТЬ"
+
+msgid " - AAP IFF On"
+msgstr "AAP: СРО - ВКЛ."
+
+msgid " - Enter Current True Heading"
+msgstr "ВВОД ТЕКУЩЕГО ИСТИННОГО КУРСА"
+
+msgid " - COM2 Volume Knob - Max"
+msgstr "РАДИОСТАНЦИЯ COM2 - ГРОМКОСТЬ МАКС."
+
+msgid " - Air Temp Knob Selector - 25"
+msgstr "РЕГУЛЯТОР ТЕМП. В КАБИНЕ - 25 ГРАДУСОВ"
+
+msgid "2: Open Canopy"
+msgstr "2. ФОНАРЬ КАБИНЫ - ОТКРЫТЬ"
+
+msgid " - AAP WMMC2 On"
+msgstr "AAP: WMMC (БОЕВОЙ КОМП.) №2 - ВКЛ."
+
+msgid " - Eject Seat Safe/Arm Handle - Arm"
+msgstr "КРЕСЛО ПИЛОТА - СИСТЕМА КАТАП. ВЗВЕДЕНА"
+
+msgid "AUTOSTART SEQUENCE IS RUNNING"
+msgstr "АВТОЗАПУСК НАЧАТ"
+
+msgid " - Master Warning Button - Press"
+msgstr "СОРЦ - НАЖАТЬ"
+
+msgid "4: SHARS and INS"
+msgstr "4. ИНС И РЕЗЕРВНАЯ КУРСОВЕРТИКАЛЬ"
+
+msgid " - ECS Mode Knob Selector On"
+msgstr "СИСТЕМА КОНДИЦИОНИРОВАНИЯ - ВКЛ."
+
+msgid " - Start Loading Selected Data"
+msgstr "ЗАГРУЗКА ВЫБРАННЫХ ДАННЫХ - НАЧАТЬ"
+
+msgid "2: Cockpit Light"
+msgstr "2. ОСВЕЩЕНИЕ КАБИНЫ"
+
+msgid " - Light Switch - Anti-Collision"
+msgstr "ВНЕШНЕЕ СВЕТОТЕХ. ОБОРУДОВАНИЕ - РЕЖИМ ПРОБЛЕСКОВЫЙ"
+
+msgid "5: Eject Seat Safety"
+msgstr "5. КРЕСЛО ПИЛОТА - СИСТЕМА КАТАП. ВЫКЛ."
+
+msgid " - Anti-Collision Light Knob Selector On"
+msgstr "ПРОБЛЕСКОВЫЕ ОГНИ - ВКЛ."
+
+msgid " - Refresh MFCD Pages"
+msgstr "СТРАНИЦЫ МФИ - ОБНОВИТЬ"
+
+msgid " - Navigation Light Switch - Brt"
+msgstr "БАНО - ЯРКО"
+
+msgid "INS NOT ALIGNED"
+msgstr "ИНС НЕ ВЫСТАВЛЕНА"
+
+msgid " - RMFCD Shows EPI2 Page"
+msgstr "МФИ ПРАВЫЙ - ВЫВОДИТСЯ СТРАНИЦА EPI2"
+
+msgid " - Fuel Pump Switch On"
+msgstr "ТОПЛИВНЫЕ НАСОСЫ - ВКЛ."
+
+msgid " - Throttle - Stop To Idle"
+msgstr "РУД - ИЗ ПОЛОЖЕНИЯ СТОП В МГ"
+
+msgid " - HUD Brightness Knob - Max"
+msgstr "ИЛС - ЯРКОСТЬ МАКС."
+
+msgid " - Formation Light Knob Selector On"
+msgstr "СТРОЕВЫЕ ОГНИ - ВКЛ."
+
+msgid " - AAP WMMC1 On"
+msgstr "AAP: WMMC (БОЕВОЙ КОМП.) №1 - ВКЛ."
+
+msgid " - AC Switch On"
+msgstr "ГЛАВНЫЙ ГЕНЕРАТОР ПЕРЕМЕН. ТОКА - ВКЛ."
+
+msgid " - Eject Seat Firing Handle Safety Pin - Remove"
+msgstr "КРЕСЛО ПИЛОТА - ПРЕДОХР. ЧЕКА ВОСПЛАМЕНИТЕЛЯ - ИЗВЛЕЧЕНА"
+
+msgid " - Select Nav Master Mode"
+msgstr "ИНС - УСТАНОВИТЬ РЕЖИМ NAV"
+
+msgid " - Oxygen Indicator Bright Knob - Max"
+msgstr "ПОДСВЕТ УКАЗАТЕЛЯ ОСТАТКА КИСЛОРОДА - МАКС."
+
+msgid " - UFCP DST Button - Press"
+msgstr "UFCP - НАЖАТЬ КНОПКУ DST"
+
+msgid " - AAP SAIU On"
+msgstr "AAP: СУВ - ВКЛ."
+
+msgid " - AAP SLNK On"
+msgstr "AAP: СИСТЕМА ТАКТИЧ. ПЕРЕДАЧИ ДАННЫХ - ВКЛ."
+
+msgid "3: Turn Off INS and SHARS"
+msgstr "3. ИНС И РЕЗЕРВНАЯ КУРСОВЕРТИКАЛЬ - ВЫКЛ."
+
+msgid " - G-Suit Tube - Connect"
+msgstr "ППК - ШЛАНГ ПОДКЛЮЧИТЬ"
+
+msgid "Check and Preparation"
+msgstr "КАРТА КОНТРОЛЬНЫХ ПРОВЕРОК"
+
+msgid "6: DTC Card"
+msgstr "6. КАРТРИДЖ ПОЛЕТНОГО ЗАДАНИЯ"
+
+msgid " - Console Light Knob - 80%"
+msgstr "ПОДСВЕТ КОНСОЛЕЙ - ЯРКОСТЬ 80%"
+
+msgid " - Canopy Open/Close Handle - Lock"
+msgstr "ФОНАРЬ КАБИНЫ - РУЧКА ОТКРЫТИЯ/ЗАКРЫТИЯ ЗАБЛОКИРОВАНА"
+
+msgid "8: Turn Off Power"
+msgstr "8. ЭЛЕКТРОСЕСТЬ - ВЫКЛ."
+
+msgid "AUTOSTOP COMPLETE"
+msgstr "АВТООСТАНОВ ЗАВЕРШЕН"
+
+msgid " - Inst. Light Knob - 80%"
+msgstr "ПОДСВЕТ ПРИБОРОВ - ЯРКОСТЬ 80%"
+
+msgid "4: Turn Off ECS and Oxy"
+msgstr "4. СИСТЕМЫ КОНДИЦИОН. И КИСЛОРОДНОГО ПИТАНИЯ - ВЫКЛ."
+
+msgid " - UFCP Brightness Knob - Max"
+msgstr "ПОДСВЕТ ПУЛЬТА UFCP - ЯРКОСТЬ МАКС."
+
+msgid " - Ground Start Button - Press and Hold"
+msgstr "ДВИГАТЕЛЬ: КНОПКА ЗАПУСКА НА ЗЕМЛЕ - НАЖАТЬ И УДЕРЖИВАТЬ"
+
+msgid " - Warning Panel Bright Knob - Max"
+msgstr "ПАНЕЛЬ СВЕТОСИГН. ТАБЛО - ЯРКОСТЬ МАКС."
+
+msgid " - Emergency Hydraulic Pump Switch On"
+msgstr "ГИДРОСИСТЕМА: АВАРИЙНЫЙ НАСОС - ВКЛ."
+
+msgid " - AAP COM1 On"
+msgstr "AAP: РАДИОСТАНЦИЯ COM1 - ВКЛ."
+
+msgid "9: Unplug DTC Card"
+msgstr "9. КАРТРИДЖ - ИЗВЛЕЧЬ"
+
+msgid " - DC Switch On"
+msgstr "ГЕНЕРАТОР ПОСТ. ТОКА - ВКЛ."
+
+msgid " - Warning Panel Day/Night - Day"
+msgstr "ПАНЕЛЬ СВЕТОСИГН. ТАБЛО - РЕЖИМ \"ДЕНЬ\""
+
+msgid " - Intercom Switch On"
+msgstr "СПУ - ВКЛ."
+
+msgid " - Oxygen Supply Valve - Max"
+msgstr "РЕГУЛЯТОР ПОДАЧИ КИСЛОРОДА - МАКС."
+
+msgid " - HUD Contrast Knob - Max"
+msgstr "ИЛС - КОНТРАСТ МАКС."
+
+msgid " - Enter Current Coordinate"
+msgstr "ВВЕСТИ ТЕКУЩИЕ КООРДИНАТЫ"
+
+msgid " - Oxygen Tube - Connect"
+msgstr "КИСЛОРОДНЫЙ ШЛАНГ - ПОДСОЕДИНИТЬ"
+
+msgid " - Select All Data Entries"
+msgstr "ВЫБРАТЬ ВСЕ СТРОКИ ДАННЫХ"
+
+msgid " - Navigation Light Switch - Flash"
+msgstr "БАНО - РЕЖИМ ПРОБЛЕСКОВЫЙ"
+
+msgid " - Canopy Open/Close Handle - Close"
+msgstr "ФОНАРЬ КАБИНЫ - РУЧКА ЗАКРЫТИЯ/ОТКРЫТИЯ В ПОЛОЖЕНИЕ ЗАКРЫТО"
+
+msgid " - Set FCS Configuration"
+msgstr "ЭДСУ - ВЫБРАТЬ КОНФИГУРАЦИЮ ПОЛЕЗНОЙ НАГРУЗКИ"
+
+msgid " - Adjust QFE using BARO Altitude Setting Knob"
+msgstr "ВЫСТАВИТЬ ДАВЛЕНИЕ АЭРОДРОМА"
+
+msgid "1: Engine Shutdown"
+msgstr "1. ОСТАНОВ ДВИГАТЕЛЯ"
+
+msgid "7: Turn Off Radio"
+msgstr "7. РАДИОСТАНЦИИ - ВЫКЛ."
+
+msgid " - Radio Mode Selector - T/R"
+msgstr "РАДИОСТАНЦИИ - ПЕРЕКЛ. РЕЖИМОВ В ПОЛОЖЕНИЕ T/R"
+
+msgid " - Engine Control Switch On"
+msgstr "ГЛАВНЫЙ ВЫКЛЮЧАТЕЛЬ ДВИГАТЕЛЯ - РАБОТА"
+
+msgid " - Radio Volume Knob - Max"
+msgstr "РАДИОСТАНЦИИ - ГРОМКОСТЬ МАКС."
+
+msgid " - COM1 Volume Knob - Max"
+msgstr "РАДИОСТАНЦИЯ COM1 - ГРОМКОСТЬ МАКС."
+
+msgid " - SHARS Switch On"
+msgstr "РЕЗЕРВНАЯ КУРСОВЕРТИКАЛЬ - ВКЛ."
+
+msgid "AUTOSTOP SEQUENCE IS RUNNING"
+msgstr "АВТООСТАНОВ НАЧАТ"
+
+msgid "6: Turn Off Cockpit and External Lights"
+msgstr "6. ВНТУР. И ВНЕШНЕЕ СВЕТОТЕХ. ОБОРУДОВАНИЕ - ВЫКЛ."
+
+msgid " - MSL Volume Knob - 40%"
+msgstr "ГРОМКОСТЬ СИГНАЛОВ ГСН РАКЕТ - 40%"
+
+msgid " - AAP OESP On"
+msgstr "AAP: ПУЛЬТ OESP - ВКЛ."
+
+msgid " - AAP INS On"
+msgstr "AAP: ИНС - ВКЛ."
+
+msgid " - AAP RWR On"
+msgstr "AAP: СПО - ВКЛ."
+
+msgid " - AAP NAV On"
+msgstr "AAP: НАВИГАЦИОННЫЙ КОМПЬЮТЕР - ВКЛ."
+
+msgid " - AAP COM2 On"
+msgstr "AAP: РАДИОСТАНЦИЯ COМ2 - ВКЛ."
+
+msgid "3: Engine Start"
+msgstr "3. ЗАПУСК ДВИГАТЕЛЯ"
+
+msgid " - TCN/ILS Volume Knob - Max"
+msgstr "ГРОМКОСТЬ СИГНАЛОВ TCN/ILS - МАКС."
+
+msgid " - AAP RDR On"
+msgstr "AAP: РЛС - ВКЛ."
+
+msgid "AUTOSTART COMPLETE"
+msgstr "АВТОЗАПУСК ЗАВЕРШЕН"
+
+msgid " - DTC Card - Install"
+msgstr "КАРТРИДЖ ПОЛЕТНОГО ЗАДАНИЯ - ВСТАВИТЬ"
+
+msgid " - Exterior Light Master Switch On"
+msgstr "ГЛАВНЫЙ ПЕРЕКЛ. ВНЕШНЕГО СВЕТОТЕХ. ОБОРУДОВАНИЯ - ВКЛ."
+
+msgid "MWMMC_FAILURE_CPU"
+msgstr "Боевой компьютер: отказ ЦПУ"
+
+msgid "SWMMC_FAILURE_CPU"
+msgstr ""
+
+msgid "FCS_FAILURE_P_SENSOR_1"
+msgstr ""
+
+msgid "EMMC_FAILURE_AC_GENERATOR_CONTROLLER"
+msgstr ""
+
+msgid "CNI_FAILURE_COM2_SECOS"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_RWR"
+msgstr ""
+
+msgid "FCS_FAILURE_NY_SENSOR_1"
+msgstr ""
+
+msgid "EMMC_FAILURE_BATTERY_FCS1"
+msgstr ""
+
+msgid "FAILURE_SMS_PYLON_7"
+msgstr ""
+
+msgid "CNI_FAILURE_IFF_TX"
+msgstr ""
+
+msgid "EMMC_FAILURE_BATTERY_DC2"
+msgstr ""
+
+msgid "FCS_FAILURE_AOA_SENSOR_2"
+msgstr ""
+
+msgid "SWMMC_FAILURE_CMFCD"
+msgstr ""
+
+msgid "ECS_FAILURE_CANOPY_GLASS_BROKEN"
+msgstr ""
+
+msgid "FCS_FAILURE_R_ELEVATOR_HYD_1"
+msgstr ""
+
+msgid "FCS_FAILURE_WOW_3"
+msgstr ""
+
+msgid "INS_FAILURE_ALT_INVALID"
+msgstr ""
+
+msgid "OXY_FAILURE_R_LEAK"
+msgstr ""
+
+msgid "FCS_FAILURE_YAW_LVDT_2"
+msgstr ""
+
+msgid "INS_FAILURE_ALGNMENT"
+msgstr "ИНС: выставка не удалась"
+
+msgid "FAILURE_EXT_LIGHT_FORMATION_LEFT"
+msgstr ""
+
+msgid " Ground Crew: No ordance, unable to program!"
+msgstr ""
+
+msgid "SNS_FAILURE_COMPUTER"
+msgstr ""
+
+msgid "CNI_FAILURE_COM1_SECOS"
+msgstr ""
+
+msgid "INS_DATA_DEGRADED"
+msgstr ""
+
+msgid "EMMC_FAILURE_DADS"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_RATE_GYRO_1"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_TACAN"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_IFF"
+msgstr ""
+
+msgid "ZCP_FAILURE_MALFUNC"
+msgstr ""
+
+msgid "ENGINE_FAILURE_N2_TURBINE"
+msgstr ""
+
+msgid "FCS_FAILURE_COMP_2"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_LVDT_3"
+msgstr ""
+
+msgid "SWMMC_FAILURE_AVI"
+msgstr ""
+
+msgid "MWMMC_FAILURE_AVI"
+msgstr ""
+
+msgid "FCS_FAILURE_NZ_SENSOR_3"
+msgstr ""
+
+msgid "FCS_FAILURE_ROLL_ELEC_SERVO_1"
+msgstr ""
+
+msgid "ENGINE_FAILURE_AB_IGNITION_UNIT"
+msgstr ""
+
+msgid " Ground Crew: Copy! Updating the DTC now!"
+msgstr ""
+
+msgid "FCS_FAILURE_ROLL_AUGD_1"
+msgstr ""
+
+msgid "RDR_FAILURE_TRANSMITTER"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_2_EXTERNAL_LEAKAGE"
+msgstr ""
+
+msgid "ENGINE_FAILURE_N2_COMPRESSOR"
+msgstr ""
+
+msgid "RDR_FAILURE_RX_FRONT_END_DEGRATION"
+msgstr ""
+
+msgid "EMMC_FAILURE_ELECT_EQUIP_HOT"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_ILS"
+msgstr ""
+
+msgid "SWMMC_DVR_NO_RS422_COMM"
+msgstr ""
+
+msgid "FAILURE_EXT_LIGHT_TAXI"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_SPJ"
+msgstr ""
+
+msgid "CNI_FAILURE_TACAN"
+msgstr ""
+
+msgid "FCS_FAILURE_EFCS_2"
+msgstr ""
+
+msgid "ECS_FAILURE_WS_GLASS_BROKEN"
+msgstr ""
+
+msgid "EMMC_FAILURE_SHARS"
+msgstr ""
+
+msgid "COMM1 VHF Radio"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_EMERGE"
+msgstr ""
+
+msgid "DTC_FAILURE_DATA_DECIPHER"
+msgstr ""
+
+msgid "FCS_FAILURE_WOW_1"
+msgstr ""
+
+msgid "EMMC_FAILURE_DADS_LPTU"
+msgstr ""
+
+msgid "RDR_FAILURE_DEGRATED_PERFORMANCE"
+msgstr ""
+
+msgid "EMMC_FAILURE_TRU"
+msgstr ""
+
+msgid "OESP_FAILURE_CH_DISP_L"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_LMFCD"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_2_PUMP"
+msgstr ""
+
+msgid "SWMMC_FAILURE_RMFCD"
+msgstr ""
+
+msgid "SWMMC_FAILURE_LMFCD"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_RMFCD"
+msgstr ""
+
+msgid "FAILURE_SMS_PYLON_1"
+msgstr ""
+
+msgid "RWR_FAILURE_RECEIVER_XX1"
+msgstr ""
+
+msgid "SWMMC_FAILURE_PS"
+msgstr ""
+
+msgid "MWMMC_FAILURE_PS"
+msgstr ""
+
+msgid "EMMC_FAILURE_FUEL_START_PUMP"
+msgstr ""
+
+msgid "ECS_FAILURE_CANOPY_GLASS_CRACKED"
+msgstr ""
+
+msgid " Ground Crew: DTC update complete!"
+msgstr ""
+
+msgid "EMMC_FAILURE_CANOPY_UNLOCK"
+msgstr ""
+
+msgid "SHARS_FAILURE_SENSOR"
+msgstr ""
+
+msgid "INS_FAILURE_DATA_INVALID"
+msgstr ""
+
+msgid "OXY_FAILURE_AUTO_100_O2"
+msgstr ""
+
+msgid "EMMC_FAILURE_AC_GROUND"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_1_EXTERNAL_LEAKAGE_SEVERE"
+msgstr ""
+
+msgid "EMMC_FAILURE_STATIC_INVERTER"
+msgstr ""
+
+msgid "EMMC_FAILURE_AC_GENERATOR_FEED_LINE"
+msgstr ""
+
+msgid "DTC_FAILURE_READER_BROKEN"
+msgstr ""
+
+msgid "SWMMC_CSU_NO_RS422_COMM"
+msgstr ""
+
+msgid "FCS_FAILURE_ROLL_LVDT_1"
+msgstr ""
+
+msgid " Ground Crew: Incorrect payload! Please re-select!"
+msgstr ""
+
+msgid "FCS_FAILURE_R_ELEVATOR_ELEC_B"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_RATE_GYRO_4"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_CMFCD"
+msgstr ""
+
+msgid "RDR_FAILURE_ANTENNA_DEGRATION"
+msgstr ""
+
+msgid "FCS_FAILURE_L_ELEVATOR_ELEC_C"
+msgstr ""
+
+msgid "FCS_FAILURE_L_ELEVATOR_ELEC_A"
+msgstr ""
+
+msgid "INS_FAILURE_GPS_RECEIVER"
+msgstr ""
+
+msgid "FAILURE_ECS_ELEC"
+msgstr ""
+
+msgid "FCS_FAILURE_Q_SENSOR_3"
+msgstr ""
+
+msgid "INS_FAILURE_ACC"
+msgstr ""
+
+msgid "FCS_FAILURE_ROLL_ELEC_SERVO_2"
+msgstr ""
+
+msgid "RDR_FAILURE_PREESURIZATION"
+msgstr ""
+
+msgid "ENGINE_FAILURE_APD88_STARTER"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_2_EXTERNAL_LEAKAGE_SEVERE"
+msgstr ""
+
+msgid "FCS_FAILURE_Q_SENSOR_2"
+msgstr ""
+
+msgid "FCS_FAILURE_L_ELEVATOR_HYD_1"
+msgstr ""
+
+msgid "SNS_FAILURE_CABLE"
+msgstr ""
+
+msgid "RDR_FAILURE_RECEIVER_DEGRATION"
+msgstr ""
+
+msgid "SWMMC_FAILURE_DVR"
+msgstr ""
+
+msgid "OESP_FAILURE_FL_DISP_L"
+msgstr ""
+
+msgid "SWMMC_FAILURE_IOC"
+msgstr ""
+
+msgid " Ground Crew: Copy! To refill utilities!"
+msgstr ""
+
+msgid "MWMMC_FAILURE_IOC"
+msgstr "Боевой компьютер: сбой в операционной системе"
+
+msgid "INS_WIND_INVALID"
+msgstr "ИНС: заданы неправильные параметры ветра"
+
+msgid "FCS_FAILURE_YAW_ELEC_SERVO_2"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_1_PUMP"
+msgstr ""
+
+msgid "COMM2 UHF Radio"
+msgstr "Радиостанция УКВ COM2"
+
+msgid "FCS_FAILURE_ROLL_RATE_GYRO_1"
+msgstr ""
+
+msgid "FCS_FAILURE_NY_SENSOR_2"
+msgstr ""
+
+msgid "EMMC_FAILURE_DC_GENERATOR"
+msgstr ""
+
+msgid "FCS_FAILURE_L_ELEVATOR_ELEC_B"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_FCS"
+msgstr ""
+
+msgid "RDR_FAILURE_RX_FRONT_END"
+msgstr ""
+
+msgid "RDR_FAILURE_PEDESTAL"
+msgstr ""
+
+msgid "RDR_FAILURE_SERVOLOOP"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_RATE_GYRO_2"
+msgstr ""
+
+msgid "FCS_FAILURE_NZ_SENSOR_2"
+msgstr ""
+
+msgid "EMMC_FAILURE_FUEL_LOWER_PUMP"
+msgstr ""
+
+msgid "FCS_FAILURE_YAW_RATE_GYRO_2"
+msgstr ""
+
+msgid "OESP_FAILURE_MAWS_R"
+msgstr ""
+
+msgid "FAILURE_EXT_LIGHT_NAV_RIGHT"
+msgstr ""
+
+msgid "FCS_FAILURE_R_ELEVATOR_ELEC_D"
+msgstr ""
+
+msgid "FCS_FAILURE_COMP_1"
+msgstr ""
+
+msgid "OESP_FAILURE_MAWS_L"
+msgstr ""
+
+msgid " Ground Crew: Roger! Standby!"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_OESP"
+msgstr ""
+
+msgid "FAILURE_EXT_LIGHT_FORMATION_RIGHT"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_1_INTERNAL_LEAKAGE"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_HUD"
+msgstr ""
+
+msgid "FCS_FAILURE_ROLL_RATE_GYRO_2"
+msgstr ""
+
+msgid "EMMC_FAILURE_BATTERY_DC1"
+msgstr ""
+
+msgid "DTC_FAILURE_CARD_BROKEN"
+msgstr "Картридж полетного задания сломан"
+
+msgid "OXY_FAILURE_HIGH_PRESS"
+msgstr ""
+
+msgid "RDR_FAILURE_PROCESSOR"
+msgstr "РЛС: отказ ЦПУ"
+
+msgid "RDR_FAILURE_PROCESSOR_DEGRATION"
+msgstr "РЛС: деградация ЦПУ"
+
+msgid "RDR_FAILURE_RECEIVER"
+msgstr "РЛС: отказ приемной части"
+
+msgid "EMMC_FAILURE_COCKPIT_PRESSURE_LOW"
+msgstr "Сист. кондиционивания: низкое давл. в кабине"
+
+msgid "EMMC_FAILURE_BAU"
+msgstr ""
+
+msgid "EMMC_FAILURE_DADS_RPTU"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_2_ACCU"
+msgstr "Гидросистема 2: утечка в гидроаккумуляторе"
+
+msgid "FCS_FAILURE_PITCH_LVDT_2"
+msgstr ""
+
+msgid "EMMC_FAILURE_TRU_AC2DC28V"
+msgstr ""
+
+msgid "FCS_FAILURE_LG_4"
+msgstr ""
+
+msgid "MWMMC_FAILURE_DMP"
+msgstr ""
+
+msgid "SWMMC_FAILURE_DMP"
+msgstr ""
+
+msgid "EMMC_FAILURE_EMMC"
+msgstr ""
+
+msgid "FCS_FAILURE_YAW_RATE_GYRO_1"
+msgstr ""
+
+msgid "FCS_FAILURE_YAW_LVDT_1"
+msgstr ""
+
+msgid "RWR_FAILURE_ANTENNA_FRONT_RIGHT"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_EMMC"
+msgstr ""
+
+msgid "FCS_FAILURE_WOW_4"
+msgstr ""
+
+msgid "FCS_FAILURE_NZ_SENSOR_1"
+msgstr ""
+
+msgid "FCS_FAILURE_LG_2"
+msgstr ""
+
+msgid "FAILURE_SMS_PYLON_2"
+msgstr ""
+
+msgid "INS_FAILURE_GYRO"
+msgstr ""
+
+msgid "FCS_FAILURE_P_SENSOR_2"
+msgstr ""
+
+msgid " Ground Crew: Copy! Be patient, it's a bit time consuming!"
+msgstr ""
+
+msgid "FCS_FAILURE_COMP_4"
+msgstr ""
+
+msgid "FCS_FAILURE_YAW_AUGD_1"
+msgstr ""
+
+msgid " Ground Crew: Hey! Shutdown the engine and power first!"
+msgstr ""
+
+msgid "ENGINE_FAILURE_COMBUSTOR"
+msgstr ""
+
+msgid "EMMC_FAILURE_LWC"
+msgstr ""
+
+msgid "FAILURE_SMS_PYLON_6"
+msgstr ""
+
+msgid "FCS_FAILURE_YAW_AUGD_2"
+msgstr ""
+
+msgid "FAILURE_SMS_PYLON_4"
+msgstr ""
+
+msgid "ENGINE_FAILURE_N1_COMPRESSOR"
+msgstr ""
+
+msgid "FCS_FAILURE_P_SENSOR_3"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_LVDT_1"
+msgstr ""
+
+msgid " Ground Crew: Utilities refill complete!"
+msgstr ""
+
+msgid "RDR_FAILURE_ARRAY"
+msgstr ""
+
+msgid "EMMC_FAILURE_AC_GENERATOR"
+msgstr ""
+
+msgid "FAILURE_EXT_LIGHT_LAND"
+msgstr ""
+
+msgid " Ground Crew: Hey! Do Not Move!"
+msgstr ""
+
+msgid " Ground Crew: Coordinates ready!"
+msgstr ""
+
+msgid "SWMMC_FAILURE_HUD"
+msgstr ""
+
+msgid "ENGINE_FAILURE_N1_TURBINE"
+msgstr ""
+
+msgid "RWR_FAILURE_RECEIVER_XX3"
+msgstr ""
+
+msgid "OXY_FAILURE_L_LEAK_SEVERE"
+msgstr ""
+
+msgid "FCS_FAILURE_L_ELEVATOR_ELEC_D"
+msgstr ""
+
+msgid "FCS_FAILURE_R_ELEVATOR_ELEC_C"
+msgstr ""
+
+msgid "SWMMC_FAILURE_CSU"
+msgstr ""
+
+msgid "FCS_FAILURE_R_ELEVATOR_HYD_2"
+msgstr ""
+
+msgid "FCS_FAILURE_Q_SENSOR_1"
+msgstr ""
+
+msgid "MWMMC_FAILURE"
+msgstr ""
+
+msgid "EMMC_FAILURE_BATTERY_FCS2"
+msgstr ""
+
+msgid "EMMC_FAILURE_SCU_AC2AC36V"
+msgstr ""
+
+msgid "SWMMC_FAILURE"
+msgstr ""
+
+msgid "OESP_FAILURE_FL_DISP_R"
+msgstr ""
+
+msgid "FCS_FAILURE_AOA_SENSOR_1"
+msgstr ""
+
+msgid "FAILURE_EXT_LIGHT_NAV_TAIL"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_RDR"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_SAIU"
+msgstr ""
+
+msgid "OESP_FAILURE_CH_DISP_R"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_1_ACCU"
+msgstr ""
+
+msgid "FAILURE_ECS_MECH"
+msgstr ""
+
+msgid "FCS_FAILURE_ROLL_LVDT_2"
+msgstr ""
+
+msgid "OXY_FAILURE_AIR_O2_SWITCH"
+msgstr ""
+
+msgid " Ground Crew: Laser code ready!"
+msgstr ""
+
+msgid "EMMC_FAILURE_AC_GENERATOR_SUBSYSTEM"
+msgstr ""
+
+msgid "FAILURE_EXT_LIGHT_NAV_LEFT"
+msgstr ""
+
+msgid "MWMMC_FAILURE_MBI"
+msgstr ""
+
+msgid "FCS_FAILURE_Q_SENSOR_4"
+msgstr ""
+
+msgid "SWMMC_FAILURE_MBI"
+msgstr ""
+
+msgid " Ground Crew: Open the canopy!"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_1_EXTERNAL_LEAKAGE"
+msgstr ""
+
+msgid "SWMMC_FAILURE_AAP"
+msgstr ""
+
+msgid "EMMC_FAILURE_PROBES_HEATING"
+msgstr ""
+
+msgid "AUTOSTART STOPPED"
+msgstr ""
+
+msgid "OXY_FAILURE_L_LEAK"
+msgstr ""
+
+msgid " Ground Crew: Please unplug the card first!"
+msgstr ""
+
+msgid "FCS_FAILURE_COMP_3"
+msgstr ""
+
+msgid "FCS_FAILURE_AOA_SENSOR_3"
+msgstr ""
+
+msgid "RWR_FAILURE_COMPUTER"
+msgstr ""
+
+msgid "EMMC_FAILURE_SCU_DC2AC36V"
+msgstr ""
+
+msgid "OXY_FAILURE_R_LEAK_SEVERE"
+msgstr ""
+
+msgid "ENGINE_FAILURE_DEEC"
+msgstr ""
+
+msgid "FCS_FAILURE_P_SENSOR_4"
+msgstr ""
+
+msgid "FCS_FAILURE_YAW_ELEC_SERVO_1"
+msgstr ""
+
+msgid "RWR_FAILURE_DB_NOT_LOADED"
+msgstr "СПО: база данных не загружена"
+
+msgid "RWR_FAILURE_ANTENNA_FRONT_LEFT"
+msgstr ""
+
+msgid "SWMMC_FAILURE_CTVS"
+msgstr ""
+
+msgid "EMMC_FAILURE_DC_GENERATOR_CONTROLLER"
+msgstr ""
+
+msgid "CNI_FAILURE_COM2"
+msgstr ""
+
+msgid "FCS_FAILURE_LG_3"
+msgstr ""
+
+msgid "ECS_FAILURE_WS_GLASS_CRACKED"
+msgstr ""
+
+msgid "EMMC_FAILURE_DC_GENERATOR_VOLTAGE_LOW"
+msgstr ""
+
+msgid "EMMC_FAILURE_FUEL_LOW_LEVEL"
+msgstr ""
+
+msgid "EMMC_FAILURE_LANDING_GEAR"
+msgstr ""
+
+msgid "RWR_FAILURE_ANTENNA_REAR_RIGHT"
+msgstr ""
+
+msgid "RWR_FAILURE_RECEIVER_XX2"
+msgstr ""
+
+msgid "FCS_FAILURE_ROLL_AUGD_2"
+msgstr ""
+
+msgid " Ground Crew: Finally done!"
+msgstr ""
+
+msgid "DTC_FAILURE_DATA_CRC"
+msgstr ""
+
+msgid "INS_PU_REJECTED"
+msgstr ""
+
+msgid "CNI_FAILURE_RALT"
+msgstr ""
+
+msgid "ENGINE_FAILURE_NOZZLE_CONTROLLER"
+msgstr ""
+
+msgid "SWMMC_AAP_NO_RS422_COMM"
+msgstr ""
+
+msgid "EMMC_FAILURE_FUEL_UPPER_PUMP"
+msgstr ""
+
+msgid "CNI_FAILURE_IFF_RX"
+msgstr ""
+
+msgid "FCS_FAILURE_LG_1"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_RATE_GYRO_3"
+msgstr ""
+
+msgid "RDR_FAILURE_TRANSMITTER_DEGRATION"
+msgstr "РЛС: деградация передающей части"
+
+msgid "MWMMC_FAILURE_1553B_RALT"
+msgstr ""
+
+msgid "FCS_FAILURE_R_ELEVATOR_ELEC_A"
+msgstr ""
+
+msgid "FCS_FAILURE_L_ELEVATOR_HYD_2"
+msgstr ""
+
+msgid "EMMC_FAILURE_SCU_DC2AC115V"
+msgstr ""
+
+msgid "FCS_FAILURE_NZ_SENSOR_4"
+msgstr ""
+
+msgid "FCS_FAILURE_WOW_2"
+msgstr ""
+
+msgid "EMMC_FAILURE_DADS_MPTU"
+msgstr ""
+
+msgid "EMMC_FAILURE_ECS_OFF"
+msgstr ""
+
+msgid "CNI_FAILURE_ILS"
+msgstr ""
+
+msgid "Intercom"
+msgstr "СПУ"
+
+msgid "FAILURE_HYDRAULICS_EMERGE_ACCU"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_INS"
+msgstr ""
+
+msgid "FCS_FAILURE_EFCS_1"
+msgstr ""
+
+msgid "EMMC_FAILURE_DC_GENERATOR_VOLTAGE_HIGH"
+msgstr ""
+
+msgid "EMMC_FAILURE_DC_GENERATOR_SUBSYSTEM"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_LVDT_4"
+msgstr ""
+
+msgid "RWR_FAILURE_ANTENNA_REAR_LEFT"
+msgstr ""
+
+msgid "SNS_FAILURE_ANTENNA"
+msgstr ""
+
+msgid "CNI_FAILURE_COM1"
+msgstr ""
+
+msgid "FAILURE_SMS_PYLON_5"
+msgstr ""
+
+msgid "FAILURE_EXT_LIGHT_ANTICOL"
+msgstr ""
+
+msgid "FAILURE_SMS_PYLON_3"
+msgstr ""

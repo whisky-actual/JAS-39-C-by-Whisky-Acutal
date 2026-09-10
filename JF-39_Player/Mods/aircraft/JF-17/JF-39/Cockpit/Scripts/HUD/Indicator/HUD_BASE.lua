@@ -5,19 +5,19 @@ local SHOW_MASKS = false
 local hw = GetScale()
 local hh = GetAspect() * hw
 
-local num_points = 64
+local num_points = 10
 local step       = math.rad(360.0/num_points)
-local TFOV       = math.rad(20.0/2) * 1000.0
+local TFOV       = math.rad(12/2) * 2000.0
 
-local CLIPFOV = math.rad(23.0/2) * 1000.0
-local Rs      = 0.955 * CLIPFOV -- side gap
-local Rl      = Rs * math.sin(math.rad(44.5))
+local CLIPFOV = math.rad(34/2) * 1000
+local Rs      = 0.95 * CLIPFOV -- side gap
+local Rl      = Rs * math.sin(math.rad(55))
 
 local verts = {}
 local inds = {}
 
 
--- verts上半部分
+-- Upper part of verts
 j = 0
 for i = 0, num_points do
     verts[j+1] = { Rl * math.cos(i * step), Rs * math.sin(i * step)}
@@ -47,7 +47,7 @@ total_field_of_view.vertices        = verts
 total_field_of_view.material        = HUD_MAT_BASE1
 total_field_of_view.vertices        = verts
 total_field_of_view.indices         = inds
-total_field_of_view.init_pos        = {0, -20, -170}
+total_field_of_view.init_pos        = {0, -10, -170}
 total_field_of_view.init_rot        = {0, 0, -44.5} -- degree NOT rad
 total_field_of_view.h_clip_relation = h_clip_relations.REWRITE_LEVEL
 total_field_of_view.level           = HUD_NOCLIP_LEVEL
@@ -55,11 +55,11 @@ total_field_of_view.collimated      = false
 total_field_of_view.isvisible       = false
 Add(total_field_of_view)
 
--- 裁剪区域
+-- Cropping Area
 local clipPoly               = CreateElement "ceMeshPoly"
 clipPoly.name                = "clipPoly-1"
 clipPoly.primitivetype       = "triangles"
-clipPoly.init_pos            = {0, -20, -170}
+clipPoly.init_pos            = {0, -10, -170}
 clipPoly.init_rot            = {0, 0 , -44.5} -- degree NOT rad
 clipPoly.vertices            = verts -- {{TFOV,TFOV},{TFOV,-TFOV-10},{-TFOV,-TFOV-10},{-TFOV,TFOV}}
 clipPoly.indices             = inds
@@ -70,7 +70,7 @@ clipPoly.collimated          = false
 clipPoly.isvisible           = false
 Add(clipPoly)
 
--- 伪双眼效果
+-- Pseudo-Stereoscopic Effect
 local fake_double_eye_view           = CreateElement "ceTexPoly"
 fake_double_eye_view.material        = HUD_TEX_CLIP
 fake_double_eye_view.name            = "fake_double_eye_view"
@@ -86,3 +86,7 @@ fake_double_eye_view.isvisible       = true
 fake_double_eye_view.additive_alpha  = true
 fake_double_eye_view.use_mipfilter   = true
 Add(fake_double_eye_view)
+
+----------------------------------------------------------------------------------------
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
+----------------------------------------------------------------------------------------

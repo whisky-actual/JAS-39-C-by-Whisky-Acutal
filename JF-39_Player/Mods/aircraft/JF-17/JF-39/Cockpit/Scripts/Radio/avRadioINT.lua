@@ -47,13 +47,13 @@ end
 default_preset_channels()
 
 -- customized radio freq
-sfile = LockOn_Options.script_path.."/../../Doc/customerRadio.lua"
+sfile = LockOn_Options.script_path.."/../../Customization/radio/Custom_Radio.lua"
 fattr = lfs.attributes(sfile) 
 found_file = false
 if fattr and fattr.mode == 'file' then
     found_file = true
 else
-    sfile = LockOn_Options.script_path.."/Radio/customerRadio.lua"
+    sfile = LockOn_Options.script_path.."/Radio/Custom_Radio.lua"
     fattr = lfs.attributes(sfile)
     if fattr and fattr.mode == 'file' then
         found_file = true

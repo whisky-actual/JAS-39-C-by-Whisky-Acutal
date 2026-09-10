@@ -1,0 +1,3521 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0 trunk\n"
+"POT-Creation-Date: 2016-02-02 18:36+0400\n"
+"PO-Revision-Date: 2026-07-06 20:54+0800\n"
+"Last-Translator: uboats\n"
+"Language-Team: TODO\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"自制Report-Msgid-Bugs-To: \n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "Throttle Emergency Button"
+msgstr "油门应急按钮"
+
+msgid "Emergency Landing Gear Handle"
+msgstr "起落架应急释放手柄"
+
+msgid "Anti-Collision Light Knob Selector"
+msgstr "防撞灯选择旋钮"
+
+msgid "Start Mode Selector - START/ENG COLD/STARTER COLD"
+msgstr "运转方式转换开关 - 起动/发动机冷转/起动机冷转"
+
+msgid "Active Fuel Cut-off Valve"
+msgstr "主动燃油切断阀开关"
+
+msgid "Radio Mode Selector"
+msgstr "电台模式选择旋钮"
+
+msgid "Light Switch - Land/Off/Taxi"
+msgstr "着陆/滑行灯开关"
+
+msgid "Throttle Friction Handle"
+msgstr "油门阻力调节杆"
+
+msgid "Landing Gear Override Button"
+msgstr "应急放起落架按钮"
+
+msgid "Flood Light Direction"
+msgstr "泛光灯照明方向"
+
+msgid "Left MFCD Power"
+msgstr "左侧MFCD 开关"
+
+msgid "Master Arm Switch"
+msgstr "主军械开关"
+
+msgid "Oxygen Indicator Brightness Knob"
+msgstr "氧气示流器亮度调节旋钮"
+
+msgid "Brightness Knob"
+msgstr "亮度旋钮"
+
+msgid "Landing Gear Override Button Cover"
+msgstr "起落架超控按钮保护盖"
+
+msgid "Air Temp Knob Selector"
+msgstr "供气温度选择旋钮"
+
+msgid "CSS Handle"
+msgstr "CSS 手柄"
+
+msgid "Direct Mode Switch"
+msgstr "直连模式开关"
+
+msgid "Ejection Seat Zeroizer Function"
+msgstr "弹射座椅销秘功能开关"
+
+msgid "Squelch OFF/SQL/ACKN"
+msgstr "电台静噪开关"
+
+msgid "Engine Mode Switch"
+msgstr "发动机模式选择开关"
+
+msgid "Air Start Button"
+msgstr "发动机空中启动开关"
+
+msgid "Mirror Left"
+msgstr "左后视镜"
+
+msgid "Console Light Knob"
+msgstr "控制台灯旋钮"
+
+msgid "Yaw/Roll CAS Switch"
+msgstr "横/航向增稳切除开关"
+
+msgid "Afterburner Switch"
+msgstr "加力切断开关"
+
+msgid "Right MFCD Power"
+msgstr "右侧MFCD 开关"
+
+msgid "Canopy Seal Handle"
+msgstr "座舱盖气密手柄"
+
+msgid "Ground Jettison Switch"
+msgstr "地面抛弃开关"
+
+msgid "Radio Volume Knob"
+msgstr "电台音量旋钮"
+
+msgid "Brake Test"
+msgstr "刹车测试"
+
+msgid "COM1 Volume Knob"
+msgstr "COM1 音量旋钮"
+
+msgid "HUD Backup Reticle Knob"
+msgstr "HUD备用光栅"
+
+msgid "Zeroizer Button Cover"
+msgstr "销秘控制按钮保险盖"
+
+msgid "Center MFCD Power"
+msgstr "中央MFCD 开关"
+
+msgid "Warning Panel Test Button"
+msgstr "告警面板测试按钮"
+
+msgid "HUD Symbology Reject Switch"
+msgstr "HUD 防拥开关"
+
+msgid "HUD Contrast Knob"
+msgstr "HUD对比图调节旋钮"
+
+msgid "Warning Panel Day/Night Switch"
+msgstr "告警面板灯昼夜开关"
+
+msgid "BARO Altitude Setting Knob"
+msgstr "气压高度设置旋钮"
+
+msgid "Formation Light Knob Selector"
+msgstr "编队灯选择旋钮"
+
+msgid "Air Start Button Cover"
+msgstr "发动机空中启动按钮盖"
+
+msgid "AAR Light Brightness Knob"
+msgstr "空中加油照明灯亮度旋钮"
+
+msgid "Engine Control Switch"
+msgstr "发动机系统开关"
+
+msgid "Fuel Pump Switch"
+msgstr "直流电动泵开关"
+
+msgid "+/,/- Switch"
+msgstr "3挡瞬态进步开关"
+
+msgid "Eject Seat Position Adjust Switch"
+msgstr "座椅位置调节开关"
+
+msgid "Warning Panel Brightness Knob"
+msgstr "告警面板灯亮度调节旋钮"
+
+msgid "INS Mode Knob Selector"
+msgstr "惯导工作模式选择旋钮"
+
+msgid "BIT Button"
+msgstr "自检按钮"
+
+msgid "A/P Disengage"
+msgstr "断开自动驾驶"
+
+msgid "Active Fuel Cut-off Valve Cover"
+msgstr "主动燃油切断阀开关保护盖"
+
+msgid "ECS Mode Knob Selector"
+msgstr "环控系统工作状态选择旋钮"
+
+msgid "Mirror Center"
+msgstr "正后视镜"
+
+msgid "DTC Card Insertion"
+msgstr "插入DTC卡"
+
+msgid "P.H. Test Switch"
+msgstr "P.H 检测开关"
+
+msgid "Navigation Light Switch - Bright/Off/Dim"
+msgstr "航行灯开关 - 亮/关/暗"
+
+msgid "DTC Card Ejection"
+msgstr "弹出DTC卡"
+
+msgid "Oxygen Supply Valve"
+msgstr "氧气供应阀"
+
+msgid "AAR Switch"
+msgstr "空中加油开关"
+
+msgid "Anti-Surge Switch"
+msgstr "防喘切断开关"
+
+msgid "Deploy/Jettison Parachute"
+msgstr "释放/切断 减速伞"
+
+msgid "UFCP Button N/A"
+msgstr "正前方控制板 N/A"
+
+msgid "Emergency Brake Handle"
+msgstr "应急刹车手柄"
+
+msgid "Landing Gear Indicator Light Knob"
+msgstr "起落架指示灯亮度调节旋钮"
+
+msgid "Backup SAIU Knob Selector"
+msgstr "SAIU备份选择旋钮"
+
+msgid "Feed Cut-off Valve"
+msgstr "供油切断阀开关"
+
+msgid "Emergency Hydraulic Pump Switch"
+msgstr "应急液压泵开关"
+
+msgid "SEC EEC Switch"
+msgstr "SEC发动机电子调节器开关"
+
+msgid "Inst. Light Knob"
+msgstr "仪表照明旋钮"
+
+msgid "Light Switch - Tow/Off/Anti-Collision"
+msgstr "灯光选择开关 - 牵引/关/防撞"
+
+msgid "Flood Light Knob"
+msgstr "泛光灯旋钮"
+
+msgid "EFCS Switch"
+msgstr "备份模拟飞控系统开关"
+
+msgid "Canopy Open/Close Handle"
+msgstr "座舱盖开关手柄"
+
+msgid "Stick Show/Hide"
+msgstr "显示/隐藏 飞行驾驶杆"
+
+msgid "Record Switch"
+msgstr "记录开关"
+
+msgid "Flight Test Switch 2"
+msgstr "飞行测试接口开关2"
+
+msgid "Mirror Right"
+msgstr "右后视镜"
+
+msgid "AAR Light Switch"
+msgstr "空中加油照明灯开关"
+
+msgid "Yaw Trim Switch"
+msgstr "航向配平开关"
+
+msgid "HUD Brightness Knob"
+msgstr "HUD亮度调节旋钮"
+
+msgid "Flash Light"
+msgstr "手电筒"
+
+msgid "Landing Gear Lever"
+msgstr "起落架手柄"
+
+msgid "Flare Dispense Button Cover"
+msgstr "热焰弹发射按钮保护盖"
+
+msgid "COM2 Volume Knob"
+msgstr "COM2 音量旋钮"
+
+msgid "Emergency Jettison Button Cover"
+msgstr "应急投放按钮保护盖"
+
+msgid "SHARS Switch"
+msgstr "捷联航姿开关"
+
+msgid "TCN/ILS Volume Knob"
+msgstr "塔康/惯导音量旋钮"
+
+msgid "AAP N/A"
+msgstr "航空电子启动板 N/A"
+
+msgid "Emergency Landing Gear Cover"
+msgstr "起落架应急释放手柄保护盖"
+
+msgid "UFCP Brightness Knob"
+msgstr "正前方控制板亮度调节旋钮"
+
+msgid "Feed Cut-off Valve Cover"
+msgstr "供油切断阀开关保护盖"
+
+msgid "Canopy Manual Open/Close Crank"
+msgstr "座舱盖手动开关手柄"
+
+msgid "Exterior Light Master Switch"
+msgstr "机外主照明开关"
+
+msgid "HUD/MFCD Day/Night Switch"
+msgstr "HUD/MFD 昼夜开关"
+
+msgid "Flight Test Switch 1"
+msgstr "飞行测试接口开关1"
+
+msgid "MSL Volume Knob"
+msgstr "导弹音量旋钮"
+
+msgid "Radio Button 6/M"
+msgstr "电台按钮 6/M"
+
+msgid "T5_Up: TDC Up"
+msgstr "T5 向上: 目标指示框 向上"
+
+msgid "Right MFCD Brt -"
+msgstr "右侧MFCD 亮度-"
+
+msgid "HUD Symbology Reject Switch - NORM"
+msgstr "HUD 防拥开关 - 正常"
+
+msgid "INS Mode Knob Selector - FAST"
+msgstr "惯导工作模式选择旋钮 - 快速对准"
+
+msgid "Right MFCD D4"
+msgstr "右侧MFCD D4"
+
+msgid "Oxygen Tube Connector"
+msgstr "供氧管接口"
+
+msgid "AAP NAV"
+msgstr "航空电子启动板 NAV"
+
+msgid "Radio Mode Selector - TR"
+msgstr "电台模式选择旋钮 - TR"
+
+msgid "Console Light Knob - Inc (Step)"
+msgstr "控制台照明旋钮 - 增 (步进)"
+
+msgid "Squelch OFF/SQL/ACKN - OFF"
+msgstr "电台静噪开关 - 关"
+
+msgid "QFE Setting Knob - Inc (Step)"
+msgstr "场压设置旋钮 - 增 (步进)"
+
+msgid "Air Start Button - ON"
+msgstr "发动机空中启动开关 - 开"
+
+msgid "INS Mode Knob Selector - Next"
+msgstr "惯导模式选择旋钮 - 下一个"
+
+msgid "Yaw Trim Switch - Left"
+msgstr "航向配平开关 - 向左"
+
+msgid "Anti-Collision Light Knob Selector - 3"
+msgstr "防撞灯选择旋钮 - 3"
+
+msgid "Fuel Pump Switch - ON"
+msgstr "直流电动泵开关 - 开"
+
+msgid "Next OESP Program"
+msgstr "下一个OESP程序"
+
+msgid "Remove DTC Card"
+msgstr "卸载DTC卡"
+
+msgid "Fuel"
+msgstr "燃油"
+
+msgid "AAP ACMI"
+msgstr "航空电子启动板ACMI"
+
+msgid "Landing Gear Indicator Light Test Button"
+msgstr "起落架指示灯测试按钮"
+
+msgid "Air Temp Knob Selector - COLD"
+msgstr "供气温度选择旋钮 - 制冷"
+
+msgid "S6_Right: Trim Roll Right"
+msgstr "S6 向右: 配平 (向右滚转)"
+
+msgid "S4: Fire Main Gun"
+msgstr "S4: 航炮射击"
+
+msgid "Formation Light Knob Selector - Prev"
+msgstr "编队灯选择旋钮 - 前一个"
+
+msgid "ECS Mode Knob Selector - Next"
+msgstr "环控模式选择旋钮 - 下一个"
+
+msgid "T4_Backward: Radio Comm 2 VOIP"
+msgstr "T4 向后: 无线电 Comm 2 VOIP"
+
+msgid "Center MFCD L5"
+msgstr "中央MFCD L5"
+
+msgid "BIT Button - Pushdown"
+msgstr "自检按钮 - 按下"
+
+msgid "UFCP Button R3"
+msgstr "正前方控制板 R3"
+
+msgid "Formation Light Knob Selector - 3"
+msgstr "编队灯选择旋钮 - 3"
+
+msgid "Navigation Light Switch - Flash/Steady"
+msgstr "航行灯开关 - 闪烁/常亮"
+
+msgid "G-Suit Connector"
+msgstr "抗荷服连接口"
+
+msgid "S2_Press: Unlock Target/DGFT BS Wide Narrow Switch"
+msgstr "S2 按下: 解锁目标/DGFT BS 宽/窄 切换开关"
+
+msgid "T4_Press: IFF Interrogation Start/Stop"
+msgstr "T4 按下: 敌我识别问询 开/关"
+
+msgid "Digital Clock CHR"
+msgstr "数字时钟 秒表"
+
+msgid "Backup SAIU - IR"
+msgstr "SAIU备用瞄具 - IR"
+
+msgid "Ground Start Button"
+msgstr "发动机地面启动按钮"
+
+msgid "Center MFCD U3"
+msgstr "中央MFCD U3"
+
+msgid "AAP SAIU"
+msgstr "航空电子启动板 SAIU"
+
+msgid "AAP SLNK"
+msgstr "航空电子启动板 SLNK"
+
+msgid "Auto Start"
+msgstr "自动开车"
+
+msgid "Eject Seat"
+msgstr "弹射座椅"
+
+msgid "Goggle Gain - Dec"
+msgstr "夜视仪增益 - 增"
+
+msgid "Engine Mode Switch - CMBT"
+msgstr "发动机模式选择开关 - 作战"
+
+msgid "S8: Change Weapons"
+msgstr "S8: 武器切换"
+
+msgid "S6_Left: Trim Roll Left"
+msgstr "S6 向左: 配平 (向左滚转)"
+
+msgid "T2_Backward: Countermeasures Dispense"
+msgstr "T2 向后: 投放对抗措施"
+
+msgid "Emergency Jettison Button Cover - Open"
+msgstr "应急投放按钮保护盖 - 打开"
+
+msgid "Right MFCD U5"
+msgstr "右侧MFCD U5"
+
+msgid "Brake Test - OFF"
+msgstr "刹车测试 - 关"
+
+msgid "AAP CMBT"
+msgstr "航空电子启动板 CMBT"
+
+msgid "HUD"
+msgstr ""
+
+msgid "Left MFCD R5"
+msgstr "左侧MFCD R5"
+
+msgid "AAR Light Knob - Inc (Press and Hold)"
+msgstr "加油照明旋钮 - 增 (按住)"
+
+msgid "Formation Light Knob Selector - 2"
+msgstr "编队灯选择旋钮 - 2"
+
+msgid "Anti-Collision Light Knob Selector - Next"
+msgstr "防撞灯选择旋钮 - 下一个"
+
+msgid "Radio Control Box"
+msgstr "无线电控制盒"
+
+msgid "UFCP Button P.U"
+msgstr "正前方控制板 P.U"
+
+msgid "UFCP Button 0"
+msgstr "正前方控制板 0"
+
+msgid "Ext Lights"
+msgstr "机身照明"
+
+msgid "Radio Button 8/C"
+msgstr "电台按钮 8/C"
+
+msgid "Zeroizer Button"
+msgstr "销秘控制按钮"
+
+msgid "Center MFCD L1"
+msgstr "中央MFCD L1"
+
+msgid "AAP COM2"
+msgstr "航空电子启动板 COM2"
+
+msgid "ACP COM2 Volume Knob Abs"
+msgstr "ACP COM2 音量旋钮 (轴)"
+
+msgid "Anti-Collision Light Knob Selector - OFF"
+msgstr "防撞灯选择旋钮 - 关"
+
+msgid "Sensor Gain Decrease (Step)"
+msgstr "传感器增益 - 减小 (步进)"
+
+msgid "Center MFCD L4"
+msgstr "中央MFCD L4"
+
+msgid "Ground Jettison Switch - ON/OFF"
+msgstr "地面抛弃开关 - 接通/关闭"
+
+msgid "Center MFCD L8"
+msgstr "中央MFCD L8"
+
+msgid "Right MFCD Cont +"
+msgstr "右侧MFCD 对比度+"
+
+msgid "AAP RDR"
+msgstr "航空电子启动板 RDR"
+
+msgid "Right MFCD L4"
+msgstr "右侧MFCD L4"
+
+msgid "Air Temp Knob Selector - 40"
+msgstr "供气温度选择旋钮 - 40度"
+
+msgid "Emergency Jettison Button Cover - Close"
+msgstr "应急投放按钮保护盖 - 关闭"
+
+msgid "Emergency Jettison Shortcut"
+msgstr "应急抛弃快捷方式"
+
+msgid "Right MFCD R7"
+msgstr "右侧MFCD R7"
+
+msgid "Left MFCD L6"
+msgstr "左侧MFCD L6"
+
+msgid "Air Temp Knob Selector - HOT"
+msgstr "供气温度选择旋钮 - 制热"
+
+msgid "Cpt Flood Light Knob Abs"
+msgstr "驾驶舱泛光灯照明旋钮 (轴)"
+
+msgid "Navigation Light Switch - Flash/Steady - Flash"
+msgstr "航行灯开关 - 闪烁/常亮 - 闪烁"
+
+msgid "ACP TCN/ILS Volume Knob Abs"
+msgstr "ACP TCN/ILS 音量旋钮 (轴)"
+
+msgid "AAR Light Switch - On"
+msgstr "空中加油照明灯开关 - 开"
+
+msgid "Master Arm Switch - SIM/OFF"
+msgstr "主军械开关 - 模拟/关"
+
+msgid "AG1/AG2 Switch"
+msgstr "飞机构型开关"
+
+msgid "Left MFCD R4"
+msgstr "左侧MFCD R4"
+
+msgid "Formation Light Knob Selector - OFF"
+msgstr "编队灯选择旋钮 - 关"
+
+msgid "UFCP Button R2"
+msgstr "正前方控制板 R2"
+
+msgid "AAP SPJ"
+msgstr "航空电子启动板 SPJ"
+
+msgid "Oxygen"
+msgstr "供氧"
+
+msgid "UFCP Button L4"
+msgstr "正前方控制板 L4"
+
+msgid "Center MFCD R4"
+msgstr "中央MFCD R4"
+
+msgid "Light Switch - Land/Off/Taxi - TAXI/OFF"
+msgstr "着陆/滑行灯开关 - 滑行/关"
+
+msgid "Helmet"
+msgstr "头盔"
+
+msgid "Afterburner Switch - ON"
+msgstr "加力切断开关 - 接通"
+
+msgid "Radio Button 3/+"
+msgstr "电台按钮 3/+"
+
+msgid "ADC"
+msgstr ""
+
+msgid "Left MFCD R3"
+msgstr "左侧MFCD R3"
+
+msgid "AAR Light Switch - On/Off"
+msgstr "空中加油照明灯开关 - 开/关"
+
+msgid "AAP RWR"
+msgstr "航空电子启动板 RWR"
+
+msgid "Center MFCD Sym +"
+msgstr "中央MFCD 符号+"
+
+msgid "COM2 Volume Knob - Dec"
+msgstr "COM2 音量旋钮 - 减"
+
+msgid "Center MFCD Cont +"
+msgstr "中央MFCD 对比度+"
+
+msgid "Sensor FOV Decrease (Step)"
+msgstr "传感器视场 - 减小 (步进)"
+
+msgid "Ground Jettison Switch - OFF"
+msgstr "地面抛弃开关 - 关闭"
+
+msgid "Eject Seat Safe/Arm Handle"
+msgstr "弹射座椅保险手柄"
+
+msgid "Sensor (WMD7/TV) Right / Gain Inc"
+msgstr "传感器 (WMD7/TV) 向右 / 增益 加"
+
+msgid "AA/AG Switch"
+msgstr "AA/AG切换开关"
+
+msgid "S1_Backward: Cycle MFCD Select - Left-Center-Right"
+msgstr "S1 向后: MFCD循环选择 - 左/中/右"
+
+msgid "T1: Forward (INTC) / Center (NAV)"
+msgstr "T1: 向前 (INTC) / 中立 (NAV)"
+
+msgid "Right MFCD D1"
+msgstr "右侧MFCD D1"
+
+msgid "Backup SAIU - GUN"
+msgstr "SAIU备用瞄具 - GUN"
+
+msgid "Direct Mode Switch - OFF"
+msgstr "直连模式开关 - 关"
+
+msgid "Wheel Brake Left On"
+msgstr "左轮刹车"
+
+msgid "Main AC Gen Switch"
+msgstr "主交流发电机开关"
+
+msgid "UFCP Button L3"
+msgstr "正前方控制板 L3"
+
+msgid "UFCP"
+msgstr "正前方控制板"
+
+msgid "Eject Seat Emergency O2"
+msgstr "弹射座椅应急供氧"
+
+msgid "S6_Down: Trim Nose Up"
+msgstr "S6 向下: 配平 (抬头)"
+
+msgid "AAR Switch - INT"
+msgstr "空中加油开关 - 内油"
+
+msgid "Cpt Inst. Light Knob Abs"
+msgstr "驾驶舱仪表照明旋钮 (轴)"
+
+msgid "DC Gen Switch - Off"
+msgstr "直流发电机开关 - 关"
+
+msgid "Left MFCD Brt +"
+msgstr "左侧MFCD 亮度+"
+
+msgid "Show/Hide Stick"
+msgstr "显示/隐藏 飞行操纵杆"
+
+msgid "Right MFCD D5"
+msgstr "右侧MFCD D5"
+
+msgid "Left MFCD U4"
+msgstr "左侧MFCD U4"
+
+msgid "Center MFCD Sym -"
+msgstr "中央MFCD 符号-"
+
+msgid "Start Mode Selector - START/ENG COLD/STARTER COLD : START"
+msgstr "运转方式转换开关 - 起动"
+
+msgid "Left MFCD Sym -"
+msgstr "左侧MFCD 符号-"
+
+msgid "Battery Switch - On"
+msgstr "电瓶开关 - 开"
+
+msgid "Left MFCD R8"
+msgstr "左侧MFCD R8"
+
+msgid "Left MFCD L2"
+msgstr "左侧MFCD L2"
+
+msgid "Radio Button ->/ENT"
+msgstr "电台按钮 ->/ENT"
+
+msgid "Emergency Flare Shortcut"
+msgstr "热焰弹发射按钮快捷方式"
+
+msgid "Flood Light Knob - Dec (Press and Hold)"
+msgstr "泛光灯照明旋钮 - 减 (按住)"
+
+msgid "ZCP"
+msgstr "销秘控制面板"
+
+msgid "Backup SAIU Knob Selector - OFF"
+msgstr "SAIU备份选择旋钮 - OFF"
+
+msgid "Ext AAR Light Brightness Knob Abs"
+msgstr "空中加油照明亮度旋钮 (轴)"
+
+msgid "AAP IRST"
+msgstr "航空电子启动板IRST"
+
+msgid "S1_Press: DGFT Returns to Prev Master Mode/MFCDs Restore to Default Pages"
+msgstr "S1 按下: 从DGFT模式返回上一个主模式/MFCD回到当前主模式缺省页面"
+
+msgid "Lights"
+msgstr "灯光"
+
+msgid "Emergency Hydraulic Pump Switch - OFF"
+msgstr "应急液压泵开关 - 关"
+
+msgid "Right MFCD L7"
+msgstr "右侧MFCD L7"
+
+msgid "DC Gen Switch - On"
+msgstr "直流发电机开关 - 开"
+
+msgid "SEC EEC Switch - ON"
+msgstr "SEC发动机电子调节器开关 - 开"
+
+msgid "Right MFCD D2"
+msgstr "右侧MFCD D2"
+
+msgid "Right MFCD Sym +"
+msgstr "右侧MFCD 符号+"
+
+msgid "Engine"
+msgstr "发动机"
+
+msgid "Brake Park/Norm"
+msgstr "刹车通道开关 驻车/正常"
+
+msgid "Engine Mode Switch - TRG"
+msgstr "发动机模式选择开关 - 训练"
+
+msgid "Eject Seat Firing Handle Safety Pin"
+msgstr "弹射座椅点火安全插销"
+
+msgid "Light Switch - Tow/Off/Anti-Collision - Off"
+msgstr "灯光选择开关 - 牵引/关/防撞 - 关"
+
+msgid "Power Systems"
+msgstr "供电系统"
+
+msgid "S2_Right: INTC Change Azimth Range/DGFT HA"
+msgstr "S2 向右: INTC 改变方位距离/DGFT HA"
+
+msgid "AAP OESP"
+msgstr "航空电子启动板 OESP"
+
+msgid "Eject Seat Firing Handle"
+msgstr "弹射座椅起动手柄"
+
+msgid "T2_Forward: SPJ Standby/Jam"
+msgstr "T2 向前: SPJ 待机/加高压"
+
+msgid "UFCP Button HNS"
+msgstr "正前方控制板 HNS"
+
+msgid "SEC EEC Switch - OFF"
+msgstr "SEC发动机电子调节器开关 - 关"
+
+msgid "T2_Press: AG Manual Mode/DGFT Missile Designator Control"
+msgstr "T2 按下: INTC 手动模式/DGFT 导弹指示控制"
+
+msgid "Sensor Gain Decrease"
+msgstr "传感器增益 - 减小"
+
+msgid "Center MFCD R3"
+msgstr "中央MFCD R3"
+
+msgid "Radio Mode Selector - SET"
+msgstr "电台模式选择旋钮 - SET"
+
+msgid "Flap Switch - Up/Down"
+msgstr "襟翼开关"
+
+msgid "Inst. Light Knob - Dec (Press and Hold)"
+msgstr "仪表台照明旋钮 - 减 (按住)"
+
+msgid "QFE Setting Knob - Inc (Press and Hold)"
+msgstr "场压设置旋钮 - 增 (按住)"
+
+msgid "ECS Mode Knob Selector - RAM"
+msgstr "环控系统工作状态选择旋钮 - 冲压空气"
+
+msgid "Exterior Light Master Switch - Normal/Off"
+msgstr "机外主照明开关 - 正常/关"
+
+msgid "Record Switch - ON"
+msgstr "记录开关 - 开"
+
+msgid "Seat Adjustment - UP"
+msgstr "座椅调整 - 向上"
+
+msgid "AAP"
+msgstr "航空电子启动板"
+
+msgid "Right MFCD R2"
+msgstr "右侧MFCD R2"
+
+msgid "Ejection Seat Zeroizer Function - ON"
+msgstr "弹射座椅销秘功能开关 - 开"
+
+msgid "Right MFCD U3"
+msgstr "右侧MFCD U3"
+
+msgid "Speed Brake Toggle"
+msgstr "减速板 开关切换"
+
+msgid "Center MFCD D4"
+msgstr "中央MFCD D4"
+
+msgid "Night Vision Goggle - Toggle"
+msgstr "夜视仪 - 开/关"
+
+msgid "UFCP Button 3"
+msgstr "正前方控制板 3"
+
+msgid "Seat Adjustment - DOWN"
+msgstr "座椅调整 - 向下"
+
+msgid "FCS Warning"
+msgstr "飞控告警 带灯按钮"
+
+msgid "TCN/ILS Volume Knob - Inc"
+msgstr "TCN/ILS 音量旋钮 - 增"
+
+msgid "Sensor Gain Increase"
+msgstr "传感器增益 - 增大"
+
+msgid "Deploy/Jettison Parachute - Cut/Off"
+msgstr "释放/切断 减速伞 - 切断/关"
+
+msgid "TDC Slew Vertical"
+msgstr "TDC 垂直移动"
+
+msgid "Landing Gear Lever - Up/Down"
+msgstr "起落架杆 - 向上/向下"
+
+msgid "AAP HMD"
+msgstr "航空电子启动板 HMD"
+
+msgid "Brake Park/Norm - NORM"
+msgstr "刹车通道开关 - 正常"
+
+msgid "Left MFCD L7"
+msgstr "左侧MFCD L7"
+
+msgid "Backup SAIU Knob Selector - IR"
+msgstr "SAIU备份选择旋钮 - IR"
+
+msgid "Squelch OFF/SQL/ACKN - SQL"
+msgstr "电台静噪开关 - 静噪"
+
+msgid "Left MFCD L8"
+msgstr "左侧MFCD L8"
+
+msgid "Auto Stop"
+msgstr "自动关车"
+
+msgid "Left MFCD D4"
+msgstr "左侧MFCD D4"
+
+msgid "Right MFCD L8"
+msgstr "右侧MFCD L8"
+
+msgid "Speed Brake On"
+msgstr "减速板 开"
+
+msgid "AA/AG Switch - Toggle"
+msgstr "AA/AG切换开关 - 切换"
+
+msgid "Right MFCD L1"
+msgstr "右侧MFCD L1"
+
+msgid "QFE Setting Knob - Dec (Step)"
+msgstr "场压设置旋钮 - 减 (步进)"
+
+msgid "Navigation Light Switch - Bright/Off/Dim - Bright"
+msgstr "航行灯开关 - 亮/关/暗 - 亮"
+
+msgid "AG1/AG2 Switch - A/G2"
+msgstr "飞机构型开关 - A/G2"
+
+msgid "Radio Mode Selector - CCW"
+msgstr "Radio Mode Selector - 逆时针"
+
+msgid "Cpt Console Light Knob Abs"
+msgstr "驾驶舱控制台照明旋钮 (轴)"
+
+msgid "Console Light Knob - Dec (Press and Hold)"
+msgstr "控制台照明旋钮 - 减 (按住)"
+
+msgid "S7: AutoPilot Off"
+msgstr "S7: 自动驾驶 断开"
+
+msgid "HUD Contrast - Inc"
+msgstr "HUD 对比度 - 增大"
+
+msgid "Deploy/Jettison Parachute - Deploy/Off"
+msgstr "释放/切断 减速伞 - 释放/关"
+
+msgid "Right MFCD U4"
+msgstr "右侧MFCD U4"
+
+msgid "Console Light Knob - Dec (Step)"
+msgstr "控制台照明旋钮 - 减 (步进)"
+
+msgid "Center MFCD R5"
+msgstr "中央MFCD R5"
+
+msgid "T3_Forward: Speed Brake On"
+msgstr "T3 向前: 减速板开"
+
+msgid "Left MFCD Cont +"
+msgstr "左侧MFCD 对比度+"
+
+msgid "EFCS Switch - AUTO"
+msgstr "备份模拟飞控系统开关 - 自动"
+
+msgid "Backup SAIU - BOMB"
+msgstr "SAIU备用瞄具 - BOMB"
+
+msgid "Center MFCD Brt -"
+msgstr "中央MFCD 亮度-"
+
+msgid "T6_Axis: Antenna Elevation"
+msgstr "T6: 雷达天线俯仰"
+
+msgid "AAP COM1"
+msgstr "航空电子启动板 COM1"
+
+msgid "Radio Button 4/H"
+msgstr "电台按钮 4/H"
+
+msgid "Air Temp Knob Selector - 35"
+msgstr "供气温度选择旋钮 - 35度"
+
+msgid "AAP WMMC2"
+msgstr "航空电子启动板 WMMC2"
+
+msgid "Radio Top/Bottom Antenna Switch - Top"
+msgstr "电台上下天线转换 - 上"
+
+msgid "Console Light Knob - Inc (Press and Hold)"
+msgstr "控制台照明旋钮 - 增 (按住)"
+
+msgid "Landing Gear Lever - Up"
+msgstr "起落架手柄 - 收起"
+
+msgid "Radio Mode Selector - OFF"
+msgstr "电台模式选择旋钮 - OFF"
+
+msgid "Radio Button <-/MAN"
+msgstr "电台按钮 <-/MAN"
+
+msgid "Digital Clock Switch"
+msgstr "数字时钟开关"
+
+msgid "Left MFCD Sym +"
+msgstr "左侧MFCD 符号+"
+
+msgid "Flap Switch - Up/Down - DOWN"
+msgstr "襟翼开关 - 向下"
+
+msgid "Engine Mode Switch - C+T"
+msgstr "发动机模式选择开关 - 战训"
+
+msgid "Center MFCD U2"
+msgstr "中央MFCD U2"
+
+msgid "Air Temp Knob Selector - 25"
+msgstr "供气温度选择旋钮 - 25度"
+
+msgid "Intercom Switch - On"
+msgstr "对讲机控制开关 - 开"
+
+msgid "Right MFCD Cont -"
+msgstr "右侧MFCD 对比度-"
+
+msgid "Sensor Gain Increase (Step)"
+msgstr "传感器增益 - 增大 (步进)"
+
+msgid "Radio Mode Selector - CW"
+msgstr "Radio Mode Selector - 顺时针"
+
+msgid "DC Gen Switch"
+msgstr "直流发电机开关"
+
+msgid "Exterior Light Master Switch - NVG/Off"
+msgstr "机外主照明开关 - 夜间/关"
+
+msgid "Radio Mode Selector - GD"
+msgstr "电台模式选择旋钮 - GD"
+
+msgid "Radio Top/Bottom Antenna Switch"
+msgstr "电台上下天线转换"
+
+msgid "Right MFCD R5"
+msgstr "右侧MFCD R5"
+
+msgid "Formation Light Knob Selector - 4"
+msgstr "编队灯选择旋钮 - 4"
+
+msgid "UFCP Button A/P"
+msgstr "正前方控制板 A/P"
+
+msgid "Center MFCD U5"
+msgstr "中央MFCD U5"
+
+msgid "S6_Up: Trim Nose Down"
+msgstr "S6 向上: 配平 (低头)"
+
+msgid "S3: Weapon Launch"
+msgstr "S3: 武器发射"
+
+msgid "Canopy Open/Close Handle - Stop"
+msgstr "座舱盖开关手柄 - 停止"
+
+msgid "Right MFCD L6"
+msgstr "右侧MFCD L6"
+
+msgid "S2_Left: INTC RWS/TWS/VS Switch/DGFT SA"
+msgstr "S2 向左: INTC RWS/TWS/VS 开关/DGFT SA"
+
+msgid "Right MFCD U1"
+msgstr "右侧MFCD U1"
+
+msgid "INS Mode Knob Selector - GC"
+msgstr "惯导工作模式选择旋钮 - 罗经对准"
+
+msgid "HUD Brightness - Dec"
+msgstr "HUD 亮度 - 减小"
+
+msgid "Start Mode Selector - START/ENG COLD/STARTER COLD : COLD STARTER"
+msgstr "运转方式转换开关 - 起动机冷转"
+
+msgid "Air Temp Knob Selector - 4"
+msgstr "供气温度选择旋钮 - 4度"
+
+msgid "Left MFCD R2"
+msgstr "左侧MFCD R2"
+
+msgid "Digital Clock Switch - Off"
+msgstr "数字时钟开关 - 关"
+
+msgid "Exterior Light Master Switch - Normal"
+msgstr "机外主照明开关 - 正常"
+
+msgid "Radio Button 9/T"
+msgstr "电台按钮 9/T"
+
+msgid "T5_Right: TDC Right"
+msgstr "T5 向右: 目标指示框 向右"
+
+msgid "Air Temp Knob Selector - 20"
+msgstr "供气温度选择旋钮 - 20度"
+
+msgid "Throttle Cage: Idle To Stop"
+msgstr "油门位切换 - 慢车->关车"
+
+msgid "Ground Jettison Switch - ON"
+msgstr "地面抛弃开关 - 接通"
+
+msgid "AAR Switch - ALL"
+msgstr "空中加油开关 - 全部"
+
+msgid "Right MFCD R8"
+msgstr "右侧MFCD R8"
+
+msgid "Center MFCD D2"
+msgstr "中央MFCD D2"
+
+msgid "Exterior Light Master Switch - NVG"
+msgstr "机外主照明开关 - 夜间"
+
+msgid "Ejection Seat Zeroizer Function - OFF"
+msgstr "弹射座椅销秘功能开关 - 关"
+
+msgid "Radio Top/Bottom Antenna Switch - Bottom"
+msgstr "电台上下天线转换 - 下"
+
+msgid "S1_Forward: DGFT - Dogfight Mode"
+msgstr "S1 向前: DGFT - 格斗模式"
+
+msgid "S2_Backward: INTC Decrease Range/DGFT VERT Submode"
+msgstr "S2 向后: INTC 减小距离/DGFT VERT 子模式"
+
+msgid "Navigation Light Switch - Bright/Off/Dim - Off"
+msgstr "航行灯开关 - 亮/关/暗 - 关"
+
+msgid "AG1/AG2 Switch - Toggle"
+msgstr "AG1/AG2 开关 - 切换"
+
+msgid "Afterburner Switch - ON/OFF"
+msgstr "加力关断开关 - 开/关"
+
+msgid "Speaker Control Box Audio Channel Switch - Main"
+msgstr "音响控制盒音频通道切换开关 - 主"
+
+msgid "Right MFCD L5"
+msgstr "右侧MFCD L5"
+
+msgid "Warning Systems"
+msgstr "告警系统"
+
+msgid "Oxygen Supply Valve - Dec"
+msgstr "供氧阀 - 减小"
+
+msgid "Master Arm Toggle (ARM/OFF)"
+msgstr "主军械开关 (解除保险/关)"
+
+msgid "UFCP Button PFL/1"
+msgstr "正前方控制板 PFL/1"
+
+msgid "Left MFCD U2"
+msgstr "左侧MFCD U2"
+
+msgid "AAR Light Knob - Dec (Step)"
+msgstr "加油照明旋钮 - 减 (步进)"
+
+msgid "Inst. Light Knob - Inc (Step)"
+msgstr "仪表台照明旋钮 - 增 (步进)"
+
+msgid "HUD Backup Reticle Knob - OFF"
+msgstr "HUD备用光栅旋钮 - 关"
+
+msgid "UFCP Button TOD/6"
+msgstr "正前方控制板 TOD/6"
+
+msgid "Left MFCD D5"
+msgstr "左侧MFCD D5"
+
+msgid "QFE Setting Knob - Dec (Press and Hold)"
+msgstr "场压设置旋钮 - 减 (按住)"
+
+msgid "T6_Up: Antenna Elevation (Step)"
+msgstr "T6 向上: 天线俯仰 (步进)"
+
+msgid "Speaker Control Box Audio Channel Switch"
+msgstr "音响控制盒音频通道切换开关"
+
+msgid "TDC Slew Horizontal"
+msgstr "TDC 水平移动"
+
+msgid "Left MFCD D2"
+msgstr "左侧MFCD D2"
+
+msgid "T1_Forward: BVR - INTC Mode"
+msgstr "T1 向前: BVR - INTC 模式"
+
+msgid "Right MFCD R3"
+msgstr "右侧MFCD R3"
+
+msgid "Right MFCD R4"
+msgstr "右侧MFCD R4"
+
+msgid "SHARS Switch - ON"
+msgstr "捷联航姿开关 - 开"
+
+msgid "T4_Backward: Radio Comm 2 (w/ VOIP)"
+msgstr "T4 向后: 无线电 Comm 2 (无线电菜单+VOIP)"
+
+msgid "FCS Reset Button"
+msgstr "FCS重置开关"
+
+msgid "Left MFCD R1"
+msgstr "左侧MFCD R1"
+
+msgid "Center MFCD Cont -"
+msgstr "中央MFCD 对比度-"
+
+msgid "Seat"
+msgstr "座椅"
+
+msgid "Wheel Brake Right On"
+msgstr "右轮刹车"
+
+msgid "Radio Button 2/-"
+msgstr "电台按钮 2/-"
+
+msgid "HUD Brightness Knob Abs"
+msgstr "HUD 亮度旋钮 (轴)"
+
+msgid "T4_Backward: Radio Comm 2"
+msgstr "T4 向后: 无线电 Comm 2"
+
+msgid "AAR Light Switch - Off"
+msgstr "空中加油照明灯开关 - 关"
+
+msgid "Digital Clock Switch - On"
+msgstr "数字时钟开关 - 开"
+
+msgid "Flap Switch - Up/Down - UP"
+msgstr "襟翼开关 - 向上"
+
+msgid "T6_Axis: Antenna Elevation (Slide)"
+msgstr "T6: 雷达天线俯仰 (滑块)"
+
+msgid "Center MFCD R7"
+msgstr "中央MFCD R7"
+
+msgid "ACP MSL Volume Knob Abs"
+msgstr "ACP MSL 音量旋钮 (轴)"
+
+msgid "Master Mode Switch - Next Mode"
+msgstr "主模式开关 - 下一个模式"
+
+msgid "COM1 Volume Knob - Dec"
+msgstr "COM1 音量旋钮 - 减"
+
+msgid "COM1 Volume Knob - Inc"
+msgstr "COM1 音量旋钮 - 增"
+
+msgid "Sensor FOV Decrease"
+msgstr "传感器视场 - 减小"
+
+msgid "Center MFCD L2"
+msgstr "中央MFCD L2"
+
+msgid "Center MFCD D3"
+msgstr "中央MFCD D3"
+
+msgid "S2_Forward: INTC Increase Range/DGFT BS Submode"
+msgstr "S2 向前: INTC 增大距离/DGFT BS 子模式"
+
+msgid "Speed Brake Off"
+msgstr "减速板 关"
+
+msgid "Battery Switch - Off"
+msgstr "电瓶开关 - 关"
+
+msgid "Left MFCD D3"
+msgstr "左侧MFCD D3"
+
+msgid "UFCP Button OAP"
+msgstr "正前方控制板 OAP"
+
+msgid "Inertial Nav System (INS)"
+msgstr "惯导系统"
+
+msgid "AA/AG Switch - A/G"
+msgstr "AA/AG切换开关 - A/G"
+
+msgid "Goggle Gain - Inc"
+msgstr "夜视仪增益 - 减"
+
+msgid "Backup SAIU - OFF"
+msgstr "SAIU备用瞄具 - OFF"
+
+msgid "T5_Left: TDC Left"
+msgstr "T5 向左: 目标指示框 向左"
+
+msgid "Master Mode Switch - Prev Mode"
+msgstr "主模式开关 - 上一个模式"
+
+msgid "Intercom Switch"
+msgstr "对讲机控制开关"
+
+msgid "Exterior Light Master Switch - Off"
+msgstr "机外主照明开关 - 关"
+
+msgid "Air Temp Knob Selector - MAN"
+msgstr "供气温度选择旋钮 - 手动"
+
+msgid "AAP WMMC1"
+msgstr "航空电子启动板 WMMC1"
+
+msgid "JF-17"
+msgstr "JF-17"
+
+msgid "Master Arm Switch - OFF"
+msgstr "主军械开关 - 关"
+
+msgid "Flood Light Knob - Dec (Step)"
+msgstr "泛光灯照明旋钮 - 减 (步进)"
+
+msgid "+/,/- Switch - Down/Neutral"
+msgstr "+/,/- 开关 - 向下/回中"
+
+msgid "Center MFCD D5"
+msgstr "中央MFCD D5"
+
+msgid "AAP OFF"
+msgstr "航空电子启动板 OFF"
+
+msgid "Radio Button 1/TONE"
+msgstr "电台按钮 1/TONE"
+
+msgid "Engine Mode Switch - TRG/C+T"
+msgstr "发动机模式选择开关 - 训练/战训"
+
+msgid "Center MFCD R6"
+msgstr "中央MFCD R6"
+
+msgid "UFCP Button DST/4"
+msgstr "正前方控制板 DST/4"
+
+msgid "Deploy/Jettison Parachute - Deploy"
+msgstr "释放/切断 减速伞 - 释放"
+
+msgid "Speed Brake On/Off"
+msgstr "减速板 开/关"
+
+msgid "MSL Volume Knob - Dec"
+msgstr "MSL 音量旋钮 - 减"
+
+msgid "Light Switch - Land/Off/Taxi - LAND/OFF"
+msgstr "着陆/滑行灯开关 - 着陆/关"
+
+msgid "T1: Backward (AG) / Center (NAV)"
+msgstr "T1: 向后 (AG) / 中立 (NAV)"
+
+msgid "Left MFCD Brt -"
+msgstr "左侧MFCD 亮度-"
+
+msgid "Next Waypoint"
+msgstr "下一个航路点"
+
+msgid "Left MFCD L4"
+msgstr "左侧MFCD L4"
+
+msgid "UFCP Button MRK"
+msgstr "正前方控制板 MRK"
+
+msgid "UFCP Button 9"
+msgstr "正前方控制板 9"
+
+msgid "Center MFCD U1"
+msgstr "中央MFCD U1"
+
+msgid "Engine Control Switch - ON"
+msgstr "发动机系统开关 - 开"
+
+msgid "ACP"
+msgstr "音量控制面板"
+
+msgid "+/,/- Switch - Up/Neutral"
+msgstr "+/,/- 开关 - 向上/回中"
+
+msgid "MFCD Left"
+msgstr "左侧MFCD"
+
+msgid "Light Switch - Land/Off/Taxi - TAXI"
+msgstr "着陆/滑行灯开关 - 滑行"
+
+msgid "Right MFCD U2"
+msgstr "右侧MFCD U2"
+
+msgid "INS Mode Knob Selector - NAV"
+msgstr "惯导工作模式选择旋钮 - 导航"
+
+msgid "Right MFCD Sym -"
+msgstr "右侧MFCD 符号-"
+
+msgid "Center MFCD R2"
+msgstr "中央MFCD R2"
+
+msgid "Radio Control Handover"
+msgstr "电台控制切换"
+
+msgid "Sensor (WMD7/TV) Left / Gain Dec"
+msgstr "传感器 (WMD7/TV) 向左 / 增益 减"
+
+msgid "AAP TRAIN"
+msgstr "航空电子启动板 TRAIN"
+
+msgid "Right MFCD L3"
+msgstr "右侧MFCD L3"
+
+msgid "T6_Down: Antenna Elevation"
+msgstr "T6 向下: 天线俯仰"
+
+msgid "Digital Clock Brightness -"
+msgstr "数字时钟 亮度-"
+
+msgid "Navigation Light Switch - Bright/Off/Dim - Bright/Off"
+msgstr "航行灯开关 - 亮/关"
+
+msgid "MSL Volume Knob - Inc"
+msgstr "MSL 音量旋钮 - 增"
+
+msgid "T6_Down: Antenna Elevation (Step)"
+msgstr "T6 向下: 天线俯仰 (步进)"
+
+msgid "Flood Light Knob - Inc (Press and Hold)"
+msgstr "泛光灯照明旋钮 - 增 (按住)"
+
+msgid "Air Temp Knob Selector - 43"
+msgstr "供气温度选择旋钮 - 43度"
+
+msgid "T5_Press: Lock Target"
+msgstr "T5 按下: 锁定目标"
+
+msgid "Yaw/Roll CAS Switch - OFF"
+msgstr "横/航向增稳切除开关 - 关"
+
+msgid "Master Warning"
+msgstr "主告警 带灯按钮"
+
+msgid "UFCP Button R4"
+msgstr "正前方控制板 R4"
+
+msgid "Zeroizer Button Cover - Close"
+msgstr "销秘控制按钮保险盖 - 关"
+
+msgid "INS Mode Knob Selector - STBY"
+msgstr "惯导工作模式选择旋钮 - 待机"
+
+msgid "Special For Devices"
+msgstr "外设专用"
+
+msgid "Sensor (WMD7/TV) Up / T6: Radar Ant Elev Up"
+msgstr "传感器 (WMD7/TV) 向上 / T6: 雷达天线俯仰向上"
+
+msgid "Radio Button 0/PRE"
+msgstr "电台按钮 0/PRE"
+
+msgid "Center MFCD L3"
+msgstr "中央MFCD L3"
+
+msgid "Brake Test - TEST"
+msgstr "刹车测试 - 测试"
+
+msgid "Throttle Emergency Button - Up"
+msgstr "油门应急按钮 - 拔起"
+
+msgid "Radio Mode Selector - TR+G"
+msgstr "电台模式选择旋钮 - TR+G"
+
+msgid "Canopy Open/Close Handle - Open"
+msgstr "座舱盖开关手柄 - 开盖"
+
+msgid "Inst. Light Knob - Inc (Press and Hold)"
+msgstr "仪表台照明旋钮 - 增 (按住)"
+
+msgid "UFCP Button VRC/2"
+msgstr "正前方控制板 VRC/2"
+
+msgid "Left MFCD U3"
+msgstr "左侧MFCD U3"
+
+msgid "AutoPilot - Off/On (ATT)"
+msgstr "自动驾驶 - 关/开(ATT)"
+
+msgid "SHARS Switch - OFF"
+msgstr "捷联航姿开关 - 关"
+
+msgid "Throttle Step - Decrease"
+msgstr "油门 步进减小"
+
+msgid "Afterburner Toggle (ON/OFF)"
+msgstr "加力切换开关 (开/关)"
+
+msgid "Digital Clock UTC"
+msgstr "数字时钟 协调世界时"
+
+msgid "AAR Light Knob - Inc (Step)"
+msgstr "加油照明旋钮 - 增 (步进)"
+
+msgid "Emergency Jettison Button"
+msgstr "应急抛弃按钮"
+
+msgid "Formation Light Knob Selector - Next"
+msgstr "编队灯选择旋钮 - 下一个"
+
+msgid "Left MFCD L5"
+msgstr "左侧MFCD L5"
+
+msgid "Flare Dispense Button Cover - Open"
+msgstr "热焰弹发射按钮保护盖 - 打开"
+
+msgid "AA/AG Switch - A/A"
+msgstr "AA/AG切换开关 - A/A"
+
+msgid "Backup SAIU Knob Selector - BOMB"
+msgstr "SAIU备份选择旋钮 - BOMB"
+
+msgid "Defog Switch"
+msgstr "除雾开关"
+
+msgid "Anti-Collision Light Knob Selector - Prev"
+msgstr "防撞灯选择旋钮 - 前一个"
+
+msgid "ECS Mode Knob Selector - Prev"
+msgstr "环控模式选择旋钮 - 前一个"
+
+msgid "Light Switch - Tow/Off/Anti-Collision - Anti-Collision"
+msgstr "灯光选择开关 - 牵引/关/防撞 - 防撞"
+
+msgid "Yaw/Roll CAS Switch - ON"
+msgstr "横/航向增稳切除开关 - 开"
+
+msgid "Anti-Collision Light Knob Selector - 2"
+msgstr "防撞灯选择旋钮 - 2"
+
+msgid "S5: Change/Unselect Weapon Station / NWS"
+msgstr "S5: 切换/取消选择武器挂架 / 前轮操纵开关"
+
+msgid "Throttle Step - Increase"
+msgstr "油门 步进增大"
+
+msgid "Center MFCD L7"
+msgstr "中央MFCD L7"
+
+msgid "Gun Mode On/Off"
+msgstr "航炮模式 开/关"
+
+msgid "Fire Warning"
+msgstr "起火告警 带灯按钮"
+
+msgid "ECS"
+msgstr "环控系统"
+
+msgid "A/A refueling - 'Ready for precontact' radio call"
+msgstr "空中加油 - '预对接位就绪' 无线电呼叫"
+
+msgid "T4_Forward: Radio Comm 1"
+msgstr "T4 向前: 无线电 Comm 1"
+
+msgid "Air Temp Knob Selector - 30"
+msgstr "供气温度选择旋钮 - 30度"
+
+msgid "Direct Mode Switch - ON"
+msgstr "直连模式开关 - 开"
+
+msgid "ECS Mode Knob Selector - DE-SMK"
+msgstr "环控系统工作状态选择旋钮 - 除烟"
+
+msgid "AAP INS"
+msgstr "航空电子启动板 INS"
+
+msgid "Throttle Uncage: Stop To Idle"
+msgstr "油门位切换 - 关车->慢车"
+
+msgid "Left MFCD U1"
+msgstr "左侧MFCD U1"
+
+msgid "Right MFCD R6"
+msgstr "右侧MFCD R6"
+
+msgid "FCS"
+msgstr "飞控系统"
+
+msgid "Oxygen Supply Valve - Dec (Press and Hold)"
+msgstr "供氧阀 - 减小 (按住)"
+
+msgid "ECS Mode Knob Selector - NORM"
+msgstr "环控系统工作状态选择旋钮 - 正常"
+
+msgid "T3_Backward: Speed Brake Off"
+msgstr "T3 向后: 减速板关"
+
+msgid "Deploy/Jettison Parachute - Cut"
+msgstr "释放/切断 减速伞 - 切断"
+
+msgid "Deploy/Jettison Parachute - Off"
+msgstr "释放/切断 减速伞 - 关"
+
+msgid "Canopy Open/Close Handle - Lock"
+msgstr "座舱盖开关手柄 - 上锁"
+
+msgid "Backup SAIU Knob Selector - GUN"
+msgstr "SAIU备份选择旋钮 - GUN"
+
+msgid "Left MFCD L3"
+msgstr "左侧MFCD L3"
+
+msgid "Landing Gear Lever - Down"
+msgstr "起落架手柄 - 放下"
+
+msgid "UFCP Button R1"
+msgstr "正前方控制板 R1"
+
+msgid "Main AC Gen Switch - Off"
+msgstr "主交流发电机开关 - 关"
+
+msgid "Navigation Light Switch - Flash/Steady - Steady"
+msgstr "航行灯开关 - 闪烁/常亮 - 常亮"
+
+msgid "Oxygen 100% O2"
+msgstr "纯氧"
+
+msgid "Center MFCD D1"
+msgstr "中央MFCD D1"
+
+msgid "Left MFCD L1"
+msgstr "左侧MFCD L1"
+
+msgid "HUD Backup Reticle Knob - MAX"
+msgstr "HUD备用光栅旋钮 - 最大"
+
+msgid "Air Temp Knob Selector - 10"
+msgstr "供气温度选择旋钮 - 10度"
+
+msgid "S1_Right: Cycle MFCD Select - Right Direction"
+msgstr "S1 向右: MFCD循环选择 - 向右"
+
+msgid "Sensor (WMD7/TV) Down / T6: Radar Ant Elev Down"
+msgstr "传感器 (WMD7/TV) 向下 / T6: 雷达天线俯仰向下"
+
+msgid "Master Arm Switch - SIM"
+msgstr "主军械开关 - 模拟"
+
+msgid "Air Temp Knob Selector - 15"
+msgstr "供气温度选择旋钮 - 15度"
+
+msgid "Brake Test - ON"
+msgstr "刹车测试 - 开"
+
+msgid "Light Switch - Land/Off/Taxi - LDG"
+msgstr "着陆/滑行灯开关 - 着陆"
+
+msgid "Light Switch - Land/Off/Taxi - OFF"
+msgstr "着陆/滑行灯开关 - 关"
+
+msgid "Flare Dispense Button"
+msgstr "热焰弹发射按钮"
+
+msgid "T1_Center: NAV - Navigation Mode"
+msgstr "T1 中间: NAV - 导航模式"
+
+msgid "Engine Control Switch - OFF"
+msgstr "发动机系统开关 - 关"
+
+msgid "T6_Up: Antenna Elevation"
+msgstr "T6 向上: 天线俯仰"
+
+msgid "Prev Waypoint"
+msgstr "上一个航路点"
+
+msgid "Digital Clock Brightness +"
+msgstr "数字时钟 亮度+"
+
+msgid "Air Start Button - OFF"
+msgstr "发动机空中启动开关 - 关"
+
+msgid "Yaw Trim Switch - Right"
+msgstr "航向配平开关 - 向右"
+
+msgid "Anti-Surge Switch - OFF"
+msgstr "防喘切断开关 - 关"
+
+msgid "Anti-Surge Switch - ON"
+msgstr "防喘切断开关 - 开"
+
+msgid "AAP IFF"
+msgstr "航空电子启动板 IFF"
+
+msgid "Sensor FOV Increase"
+msgstr "传感器视场 - 增大"
+
+msgid "Misc Panel"
+msgstr "其他面板"
+
+msgid "Record Switch - OFF"
+msgstr "记录开关 - 关"
+
+msgid "Flare Dispense Button Cover - Close"
+msgstr "热焰弹发射按钮保护盖 - 关闭"
+
+msgid "Battery Switch"
+msgstr "蓄电池开关"
+
+msgid "Right MFCD L2"
+msgstr "右侧MFCD L2"
+
+msgid "AAP CLDP"
+msgstr "航空电子启动板 CLDP"
+
+msgid "Fuel Pump Switch - OFF"
+msgstr "直流电动泵开关 - 关"
+
+msgid "Anti-Collision Light Knob Selector - 4"
+msgstr "防撞灯选择旋钮 - 4"
+
+msgid "Center MFCD R8"
+msgstr "中央MFCD R8"
+
+msgid "Navigation Light Switch - Bright/Off/Dim - Dim"
+msgstr "航行灯开关 - 亮/关/暗 - 暗"
+
+msgid "UFCP Button RTN"
+msgstr "正前方控制板 RTN"
+
+msgid "Toggle Helmet Sun Visor"
+msgstr "头盔太阳镜 放下/收起"
+
+msgid "AAR Switch - INT/OFF"
+msgstr "空中加油开关 - 内油/关"
+
+msgid "Install DTC Card"
+msgstr "安装DTC卡"
+
+msgid "Oxygen Supply Valve - Inc"
+msgstr "供氧阀 - 增大"
+
+msgid "HUD Brightness - Inc"
+msgstr "HUD 亮度 - 增大"
+
+msgid "Emergency Hydraulic Pump Switch - ON"
+msgstr "应急液压泵开关 - 开"
+
+msgid "Engine Mode Switch - CMBT/C+T"
+msgstr "发动机模式选择开关 - 作战/战训"
+
+msgid "Radio Mode Selector - ADF"
+msgstr "电台模式选择旋钮 - ADF"
+
+msgid "Center MFCD L6"
+msgstr "中央MFCD L6"
+
+msgid "Clock"
+msgstr "时钟"
+
+msgid "ACP COM1 Volume Knob Abs"
+msgstr "ACP COM1 音量旋钮 (轴)"
+
+msgid "ECS Mode Knob Selector - OFF"
+msgstr "环控系统工作状态选择旋钮 - 关"
+
+msgid "Brake Park/Norm - PARK"
+msgstr "刹车通道开关 - 驻车"
+
+msgid "AutoPilot"
+msgstr "自动驾驶"
+
+msgid "Main AC Gen Switch - On"
+msgstr "主交流发电机开关 - 开"
+
+msgid "AAR Switch - OFF"
+msgstr "空中加油开关 - 关"
+
+msgid "Right MFCD Brt +"
+msgstr "右侧MFCD 亮度+"
+
+msgid "Fuel Pump Switch - ON/OFF"
+msgstr "直流电动泵开关 - 开/关"
+
+msgid "UFCP Button L1"
+msgstr "正前方控制板 L1"
+
+msgid "Throttle Uncage: Stop To Idle - Cage/Uncage"
+msgstr "油门位切换 - 关车/慢车"
+
+msgid "T5_Down: TDC Down"
+msgstr "T5 向下: 目标指示框 向下"
+
+msgid "HUD Symbology Reject Switch - DCLT/NORM"
+msgstr "HUD 防拥开关 - 防拥/正常"
+
+msgid "T1_Backward: AG - Air-To-Ground Mode"
+msgstr "T1 向后: AG - 空对地模式"
+
+msgid "HUD Symbology Reject Switch - DCLT"
+msgstr "HUD 防拥开关 - 防拥"
+
+msgid "INS Mode Knob Selector - Prev"
+msgstr "惯导模式选择旋钮 - 前一个"
+
+msgid "Flood Light Knob - Inc (Step)"
+msgstr "泛光灯照明旋钮 - 增 (步进)"
+
+msgid "Canopy"
+msgstr "座舱盖"
+
+msgid "Zeroizer Button Cover - Open"
+msgstr "销秘控制按钮保险盖 - 开"
+
+msgid "UFCP Brightness Knob Abs"
+msgstr "UFCP 亮度旋钮 (轴)"
+
+msgid "UFCP Button L2"
+msgstr "正前方控制板 L2"
+
+msgid "Oxygen Supply Valve - Inc (Press and Hold)"
+msgstr "供氧阀 - 增大 (按住)"
+
+msgid "Left MFCD R7"
+msgstr "左侧MFCD R7"
+
+msgid "TCN/ILS Volume Knob - Dec"
+msgstr "TCN/ILS 音量旋钮 - 减"
+
+msgid "Canopy Open/Close Handle - Close"
+msgstr "座舱盖开关手柄 - 关盖"
+
+msgid "Navigation Light Switch - Bright/Off/Dim - Dim/Off"
+msgstr "航行灯开关 - 暗/关"
+
+msgid "Speaker Control Box Audio Channel Switch - Stby"
+msgstr "音响控制盒音频通道切换开关 - 备"
+
+msgid "UFCP Button FUL/7"
+msgstr "正前方控制板 FUL/7"
+
+msgid "UFCP Button TOT/5"
+msgstr "正前方控制板 TOT/5"
+
+msgid "UFCP Brightness - Dec"
+msgstr "UFCP 亮度 - 减小"
+
+msgid "AAR Switch - ALL/OFF"
+msgstr "空中加油开关 - 全部/关"
+
+msgid "Center MFCD U4"
+msgstr "中央MFCD U4"
+
+msgid "Afterburner Switch - OFF"
+msgstr "加力切断开关 - 切断"
+
+msgid "Light Switch - Tow/Off/Anti-Collision - Anti-Collision/Off"
+msgstr "灯光选择开关 - 防撞/关"
+
+msgid "Inst. Light Knob - Dec (Step)"
+msgstr "仪表台照明旋钮 - 减 (步进)"
+
+msgid "EFCS Switch - EFCS"
+msgstr "备份模拟飞控系统开关 - EFCS"
+
+msgid "Left MFCD U5"
+msgstr "左侧MFCD U5"
+
+msgid "Light Switch - Tow/Off/Anti-Collision - Tow"
+msgstr "灯光选择开关 - 牵引/关/防撞 - 牵引"
+
+msgid "Left MFCD Cont -"
+msgstr "左侧MFCD 对比度-"
+
+msgid "MFCD Right"
+msgstr "右侧MFCD"
+
+msgid "Right MFCD D3"
+msgstr "右侧MFCD D3"
+
+msgid "Left MFCD D1"
+msgstr "左侧MFCD D1"
+
+msgid "Center MFCD Brt +"
+msgstr "中央MFCD 亮度+"
+
+msgid "Throttle Emergency Button - Down"
+msgstr "油门应急按钮 - 按下"
+
+msgid "S1_Left: Cycle MFCD Select - Left Direction"
+msgstr "S1 向左: 循环选择 - 向左"
+
+msgid "T4_Forward: Radio Comm 1 VOIP"
+msgstr "T4 向前: 无线电 Comm 1 VOIP"
+
+msgid "T4_Forward: Radio Comm 1 (w/ VOIP)"
+msgstr "T4 向前: 无线电 Comm 1 (无线电菜单+VOIP)"
+
+msgid "Center MFCD R1"
+msgstr "中央MFCD R1"
+
+msgid "Master Arm Switch - ARM"
+msgstr "主军械开关 - 解除保险"
+
+msgid "Prev OESP Program"
+msgstr "上一个OESP程序"
+
+msgid "MFCD Center"
+msgstr "中央MFCD"
+
+msgid "Master Arm Switch - ARM/OFF"
+msgstr "主军械开关 - 解除保险/关"
+
+msgid "Formation Light Knob Selector - 1"
+msgstr "编队灯选择旋钮 - 1"
+
+msgid "AAR Light Knob - Dec (Press and Hold)"
+msgstr "加油照明旋钮 - 减 (按住)"
+
+msgid "Sensor FOV Increase (Step)"
+msgstr "传感器视场 - 增大 (步进)"
+
+msgid "Radio Button 7/P"
+msgstr "电台按钮 7/P"
+
+msgid "AutoPilot - ATT/ALT"
+msgstr "自动驾驶 - ATT/ALT"
+
+msgid "Intercom Switch - Off"
+msgstr "对讲机控制开关 - 关"
+
+msgid "HUD Contrast - Dec"
+msgstr "HUD 对比度 - 减小"
+
+msgid "UFCP Brightness - Inc"
+msgstr "UFCP 亮度 - 增大"
+
+msgid "Start Mode Selector - START/ENG COLD/STARTER COLD : COLD ENG"
+msgstr "运转方式转换开关 - 发动机冷转"
+
+msgid "COM2 Volume Knob - Inc"
+msgstr "COM2 音量旋钮 - 增"
+
+msgid "UFCP Button IFF/8"
+msgstr "正前方控制板 IFF/8"
+
+msgid "UFCP Button FPM"
+msgstr "正前方控制板 FPM"
+
+msgid "Radio Button 5/A"
+msgstr "电台按钮 5/A"
+
+msgid "Right MFCD R1"
+msgstr "右侧MFCD R1"
+
+msgid "Left MFCD R6"
+msgstr "左侧MFCD R6"
+
+msgid "Light Switch - Tow/Off/Anti-Collision - Tow/Off"
+msgstr "灯光选择开关 - 牵引/关"
+
+msgid "Anti-Collision Light Knob Selector - 1"
+msgstr "防撞灯选择旋钮 - 1"
+
+msgid "AG1/AG2 Switch - A/G1"
+msgstr "飞机构型开关 - A/G1"
+
+msgid "OESP PROG02"
+msgstr "OESP 程序02"
+
+msgid "MFCD Base Transparency"
+msgstr "MFCD底色透明度"
+
+msgid "MUSIC NUMBER"
+msgstr "载入音乐数量"
+
+msgid "Traction"
+msgstr "牵引"
+
+msgid "3"
+msgstr ""
+
+msgid "2"
+msgstr ""
+
+msgid "5"
+msgstr ""
+
+msgid "OESP Type"
+msgstr "OESP 类型"
+
+msgid "Performance"
+msgstr "性能"
+
+msgid "BLENDED"
+msgstr "混合"
+
+msgid "Chaff SQ"
+msgstr "箔条总组数"
+
+msgid "Icing On the Cake"
+msgstr "锦上添花"
+
+msgid "KYBD Pitch Control"
+msgstr "键盘俯仰控制"
+
+msgid "Cockpit Model"
+msgstr "驾驶舱建模"
+
+msgid "Flare Bingo"
+msgstr "热诱预置余弹量"
+
+msgid "JF-17 is a single seat, single engine, multirole light fighter that joint developed by AVIC Chengdu and Pakistan Aeronautical Complex (PAC). The design phase of JF-17 'Thunder' finished on May 31st, 2002, and the maiden flight was made on August 25th, 2003. 'Thunder' has a bubble canopy of great view, pretty strake-wing layout and advanced avionics. KLJ-7 radar provides excellent air to ground capability. WMD-7 targeting pod can help 'Thunder' searching for targets in combat. Although 'Thunder' has small size, remember that: she is one of the most advanced fighter jets in the DCS World."
+msgstr "JF-17是成都飞机工业集团公司与巴基斯坦航空综合企业（Pakistan Aeronautical Complex）合作研制的多用途单座单发轻型战机。JF-17 \"枭龙\"战斗机2002年5月31日完成设计，2003年8月25日首次试飞。\"枭龙\"拥有通透的气泡式座舱、漂亮的大边条翼以及先进的航空电子设备。KLJ-7雷达提供了优秀的对空对地探测能力。WMD-7吊舱可以帮助\"枭龙\"更好的在战场中寻找目标。虽然她的尺寸略小，但记住，她是DCS World中最为先进的飞机。"
+
+msgid "Gun Limiter"
+msgstr "航炮限制器"
+
+msgid "T6 Opposite Axis Dir"
+msgstr "T6轴功能反向"
+
+msgid "OESP PROG01"
+msgstr "OESP 程序01"
+
+msgid "CH+FL_oesp"
+msgstr "箔条+热诱"
+
+msgid "Chaff Bingo"
+msgstr "箔条预置余弹量"
+
+msgid "Default_liv"
+msgstr "默认"
+
+msgid "Remove AAR Probe"
+msgstr "移除受油管"
+
+msgid "OESP PROG05"
+msgstr "OESP 程序05"
+
+msgid "OESP PROG04"
+msgstr "OESP 程序04"
+
+msgid "RASTER CHARTS"
+msgstr "电子海图"
+
+msgid "0.2"
+msgstr "0.2"
+
+msgid "AUTO RE-CENTER"
+msgstr "自动回中"
+
+msgid "Flare SI"
+msgstr "热诱组间延时"
+
+msgid "Radar TDC Slew Rate"
+msgstr "雷达指示移动速率"
+
+msgid "LCOS"
+msgstr ""
+
+msgid "0.75"
+msgstr ""
+
+msgid "Radar Elev Slew Rate"
+msgstr "雷达俯仰移动速率"
+
+msgid "CH_oesp"
+msgstr "箔条"
+
+msgid "Chaff BI"
+msgstr "箔条组内间隔"
+
+msgid "FL_oesp"
+msgstr "热诱"
+
+msgid "EN 1"
+msgstr "英文1"
+
+msgid "Flare BQ"
+msgstr "热诱单组数量"
+
+msgid "Hide Stick"
+msgstr "隐藏驾驶杆"
+
+msgid "Visual Quality"
+msgstr "画面"
+
+msgid "Gun Sight"
+msgstr "航炮瞄具"
+
+msgid "4.5"
+msgstr "4.5"
+
+msgid "0.5"
+msgstr "0.5"
+
+msgid "Flare BI"
+msgstr "热诱组内间隔"
+
+msgid "DCS: JF-17 by Deka Ironwork Simulations."
+msgstr ""
+
+msgid "C701 TDC Slew Rate"
+msgstr "C701指示移动速率"
+
+msgid "Throttle T6: opposite axis direction between radar antenna and camera zoom."
+msgstr "油门T6轴: 雷达天线和吊舱缩放操作反向。"
+
+msgid "CN 1"
+msgstr "中文1"
+
+msgid "Chaff BQ"
+msgstr "箔条单组数量"
+
+msgid "0.0"
+msgstr ""
+
+msgid "MAP ALT"
+msgstr "地形图"
+
+msgid "English_liv"
+msgstr "英文"
+
+msgid "Chaff SI"
+msgstr "箔条组间延时"
+
+msgid "Flare SQ"
+msgstr "热诱总组数"
+
+msgid "WMD7 TDC Slew Rate"
+msgstr "WMD7吊舱指示移动速率"
+
+msgid "SS"
+msgstr ""
+
+msgid "Voice Locale"
+msgstr "告警音语言"
+
+msgid "MITL Control Mode"
+msgstr "人在回路控制模式"
+
+msgid "Testing Feature"
+msgstr "测试功能"
+
+msgid "Designated"
+msgstr "指定"
+
+msgid "DL Pod TDC Slew Rate"
+msgstr "数据链吊舱指示移动速率"
+
+msgid "1"
+msgstr ""
+
+msgid "CUSTOMIZED"
+msgstr "自制"
+
+msgid "CN 2"
+msgstr "中文2"
+
+msgid "EN 2"
+msgstr "英文2"
+
+msgid "TDC Deadzone"
+msgstr "TDC 死区"
+
+msgid "ACCUMULATIVE"
+msgstr "不回中"
+
+msgid "SSLC"
+msgstr ""
+
+msgid "CUSTOMIZED COCKPIT"
+msgstr "可选驾驶舱"
+
+msgid "Deka Ironwork Simulations"
+msgstr ""
+
+msgid "OESP PROG03"
+msgstr "OESP 程序03"
+
+msgid "1.0"
+msgstr ""
+
+msgid "HUD TDC Slew Rate"
+msgstr "HUD指示移动速率"
+
+msgid "Landing - Easy (Night)"
+msgstr "夜间着陆 - 容易"
+
+msgid "Taxi and Takeoff"
+msgstr "滑行和起飞"
+
+msgid "IFR Landing"
+msgstr "IFR着陆"
+
+msgid "Night Attack"
+msgstr "夜间进攻"
+
+msgid "Air-to-Air Refuel"
+msgstr "空中加油"
+
+msgid "Welcome to this training lesson on starting up the Thunder. In this lesson, you will learn the JF-17 ramp start procedures."
+msgstr "欢迎来到\"枭龙\"冷启动教程。在本课中，大家将学习JF-17的冷启动操作。"
+
+msgid "Takeoff and Navigation (Day)"
+msgstr "白天起飞和导航"
+
+msgid "Air Refuel (Night)"
+msgstr "空中加油 - 夜间"
+
+msgid "Landing - Easy (Day)"
+msgstr "白天着陆 - 容易"
+
+msgid "VFR Straight In Landing and Shut Down"
+msgstr "VFR直接着陆和关车"
+
+msgid "Welcome to this training lesson on CCIP bombing. In this lesson, you will learn how to delivery unguided bombs in CCIP mode."
+msgstr "欢迎来到\"枭龙\"CCIP投弹教程。在本课中，大家将学习JF-17的CCIP模式下投弹操作。"
+
+msgid "Anti-ship Missile"
+msgstr "反舰导弹"
+
+msgid "Unguided Bomb CCRP"
+msgstr "CCRP模式投弹"
+
+msgid "Free Flight (Night)"
+msgstr "夜间自由飞行"
+
+msgid "Welcome to this training lesson on IFR landing. In this lesson, you will learn IFR landing."
+msgstr "欢迎来到\"枭龙\"IFR着陆教程。在本课中，大家将学习JF-17的IFR着陆操作。"
+
+msgid "Free Flight (Day)"
+msgstr "白天自由飞行"
+
+msgid "Thunder Surprise"
+msgstr "出其不意"
+
+msgid "Sink Cargo Ship"
+msgstr "击沉货船"
+
+msgid "Takeoff and Navigation (Night)"
+msgstr "夜间起飞和导航"
+
+msgid "Air-To-Air BVR"
+msgstr "空对空 超视距作战"
+
+msgid "Man-in-the-loop"
+msgstr "人在回路"
+
+msgid "Decapitation Strike"
+msgstr "斩首行动"
+
+msgid "River Run"
+msgstr "川流极速"
+
+msgid "Laser-guided Rockets"
+msgstr "激光制导火箭弹"
+
+msgid "Welcome to this training lesson on anti-ship missile. In this lesson, you will learn how to launch C-802AK anti-ship missile with different modes."
+msgstr "欢迎来到\"枭龙\"反舰导弹使用教程。在本课中，大家将学习JF-17的C-802AK的各个攻击模式。"
+
+msgid "SEAD"
+msgstr "防空压制"
+
+msgid "Air-To-Air CAC"
+msgstr "空对空 近距离作战"
+
+msgid "Air Refuel (Day)"
+msgstr "空中加油 - 白天"
+
+msgid "Laser-guided Bombs"
+msgstr "激光制导炸弹"
+
+msgid "HOTAS"
+msgstr "握杆控制"
+
+msgid "Welcome to this training lesson on VFR landing. In this lesson, you will learn VFR landing and then shut down the engine."
+msgstr "欢迎来到\"枭龙\"VFR着陆教程。在本课中，大家将学习JF-17的VFR着陆和关车操作。"
+
+msgid "Welcome to this training lesson for HOTAS. In this lesson, you will learn basic HOTAS operations."
+msgstr "欢迎来到\"枭龙\"HOTAS教程。在本课中，大家将学习JF-17的HOTAS操作。"
+
+msgid "Cold and Dark"
+msgstr "冷启动"
+
+msgid "Anti-ship"
+msgstr "反舰"
+
+msgid "Welcome to this training lesson on taxi and takeoff. In this lesson, you will learn operations during taxi and takeoff."
+msgstr "欢迎来到\"枭龙\"滑行和起飞教程。在本课中，大家将学习JF-17的滑行和起飞操作。"
+
+msgid "Welcome to this training lesson on CCRP bombing. In this lesson, you will learn how to delivery unguided bombs in CCRP mode."
+msgstr "欢迎来到\"枭龙\"CCRP投弹教程。在本课中，大家将学习JF-17的CCRP模式下投弹操作。"
+
+msgid "Welcome to this training lesson on air-to-air refuel (AAR). In this lesson, you will learn how to operate AAR."
+msgstr "欢迎来到\"枭龙\"空中加油教程。在本课中，大家将学习JF-17的空中加油操作。"
+
+msgid "Unguided Rocket"
+msgstr "航空火箭弹"
+
+msgid "CAS"
+msgstr "近距离空中支援"
+
+msgid "Peace Shield"
+msgstr "和平之盾"
+
+msgid "Intercept Convoy"
+msgstr "拦截车队"
+
+msgid "Welcome to this training lesson on basic navigation. In this lesson, you will learn Waypoint and TACAN navigations."
+msgstr "欢迎来到\"枭龙\"基础导航教程。在本课中，大家将学习JF-17的航路点和塔康导航操作。"
+
+msgid "General Bombs"
+msgstr "航空炸弹"
+
+msgid "Cold Start"
+msgstr "冷启动"
+
+msgid "Unguided Bomb CCIP"
+msgstr "CCIP模式投弹"
+
+msgid "Direction"
+msgstr ""
+
+msgid "Inlet Cover and Ladder"
+msgstr "进气道遮罩和登机梯"
+
+msgid "Place_"
+msgstr "放置"
+
+msgid "DMAP Type"
+msgstr "数字地图类型"
+
+msgid "10 km"
+msgstr ""
+
+msgid "Guided bomb"
+msgstr "制导炸弹"
+
+msgid "Missile"
+msgstr ""
+
+msgid "Reconnaissance"
+msgstr ""
+
+msgid "EW Target I"
+msgstr "电子战目标1"
+
+msgid "5 km"
+msgstr ""
+
+msgid "8 km"
+msgstr ""
+
+msgid "1 km"
+msgstr ""
+
+msgid "2 km"
+msgstr ""
+
+msgid "Mission and RTB"
+msgstr ""
+
+msgid "Wheel chocks"
+msgstr "轮挡"
+
+msgid "South"
+msgstr ""
+
+msgid "EW Target III"
+msgstr "电子战目标3"
+
+msgid "AAR Probe"
+msgstr "受油管"
+
+msgid "West"
+msgstr ""
+
+msgid "APPLY"
+msgstr "应用"
+
+msgid "Update the DTC to apply the changes!"
+msgstr "应用更改须更新DTC!"
+
+msgid "Default"
+msgstr "默认"
+
+msgid "Refuel External Tank"
+msgstr "给副油箱加油"
+
+msgid "Remove_"
+msgstr "移除"
+
+msgid "Update Data"
+msgstr "更新数据"
+
+msgid "EW Target IV"
+msgstr "电子战目标4"
+
+msgid "DTC Config"
+msgstr "DTC配置"
+
+msgid "Configuration Panel"
+msgstr "配置面板"
+
+msgid "Update DTC Data"
+msgstr "更新DTC数据"
+
+msgid "Refill Utilities"
+msgstr "重装填（减速伞、气瓶）"
+
+msgid "CANCEL"
+msgstr "取消"
+
+msgid "EW Target II"
+msgstr "电子战目标2"
+
+msgid "3 km"
+msgstr ""
+
+msgid "Marker"
+msgstr ""
+
+msgid "Mission and Rejoin"
+msgstr ""
+
+msgid "Air Space"
+msgstr "空域"
+
+msgid "Update INS Align Data"
+msgstr "更新惯导对准数据"
+
+msgid "East"
+msgstr ""
+
+msgid "North"
+msgstr ""
+
+msgid "Laser Code Config"
+msgstr "激光编码配置"
+
+msgid " - Battery Switch On"
+msgstr " - 电瓶 接通"
+
+msgid "7: Startup Final"
+msgstr "7: 收尾"
+
+msgid "5: ECS and Oxygen"
+msgstr "5: 环控和供氧"
+
+msgid "1: Power On"
+msgstr "1: 供电"
+
+msgid " - Start Fast Alignment"
+msgstr " - 开始快速对准"
+
+msgid " - AAP IFF On"
+msgstr " - 航空电子启动板 IFF 接通"
+
+msgid " - Enter Current True Heading"
+msgstr " - 输入当前真航向"
+
+msgid " - COM2 Volume Knob - Max"
+msgstr " - COM2 音量旋钮 - 最大"
+
+msgid " - Air Temp Knob Selector - 25"
+msgstr " - 供气温度选择旋钮 - 25度"
+
+msgid " - AAP WMMC2 On"
+msgstr " - 航空电子启动板 WMMC2 接通"
+
+msgid " - Eject Seat Safe/Arm Handle - Arm"
+msgstr " - 弹射座椅保险手柄 - 解除保险"
+
+msgid "AUTOSTART SEQUENCE IS RUNNING"
+msgstr "自动开车程序运行中"
+
+msgid " - Master Warning Button - Press"
+msgstr " - 主告警带灯按钮 - 按下"
+
+msgid "4: SHARS and INS"
+msgstr "4: 捷联航姿和惯导快速对准"
+
+msgid " - ECS Mode Knob Selector On"
+msgstr " - 环控系统工作状态选择旋钮 开"
+
+msgid " - Start Loading Selected Data"
+msgstr " - 开始读取所选数据"
+
+msgid "2: Cockpit Light"
+msgstr "2: 驾驶舱照明"
+
+msgid " - Light Switch - Anti-Collision"
+msgstr " - 灯光选择开关 - 防撞"
+
+msgid "5: Eject Seat Safety"
+msgstr "5: 弹射座椅 - 保险"
+
+msgid " - Anti-Collision Light Knob Selector On"
+msgstr " - 防撞灯选择旋钮 开"
+
+msgid " - Refresh MFCD Pages"
+msgstr " - 回到当前主模式下MFCD缺省页面"
+
+msgid " - Navigation Light Switch - Brt"
+msgstr " - 航行灯开关 - 亮"
+
+msgid "INS NOT ALIGNED"
+msgstr "惯导系统未对准"
+
+msgid " - RMFCD Shows EPI2 Page"
+msgstr " - 右MFCD显示EPI2页面"
+
+msgid " - Fuel Pump Switch On"
+msgstr " - 直流电动泵开关 开"
+
+msgid " - Throttle - Stop To Idle"
+msgstr " - 油门至慢车位"
+
+msgid " - HUD Brightness Knob - Max"
+msgstr " - HUD亮度调节旋钮 - 最大"
+
+msgid " - Formation Light Knob Selector On"
+msgstr " - 编队灯选择旋钮 开"
+
+msgid " - AAP WMMC1 On"
+msgstr " - 航空电子启动板 WMMC1 接通"
+
+msgid " - Canopy Open/Close Handle - Close"
+msgstr " - 座舱盖开关手柄 - 关闭"
+
+msgid " - AC Switch On"
+msgstr " - 交流 接通"
+
+msgid " - Eject Seat Firing Handle Safety Pin - Remove"
+msgstr " - 弹射座椅点火安全插销 - 移除"
+
+msgid " - Select Nav Master Mode"
+msgstr " - 选择导航主模式"
+
+msgid " - Oxygen Indicator Bright Knob - Max"
+msgstr " - 氧气示流器亮度调节旋钮 - 最大"
+
+msgid " - UFCP DST Button - Press"
+msgstr " - UFCP DST 按钮 - 按下"
+
+msgid " - AAP SAIU On"
+msgstr " - 航空电子启动板 SAIU 接通"
+
+msgid " - AAP SLNK On"
+msgstr " - 航空电子启动板 SLNK 接通"
+
+msgid "3: Turn Off INS and SHARS"
+msgstr "3: 关闭捷联惯导和捷联航姿系统"
+
+msgid " - G-Suit Tube - Connect"
+msgstr " - 抗荷服 连接"
+
+msgid " - Parking Brake - Norm"
+msgstr " - 驻车刹车 - 正常"
+
+msgid "Check and Preparation"
+msgstr "检查和准备"
+
+msgid "6: DTC Card"
+msgstr "6: DTC数据卡"
+
+msgid " - Console Light Knob - 80%"
+msgstr " - 控制台照明旋钮 - 80%"
+
+msgid " - MSL Volume Knob - 40%"
+msgstr " - 导弹音量旋钮 - 40%"
+
+msgid " - AAP COM2 On"
+msgstr " - 航空电子启动板 COM2 接通"
+
+msgid "Remove Inlet Cover and Ladder"
+msgstr "移除进气道遮罩和登机梯"
+
+msgid "8: Turn Off Power"
+msgstr "8: 断电"
+
+msgid "AUTOSTOP COMPLETE"
+msgstr "自动关车完毕"
+
+msgid " - Inst. Light Knob - 80%"
+msgstr " - 仪表台照明旋钮 - 80%"
+
+msgid "4: Turn Off ECS and Oxy"
+msgstr "4: 关闭环控和供氧"
+
+msgid " - UFCP Brightness Knob - Max"
+msgstr " - UFCP 亮度旋钮 - 最大"
+
+msgid " - Ground Start Button - Press and Hold"
+msgstr " - 发动机地面启动按钮 - 按住"
+
+msgid " - Warning Panel Bright Knob - Max"
+msgstr " - 告警面板灯亮度旋钮 - 最大"
+
+msgid " - Warning Panel Day/Night - Day"
+msgstr " - 告警面板灯昼夜开关 - 昼"
+
+msgid " - Emergency Hydraulic Pump Switch On"
+msgstr " - 应急液压泵开关 开"
+
+msgid " - Intercom Switch On"
+msgstr " - 对讲机控制开关 开"
+
+msgid " - TCN/ILS Volume Knob - Max"
+msgstr " - 塔康/惯导音量旋钮 - 最大"
+
+msgid " - AAP COM1 On"
+msgstr " - 航空电子启动板 COM1 接通"
+
+msgid " - HUD Contrast Knob - Max"
+msgstr " - HUD对比图调节旋钮 - 最大"
+
+msgid " - DC Switch On"
+msgstr " - 直流电源 接通"
+
+msgid " - Enter Current Coordinate"
+msgstr " - 输入当前经纬度"
+
+msgid " - Oxygen Tube - Connect"
+msgstr " - 供氧管 - 接上"
+
+msgid "9: Unplug DTC Card"
+msgstr "9: 取出DTC卡"
+
+msgid " - Select All Data Entries"
+msgstr " - 选择所有数据"
+
+msgid " - DTC Card - Install"
+msgstr " - 插入DTC卡"
+
+msgid " - Canopy Open/Close Handle - Lock"
+msgstr " - 座舱盖手柄 - 上锁"
+
+msgid " - Set FCS Configuration"
+msgstr " - 设置飞控挂载构型"
+
+msgid " - Adjust QFE using BARO Altitude Setting Knob"
+msgstr " - 通过气压高度设置旋钮调节场压"
+
+msgid "1: Engine Shutdown"
+msgstr "1: 关闭发动机"
+
+msgid "7: Turn Off Radio"
+msgstr "7: 关闭无线电"
+
+msgid " - Oxygen Supply Valve - Max"
+msgstr " - 供氧阀 - 最大"
+
+msgid "AUTOSTOP SEQUENCE IS RUNNING"
+msgstr "自动关车程序运行中"
+
+msgid " - Radio Mode Selector - T/R"
+msgstr " - 无线电模式选择旋钮 - T/R"
+
+msgid " - SHARS Switch On"
+msgstr " - 捷联航姿开关 开"
+
+msgid " - Radio Volume Knob - Max"
+msgstr " - 无线电音量旋钮 - 最大"
+
+msgid " - COM1 Volume Knob - Max"
+msgstr " - COM1 音量旋钮 - 最大"
+
+msgid "2: Open Canopy"
+msgstr "2: 打开座舱盖"
+
+msgid "6: Turn Off Cockpit and External Lights"
+msgstr "6: 关闭驾驶舱和机身灯光"
+
+msgid " - Engine Control Switch On"
+msgstr " - 发动机系统开关 开"
+
+msgid " - Navigation Light Switch - Flash"
+msgstr " - 航行灯开关 - 闪烁"
+
+msgid " - AAP INS On"
+msgstr " - 航空电子启动板 INS 接通"
+
+msgid " - AAP OESP On"
+msgstr " - 航空电子启动板 OESP 接通"
+
+msgid " - AAP RWR On"
+msgstr " - 航空电子启动板 RWR 接通"
+
+msgid " - AAP NAV On"
+msgstr " - 航空电子启动板 NAV 接通"
+
+msgid "3: Engine Start"
+msgstr "3: 启动发动机"
+
+msgid " - AAP RDR On"
+msgstr " - 航空电子启动板 RDR 接通"
+
+msgid "AUTOSTART COMPLETE"
+msgstr "自动开车完毕"
+
+msgid " - Exterior Light Master Switch On"
+msgstr " - 机外主照明开关 开"
+
+msgid " Ground Crew: Don't move! Refuel is terminated!"
+msgstr " 地勤: 别特么乱动! 加油终止!"
+
+msgid "MWMMC_FAILURE_CPU"
+msgstr "故障: MWMMC - CPU"
+
+msgid "SWMMC_FAILURE_CPU"
+msgstr ""
+
+msgid "FCS_FAILURE_NZ_SENSOR_4"
+msgstr ""
+
+msgid "EMMC_FAILURE_AC_GENERATOR_CONTROLLER"
+msgstr ""
+
+msgid "CNI_FAILURE_COM2_SECOS"
+msgstr "故障: CNI - COM2 SECOS"
+
+msgid "MWMMC_FAILURE_1553B_RWR"
+msgstr "故障: MWMMC - 1553B总线 RWR"
+
+msgid "FCS_FAILURE_NY_SENSOR_1"
+msgstr ""
+
+msgid "EMMC_FAILURE_BATTERY_FCS1"
+msgstr ""
+
+msgid "FAILURE_SMS_PYLON_7"
+msgstr ""
+
+msgid "CNI_FAILURE_IFF_TX"
+msgstr "故障: CNI - IFF_TX"
+
+msgid "FAILURE_EXT_LIGHT_LAND"
+msgstr ""
+
+msgid "EMMC_FAILURE_BATTERY_DC2"
+msgstr ""
+
+msgid "FCS_FAILURE_AOA_SENSOR_2"
+msgstr ""
+
+msgid "SWMMC_FAILURE_CMFCD"
+msgstr ""
+
+msgid " Ground Crew: Coordinates for INS is ready!"
+msgstr " 地勤: 停放点经纬度更新完毕!"
+
+msgid "ECS_FAILURE_CANOPY_GLASS_BROKEN"
+msgstr ""
+
+msgid "SWMMC_AAP_NO_RS422_COMM"
+msgstr ""
+
+msgid "FCS_FAILURE_R_ELEVATOR_HYD_1"
+msgstr ""
+
+msgid "EMMC_FAILURE_DC_GENERATOR_VOLTAGE_LOW"
+msgstr ""
+
+msgid "FCS_FAILURE_WOW_3"
+msgstr ""
+
+msgid "FCS_FAILURE_L_ELEVATOR_HYD_2"
+msgstr ""
+
+msgid "INS_FAILURE_ALT_INVALID"
+msgstr "故障: INS - ALT无效"
+
+msgid "OXY_FAILURE_R_LEAK"
+msgstr ""
+
+msgid "FCS_FAILURE_YAW_LVDT_2"
+msgstr ""
+
+msgid "INS_FAILURE_ALGNMENT"
+msgstr "故障: INS - 对准"
+
+msgid "FAILURE_EXT_LIGHT_FORMATION_LEFT"
+msgstr ""
+
+msgid " Ground Crew: Finally done!"
+msgstr " 地勤: 搞定了!"
+
+msgid "SNS_FAILURE_COMPUTER"
+msgstr "故障: SNS - 计算机"
+
+msgid "CNI_FAILURE_COM1_SECOS"
+msgstr "故障: CNI - COM1 SECOS"
+
+msgid "INS_DATA_DEGRADED"
+msgstr "故障: INS - 数据降级"
+
+msgid "EMMC_FAILURE_DADS"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_RATE_GYRO_1"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_IFF"
+msgstr "故障: MWMMC - 1553B总线 IFF"
+
+msgid "ZCP_FAILURE_MALFUNC"
+msgstr "故障: ZCP - 失效"
+
+msgid "ENGINE_FAILURE_N2_TURBINE"
+msgstr ""
+
+msgid "FCS_FAILURE_COMP_2"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_LVDT_3"
+msgstr ""
+
+msgid "SWMMC_FAILURE_AVI"
+msgstr ""
+
+msgid " Ground Crew: Hey! Do Not Move!"
+msgstr " 地勤: 嘿! 不要移动!"
+
+msgid "FCS_FAILURE_NZ_SENSOR_3"
+msgstr ""
+
+msgid "OXY_FAILURE_R_LEAK_SEVERE"
+msgstr ""
+
+msgid "FCS_FAILURE_ROLL_ELEC_SERVO_1"
+msgstr ""
+
+msgid "ENGINE_FAILURE_AB_IGNITION_UNIT"
+msgstr ""
+
+msgid " Ground Crew: Copy! Updating the DTC now!"
+msgstr " 地勤: 收到! 开始更新DTC卡!"
+
+msgid "FCS_FAILURE_ROLL_AUGD_1"
+msgstr ""
+
+msgid "FAILURE_SMS_PYLON_5"
+msgstr ""
+
+msgid "RDR_FAILURE_TRANSMITTER"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_1_EXTERNAL_LEAKAGE"
+msgstr ""
+
+msgid "ENGINE_FAILURE_N2_COMPRESSOR"
+msgstr ""
+
+msgid "RDR_FAILURE_RX_FRONT_END_DEGRATION"
+msgstr ""
+
+msgid "EMMC_FAILURE_ELECT_EQUIP_HOT"
+msgstr ""
+
+msgid "SNS_FAILURE_ANTENNA"
+msgstr "故障: SNS - 天线"
+
+msgid "MWMMC_FAILURE_1553B_ILS"
+msgstr "故障: MWMMC - 1553B总线 ILS"
+
+msgid "SWMMC_DVR_NO_RS422_COMM"
+msgstr ""
+
+msgid "FAILURE_EXT_LIGHT_TAXI"
+msgstr ""
+
+msgid "CNI_FAILURE_TACAN"
+msgstr "故障: CNI - TACAN"
+
+msgid "FCS_FAILURE_EFCS_2"
+msgstr ""
+
+msgid " Ground Crew: Roger! Standby! Configuring laser code!"
+msgstr " 地勤: 收到! 稍等! 正在设置激光编码!"
+
+msgid "EMMC_FAILURE_SHARS"
+msgstr ""
+
+msgid "COMM1 VHF Radio"
+msgstr "COMM1 VHF 无线电"
+
+msgid "FAILURE_HYDRAULICS_EMERGE"
+msgstr ""
+
+msgid "DTC_FAILURE_DATA_DECIPHER"
+msgstr "故障: DTC - 数据解码"
+
+msgid "FCS_FAILURE_WOW_1"
+msgstr ""
+
+msgid "EMMC_FAILURE_SCU_AC2AC36V"
+msgstr ""
+
+msgid "EMMC_FAILURE_DADS_LPTU"
+msgstr ""
+
+msgid "RDR_FAILURE_DEGRATED_PERFORMANCE"
+msgstr ""
+
+msgid "SWMMC_FAILURE_CTVS"
+msgstr ""
+
+msgid "EMMC_FAILURE_TRU"
+msgstr ""
+
+msgid "OESP_FAILURE_CH_DISP_L"
+msgstr "故障: OESP - 左侧箔条布撒器"
+
+msgid "MWMMC_FAILURE_1553B_LMFCD"
+msgstr "故障: MWMMC - 1553B总线 LMFCD"
+
+msgid "FAILURE_HYDRAULICS_2_PUMP"
+msgstr ""
+
+msgid "EMMC_FAILURE_BATTERY_FCS2"
+msgstr ""
+
+msgid "SWMMC_FAILURE_RMFCD"
+msgstr ""
+
+msgid "SWMMC_FAILURE_LMFCD"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_RMFCD"
+msgstr "故障: MWMMC - 1553B总线 RMFCD"
+
+msgid "FAILURE_SMS_PYLON_1"
+msgstr ""
+
+msgid "RWR_FAILURE_RECEIVER_XX1"
+msgstr ""
+
+msgid "SWMMC_FAILURE_PS"
+msgstr ""
+
+msgid "MWMMC_FAILURE_PS"
+msgstr "故障: MWMMC - PS"
+
+msgid "EMMC_FAILURE_FUEL_START_PUMP"
+msgstr ""
+
+msgid "ECS_FAILURE_CANOPY_GLASS_CRACKED"
+msgstr ""
+
+msgid " Ground Crew: DTC update complete!"
+msgstr " 地勤: DTC卡更新完毕!"
+
+msgid "EMMC_FAILURE_CANOPY_UNLOCK"
+msgstr ""
+
+msgid "SHARS_FAILURE_SENSOR"
+msgstr "故障: SHARS1 - 传感器"
+
+msgid "INS_FAILURE_DATA_INVALID"
+msgstr "故障: INS - DATA无效"
+
+msgid "OXY_FAILURE_AUTO_100_O2"
+msgstr ""
+
+msgid "EMMC_FAILURE_AC_GROUND"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_1_EXTERNAL_LEAKAGE_SEVERE"
+msgstr ""
+
+msgid "EMMC_FAILURE_STATIC_INVERTER"
+msgstr ""
+
+msgid " Ground Crew: Copy! Be patient, configuring probe a bit time consuming!"
+msgstr " 地勤: 收到! 处理受油管需要时间，请耐心等候!"
+
+msgid "SWMMC_FAILURE_HUD"
+msgstr ""
+
+msgid "SWMMC_CSU_NO_RS422_COMM"
+msgstr ""
+
+msgid " Ground Crew: Clean air space!"
+msgstr " 地勤: 清除空域数据!"
+
+msgid "FCS_FAILURE_ROLL_LVDT_1"
+msgstr ""
+
+msgid " Ground Crew: Incorrect payload! Please re-select!"
+msgstr " 地勤: 挂架选择错误! 请重来!"
+
+msgid "FCS_FAILURE_R_ELEVATOR_ELEC_B"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_RATE_GYRO_4"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_CMFCD"
+msgstr "故障: MWMMC - 1553B总线 CMFCD"
+
+msgid "RDR_FAILURE_ANTENNA_DEGRATION"
+msgstr ""
+
+msgid "FCS_FAILURE_L_ELEVATOR_ELEC_C"
+msgstr ""
+
+msgid "FCS_FAILURE_L_ELEVATOR_ELEC_A"
+msgstr ""
+
+msgid "INS_FAILURE_GPS_RECEIVER"
+msgstr "故障: INS - GPS接收机"
+
+msgid "EMMC_FAILURE_DC_GENERATOR_VOLTAGE_HIGH"
+msgstr ""
+
+msgid "FAILURE_ECS_ELEC"
+msgstr ""
+
+msgid "FCS_FAILURE_Q_SENSOR_3"
+msgstr ""
+
+msgid "INS_FAILURE_ACC"
+msgstr "故障: INS - 加速度计"
+
+msgid "FCS_FAILURE_ROLL_ELEC_SERVO_2"
+msgstr ""
+
+msgid "RDR_FAILURE_PREESURIZATION"
+msgstr ""
+
+msgid "ENGINE_FAILURE_APD88_STARTER"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_2_EXTERNAL_LEAKAGE_SEVERE"
+msgstr ""
+
+msgid "FCS_FAILURE_Q_SENSOR_2"
+msgstr ""
+
+msgid "FCS_FAILURE_L_ELEVATOR_HYD_1"
+msgstr ""
+
+msgid "SNS_FAILURE_CABLE"
+msgstr "故障: SNS - 连接线"
+
+msgid "RDR_FAILURE_RECEIVER_DEGRATION"
+msgstr ""
+
+msgid "SWMMC_FAILURE_DVR"
+msgstr ""
+
+msgid "OESP_FAILURE_FL_DISP_L"
+msgstr "故障: OESP - 左侧热诱布撒器"
+
+msgid " Ground Crew: Copy! To refill utilities!"
+msgstr " 地勤: 收到! 开始重装填!"
+
+msgid "MWMMC_FAILURE_IOC"
+msgstr "故障: MWMMC - IOC"
+
+msgid "INS_WIND_INVALID"
+msgstr "故障: INS - 风参无效"
+
+msgid "FCS_FAILURE_YAW_ELEC_SERVO_2"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_1_PUMP"
+msgstr ""
+
+msgid "COMM2 UHF Radio"
+msgstr "COMM2 UHF 无线电"
+
+msgid "FCS_FAILURE_ROLL_RATE_GYRO_1"
+msgstr ""
+
+msgid "FCS_FAILURE_NY_SENSOR_2"
+msgstr ""
+
+msgid "EMMC_FAILURE_DC_GENERATOR"
+msgstr ""
+
+msgid "FCS_FAILURE_L_ELEVATOR_ELEC_B"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_FCS"
+msgstr "故障: MWMMC - 1553B总线 FCS"
+
+msgid "RDR_FAILURE_RX_FRONT_END"
+msgstr ""
+
+msgid "RDR_FAILURE_PEDESTAL"
+msgstr ""
+
+msgid "RDR_FAILURE_SERVOLOOP"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_RATE_GYRO_2"
+msgstr ""
+
+msgid "FCS_FAILURE_NZ_SENSOR_2"
+msgstr ""
+
+msgid "EMMC_FAILURE_FUEL_LOWER_PUMP"
+msgstr ""
+
+msgid " Ground Crew: Inlet cover and ladder installed!"
+msgstr " 地勤: 进气道遮罩和登机梯已安装!"
+
+msgid "OESP_FAILURE_MAWS_R"
+msgstr "故障: OESP - 右侧导弹逼近告警器"
+
+msgid "FCS_FAILURE_R_ELEVATOR_ELEC_D"
+msgstr ""
+
+msgid "FCS_FAILURE_COMP_1"
+msgstr ""
+
+msgid "OESP_FAILURE_MAWS_L"
+msgstr "故障: OESP - 左侧导弹逼近告警器"
+
+msgid "MWMMC_FAILURE_1553B_OESP"
+msgstr "故障: MWMMC - 1553B总线 OESP"
+
+msgid "FAILURE_EXT_LIGHT_FORMATION_RIGHT"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_HUD"
+msgstr "故障: MWMMC - 1553B总线 HUD"
+
+msgid "FCS_FAILURE_ROLL_RATE_GYRO_2"
+msgstr ""
+
+msgid "DTC_FAILURE_CARD_BROKEN"
+msgstr "故障: DTC - 数据卡损坏"
+
+msgid "OXY_FAILURE_HIGH_PRESS"
+msgstr ""
+
+msgid "RDR_FAILURE_PROCESSOR"
+msgstr ""
+
+msgid "RDR_FAILURE_PROCESSOR_DEGRATION"
+msgstr ""
+
+msgid "RDR_FAILURE_RECEIVER"
+msgstr ""
+
+msgid "EMMC_FAILURE_COCKPIT_PRESSURE_LOW"
+msgstr ""
+
+msgid "EMMC_FAILURE_BAU"
+msgstr ""
+
+msgid "EMMC_FAILURE_DADS_RPTU"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_2_ACCU"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_LVDT_2"
+msgstr ""
+
+msgid "EMMC_FAILURE_TRU_AC2DC28V"
+msgstr ""
+
+msgid "RWR_FAILURE_RECEIVER_XX2"
+msgstr ""
+
+msgid "MWMMC_FAILURE_DMP"
+msgstr "故障: MWMMC - DMP"
+
+msgid "SWMMC_FAILURE_DMP"
+msgstr ""
+
+msgid "FCS_FAILURE_YAW_RATE_GYRO_1"
+msgstr ""
+
+msgid "RWR_FAILURE_ANTENNA_FRONT_RIGHT"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_EMMC"
+msgstr "故障: MWMMC - 1553B总线 EMMC"
+
+msgid "FCS_FAILURE_WOW_4"
+msgstr ""
+
+msgid "FCS_FAILURE_NZ_SENSOR_1"
+msgstr ""
+
+msgid "FCS_FAILURE_LG_2"
+msgstr ""
+
+msgid "FAILURE_SMS_PYLON_2"
+msgstr ""
+
+msgid "FCS_FAILURE_P_SENSOR_2"
+msgstr ""
+
+msgid "FCS_FAILURE_COMP_4"
+msgstr ""
+
+msgid "FCS_FAILURE_YAW_AUGD_1"
+msgstr ""
+
+msgid " Ground Crew: Hey! Shutdown the engine and power first!"
+msgstr " 地勤: 嘿! 请先关车和断电!"
+
+msgid "RDR_FAILURE_ARRAY"
+msgstr ""
+
+msgid "EMMC_FAILURE_DC_GENERATOR_SUBSYSTEM"
+msgstr ""
+
+msgid "EMMC_FAILURE_LWC"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_1_ACCU"
+msgstr ""
+
+msgid "FAILURE_SMS_PYLON_6"
+msgstr ""
+
+msgid "EMMC_FAILURE_AC_GENERATOR"
+msgstr ""
+
+msgid "OXY_FAILURE_L_LEAK_SEVERE"
+msgstr ""
+
+msgid "INS_PU_REJECTED"
+msgstr "故障: INS - PU拒绝"
+
+msgid "SWMMC_FAILURE_CSU"
+msgstr ""
+
+msgid "DTC_FAILURE_READER_BROKEN"
+msgstr "故障: DTC - 读卡器损坏"
+
+msgid "FCS_FAILURE_YAW_AUGD_2"
+msgstr ""
+
+msgid " Ground Crew: Open the canopy!"
+msgstr " 地勤: 打开座舱盖!"
+
+msgid "MWMMC_FAILURE_AVI"
+msgstr "故障: MWMMC - AVI"
+
+msgid " Ground Crew: Copy! To install inlet cover and ladder!"
+msgstr " 地勤: 收到! 安装进气道遮罩和登机梯!"
+
+msgid "FCS_FAILURE_P_SENSOR_1"
+msgstr ""
+
+msgid "FCS_FAILURE_EFCS_1"
+msgstr ""
+
+msgid "AUTOSTART STOPPED"
+msgstr ""
+
+msgid "FCS_FAILURE_AOA_SENSOR_1"
+msgstr ""
+
+msgid "ENGINE_FAILURE_N1_COMPRESSOR"
+msgstr ""
+
+msgid "FCS_FAILURE_P_SENSOR_3"
+msgstr ""
+
+msgid " Ground Crew: Utilities refill complete!"
+msgstr " 地勤: 重装填完毕!"
+
+msgid "RWR_FAILURE_ANTENNA_REAR_RIGHT"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_LVDT_1"
+msgstr ""
+
+msgid "ECS_FAILURE_WS_GLASS_BROKEN"
+msgstr ""
+
+msgid "ENGINE_FAILURE_N1_TURBINE"
+msgstr ""
+
+msgid "RWR_FAILURE_RECEIVER_XX3"
+msgstr ""
+
+msgid "EMMC_FAILURE_SCU_DC2AC36V"
+msgstr ""
+
+msgid "FCS_FAILURE_R_ELEVATOR_ELEC_C"
+msgstr ""
+
+msgid "FCS_FAILURE_Q_SENSOR_1"
+msgstr ""
+
+msgid "MWMMC_FAILURE"
+msgstr "故障: MWMMC"
+
+msgid "FCS_FAILURE_R_ELEVATOR_ELEC_A"
+msgstr ""
+
+msgid "EMMC_FAILURE_SCU_DC2AC115V"
+msgstr ""
+
+msgid "OESP_FAILURE_FL_DISP_R"
+msgstr "故障: OESP - 右侧热诱布撒器"
+
+msgid "EMMC_FAILURE_AC_GENERATOR_FEED_LINE"
+msgstr ""
+
+msgid "FAILURE_EXT_LIGHT_NAV_TAIL"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_RDR"
+msgstr "故障: MWMMC - 1553B总线 RDR"
+
+msgid "EMMC_FAILURE_EMMC"
+msgstr ""
+
+msgid "OESP_FAILURE_CH_DISP_R"
+msgstr "故障: OESP - 右侧箔条布撒器"
+
+msgid "FAILURE_ECS_MECH"
+msgstr ""
+
+msgid "FCS_FAILURE_ROLL_LVDT_2"
+msgstr ""
+
+msgid "RWR_FAILURE_DB_NOT_LOADED"
+msgstr ""
+
+msgid "FCS_FAILURE_L_ELEVATOR_ELEC_D"
+msgstr ""
+
+msgid "OXY_FAILURE_AIR_O2_SWITCH"
+msgstr ""
+
+msgid " Ground Crew: Laser code ready!"
+msgstr " 地勤: 激光编码已改好!"
+
+msgid "ECS_FAILURE_WS_GLASS_CRACKED"
+msgstr ""
+
+msgid "FAILURE_EXT_LIGHT_NAV_LEFT"
+msgstr ""
+
+msgid "FCS_FAILURE_LG_3"
+msgstr ""
+
+msgid "MWMMC_FAILURE_MBI"
+msgstr "故障: MWMMC - MBI"
+
+msgid "INS_FAILURE_GYRO"
+msgstr "故障: INS - 陀螺仪"
+
+msgid "SWMMC_FAILURE_MBI"
+msgstr ""
+
+msgid "DTC_FAILURE_DATA_CRC"
+msgstr "故障: DTC - 数据校验"
+
+msgid "EMMC_FAILURE_DC_GENERATOR_CONTROLLER"
+msgstr ""
+
+msgid "SWMMC_FAILURE_AAP"
+msgstr ""
+
+msgid "EMMC_FAILURE_PROBES_HEATING"
+msgstr ""
+
+msgid "CNI_FAILURE_COM1"
+msgstr "故障: CNI - COM1"
+
+msgid "OXY_FAILURE_L_LEAK"
+msgstr ""
+
+msgid "SWMMC_FAILURE_IOC"
+msgstr ""
+
+msgid "FCS_FAILURE_AOA_SENSOR_3"
+msgstr ""
+
+msgid "EMMC_FAILURE_LANDING_GEAR"
+msgstr ""
+
+msgid "FCS_FAILURE_COMP_3"
+msgstr ""
+
+msgid " Ground Crew: Please unplug the card first!"
+msgstr " 地勤: 请先移除DTC卡!"
+
+msgid "FCS_FAILURE_LG_4"
+msgstr ""
+
+msgid "FCS_FAILURE_Q_SENSOR_4"
+msgstr ""
+
+msgid "CNI_FAILURE_RALT"
+msgstr "故障: CNI - RALT"
+
+msgid " Ground Crew: Copy! To remove inlet cover and ladder!"
+msgstr " 地勤: 收到! 移除进气道遮罩和登机梯!"
+
+msgid "ENGINE_FAILURE_DEEC"
+msgstr ""
+
+msgid "FCS_FAILURE_P_SENSOR_4"
+msgstr ""
+
+msgid "FCS_FAILURE_YAW_ELEC_SERVO_1"
+msgstr ""
+
+msgid "RWR_FAILURE_ANTENNA_FRONT_LEFT"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_SAIU"
+msgstr "故障: MWMMC - 1553B总线 SAIU"
+
+msgid "Intercom"
+msgstr "对讲机"
+
+msgid " Ground Crew: Copy! Refuel external tanks!"
+msgstr " 地勤: 收到! 给副油箱加油!"
+
+msgid "CNI_FAILURE_COM2"
+msgstr "故障: CNI - COM2"
+
+msgid "EMMC_FAILURE_FUEL_LOW_LEVEL"
+msgstr ""
+
+msgid "FCS_FAILURE_YAW_RATE_GYRO_2"
+msgstr ""
+
+msgid " Ground Crew: Inlet cover and ladder removed!"
+msgstr " 地勤: 进气道遮罩和登机梯已移除!"
+
+msgid "RWR_FAILURE_COMPUTER"
+msgstr ""
+
+msgid "FAILURE_EXT_LIGHT_NAV_RIGHT"
+msgstr ""
+
+msgid " Ground Crew: External tank(s) refuel done!"
+msgstr " 地勤: 副油箱加油完毕!"
+
+msgid "ENGINE_FAILURE_NOZZLE_CONTROLLER"
+msgstr ""
+
+msgid "EMMC_FAILURE_FUEL_UPPER_PUMP"
+msgstr ""
+
+msgid "CNI_FAILURE_IFF_RX"
+msgstr "故障: CNI - IFF_RX"
+
+msgid "FCS_FAILURE_LG_1"
+msgstr ""
+
+msgid " Ground Crew: Switch air space source to "
+msgstr " 地勤: 更换空域数据源至"
+
+msgid "MWMMC_FAILURE_1553B_RALT"
+msgstr "故障: MWMMC - 1553B总线 RALT"
+
+msgid "FCS_FAILURE_ROLL_AUGD_2"
+msgstr ""
+
+msgid "EMMC_FAILURE_BATTERY_DC1"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_RATE_GYRO_3"
+msgstr ""
+
+msgid "RDR_FAILURE_TRANSMITTER_DEGRATION"
+msgstr ""
+
+msgid "EMMC_FAILURE_DADS_MPTU"
+msgstr ""
+
+msgid "EMMC_FAILURE_ECS_OFF"
+msgstr ""
+
+msgid "CNI_FAILURE_ILS"
+msgstr "故障: CNI - ILS"
+
+msgid "FAILURE_HYDRAULICS_1_INTERNAL_LEAKAGE"
+msgstr ""
+
+msgid "FCS_FAILURE_WOW_2"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_EMERGE_ACCU"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_INS"
+msgstr "故障: MWMMC - 1553B总线 INS"
+
+msgid "FCS_FAILURE_YAW_LVDT_1"
+msgstr ""
+
+msgid "FCS_FAILURE_R_ELEVATOR_HYD_2"
+msgstr ""
+
+msgid "FAILURE_HYDRAULICS_2_EXTERNAL_LEAKAGE"
+msgstr ""
+
+msgid "MWMMC_FAILURE_1553B_TACAN"
+msgstr "故障: MWMMC - 1553B总线 TACAN"
+
+msgid "EMMC_FAILURE_AC_GENERATOR_SUBSYSTEM"
+msgstr ""
+
+msgid "FCS_FAILURE_PITCH_LVDT_4"
+msgstr ""
+
+msgid "ENGINE_FAILURE_COMBUSTOR"
+msgstr ""
+
+msgid "FAILURE_SMS_PYLON_4"
+msgstr ""
+
+msgid "RWR_FAILURE_ANTENNA_REAR_LEFT"
+msgstr ""
+
+msgid "SWMMC_FAILURE"
+msgstr ""
+
+msgid " Ground Crew: No ordnance, unable to program!"
+msgstr " 地勤: 该挂架无激光制导武器!"
+
+msgid "MWMMC_FAILURE_1553B_SPJ"
+msgstr "故障: MWMMC - 1553B总线 SPJ"
+
+msgid "FAILURE_EXT_LIGHT_ANTICOL"
+msgstr ""
+
+msgid "FAILURE_SMS_PYLON_3"
+msgstr ""

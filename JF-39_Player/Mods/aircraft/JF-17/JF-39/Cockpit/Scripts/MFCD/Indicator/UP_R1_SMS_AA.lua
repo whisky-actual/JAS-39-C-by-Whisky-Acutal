@@ -122,6 +122,10 @@ local texts = {
         ctrls = {{"sms_state_draw"}},
     },
     
+    {-- Missle Norm/ECCM
+        cx = MFCD_FONT_UD3_X, cy = MFCD_FONT_U_Y, value = "NORM",
+        ctrls = {{"sms_prog_aa_msl_eccm"}, {"mfcd_isedit_show", 0}},
+    },
     {-- Missle Arm State
         cx = MFCD_FONT_R_HORI_X, cy = MFCD_FONT_LR2_Y, value = "MSL STATE", align = "RightCenter",
         ctrls = {{"sms_prog_aa_msl_arm"}, {"mfcd_isedit_show", 0}},
@@ -183,27 +187,3 @@ feed_box.indices     = DEF_BOX_INDICES
 feed_box.controllers = {{"sms_feed_box"}}
 AddToUpper(feed_box)
 feed_box = nil
-
--- TODO: add controller
-split_white_line                 = CreateElement "ceMeshPoly"
-split_white_line.name            = "split_white_line"
-split_white_line.material        = MFCD_MATERIAL_WHITE_Y
-split_white_line.primitivetype   = "triangles"
-split_white_line.vertices        = {{ 1.0,  0.006},
-                                    { 1.0, -0.006},
-                                    {-1.0, -0.006},
-                                    {-1.0,  0.006},}
-split_white_line.indices         = DEF_BOX_INDICES
-split_white_line.init_pos        = {0, -0.4, 0}
---split_white_line.h_clip_relation = h_clip_relations.COMPARE
-split_white_line.level           = PAGE_LEVEL_SMS
-split_white_line.isdraw          = true
-split_white_line.isvisible       = true
-split_white_line.use_mipfilter   = true
-split_white_line.additive_alpha  = true
-split_white_line.collimated      = false
-split_white_line.parent_element  = page_root.name
---split_white_line.controllers     = {{"apply_contrast"}}
---Add(split_white_line)
-split_white_line = nil
-

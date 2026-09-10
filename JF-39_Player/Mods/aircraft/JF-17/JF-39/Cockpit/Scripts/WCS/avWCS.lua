@@ -9,10 +9,6 @@ _ = gettext.translate
 
 dtime = 1.0 / 32
 
-c802ak_cruise_low  = 100.0
-c802ak_cruise_med  = 2000.0
-c802ak_cruise_high = 4000.0
-
 jsow_jdam_range_type = 0
 laser_aim_type       = 0
 

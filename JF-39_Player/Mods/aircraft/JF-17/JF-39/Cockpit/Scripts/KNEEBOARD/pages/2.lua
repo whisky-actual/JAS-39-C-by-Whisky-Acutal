@@ -19,6 +19,13 @@ local LINE_7_Y = LINE_6_Y - DIST_Y
 local LINE_8_Y = LINE_7_Y - DIST_Y
 local LINE_9_Y = LINE_8_Y - DIST_Y
 
+local SUB_TITLE_Y  = LINE_9_Y - 2 * DIST_Y
+local LINE_11_Y    = SUB_TITLE_Y
+local LINE_13_Y    = LINE_11_Y - DIST_Y
+local LINE_14_Y    = LINE_13_Y - DIST_Y
+local LINE_15_Y    = LINE_14_Y - DIST_Y
+local LINE_16_Y    = LINE_15_Y - DIST_Y
+
 local LINE_X_1 = -0.8
 local LINE_X_2 = -0.6
 local LINE_X_3 = -0.4
@@ -30,7 +37,7 @@ local LINE_X_8 = 0.6
 local LINE_X_9 = 0.8
 
 local text_str = {
-    -- Title
+    ---- Title
     {
         init_pos = {KBD_TITLE_X, KBD_TITLE_Y}, value = "OESP PROGRAMMS", align = "CenterCenter", strdefs = KBD_STRINGDEFS_DEF_X15,
     },
@@ -103,6 +110,27 @@ local text_str = {
     },
     
     
+    ---- Title
+    {
+        init_pos = {KBD_TITLE_X, SUB_TITLE_Y}, value = "EW ANTI-RAD TARGETS", align = "CenterCenter", strdefs = KBD_STRINGDEFS_DEF_X15,
+    },
+
+    {
+        init_pos = {LINE_X_1, LINE_13_Y}, value = "TARGET 1:     ", align = "LeftCenter", strdefs = KBD_STRINGDEFS_DEF,
+        ctrls = {{"kbd_ew_target_list", 0},}, mat = KBD_FONT_D,
+    },
+    {
+        init_pos = {LINE_X_1, LINE_14_Y}, value = "TARGET 2:     ", align = "LeftCenter", strdefs = KBD_STRINGDEFS_DEF,
+        ctrls = {{"kbd_ew_target_list", 1},}, mat = KBD_FONT_D,
+    },
+    {
+        init_pos = {LINE_X_1, LINE_15_Y}, value = "TARGET 3:     ", align = "LeftCenter", strdefs = KBD_STRINGDEFS_DEF,
+        ctrls = {{"kbd_ew_target_list", 2},}, mat = KBD_FONT_D,
+    },
+    {
+        init_pos = {LINE_X_1, LINE_16_Y}, value = "TARGET 4:     ", align = "LeftCenter", strdefs = KBD_STRINGDEFS_DEF,
+        ctrls = {{"kbd_ew_target_list", 3},}, mat = KBD_FONT_D,
+    },
 }
 
 AddStrTblElements(text_str, KBDBase.name)

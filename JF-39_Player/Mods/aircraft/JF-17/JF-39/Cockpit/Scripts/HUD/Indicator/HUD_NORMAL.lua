@@ -8,9 +8,9 @@ local text_strpoly
 fpm_poly             = CreateElement "ceTexPoly"
 fpm_poly.material    = HUD_TEX_IND1
 fpm_poly.name        = fpm_name
-fpm_poly.tex_coords  = HUD_tex_coord(128, 464, 240, 240, HUD_TEX_IND1_W, HUD_TEX_IND1_H)
+fpm_poly.tex_coords  = HUD_tex_coord(128, 464, 240, 240, HUD_TEX_IND1_W, HUD_TEX_IND1_H)--location of fligth path marker
 fpm_poly.init_pos    = {0, horizon_offset, 0}
-fpm_poly.vertices    = {{18.834, 18.834}, {18.834,-18.834}, {-18.834,-18.834},{-18.834, 18.834}}
+fpm_poly.vertices    = {{18.834, 18.834}, {18.834,-18.834}, {-18.834,-18.834},{-18.834, 18.834}}--size of fligth path marker
 fpm_poly.indices     = DEF_BOX_INDICES
 fpm_poly.controllers = {{"hud_fpm"},}
 AddElementObject(fpm_poly)
@@ -25,7 +25,6 @@ fpm_noti_poly.indices        = DEF_BOX_INDICES
 fpm_noti_poly.parent_element = fpm_name
 fpm_noti_poly.controllers    = {{"hud_fpm_noti"},}
 AddElementObject(fpm_noti_poly)
-
 
 --notify
 text_strpoly                = CreateElement "ceStringPoly"
@@ -47,7 +46,6 @@ text_strpoly.value          = "    " -- ALIGN
 text_strpoly.stringdefs     = HUD_STRINGDEFS_DEF_X15
 AddElementObject(text_strpoly)
 
-
 --
 local Alt_nogo_noti           = CreateElement "ceTexPoly"
 Alt_nogo_noti.material        = HUD_TEX_IND2
@@ -61,41 +59,41 @@ Alt_nogo_noti.parent_element  = fpm_name
 Alt_nogo_noti.isdraw          = false
 AddHUDElement(Alt_nogo_noti)
 
-----------------------------------
+---------------------------------------------------------------------------------------------------
 hud_hdg_txt_pos_y = 29.382
 
 local texts ={
     -- heading
-    {value="HDG", alignment="CenterCenter", name = "hud_hdg_txt", formats={"%s"}, init_pos={0, hud_hdg_txt_pos_y}, ctrls={{"hud_txt_hdg"},{"hud_check_declutter"},}},
+    --{value="HDG", alignment="CenterCenter", name = "hud_hdg_txt", formats={"%s"}, init_pos={0, hud_hdg_txt_pos_y}, ctrls={{"hud_txt_hdg"},{"hud_check_declutter"},}},--Heading value
     
-    --left
-    {value="A",     alignment="LeftCenter",  formats={"%s"}, init_pos={-119.599, 20.592}, ctrls={{"hud_txt_lwin0"},} },
-    {value="A_val", alignment="RightCenter", formats={"%s"}, init_pos={-78.163, 20.592}, ctrls={{"hud_txt_lwin1"},} },
-    {value="G",     alignment="LeftCenter",  formats={"%s"}, init_pos={-119.599, 11.175},},    
-    {value="G_val", alignment="RightCenter", formats={"%s"}, init_pos={-78.163, 11.175}, ctrls={{"hud_txt_lwin2"},} },
+    --Left
+    {value="A",     alignment="RightCenter",  formats={"%s"}, init_pos={-135, 012}, ctrls={{"hud_txt_lwin0"},} },--Alpha
+    {value="A_val", alignment="RightCenter", formats={"%s"}, init_pos={-105, 012}, ctrls={{"hud_txt_lwin1"},} },--Alpha value
+    {value="G",     alignment="RightCenter",  formats={"%s"}, init_pos={-135, 000},},--G    
+    {value="G_val", alignment="RightCenter", formats={"%s"}, init_pos={-105, 000}, ctrls={{"hud_txt_lwin2"},} },--G value 
+    {value="AS",  alignment="RightCenter", formats={"%s"},   init_pos={-120, spd_bar_vert_bias}, ctrls={{"hud_txt_lwin3"},{"hud_check_declutter"},},},--Air speed
+    {value="AS", alignment="RightCenter",  formats={"%s"},   init_pos={-145, spd_bar_vert_bias}, ctrls={{"hud_txt_lwin31"},{"hud_check_declutter"},}},--Air speed type
+    {value="ARM",  alignment="RightCenter",  formats={"%s"}, init_pos={-105, -142}, ctrls={{"hud_txt_lwin5"},} },--Selected weapon
+    {value="MODE",alignment="RightCenter",  formats={"%s"},  init_pos={-105, -155}, ctrls={{"hud_txt_lwin6"},} },--Mode
+    {value="*",   alignment="RightCenter", formats={"%s"},   init_pos={-112.065, -161.474}, ctrls={{"hud_txt_lwin7"},} },--HUD SOI
+    --{value="M",   alignment="RightCenter",  formats={"%s"}, init_pos={-92, -110}, ctrls={{"hud_txt_lwin4"},}},--Mach number
+    --{value="GM",  alignment="RightCenter",  formats={"%s"}, init_pos={-98, -115}, ctrls={{"hud_txt_lwin8"},} },--Peak (Maximum) Aircraft G    
     
-    {value="AS",  alignment="RightCenter", formats={"%s"}, init_pos={-98.881, spd_bar_vert_bias}, ctrls={{"hud_txt_lwin3"},{"hud_check_declutter"},},},
-    {value="AST", alignment="LeftCenter",  formats={"%s"}, init_pos={-97.312, spd_bar_vert_bias+3.45}, ctrls={{"hud_txt_lwin31"},{"hud_check_declutter"},}},
-    {value="M",   alignment="LeftCenter",  formats={"%s"}, init_pos={-139.689, -123.805}, ctrls={{"hud_txt_lwin4"},}},
-    {value="ARM", alignment="RightCenter", formats={"%s"}, init_pos={-77.535, -133.223}, ctrls={{"hud_txt_lwin5"},} }, -- -77.74
-    {value="MODE",alignment="LeftCenter",  formats={"%s"}, init_pos={-139.689, -142.64}, ctrls={{"hud_txt_lwin6"},} },
-    {value="*",   alignment="RightCenter", formats={"%s"}, init_pos={-112.065, -161.474}, ctrls={{"hud_txt_lwin7"},} },
-    {value="GM",  alignment="LeftCenter",  formats={"%s"}, init_pos={-139.689, -170.892}, ctrls={{"hud_txt_lwin8"},} },
-    
-    --right
-    {value="FUEL", alignment="RightCenter", formats={"%s"}, init_pos={ 112.065,  11.175}, ctrls={{"hud_txt_rwin1"},} },
-    {value="VVI",  alignment="RightCenter", formats={"%s"}, init_pos={  81.930, -23.355}, ctrls={{"hud_txt_rwin9"},{"hud_check_declutter"},}},
-    {value="BALT", alignment="RightCenter", formats={"%s"}, init_pos={ 130.272, alt_bar_vert_bias}, ctrls={{"hud_txt_rwin2"},{"hud_check_declutter"}}},
-    {value="RALT", alignment="LeftCenter",  formats={"%s"}, init_pos={ 77.535, -123.805}, ctrls={{"hud_txt_rwin3"},} },
-    {value="RANGE",alignment="LeftCenter",  formats={"%s"}, init_pos={ 77.535, -133.223}, ctrls={{"hud_txt_rwin4"},} },
-    {value="KTS",  alignment="LeftCenter",  formats={"%s"}, init_pos={ 77.535, -142.640}, ctrls={{"hud_txt_rwin5"},} },
-    {value="DT",   alignment="LeftCenter",  formats={"%s"}, init_pos={ 77.535, -152.057}, ctrls={{"hud_txt_rwin6", -9.418/2},} },
-    {value="FPL",  alignment="LeftCenter",  formats={"%s"}, init_pos={ 77.535, -161.474}, ctrls={{"hud_txt_rwin7", -9.418},} },
-    {value="TIME", alignment="LeftCenter",  formats={"%s"}, init_pos={ 77.535, -170.892}, ctrls={{"hud_txt_rwin8", -9.418},}},
-    
+    --Right
+    {value="VVI",  alignment="LeftCenter", formats={"%s"}, init_pos={ 100, -110}, ctrls={{"hud_txt_rwin9"},{"hud_check_declutter"},}},-- Veritcal Velocity
+    {value="RALT", alignment="LeftCenter",  formats={"%s"}, init_pos={ 100, -125}, ctrls={{"hud_txt_rwin3"},} },--Radar ALT
+    {value="DT",   alignment="LeftCenter",  formats={"%s"}, init_pos={ 100, -140}, ctrls={{"hud_txt_rwin6", -9.418/2},} },--Time to Destination
+    {value="KTS",  alignment="LeftCenter",  formats={"%s"}, init_pos={ 100, -165}, ctrls={{"hud_txt_rwin5"},} },--
+
+   --Center  
+    {value="FPL",  alignment="LeftCenter",  formats={"%s"}, init_pos={-025, -165}, ctrls={{"hud_txt_rwin7", -9.418},} },--Flight Plan Leg
+    {value="RANGE",alignment="LeftCenter",  formats={"%s"}, init_pos={-035, -185}, ctrls={{"hud_txt_rwin4"},} },-- Distance to Target
+    --{value="FUEL", alignment="RightCenter", formats={"%s"}, init_pos={ 112.065,  11.175}, ctrls={{"hud_txt_rwin1"},} },--Total fuel
+    --{value="BALT", alignment="RightCenter", formats={"%s"}, init_pos={ 130.272, alt_bar_vert_bias}, ctrls={{"hud_txt_rwin2"},{"hud_check_declutter"}}},--Barometric Altitude
+    --{value="TIME", alignment="LeftCenter",  formats={"%s"}, init_pos={ 77.535, -170.892}, ctrls={{"hud_txt_rwin8", -9.418},}},--Time
+
     --warning
     --{value="WARN", alignment="CenterCenter", formats={"%s"}, init_pos={ 0, -1 *HUD_HALF_HEIGHT*1/2}, ctrls={{"hud_txt_cwin1"},}, strdef = HUD_STRINGDEFS_DEF_X20,},
-    
 }
 
 for i=1, #(texts) do
@@ -116,6 +114,57 @@ for i=1, #(texts) do
     text_strpoly = nil
 end
 
+-- Add caret (">") next to "AS" value
+local caret_strpoly = CreateElement "ceStringPoly"
+caret_strpoly.material = HUD_IND_FONT
+caret_strpoly.init_pos = {-120, spd_bar_vert_bias} -- Adjust this to place the caret next to "AS"
+caret_strpoly.alignment = "LeftCenter" -- Align it to the left of the "AS" value
+caret_strpoly.value = ">" -- The caret symbol
+caret_strpoly.stringdefs = HUD_STRINGDEFS_DEF_X15 -- Adjust string size if needed
+caret_strpoly.controllers = {{"hud_check_power"}} -- Use the appropriate controller if needed
+AddHUDElement(caret_strpoly)
+
+-- Add caret (">") next to "ALT" value
+local caret_alt = CreateElement "ceStringPoly"
+caret_alt.material = HUD_IND_FONT
+caret_alt.init_pos = {95, alt_bar_vert_bias} -- Adjust this to place the caret next to "AS"
+caret_alt.alignment = "LeftCenter" -- Align it to the left of the "AS" value
+caret_alt.value = ">" -- The caret symbol
+caret_alt.stringdefs = HUD_STRINGDEFS_DEF_X15 -- Adjust string size if needed
+caret_alt.controllers = {{"hud_check_power"}} -- Use the appropriate controller if needed
+AddHUDElement(caret_alt)
+
+-- Add caret ("^") under the hsg tape
+local caret_hdg = CreateElement "ceTexPoly"
+caret_hdg.name         = "caret_hdg"
+caret_hdg.material     = HUD_TEX_IND1
+caret_hdg.vertices     = {{-10, -8}, {0, 8}, {10, -8}} -- Flatter and thicker
+caret_hdg.tex_coords   = HUD_tex_coord(0, 584, 128, 128, HUD_TEX_IND1_W, HUD_TEX_IND1_H)
+caret_hdg.indices      = {0, 1, 2}
+caret_hdg.init_pos     = {0, 35, 0} -- Moved up by 35 pixels
+caret_hdg.controllers  = {{"hud_check_power"}}
+AddHUDElement(caret_hdg)
+--[[
+-- Add Pipe_Left
+local Pipe_Left = CreateElement "ceStringPoly"
+Pipe_Left.material = HUD_IND_FONT
+Pipe_Left.init_pos = {-175, spd_bar_vert_bias} -- Adjust this to place the caret next to "AS"
+Pipe_Left.alignment = "LeftCenter" -- Align it to the left of the "AS" value
+Pipe_Left.value = "|" -- The caret symbol
+Pipe_Left.stringdefs = HUD_STRINGDEFS_DEF_X15 -- Adjust string size if needed
+Pipe_Left.controllers = {{"hud_check_power"}} -- Use the appropriate controller if needed
+AddHUDElement(Pipe_Left)
+
+-- Add Pipe_Right
+local Pipe_Right = CreateElement "ceStringPoly"
+Pipe_Right.material = HUD_IND_FONT
+Pipe_Right.init_pos = {175, spd_bar_vert_bias} -- Adjust this to place the caret next to "AS"
+Pipe_Right.alignment = "LeftCenter" -- Align it to the left of the "AS" value
+Pipe_Right.value = "|" -- The caret symbol
+Pipe_Right.stringdefs = HUD_STRINGDEFS_DEF_X15 -- Adjust string size if needed
+Pipe_Right.controllers = {{"hud_check_power"}} -- Use the appropriate controller if needed
+AddHUDElement(Pipe_Right)
+]]--
 ---------------------------------------------------------------------------------------------------
 -- 武器相关符号
 
@@ -126,6 +175,6 @@ dofile(LockOn_Options.script_path .. "HUD/Indicator/HUD_NORMAL_WPN.lua")
 
 dofile(LockOn_Options.script_path .. "HUD/Indicator/HUD_NORMAL_NAV.lua")
 
-----------------------------------------------------
-
-
+----------------------------------------------------------------------------------------
+--                    File by whisky.actual@gmail.com - v.1.3.0                       --
+----------------------------------------------------------------------------------------

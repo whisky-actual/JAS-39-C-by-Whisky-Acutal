@@ -1,8 +1,8 @@
-----------------------------------------------------------------------------------------
--- Toggle: Set to true for JF-39, false for vanilla JF-17
-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-- Toggle: Set to true for JF-39, false for JF-17
+-----------------------------------------------------------------------------------------
 JF39 = true   -- <<<< CHANGE HERE
-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
 
 if JF39 == true then
     --------------------------------------------------------------------------
@@ -44,14 +44,27 @@ if JF39 == true then
     mount_vfs_texture_path(current_mod_path .. '/JF-39/Textures/JAS39_Common')
     mount_vfs_texture_path(current_mod_path .. '/JF-39/Textures/JAS39_Drop_tank')
     mount_vfs_texture_path(current_mod_path .. '/JF-39/Textures/JAS39_Pilot')
-    mount_vfs_texture_path(current_mod_path .. '/JF-39/Textures/JAS39_CAF')
-    mount_vfs_texture_path(current_mod_path .. '/JF-39/Textures/JAS39_Fictional')
-    mount_vfs_texture_path(current_mod_path .. '/JF-39/Textures/JAS39_Operators')
-    mount_vfs_texture_path(current_mod_path .. '/JF-39/Textures/JAS39_SwAF_1')
-    mount_vfs_texture_path(current_mod_path .. '/JF-39/Textures/JAS39_SwAF_2')
 
     -- liveries
     mount_vfs_liveries_path(current_mod_path .. '/JF-39/Liveries/')
+	mount_vfs_liveries_path (current_mod_path .. '/Liveries/H-6J/')
+	mount_vfs_liveries_path (current_mod_path .. '/Liveries/HQ-7_LN_EO/')
+	mount_vfs_liveries_path (current_mod_path .. '/Liveries/HQ-7_LN_SP/')
+	mount_vfs_liveries_path (current_mod_path .. '/Liveries/HQ-7_STR_SP/')
+	mount_vfs_liveries_path (current_mod_path .. '/Liveries/J-11A/')
+	mount_vfs_liveries_path (current_mod_path .. '/Liveries/KJ-2000/')
+	mount_vfs_liveries_path (current_mod_path .. '/Liveries/P-51D/')
+	mount_vfs_liveries_path (current_mod_path .. '/Liveries/PLZ05/')
+	mount_vfs_liveries_path (current_mod_path .. '/Liveries/Su-33/')
+	mount_vfs_liveries_path (current_mod_path .. '/Liveries/Type_052B/')
+	mount_vfs_liveries_path (current_mod_path .. '/Liveries/Type_052C/')
+	mount_vfs_liveries_path (current_mod_path .. '/Liveries/Type_054A/')
+	mount_vfs_liveries_path (current_mod_path .. '/Liveries/Type_071/')
+	mount_vfs_liveries_path (current_mod_path .. '/Liveries/Type_093/')
+	mount_vfs_liveries_path (current_mod_path .. '/Liveries/TYPE-59/')
+	mount_vfs_liveries_path (current_mod_path .. '/Liveries/WingLoong-I/')
+	mount_vfs_liveries_path (current_mod_path .. '/Liveries/ZBD04A/')
+	mount_vfs_liveries_path (current_mod_path .. '/Liveries/ZTZ96B/')
 
     ----------------------------------------------------------------------------------------
     -- Deka Ironwork Simulations Files (still needed)

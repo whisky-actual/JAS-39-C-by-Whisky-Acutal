@@ -382,6 +382,21 @@ key_cmds = {
 		
 	O2_Supply_Valve_Inc = dcounter(),
 	O2_Supply_Valve_Dec = dcounter(),
+	
+    Helmet_Sun_Visor_Toggle = dcounter(),
+
+    HOTAS_Throttle_T6_Up            = dcounter(),
+    HOTAS_Throttle_T6_Down          = dcounter(),
+    HOTAS_Throttle_T6_Up_Step       = dcounter(),
+    HOTAS_Throttle_T6_Down_Step     = dcounter(),
+
+    Sensor_ZoomIn_Step  = dcounter(),  -- 光学传感器FOV减小
+    Sensor_ZoomOut_Step = dcounter(),  -- 光学传感器FOV增大
+    
+    Sensor_Gain_Inc         = dcounter(),  -- 光学传感器Gain增大
+    Sensor_Gain_Dec         = dcounter(),  -- 光学传感器Gain减小
+    Sensor_Gain_Inc_Step    = dcounter(),  -- 光学传感器Gain增大
+    Sensor_Gain_Dec_Step    = dcounter(),  -- 光学传感器Gain减小
 }
 
 -- 开车/关车部分集成指令
@@ -462,7 +477,8 @@ axis_cmd = {
 
 -- 命令对应的名字，用于本地化
 cmd_names = {
-
+	Helmet_Sun_Visor_Toggle = "Toggle Helmet Sun Visor",
+	
     PrevOESPProg = "Prev OESP Program",
     NextOESPProg = "Next OESP Program",
 
@@ -499,7 +515,13 @@ cmd_names = {
     Sensor_Down  = "Sensor (WMD7/TV) Down / T6: Radar Ant Elev Down",
     Sensor_Left  = "Sensor (WMD7/TV) Left / Gain Dec",
     Sensor_Right = "Sensor (WMD7/TV) Right / Gain Inc",
-
+    
+    Sensor_ZoomIn  = "Sensor FOV Increase",
+    Sensor_ZoomOut = "Sensor FOV Decrease",
+    
+    Sensor_Gain_Inc = "Sensor Gain Increase",
+    Sensor_Gain_Dec = "Sensor Gain Decrease",
+    
     AirBrake     = "Speed Brake Toggle",
     AirBrakeOn   = "Speed Brake On",
     AirBrakeOff  = "Speed Brake Off",
@@ -520,7 +542,7 @@ cmd_names = {
     RADIO_Mode_CW   = "Radio Mode Selector - CW",
     RADIO_Mode_CCW  = "Radio Mode Selector - CCW",
 
-    Stick_Show_Hide_Toggle = "Show/Hide Pilot", --whisky.actual@gmail.com
+    Stick_Show_Hide_Toggle = "Show/Hide Stick",
 
     SMS_Jett_Emerge_Shortcut = "Emergency Jettison Shortcut",
     OESP_Flare_Emerge_Shortcut = "Emergency Flare Shortcut",
@@ -578,14 +600,16 @@ cmd_names = {
     HOTAS_Throttle_T4_Forward_w_VOIP   = "T4_Forward: Radio Comm 1 (w/ VOIP)", --T4, 电台发话/IFF
     HOTAS_Throttle_T4_Backward_w_VOIP  = "T4_Backward: Radio Comm 2 (w/ VOIP)",
 
-    HOTAS_Throttle_T5_Up    = "T5_Up: TDC Up", --T5, TDC控制
-    HOTAS_Throttle_T5_Down  = "T5_Down: TDC Down",
-    HOTAS_Throttle_T5_Left  = "T5_Left: TDC Left",
-    HOTAS_Throttle_T5_Right = "T5_Right: TDC Right",
-    HOTAS_Throttle_T5_Press = "T5_Press: Lock Target",
+    HOTAS_Throttle_T5_Up        = "T5_Up: TDC Up", --T5, TDC控制
+    HOTAS_Throttle_T5_Down      = "T5_Down: TDC Down",
+    HOTAS_Throttle_T5_Left      = "T5_Left: TDC Left",
+    HOTAS_Throttle_T5_Right     = "T5_Right: TDC Right",
+    HOTAS_Throttle_T5_Press     = "T5_Press: Lock Target",
 
-    HOTAS_Throttle_T6       = "T6_Axis: Antenna Elevation",
-    HOTAS_Throttle_T6_Slide = "T6_Axis: Antenna Elevation (Slide)",
+    HOTAS_Throttle_T6           = "T6_Axis: Antenna Elevation",
+    HOTAS_Throttle_T6_Slide     = "T6_Axis: Antenna Elevation (Slide)",
+    HOTAS_Throttle_T6_Up        = "T6_Up: Antenna Elevation",
+    HOTAS_Throttle_T6_Down      = "T6_Down: Antenna Elevation",
 
     -- below are for all clickable cmds
     PNT_500 = "Backup SAIU Knob Selector",
@@ -928,7 +952,7 @@ cmd_names = {
     PNT_969 = "Flash Light",
 
     -- Stick
-    PNT_970 = "Pilot Show/Hide", --whisky.actual@gmail.com
+    PNT_970 = "Stick Show/Hide",
     PNT_971 = "A/P Disengage",
 
     -- Eject Seat
@@ -943,4 +967,22 @@ cmd_names = {
     PNT_977 = "Oxygen 100% O2",
     PNT_978 = "Eject Seat Emergency O2",
     PNT_979 = "G-Suit Connector",
+
 }
+
+cmd_names_ext = {
+
+    HOTAS_Throttle_T6_Up_Step    = cmd_names.HOTAS_Throttle_T6_Up .. " (Step)",
+    HOTAS_Throttle_T6_Down_Step  = cmd_names.HOTAS_Throttle_T6_Down .. " (Step)",
+    
+    Sensor_ZoomIn_Step  = cmd_names.Sensor_ZoomIn .. " (Step)",
+    Sensor_ZoomOut_Step = cmd_names.Sensor_ZoomOut .. " (Step)",
+    
+    Sensor_Gain_Inc_Step = cmd_names.Sensor_Gain_Inc .. " (Step)",
+    Sensor_Gain_Dec_Step = cmd_names.Sensor_Gain_Dec .. " (Step)",
+}
+
+for key, value in pairs(cmd_names_ext) do
+    cmd_names[key] = value
+end
+

@@ -27,8 +27,21 @@ local texs_local = {
     },
     
     {
+        cx = MFCD_BOX3_L_VERT_X, cy = MFCD_FONT_LR1_Y, hw = 120/2000, hh = 293.333/2000, ulx = 1744, uly = 1872, w = 72, h = 176,
+        mat = MFCD_TEX_IND2, state_tex = true,
+        multi_tex = {
+            MFCD_tex_coord(1744, 1872,  72, 176, TEX_SIZE_X, TEX_SIZE_Y), -- slash
+            MFCD_tex_coord( 210, 1770,  72, 176, TEX_SIZE_X, TEX_SIZE_Y), -- frame
+        },
+        ctrls = {{"rdr_aa_bind_state",1}},
+    },
+    {
         cx = MFCD_BOX3_L_VERT_X, cy = MFCD_FONT_LR2_Y, hw = 120/2000, hh = 293.333/2000, ulx =  210, uly = 1770, w = 72, h = 176,
-        mat = MFCD_TEX_IND2,
+        mat = MFCD_TEX_IND2, state_tex = true,
+        multi_tex = {
+            MFCD_tex_coord( 210, 1770,  72, 176, TEX_SIZE_X, TEX_SIZE_Y), -- frame
+            MFCD_tex_coord(1744, 1872,  72, 176, TEX_SIZE_X, TEX_SIZE_Y), -- slash
+        },
         ctrls = {{"rdr_aa_exp_state",1}},
     },
     
@@ -100,6 +113,10 @@ local texts_local = {
         cx = MFCD_FONT_L_HORI_X, cy = MFCD_FONT_LR1_Y, value = "DGFT", align = "LeftCenter", strdefs = MFCD_STRINGDEFS_DEF_X08,
         ctrls = {{"rdr_state_draw"}},
     },]]
+    {-- 雷达rws/tws是否bind
+        cx = MFCD_FONT_L_HORI_X, cy = MFCD_FONT_LR1_Y, value = "B\nI\nN\nD", align = "LeftCenter", strdefs = MFCD_STRINGDEFS_DEF_X08,
+        ctrls = {{"rdr_aa_bind_state",0}},
+    },
     {-- 雷达tws是否exp
         cx = MFCD_FONT_L_HORI_X, cy = MFCD_FONT_LR2_Y, value = "E\nX\nP", align = "LeftCenter", strdefs = MFCD_STRINGDEFS_DEF_X08,
         ctrls = {{"rdr_aa_exp_state",0}},

@@ -1,0 +1,8 @@
+model = {
+    lods = {
+        {"JF-17-oblomok_lod0.edm", 5000};
+		{"JF-17-oblomok_lod1.edm", 10000};
+        {"JF-17-oblomok_lod2.edm", 25000};
+    };
+    
+}

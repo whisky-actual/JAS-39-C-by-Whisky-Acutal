@@ -2,6 +2,15 @@ dofile(LockOn_Options.common_script_path.."Fonts/symbols_locale.lua")
 dofile(LockOn_Options.common_script_path.."Fonts/fonts_cmn.lua")
 
 
+dofile(LockOn_Options.common_script_path.."tools.lua")
+
+local mfcd_base_alpha = 255
+local mfcd_base_trans = get_plugin_option_value("JF-17", "MFCDBASE_SLIDER", "local")
+
+if mfcd_base_trans ~= nil then
+    mfcd_base_alpha = math.floor(255 * mfcd_base_trans + 0.5)
+end
+
 -- Global Macro
 IND_TEX_PATH = LockOn_Options.script_path .. "../Scripts/JF-39/Textures/IndicationTextures/"
 
@@ -58,6 +67,9 @@ materials["HUD_IND_HIDE"]        = {  0,   0,   0,   0}
 materials["HUD_IND_BASE1"]       = {  0, 255,   0,   4}
 materials["HUD_IND_BASE2"]       = {255, 255,   0,   4}
 
+-- Helmet
+materials["HELMET_VISOR_DEF"]    = {255, 255, 255, 255}
+
 -- MFCDs
 materials["MFCD_IND_DEF"]        = {  0, 255,   0, 240}
 --materials["MFCD_IND_DEF"]        = {  255,    0, 255 }--TEST
@@ -72,8 +84,6 @@ materials["MFCD_IND_BLACK2"]     = {  0,   0,   0, 235}--DMAP_FILTER2
 --materials["MFCD_IND_DARK"]     = {  0,   0,   0, 128}--Base color for MFCDs
 materials["MFCD_IND_DARK"]       = {210, 200, 120, 200}--Base color for MFCDs (TAN) --> See MFCD_init_COMMOND																		  
 materials["MFCD_IND_WHITE"]      = {255, 255, 255, 255}-- Not used
-																  
-																	
 materials["MFCD_IND_WHITE_Y"]    = {255, 255, 240, 240}
 materials["MFCD_IND_PINK"]       = {160,  32, 240, 240}
 materials["MFCD_IND_YELLOW"]     = {255, 255,   0, 240}
@@ -83,6 +93,7 @@ materials["MFCD_IND_BOXBASE"]    = {255, 255, 255,   0}
 materials["MFCD_IND_W_BASE"]     = {255, 255, 255, 255}
 materials["MFCD_IND_PURPLE"]     = {160,  32, 240, 255}
 materials["MFCD_IND_CYAN"]       = {  0, 255, 255, 255}
+materials["MFCD_IND_BACKGND"]    = {  0,   0,   0, mfcd_base_alpha}
 
 -- UFCP
 materials["UFCP_IND_DEF"]        = {0, 255,   0, 150}--Green UFCP
@@ -116,6 +127,10 @@ textures["hud_tex_ind2"]         = {IND_TEX_PATH .. "Indication_HUD_2.dds", mate
 textures["hud_tex_ind2_r"]       = {IND_TEX_PATH .. "Indication_HUD_2.dds", materials["HUD_IND_RED"]}
 textures["hud_tex_ind2_y"]       = {IND_TEX_PATH .. "Indication_HUD_2.dds", materials["HUD_IND_YELLOW"]}
 
+textures["hud_tex_ind3"]         = {IND_TEX_PATH .. "Indication_HUD_3.dds", materials["HUD_IND_DEF"]}
+textures["hud_tex_ind3_r"]       = {IND_TEX_PATH .. "Indication_HUD_3.dds", materials["HUD_IND_RED"]}
+textures["hud_tex_ind3_y"]       = {IND_TEX_PATH .. "Indication_HUD_3.dds", materials["HUD_IND_YELLOW"]}
+
 textures["hud_tex_clip"]         = {IND_TEX_PATH .. "Indication_HUD_clip.dds", materials["HUD_IND_CLIP"]}
 
 textures["hud_mesh_def"]         = {nil, materials["HUD_IND_DEF"]}
@@ -123,6 +138,9 @@ textures["hud_mesh_base1"]       = {nil, materials["HUD_IND_BASE1"]}
 textures["hud_mesh_base2"]       = {nil, materials["HUD_IND_BASE2"]}
 
 textures["hud_line_dashed_def"]  = {IND_TEX_PATH .. "Indication_Line_Dashed.dds", materials["HUD_IND_DEF"]}
+
+-- Helmet
+textures["helmet_tex_visor"]     = {IND_TEX_PATH .. "Indication_Helmet.dds", materials["HELMET_VISOR_DEF"]}
 
 -- UFCP
 textures["ufcd_mesh_def"]        = {nil, materials["UFCP_IND_DEF"]}
@@ -198,6 +216,7 @@ textures["mfcd_mesh_boxbase"]    = {nil, materials["MFCD_IND_BOXBASE"]}
 textures["mfcd_mesh_whitebase"]  = {nil, materials["MFCD_IND_W_BASE"]}
 textures["mfcd_mesh_purple"]     = {nil, materials["MFCD_IND_PURPLE"]}
 textures["mfcd_mesh_cyan"]       = {nil, materials["MFCD_IND_CYAN"]}
+textures["mfcd_mesh_backgnd"]    = {nil, materials["MFCD_IND_BACKGND"]}
 
 
 ------- FONTS ----------

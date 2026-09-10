@@ -154,11 +154,11 @@ mat_tbl = {
     "mfcd_tex_ind5_y",
     "mfcd_tex_ind5_r",
 
-    "mfcd_mesh_def",
+    "mfcd_mesh_def",--Base color for MFCDs?
     "mfcd_mesh_r",
     "mfcd_mesh_g",
     "mfcd_mesh_b",
-    "mfcd_mesh_d",
+    "mfcd_mesh_d",--Base color for MFCDs?
     "mfcd_mesh_w",
     "mfcd_mesh_wy",
     "mfcd_mesh_p",
@@ -167,8 +167,9 @@ mat_tbl = {
     "mfcd_mesh_gnd",
     "mfcd_mesh_boxbase",
     "mfcd_mesh_whitebase",
-	"mfcd_mesh_purple",
+    "mfcd_mesh_purple",
 	"mfcd_mesh_cyan",
+	"mfcd_mesh_backgnd",
 
     "mfcd_font_def",
     "mfcd_font_g",
@@ -190,60 +191,96 @@ opacity_sensitive_materials    = mat_tbl
 color_sensitive_materials      = {
     "mfcd_tex_ind1",
     "mfcd_tex_ind1_g",
+    "mfcd_tex_ind1_w",
+    "mfcd_tex_ind1_wy",
+    "mfcd_tex_ind1_y",
+    "mfcd_tex_ind1_r",
 
     "mfcd_tex_ind2",
     "mfcd_tex_ind2_g",
+    "mfcd_tex_ind2_w",
+    "mfcd_tex_ind2_wy",
+    "mfcd_tex_ind2_y",
+    "mfcd_tex_ind2_r",
 
     "mfcd_tex_ind3",
     "mfcd_tex_ind3_g",
+    "mfcd_tex_ind3_w",
+    "mfcd_tex_ind3_wy",
+    "mfcd_tex_ind3_y",
+    "mfcd_tex_ind3_r",
+    "mfcd_tex_ind3_bl",
 
     "mfcd_tex_ind4",
     "mfcd_tex_ind4_g",
+    "mfcd_tex_ind4_w",
+    "mfcd_tex_ind4_wy",
+    "mfcd_tex_ind4_y",
+    "mfcd_tex_ind4_r",
 
     "mfcd_tex_ind5",
     "mfcd_tex_ind5_g",
+    "mfcd_tex_ind5_w",
+    "mfcd_tex_ind5_wy",
+    "mfcd_tex_ind5_y",
+    "mfcd_tex_ind5_r",
 
-    "mfcd_mesh_def",
+    "mfcd_mesh_def",--Base color for MFCDs?
+    "mfcd_mesh_r",
     "mfcd_mesh_g",
+    "mfcd_mesh_b",
+    --"mfcd_mesh_d",--Base color for MFCDs?
+    "mfcd_mesh_w",
+    "mfcd_mesh_wy",
+    "mfcd_mesh_p",
+    "mfcd_mesh_y",
+    "mfcd_mesh_sky",
+    "mfcd_mesh_gnd",
+    "mfcd_mesh_boxbase",
+    "mfcd_mesh_whitebase",
 
     "mfcd_font_def",
     "mfcd_font_g",
-    "mfcd_font_y",
     "mfcd_font_dg",
+    --"mfcd_font_b",--For Kneebaoards
+    "mfcd_font_w",
+    "mfcd_font_wy",
+    --"mfcd_font_d",--For Kneebaoards
+    "mfcd_font_r",
+    "mfcd_font_y",
 
     "mfcd_wpn_font_def",
     "mfcd_wpn_font_g",
-    --"mfcd_wpn_svg_font_def",
 }
 
 is_colored         = true
 
-color_green_day    = {0, 1.0, 0}
-color_green_night  = {0, 0.5, 0}
+color_green_night   = {1.0, 1.0, 1.0} --SAAB White {1, 1, 1}
+color_green_day     = {0.0, 0.0, 0.0} --SAAB Black {0, 0, 0}
 
-color_blue_day     = {0, 1.0, 0}
-color_blue_night   = {0, 1.0, 0}
+color_blue_night    = {0.0, 0.5, 0.0}
+color_blue_day      = {0.0, 1.0, 0.0}
 
-color_yellow_day   = {1.0, 1.0, 0}
-color_yellow_night = {0.5, 0.5, 0}
+color_yellow_night  = {255/127, 145/127, 054/127} --SAAB Dark Orange  {220/127, 162/127, 054/127}
+color_yellow_day    = {255/255, 145/255, 000/255} --SAAB Light Orange {220/255, 162/255, 054/255}
 
-color_orange_day   = {0.98, 0.38, 0}
-color_orange_night = {0.49, 0.19, 0}
+color_orange_night  = {0.49, 0.19, 0.0}
+color_orange_day    = {0.98, 0.38, 0.0}
 
-color_red_day      = {1.0, 0, 0}
-color_red_night    = {0.5, 0, 0}
+color_red_night     = {255/127, 006/127, 004/127} --SAAB Dark Brown
+color_red_day       = {255/255, 006/255, 004/255} --SAAB Light Brown
 
-color_red2_day     = {1.0, 0, 0}
-color_red2_night   = {0.5, 0, 0}
+color_red2_night    = {0.5, 0.0, 0.0}
+color_red2_day      = {1.0, 0.0, 0.0}
 
-color_white_day    = {1.0, 1.0, 1.0}
-color_white_night  = {0.5, 0.5, 0.5}
+color_white_night   = {0.25, 0.25, 0.25} --SAAB Grey 
+color_white_day     = {0.00, 0.00, 0.00} --SAAB Black
 
-color_sky_day      = {47/255, 135/255, 1.0}
-color_sky_night    = {23.5/255, 67.5/255, 0.5}
+color_sky_night     = {045/255, 091/255, 116/255} --SAAB Dark Blue
+color_sky_day       = {057/255, 131/255, 160/255} --SAAB Light Blue
 
-color_gnd_day      = {49/255, 5/255, 1/255}
-color_gnd_night    = {24.5/255, 2.5/255, 0.5/255}
+color_gnd_night     = {000/255, 000/255, 000/255} --SAAB Dark Brown
+color_gnd_day       = {147/255, 119/255, 095/255} --SAAB Light Brown
 
 -- HUD only view diplacement
 function MFCD_set_screenspace_displacement(aspect, left_center_right, zoom_value)
@@ -287,3 +324,6 @@ function MFCD_set_screenspace_displacement(aspect, left_center_right, zoom_value
     dedicated_viewport        = {default_x, default_y, default_width, default_height}
     dedicated_viewport_arcade = {default_x,         0, default_width, default_height}
 end
+----------------------------------------------------------------------------------------
+--                    File by whisky.actual@gmail.com - v.1.4.0                       --
+----------------------------------------------------------------------------------------
