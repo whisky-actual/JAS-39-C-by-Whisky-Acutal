@@ -1,4 +1,30 @@
 
+airspace_d_line                 = CreateElement "ceSimpleLineObject"
+airspace_d_line.name            = "airspace_d_line"
+airspace_d_line.material        = MFCD_MATERIAL_ORANGE_L
+airspace_d_line.width           = 0.003
+airspace_d_line.init_pos        = {0, FWD_COMP_BIAS, 0}
+airspace_d_line.level           = HSD_NAV_LEVEL + 2 + HSD_NAV_LEVEL_SHIFT
+airspace_d_line.h_clip_relation = h_clip_relations.COMPARE
+airspace_d_line.controllers     = {{"airspace_line", 3.0}}
+airspace_d_line.isdraw          = false
+airspace_d_line.use_mipfilter   = true
+airspace_d_line.additive_alpha  = true
+AddToUpper(airspace_d_line)
+
+
+airspace_c_line                 = CreateElement "ceSimpleLineObject"
+airspace_c_line.name            = "airspace_c_line"
+airspace_c_line.material        = MFCD_MATERIAL_BLUE
+airspace_c_line.width           = 0.003
+airspace_c_line.init_pos        = {0, FWD_COMP_BIAS, 0}
+airspace_c_line.level           = HSD_NAV_LEVEL + 2 + HSD_NAV_LEVEL_SHIFT
+airspace_c_line.h_clip_relation = h_clip_relations.COMPARE
+airspace_c_line.controllers     = {{"airspace_line", 2.0}}
+airspace_c_line.isdraw          = false
+airspace_c_line.use_mipfilter   = true
+airspace_c_line.additive_alpha  = true
+AddToUpper(airspace_c_line)
 
 airspace_b_line                 = CreateElement "ceSimpleLineObject"
 airspace_b_line.name            = "airspace_b_line"
@@ -65,7 +91,7 @@ rwr_bound_d = fwd_square_clip.vertices[3][2] - FWD_COMP_BIAS
 
 
 ----[[ DL ]]
-local hh = 246.667/1500
+local hh = 246.667/2000
 
 -- contact
 local MAX_DL_CONTACTS = SA_CONTACT_NUM_SHARED
@@ -326,5 +352,5 @@ SQUARE.controllers    	= {{"opacity_using_parameter",0}}
 AddToUpper(SQUARE)
 ]]
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.3.0                       --
+--                    File by whisky.actual@gmail.com - v.1.4.0                       --
 ----------------------------------------------------------------------------------------

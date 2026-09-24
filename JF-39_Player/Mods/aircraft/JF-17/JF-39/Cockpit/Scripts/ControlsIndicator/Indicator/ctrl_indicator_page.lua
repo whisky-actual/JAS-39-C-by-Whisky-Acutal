@@ -535,12 +535,101 @@ ind_poly_box.controllers    = {{"parameter_in_range", 0, 0.01, 1.1},}
 AddElement(ind_poly_box)
 ]]
 
+local size           = 0.15
+local ds             = 0.05 * size
+local sz_wheel_brake = 0.50 * size / 130 * 148.3
+
+local brake_l_pos = {-0.8*hw, -0.9*hh}
+local brake_r_pos = { 0.8*hw, -0.9*hh}
+
+txt_brakes                 = CreateElement "ceStringPoly"
+txt_brakes.name            = "txt_brakes"
+txt_brakes.material        = IND_FONT
+txt_brakes.init_pos        = {brake_l_pos[1]+0.1*hw,brake_l_pos[2]+0.2*hh}
+txt_brakes.alignment       = "LeftBottom"
+txt_brakes.stringdefs      = {0.0035, 0.0035,0,0}
+txt_brakes.value           = "B"
+txt_brakes.element_params  = {"EFM_BRAKE_PARK"}
+txt_brakes.controllers     = {{"parameter_in_range", 0, 0.5, 1.5},{"blinking"},}
+--txt_brakes.controllers     = {{"brake_state_parking"},{"blinking"}}
+txt_brakes.parent_element  = base.name
+AddElement(txt_brakes)
+
+wheel_brake_l_mask                 = CreateElement "ceMeshPoly"
+wheel_brake_l_mask.name            = "wheel_brake_l_mask"
+wheel_brake_l_mask.primitivetype   = "triangles"
+wheel_brake_l_mask.vertices        = {{0                    ,0},
+                                      {0                    ,sz_wheel_brake},
+                                      {0.3 * sz_wheel_brake ,sz_wheel_brake},
+                                      {0.3 * sz_wheel_brake ,0}}
+wheel_brake_l_mask.indices         = {0,1,2,0,2,3}
+wheel_brake_l_mask.material        = IND_CMD_MAT
+wheel_brake_l_mask.init_pos        = {brake_l_pos[1],brake_l_pos[2]}
+wheel_brake_l_mask.parent_element  = base.name
+wheel_brake_l_mask.element_params  = {"EFM_WHEELBRAKE_L",}
+wheel_brake_l_mask.controllers     = {{"move_up_down_using_parameter", 0, 2*sz_wheel_brake},}
+wheel_brake_l_mask.h_clip_relation = h_clip_relations.INCREASE_LEVEL
+wheel_brake_l_mask.isvisible       = false
+AddElement(wheel_brake_l_mask)
+
+wheel_brake_l_ind                 = CreateElement "ceMeshPoly"
+wheel_brake_l_ind.name            = "wheel_brake"
+wheel_brake_l_ind.primitivetype   = "triangles"
+wheel_brake_l_ind.vertices        = {{0 ,0},
+                                     {0 ,sz_wheel_brake},
+                                     {0.3 * sz_wheel_brake ,sz_wheel_brake}}
+wheel_brake_l_ind.indices         = {0,1,2}
+wheel_brake_l_ind.material        = IND_CMD_MAT
+wheel_brake_l_ind.init_pos        = wheel_brake_l_mask.init_pos
+wheel_brake_l_ind.parent_element  = base.name
+wheel_brake_l_ind.h_clip_relation = h_clip_relations.COMPARE
+wheel_brake_l_ind.level           = DEFAULT_LEVEL
+AddElement(wheel_brake_l_ind)
+
+
+
+wheel_brake_r_mask                 = CreateElement "ceMeshPoly"
+wheel_brake_r_mask.name            = "wheel_brake_r_mask"
+wheel_brake_r_mask.primitivetype   = "triangles"
+wheel_brake_r_mask.vertices        = {{0                    ,0},
+                                      {0                    ,sz_wheel_brake},
+                                      {0.3 * sz_wheel_brake ,sz_wheel_brake},
+                                      {0.3 * sz_wheel_brake ,0}}
+wheel_brake_r_mask.indices         = {0,1,2,0,2,3}
+wheel_brake_r_mask.material        = IND_CMD_MAT
+wheel_brake_r_mask.init_pos        = {brake_r_pos[1],brake_r_pos[2]}
+wheel_brake_r_mask.parent_element  = base.name
+wheel_brake_r_mask.element_params  = {"EFM_WHEELBRAKE_R",}
+wheel_brake_r_mask.controllers     = {{"move_up_down_using_parameter", 0, 2*sz_wheel_brake},}
+wheel_brake_r_mask.h_clip_relation = h_clip_relations.INCREASE_LEVEL
+wheel_brake_r_mask.isvisible       = false
+AddElement(wheel_brake_r_mask)
+
+wheel_brake_r_ind                 = CreateElement "ceMeshPoly"
+wheel_brake_r_ind.name            = "wheel_brake"
+wheel_brake_r_ind.primitivetype   = "triangles"
+wheel_brake_r_ind.vertices        = {{0 ,0},
+                                     {0 ,sz_wheel_brake},
+                                     {0.3 * sz_wheel_brake ,sz_wheel_brake}}
+wheel_brake_r_ind.indices         = {0,1,2}
+wheel_brake_r_ind.material        = IND_CMD_MAT
+wheel_brake_r_ind.init_pos        = wheel_brake_r_mask.init_pos
+wheel_brake_r_ind.parent_element  = base.name
+wheel_brake_r_ind.h_clip_relation = h_clip_relations.COMPARE
+wheel_brake_r_ind.level           = DEFAULT_LEVEL
+AddElement(wheel_brake_r_ind)
+
+
+
+
+
+
 --文字显示
 local text_data = {
     -- rate
     {
         init_pos       = {0, hh-2*hh/10 ,0},
-		material       = IND_FONT_W,
+        material       = IND_FONT_W,
         alignment      = "LeftCenter",
         formats        = {"RATE DEG/SEC:\nR %.1f\n","Y %.1f\n","P %.1f",},
         element_params = {"ASM_RATE_ROLL","ASM_RATE_YAW","ASM_RATE_PITCH",},
@@ -549,40 +638,40 @@ local text_data = {
                           {"text_using_parameter",2,2 },},
     },
 
-	-- 减速板
+    -- 减速板
     {
         init_pos       = {0, -3*hh/10, 0},
-		material       = IND_FONT,
+        material       = IND_FONT,
         alignment      = "CenterCenter",
         value          = 'B',
         element_params = {"ASM_MECHINFO_SPEEDBREAK",},
         controllers    = {{"parameter_in_range", 0, 0.01, 1.1},},
     },
-	
-	-- 鼻轮
+    
+    -- 鼻轮
     {
         init_pos       = {0, -1*hh/10, 0},
-		material       = IND_FONT,
+        material       = IND_FONT,
         alignment      = "CenterCenter",
         value          = 'N',
         element_params = {"ASM_MECHINFO_NOSEGEAR",},
         controllers    = {{"parameter_in_range", 0, 0.01, 1.1},},
     },
-	
-	-- 左主轮
+    
+    -- 左主轮
     {
         init_pos       = {-0.12*hw, -5.5*hh/10, 0},
-		material       = IND_FONT,
+        material       = IND_FONT,
         alignment      = "CenterCenter",
         value          = 'L',
         element_params = {"ASM_MECHINFO_LEFT_MAINGEAR",},
         controllers    = {{"parameter_in_range", 0, 0.01, 1.1},},
     },
-	
-	-- 右主轮
+    
+    -- 右主轮
     {
         init_pos       = {0.12*hw, -5.5*hh/10, 0},
-		material       = IND_FONT,
+        material       = IND_FONT,
         alignment      = "CenterCenter",
         value          = 'R',
         element_params = {"ASM_MECHINFO_RIGHT_MAINGEAR",},
@@ -604,12 +693,12 @@ for i=1, #(text_data) do
     else
         text_strpoly.controllers = {{"text_using_parameter",0,0 },}
     end
-	if text_data[i].value ~= nil then
+    if text_data[i].value ~= nil then
         text_strpoly.value = text_data[i].value
     end
     AddElement(text_strpoly)
     text_strpoly = nil
 end
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.3.0                       --
+--                    File by whisky.actual@gmail.com - v.1.4.0                       --
 ----------------------------------------------------------------------------------------

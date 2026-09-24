@@ -31,9 +31,10 @@ end
 ----------------------------------------------------------------------------------------
 function update()
 	set_aircraft_draw_argument_value(22, get_aircraft_draw_argument_value(419))
+	set_aircraft_draw_argument_value(88, get_cockpit_draw_argument_value(948))
 end
 
 need_to_be_closed = false
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.3.0                       --
+--                    File by whisky.actual@gmail.com - v.1.4.0                       --
 ----------------------------------------------------------------------------------------

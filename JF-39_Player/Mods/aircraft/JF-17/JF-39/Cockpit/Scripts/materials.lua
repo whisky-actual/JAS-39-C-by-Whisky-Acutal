@@ -72,7 +72,6 @@ materials["HELMET_VISOR_DEF"]    = {255, 255, 255, 255}
 
 -- MFCDs
 materials["MFCD_IND_DEF"]        = {  0, 255,   0, 240}
---materials["MFCD_IND_DEF"]        = {  255,    0, 255 }--TEST
 materials["MFCD_IND_RED"]        = {255,   0,   0, 240}
 materials["MFCD_IND_GREEN"]      = {  0, 255,   0, 150}
 materials["MFCD_IND_DGREEN"]     = {  3,  67,  40, 240}
@@ -87,6 +86,9 @@ materials["MFCD_IND_WHITE"]      = {255, 255, 255, 255}-- Not used
 materials["MFCD_IND_WHITE_Y"]    = {255, 255, 240, 240}
 materials["MFCD_IND_PINK"]       = {160,  32, 240, 240}
 materials["MFCD_IND_YELLOW"]     = {255, 255,   0, 240}
+materials["MFCD_IND_ORANGE_L"]   = {255, 172,  28, 255}
+materials["MFCD_IND_PEACH"]      = {255, 229, 180, 255}
+materials["MFCD_IND_AMBER"]      = {255, 191,   0, 255}
 materials["MFCD_IND_SKY"]        = { 47, 135, 255, 255}
 materials["MFCD_IND_GRND"]       = { 49,   5,   1, 255}
 materials["MFCD_IND_BOXBASE"]    = {255, 255, 255,   0}
@@ -210,6 +212,9 @@ textures["mfcd_mesh_w"]          = {nil, materials["MFCD_IND_WHITE"]}
 textures["mfcd_mesh_wy"]         = {nil, materials["MFCD_IND_WHITE_Y"]} -- 略带淡黄色
 textures["mfcd_mesh_p"]          = {nil, materials["MFCD_IND_PINK"]}
 textures["mfcd_mesh_y"]          = {nil, materials["MFCD_IND_YELLOW"]}
+textures["mfcd_mesh_org_l"]      = {nil, materials["MFCD_IND_ORANGE_L"]}
+textures["mfcd_mesh_peach"]      = {nil, materials["MFCD_IND_PEACH"]}
+textures["mfcd_mesh_amber"]      = {nil, materials["MFCD_IND_AMBER"]}
 textures["mfcd_mesh_sky"]        = {nil, materials["MFCD_IND_SKY"]}
 textures["mfcd_mesh_gnd"]        = {nil, materials["MFCD_IND_GRND"]}
 textures["mfcd_mesh_boxbase"]    = {nil, materials["MFCD_IND_BOXBASE"]}
@@ -280,5 +285,5 @@ fonts["radio_font_cursor"]  = {fontdescription["font_RADIO"], 10, materials["RAD
 -- Clock
 fonts["clock_font_def"]     = {fontdescription["font_CLOCK"], 10, materials["CLOCK_IND_DEF"]}
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.3.0                       --
+--                    File by whisky.actual@gmail.com - v.1.4.0                       --
 ----------------------------------------------------------------------------------------

@@ -1,3 +1,4 @@
+
 dofile(LockOn_Options.script_path .. "MFCD/avMFCD.lua")
 
 MAP_RENDER                 = CreateElement "ceTexPoly"
@@ -59,6 +60,3 @@ WA_RENDER.additive_alpha  = true
 WA_RENDER.controllers     = {{'rdr_video_check', 2},}
 
 AddToUpper(WA_RENDER)
-----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.4.0                       --
-----------------------------------------------------------------------------------------

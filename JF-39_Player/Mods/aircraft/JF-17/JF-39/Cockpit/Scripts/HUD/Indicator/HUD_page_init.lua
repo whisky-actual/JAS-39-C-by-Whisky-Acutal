@@ -64,16 +64,14 @@ is_colored   = true
 day_color    = {0, 1.0, 0}
 night_color  = {0, 0.5, 0}
 
+
 ---- HUD DUPLICATE
 dofile(LockOn_Options.common_script_path.."ViewportHandling.lua")
 
-local default_viewport = try_find_assigned_viewport('JF17_HUD_DUP', 'HUD_DUP')--whisky.actual@gmail.com
+local default_viewport = try_find_assigned_viewport('JF17_HUD_DUP', 'HUD_DUP')
 if default_viewport then
     dedicated_viewport = {default_viewport.x, default_viewport.y, default_viewport.width, default_viewport.height}
     dedicated_viewport_arcade = {default_viewport.x, default_viewport.y, default_viewport.width, default_viewport.height}
     purposes                  = {render_purpose.GENERAL, render_purpose.SCREENSPACE_INSIDE_COCKPIT, render_purpose.HUD_ONLY_VIEW}
     render_target_always      = true
 end
-----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.3.0                       --
-----------------------------------------------------------------------------------------

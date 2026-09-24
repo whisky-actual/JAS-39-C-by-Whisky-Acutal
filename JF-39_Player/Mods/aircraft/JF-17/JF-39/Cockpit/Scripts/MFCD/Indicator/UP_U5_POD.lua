@@ -27,7 +27,7 @@ for i=1, #(osb_txt) do
     if osb_txt[i].controllers == nil then
         osb_txt[i].controllers = {}
     end
-    osb_txt[i].controllers[#osb_txt[i].controllers + 1] = {"string_background_color", 0.75,0.75,0.75}
+    osb_txt[i].controllers[#osb_txt[i].controllers + 1] = {"string_background_color", 0.25,0.25,0.25}
     text_strpoly.controllers = osb_txt[i].controllers
     
     if osb_txt[i].value ~= nil then

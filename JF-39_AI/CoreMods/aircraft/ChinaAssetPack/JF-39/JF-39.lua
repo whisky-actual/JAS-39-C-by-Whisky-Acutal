@@ -194,7 +194,7 @@ declare_weapon({category = CAT_SHELLS, name = "BK_27_HE", user_name = _("27 mm H
 ----------------------------------------------------------------------------------------
 -- BK-27 CANNON	
 ----------------------------------------------------------------------------------------
-local function bk27_cannon(tbl)
+local function GSh_23_2(tbl)
 
     tbl.category = CAT_GUN_MOUNT
     tbl.name =  "bk_27"
@@ -597,9 +597,9 @@ JF_39 = {
         azimuth   = {-160.0, 160.0}, --
         elevation = {-50.0, 90.0} --
     },
-	
+--[[	
 Guns = {
-        bk27_cannon({muzzle_pos_connector   = "GUN_POINT",
+        GSh_23_2({muzzle_pos_connector   = "GUN_POINT",
             supply_position        = {2.6, -0.4, 0.0},
             drop_cartridge         = 204,
             ejector_pos_connector  = "GUN_EJECTOR_01",
@@ -609,6 +609,28 @@ Guns = {
         }),
 		
 		},
+    				
+		ammo_type_default = 2,
+		ammo_type ={
+			_("HE/AP/APHE"),
+			_("PELE/PELE-T"),				
+		},
+
+        ]]
+      Guns = {
+        gun_mount("GSh_23_2",
+        {
+            count = 1000
+        },
+        {
+            muzzle_pos_connector   = "GUN_POINT",
+            supply_position        = {2.6, -0.4, 0.0},
+            drop_cartridge         = 204,
+            ejector_pos_connector  = "GUN_EJECTOR_01",
+            ejector_dir            = {2,-2,0},
+            -- elevation_initial = -1.50,
+        }),
+	    },
     				
 		ammo_type_default = 2,
 		ammo_type ={

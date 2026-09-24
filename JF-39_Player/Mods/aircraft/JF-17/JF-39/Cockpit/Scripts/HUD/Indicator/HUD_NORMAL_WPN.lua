@@ -128,13 +128,6 @@ tex_poly.state_tex_coords = {
     HUD_tex_coord(1008, 784, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --2 下 ^
     HUD_tex_coord(1008, 624, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --3 右 <
 }
---[[
-tex_poly.state_tex_coords = {
-    HUD_tex_coord(1008, 944, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --0 Top v
-    HUD_tex_coord( 848, 624, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --1 Left >
-    HUD_tex_coord(1008, 784, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --2 Bottom ^
-    HUD_tex_coord(1008, 624, 160, 160, HUD_TEX_IND1_W, HUD_TEX_IND1_H), --3 Right <
-}]]
 tex_poly.init_pos    = {0, 0, 0}
 tex_poly.indices     = DEF_BOX_INDICES
 tex_poly.controllers = {{"hud_AA_dlz_caret", 25.113/2}}
@@ -652,5 +645,5 @@ standoff_wpn_nolaunch.parent_element = standoff_base.name
 standoff_wpn_nolaunch.controllers    = {{"standoff_wpn_nolaunch"}}
 AddElementObject(standoff_wpn_nolaunch)
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.3.0                       --
+--                    File by whisky.actual@gmail.com - v.1.4.0                       --
 ----------------------------------------------------------------------------------------

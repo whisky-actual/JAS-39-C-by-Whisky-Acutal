@@ -26,6 +26,17 @@ fpm_noti_poly.parent_element = fpm_name
 fpm_noti_poly.controllers    = {{"hud_fpm_noti"},}
 AddElementObject(fpm_noti_poly)
 
+-- fpm landing gear
+fpm_lg_poly                = CreateElement "ceTexPoly"
+fpm_lg_poly.material       = HUD_TEX_IND1
+fpm_lg_poly.tex_coords     = HUD_tex_coord(280, 1104, 240, 84, HUD_TEX_IND1_W, HUD_TEX_IND1_H)
+fpm_lg_poly.init_pos       = {0, 0, 0}
+fpm_lg_poly.vertices       = {{18.834, 18.834/3}, {18.834,-18.834/3}, {-18.834,-18.834/3},{-18.834, 18.834/3}}
+fpm_lg_poly.indices        = DEF_BOX_INDICES
+fpm_lg_poly.parent_element = fpm_name
+fpm_lg_poly.controllers    = {{"hud_fpm_lg"},}
+AddElementObject(fpm_lg_poly)
+
 --notify
 text_strpoly                = CreateElement "ceStringPoly"
 text_strpoly.material       = HUD_BIG_IND_FONT -- HUD_IND_FONT
@@ -46,6 +57,7 @@ text_strpoly.value          = "    " -- ALIGN
 text_strpoly.stringdefs     = HUD_STRINGDEFS_DEF_X15
 AddElementObject(text_strpoly)
 
+
 --
 local Alt_nogo_noti           = CreateElement "ceTexPoly"
 Alt_nogo_noti.material        = HUD_TEX_IND2
@@ -59,7 +71,7 @@ Alt_nogo_noti.parent_element  = fpm_name
 Alt_nogo_noti.isdraw          = false
 AddHUDElement(Alt_nogo_noti)
 
----------------------------------------------------------------------------------------------------
+----------------------------------
 hud_hdg_txt_pos_y = 29.382
 
 local texts ={
@@ -94,6 +106,7 @@ local texts ={
 
     --warning
     --{value="WARN", alignment="CenterCenter", formats={"%s"}, init_pos={ 0, -1 *HUD_HALF_HEIGHT*1/2}, ctrls={{"hud_txt_cwin1"},}, strdef = HUD_STRINGDEFS_DEF_X20,},
+
 }
 
 for i=1, #(texts) do
@@ -176,5 +189,5 @@ dofile(LockOn_Options.script_path .. "HUD/Indicator/HUD_NORMAL_WPN.lua")
 dofile(LockOn_Options.script_path .. "HUD/Indicator/HUD_NORMAL_NAV.lua")
 
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.3.0                       --
+--                    File by whisky.actual@gmail.com - v.1.4.0                       --
 ----------------------------------------------------------------------------------------

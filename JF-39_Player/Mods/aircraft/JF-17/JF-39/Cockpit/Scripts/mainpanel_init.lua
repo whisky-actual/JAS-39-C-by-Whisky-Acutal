@@ -1,4 +1,5 @@
 dofile(LockOn_Options.script_path.."args_def.lua")
+dofile(LockOn_Options.script_path.."/../../Views.lua")
 
 --------------------------------------------------------------------------------
 -- Variables
@@ -51,6 +52,21 @@ mirrors_data =
     arg_value_when_on = 1.0;
 }
 
+local default_view      = SnapViews[1][13]
+local default_view      = SnapViews[1][13]
+local eye_pos           = ViewSettings.Cockpit[1].EyePoint[1] or 0;
+local default_v_angle   = math.rad(default_view.vAngle)
+local default_x         = eye_pos * math.cos(default_v_angle) + default_view.x_trans
+local default_y         = eye_pos * math.sin(default_v_angle) + default_view.y_trans
+local default_z         = default_view.z_trans
+
+desired_fight_adjustment =
+{
+    x        =  0.152   - default_x,
+    y        = -0.001   - default_y,
+    z        =  0.0295  - default_z,
+    v_angle  = -4.0     - default_v_angle
+}
 
 --------------------------------------------------------------------------------
 -- Controllers
@@ -113,5 +129,5 @@ shape_name = get_livery_setting_from_plugin("JF-17", "CPTModel", "JF-17-CPT")
 ----------------------------------------------------------------------------------------
 need_to_be_closed = true -- close lua state after initialization
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.3.0                       --
+--                    File by whisky.actual@gmail.com - v.1.4.0                       --
 ----------------------------------------------------------------------------------------

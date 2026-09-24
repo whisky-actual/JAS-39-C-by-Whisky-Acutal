@@ -163,6 +163,9 @@ mat_tbl = {
     "mfcd_mesh_wy",
     "mfcd_mesh_p",
     "mfcd_mesh_y",
+    "mfcd_mesh_org_l",
+    "mfcd_mesh_peach",
+    "mfcd_mesh_amber",
     "mfcd_mesh_sky",
     "mfcd_mesh_gnd",
     "mfcd_mesh_boxbase",
@@ -255,8 +258,12 @@ color_sensitive_materials      = {
 
 is_colored         = true
 
-color_green_night   = {1.0, 1.0, 1.0} --SAAB White {1, 1, 1}
+color_green_night   = {0.5, 0.5, 0.5} --SAAB White {1, 1, 1}
 color_green_day     = {0.0, 0.0, 0.0} --SAAB Black {0, 0, 0}
+
+--color_green_day    = {0, 1.0, 0}
+--color_green_night  = {0, 0.5, 0}
+
 
 color_blue_night    = {0.0, 0.5, 0.0}
 color_blue_day      = {0.0, 1.0, 0.0}
@@ -281,6 +288,11 @@ color_sky_day       = {057/255, 131/255, 160/255} --SAAB Light Blue
 
 color_gnd_night     = {000/255, 000/255, 000/255} --SAAB Dark Brown
 color_gnd_day       = {147/255, 119/255, 095/255} --SAAB Light Brown
+
+color_airspace_a   = { 160/255, 32/255, 240/255 };
+color_airspace_b   = { 0.0, 1.0, 1.0 };
+color_airspace_c   = { 0.0, 0.0, 1.0 };
+color_airspace_d   = { 1.0, 172/255, 28/255 };
 
 -- HUD only view diplacement
 function MFCD_set_screenspace_displacement(aspect, left_center_right, zoom_value)
