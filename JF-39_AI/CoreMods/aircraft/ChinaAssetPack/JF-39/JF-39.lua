@@ -620,7 +620,7 @@ Guns = {
       Guns = {
         gun_mount("GSh_23_2",
         {
-            count = 1000
+            count = 120
         },
         {
             muzzle_pos_connector   = "GUN_POINT",
