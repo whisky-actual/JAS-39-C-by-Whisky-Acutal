@@ -46,8 +46,10 @@ if JF39 == true then
     mount_vfs_texture_path(current_mod_path .. '/JF-39/Textures/JAS39_Pilot')
 
     -- liveries
-    mount_vfs_liveries_path(current_mod_path .. '/JF-39/Liveries/')
-	mount_vfs_liveries_path (current_mod_path .. '/Liveries/H-6J/')
+    mount_vfs_liveries_path(current_mod_path .. '/JF-39/Liveries')
+    mount_vfs_liveries_path(current_mod_path .. '/Liveries')
+	--[[
+    mount_vfs_liveries_path (current_mod_path .. '/Liveries/H-6J/')
 	mount_vfs_liveries_path (current_mod_path .. '/Liveries/HQ-7_LN_EO/')
 	mount_vfs_liveries_path (current_mod_path .. '/Liveries/HQ-7_LN_SP/')
 	mount_vfs_liveries_path (current_mod_path .. '/Liveries/HQ-7_STR_SP/')
@@ -65,6 +67,7 @@ if JF39 == true then
 	mount_vfs_liveries_path (current_mod_path .. '/Liveries/WingLoong-I/')
 	mount_vfs_liveries_path (current_mod_path .. '/Liveries/ZBD04A/')
 	mount_vfs_liveries_path (current_mod_path .. '/Liveries/ZTZ96B/')
+    ]]--
 
     ----------------------------------------------------------------------------------------
     -- Deka Ironwork Simulations Files (still needed)
@@ -141,5 +144,5 @@ else
     plugin_done()
 end
 ----------------------------------------------------------------------------------------
---                    File by whisky.actual@gmail.com - v.1.3.0                       --
+--                    File by whisky.actual@gmail.com - v.1.5.1                       --
 ----------------------------------------------------------------------------------------

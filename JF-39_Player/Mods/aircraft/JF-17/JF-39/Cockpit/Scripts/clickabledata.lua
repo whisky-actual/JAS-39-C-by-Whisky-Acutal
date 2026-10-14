@@ -91,7 +91,9 @@ elements["PNT_562"] = default_2_position_tumb(_(cmd_names.PNT_562), devices.MISC
 --COMM
 elements["PNT_545"] =         default_axis_limited(_(cmd_names.PNT_545), devices.INTERCOM, click_cmds.PNT_545, 545)
 elements["PNT_546"] =      default_2_position_tumb(_(cmd_names.PNT_546), devices.INTERCOM, click_cmds.PNT_546, 546)
+--elements["PNT_546"] =      default_2_position_tumb(_(cmd_names.PNT_546), devices.INTERCOM, click_cmds.PNT_546, 546, 3, 1.0/5, false, 0.0)
 elements["PNT_547"] = multiposition_switch_limited(_(cmd_names.PNT_547), devices.INTERCOM, click_cmds.PNT_547, 547, 6, 1.0/5, false, 0.0)
+--elements["PNT_547"] = default_push_button(_(cmd_names.PNT_547), devices.INTERCOM, click_cmds.PNT_547, 547, nil, nil, {{SND_BTN_MFCD_PUSH},{SND_BTN_MFCD_RELEASE}})
 elements["PNT_548"] =          default_push_button(_(cmd_names.PNT_548), devices.INTERCOM, click_cmds.PNT_548, 548)
 
 elements["PNT_549"] = default_push_button(_(cmd_names.PNT_549), devices.INTERCOM, click_cmds.PNT_549, 549)

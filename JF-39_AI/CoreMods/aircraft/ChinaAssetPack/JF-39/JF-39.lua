@@ -462,14 +462,14 @@ JF_39 = {
 			{
 				pos = 	{-5.0,	0.115,	0},-- Tribwerke   -5.231,	-0.468,	0
 				elevation	=	0,-- AFB cone elevation  winkel nach oben unten
-				diameter    =   0.90,-- AFB cone diameter   Kreis Ø --1.05
+				diameter    =   0.85,-- AFB cone diameter   Kreis Ø --1.05
                 exhaust_length_ab   =   10,--lenght in m  Kreis Ø kegel efekt
                 exhaust_length_ab_K =   0.707,--animation geschwindigkeit
                 smokiness_level     =   0.005, --0.05
-				afterburner_circles_count = 11,
-				afterburner_circles_pos = {0.2, 0.8},
-				afterburner_circles_scale = 0.95,
-				afterburner_effect_texture = "afterburner_gripen",
+				afterburner_circles_count = 5,
+				afterburner_circles_pos = {0.25, 0.8},
+				afterburner_circles_scale = 0.90,
+				afterburner_effect_texture = "JAS_Afterburner",
 			}, -- end of [1]
 		}, -- end of engines_nozzles		
     apu_rpm_delay_ = 4, -- launch delay (for sound)
